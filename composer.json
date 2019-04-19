@@ -1,0 +1,23 @@
+{
+    "name": "youzanyun/extension-point-api",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "allen",
+            "email": "wangxing@youzan.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Com\\Youzan\\": "src"
+        }
+    }
+}
