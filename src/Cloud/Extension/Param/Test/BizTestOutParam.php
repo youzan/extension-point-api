@@ -36,7 +36,7 @@ class BizTestOutParam implements \JsonSerializable
 
     /**
      *
-     * @var stdClass
+     * @var BizTestResponse
      */
     private $data;
 
@@ -89,17 +89,17 @@ class BizTestOutParam implements \JsonSerializable
     }
 
     /**
-     * @return stdClass
+     * @return BizTestResponse
      */
-    public function getData(): stdClass
+    public function getData(): BizTestResponse
     {
         return $this->data;
     }
 
     /**
-     * @param stdClass $data
+     * @param BizTestResponse $data
      */
-    public function setData(stdClass $data): void
+    public function setData(BizTestResponse $data): void
     {
         $this->data = $data;
     }
