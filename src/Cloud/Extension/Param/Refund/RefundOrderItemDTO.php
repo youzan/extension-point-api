@@ -31,7 +31,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
 
     /**
      * 订单号
-     * @var integer
+     * @var string
      */
     private $orderNo;
 
@@ -140,17 +140,17 @@ class RefundOrderItemDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return string
      */
-    public function getOrderNo(): integer
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
 
     /**
-     * @param integer $orderNo
+     * @param string $orderNo
      */
-    public function setOrderNo(integer $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }

@@ -79,7 +79,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
 
     /**
      * 支付收单号-对应老系统的内部交易单号
-     * @var integer
+     * @var string
      */
     private $payId;
 
@@ -328,17 +328,17 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return string
      */
-    public function getPayId(): integer
+    public function getPayId(): string
     {
         return $this->payId;
     }
 
     /**
-     * @param integer $payId
+     * @param string $payId
      */
-    public function setPayId(integer $payId): void
+    public function setPayId(string $payId): void
     {
         $this->payId = $payId;
     }
