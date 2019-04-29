@@ -12,19 +12,19 @@ namespace Com\Youzan\Cloud\Extension\Param\Salesman;
 class ExtLevelRulesResponseDTO implements \JsonSerializable {
 
     /**
-     * 等级值
+     * 
      * @var integer
      */
     private $level;
 
     /**
-     * 等级对应的等级名称
+     * 
      * @var string
      */
     private $levelName;
 
     /**
-     * 升级规则描述
+     * 
      * @var string
      */
     private $rules;
