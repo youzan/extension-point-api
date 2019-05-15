@@ -13,112 +13,112 @@ class PriceDTO implements \JsonSerializable {
 
     /**
      * 优惠金额
-     * @var integer
+     * @var int
      */
     private $promotionAmount;
 
     /**
      * 总价
-     * @var integer
+     * @var int
      */
     private $totalPrice;
 
     /**
      * 运费
-     * @var integer
+     * @var int
      */
     private $postage;
 
     /**
      * 现价
-     * @var integer
+     * @var int
      */
     private $currentPrice;
 
     /**
      * 原价
-     * @var integer
+     * @var int
      */
     private $originPrice;
 
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPromotionAmount(): integer
+    public function getPromotionAmount(): int
     {
         return $this->promotionAmount;
     }
 
     /**
-     * @param integer $promotionAmount
+     * @param int $promotionAmount
      */
-    public function setPromotionAmount(integer $promotionAmount): void
+    public function setPromotionAmount(int $promotionAmount): void
     {
         $this->promotionAmount = $promotionAmount;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getTotalPrice(): integer
+    public function getTotalPrice(): int
     {
         return $this->totalPrice;
     }
 
     /**
-     * @param integer $totalPrice
+     * @param int $totalPrice
      */
-    public function setTotalPrice(integer $totalPrice): void
+    public function setTotalPrice(int $totalPrice): void
     {
         $this->totalPrice = $totalPrice;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPostage(): integer
+    public function getPostage(): int
     {
         return $this->postage;
     }
 
     /**
-     * @param integer $postage
+     * @param int $postage
      */
-    public function setPostage(integer $postage): void
+    public function setPostage(int $postage): void
     {
         $this->postage = $postage;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getCurrentPrice(): integer
+    public function getCurrentPrice(): int
     {
         return $this->currentPrice;
     }
 
     /**
-     * @param integer $currentPrice
+     * @param int $currentPrice
      */
-    public function setCurrentPrice(integer $currentPrice): void
+    public function setCurrentPrice(int $currentPrice): void
     {
         $this->currentPrice = $currentPrice;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getOriginPrice(): integer
+    public function getOriginPrice(): int
     {
         return $this->originPrice;
     }
 
     /**
-     * @param integer $originPrice
+     * @param int $originPrice
      */
-    public function setOriginPrice(integer $originPrice): void
+    public function setOriginPrice(int $originPrice): void
     {
         $this->originPrice = $originPrice;
     }

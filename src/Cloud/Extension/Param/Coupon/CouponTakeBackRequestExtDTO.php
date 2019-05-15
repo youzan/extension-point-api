@@ -13,13 +13,13 @@ class CouponTakeBackRequestExtDTO implements \JsonSerializable {
 
     /**
      * 券组id
-     * @var integer
+     * @var int
      */
     private $couponGroupId;
 
     /**
      * 优惠券id
-     * @var integer
+     * @var int
      */
     private $couponId;
 
@@ -32,33 +32,33 @@ class CouponTakeBackRequestExtDTO implements \JsonSerializable {
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getCouponGroupId(): integer
+    public function getCouponGroupId(): int
     {
         return $this->couponGroupId;
     }
 
     /**
-     * @param integer $couponGroupId
+     * @param int $couponGroupId
      */
-    public function setCouponGroupId(integer $couponGroupId): void
+    public function setCouponGroupId(int $couponGroupId): void
     {
         $this->couponGroupId = $couponGroupId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getCouponId(): integer
+    public function getCouponId(): int
     {
         return $this->couponId;
     }
 
     /**
-     * @param integer $couponId
+     * @param int $couponId
      */
-    public function setCouponId(integer $couponId): void
+    public function setCouponId(int $couponId): void
     {
         $this->couponId = $couponId;
     }

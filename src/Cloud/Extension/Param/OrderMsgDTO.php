@@ -4,6 +4,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 
 use StdClass;
 use Com\Youzan\Cloud\Extension\Param\OrderItemMsgDTO;
+use DateTime;
 use Com\Youzan\Cloud\Extension\Param\LogisticsDTO;
 use Com\Youzan\Cloud\Extension\Param\PromotionDTO;
 use Com\Youzan\Cloud\Extension\Param\PriceDTO;
@@ -25,7 +26,7 @@ class OrderMsgDTO implements \JsonSerializable {
 
     /**
      * 关闭类型值
-     * @var integer
+     * @var int
      */
     private $closeTypeValue;
 
@@ -61,49 +62,49 @@ class OrderMsgDTO implements \JsonSerializable {
 
     /**
      * 超期时间
-     * @var date
+     * @var DateTime
      */
     private $expiredTime;
 
     /**
      * 订单取消时间
-     * @var date
+     * @var DateTime
      */
     private $closeTime;
 
     /**
      * 订单生效时间
-     * @var date
+     * @var DateTime
      */
     private $effectTime;
 
     /**
      * 订单更新时间
-     * @var date
+     * @var DateTime
      */
     private $updateTime;
 
     /**
      * 订单完成时间
-     * @var date
+     * @var DateTime
      */
     private $successTime;
 
     /**
      * 订单收货时间
-     * @var date
+     * @var DateTime
      */
     private $receiveTime;
 
     /**
      * 商家确认时间
-     * @var date
+     * @var DateTime
      */
     private $confirmTime;
 
     /**
      * 发货时间
-     * @var date
+     * @var DateTime
      */
     private $shipTime;
 
@@ -115,13 +116,13 @@ class OrderMsgDTO implements \JsonSerializable {
 
     /**
      * 订单支付时间
-     * @var date
+     * @var DateTime
      */
     private $payTime;
 
     /**
      * 订单创建时间
-     * @var date
+     * @var DateTime
      */
     private $createTime;
 
@@ -145,7 +146,7 @@ class OrderMsgDTO implements \JsonSerializable {
 
     /**
      * 阶段
-     * @var integer
+     * @var int
      */
     private $phase;
 
@@ -163,25 +164,25 @@ class OrderMsgDTO implements \JsonSerializable {
 
     /**
      * 销售模式
-     * @var integer
+     * @var int
      */
     private $salesModelType;
 
     /**
      * 活动类型
-     * @var integer
+     * @var int
      */
     private $activityType;
 
     /**
      * 支付类型
-     * @var integer
+     * @var int
      */
     private $payType;
 
     /**
      * 商品类型
-     * @var integer
+     * @var int
      */
     private $goodsType;
 
@@ -223,7 +224,7 @@ class OrderMsgDTO implements \JsonSerializable {
 
     /**
      * 合同id
-     * @var integer
+     * @var int
      */
     private $contractId;
 
@@ -247,7 +248,7 @@ class OrderMsgDTO implements \JsonSerializable {
 
     /**
      * 订单id(整数类型)
-     * @var integer
+     * @var int
      */
     private $id;
 
@@ -270,17 +271,17 @@ class OrderMsgDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getCloseTypeValue(): integer
+    public function getCloseTypeValue(): int
     {
         return $this->closeTypeValue;
     }
 
     /**
-     * @param integer $closeTypeValue
+     * @param int $closeTypeValue
      */
-    public function setCloseTypeValue(integer $closeTypeValue): void
+    public function setCloseTypeValue(int $closeTypeValue): void
     {
         $this->closeTypeValue = $closeTypeValue;
     }
@@ -366,129 +367,129 @@ class OrderMsgDTO implements \JsonSerializable {
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getExpiredTime(): date
+    public function getExpiredTime(): DateTime
     {
         return $this->expiredTime;
     }
 
     /**
-     * @param date $expiredTime
+     * @param DateTime $expiredTime
      */
-    public function setExpiredTime(date $expiredTime): void
+    public function setExpiredTime(DateTime $expiredTime): void
     {
         $this->expiredTime = $expiredTime;
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getCloseTime(): date
+    public function getCloseTime(): DateTime
     {
         return $this->closeTime;
     }
 
     /**
-     * @param date $closeTime
+     * @param DateTime $closeTime
      */
-    public function setCloseTime(date $closeTime): void
+    public function setCloseTime(DateTime $closeTime): void
     {
         $this->closeTime = $closeTime;
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getEffectTime(): date
+    public function getEffectTime(): DateTime
     {
         return $this->effectTime;
     }
 
     /**
-     * @param date $effectTime
+     * @param DateTime $effectTime
      */
-    public function setEffectTime(date $effectTime): void
+    public function setEffectTime(DateTime $effectTime): void
     {
         $this->effectTime = $effectTime;
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getUpdateTime(): date
+    public function getUpdateTime(): DateTime
     {
         return $this->updateTime;
     }
 
     /**
-     * @param date $updateTime
+     * @param DateTime $updateTime
      */
-    public function setUpdateTime(date $updateTime): void
+    public function setUpdateTime(DateTime $updateTime): void
     {
         $this->updateTime = $updateTime;
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getSuccessTime(): date
+    public function getSuccessTime(): DateTime
     {
         return $this->successTime;
     }
 
     /**
-     * @param date $successTime
+     * @param DateTime $successTime
      */
-    public function setSuccessTime(date $successTime): void
+    public function setSuccessTime(DateTime $successTime): void
     {
         $this->successTime = $successTime;
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getReceiveTime(): date
+    public function getReceiveTime(): DateTime
     {
         return $this->receiveTime;
     }
 
     /**
-     * @param date $receiveTime
+     * @param DateTime $receiveTime
      */
-    public function setReceiveTime(date $receiveTime): void
+    public function setReceiveTime(DateTime $receiveTime): void
     {
         $this->receiveTime = $receiveTime;
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getConfirmTime(): date
+    public function getConfirmTime(): DateTime
     {
         return $this->confirmTime;
     }
 
     /**
-     * @param date $confirmTime
+     * @param DateTime $confirmTime
      */
-    public function setConfirmTime(date $confirmTime): void
+    public function setConfirmTime(DateTime $confirmTime): void
     {
         $this->confirmTime = $confirmTime;
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getShipTime(): date
+    public function getShipTime(): DateTime
     {
         return $this->shipTime;
     }
 
     /**
-     * @param date $shipTime
+     * @param DateTime $shipTime
      */
-    public function setShipTime(date $shipTime): void
+    public function setShipTime(DateTime $shipTime): void
     {
         $this->shipTime = $shipTime;
     }
@@ -510,33 +511,33 @@ class OrderMsgDTO implements \JsonSerializable {
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getPayTime(): date
+    public function getPayTime(): DateTime
     {
         return $this->payTime;
     }
 
     /**
-     * @param date $payTime
+     * @param DateTime $payTime
      */
-    public function setPayTime(date $payTime): void
+    public function setPayTime(DateTime $payTime): void
     {
         $this->payTime = $payTime;
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getCreateTime(): date
+    public function getCreateTime(): DateTime
     {
         return $this->createTime;
     }
 
     /**
-     * @param date $createTime
+     * @param DateTime $createTime
      */
-    public function setCreateTime(date $createTime): void
+    public function setCreateTime(DateTime $createTime): void
     {
         $this->createTime = $createTime;
     }
@@ -590,17 +591,17 @@ class OrderMsgDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPhase(): integer
+    public function getPhase(): int
     {
         return $this->phase;
     }
 
     /**
-     * @param integer $phase
+     * @param int $phase
      */
-    public function setPhase(integer $phase): void
+    public function setPhase(int $phase): void
     {
         $this->phase = $phase;
     }
@@ -638,65 +639,65 @@ class OrderMsgDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getSalesModelType(): integer
+    public function getSalesModelType(): int
     {
         return $this->salesModelType;
     }
 
     /**
-     * @param integer $salesModelType
+     * @param int $salesModelType
      */
-    public function setSalesModelType(integer $salesModelType): void
+    public function setSalesModelType(int $salesModelType): void
     {
         $this->salesModelType = $salesModelType;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getActivityType(): integer
+    public function getActivityType(): int
     {
         return $this->activityType;
     }
 
     /**
-     * @param integer $activityType
+     * @param int $activityType
      */
-    public function setActivityType(integer $activityType): void
+    public function setActivityType(int $activityType): void
     {
         $this->activityType = $activityType;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPayType(): integer
+    public function getPayType(): int
     {
         return $this->payType;
     }
 
     /**
-     * @param integer $payType
+     * @param int $payType
      */
-    public function setPayType(integer $payType): void
+    public function setPayType(int $payType): void
     {
         $this->payType = $payType;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getGoodsType(): integer
+    public function getGoodsType(): int
     {
         return $this->goodsType;
     }
 
     /**
-     * @param integer $goodsType
+     * @param int $goodsType
      */
-    public function setGoodsType(integer $goodsType): void
+    public function setGoodsType(int $goodsType): void
     {
         $this->goodsType = $goodsType;
     }
@@ -798,17 +799,17 @@ class OrderMsgDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getContractId(): integer
+    public function getContractId(): int
     {
         return $this->contractId;
     }
 
     /**
-     * @param integer $contractId
+     * @param int $contractId
      */
-    public function setContractId(integer $contractId): void
+    public function setContractId(int $contractId): void
     {
         $this->contractId = $contractId;
     }
@@ -862,17 +863,17 @@ class OrderMsgDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getId(): integer
+    public function getId(): int
     {
         return $this->id;
     }
 
     /**
-     * @param integer $id
+     * @param int $id
      */
-    public function setId(integer $id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }

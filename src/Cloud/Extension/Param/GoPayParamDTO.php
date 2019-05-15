@@ -19,7 +19,7 @@ class GoPayParamDTO implements \JsonSerializable {
 
     /**
      * 粉丝类型
-     * @var integer
+     * @var int
      */
     private $fansType;
 
@@ -43,7 +43,7 @@ class GoPayParamDTO implements \JsonSerializable {
 
     /**
      * 付款总金额
-     * @var integer
+     * @var int
      */
     private $payAmount;
 
@@ -55,7 +55,7 @@ class GoPayParamDTO implements \JsonSerializable {
 
     /**
      * 卖家标识
-     * @var integer
+     * @var int
      */
     private $kdtId;
 
@@ -78,17 +78,17 @@ class GoPayParamDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getFansType(): integer
+    public function getFansType(): int
     {
         return $this->fansType;
     }
 
     /**
-     * @param integer $fansType
+     * @param int $fansType
      */
-    public function setFansType(integer $fansType): void
+    public function setFansType(int $fansType): void
     {
         $this->fansType = $fansType;
     }
@@ -142,17 +142,17 @@ class GoPayParamDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPayAmount(): integer
+    public function getPayAmount(): int
     {
         return $this->payAmount;
     }
 
     /**
-     * @param integer $payAmount
+     * @param int $payAmount
      */
-    public function setPayAmount(integer $payAmount): void
+    public function setPayAmount(int $payAmount): void
     {
         $this->payAmount = $payAmount;
     }
@@ -174,17 +174,17 @@ class GoPayParamDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getKdtId(): integer
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
 
     /**
-     * @param integer $kdtId
+     * @param int $kdtId
      */
-    public function setKdtId(integer $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

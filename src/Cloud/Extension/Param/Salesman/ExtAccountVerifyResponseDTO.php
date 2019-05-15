@@ -13,7 +13,7 @@ class ExtAccountVerifyResponseDTO implements \JsonSerializable {
 
     /**
      * 审核结果
-     * @var integer
+     * @var int
      */
     private $status;
 
@@ -26,17 +26,17 @@ class ExtAccountVerifyResponseDTO implements \JsonSerializable {
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getStatus(): integer
+    public function getStatus(): int
     {
         return $this->status;
     }
 
     /**
-     * @param integer $status
+     * @param int $status
      */
-    public function setStatus(integer $status): void
+    public function setStatus(int $status): void
     {
         $this->status = $status;
     }

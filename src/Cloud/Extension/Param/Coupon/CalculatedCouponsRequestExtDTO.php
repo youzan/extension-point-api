@@ -20,13 +20,13 @@ class CalculatedCouponsRequestExtDTO implements \JsonSerializable {
 
     /**
      * 订单邮费
-     * @var integer
+     * @var int
      */
     private $postage;
 
     /**
      * 订单商品金额
-     * @var integer
+     * @var int
      */
     private $pay;
 
@@ -38,7 +38,7 @@ class CalculatedCouponsRequestExtDTO implements \JsonSerializable {
 
     /**
      * 是否可叠加优惠资产
-     * @var boolean
+     * @var bool
      */
     private $overlayAssets;
 
@@ -67,33 +67,33 @@ class CalculatedCouponsRequestExtDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPostage(): integer
+    public function getPostage(): int
     {
         return $this->postage;
     }
 
     /**
-     * @param integer $postage
+     * @param int $postage
      */
-    public function setPostage(integer $postage): void
+    public function setPostage(int $postage): void
     {
         $this->postage = $postage;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPay(): integer
+    public function getPay(): int
     {
         return $this->pay;
     }
 
     /**
-     * @param integer $pay
+     * @param int $pay
      */
-    public function setPay(integer $pay): void
+    public function setPay(int $pay): void
     {
         $this->pay = $pay;
     }
@@ -115,17 +115,17 @@ class CalculatedCouponsRequestExtDTO implements \JsonSerializable {
     }
 
     /**
-     * @return boolean
+     * @return bool
      */
-    public function getOverlayAssets(): boolean
+    public function getOverlayAssets(): bool
     {
         return $this->overlayAssets;
     }
 
     /**
-     * @param boolean $overlayAssets
+     * @param bool $overlayAssets
      */
-    public function setOverlayAssets(boolean $overlayAssets): void
+    public function setOverlayAssets(bool $overlayAssets): void
     {
         $this->overlayAssets = $overlayAssets;
     }

@@ -19,7 +19,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
 
     /**
      * kdtId
-     * @var integer
+     * @var int
      */
     private $kdtId;
 
@@ -49,7 +49,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
 
     /**
      * 退款返回编号
-     * @var integer
+     * @var int
      */
     private $refundResultCode;
 
@@ -61,7 +61,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
 
     /**
      * 退款金额（分）
-     * @var integer
+     * @var int
      */
     private $refundFee;
 
@@ -90,17 +90,17 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getKdtId(): integer
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
 
     /**
-     * @param integer $kdtId
+     * @param int $kdtId
      */
-    public function setKdtId(integer $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -170,17 +170,17 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getRefundResultCode(): integer
+    public function getRefundResultCode(): int
     {
         return $this->refundResultCode;
     }
 
     /**
-     * @param integer $refundResultCode
+     * @param int $refundResultCode
      */
-    public function setRefundResultCode(integer $refundResultCode): void
+    public function setRefundResultCode(int $refundResultCode): void
     {
         $this->refundResultCode = $refundResultCode;
     }
@@ -202,17 +202,17 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getRefundFee(): integer
+    public function getRefundFee(): int
     {
         return $this->refundFee;
     }
 
     /**
-     * @param integer $refundFee
+     * @param int $refundFee
      */
-    public function setRefundFee(integer $refundFee): void
+    public function setRefundFee(int $refundFee): void
     {
         $this->refundFee = $refundFee;
     }

@@ -13,19 +13,19 @@ class InvalidOrderItemMsgDTO implements \JsonSerializable {
 
     /**
      * 商品类型
-     * @var integer
+     * @var int
      */
     private $goodsType;
 
     /**
      * 数量
-     * @var integer
+     * @var int
      */
     private $num;
 
     /**
      * 订单项id
-     * @var integer
+     * @var int
      */
     private $orderItemId;
 
@@ -38,49 +38,49 @@ class InvalidOrderItemMsgDTO implements \JsonSerializable {
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getGoodsType(): integer
+    public function getGoodsType(): int
     {
         return $this->goodsType;
     }
 
     /**
-     * @param integer $goodsType
+     * @param int $goodsType
      */
-    public function setGoodsType(integer $goodsType): void
+    public function setGoodsType(int $goodsType): void
     {
         $this->goodsType = $goodsType;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getNum(): integer
+    public function getNum(): int
     {
         return $this->num;
     }
 
     /**
-     * @param integer $num
+     * @param int $num
      */
-    public function setNum(integer $num): void
+    public function setNum(int $num): void
     {
         $this->num = $num;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getOrderItemId(): integer
+    public function getOrderItemId(): int
     {
         return $this->orderItemId;
     }
 
     /**
-     * @param integer $orderItemId
+     * @param int $orderItemId
      */
-    public function setOrderItemId(integer $orderItemId): void
+    public function setOrderItemId(int $orderItemId): void
     {
         $this->orderItemId = $orderItemId;
     }

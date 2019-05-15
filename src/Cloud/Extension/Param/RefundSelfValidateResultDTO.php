@@ -19,7 +19,7 @@ class RefundSelfValidateResultDTO implements \JsonSerializable {
 
     /**
      * 校验结果
-     * @var boolean
+     * @var bool
      */
     private $validateResult;
 
@@ -42,17 +42,17 @@ class RefundSelfValidateResultDTO implements \JsonSerializable {
     }
 
     /**
-     * @return boolean
+     * @return bool
      */
-    public function getValidateResult(): boolean
+    public function getValidateResult(): bool
     {
         return $this->validateResult;
     }
 
     /**
-     * @param boolean $validateResult
+     * @param bool $validateResult
      */
-    public function setValidateResult(boolean $validateResult): void
+    public function setValidateResult(bool $validateResult): void
     {
         $this->validateResult = $validateResult;
     }

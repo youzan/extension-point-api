@@ -14,13 +14,13 @@ class CouponFreezeRequestExtDTO implements \JsonSerializable {
 
     /**
      * 卡券id
-     * @var integer
+     * @var int
      */
     private $couponId;
 
     /**
      * 是否可叠加优惠资产
-     * @var boolean
+     * @var bool
      */
     private $overlayAssets;
 
@@ -32,19 +32,19 @@ class CouponFreezeRequestExtDTO implements \JsonSerializable {
 
     /**
      * 订单邮费
-     * @var integer
+     * @var int
      */
     private $postage;
 
     /**
      * 订单商品金额
-     * @var integer
+     * @var int
      */
     private $pay;
 
     /**
      * 渠道类型
-     * @var integer
+     * @var int
      */
     private $channelType;
 
@@ -57,33 +57,33 @@ class CouponFreezeRequestExtDTO implements \JsonSerializable {
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getCouponId(): integer
+    public function getCouponId(): int
     {
         return $this->couponId;
     }
 
     /**
-     * @param integer $couponId
+     * @param int $couponId
      */
-    public function setCouponId(integer $couponId): void
+    public function setCouponId(int $couponId): void
     {
         $this->couponId = $couponId;
     }
 
     /**
-     * @return boolean
+     * @return bool
      */
-    public function getOverlayAssets(): boolean
+    public function getOverlayAssets(): bool
     {
         return $this->overlayAssets;
     }
 
     /**
-     * @param boolean $overlayAssets
+     * @param bool $overlayAssets
      */
-    public function setOverlayAssets(boolean $overlayAssets): void
+    public function setOverlayAssets(bool $overlayAssets): void
     {
         $this->overlayAssets = $overlayAssets;
     }
@@ -105,49 +105,49 @@ class CouponFreezeRequestExtDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPostage(): integer
+    public function getPostage(): int
     {
         return $this->postage;
     }
 
     /**
-     * @param integer $postage
+     * @param int $postage
      */
-    public function setPostage(integer $postage): void
+    public function setPostage(int $postage): void
     {
         $this->postage = $postage;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPay(): integer
+    public function getPay(): int
     {
         return $this->pay;
     }
 
     /**
-     * @param integer $pay
+     * @param int $pay
      */
-    public function setPay(integer $pay): void
+    public function setPay(int $pay): void
     {
         $this->pay = $pay;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getChannelType(): integer
+    public function getChannelType(): int
     {
         return $this->channelType;
     }
 
     /**
-     * @param integer $channelType
+     * @param int $channelType
      */
-    public function setChannelType(integer $channelType): void
+    public function setChannelType(int $channelType): void
     {
         $this->channelType = $channelType;
     }

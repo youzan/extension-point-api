@@ -2,6 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Coupon;
 
+use DateTime;
 use Com\Youzan\Cloud\Extension\Param\Coupon\CustomerIdentityDTO;
 
 /**
@@ -13,19 +14,19 @@ class CouponUsedInfoExtDTO implements \JsonSerializable {
 
     /**
      * 卡券使用信息id
-     * @var integer
+     * @var int
      */
     private $id;
 
     /**
      * 使用时间
-     * @var date
+     * @var DateTime
      */
     private $usedAt;
 
     /**
      * 实际优惠金额
-     * @var integer
+     * @var int
      */
     private $realPreferentialValue;
 
@@ -44,49 +45,49 @@ class CouponUsedInfoExtDTO implements \JsonSerializable {
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getId(): integer
+    public function getId(): int
     {
         return $this->id;
     }
 
     /**
-     * @param integer $id
+     * @param int $id
      */
-    public function setId(integer $id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getUsedAt(): date
+    public function getUsedAt(): DateTime
     {
         return $this->usedAt;
     }
 
     /**
-     * @param date $usedAt
+     * @param DateTime $usedAt
      */
-    public function setUsedAt(date $usedAt): void
+    public function setUsedAt(DateTime $usedAt): void
     {
         $this->usedAt = $usedAt;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getRealPreferentialValue(): integer
+    public function getRealPreferentialValue(): int
     {
         return $this->realPreferentialValue;
     }
 
     /**
-     * @param integer $realPreferentialValue
+     * @param int $realPreferentialValue
      */
-    public function setRealPreferentialValue(integer $realPreferentialValue): void
+    public function setRealPreferentialValue(int $realPreferentialValue): void
     {
         $this->realPreferentialValue = $realPreferentialValue;
     }

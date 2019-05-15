@@ -13,7 +13,7 @@ class ExtCustomerPointsLogPaginationDTO implements \JsonSerializable {
 
     /**
      * 积分变动总数
-     * @var integer
+     * @var int
      */
     private $total;
 
@@ -26,17 +26,17 @@ class ExtCustomerPointsLogPaginationDTO implements \JsonSerializable {
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getTotal(): integer
+    public function getTotal(): int
     {
         return $this->total;
     }
 
     /**
-     * @param integer $total
+     * @param int $total
      */
-    public function setTotal(integer $total): void
+    public function setTotal(int $total): void
     {
         $this->total = $total;
     }

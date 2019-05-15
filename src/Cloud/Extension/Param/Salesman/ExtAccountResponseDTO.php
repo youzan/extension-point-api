@@ -13,24 +13,24 @@ class ExtAccountResponseDTO implements \JsonSerializable {
 
     /**
      * 
-     * @var boolean
+     * @var bool
      */
     private $salesman;
 
 
 
     /**
-     * @return boolean
+     * @return bool
      */
-    public function getSalesman(): boolean
+    public function getSalesman(): bool
     {
         return $this->salesman;
     }
 
     /**
-     * @param boolean $salesman
+     * @param bool $salesman
      */
-    public function setSalesman(boolean $salesman): void
+    public function setSalesman(bool $salesman): void
     {
         $this->salesman = $salesman;
     }

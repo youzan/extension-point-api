@@ -19,7 +19,7 @@ class ExtraPromotionCalcResultDTO implements \JsonSerializable {
 
     /**
      * 总体优惠金额(单位分)
-     * @var integer
+     * @var int
      */
     private $totalPromotionAmount;
 
@@ -48,17 +48,17 @@ class ExtraPromotionCalcResultDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getTotalPromotionAmount(): integer
+    public function getTotalPromotionAmount(): int
     {
         return $this->totalPromotionAmount;
     }
 
     /**
-     * @param integer $totalPromotionAmount
+     * @param int $totalPromotionAmount
      */
-    public function setTotalPromotionAmount(integer $totalPromotionAmount): void
+    public function setTotalPromotionAmount(int $totalPromotionAmount): void
     {
         $this->totalPromotionAmount = $totalPromotionAmount;
     }

@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param;
 
-
+use DateTime;
 
 /**
  * 优惠券组信息
@@ -13,7 +13,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
 
     /**
      * 券组id
-     * @var integer
+     * @var int
      */
     private $id;
 
@@ -31,78 +31,78 @@ class CouponGroupBaseExt implements \JsonSerializable {
 
     /**
      * 优惠金额门槛
-     * @var integer
+     * @var int
      */
     private $priceCondition;
 
     /**
      * 优惠类型：1.金额 2.折扣
-     * @var integer
+     * @var int
      */
     private $preferentialType;
 
     /**
      * 优惠金额或折扣值
-     * @var integer
+     * @var int
      */
     private $preferentialValue;
 
     /**
      * 有效开始时间
-     * @var date
+     * @var DateTime
      */
     private $beginAt;
 
     /**
      * 有效结束时间
-     * @var date
+     * @var DateTime
      */
     private $endAt;
 
     /**
      * 参与的商品类型限制: 1: 不限制 2: 限制
-     * @var integer
+     * @var int
      */
     private $participateGoodsType;
 
     /**
      * 券组大小
-     * @var integer
+     * @var int
      */
     private $size;
 
     /**
      * 券组库存
-     * @var integer
+     * @var int
      */
     private $stockSize;
 
     /**
      * 状态 0: 创建成功 1: 已停止
-     * @var integer
+     * @var int
      */
     private $status;
 
     /**
      * 创建时间
-     * @var date
+     * @var DateTime
      */
     private $createdAt;
 
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getId(): integer
+    public function getId(): int
     {
         return $this->id;
     }
 
     /**
-     * @param integer $id
+     * @param int $id
      */
-    public function setId(integer $id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
@@ -140,161 +140,161 @@ class CouponGroupBaseExt implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPriceCondition(): integer
+    public function getPriceCondition(): int
     {
         return $this->priceCondition;
     }
 
     /**
-     * @param integer $priceCondition
+     * @param int $priceCondition
      */
-    public function setPriceCondition(integer $priceCondition): void
+    public function setPriceCondition(int $priceCondition): void
     {
         $this->priceCondition = $priceCondition;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPreferentialType(): integer
+    public function getPreferentialType(): int
     {
         return $this->preferentialType;
     }
 
     /**
-     * @param integer $preferentialType
+     * @param int $preferentialType
      */
-    public function setPreferentialType(integer $preferentialType): void
+    public function setPreferentialType(int $preferentialType): void
     {
         $this->preferentialType = $preferentialType;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPreferentialValue(): integer
+    public function getPreferentialValue(): int
     {
         return $this->preferentialValue;
     }
 
     /**
-     * @param integer $preferentialValue
+     * @param int $preferentialValue
      */
-    public function setPreferentialValue(integer $preferentialValue): void
+    public function setPreferentialValue(int $preferentialValue): void
     {
         $this->preferentialValue = $preferentialValue;
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getBeginAt(): date
+    public function getBeginAt(): DateTime
     {
         return $this->beginAt;
     }
 
     /**
-     * @param date $beginAt
+     * @param DateTime $beginAt
      */
-    public function setBeginAt(date $beginAt): void
+    public function setBeginAt(DateTime $beginAt): void
     {
         $this->beginAt = $beginAt;
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getEndAt(): date
+    public function getEndAt(): DateTime
     {
         return $this->endAt;
     }
 
     /**
-     * @param date $endAt
+     * @param DateTime $endAt
      */
-    public function setEndAt(date $endAt): void
+    public function setEndAt(DateTime $endAt): void
     {
         $this->endAt = $endAt;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getParticipateGoodsType(): integer
+    public function getParticipateGoodsType(): int
     {
         return $this->participateGoodsType;
     }
 
     /**
-     * @param integer $participateGoodsType
+     * @param int $participateGoodsType
      */
-    public function setParticipateGoodsType(integer $participateGoodsType): void
+    public function setParticipateGoodsType(int $participateGoodsType): void
     {
         $this->participateGoodsType = $participateGoodsType;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getSize(): integer
+    public function getSize(): int
     {
         return $this->size;
     }
 
     /**
-     * @param integer $size
+     * @param int $size
      */
-    public function setSize(integer $size): void
+    public function setSize(int $size): void
     {
         $this->size = $size;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getStockSize(): integer
+    public function getStockSize(): int
     {
         return $this->stockSize;
     }
 
     /**
-     * @param integer $stockSize
+     * @param int $stockSize
      */
-    public function setStockSize(integer $stockSize): void
+    public function setStockSize(int $stockSize): void
     {
         $this->stockSize = $stockSize;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getStatus(): integer
+    public function getStatus(): int
     {
         return $this->status;
     }
 
     /**
-     * @param integer $status
+     * @param int $status
      */
-    public function setStatus(integer $status): void
+    public function setStatus(int $status): void
     {
         $this->status = $status;
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getCreatedAt(): date
+    public function getCreatedAt(): DateTime
     {
         return $this->createdAt;
     }
 
     /**
-     * @param date $createdAt
+     * @param DateTime $createdAt
      */
-    public function setCreatedAt(date $createdAt): void
+    public function setCreatedAt(DateTime $createdAt): void
     {
         $this->createdAt = $createdAt;
     }

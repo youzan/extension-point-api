@@ -13,13 +13,13 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
 
     /**
      * 单页条数
-     * @var integer
+     * @var int
      */
     private $pageSize;
 
     /**
      * 页码
-     * @var integer
+     * @var int
      */
     private $page;
 
@@ -32,33 +32,33 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPageSize(): integer
+    public function getPageSize(): int
     {
         return $this->pageSize;
     }
 
     /**
-     * @param integer $pageSize
+     * @param int $pageSize
      */
-    public function setPageSize(integer $pageSize): void
+    public function setPageSize(int $pageSize): void
     {
         $this->pageSize = $pageSize;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPage(): integer
+    public function getPage(): int
     {
         return $this->page;
     }
 
     /**
-     * @param integer $page
+     * @param int $page
      */
-    public function setPage(integer $page): void
+    public function setPage(int $page): void
     {
         $this->page = $page;
     }

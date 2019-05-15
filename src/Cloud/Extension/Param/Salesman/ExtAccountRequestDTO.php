@@ -13,68 +13,68 @@ class ExtAccountRequestDTO implements \JsonSerializable {
 
     /**
      * 分销员uid
-     * @var integer
+     * @var int
      */
     private $buyerId;
 
     /**
      * 邀请方buyerid
-     * @var integer
+     * @var int
      */
     private $fromBuyerId;
 
     /**
      * 店铺id 上云用于判断业务身份
-     * @var integer
+     * @var int
      */
     private $kdtId;
 
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getBuyerId(): integer
+    public function getBuyerId(): int
     {
         return $this->buyerId;
     }
 
     /**
-     * @param integer $buyerId
+     * @param int $buyerId
      */
-    public function setBuyerId(integer $buyerId): void
+    public function setBuyerId(int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getFromBuyerId(): integer
+    public function getFromBuyerId(): int
     {
         return $this->fromBuyerId;
     }
 
     /**
-     * @param integer $fromBuyerId
+     * @param int $fromBuyerId
      */
-    public function setFromBuyerId(integer $fromBuyerId): void
+    public function setFromBuyerId(int $fromBuyerId): void
     {
         $this->fromBuyerId = $fromBuyerId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getKdtId(): integer
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
 
     /**
-     * @param integer $kdtId
+     * @param int $kdtId
      */
-    public function setKdtId(integer $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

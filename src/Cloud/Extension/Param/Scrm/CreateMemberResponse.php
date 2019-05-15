@@ -13,24 +13,24 @@ class CreateMemberResponse implements \JsonSerializable {
 
     /**
      * 
-     * @var boolean
+     * @var bool
      */
     private $success;
 
 
 
     /**
-     * @return boolean
+     * @return bool
      */
-    public function getSuccess(): boolean
+    public function getSuccess(): bool
     {
         return $this->success;
     }
 
     /**
-     * @param boolean $success
+     * @param bool $success
      */
-    public function setSuccess(boolean $success): void
+    public function setSuccess(bool $success): void
     {
         $this->success = $success;
     }

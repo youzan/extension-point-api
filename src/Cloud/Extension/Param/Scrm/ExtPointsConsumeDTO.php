@@ -20,7 +20,7 @@ class ExtPointsConsumeDTO implements \JsonSerializable {
 
     /**
      * 积分消耗来源
-     * @var integer
+     * @var int
      */
     private $consumeSource;
 
@@ -61,17 +61,17 @@ class ExtPointsConsumeDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getConsumeSource(): integer
+    public function getConsumeSource(): int
     {
         return $this->consumeSource;
     }
 
     /**
-     * @param integer $consumeSource
+     * @param int $consumeSource
      */
-    public function setConsumeSource(integer $consumeSource): void
+    public function setConsumeSource(int $consumeSource): void
     {
         $this->consumeSource = $consumeSource;
     }

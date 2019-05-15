@@ -2,6 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Pay;
 
+use DateTime;
 use StdClass;
 
 /**
@@ -25,13 +26,13 @@ class ValueCardPayResponseDTO implements \JsonSerializable {
 
     /**
      * 店铺ID
-     * @var integer
+     * @var int
      */
     private $kdtId;
 
     /**
      * 有赞用户ID
-     * @var integer
+     * @var int
      */
     private $buyerId;
 
@@ -49,13 +50,13 @@ class ValueCardPayResponseDTO implements \JsonSerializable {
 
     /**
      * 支付完成时间
-     * @var date
+     * @var DateTime
      */
     private $paymentDt;
 
     /**
      * 实际支付金额
-     * @var integer
+     * @var int
      */
     private $payAmount;
 
@@ -112,33 +113,33 @@ class ValueCardPayResponseDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getKdtId(): integer
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
 
     /**
-     * @param integer $kdtId
+     * @param int $kdtId
      */
-    public function setKdtId(integer $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getBuyerId(): integer
+    public function getBuyerId(): int
     {
         return $this->buyerId;
     }
 
     /**
-     * @param integer $buyerId
+     * @param int $buyerId
      */
-    public function setBuyerId(integer $buyerId): void
+    public function setBuyerId(int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
@@ -176,33 +177,33 @@ class ValueCardPayResponseDTO implements \JsonSerializable {
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getPaymentDt(): date
+    public function getPaymentDt(): DateTime
     {
         return $this->paymentDt;
     }
 
     /**
-     * @param date $paymentDt
+     * @param DateTime $paymentDt
      */
-    public function setPaymentDt(date $paymentDt): void
+    public function setPaymentDt(DateTime $paymentDt): void
     {
         $this->paymentDt = $paymentDt;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPayAmount(): integer
+    public function getPayAmount(): int
     {
         return $this->payAmount;
     }
 
     /**
-     * @param integer $payAmount
+     * @param int $payAmount
      */
-    public function setPayAmount(integer $payAmount): void
+    public function setPayAmount(int $payAmount): void
     {
         $this->payAmount = $payAmount;
     }

@@ -19,7 +19,7 @@ class BizTestResponse implements \JsonSerializable {
 
     /**
      * 请求id
-     * @var integer
+     * @var int
      */
     private $requestId;
 
@@ -42,17 +42,17 @@ class BizTestResponse implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getRequestId(): integer
+    public function getRequestId(): int
     {
         return $this->requestId;
     }
 
     /**
-     * @param integer $requestId
+     * @param int $requestId
      */
-    public function setRequestId(integer $requestId): void
+    public function setRequestId(int $requestId): void
     {
         $this->requestId = $requestId;
     }

@@ -31,19 +31,19 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
 
     /**
      * 退款金额
-     * @var integer
+     * @var int
      */
     private $refundFee;
 
     /**
      * 支付渠道
-     * @var integer
+     * @var int
      */
     private $payWay;
 
     /**
      * 退款资金状态（0.退款中 1.退款失败 2.退款成功）
-     * @var integer
+     * @var int
      */
     private $status;
 
@@ -61,19 +61,19 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
 
     /**
      * 创建时间
-     * @var integer
+     * @var int
      */
     private $createTime;
 
     /**
      * 更新时间
-     * @var integer
+     * @var int
      */
     private $updateTime;
 
     /**
      * 退款资金流类型（1.标记退款 2.店铺余额转账退款 3.支付渠道退款）
-     * @var integer
+     * @var int
      */
     private $type;
 
@@ -85,13 +85,13 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
 
     /**
      * 退款阶段（1.售中 2.售后）
-     * @var integer
+     * @var int
      */
     private $phaseId;
 
     /**
      * 买家id
-     * @var integer
+     * @var int
      */
     private $buyerId;
 
@@ -146,49 +146,49 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getRefundFee(): integer
+    public function getRefundFee(): int
     {
         return $this->refundFee;
     }
 
     /**
-     * @param integer $refundFee
+     * @param int $refundFee
      */
-    public function setRefundFee(integer $refundFee): void
+    public function setRefundFee(int $refundFee): void
     {
         $this->refundFee = $refundFee;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPayWay(): integer
+    public function getPayWay(): int
     {
         return $this->payWay;
     }
 
     /**
-     * @param integer $payWay
+     * @param int $payWay
      */
-    public function setPayWay(integer $payWay): void
+    public function setPayWay(int $payWay): void
     {
         $this->payWay = $payWay;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getStatus(): integer
+    public function getStatus(): int
     {
         return $this->status;
     }
 
     /**
-     * @param integer $status
+     * @param int $status
      */
-    public function setStatus(integer $status): void
+    public function setStatus(int $status): void
     {
         $this->status = $status;
     }
@@ -226,49 +226,49 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getCreateTime(): integer
+    public function getCreateTime(): int
     {
         return $this->createTime;
     }
 
     /**
-     * @param integer $createTime
+     * @param int $createTime
      */
-    public function setCreateTime(integer $createTime): void
+    public function setCreateTime(int $createTime): void
     {
         $this->createTime = $createTime;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getUpdateTime(): integer
+    public function getUpdateTime(): int
     {
         return $this->updateTime;
     }
 
     /**
-     * @param integer $updateTime
+     * @param int $updateTime
      */
-    public function setUpdateTime(integer $updateTime): void
+    public function setUpdateTime(int $updateTime): void
     {
         $this->updateTime = $updateTime;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getType(): integer
+    public function getType(): int
     {
         return $this->type;
     }
 
     /**
-     * @param integer $type
+     * @param int $type
      */
-    public function setType(integer $type): void
+    public function setType(int $type): void
     {
         $this->type = $type;
     }
@@ -290,33 +290,33 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPhaseId(): integer
+    public function getPhaseId(): int
     {
         return $this->phaseId;
     }
 
     /**
-     * @param integer $phaseId
+     * @param int $phaseId
      */
-    public function setPhaseId(integer $phaseId): void
+    public function setPhaseId(int $phaseId): void
     {
         $this->phaseId = $phaseId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getBuyerId(): integer
+    public function getBuyerId(): int
     {
         return $this->buyerId;
     }
 
     /**
-     * @param integer $buyerId
+     * @param int $buyerId
      */
-    public function setBuyerId(integer $buyerId): void
+    public function setBuyerId(int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }

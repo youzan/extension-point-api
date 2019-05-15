@@ -19,25 +19,25 @@ class PromotionInfoExtDTO implements \JsonSerializable {
 
     /**
      * 促销活动id
-     * @var integer
+     * @var int
      */
     private $promotionId;
 
     /**
      * 应用这项活动之前的应付金额，单位分
-     * @var integer
+     * @var int
      */
     private $prePay;
 
     /**
      * 应用这项活动之后的应付金额，单位分
-     * @var integer
+     * @var int
      */
     private $newPay;
 
     /**
      * 活动的优惠金额，单位分
-     * @var integer
+     * @var int
      */
     private $decrease;
 
@@ -60,65 +60,65 @@ class PromotionInfoExtDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPromotionId(): integer
+    public function getPromotionId(): int
     {
         return $this->promotionId;
     }
 
     /**
-     * @param integer $promotionId
+     * @param int $promotionId
      */
-    public function setPromotionId(integer $promotionId): void
+    public function setPromotionId(int $promotionId): void
     {
         $this->promotionId = $promotionId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPrePay(): integer
+    public function getPrePay(): int
     {
         return $this->prePay;
     }
 
     /**
-     * @param integer $prePay
+     * @param int $prePay
      */
-    public function setPrePay(integer $prePay): void
+    public function setPrePay(int $prePay): void
     {
         $this->prePay = $prePay;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getNewPay(): integer
+    public function getNewPay(): int
     {
         return $this->newPay;
     }
 
     /**
-     * @param integer $newPay
+     * @param int $newPay
      */
-    public function setNewPay(integer $newPay): void
+    public function setNewPay(int $newPay): void
     {
         $this->newPay = $newPay;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getDecrease(): integer
+    public function getDecrease(): int
     {
         return $this->decrease;
     }
 
     /**
-     * @param integer $decrease
+     * @param int $decrease
      */
-    public function setDecrease(integer $decrease): void
+    public function setDecrease(int $decrease): void
     {
         $this->decrease = $decrease;
     }

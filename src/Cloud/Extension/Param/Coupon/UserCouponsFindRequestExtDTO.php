@@ -19,25 +19,25 @@ class UserCouponsFindRequestExtDTO implements \JsonSerializable {
 
     /**
      * 1. 生效2. 已使用3. 已过期4. 已失效
-     * @var integer
+     * @var int
      */
     private $status;
 
     /**
      * 券类型 0：优惠券 1：优惠码
-     * @var integer
+     * @var int
      */
     private $couponType;
 
     /**
      * 页数
-     * @var integer
+     * @var int
      */
     private $pageNo;
 
     /**
      * 单页大小
-     * @var integer
+     * @var int
      */
     private $pageSize;
 
@@ -60,65 +60,65 @@ class UserCouponsFindRequestExtDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getStatus(): integer
+    public function getStatus(): int
     {
         return $this->status;
     }
 
     /**
-     * @param integer $status
+     * @param int $status
      */
-    public function setStatus(integer $status): void
+    public function setStatus(int $status): void
     {
         $this->status = $status;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getCouponType(): integer
+    public function getCouponType(): int
     {
         return $this->couponType;
     }
 
     /**
-     * @param integer $couponType
+     * @param int $couponType
      */
-    public function setCouponType(integer $couponType): void
+    public function setCouponType(int $couponType): void
     {
         $this->couponType = $couponType;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPageNo(): integer
+    public function getPageNo(): int
     {
         return $this->pageNo;
     }
 
     /**
-     * @param integer $pageNo
+     * @param int $pageNo
      */
-    public function setPageNo(integer $pageNo): void
+    public function setPageNo(int $pageNo): void
     {
         $this->pageNo = $pageNo;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPageSize(): integer
+    public function getPageSize(): int
     {
         return $this->pageSize;
     }
 
     /**
-     * @param integer $pageSize
+     * @param int $pageSize
      */
-    public function setPageSize(integer $pageSize): void
+    public function setPageSize(int $pageSize): void
     {
         $this->pageSize = $pageSize;
     }

@@ -13,13 +13,13 @@ class ItemDTO implements \JsonSerializable {
 
     /**
      * id
-     * @var integer
+     * @var int
      */
     private $id;
 
     /**
      * 纠纷id，预留字段
-     * @var integer
+     * @var int
      */
     private $disputeId;
 
@@ -37,70 +37,70 @@ class ItemDTO implements \JsonSerializable {
 
     /**
      * 商品id
-     * @var integer
+     * @var int
      */
     private $itemId;
 
     /**
      * 退款金额
-     * @var integer
+     * @var int
      */
     private $refundFee;
 
     /**
      * 邮费
-     * @var integer
+     * @var int
      */
     private $postage;
 
     /**
      * 退款单个商品数量
-     * @var integer
+     * @var int
      */
     private $num;
 
     /**
      * 创建时间
-     * @var integer
+     * @var int
      */
     private $createTime;
 
     /**
      * 更新时间
-     * @var integer
+     * @var int
      */
     private $updateTime;
 
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getId(): integer
+    public function getId(): int
     {
         return $this->id;
     }
 
     /**
-     * @param integer $id
+     * @param int $id
      */
-    public function setId(integer $id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getDisputeId(): integer
+    public function getDisputeId(): int
     {
         return $this->disputeId;
     }
 
     /**
-     * @param integer $disputeId
+     * @param int $disputeId
      */
-    public function setDisputeId(integer $disputeId): void
+    public function setDisputeId(int $disputeId): void
     {
         $this->disputeId = $disputeId;
     }
@@ -138,97 +138,97 @@ class ItemDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getItemId(): integer
+    public function getItemId(): int
     {
         return $this->itemId;
     }
 
     /**
-     * @param integer $itemId
+     * @param int $itemId
      */
-    public function setItemId(integer $itemId): void
+    public function setItemId(int $itemId): void
     {
         $this->itemId = $itemId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getRefundFee(): integer
+    public function getRefundFee(): int
     {
         return $this->refundFee;
     }
 
     /**
-     * @param integer $refundFee
+     * @param int $refundFee
      */
-    public function setRefundFee(integer $refundFee): void
+    public function setRefundFee(int $refundFee): void
     {
         $this->refundFee = $refundFee;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPostage(): integer
+    public function getPostage(): int
     {
         return $this->postage;
     }
 
     /**
-     * @param integer $postage
+     * @param int $postage
      */
-    public function setPostage(integer $postage): void
+    public function setPostage(int $postage): void
     {
         $this->postage = $postage;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getNum(): integer
+    public function getNum(): int
     {
         return $this->num;
     }
 
     /**
-     * @param integer $num
+     * @param int $num
      */
-    public function setNum(integer $num): void
+    public function setNum(int $num): void
     {
         $this->num = $num;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getCreateTime(): integer
+    public function getCreateTime(): int
     {
         return $this->createTime;
     }
 
     /**
-     * @param integer $createTime
+     * @param int $createTime
      */
-    public function setCreateTime(integer $createTime): void
+    public function setCreateTime(int $createTime): void
     {
         $this->createTime = $createTime;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getUpdateTime(): integer
+    public function getUpdateTime(): int
     {
         return $this->updateTime;
     }
 
     /**
-     * @param integer $updateTime
+     * @param int $updateTime
      */
-    public function setUpdateTime(integer $updateTime): void
+    public function setUpdateTime(int $updateTime): void
     {
         $this->updateTime = $updateTime;
     }

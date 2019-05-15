@@ -19,7 +19,7 @@ class ExtCustomerPointsLogDTO implements \JsonSerializable {
 
     /**
      * 积分变动时间
-     * @var integer
+     * @var int
      */
     private $createdAt;
 
@@ -37,7 +37,7 @@ class ExtCustomerPointsLogDTO implements \JsonSerializable {
 
     /**
      * 积分变动值
-     * @var integer
+     * @var int
      */
     private $amount;
 
@@ -60,17 +60,17 @@ class ExtCustomerPointsLogDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getCreatedAt(): integer
+    public function getCreatedAt(): int
     {
         return $this->createdAt;
     }
 
     /**
-     * @param integer $createdAt
+     * @param int $createdAt
      */
-    public function setCreatedAt(integer $createdAt): void
+    public function setCreatedAt(int $createdAt): void
     {
         $this->createdAt = $createdAt;
     }
@@ -108,17 +108,17 @@ class ExtCustomerPointsLogDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getAmount(): integer
+    public function getAmount(): int
     {
         return $this->amount;
     }
 
     /**
-     * @param integer $amount
+     * @param int $amount
      */
-    public function setAmount(integer $amount): void
+    public function setAmount(int $amount): void
     {
         $this->amount = $amount;
     }

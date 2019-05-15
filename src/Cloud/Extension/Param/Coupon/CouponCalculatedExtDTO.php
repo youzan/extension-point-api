@@ -13,13 +13,13 @@ class CouponCalculatedExtDTO implements \JsonSerializable {
 
     /**
      * 
-     * @var boolean
+     * @var bool
      */
     private $isAvailable;
 
     /**
      * 
-     * @var integer
+     * @var int
      */
     private $discountAmount;
 
@@ -32,33 +32,33 @@ class CouponCalculatedExtDTO implements \JsonSerializable {
 
 
     /**
-     * @return boolean
+     * @return bool
      */
-    public function getIsAvailable(): boolean
+    public function getIsAvailable(): bool
     {
         return $this->isAvailable;
     }
 
     /**
-     * @param boolean $isAvailable
+     * @param bool $isAvailable
      */
-    public function setIsAvailable(boolean $isAvailable): void
+    public function setIsAvailable(bool $isAvailable): void
     {
         $this->isAvailable = $isAvailable;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getDiscountAmount(): integer
+    public function getDiscountAmount(): int
     {
         return $this->discountAmount;
     }
 
     /**
-     * @param integer $discountAmount
+     * @param int $discountAmount
      */
-    public function setDiscountAmount(integer $discountAmount): void
+    public function setDiscountAmount(int $discountAmount): void
     {
         $this->discountAmount = $discountAmount;
     }

@@ -13,24 +13,24 @@ class CouponVerifyRequestExtDTO implements \JsonSerializable {
 
     /**
      * 卡券id
-     * @var integer
+     * @var int
      */
     private $couponId;
 
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getCouponId(): integer
+    public function getCouponId(): int
     {
         return $this->couponId;
     }
 
     /**
-     * @param integer $couponId
+     * @param int $couponId
      */
-    public function setCouponId(integer $couponId): void
+    public function setCouponId(int $couponId): void
     {
         $this->couponId = $couponId;
     }

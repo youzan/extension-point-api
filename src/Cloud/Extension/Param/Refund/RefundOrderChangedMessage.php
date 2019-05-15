@@ -2,6 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Refund;
 
+use DateTime;
 use Com\Youzan\Cloud\Extension\Param\Refund\RefundOrderItemDTO;
 
 /**
@@ -13,7 +14,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
 
     /**
      * 纠纷Id, 预留字段
-     * @var integer
+     * @var int
      */
     private $disputeId;
 
@@ -31,49 +32,49 @@ class RefundOrderChangedMessage implements \JsonSerializable {
 
     /**
      * 口袋通id
-     * @var integer
+     * @var int
      */
     private $kdtId;
 
     /**
      * 是总的订单退款金额
-     * @var integer
+     * @var int
      */
     private $refundFee;
 
     /**
      * 邮费
-     * @var integer
+     * @var int
      */
     private $postage;
 
     /**
      * 退款阶段。1&quot;售中&quot;，2&quot;售后&quot;
-     * @var integer
+     * @var int
      */
     private $phase;
 
     /**
      * 退款流程类型
-     * @var integer
+     * @var int
      */
     private $type;
 
     /**
      * 退款流程类型。60表示成功
-     * @var integer
+     * @var int
      */
     private $status;
 
     /**
      * 支付方式。
-     * @var integer
+     * @var int
      */
     private $payType;
 
     /**
      * 支付系统的payWay。
-     * @var integer
+     * @var int
      */
     private $payWay;
 
@@ -85,25 +86,25 @@ class RefundOrderChangedMessage implements \JsonSerializable {
 
     /**
      * 退款诉求。1&quot;仅退款&quot;，2&quot;退货退款&quot;
-     * @var integer
+     * @var int
      */
     private $demand;
 
     /**
      * 退款原因
-     * @var integer
+     * @var int
      */
     private $reason;
 
     /**
      * 客满介入状态
-     * @var integer
+     * @var int
      */
     private $csStatus;
 
     /**
      * 买家ID
-     * @var integer
+     * @var int
      */
     private $buyerId;
 
@@ -127,19 +128,19 @@ class RefundOrderChangedMessage implements \JsonSerializable {
 
     /**
      * 添加时间
-     * @var date
+     * @var DateTime
      */
     private $createTime;
 
     /**
      * 更新时间
-     * @var date
+     * @var DateTime
      */
     private $updateTime;
 
     /**
      * 是否为无效的退款单。true为有效，false为无效
-     * @var boolean
+     * @var bool
      */
     private $invalid;
 
@@ -152,17 +153,17 @@ class RefundOrderChangedMessage implements \JsonSerializable {
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getDisputeId(): integer
+    public function getDisputeId(): int
     {
         return $this->disputeId;
     }
 
     /**
-     * @param integer $disputeId
+     * @param int $disputeId
      */
-    public function setDisputeId(integer $disputeId): void
+    public function setDisputeId(int $disputeId): void
     {
         $this->disputeId = $disputeId;
     }
@@ -200,129 +201,129 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getKdtId(): integer
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
 
     /**
-     * @param integer $kdtId
+     * @param int $kdtId
      */
-    public function setKdtId(integer $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getRefundFee(): integer
+    public function getRefundFee(): int
     {
         return $this->refundFee;
     }
 
     /**
-     * @param integer $refundFee
+     * @param int $refundFee
      */
-    public function setRefundFee(integer $refundFee): void
+    public function setRefundFee(int $refundFee): void
     {
         $this->refundFee = $refundFee;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPostage(): integer
+    public function getPostage(): int
     {
         return $this->postage;
     }
 
     /**
-     * @param integer $postage
+     * @param int $postage
      */
-    public function setPostage(integer $postage): void
+    public function setPostage(int $postage): void
     {
         $this->postage = $postage;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPhase(): integer
+    public function getPhase(): int
     {
         return $this->phase;
     }
 
     /**
-     * @param integer $phase
+     * @param int $phase
      */
-    public function setPhase(integer $phase): void
+    public function setPhase(int $phase): void
     {
         $this->phase = $phase;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getType(): integer
+    public function getType(): int
     {
         return $this->type;
     }
 
     /**
-     * @param integer $type
+     * @param int $type
      */
-    public function setType(integer $type): void
+    public function setType(int $type): void
     {
         $this->type = $type;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getStatus(): integer
+    public function getStatus(): int
     {
         return $this->status;
     }
 
     /**
-     * @param integer $status
+     * @param int $status
      */
-    public function setStatus(integer $status): void
+    public function setStatus(int $status): void
     {
         $this->status = $status;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPayType(): integer
+    public function getPayType(): int
     {
         return $this->payType;
     }
 
     /**
-     * @param integer $payType
+     * @param int $payType
      */
-    public function setPayType(integer $payType): void
+    public function setPayType(int $payType): void
     {
         $this->payType = $payType;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPayWay(): integer
+    public function getPayWay(): int
     {
         return $this->payWay;
     }
 
     /**
-     * @param integer $payWay
+     * @param int $payWay
      */
-    public function setPayWay(integer $payWay): void
+    public function setPayWay(int $payWay): void
     {
         $this->payWay = $payWay;
     }
@@ -344,65 +345,65 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getDemand(): integer
+    public function getDemand(): int
     {
         return $this->demand;
     }
 
     /**
-     * @param integer $demand
+     * @param int $demand
      */
-    public function setDemand(integer $demand): void
+    public function setDemand(int $demand): void
     {
         $this->demand = $demand;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getReason(): integer
+    public function getReason(): int
     {
         return $this->reason;
     }
 
     /**
-     * @param integer $reason
+     * @param int $reason
      */
-    public function setReason(integer $reason): void
+    public function setReason(int $reason): void
     {
         $this->reason = $reason;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getCsStatus(): integer
+    public function getCsStatus(): int
     {
         return $this->csStatus;
     }
 
     /**
-     * @param integer $csStatus
+     * @param int $csStatus
      */
-    public function setCsStatus(integer $csStatus): void
+    public function setCsStatus(int $csStatus): void
     {
         $this->csStatus = $csStatus;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getBuyerId(): integer
+    public function getBuyerId(): int
     {
         return $this->buyerId;
     }
 
     /**
-     * @param integer $buyerId
+     * @param int $buyerId
      */
-    public function setBuyerId(integer $buyerId): void
+    public function setBuyerId(int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
@@ -456,49 +457,49 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getCreateTime(): date
+    public function getCreateTime(): DateTime
     {
         return $this->createTime;
     }
 
     /**
-     * @param date $createTime
+     * @param DateTime $createTime
      */
-    public function setCreateTime(date $createTime): void
+    public function setCreateTime(DateTime $createTime): void
     {
         $this->createTime = $createTime;
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getUpdateTime(): date
+    public function getUpdateTime(): DateTime
     {
         return $this->updateTime;
     }
 
     /**
-     * @param date $updateTime
+     * @param DateTime $updateTime
      */
-    public function setUpdateTime(date $updateTime): void
+    public function setUpdateTime(DateTime $updateTime): void
     {
         $this->updateTime = $updateTime;
     }
 
     /**
-     * @return boolean
+     * @return bool
      */
-    public function getInvalid(): boolean
+    public function getInvalid(): bool
     {
         return $this->invalid;
     }
 
     /**
-     * @param boolean $invalid
+     * @param bool $invalid
      */
-    public function setInvalid(boolean $invalid): void
+    public function setInvalid(bool $invalid): void
     {
         $this->invalid = $invalid;
     }

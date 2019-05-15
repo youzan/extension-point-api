@@ -14,7 +14,7 @@ class CalculatedCouponExtDTO implements \JsonSerializable {
 
     /**
      * 卡券id
-     * @var integer
+     * @var int
      */
     private $id;
 
@@ -33,17 +33,17 @@ class CalculatedCouponExtDTO implements \JsonSerializable {
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getId(): integer
+    public function getId(): int
     {
         return $this->id;
     }
 
     /**
-     * @param integer $id
+     * @param int $id
      */
-    public function setId(integer $id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }

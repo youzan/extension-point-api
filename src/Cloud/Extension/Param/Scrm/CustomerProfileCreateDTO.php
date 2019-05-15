@@ -25,7 +25,7 @@ class CustomerProfileCreateDTO implements \JsonSerializable {
 
     /**
      * 性别,0:未知;1:男;2:女
-     * @var integer
+     * @var int
      */
     private $gender;
 
@@ -82,17 +82,17 @@ class CustomerProfileCreateDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getGender(): integer
+    public function getGender(): int
     {
         return $this->gender;
     }
 
     /**
-     * @param integer $gender
+     * @param int $gender
      */
-    public function setGender(integer $gender): void
+    public function setGender(int $gender): void
     {
         $this->gender = $gender;
     }

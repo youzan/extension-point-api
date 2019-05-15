@@ -31,7 +31,7 @@ class RefundPayParamDTO implements \JsonSerializable {
 
     /**
      * 退款金额
-     * @var integer
+     * @var int
      */
     private $refundAmount;
 
@@ -49,7 +49,7 @@ class RefundPayParamDTO implements \JsonSerializable {
 
     /**
      * 商户标识
-     * @var integer
+     * @var int
      */
     private $kdtId;
 
@@ -104,17 +104,17 @@ class RefundPayParamDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getRefundAmount(): integer
+    public function getRefundAmount(): int
     {
         return $this->refundAmount;
     }
 
     /**
-     * @param integer $refundAmount
+     * @param int $refundAmount
      */
-    public function setRefundAmount(integer $refundAmount): void
+    public function setRefundAmount(int $refundAmount): void
     {
         $this->refundAmount = $refundAmount;
     }
@@ -152,17 +152,17 @@ class RefundPayParamDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getKdtId(): integer
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
 
     /**
-     * @param integer $kdtId
+     * @param int $kdtId
      */
-    public function setKdtId(integer $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

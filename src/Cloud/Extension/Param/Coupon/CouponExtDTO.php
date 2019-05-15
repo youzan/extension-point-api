@@ -5,6 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Coupon;
 use Com\Youzan\Cloud\Extension\Param\Coupon\CouponGroupExtDTO;
 use Com\Youzan\Cloud\Extension\Param\Coupon\CouponUsedInfoExtDTO;
 use Com\Youzan\Cloud\Extension\Param\Coupon\CustomerIdentityDTO;
+use DateTime;
 
 /**
  * 卡券信息
@@ -33,25 +34,25 @@ class CouponExtDTO implements \JsonSerializable {
 
     /**
      * 
-     * @var integer
+     * @var int
      */
     private $id;
 
     /**
      * 核销码
-     * @var integer
+     * @var int
      */
     private $verifyCode;
 
     /**
      * 核销码:0. 未使用;1. 冻结中; 2. 已使用
-     * @var integer
+     * @var int
      */
     private $status;
 
     /**
      * 
-     * @var date
+     * @var DateTime
      */
     private $takeAt;
 
@@ -106,65 +107,65 @@ class CouponExtDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getId(): integer
+    public function getId(): int
     {
         return $this->id;
     }
 
     /**
-     * @param integer $id
+     * @param int $id
      */
-    public function setId(integer $id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getVerifyCode(): integer
+    public function getVerifyCode(): int
     {
         return $this->verifyCode;
     }
 
     /**
-     * @param integer $verifyCode
+     * @param int $verifyCode
      */
-    public function setVerifyCode(integer $verifyCode): void
+    public function setVerifyCode(int $verifyCode): void
     {
         $this->verifyCode = $verifyCode;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getStatus(): integer
+    public function getStatus(): int
     {
         return $this->status;
     }
 
     /**
-     * @param integer $status
+     * @param int $status
      */
-    public function setStatus(integer $status): void
+    public function setStatus(int $status): void
     {
         $this->status = $status;
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getTakeAt(): date
+    public function getTakeAt(): DateTime
     {
         return $this->takeAt;
     }
 
     /**
-     * @param date $takeAt
+     * @param DateTime $takeAt
      */
-    public function setTakeAt(date $takeAt): void
+    public function setTakeAt(DateTime $takeAt): void
     {
         $this->takeAt = $takeAt;
     }

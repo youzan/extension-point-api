@@ -19,7 +19,7 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
 
     /**
      * 附加费用总额
-     * @var integer
+     * @var int
      */
     private $totalExtraFeeAmount;
 
@@ -48,17 +48,17 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getTotalExtraFeeAmount(): integer
+    public function getTotalExtraFeeAmount(): int
     {
         return $this->totalExtraFeeAmount;
     }
 
     /**
-     * @param integer $totalExtraFeeAmount
+     * @param int $totalExtraFeeAmount
      */
-    public function setTotalExtraFeeAmount(integer $totalExtraFeeAmount): void
+    public function setTotalExtraFeeAmount(int $totalExtraFeeAmount): void
     {
         $this->totalExtraFeeAmount = $totalExtraFeeAmount;
     }

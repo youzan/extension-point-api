@@ -13,24 +13,24 @@ class CouponGroupDetailRequestExtDTO implements \JsonSerializable {
 
     /**
      * 券组id
-     * @var integer
+     * @var int
      */
     private $couponGroupId;
 
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getCouponGroupId(): integer
+    public function getCouponGroupId(): int
     {
         return $this->couponGroupId;
     }
 
     /**
-     * @param integer $couponGroupId
+     * @param int $couponGroupId
      */
-    public function setCouponGroupId(integer $couponGroupId): void
+    public function setCouponGroupId(int $couponGroupId): void
     {
         $this->couponGroupId = $couponGroupId;
     }

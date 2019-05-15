@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
-
+use DateTime;
 
 /**
  * 用户等级列表
@@ -25,13 +25,13 @@ class ExtCustomerLevelDTO implements \JsonSerializable {
 
     /**
      * 等级有效期开始时间
-     * @var date
+     * @var DateTime
      */
     private $termBeginAt;
 
     /**
      * 等级有效期结束时间
-     * @var date
+     * @var DateTime
      */
     private $termEndAt;
 
@@ -70,33 +70,33 @@ class ExtCustomerLevelDTO implements \JsonSerializable {
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getTermBeginAt(): date
+    public function getTermBeginAt(): DateTime
     {
         return $this->termBeginAt;
     }
 
     /**
-     * @param date $termBeginAt
+     * @param DateTime $termBeginAt
      */
-    public function setTermBeginAt(date $termBeginAt): void
+    public function setTermBeginAt(DateTime $termBeginAt): void
     {
         $this->termBeginAt = $termBeginAt;
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getTermEndAt(): date
+    public function getTermEndAt(): DateTime
     {
         return $this->termEndAt;
     }
 
     /**
-     * @param date $termEndAt
+     * @param DateTime $termEndAt
      */
-    public function setTermEndAt(date $termEndAt): void
+    public function setTermEndAt(DateTime $termEndAt): void
     {
         $this->termEndAt = $termEndAt;
     }

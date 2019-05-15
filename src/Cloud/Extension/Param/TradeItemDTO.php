@@ -19,13 +19,13 @@ class TradeItemDTO implements \JsonSerializable {
 
     /**
      * 数量
-     * @var integer
+     * @var int
      */
     private $num;
 
     /**
      * 商品类型
-     * @var integer
+     * @var int
      */
     private $goodsType;
 
@@ -54,33 +54,33 @@ class TradeItemDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getNum(): integer
+    public function getNum(): int
     {
         return $this->num;
     }
 
     /**
-     * @param integer $num
+     * @param int $num
      */
-    public function setNum(integer $num): void
+    public function setNum(int $num): void
     {
         $this->num = $num;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getGoodsType(): integer
+    public function getGoodsType(): int
     {
         return $this->goodsType;
     }
 
     /**
-     * @param integer $goodsType
+     * @param int $goodsType
      */
-    public function setGoodsType(integer $goodsType): void
+    public function setGoodsType(int $goodsType): void
     {
         $this->goodsType = $goodsType;
     }

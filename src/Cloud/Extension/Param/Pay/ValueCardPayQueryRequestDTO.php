@@ -19,7 +19,7 @@ class ValueCardPayQueryRequestDTO implements \JsonSerializable {
 
     /**
      * 店铺ID
-     * @var integer
+     * @var int
      */
     private $kdtId;
 
@@ -42,17 +42,17 @@ class ValueCardPayQueryRequestDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getKdtId(): integer
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
 
     /**
-     * @param integer $kdtId
+     * @param int $kdtId
      */
-    public function setKdtId(integer $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

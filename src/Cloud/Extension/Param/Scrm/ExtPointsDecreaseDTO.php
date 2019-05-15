@@ -26,7 +26,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
 
     /**
      * 积分扣减事件
-     * @var integer
+     * @var int
      */
     private $eventType;
 
@@ -38,7 +38,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
 
     /**
      * 积分扣减值
-     * @var integer
+     * @var int
      */
     private $amount;
 
@@ -89,17 +89,17 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getEventType(): integer
+    public function getEventType(): int
     {
         return $this->eventType;
     }
 
     /**
-     * @param integer $eventType
+     * @param int $eventType
      */
-    public function setEventType(integer $eventType): void
+    public function setEventType(int $eventType): void
     {
         $this->eventType = $eventType;
     }
@@ -121,17 +121,17 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getAmount(): integer
+    public function getAmount(): int
     {
         return $this->amount;
     }
 
     /**
-     * @param integer $amount
+     * @param int $amount
      */
-    public function setAmount(integer $amount): void
+    public function setAmount(int $amount): void
     {
         $this->amount = $amount;
     }

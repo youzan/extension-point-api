@@ -19,13 +19,13 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
 
     /**
      * 卖家标识
-     * @var integer
+     * @var int
      */
     private $kdtId;
 
     /**
      * 退款原因
-     * @var integer
+     * @var int
      */
     private $reason;
 
@@ -60,33 +60,33 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getKdtId(): integer
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
 
     /**
-     * @param integer $kdtId
+     * @param int $kdtId
      */
-    public function setKdtId(integer $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getReason(): integer
+    public function getReason(): int
     {
         return $this->reason;
     }
 
     /**
-     * @param integer $reason
+     * @param int $reason
      */
-    public function setReason(integer $reason): void
+    public function setReason(int $reason): void
     {
         $this->reason = $reason;
     }

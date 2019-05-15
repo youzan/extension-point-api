@@ -2,6 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Pay;
 
+use DateTime;
 use StdClass;
 
 /**
@@ -18,6 +19,12 @@ class ValueCardRefundResponseDTO implements \JsonSerializable {
     private $refundStatus;
 
     /**
+     * 退款单明细号
+     * @var string
+     */
+    private $refundOrderNo;
+
+    /**
      * 退款支付工具返回单号
      * @var string
      */
@@ -25,7 +32,7 @@ class ValueCardRefundResponseDTO implements \JsonSerializable {
 
     /**
      * 退款完成时间
-     * @var date
+     * @var DateTime
      */
     private $refundDt;
 
@@ -56,6 +63,22 @@ class ValueCardRefundResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
+    public function getRefundOrderNo(): string
+    {
+        return $this->refundOrderNo;
+    }
+
+    /**
+     * @param string $refundOrderNo
+     */
+    public function setRefundOrderNo(string $refundOrderNo): void
+    {
+        $this->refundOrderNo = $refundOrderNo;
+    }
+
+    /**
+     * @return string
+     */
     public function getRefundChannelNo(): string
     {
         return $this->refundChannelNo;
@@ -70,17 +93,17 @@ class ValueCardRefundResponseDTO implements \JsonSerializable {
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getRefundDt(): date
+    public function getRefundDt(): DateTime
     {
         return $this->refundDt;
     }
 
     /**
-     * @param date $refundDt
+     * @param DateTime $refundDt
      */
-    public function setRefundDt(date $refundDt): void
+    public function setRefundDt(DateTime $refundDt): void
     {
         $this->refundDt = $refundDt;
     }

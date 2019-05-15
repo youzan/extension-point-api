@@ -13,37 +13,37 @@ class AssetsGoodsPromotionExtDTO implements \JsonSerializable {
 
     /**
      * 商品SPU级别id
-     * @var integer
+     * @var int
      */
     private $goodsId;
 
     /**
      * 商品SKU级别id
-     * @var integer
+     * @var int
      */
     private $skuId;
 
     /**
      * 商品级价格（商品原价：10，限时折扣后：6，商品级价格：6）
-     * @var integer
+     * @var int
      */
     private $price;
 
     /**
      * 商品实付
-     * @var integer
+     * @var int
      */
     private $realPay;
 
     /**
      * 数量
-     * @var integer
+     * @var int
      */
     private $num;
 
     /**
      * 商品类型
-     * @var integer
+     * @var int
      */
     private $type;
 
@@ -56,97 +56,97 @@ class AssetsGoodsPromotionExtDTO implements \JsonSerializable {
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getGoodsId(): integer
+    public function getGoodsId(): int
     {
         return $this->goodsId;
     }
 
     /**
-     * @param integer $goodsId
+     * @param int $goodsId
      */
-    public function setGoodsId(integer $goodsId): void
+    public function setGoodsId(int $goodsId): void
     {
         $this->goodsId = $goodsId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getSkuId(): integer
+    public function getSkuId(): int
     {
         return $this->skuId;
     }
 
     /**
-     * @param integer $skuId
+     * @param int $skuId
      */
-    public function setSkuId(integer $skuId): void
+    public function setSkuId(int $skuId): void
     {
         $this->skuId = $skuId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPrice(): integer
+    public function getPrice(): int
     {
         return $this->price;
     }
 
     /**
-     * @param integer $price
+     * @param int $price
      */
-    public function setPrice(integer $price): void
+    public function setPrice(int $price): void
     {
         $this->price = $price;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getRealPay(): integer
+    public function getRealPay(): int
     {
         return $this->realPay;
     }
 
     /**
-     * @param integer $realPay
+     * @param int $realPay
      */
-    public function setRealPay(integer $realPay): void
+    public function setRealPay(int $realPay): void
     {
         $this->realPay = $realPay;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getNum(): integer
+    public function getNum(): int
     {
         return $this->num;
     }
 
     /**
-     * @param integer $num
+     * @param int $num
      */
-    public function setNum(integer $num): void
+    public function setNum(int $num): void
     {
         $this->num = $num;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getType(): integer
+    public function getType(): int
     {
         return $this->type;
     }
 
     /**
-     * @param integer $type
+     * @param int $type
      */
-    public function setType(integer $type): void
+    public function setType(int $type): void
     {
         $this->type = $type;
     }

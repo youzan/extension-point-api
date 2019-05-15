@@ -13,7 +13,7 @@ class BizTestData implements \JsonSerializable {
 
     /**
      * 数据整型值
-     * @var integer
+     * @var int
      */
     private $number;
 
@@ -26,17 +26,17 @@ class BizTestData implements \JsonSerializable {
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getNumber(): integer
+    public function getNumber(): int
     {
         return $this->number;
     }
 
     /**
-     * @param integer $number
+     * @param int $number
      */
-    public function setNumber(integer $number): void
+    public function setNumber(int $number): void
     {
         $this->number = $number;
     }

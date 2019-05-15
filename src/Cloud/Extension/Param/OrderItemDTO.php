@@ -13,7 +13,7 @@ class OrderItemDTO implements \JsonSerializable {
 
     /**
      * 数量
-     * @var integer
+     * @var int
      */
     private $quantity;
 
@@ -26,17 +26,17 @@ class OrderItemDTO implements \JsonSerializable {
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getQuantity(): integer
+    public function getQuantity(): int
     {
         return $this->quantity;
     }
 
     /**
-     * @param integer $quantity
+     * @param int $quantity
      */
-    public function setQuantity(integer $quantity): void
+    public function setQuantity(int $quantity): void
     {
         $this->quantity = $quantity;
     }

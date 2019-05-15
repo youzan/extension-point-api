@@ -13,24 +13,24 @@ class Result implements \JsonSerializable {
 
     /**
      * 是否成功
-     * @var boolean
+     * @var bool
      */
     private $data;
 
 
 
     /**
-     * @return boolean
+     * @return bool
      */
-    public function getData(): boolean
+    public function getData(): bool
     {
         return $this->data;
     }
 
     /**
-     * @param boolean $data
+     * @param bool $data
      */
-    public function setData(boolean $data): void
+    public function setData(bool $data): void
     {
         $this->data = $data;
     }

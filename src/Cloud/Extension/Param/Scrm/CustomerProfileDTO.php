@@ -19,7 +19,7 @@ class CustomerProfileDTO implements \JsonSerializable {
 
     /**
      * 
-     * @var integer
+     * @var int
      */
     private $gender;
 
@@ -31,7 +31,7 @@ class CustomerProfileDTO implements \JsonSerializable {
 
     /**
      * 是否为会员
-     * @var boolean
+     * @var bool
      */
     private $isMember;
 
@@ -66,17 +66,17 @@ class CustomerProfileDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getGender(): integer
+    public function getGender(): int
     {
         return $this->gender;
     }
 
     /**
-     * @param integer $gender
+     * @param int $gender
      */
-    public function setGender(integer $gender): void
+    public function setGender(int $gender): void
     {
         $this->gender = $gender;
     }
@@ -98,17 +98,17 @@ class CustomerProfileDTO implements \JsonSerializable {
     }
 
     /**
-     * @return boolean
+     * @return bool
      */
-    public function getIsMember(): boolean
+    public function getIsMember(): bool
     {
         return $this->isMember;
     }
 
     /**
-     * @param boolean $isMember
+     * @param bool $isMember
      */
-    public function setIsMember(boolean $isMember): void
+    public function setIsMember(bool $isMember): void
     {
         $this->isMember = $isMember;
     }

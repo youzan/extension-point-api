@@ -19,37 +19,37 @@ class ItemCalcDTO implements \JsonSerializable {
 
     /**
      * 订单id
-     * @var integer
+     * @var int
      */
     private $orderItemId;
 
     /**
      * 重量(非标品,单位克)
-     * @var integer
+     * @var int
      */
     private $weight;
 
     /**
      * 购买数量
-     * @var integer
+     * @var int
      */
     private $num;
 
     /**
      * 原始单价(单位分)
-     * @var integer
+     * @var int
      */
     private $originUnitPrice;
 
     /**
      * skuId信息
-     * @var integer
+     * @var int
      */
     private $skuId;
 
     /**
      * 商品id
-     * @var integer
+     * @var int
      */
     private $goodsId;
 
@@ -72,97 +72,97 @@ class ItemCalcDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getOrderItemId(): integer
+    public function getOrderItemId(): int
     {
         return $this->orderItemId;
     }
 
     /**
-     * @param integer $orderItemId
+     * @param int $orderItemId
      */
-    public function setOrderItemId(integer $orderItemId): void
+    public function setOrderItemId(int $orderItemId): void
     {
         $this->orderItemId = $orderItemId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getWeight(): integer
+    public function getWeight(): int
     {
         return $this->weight;
     }
 
     /**
-     * @param integer $weight
+     * @param int $weight
      */
-    public function setWeight(integer $weight): void
+    public function setWeight(int $weight): void
     {
         $this->weight = $weight;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getNum(): integer
+    public function getNum(): int
     {
         return $this->num;
     }
 
     /**
-     * @param integer $num
+     * @param int $num
      */
-    public function setNum(integer $num): void
+    public function setNum(int $num): void
     {
         $this->num = $num;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getOriginUnitPrice(): integer
+    public function getOriginUnitPrice(): int
     {
         return $this->originUnitPrice;
     }
 
     /**
-     * @param integer $originUnitPrice
+     * @param int $originUnitPrice
      */
-    public function setOriginUnitPrice(integer $originUnitPrice): void
+    public function setOriginUnitPrice(int $originUnitPrice): void
     {
         $this->originUnitPrice = $originUnitPrice;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getSkuId(): integer
+    public function getSkuId(): int
     {
         return $this->skuId;
     }
 
     /**
-     * @param integer $skuId
+     * @param int $skuId
      */
-    public function setSkuId(integer $skuId): void
+    public function setSkuId(int $skuId): void
     {
         $this->skuId = $skuId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getGoodsId(): integer
+    public function getGoodsId(): int
     {
         return $this->goodsId;
     }
 
     /**
-     * @param integer $goodsId
+     * @param int $goodsId
      */
-    public function setGoodsId(integer $goodsId): void
+    public function setGoodsId(int $goodsId): void
     {
         $this->goodsId = $goodsId;
     }

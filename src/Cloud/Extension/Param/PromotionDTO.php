@@ -13,7 +13,7 @@ class PromotionDTO implements \JsonSerializable {
 
     /**
      * 不参与优惠金额
-     * @var integer
+     * @var int
      */
     private $canNotUsePromotionAmount;
 
@@ -31,13 +31,13 @@ class PromotionDTO implements \JsonSerializable {
 
     /**
      * 优惠券,码类型 优惠券:7; 优惠码:9,10
-     * @var integer
+     * @var int
      */
     private $couponType;
 
     /**
      * 是否外部优惠券,0 内部优惠券,1 外部优惠券
-     * @var integer
+     * @var int
      */
     private $outerCoupon;
 
@@ -49,7 +49,7 @@ class PromotionDTO implements \JsonSerializable {
 
     /**
      * 
-     * @var integer
+     * @var int
      */
     private $promotionTypeId;
 
@@ -67,7 +67,7 @@ class PromotionDTO implements \JsonSerializable {
 
     /**
      * 优惠ID
-     * @var integer
+     * @var int
      */
     private $promotionId;
 
@@ -79,13 +79,13 @@ class PromotionDTO implements \JsonSerializable {
 
     /**
      * 使用优惠之后的价格
-     * @var integer
+     * @var int
      */
     private $newValue;
 
     /**
      * 使用优惠之前的价格
-     * @var integer
+     * @var int
      */
     private $oldValue;
 
@@ -109,7 +109,7 @@ class PromotionDTO implements \JsonSerializable {
 
     /**
      * 优惠券面额, 单位为分
-     * @var integer
+     * @var int
      */
     private $value;
 
@@ -127,19 +127,19 @@ class PromotionDTO implements \JsonSerializable {
 
     /**
      * 面值
-     * @var integer
+     * @var int
      */
     private $denominations;
 
     /**
      * 折扣
-     * @var integer
+     * @var int
      */
     private $discount;
 
     /**
      * 是否可用{
-     * @var boolean
+     * @var bool
      */
     private $isAvailable;
 
@@ -151,7 +151,7 @@ class PromotionDTO implements \JsonSerializable {
 
     /**
      * 优惠id
-     * @var integer
+     * @var int
      */
     private $activityId;
 
@@ -170,17 +170,17 @@ class PromotionDTO implements \JsonSerializable {
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getCanNotUsePromotionAmount(): integer
+    public function getCanNotUsePromotionAmount(): int
     {
         return $this->canNotUsePromotionAmount;
     }
 
     /**
-     * @param integer $canNotUsePromotionAmount
+     * @param int $canNotUsePromotionAmount
      */
-    public function setCanNotUsePromotionAmount(integer $canNotUsePromotionAmount): void
+    public function setCanNotUsePromotionAmount(int $canNotUsePromotionAmount): void
     {
         $this->canNotUsePromotionAmount = $canNotUsePromotionAmount;
     }
@@ -218,33 +218,33 @@ class PromotionDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getCouponType(): integer
+    public function getCouponType(): int
     {
         return $this->couponType;
     }
 
     /**
-     * @param integer $couponType
+     * @param int $couponType
      */
-    public function setCouponType(integer $couponType): void
+    public function setCouponType(int $couponType): void
     {
         $this->couponType = $couponType;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getOuterCoupon(): integer
+    public function getOuterCoupon(): int
     {
         return $this->outerCoupon;
     }
 
     /**
-     * @param integer $outerCoupon
+     * @param int $outerCoupon
      */
-    public function setOuterCoupon(integer $outerCoupon): void
+    public function setOuterCoupon(int $outerCoupon): void
     {
         $this->outerCoupon = $outerCoupon;
     }
@@ -266,17 +266,17 @@ class PromotionDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPromotionTypeId(): integer
+    public function getPromotionTypeId(): int
     {
         return $this->promotionTypeId;
     }
 
     /**
-     * @param integer $promotionTypeId
+     * @param int $promotionTypeId
      */
-    public function setPromotionTypeId(integer $promotionTypeId): void
+    public function setPromotionTypeId(int $promotionTypeId): void
     {
         $this->promotionTypeId = $promotionTypeId;
     }
@@ -314,17 +314,17 @@ class PromotionDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPromotionId(): integer
+    public function getPromotionId(): int
     {
         return $this->promotionId;
     }
 
     /**
-     * @param integer $promotionId
+     * @param int $promotionId
      */
-    public function setPromotionId(integer $promotionId): void
+    public function setPromotionId(int $promotionId): void
     {
         $this->promotionId = $promotionId;
     }
@@ -346,33 +346,33 @@ class PromotionDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getNewValue(): integer
+    public function getNewValue(): int
     {
         return $this->newValue;
     }
 
     /**
-     * @param integer $newValue
+     * @param int $newValue
      */
-    public function setNewValue(integer $newValue): void
+    public function setNewValue(int $newValue): void
     {
         $this->newValue = $newValue;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getOldValue(): integer
+    public function getOldValue(): int
     {
         return $this->oldValue;
     }
 
     /**
-     * @param integer $oldValue
+     * @param int $oldValue
      */
-    public function setOldValue(integer $oldValue): void
+    public function setOldValue(int $oldValue): void
     {
         $this->oldValue = $oldValue;
     }
@@ -426,17 +426,17 @@ class PromotionDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getValue(): integer
+    public function getValue(): int
     {
         return $this->value;
     }
 
     /**
-     * @param integer $value
+     * @param int $value
      */
-    public function setValue(integer $value): void
+    public function setValue(int $value): void
     {
         $this->value = $value;
     }
@@ -474,49 +474,49 @@ class PromotionDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getDenominations(): integer
+    public function getDenominations(): int
     {
         return $this->denominations;
     }
 
     /**
-     * @param integer $denominations
+     * @param int $denominations
      */
-    public function setDenominations(integer $denominations): void
+    public function setDenominations(int $denominations): void
     {
         $this->denominations = $denominations;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getDiscount(): integer
+    public function getDiscount(): int
     {
         return $this->discount;
     }
 
     /**
-     * @param integer $discount
+     * @param int $discount
      */
-    public function setDiscount(integer $discount): void
+    public function setDiscount(int $discount): void
     {
         $this->discount = $discount;
     }
 
     /**
-     * @return boolean
+     * @return bool
      */
-    public function getIsAvailable(): boolean
+    public function getIsAvailable(): bool
     {
         return $this->isAvailable;
     }
 
     /**
-     * @param boolean $isAvailable
+     * @param bool $isAvailable
      */
-    public function setIsAvailable(boolean $isAvailable): void
+    public function setIsAvailable(bool $isAvailable): void
     {
         $this->isAvailable = $isAvailable;
     }
@@ -538,17 +538,17 @@ class PromotionDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getActivityId(): integer
+    public function getActivityId(): int
     {
         return $this->activityId;
     }
 
     /**
-     * @param integer $activityId
+     * @param int $activityId
      */
-    public function setActivityId(integer $activityId): void
+    public function setActivityId(int $activityId): void
     {
         $this->activityId = $activityId;
     }

@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Pay;
 
-
+use DateTime;
 
 /**
  * 
@@ -31,7 +31,7 @@ class ValueCardPayRequestDTO implements \JsonSerializable {
 
     /**
      * 支付总金额
-     * @var integer
+     * @var int
      */
     private $payAmount;
 
@@ -43,13 +43,13 @@ class ValueCardPayRequestDTO implements \JsonSerializable {
 
     /**
      * 店铺ID
-     * @var integer
+     * @var int
      */
     private $kdtId;
 
     /**
      * 有赞用户ID
-     * @var integer
+     * @var int
      */
     private $buyerId;
 
@@ -61,7 +61,7 @@ class ValueCardPayRequestDTO implements \JsonSerializable {
 
     /**
      * 支付发起时间
-     * @var date
+     * @var DateTime
      */
     private $tradeTime;
 
@@ -116,17 +116,17 @@ class ValueCardPayRequestDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPayAmount(): integer
+    public function getPayAmount(): int
     {
         return $this->payAmount;
     }
 
     /**
-     * @param integer $payAmount
+     * @param int $payAmount
      */
-    public function setPayAmount(integer $payAmount): void
+    public function setPayAmount(int $payAmount): void
     {
         $this->payAmount = $payAmount;
     }
@@ -148,33 +148,33 @@ class ValueCardPayRequestDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getKdtId(): integer
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
 
     /**
-     * @param integer $kdtId
+     * @param int $kdtId
      */
-    public function setKdtId(integer $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getBuyerId(): integer
+    public function getBuyerId(): int
     {
         return $this->buyerId;
     }
 
     /**
-     * @param integer $buyerId
+     * @param int $buyerId
      */
-    public function setBuyerId(integer $buyerId): void
+    public function setBuyerId(int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
@@ -196,17 +196,17 @@ class ValueCardPayRequestDTO implements \JsonSerializable {
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getTradeTime(): date
+    public function getTradeTime(): DateTime
     {
         return $this->tradeTime;
     }
 
     /**
-     * @param date $tradeTime
+     * @param DateTime $tradeTime
      */
-    public function setTradeTime(date $tradeTime): void
+    public function setTradeTime(DateTime $tradeTime): void
     {
         $this->tradeTime = $tradeTime;
     }

@@ -2,6 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Pay;
 
+use DateTime;
 use StdClass;
 
 /**
@@ -31,19 +32,19 @@ class ValueCardRefundRequestDTO implements \JsonSerializable {
 
     /**
      * 订单总金额，单位为分，只能为整数
-     * @var integer
+     * @var int
      */
     private $totalAmount;
 
     /**
      * 退款总金额，单位为分，只能为整数，可部分退款
-     * @var integer
+     * @var int
      */
     private $refundAmount;
 
     /**
      * 退款发起时间
-     * @var date
+     * @var DateTime
      */
     private $tradeTime;
 
@@ -104,49 +105,49 @@ class ValueCardRefundRequestDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getTotalAmount(): integer
+    public function getTotalAmount(): int
     {
         return $this->totalAmount;
     }
 
     /**
-     * @param integer $totalAmount
+     * @param int $totalAmount
      */
-    public function setTotalAmount(integer $totalAmount): void
+    public function setTotalAmount(int $totalAmount): void
     {
         $this->totalAmount = $totalAmount;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getRefundAmount(): integer
+    public function getRefundAmount(): int
     {
         return $this->refundAmount;
     }
 
     /**
-     * @param integer $refundAmount
+     * @param int $refundAmount
      */
-    public function setRefundAmount(integer $refundAmount): void
+    public function setRefundAmount(int $refundAmount): void
     {
         $this->refundAmount = $refundAmount;
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getTradeTime(): date
+    public function getTradeTime(): DateTime
     {
         return $this->tradeTime;
     }
 
     /**
-     * @param date $tradeTime
+     * @param DateTime $tradeTime
      */
-    public function setTradeTime(date $tradeTime): void
+    public function setTradeTime(DateTime $tradeTime): void
     {
         $this->tradeTime = $tradeTime;
     }

@@ -20,13 +20,13 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
 
     /**
      * 积分消耗来源
-     * @var integer
+     * @var int
      */
     private $consumeSource;
 
     /**
      * 积分冻结值
-     * @var integer
+     * @var int
      */
     private $amount;
 
@@ -67,33 +67,33 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getConsumeSource(): integer
+    public function getConsumeSource(): int
     {
         return $this->consumeSource;
     }
 
     /**
-     * @param integer $consumeSource
+     * @param int $consumeSource
      */
-    public function setConsumeSource(integer $consumeSource): void
+    public function setConsumeSource(int $consumeSource): void
     {
         $this->consumeSource = $consumeSource;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getAmount(): integer
+    public function getAmount(): int
     {
         return $this->amount;
     }
 
     /**
-     * @param integer $amount
+     * @param int $amount
      */
-    public function setAmount(integer $amount): void
+    public function setAmount(int $amount): void
     {
         $this->amount = $amount;
     }

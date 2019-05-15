@@ -13,46 +13,46 @@ class SkuCompositeId implements \JsonSerializable {
 
     /**
      * 
-     * @var integer
+     * @var int
      */
     private $goodsId;
 
     /**
      * 
-     * @var integer
+     * @var int
      */
     private $skuId;
 
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getGoodsId(): integer
+    public function getGoodsId(): int
     {
         return $this->goodsId;
     }
 
     /**
-     * @param integer $goodsId
+     * @param int $goodsId
      */
-    public function setGoodsId(integer $goodsId): void
+    public function setGoodsId(int $goodsId): void
     {
         $this->goodsId = $goodsId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getSkuId(): integer
+    public function getSkuId(): int
     {
         return $this->skuId;
     }
 
     /**
-     * @param integer $skuId
+     * @param int $skuId
      */
-    public function setSkuId(integer $skuId): void
+    public function setSkuId(int $skuId): void
     {
         $this->skuId = $skuId;
     }

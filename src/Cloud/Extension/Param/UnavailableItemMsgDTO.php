@@ -13,37 +13,37 @@ class UnavailableItemMsgDTO implements \JsonSerializable {
 
     /**
      * 卖家标识
-     * @var integer
+     * @var int
      */
     private $kdtId;
 
     /**
      * 店铺标识
-     * @var integer
+     * @var int
      */
     private $shopId;
 
     /**
      * 商品标识
-     * @var integer
+     * @var int
      */
     private $goodsId;
 
     /**
      * 商品sku标识
-     * @var integer
+     * @var int
      */
     private $skuId;
 
     /**
      * 商品数量
-     * @var integer
+     * @var int
      */
     private $num;
 
     /**
      * 商品类型
-     * @var integer
+     * @var int
      */
     private $goodsType;
 
@@ -56,97 +56,97 @@ class UnavailableItemMsgDTO implements \JsonSerializable {
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getKdtId(): integer
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
 
     /**
-     * @param integer $kdtId
+     * @param int $kdtId
      */
-    public function setKdtId(integer $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getShopId(): integer
+    public function getShopId(): int
     {
         return $this->shopId;
     }
 
     /**
-     * @param integer $shopId
+     * @param int $shopId
      */
-    public function setShopId(integer $shopId): void
+    public function setShopId(int $shopId): void
     {
         $this->shopId = $shopId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getGoodsId(): integer
+    public function getGoodsId(): int
     {
         return $this->goodsId;
     }
 
     /**
-     * @param integer $goodsId
+     * @param int $goodsId
      */
-    public function setGoodsId(integer $goodsId): void
+    public function setGoodsId(int $goodsId): void
     {
         $this->goodsId = $goodsId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getSkuId(): integer
+    public function getSkuId(): int
     {
         return $this->skuId;
     }
 
     /**
-     * @param integer $skuId
+     * @param int $skuId
      */
-    public function setSkuId(integer $skuId): void
+    public function setSkuId(int $skuId): void
     {
         $this->skuId = $skuId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getNum(): integer
+    public function getNum(): int
     {
         return $this->num;
     }
 
     /**
-     * @param integer $num
+     * @param int $num
      */
-    public function setNum(integer $num): void
+    public function setNum(int $num): void
     {
         $this->num = $num;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getGoodsType(): integer
+    public function getGoodsType(): int
     {
         return $this->goodsType;
     }
 
     /**
-     * @param integer $goodsType
+     * @param int $goodsType
      */
-    public function setGoodsType(integer $goodsType): void
+    public function setGoodsType(int $goodsType): void
     {
         $this->goodsType = $goodsType;
     }

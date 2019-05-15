@@ -13,46 +13,46 @@ class ExtCustomerPointsStatusDTO implements \JsonSerializable {
 
     /**
      * 累计获得的积分数(只增不减)
-     * @var integer
+     * @var int
      */
     private $totalPoints;
 
     /**
      * 当前积分
-     * @var integer
+     * @var int
      */
     private $currentPoints;
 
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getTotalPoints(): integer
+    public function getTotalPoints(): int
     {
         return $this->totalPoints;
     }
 
     /**
-     * @param integer $totalPoints
+     * @param int $totalPoints
      */
-    public function setTotalPoints(integer $totalPoints): void
+    public function setTotalPoints(int $totalPoints): void
     {
         $this->totalPoints = $totalPoints;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getCurrentPoints(): integer
+    public function getCurrentPoints(): int
     {
         return $this->currentPoints;
     }
 
     /**
-     * @param integer $currentPoints
+     * @param int $currentPoints
      */
-    public function setCurrentPoints(integer $currentPoints): void
+    public function setCurrentPoints(int $currentPoints): void
     {
         $this->currentPoints = $currentPoints;
     }

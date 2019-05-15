@@ -13,420 +13,420 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
 
     /**
      * 分销员buyerId
-     * @var integer
+     * @var int
      */
     private $buyerId;
 
     /**
      * 当前等级
-     * @var integer
+     * @var int
      */
     private $level;
 
     /**
      * 累计成交订单数（发生退款不扣减)
-     * @var integer
+     * @var int
      */
     private $orderNum;
 
     /**
      * 累计成交金额（结算前退款会扣除相应金额）
-     * @var integer
+     * @var int
      */
     private $money;
 
     /**
      * 商品佣金（待结算+已结算）
-     * @var integer
+     * @var int
      */
     private $cpsMoney;
 
     /**
      * 邀请奖励（待结算+已结算）
-     * @var integer
+     * @var int
      */
     private $bonusMoney;
 
     /**
      * 累计收益(已结算订单+邀请)
-     * @var integer
+     * @var int
      */
     private $profit;
 
     /**
      * 累计推广金
-     * @var integer
+     * @var int
      */
     private $totalRecommendMoney;
 
     /**
      * 支付成功节点下的累计消费金
-     * @var integer
+     * @var int
      */
     private $totalPayConsumeMoney;
 
     /**
      * 交易完成节点下的累计消费金
-     * @var integer
+     * @var int
      */
     private $totalSuccessConsumeMoney;
 
     /**
      * 维权期结束节点下消费金
-     * @var integer
+     * @var int
      */
     private $totalFinishConsumeMoney;
 
     /**
      * 累计客户数
-     * @var integer
+     * @var int
      */
     private $totalCustomerNum;
 
     /**
      * 累计邀请人数
-     * @var integer
+     * @var int
      */
     private $totalInviteNum;
 
     /**
      * 当前等级累计推广金
-     * @var integer
+     * @var int
      */
     private $recommendMoney;
 
     /**
      * 当前等级 支付成功节点下的累计消费金
-     * @var integer
+     * @var int
      */
     private $payConsumeMoney;
 
     /**
      * 当前等级 交易完成节点下的累计消费金
-     * @var integer
+     * @var int
      */
     private $successConsumeMoney;
 
     /**
      * 当前等级 维权期结束节点下的累计消费金
-     * @var integer
+     * @var int
      */
     private $finishConsumeMoney;
 
     /**
      * 当前等级累计客户数
-     * @var integer
+     * @var int
      */
     private $customerNum;
 
     /**
      * 当前等级累计邀请人数
-     * @var integer
+     * @var int
      */
     private $inviteNum;
 
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getBuyerId(): integer
+    public function getBuyerId(): int
     {
         return $this->buyerId;
     }
 
     /**
-     * @param integer $buyerId
+     * @param int $buyerId
      */
-    public function setBuyerId(integer $buyerId): void
+    public function setBuyerId(int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getLevel(): integer
+    public function getLevel(): int
     {
         return $this->level;
     }
 
     /**
-     * @param integer $level
+     * @param int $level
      */
-    public function setLevel(integer $level): void
+    public function setLevel(int $level): void
     {
         $this->level = $level;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getOrderNum(): integer
+    public function getOrderNum(): int
     {
         return $this->orderNum;
     }
 
     /**
-     * @param integer $orderNum
+     * @param int $orderNum
      */
-    public function setOrderNum(integer $orderNum): void
+    public function setOrderNum(int $orderNum): void
     {
         $this->orderNum = $orderNum;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getMoney(): integer
+    public function getMoney(): int
     {
         return $this->money;
     }
 
     /**
-     * @param integer $money
+     * @param int $money
      */
-    public function setMoney(integer $money): void
+    public function setMoney(int $money): void
     {
         $this->money = $money;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getCpsMoney(): integer
+    public function getCpsMoney(): int
     {
         return $this->cpsMoney;
     }
 
     /**
-     * @param integer $cpsMoney
+     * @param int $cpsMoney
      */
-    public function setCpsMoney(integer $cpsMoney): void
+    public function setCpsMoney(int $cpsMoney): void
     {
         $this->cpsMoney = $cpsMoney;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getBonusMoney(): integer
+    public function getBonusMoney(): int
     {
         return $this->bonusMoney;
     }
 
     /**
-     * @param integer $bonusMoney
+     * @param int $bonusMoney
      */
-    public function setBonusMoney(integer $bonusMoney): void
+    public function setBonusMoney(int $bonusMoney): void
     {
         $this->bonusMoney = $bonusMoney;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getProfit(): integer
+    public function getProfit(): int
     {
         return $this->profit;
     }
 
     /**
-     * @param integer $profit
+     * @param int $profit
      */
-    public function setProfit(integer $profit): void
+    public function setProfit(int $profit): void
     {
         $this->profit = $profit;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getTotalRecommendMoney(): integer
+    public function getTotalRecommendMoney(): int
     {
         return $this->totalRecommendMoney;
     }
 
     /**
-     * @param integer $totalRecommendMoney
+     * @param int $totalRecommendMoney
      */
-    public function setTotalRecommendMoney(integer $totalRecommendMoney): void
+    public function setTotalRecommendMoney(int $totalRecommendMoney): void
     {
         $this->totalRecommendMoney = $totalRecommendMoney;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getTotalPayConsumeMoney(): integer
+    public function getTotalPayConsumeMoney(): int
     {
         return $this->totalPayConsumeMoney;
     }
 
     /**
-     * @param integer $totalPayConsumeMoney
+     * @param int $totalPayConsumeMoney
      */
-    public function setTotalPayConsumeMoney(integer $totalPayConsumeMoney): void
+    public function setTotalPayConsumeMoney(int $totalPayConsumeMoney): void
     {
         $this->totalPayConsumeMoney = $totalPayConsumeMoney;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getTotalSuccessConsumeMoney(): integer
+    public function getTotalSuccessConsumeMoney(): int
     {
         return $this->totalSuccessConsumeMoney;
     }
 
     /**
-     * @param integer $totalSuccessConsumeMoney
+     * @param int $totalSuccessConsumeMoney
      */
-    public function setTotalSuccessConsumeMoney(integer $totalSuccessConsumeMoney): void
+    public function setTotalSuccessConsumeMoney(int $totalSuccessConsumeMoney): void
     {
         $this->totalSuccessConsumeMoney = $totalSuccessConsumeMoney;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getTotalFinishConsumeMoney(): integer
+    public function getTotalFinishConsumeMoney(): int
     {
         return $this->totalFinishConsumeMoney;
     }
 
     /**
-     * @param integer $totalFinishConsumeMoney
+     * @param int $totalFinishConsumeMoney
      */
-    public function setTotalFinishConsumeMoney(integer $totalFinishConsumeMoney): void
+    public function setTotalFinishConsumeMoney(int $totalFinishConsumeMoney): void
     {
         $this->totalFinishConsumeMoney = $totalFinishConsumeMoney;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getTotalCustomerNum(): integer
+    public function getTotalCustomerNum(): int
     {
         return $this->totalCustomerNum;
     }
 
     /**
-     * @param integer $totalCustomerNum
+     * @param int $totalCustomerNum
      */
-    public function setTotalCustomerNum(integer $totalCustomerNum): void
+    public function setTotalCustomerNum(int $totalCustomerNum): void
     {
         $this->totalCustomerNum = $totalCustomerNum;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getTotalInviteNum(): integer
+    public function getTotalInviteNum(): int
     {
         return $this->totalInviteNum;
     }
 
     /**
-     * @param integer $totalInviteNum
+     * @param int $totalInviteNum
      */
-    public function setTotalInviteNum(integer $totalInviteNum): void
+    public function setTotalInviteNum(int $totalInviteNum): void
     {
         $this->totalInviteNum = $totalInviteNum;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getRecommendMoney(): integer
+    public function getRecommendMoney(): int
     {
         return $this->recommendMoney;
     }
 
     /**
-     * @param integer $recommendMoney
+     * @param int $recommendMoney
      */
-    public function setRecommendMoney(integer $recommendMoney): void
+    public function setRecommendMoney(int $recommendMoney): void
     {
         $this->recommendMoney = $recommendMoney;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPayConsumeMoney(): integer
+    public function getPayConsumeMoney(): int
     {
         return $this->payConsumeMoney;
     }
 
     /**
-     * @param integer $payConsumeMoney
+     * @param int $payConsumeMoney
      */
-    public function setPayConsumeMoney(integer $payConsumeMoney): void
+    public function setPayConsumeMoney(int $payConsumeMoney): void
     {
         $this->payConsumeMoney = $payConsumeMoney;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getSuccessConsumeMoney(): integer
+    public function getSuccessConsumeMoney(): int
     {
         return $this->successConsumeMoney;
     }
 
     /**
-     * @param integer $successConsumeMoney
+     * @param int $successConsumeMoney
      */
-    public function setSuccessConsumeMoney(integer $successConsumeMoney): void
+    public function setSuccessConsumeMoney(int $successConsumeMoney): void
     {
         $this->successConsumeMoney = $successConsumeMoney;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getFinishConsumeMoney(): integer
+    public function getFinishConsumeMoney(): int
     {
         return $this->finishConsumeMoney;
     }
 
     /**
-     * @param integer $finishConsumeMoney
+     * @param int $finishConsumeMoney
      */
-    public function setFinishConsumeMoney(integer $finishConsumeMoney): void
+    public function setFinishConsumeMoney(int $finishConsumeMoney): void
     {
         $this->finishConsumeMoney = $finishConsumeMoney;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getCustomerNum(): integer
+    public function getCustomerNum(): int
     {
         return $this->customerNum;
     }
 
     /**
-     * @param integer $customerNum
+     * @param int $customerNum
      */
-    public function setCustomerNum(integer $customerNum): void
+    public function setCustomerNum(int $customerNum): void
     {
         $this->customerNum = $customerNum;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getInviteNum(): integer
+    public function getInviteNum(): int
     {
         return $this->inviteNum;
     }
 
     /**
-     * @param integer $inviteNum
+     * @param int $inviteNum
      */
-    public function setInviteNum(integer $inviteNum): void
+    public function setInviteNum(int $inviteNum): void
     {
         $this->inviteNum = $inviteNum;
     }

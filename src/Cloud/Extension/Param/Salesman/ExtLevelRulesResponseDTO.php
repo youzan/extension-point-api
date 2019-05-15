@@ -13,7 +13,7 @@ class ExtLevelRulesResponseDTO implements \JsonSerializable {
 
     /**
      * 
-     * @var integer
+     * @var int
      */
     private $level;
 
@@ -32,17 +32,17 @@ class ExtLevelRulesResponseDTO implements \JsonSerializable {
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getLevel(): integer
+    public function getLevel(): int
     {
         return $this->level;
     }
 
     /**
-     * @param integer $level
+     * @param int $level
      */
-    public function setLevel(integer $level): void
+    public function setLevel(int $level): void
     {
         $this->level = $level;
     }

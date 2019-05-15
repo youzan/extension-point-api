@@ -27,7 +27,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
 
     /**
      * 实付金额
-     * @var integer
+     * @var int
      */
     private $realPay;
 
@@ -39,13 +39,13 @@ class OrderItemMsgDTO implements \JsonSerializable {
 
     /**
      * 限购数
-     * @var integer
+     * @var int
      */
     private $quotaNum;
 
     /**
      * 购买数量
-     * @var integer
+     * @var int
      */
     private $num;
 
@@ -69,7 +69,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
 
     /**
      * 子订单id
-     * @var integer
+     * @var int
      */
     private $id;
 
@@ -108,17 +108,17 @@ class OrderItemMsgDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getRealPay(): integer
+    public function getRealPay(): int
     {
         return $this->realPay;
     }
 
     /**
-     * @param integer $realPay
+     * @param int $realPay
      */
-    public function setRealPay(integer $realPay): void
+    public function setRealPay(int $realPay): void
     {
         $this->realPay = $realPay;
     }
@@ -140,33 +140,33 @@ class OrderItemMsgDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getQuotaNum(): integer
+    public function getQuotaNum(): int
     {
         return $this->quotaNum;
     }
 
     /**
-     * @param integer $quotaNum
+     * @param int $quotaNum
      */
-    public function setQuotaNum(integer $quotaNum): void
+    public function setQuotaNum(int $quotaNum): void
     {
         $this->quotaNum = $quotaNum;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getNum(): integer
+    public function getNum(): int
     {
         return $this->num;
     }
 
     /**
-     * @param integer $num
+     * @param int $num
      */
-    public function setNum(integer $num): void
+    public function setNum(int $num): void
     {
         $this->num = $num;
     }
@@ -220,17 +220,17 @@ class OrderItemMsgDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getId(): integer
+    public function getId(): int
     {
         return $this->id;
     }
 
     /**
-     * @param integer $id
+     * @param int $id
      */
-    public function setId(integer $id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }

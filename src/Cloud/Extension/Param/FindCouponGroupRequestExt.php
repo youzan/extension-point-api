@@ -13,68 +13,68 @@ class FindCouponGroupRequestExt implements \JsonSerializable {
 
     /**
      * 活动状态：0.全部 1.未开始 2.进行中 3.已结束
-     * @var integer
+     * @var int
      */
     private $status;
 
     /**
      * 页码
-     * @var integer
+     * @var int
      */
     private $pageNo;
 
     /**
      * 每页数量
-     * @var integer
+     * @var int
      */
     private $pageSize;
 
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getStatus(): integer
+    public function getStatus(): int
     {
         return $this->status;
     }
 
     /**
-     * @param integer $status
+     * @param int $status
      */
-    public function setStatus(integer $status): void
+    public function setStatus(int $status): void
     {
         $this->status = $status;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPageNo(): integer
+    public function getPageNo(): int
     {
         return $this->pageNo;
     }
 
     /**
-     * @param integer $pageNo
+     * @param int $pageNo
      */
-    public function setPageNo(integer $pageNo): void
+    public function setPageNo(int $pageNo): void
     {
         $this->pageNo = $pageNo;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getPageSize(): integer
+    public function getPageSize(): int
     {
         return $this->pageSize;
     }
 
     /**
-     * @param integer $pageSize
+     * @param int $pageSize
      */
-    public function setPageSize(integer $pageSize): void
+    public function setPageSize(int $pageSize): void
     {
         $this->pageSize = $pageSize;
     }

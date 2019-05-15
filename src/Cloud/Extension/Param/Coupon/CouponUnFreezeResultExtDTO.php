@@ -13,24 +13,24 @@ class CouponUnFreezeResultExtDTO implements \JsonSerializable {
 
     /**
      * 
-     * @var boolean
+     * @var bool
      */
     private $isSuccess;
 
 
 
     /**
-     * @return boolean
+     * @return bool
      */
-    public function getIsSuccess(): boolean
+    public function getIsSuccess(): bool
     {
         return $this->isSuccess;
     }
 
     /**
-     * @param boolean $isSuccess
+     * @param bool $isSuccess
      */
-    public function setIsSuccess(boolean $isSuccess): void
+    public function setIsSuccess(bool $isSuccess): void
     {
         $this->isSuccess = $isSuccess;
     }

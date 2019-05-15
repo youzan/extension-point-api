@@ -13,19 +13,19 @@ class SkuDTO implements \JsonSerializable {
 
     /**
      * 商品现价
-     * @var integer
+     * @var int
      */
     private $currentPrice;
 
     /**
      * 商品原价
-     * @var integer
+     * @var int
      */
     private $originPrice;
 
     /**
      * 是否外部商品
-     * @var boolean
+     * @var bool
      */
     private $outside;
 
@@ -68,49 +68,49 @@ class SkuDTO implements \JsonSerializable {
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getCurrentPrice(): integer
+    public function getCurrentPrice(): int
     {
         return $this->currentPrice;
     }
 
     /**
-     * @param integer $currentPrice
+     * @param int $currentPrice
      */
-    public function setCurrentPrice(integer $currentPrice): void
+    public function setCurrentPrice(int $currentPrice): void
     {
         $this->currentPrice = $currentPrice;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getOriginPrice(): integer
+    public function getOriginPrice(): int
     {
         return $this->originPrice;
     }
 
     /**
-     * @param integer $originPrice
+     * @param int $originPrice
      */
-    public function setOriginPrice(integer $originPrice): void
+    public function setOriginPrice(int $originPrice): void
     {
         $this->originPrice = $originPrice;
     }
 
     /**
-     * @return boolean
+     * @return bool
      */
-    public function getOutside(): boolean
+    public function getOutside(): bool
     {
         return $this->outside;
     }
 
     /**
-     * @param boolean $outside
+     * @param bool $outside
      */
-    public function setOutside(boolean $outside): void
+    public function setOutside(bool $outside): void
     {
         $this->outside = $outside;
     }

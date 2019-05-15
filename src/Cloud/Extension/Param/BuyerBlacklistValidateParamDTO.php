@@ -25,7 +25,7 @@ class BuyerBlacklistValidateParamDTO implements \JsonSerializable {
 
     /**
      * 卖家标识
-     * @var integer
+     * @var int
      */
     private $kdtId;
 
@@ -64,17 +64,17 @@ class BuyerBlacklistValidateParamDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getKdtId(): integer
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
 
     /**
-     * @param integer $kdtId
+     * @param int $kdtId
      */
-    public function setKdtId(integer $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

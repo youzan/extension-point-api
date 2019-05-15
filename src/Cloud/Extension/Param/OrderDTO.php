@@ -19,13 +19,13 @@ class OrderDTO implements \JsonSerializable {
 
     /**
      * 超期时间（时间戳）
-     * @var integer
+     * @var int
      */
     private $expireTime;
 
     /**
      * 订单付款金额
-     * @var integer
+     * @var int
      */
     private $orderPayAmount;
 
@@ -66,33 +66,33 @@ class OrderDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getExpireTime(): integer
+    public function getExpireTime(): int
     {
         return $this->expireTime;
     }
 
     /**
-     * @param integer $expireTime
+     * @param int $expireTime
      */
-    public function setExpireTime(integer $expireTime): void
+    public function setExpireTime(int $expireTime): void
     {
         $this->expireTime = $expireTime;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getOrderPayAmount(): integer
+    public function getOrderPayAmount(): int
     {
         return $this->orderPayAmount;
     }
 
     /**
-     * @param integer $orderPayAmount
+     * @param int $orderPayAmount
      */
-    public function setOrderPayAmount(integer $orderPayAmount): void
+    public function setOrderPayAmount(int $orderPayAmount): void
     {
         $this->orderPayAmount = $orderPayAmount;
     }

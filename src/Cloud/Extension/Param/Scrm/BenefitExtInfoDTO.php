@@ -13,7 +13,7 @@ class BenefitExtInfoDTO implements \JsonSerializable {
 
     /**
      * 是否包邮
-     * @var boolean
+     * @var bool
      */
     private $postageFreeFlag;
 
@@ -25,24 +25,24 @@ class BenefitExtInfoDTO implements \JsonSerializable {
 
     /**
      * 是否存在等级权益
-     * @var boolean
+     * @var bool
      */
     private $levelBenefitFlag;
 
 
 
     /**
-     * @return boolean
+     * @return bool
      */
-    public function getPostageFreeFlag(): boolean
+    public function getPostageFreeFlag(): bool
     {
         return $this->postageFreeFlag;
     }
 
     /**
-     * @param boolean $postageFreeFlag
+     * @param bool $postageFreeFlag
      */
-    public function setPostageFreeFlag(boolean $postageFreeFlag): void
+    public function setPostageFreeFlag(bool $postageFreeFlag): void
     {
         $this->postageFreeFlag = $postageFreeFlag;
     }
@@ -64,17 +64,17 @@ class BenefitExtInfoDTO implements \JsonSerializable {
     }
 
     /**
-     * @return boolean
+     * @return bool
      */
-    public function getLevelBenefitFlag(): boolean
+    public function getLevelBenefitFlag(): bool
     {
         return $this->levelBenefitFlag;
     }
 
     /**
-     * @param boolean $levelBenefitFlag
+     * @param bool $levelBenefitFlag
      */
-    public function setLevelBenefitFlag(boolean $levelBenefitFlag): void
+    public function setLevelBenefitFlag(bool $levelBenefitFlag): void
     {
         $this->levelBenefitFlag = $levelBenefitFlag;
     }

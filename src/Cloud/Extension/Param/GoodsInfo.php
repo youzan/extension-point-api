@@ -19,25 +19,25 @@ class GoodsInfo implements \JsonSerializable {
 
     /**
      * 电子卡券有效期
-     * @var integer
+     * @var int
      */
     private $itemValidityStart;
 
     /**
      * 电子卡券有效期
-     * @var integer
+     * @var int
      */
     private $itemValidityEnd;
 
     /**
      * 电子卡券有效期类型
-     * @var integer
+     * @var int
      */
     private $validityType;
 
     /**
      * 电子卡券有效期天数
-     * @var integer
+     * @var int
      */
     private $itemValidityDay;
 
@@ -60,65 +60,65 @@ class GoodsInfo implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getItemValidityStart(): integer
+    public function getItemValidityStart(): int
     {
         return $this->itemValidityStart;
     }
 
     /**
-     * @param integer $itemValidityStart
+     * @param int $itemValidityStart
      */
-    public function setItemValidityStart(integer $itemValidityStart): void
+    public function setItemValidityStart(int $itemValidityStart): void
     {
         $this->itemValidityStart = $itemValidityStart;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getItemValidityEnd(): integer
+    public function getItemValidityEnd(): int
     {
         return $this->itemValidityEnd;
     }
 
     /**
-     * @param integer $itemValidityEnd
+     * @param int $itemValidityEnd
      */
-    public function setItemValidityEnd(integer $itemValidityEnd): void
+    public function setItemValidityEnd(int $itemValidityEnd): void
     {
         $this->itemValidityEnd = $itemValidityEnd;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getValidityType(): integer
+    public function getValidityType(): int
     {
         return $this->validityType;
     }
 
     /**
-     * @param integer $validityType
+     * @param int $validityType
      */
-    public function setValidityType(integer $validityType): void
+    public function setValidityType(int $validityType): void
     {
         $this->validityType = $validityType;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getItemValidityDay(): integer
+    public function getItemValidityDay(): int
     {
         return $this->itemValidityDay;
     }
 
     /**
-     * @param integer $itemValidityDay
+     * @param int $itemValidityDay
      */
-    public function setItemValidityDay(integer $itemValidityDay): void
+    public function setItemValidityDay(int $itemValidityDay): void
     {
         $this->itemValidityDay = $itemValidityDay;
     }

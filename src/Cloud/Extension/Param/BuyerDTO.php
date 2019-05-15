@@ -13,13 +13,13 @@ class BuyerDTO implements \JsonSerializable {
 
     /**
      * 粉丝类型
-     * @var integer
+     * @var int
      */
     private $fansType;
 
     /**
      * 粉丝id
-     * @var integer
+     * @var int
      */
     private $fansId;
 
@@ -37,40 +37,40 @@ class BuyerDTO implements \JsonSerializable {
 
     /**
      * 买家id
-     * @var integer
+     * @var int
      */
     private $buyerId;
 
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getFansType(): integer
+    public function getFansType(): int
     {
         return $this->fansType;
     }
 
     /**
-     * @param integer $fansType
+     * @param int $fansType
      */
-    public function setFansType(integer $fansType): void
+    public function setFansType(int $fansType): void
     {
         $this->fansType = $fansType;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getFansId(): integer
+    public function getFansId(): int
     {
         return $this->fansId;
     }
 
     /**
-     * @param integer $fansId
+     * @param int $fansId
      */
-    public function setFansId(integer $fansId): void
+    public function setFansId(int $fansId): void
     {
         $this->fansId = $fansId;
     }
@@ -108,17 +108,17 @@ class BuyerDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getBuyerId(): integer
+    public function getBuyerId(): int
     {
         return $this->buyerId;
     }
 
     /**
-     * @param integer $buyerId
+     * @param int $buyerId
      */
-    public function setBuyerId(integer $buyerId): void
+    public function setBuyerId(int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }

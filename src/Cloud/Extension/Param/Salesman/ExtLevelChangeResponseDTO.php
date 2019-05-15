@@ -13,13 +13,13 @@ class ExtLevelChangeResponseDTO implements \JsonSerializable {
 
     /**
      * 需要变更为的等级值
-     * @var integer
+     * @var int
      */
     private $level;
 
     /**
      * 变更类型
-     * @var integer
+     * @var int
      */
     private $changeType;
 
@@ -32,33 +32,33 @@ class ExtLevelChangeResponseDTO implements \JsonSerializable {
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getLevel(): integer
+    public function getLevel(): int
     {
         return $this->level;
     }
 
     /**
-     * @param integer $level
+     * @param int $level
      */
-    public function setLevel(integer $level): void
+    public function setLevel(int $level): void
     {
         $this->level = $level;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getChangeType(): integer
+    public function getChangeType(): int
     {
         return $this->changeType;
     }
 
     /**
-     * @param integer $changeType
+     * @param int $changeType
      */
-    public function setChangeType(integer $changeType): void
+    public function setChangeType(int $changeType): void
     {
         $this->changeType = $changeType;
     }

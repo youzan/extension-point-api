@@ -2,6 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param;
 
+use DateTime;
 use StdClass;
 use Com\Youzan\Cloud\Extension\Param\OrderItemMsgDTO;
 use Com\Youzan\Cloud\Extension\Param\InvalidOrderItemMsgDTO;
@@ -21,19 +22,19 @@ class OrderInvalidDTO implements \JsonSerializable {
 
     /**
      * 买家id
-     * @var integer
+     * @var int
      */
     private $buyerId;
 
     /**
      * 通道
-     * @var integer
+     * @var int
      */
     private $channel;
 
     /**
      * 创建时间
-     * @var date
+     * @var DateTime
      */
     private $createTime;
 
@@ -45,7 +46,7 @@ class OrderInvalidDTO implements \JsonSerializable {
 
     /**
      * 店铺id
-     * @var integer
+     * @var int
      */
     private $kdtId;
 
@@ -57,7 +58,7 @@ class OrderInvalidDTO implements \JsonSerializable {
 
     /**
      * 订单id
-     * @var integer
+     * @var int
      */
     private $orderId;
 
@@ -75,7 +76,7 @@ class OrderInvalidDTO implements \JsonSerializable {
 
     /**
      * 
-     * @var integer
+     * @var int
      */
     private $shopId;
 
@@ -116,49 +117,49 @@ class OrderInvalidDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getBuyerId(): integer
+    public function getBuyerId(): int
     {
         return $this->buyerId;
     }
 
     /**
-     * @param integer $buyerId
+     * @param int $buyerId
      */
-    public function setBuyerId(integer $buyerId): void
+    public function setBuyerId(int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getChannel(): integer
+    public function getChannel(): int
     {
         return $this->channel;
     }
 
     /**
-     * @param integer $channel
+     * @param int $channel
      */
-    public function setChannel(integer $channel): void
+    public function setChannel(int $channel): void
     {
         $this->channel = $channel;
     }
 
     /**
-     * @return date
+     * @return DateTime
      */
-    public function getCreateTime(): date
+    public function getCreateTime(): DateTime
     {
         return $this->createTime;
     }
 
     /**
-     * @param date $createTime
+     * @param DateTime $createTime
      */
-    public function setCreateTime(date $createTime): void
+    public function setCreateTime(DateTime $createTime): void
     {
         $this->createTime = $createTime;
     }
@@ -180,17 +181,17 @@ class OrderInvalidDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getKdtId(): integer
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
 
     /**
-     * @param integer $kdtId
+     * @param int $kdtId
      */
-    public function setKdtId(integer $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -212,17 +213,17 @@ class OrderInvalidDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getOrderId(): integer
+    public function getOrderId(): int
     {
         return $this->orderId;
     }
 
     /**
-     * @param integer $orderId
+     * @param int $orderId
      */
-    public function setOrderId(integer $orderId): void
+    public function setOrderId(int $orderId): void
     {
         $this->orderId = $orderId;
     }
@@ -260,17 +261,17 @@ class OrderInvalidDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getShopId(): integer
+    public function getShopId(): int
     {
         return $this->shopId;
     }
 
     /**
-     * @param integer $shopId
+     * @param int $shopId
      */
-    public function setShopId(integer $shopId): void
+    public function setShopId(int $shopId): void
     {
         $this->shopId = $shopId;
     }

@@ -19,19 +19,19 @@ class FansUnionidCreateDTO implements \JsonSerializable {
 
     /**
      * 店铺id
-     * @var integer
+     * @var int
      */
     private $kdtId;
 
     /**
      * 公众号或小程序id
-     * @var integer
+     * @var int
      */
     private $mpId;
 
     /**
      * 粉丝标识
-     * @var integer
+     * @var int
      */
     private $fansId;
 
@@ -60,49 +60,49 @@ class FansUnionidCreateDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getKdtId(): integer
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
 
     /**
-     * @param integer $kdtId
+     * @param int $kdtId
      */
-    public function setKdtId(integer $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getMpId(): integer
+    public function getMpId(): int
     {
         return $this->mpId;
     }
 
     /**
-     * @param integer $mpId
+     * @param int $mpId
      */
-    public function setMpId(integer $mpId): void
+    public function setMpId(int $mpId): void
     {
         $this->mpId = $mpId;
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getFansId(): integer
+    public function getFansId(): int
     {
         return $this->fansId;
     }
 
     /**
-     * @param integer $fansId
+     * @param int $fansId
      */
-    public function setFansId(integer $fansId): void
+    public function setFansId(int $fansId): void
     {
         $this->fansId = $fansId;
     }
