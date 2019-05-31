@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ContactAddressCreateDTO;
 /**
  * 
  * @author Baymax
- * @create Sat Sep 29 21:13:57 CST 2018
+ * @create 2018-09-29 21:13:57.0
  */
 class CustomerProfileCreateDTO implements \JsonSerializable {
 
@@ -24,7 +24,7 @@ class CustomerProfileCreateDTO implements \JsonSerializable {
     private $name;
 
     /**
-     * 性别,0:未知;1:男;2:女
+     * 性别，0：未知；1：男；2：女
      * @var int
      */
     private $gender;

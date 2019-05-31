@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 
  * @author Baymax
- * @create Thu Oct 11 13:17:41 CST 2018
+ * @create 2018-10-11 13:17:41.0
  */
 class MessageTestDTO implements \JsonSerializable {
 

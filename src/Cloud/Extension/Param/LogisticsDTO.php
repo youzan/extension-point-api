@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\AddressDTO;
 /**
  * 地址信息
  * @author Baymax
- * @create Mon Oct 22 20:30:57 CST 2018
+ * @create 2018-10-22 20:30:57.0
  */
 class LogisticsDTO implements \JsonSerializable {
 

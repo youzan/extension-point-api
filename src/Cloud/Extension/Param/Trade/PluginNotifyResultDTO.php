@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 /**
  * 
  * @author Baymax
- * @create Tue Nov 06 20:20:56 CST 2018
+ * @create 2018-11-06 20:20:56.0
  */
 class PluginNotifyResultDTO implements \JsonSerializable {
 

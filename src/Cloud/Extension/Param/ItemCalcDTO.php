@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 商品信息
  * @author Baymax
- * @create Mon Oct 08 11:32:37 CST 2018
+ * @create 2018-10-08 11:32:37.0
  */
 class ItemCalcDTO implements \JsonSerializable {
 
@@ -52,6 +52,12 @@ class ItemCalcDTO implements \JsonSerializable {
      * @var int
      */
     private $goodsId;
+
+    /**
+     * 优惠后价格
+     * @var int
+     */
+    private $totalPrice;
 
 
 
@@ -165,6 +171,22 @@ class ItemCalcDTO implements \JsonSerializable {
     public function setGoodsId(int $goodsId): void
     {
         $this->goodsId = $goodsId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTotalPrice(): int
+    {
+        return $this->totalPrice;
+    }
+
+    /**
+     * @param int $totalPrice
+     */
+    public function setTotalPrice(int $totalPrice): void
+    {
+        $this->totalPrice = $totalPrice;
     }
 
     public function jsonSerialize() {

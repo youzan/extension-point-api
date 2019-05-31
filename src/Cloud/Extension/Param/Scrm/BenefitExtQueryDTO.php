@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 /**
  * 请求参数
  * @author Baymax
- * @create Tue Oct 16 19:37:48 CST 2018
+ * @create 2018-10-16 19:37:48.0
  */
 class BenefitExtQueryDTO implements \JsonSerializable {
 
@@ -18,13 +18,13 @@ class BenefitExtQueryDTO implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * 账户
+     * 帐户
      * @var string
      */
     private $accountId;
 
     /**
-     * 账户类型
+     * 帐号类型，目前有以下几种类型，WxOpenId：微信openId，WxUnionId：微信unionId，Mobile：手机号，YouZanAccount：有赞帐号
      * @var string
      */
     private $accountType;

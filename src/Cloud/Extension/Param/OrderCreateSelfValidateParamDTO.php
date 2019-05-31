@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\TradeGroupDTO;
 /**
  * 
  * @author Baymax
- * @create Sun Sep 30 17:35:52 CST 2018
+ * @create 2018-09-30 17:35:52.0
  */
 class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
 

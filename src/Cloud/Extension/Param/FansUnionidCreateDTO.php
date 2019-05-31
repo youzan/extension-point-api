@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 
  * @author Baymax
- * @create Wed Sep 12 17:04:23 CST 2018
+ * @create 2018-09-12 17:04:23.0
  */
 class FansUnionidCreateDTO implements \JsonSerializable {
 

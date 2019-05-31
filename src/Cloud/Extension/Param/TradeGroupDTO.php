@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\TradeItemDTO;
 /**
  * 交易分组信息
  * @author Baymax
- * @create Tue Mar 26 13:18:47 CST 2019
+ * @create 2019-03-26 13:18:47.0
  */
 class TradeGroupDTO implements \JsonSerializable {
 

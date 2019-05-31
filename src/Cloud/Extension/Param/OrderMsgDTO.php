@@ -12,9 +12,9 @@ use Com\Youzan\Cloud\Extension\Param\SellerDTO;
 use Com\Youzan\Cloud\Extension\Param\BuyerDTO;
 
 /**
- * 
+ * 订单
  * @author Baymax
- * @create Mon Oct 22 20:30:57 CST 2018
+ * @create 2018-10-22 20:30:57.0
  */
 class OrderMsgDTO implements \JsonSerializable {
 
@@ -25,7 +25,7 @@ class OrderMsgDTO implements \JsonSerializable {
     private $extra;
 
     /**
-     * 关闭类型值
+     * 关闭类型值，0：未关闭；1：过期关闭；2：标记退款；3：订单取消；4：买家取消；5：卖家取消；6：部分退款；10：无法联系上买家；11：买家误拍或重拍了；12：买家无诚意完成交易；13：已通过银行线下汇款；14：已通过同城见面交易；15：已通过货到付款交易；16：已通过网上银行直接汇款；17：已经缺货无法交易；18：扣款失败
      * @var int
      */
     private $closeTypeValue;
@@ -163,7 +163,7 @@ class OrderMsgDTO implements \JsonSerializable {
     private $consumeStatus;
 
     /**
-     * 销售模式
+     * 销售模式，0：普通模式；1：定金预售
      * @var int
      */
     private $salesModelType;

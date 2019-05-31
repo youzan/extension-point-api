@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 订单详情自定义数据请求参数
  * @author Baymax
- * @create Fri Sep 14 18:01:22 CST 2018
+ * @create 2018-09-14 18:01:22.0
  */
 class OrderDetailSelfDefineBlockParamDTO implements \JsonSerializable {
 

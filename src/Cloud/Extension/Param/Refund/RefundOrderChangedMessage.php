@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\Refund\RefundOrderItemDTO;
 /**
  * refundOrder发生创建，修改等变更  消息体
  * @author Baymax
- * @create Wed Apr 24 21:27:35 CST 2019
+ * @create 2019-04-24 21:27:35.0
  */
 class RefundOrderChangedMessage implements \JsonSerializable {
 

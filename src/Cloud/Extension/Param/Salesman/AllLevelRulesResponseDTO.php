@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Salesman\ExtLevelRulesResponseDTO;
 /**
  * 
  * @author Baymax
- * @create Sun Apr 28 16:00:27 CST 2019
+ * @create 2019-04-28 16:00:27.0
  */
 class AllLevelRulesResponseDTO implements \JsonSerializable {
 

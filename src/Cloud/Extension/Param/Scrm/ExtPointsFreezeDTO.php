@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerInfoDTO;
 /**
  * 请求参数
  * @author Baymax
- * @create Sun Sep 30 14:59:23 CST 2018
+ * @create 2018-09-30 14:59:23.0
  */
 class ExtPointsFreezeDTO implements \JsonSerializable {
 
@@ -19,7 +19,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     private $extraInfo;
 
     /**
-     * 积分消耗来源
+     * 积分消耗来源，300：积分商城；301：积分抵扣
      * @var int
      */
     private $consumeSource;
@@ -43,7 +43,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     private $bizValue;
 
     /**
-     * 账号信息
+     * 帐号信息
      * @var ExtCustomerInfoDTO
      */
     private $extCustomerInfoDTO;

@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 
  * @author Baymax
- * @create Wed Apr 03 15:12:27 CST 2019
+ * @create 2019-04-03 15:12:27.0
  */
 class AppstoreNotifyMessage implements \JsonSerializable {
 

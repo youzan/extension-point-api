@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Refund;
 /**
  * 头消息
  * @author Baymax
- * @create Fri Jan 11 14:24:24 CST 2019
+ * @create 2019-01-11 14:24:24.0
  */
 class ThirdPartyRefundNsqMessageHeadersDTO implements \JsonSerializable {
 

@@ -7,13 +7,13 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 退款计算结果
  * @author Baymax
- * @create Tue Oct 09 10:05:17 CST 2018
+ * @create 2018-10-09 10:05:17.0
  */
 class RefundableAmountDTO implements \JsonSerializable {
 
     /**
      * 订单或者商品的可退金额（单位分）
-     * @var integer
+     * @var int
      */
     private $refundableAmt;
 
@@ -26,17 +26,17 @@ class RefundableAmountDTO implements \JsonSerializable {
 
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getRefundableAmt(): integer
+    public function getRefundableAmt(): int
     {
         return $this->refundableAmt;
     }
 
     /**
-     * @param integer $refundableAmt
+     * @param int $refundableAmt
      */
-    public function setRefundableAmt(integer $refundableAmt): void
+    public function setRefundableAmt(int $refundableAmt): void
     {
         $this->refundableAmt = $refundableAmt;
     }

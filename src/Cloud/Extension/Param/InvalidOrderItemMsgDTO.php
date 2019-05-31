@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\SkuCompositeId;
 /**
  * 失败订单信息
  * @author Baymax
- * @create Thu Mar 14 15:34:50 CST 2019
+ * @create 2019-03-14 15:34:50.0
  */
 class InvalidOrderItemMsgDTO implements \JsonSerializable {
 

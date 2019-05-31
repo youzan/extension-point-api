@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\BenefitExtInfoDTO;
 /**
  * 返回参数返回类
  * @author Baymax
- * @create Tue Oct 16 19:37:48 CST 2018
+ * @create 2018-10-16 19:37:48.0
  */
 class BenefitExtInfoDTOOutParam implements \JsonSerializable {
 

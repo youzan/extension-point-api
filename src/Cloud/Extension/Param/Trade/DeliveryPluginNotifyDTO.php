@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\OrderMsgDTO;
 /**
  * 
  * @author Baymax
- * @create Tue Nov 06 20:20:56 CST 2018
+ * @create 2018-11-06 20:20:56.0
  */
 class DeliveryPluginNotifyDTO implements \JsonSerializable {
 

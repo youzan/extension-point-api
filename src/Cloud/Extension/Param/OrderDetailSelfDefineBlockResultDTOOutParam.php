@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\OrderDetailSelfDefineBlockResultDTO;
 /**
  * 订单详情自定义数据返回结果返回类
  * @author Baymax
- * @create Fri Sep 14 18:01:22 CST 2018
+ * @create 2018-09-14 18:01:22.0
  */
 class OrderDetailSelfDefineBlockResultDTOOutParam implements \JsonSerializable {
 

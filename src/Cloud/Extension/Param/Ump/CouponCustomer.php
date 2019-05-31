@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Ump;
 /**
  * 
  * @author Baymax
- * @create Mon May 13 20:03:18 CST 2019
+ * @create 2019-05-13 20:03:18.0
  */
 class CouponCustomer implements \JsonSerializable {
 

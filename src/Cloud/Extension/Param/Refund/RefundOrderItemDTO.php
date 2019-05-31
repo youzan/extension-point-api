@@ -7,7 +7,7 @@ use DateTime;
 /**
  * 退款单明细
  * @author Baymax
- * @create Wed Apr 24 21:27:35 CST 2019
+ * @create 2019-04-24 21:27:35.0
  */
 class RefundOrderItemDTO implements \JsonSerializable {
 

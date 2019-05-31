@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Coupon\CustomerIdentityDTO;
 /**
  * 请求参数
  * @author Baymax
- * @create Fri Sep 28 19:20:48 CST 2018
+ * @create 2018-09-28 19:20:48.0
  */
 class CouponTakeRequestExtDTO implements \JsonSerializable {
 

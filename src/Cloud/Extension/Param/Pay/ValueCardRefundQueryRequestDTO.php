@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 /**
  * 
  * @author Baymax
- * @create Sun May 05 16:35:58 CST 2019
+ * @create 2019-05-05 16:35:58.0
  */
 class ValueCardRefundQueryRequestDTO implements \JsonSerializable {
 

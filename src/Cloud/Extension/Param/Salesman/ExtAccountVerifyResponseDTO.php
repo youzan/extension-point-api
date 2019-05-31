@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Salesman;
 /**
  * 
  * @author Baymax
- * @create Fri Apr 12 20:34:00 CST 2019
+ * @create 2019-04-12 20:34:00.0
  */
 class ExtAccountVerifyResponseDTO implements \JsonSerializable {
 

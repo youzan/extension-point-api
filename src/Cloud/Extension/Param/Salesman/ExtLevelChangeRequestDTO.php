@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Salesman;
 /**
  * 
  * @author Baymax
- * @create Fri Apr 12 16:17:48 CST 2019
+ * @create 2019-04-12 16:17:48.0
  */
 class ExtLevelChangeRequestDTO implements \JsonSerializable {
 

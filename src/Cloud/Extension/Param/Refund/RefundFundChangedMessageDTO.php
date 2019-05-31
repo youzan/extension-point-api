@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Refund\ItemDTO;
 /**
  * 退款资金变更消息体
  * @author Baymax
- * @create Wed Dec 19 21:16:28 CST 2018
+ * @create 2018-12-19 21:16:28.0
  */
 class RefundFundChangedMessageDTO implements \JsonSerializable {
 

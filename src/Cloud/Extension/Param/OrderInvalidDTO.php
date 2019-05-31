@@ -10,7 +10,7 @@ use Com\Youzan\Cloud\Extension\Param\InvalidOrderItemMsgDTO;
 /**
  * 失效订单DTO
  * @author Baymax
- * @create Thu Mar 14 15:34:50 CST 2019
+ * @create 2019-03-14 15:34:50.0
  */
 class OrderInvalidDTO implements \JsonSerializable {
 

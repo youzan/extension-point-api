@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Refund\ThirdPartyRefundNsqMessageHeadersDTO
 /**
  * 退款失败消息体
  * @author Baymax
- * @create Fri Jan 11 14:15:59 CST 2019
+ * @create 2019-01-11 14:15:59.0
  */
 class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
 

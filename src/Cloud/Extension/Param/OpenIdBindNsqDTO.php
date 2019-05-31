@@ -7,7 +7,7 @@ use StdClass;
 /**
  * openId绑定消息体
  * @author Baymax
- * @create Wed Mar 27 18:36:51 CST 2019
+ * @create 2019-03-27 18:36:51.0
  */
 class OpenIdBindNsqDTO implements \JsonSerializable {
 

@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 
  * @author Baymax
- * @create Mon Apr 22 18:07:50 CST 2019
+ * @create 2019-04-22 18:07:50.0
  */
 class ValueCardRefundResponseDTO implements \JsonSerializable {
 

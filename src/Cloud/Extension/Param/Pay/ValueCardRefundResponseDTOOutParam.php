@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Pay\ValueCardRefundResponseDTO;
 /**
  * 返回类
  * @author Baymax
- * @create Mon Apr 22 18:07:50 CST 2019
+ * @create 2019-04-22 18:07:50.0
  */
 class ValueCardRefundResponseDTOOutParam implements \JsonSerializable {
 

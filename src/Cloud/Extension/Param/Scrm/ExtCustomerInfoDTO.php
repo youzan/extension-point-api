@@ -5,20 +5,20 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
 
 /**
- * 账号信息
+ * 帐号信息
  * @author Baymax
- * @create Sun Sep 30 14:22:43 CST 2018
+ * @create 2018-09-30 14:22:43.0
  */
 class ExtCustomerInfoDTO implements \JsonSerializable {
 
     /**
-     * 账号类型
+     * 帐号类型，目前有以下几种类型，WxOpenId：微信openId，WxUnionId：微信unionId，Mobile：手机号，YouZanAccount：有赞帐号
      * @var string
      */
     private $accountType;
 
     /**
-     * 账号id
+     * 帐号id
      * @var string
      */
     private $accountId;

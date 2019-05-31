@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 退还资金扩展出参
  * @author Baymax
- * @create Tue Sep 25 17:57:08 CST 2018
+ * @create 2018-09-25 17:57:08.0
  */
 class RefundPayParamDTO implements \JsonSerializable {
 

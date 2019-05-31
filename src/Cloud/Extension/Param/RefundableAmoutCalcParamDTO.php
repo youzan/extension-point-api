@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 
  * @author Baymax
- * @create Tue Oct 09 10:05:17 CST 2018
+ * @create 2018-10-09 10:05:17.0
  */
 class RefundableAmoutCalcParamDTO implements \JsonSerializable {
 
@@ -25,7 +25,7 @@ class RefundableAmoutCalcParamDTO implements \JsonSerializable {
 
     /**
      * 商家标识
-     * @var integer
+     * @var int
      */
     private $kdtId;
 
@@ -64,17 +64,17 @@ class RefundableAmoutCalcParamDTO implements \JsonSerializable {
     }
 
     /**
-     * @return integer
+     * @return int
      */
-    public function getKdtId(): integer
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
 
     /**
-     * @param integer $kdtId
+     * @param int $kdtId
      */
-    public function setKdtId(integer $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
