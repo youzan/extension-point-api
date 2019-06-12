@@ -12,13 +12,13 @@ namespace Com\Youzan\Cloud\Extension\Param;
 class SkuCompositeId implements \JsonSerializable {
 
     /**
-     * 
+     * 商品ID
      * @var int
      */
     private $goodsId;
 
     /**
-     * 
+     * 商品skuID
      * @var int
      */
     private $skuId;

@@ -48,7 +48,7 @@ class RefundPayParamDTO implements \JsonSerializable {
     private $orderNo;
 
     /**
-     * 商户标识
+     * 商户店铺ID
      * @var int
      */
     private $kdtId;

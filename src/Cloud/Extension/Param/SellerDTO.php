@@ -36,13 +36,13 @@ class SellerDTO implements \JsonSerializable {
     private $shopTel;
 
     /**
-     * 店铺id
+     * 商户店铺编号
      * @var int
      */
     private $shopId;
 
     /**
-     * 卖家id
+     * 商户店铺ID
      * @var int
      */
     private $kdtId;

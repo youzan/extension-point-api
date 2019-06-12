@@ -29,6 +29,12 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
      */
     private $orderNo;
 
+    /**
+     * 附加费用说明
+     * @var string
+     */
+    private $extraFeeDesc;
+
 
 
     /**
@@ -77,6 +83,22 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExtraFeeDesc(): string
+    {
+        return $this->extraFeeDesc;
+    }
+
+    /**
+     * @param string $extraFeeDesc
+     */
+    public function setExtraFeeDesc(string $extraFeeDesc): void
+    {
+        $this->extraFeeDesc = $extraFeeDesc;
     }
 
     public function jsonSerialize() {

@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 class ExtPointUserMsgDTO implements \JsonSerializable {
 
     /**
-     * 买家标识
+     * 买家ID
      * @var int
      */
     private $buyerId;

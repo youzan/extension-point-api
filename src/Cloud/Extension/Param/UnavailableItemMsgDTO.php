@@ -12,25 +12,25 @@ namespace Com\Youzan\Cloud\Extension\Param;
 class UnavailableItemMsgDTO implements \JsonSerializable {
 
     /**
-     * 卖家标识
+     * 商户店铺ID
      * @var int
      */
     private $kdtId;
 
     /**
-     * 店铺标识
+     * 商户店铺编号
      * @var int
      */
     private $shopId;
 
     /**
-     * 商品标识
+     * 商品ID
      * @var int
      */
     private $goodsId;
 
     /**
-     * 商品sku标识
+     * 商品skuID
      * @var int
      */
     private $skuId;

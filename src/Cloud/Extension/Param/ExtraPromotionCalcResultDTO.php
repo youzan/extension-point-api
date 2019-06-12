@@ -29,6 +29,12 @@ class ExtraPromotionCalcResultDTO implements \JsonSerializable {
      */
     private $orderNo;
 
+    /**
+     * 附加优惠说明
+     * @var string
+     */
+    private $extraPromotionDesc;
+
 
 
     /**
@@ -77,6 +83,22 @@ class ExtraPromotionCalcResultDTO implements \JsonSerializable {
     public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExtraPromotionDesc(): string
+    {
+        return $this->extraPromotionDesc;
+    }
+
+    /**
+     * @param string $extraPromotionDesc
+     */
+    public function setExtraPromotionDesc(string $extraPromotionDesc): void
+    {
+        $this->extraPromotionDesc = $extraPromotionDesc;
     }
 
     public function jsonSerialize() {
