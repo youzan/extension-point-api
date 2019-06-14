@@ -18,13 +18,13 @@ class GoodsInfo implements \JsonSerializable {
     private $goodsNo;
 
     /**
-     * 电子卡券有效期
+     * 电子卡券有效期开始时间
      * @var int
      */
     private $itemValidityStart;
 
     /**
-     * 电子卡券有效期
+     * 电子卡券有效期结束时间
      * @var int
      */
     private $itemValidityEnd;

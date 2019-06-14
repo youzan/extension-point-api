@@ -75,7 +75,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     private $orderType;
 
     /**
-     * 
+     * 店铺编号
      * @var int
      */
     private $shopId;

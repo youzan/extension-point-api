@@ -18,7 +18,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     private $headers;
 
     /**
-     * kdtId
+     * 商户店铺ID
      * @var int
      */
     private $kdtId;
