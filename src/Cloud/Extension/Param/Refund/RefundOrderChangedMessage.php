@@ -19,7 +19,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     private $disputeId;
 
     /**
-     * 款单号，业务幂等字段
+     * 退款单号，业务幂等字段
      * @var string
      */
     private $refundId;
@@ -31,7 +31,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     private $orderNo;
 
     /**
-     * 口袋通id
+     * 店铺id
      * @var int
      */
     private $kdtId;
@@ -61,7 +61,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     private $type;
 
     /**
-     * 退款流程类型。60表示成功
+     * 退款流程状态。60表示成功
      * @var int
      */
     private $status;
