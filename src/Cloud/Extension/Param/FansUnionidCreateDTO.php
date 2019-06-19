@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 class FansUnionidCreateDTO implements \JsonSerializable {
 
     /**
-     * 获取时间
+     * 获取时间，时间戳
      * @var string
      */
     private $dataTime;
