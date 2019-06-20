@@ -18,7 +18,7 @@ class ExtCustomerLevelDTO implements \JsonSerializable {
     private $levelAlias;
 
     /**
-     * identityNo
+     * 在c端场景下，是客户等级的唯一标志,通过b端等级配置+用户生成
      * @var string
      */
     private $identityNo;

@@ -30,7 +30,7 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     private $orderNo;
 
     /**
-     * 附加费用说明
+     * 附加费用说明,会显示在下单页
      * @var string
      */
     private $extraFeeDesc;
