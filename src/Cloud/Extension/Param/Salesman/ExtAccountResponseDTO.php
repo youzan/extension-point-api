@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Salesman;
 class ExtAccountResponseDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 是否成功 ture表示成功 false表示失败
      * @var bool
      */
     private $salesman;

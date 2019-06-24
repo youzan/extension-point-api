@@ -12,7 +12,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerInfoDTO;
 class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
 
     /**
-     * 单页条数
+     * 单页条数，限制50
      * @var int
      */
     private $pageSize;
