@@ -31,6 +31,24 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     private $orderNo;
 
     /**
+     * 商品现价格之和：商品价格列表中totalPrice之和
+     * @var int
+     */
+    private $itemsPrice;
+
+    /**
+     * 优惠后的邮费价格
+     * @var int
+     */
+    private $postage;
+
+    /**
+     * 订单总价&#x3D;商品总价+当前邮费价格+额外费用
+     * @var int
+     */
+    private $totalPrice;
+
+    /**
      * 商户店铺ID
      * @var int
      */
@@ -84,6 +102,54 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
+    }
+
+    /**
+     * @return int
+     */
+    public function getItemsPrice(): int
+    {
+        return $this->itemsPrice;
+    }
+
+    /**
+     * @param int $itemsPrice
+     */
+    public function setItemsPrice(int $itemsPrice): void
+    {
+        $this->itemsPrice = $itemsPrice;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPostage(): int
+    {
+        return $this->postage;
+    }
+
+    /**
+     * @param int $postage
+     */
+    public function setPostage(int $postage): void
+    {
+        $this->postage = $postage;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTotalPrice(): int
+    {
+        return $this->totalPrice;
+    }
+
+    /**
+     * @param int $totalPrice
+     */
+    public function setTotalPrice(int $totalPrice): void
+    {
+        $this->totalPrice = $totalPrice;
     }
 
     /**
