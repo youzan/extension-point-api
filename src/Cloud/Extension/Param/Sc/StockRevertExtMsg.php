@@ -33,7 +33,7 @@ class StockRevertExtMsg implements \JsonSerializable {
      * 商品明细
      * @var array
      */
-    private $itemList;
+    private $detailParamList;
 
 
 
@@ -88,17 +88,17 @@ class StockRevertExtMsg implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getItemList(): array
+    public function getDetailParamList(): array
     {
-        return $this->itemList;
+        return $this->detailParamList;
     }
 
     /**
-     * @param array $itemList
+     * @param array $detailParamList
      */
-    public function setItemList(array $itemList): void
+    public function setDetailParamList(array $detailParamList): void
     {
-        $this->itemList = $itemList;
+        $this->detailParamList = $detailParamList;
     }
 
     public function jsonSerialize() {

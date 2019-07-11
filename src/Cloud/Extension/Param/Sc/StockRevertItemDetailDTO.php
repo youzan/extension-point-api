@@ -33,7 +33,7 @@ class StockRevertItemDetailDTO implements \JsonSerializable {
      * 外部商品编码
      * @var string
      */
-    private $outsideSkuCode;
+    private $skuCode;
 
     /**
      * 扣库存数量
@@ -106,17 +106,17 @@ class StockRevertItemDetailDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOutsideSkuCode(): string
+    public function getSkuCode(): string
     {
-        return $this->outsideSkuCode;
+        return $this->skuCode;
     }
 
     /**
-     * @param string $outsideSkuCode
+     * @param string $skuCode
      */
-    public function setOutsideSkuCode(string $outsideSkuCode): void
+    public function setSkuCode(string $skuCode): void
     {
-        $this->outsideSkuCode = $outsideSkuCode;
+        $this->skuCode = $skuCode;
     }
 
     /**
