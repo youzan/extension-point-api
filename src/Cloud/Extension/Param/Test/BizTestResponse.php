@@ -18,7 +18,7 @@ class BizTestResponse implements \JsonSerializable {
     private $content;
 
     /**
-     * 请求id
+     * 响应请求id
      * @var int
      */
     private $requestId;
