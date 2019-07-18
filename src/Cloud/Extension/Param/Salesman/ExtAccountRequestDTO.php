@@ -29,6 +29,12 @@ class ExtAccountRequestDTO implements \JsonSerializable {
      */
     private $kdtId;
 
+    /**
+     * 分销员用户标识
+     * @var string
+     */
+    private $yzOpenId;
+
 
 
     /**
@@ -77,6 +83,22 @@ class ExtAccountRequestDTO implements \JsonSerializable {
     public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getYzOpenId(): string
+    {
+        return $this->yzOpenId;
+    }
+
+    /**
+     * @param string $yzOpenId
+     */
+    public function setYzOpenId(string $yzOpenId): void
+    {
+        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {

@@ -24,7 +24,7 @@ class StockDeductRequestDTO implements \JsonSerializable {
     private $offlineId;
 
     /**
-     * 订单id, 必填
+     * 订单id,必填
      * @var string
      */
     private $orderNo;

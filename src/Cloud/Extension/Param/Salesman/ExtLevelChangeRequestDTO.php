@@ -125,6 +125,12 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
      */
     private $inviteNum;
 
+    /**
+     * 分销员用户标识
+     * @var string
+     */
+    private $yzOpenid;
+
 
 
     /**
@@ -429,6 +435,22 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     public function setInviteNum(int $inviteNum): void
     {
         $this->inviteNum = $inviteNum;
+    }
+
+    /**
+     * @return string
+     */
+    public function getYzOpenid(): string
+    {
+        return $this->yzOpenid;
+    }
+
+    /**
+     * @param string $yzOpenid
+     */
+    public function setYzOpenid(string $yzOpenid): void
+    {
+        $this->yzOpenid = $yzOpenid;
     }
 
     public function jsonSerialize() {
