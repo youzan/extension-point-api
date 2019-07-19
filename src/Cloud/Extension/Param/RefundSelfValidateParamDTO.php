@@ -41,6 +41,12 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
      */
     private $disputeFlowType;
 
+    /**
+     * 买家标识
+     * @var string
+     */
+    private $yzOpenId;
+
 
 
     /**
@@ -121,6 +127,22 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     public function setDisputeFlowType(string $disputeFlowType): void
     {
         $this->disputeFlowType = $disputeFlowType;
+    }
+
+    /**
+     * @return string
+     */
+    public function getYzOpenId(): string
+    {
+        return $this->yzOpenId;
+    }
+
+    /**
+     * @param string $yzOpenId
+     */
+    public function setYzOpenId(string $yzOpenId): void
+    {
+        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {
