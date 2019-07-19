@@ -12,7 +12,7 @@ use StdClass;
 class ExtraFeeCalcResultDTO implements \JsonSerializable {
 
     /**
-     * 附加费用列表
+     * 附加费用列表（已弃用，清传空值）
      * @var stdClass
      */
     private $extraFeeDetail;
