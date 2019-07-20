@@ -47,6 +47,12 @@ class ExtPointUserMsgDTO implements \JsonSerializable {
      */
     private $phoneNo;
 
+    /**
+     * 用户标识
+     * @var string
+     */
+    private $yzOpenId;
+
 
 
     /**
@@ -143,6 +149,22 @@ class ExtPointUserMsgDTO implements \JsonSerializable {
     public function setPhoneNo(string $phoneNo): void
     {
         $this->phoneNo = $phoneNo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getYzOpenId(): string
+    {
+        return $this->yzOpenId;
+    }
+
+    /**
+     * @param string $yzOpenId
+     */
+    public function setYzOpenId(string $yzOpenId): void
+    {
+        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {

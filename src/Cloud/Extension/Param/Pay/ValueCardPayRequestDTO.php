@@ -65,6 +65,12 @@ class ValueCardPayRequestDTO implements \JsonSerializable {
      */
     private $tradeTime;
 
+    /**
+     * 用户标识
+     * @var string
+     */
+    private $yzOpenId;
+
 
 
     /**
@@ -209,6 +215,22 @@ class ValueCardPayRequestDTO implements \JsonSerializable {
     public function setTradeTime(DateTime $tradeTime): void
     {
         $this->tradeTime = $tradeTime;
+    }
+
+    /**
+     * @return string
+     */
+    public function getYzOpenId(): string
+    {
+        return $this->yzOpenId;
+    }
+
+    /**
+     * @param string $yzOpenId
+     */
+    public function setYzOpenId(string $yzOpenId): void
+    {
+        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {

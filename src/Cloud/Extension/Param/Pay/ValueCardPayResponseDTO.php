@@ -78,6 +78,12 @@ class ValueCardPayResponseDTO implements \JsonSerializable {
      */
     private $bizContext;
 
+    /**
+     * 用户标识
+     * @var string
+     */
+    private $yzOpenId;
+
 
 
     /**
@@ -254,6 +260,22 @@ class ValueCardPayResponseDTO implements \JsonSerializable {
     public function setBizContext(stdClass $bizContext): void
     {
         $this->bizContext = $bizContext;
+    }
+
+    /**
+     * @return string
+     */
+    public function getYzOpenId(): string
+    {
+        return $this->yzOpenId;
+    }
+
+    /**
+     * @param string $yzOpenId
+     */
+    public function setYzOpenId(string $yzOpenId): void
+    {
+        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {

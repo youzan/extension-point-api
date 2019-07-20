@@ -59,6 +59,12 @@ class GoPayParamDTO implements \JsonSerializable {
      */
     private $kdtId;
 
+    /**
+     * 用户标识
+     * @var string
+     */
+    private $yzOpenId;
+
 
 
     /**
@@ -187,6 +193,22 @@ class GoPayParamDTO implements \JsonSerializable {
     public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getYzOpenId(): string
+    {
+        return $this->yzOpenId;
+    }
+
+    /**
+     * @param string $yzOpenId
+     */
+    public function setYzOpenId(string $yzOpenId): void
+    {
+        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {
