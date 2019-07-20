@@ -14,7 +14,7 @@ class PurchaseOrderParamDTO implements \JsonSerializable {
 
     /**
      * 单据明细
-     * @var PurchaseOrderItemParamDTO
+     * @var array
      */
     private $orderItems;
 
@@ -87,17 +87,17 @@ class PurchaseOrderParamDTO implements \JsonSerializable {
 
 
     /**
-     * @return PurchaseOrderItemParamDTO
+     * @return array
      */
-    public function getOrderItems(): PurchaseOrderItemParamDTO
+    public function getOrderItems(): array
     {
         return $this->orderItems;
     }
 
     /**
-     * @param PurchaseOrderItemParamDTO $orderItems
+     * @param array $orderItems
      */
-    public function setOrderItems(PurchaseOrderItemParamDTO $orderItems): void
+    public function setOrderItems(array $orderItems): void
     {
         $this->orderItems = $orderItems;
     }
