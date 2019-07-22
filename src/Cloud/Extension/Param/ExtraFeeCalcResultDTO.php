@@ -3,6 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param;
 
 use StdClass;
+use Com\Youzan\Cloud\Extension\Param\ExtPointExtraPriceResultDTO;
 
 /**
  * 
@@ -12,7 +13,7 @@ use StdClass;
 class ExtraFeeCalcResultDTO implements \JsonSerializable {
 
     /**
-     * 附加费用列表（已弃用，清传空值）
+     * 附加费用列表（已弃用，请传空值）
      * @var stdClass
      */
     private $extraFeeDetail;
@@ -34,6 +35,12 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
      * @var string
      */
     private $extraFeeDesc;
+
+    /**
+     * 订单级额外费用 (包含在订单是否金额里面)
+     * @var array
+     */
+    private $orderExtraPrice;
 
 
 
@@ -99,6 +106,22 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     public function setExtraFeeDesc(string $extraFeeDesc): void
     {
         $this->extraFeeDesc = $extraFeeDesc;
+    }
+
+    /**
+     * @return array
+     */
+    public function getOrderExtraPrice(): array
+    {
+        return $this->orderExtraPrice;
+    }
+
+    /**
+     * @param array $orderExtraPrice
+     */
+    public function setOrderExtraPrice(array $orderExtraPrice): void
+    {
+        $this->orderExtraPrice = $orderExtraPrice;
     }
 
     public function jsonSerialize() {
