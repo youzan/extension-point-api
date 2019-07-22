@@ -13,24 +13,24 @@ class GoodsApplyOrderResultDTO implements \JsonSerializable {
 
     /**
      * 是否成功
-     * @var array
+     * @var bool
      */
     private $success;
 
 
 
     /**
-     * @return array
+     * @return bool
      */
-    public function getSuccess(): array
+    public function getSuccess(): bool
     {
         return $this->success;
     }
 
     /**
-     * @param array $success
+     * @param bool $success
      */
-    public function setSuccess(array $success): void
+    public function setSuccess(bool $success): void
     {
         $this->success = $success;
     }
