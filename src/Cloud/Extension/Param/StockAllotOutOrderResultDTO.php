@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param;
 
-use Com\Youzan\Cloud\Extension\Param\StockAllotOutOrderResultDTO;
+use Com\Youzan\Cloud\Extension\Param\StockAllotOutOrderSyncResultDTO;
 
 /**
  * 

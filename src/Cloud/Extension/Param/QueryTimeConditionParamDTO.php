@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param;
 
-
+use DateTime;
 
 /**
  * 时间参数
@@ -13,46 +13,46 @@ class QueryTimeConditionParamDTO implements \JsonSerializable {
 
     /**
      * 上次最后执行时间：如 2018-11-21 10:44:31
-     * @var string
+     * @var DateTime
      */
     private $startTime;
 
     /**
      * 时间间隔（单位为分钟），默认值0不做时间间隔
-     * @var string
+     * @var DateTime
      */
     private $endTime;
 
 
 
     /**
-     * @return string
+     * @return DateTime
      */
-    public function getStartTime(): string
+    public function getStartTime(): DateTime
     {
         return $this->startTime;
     }
 
     /**
-     * @param string $startTime
+     * @param DateTime $startTime
      */
-    public function setStartTime(string $startTime): void
+    public function setStartTime(DateTime $startTime): void
     {
         $this->startTime = $startTime;
     }
 
     /**
-     * @return string
+     * @return DateTime
      */
-    public function getEndTime(): string
+    public function getEndTime(): DateTime
     {
         return $this->endTime;
     }
 
     /**
-     * @param string $endTime
+     * @param DateTime $endTime
      */
-    public function setEndTime(string $endTime): void
+    public function setEndTime(DateTime $endTime): void
     {
         $this->endTime = $endTime;
     }
