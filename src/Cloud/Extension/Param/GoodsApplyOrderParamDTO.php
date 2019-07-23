@@ -3,6 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param;
 
 use StdClass;
+use DateTime;
 use Com\Youzan\Cloud\Extension\Param\GoodsApplyOrderItemParamDTO;
 
 /**
@@ -79,8 +80,8 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     private $creator;
 
     /**
-     * 单据日期(YYYY-MM-DD HH:MM:SS)
-     * @var string
+     * 单据日期
+     * @var DateTime
      */
     private $createdTime;
 
@@ -275,17 +276,17 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     }
 
     /**
-     * @return string
+     * @return DateTime
      */
-    public function getCreatedTime(): string
+    public function getCreatedTime(): DateTime
     {
         return $this->createdTime;
     }
 
     /**
-     * @param string $createdTime
+     * @param DateTime $createdTime
      */
-    public function setCreatedTime(string $createdTime): void
+    public function setCreatedTime(DateTime $createdTime): void
     {
         $this->createdTime = $createdTime;
     }

@@ -4,6 +4,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 
 use Com\Youzan\Cloud\Extension\Param\PurchaseOrderItemParamDTO;
 use StdClass;
+use DateTime;
 
 /**
  * 采购单明细
@@ -32,7 +33,7 @@ class PurchaseOrderParamDTO implements \JsonSerializable {
 
     /**
      * 预计到达时间
-     * @var string
+     * @var DateTime
      */
     private $estimatedArrivalTime;
 
@@ -135,17 +136,17 @@ class PurchaseOrderParamDTO implements \JsonSerializable {
     }
 
     /**
-     * @return string
+     * @return DateTime
      */
-    public function getEstimatedArrivalTime(): string
+    public function getEstimatedArrivalTime(): DateTime
     {
         return $this->estimatedArrivalTime;
     }
 
     /**
-     * @param string $estimatedArrivalTime
+     * @param DateTime $estimatedArrivalTime
      */
-    public function setEstimatedArrivalTime(string $estimatedArrivalTime): void
+    public function setEstimatedArrivalTime(DateTime $estimatedArrivalTime): void
     {
         $this->estimatedArrivalTime = $estimatedArrivalTime;
     }

@@ -2,6 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param;
 
+use DateTime;
 use Com\Youzan\Cloud\Extension\Param\DistributionOutOrderItemResultDTO;
 use Com\Youzan\Cloud\Extension\Param\PluginHistoryOrderResultDTO;
 
@@ -49,8 +50,8 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     private $fromWarehouseCode;
 
     /**
-     * 单据日期(YYYY-MM-DD HH:MM:SS)
-     * @var string
+     * 单据日期
+     * @var DateTime
      */
     private $createTime;
 
@@ -177,17 +178,17 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     }
 
     /**
-     * @return string
+     * @return DateTime
      */
-    public function getCreateTime(): string
+    public function getCreateTime(): DateTime
     {
         return $this->createTime;
     }
 
     /**
-     * @param string $createTime
+     * @param DateTime $createTime
      */
-    public function setCreateTime(string $createTime): void
+    public function setCreateTime(DateTime $createTime): void
     {
         $this->createTime = $createTime;
     }
