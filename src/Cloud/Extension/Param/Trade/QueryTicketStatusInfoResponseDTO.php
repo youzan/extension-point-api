@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Trade;
 
-
+use Com\Youzan\Cloud\Extension\Param\Trade\TicketStatusInfoDTO;
 
 /**
  * 
@@ -28,6 +28,12 @@ class QueryTicketStatusInfoResponseDTO implements \JsonSerializable {
      * @var int
      */
     private $effectiveEndTime;
+
+    /**
+     * 
+     * @var array
+     */
+    private $ticketItemList;
 
 
 
@@ -77,6 +83,22 @@ class QueryTicketStatusInfoResponseDTO implements \JsonSerializable {
     public function setEffectiveEndTime(int $effectiveEndTime): void
     {
         $this->effectiveEndTime = $effectiveEndTime;
+    }
+
+    /**
+     * @return array
+     */
+    public function getTicketItemList(): array
+    {
+        return $this->ticketItemList;
+    }
+
+    /**
+     * @param array $ticketItemList
+     */
+    public function setTicketItemList(array $ticketItemList): void
+    {
+        $this->ticketItemList = $ticketItemList;
     }
 
     public function jsonSerialize() {

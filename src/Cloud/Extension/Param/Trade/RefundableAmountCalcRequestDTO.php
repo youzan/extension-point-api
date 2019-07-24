@@ -3,6 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param\Trade;
 
 use StdClass;
+use Com\Youzan\Cloud\Extension\Param\Trade\RefundOrderDTO;
 
 /**
  * 
@@ -28,6 +29,12 @@ class RefundableAmountCalcRequestDTO implements \JsonSerializable {
      * @var stdClass
      */
     private $extension;
+
+    /**
+     * 
+     * @var RefundOrderDTO
+     */
+    private $refundOrderList;
 
 
 
@@ -77,6 +84,22 @@ class RefundableAmountCalcRequestDTO implements \JsonSerializable {
     public function setExtension(stdClass $extension): void
     {
         $this->extension = $extension;
+    }
+
+    /**
+     * @return RefundOrderDTO
+     */
+    public function getRefundOrderList(): RefundOrderDTO
+    {
+        return $this->refundOrderList;
+    }
+
+    /**
+     * @param RefundOrderDTO $refundOrderList
+     */
+    public function setRefundOrderList(RefundOrderDTO $refundOrderList): void
+    {
+        $this->refundOrderList = $refundOrderList;
     }
 
     public function jsonSerialize() {

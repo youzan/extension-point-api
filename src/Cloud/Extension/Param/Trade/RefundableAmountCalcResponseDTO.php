@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Trade;
 
-use StdClass;
+use Com\Youzan\Cloud\Extension\Param\Trade\RefundableItemDTO;
 
 /**
  * 
@@ -18,16 +18,16 @@ class RefundableAmountCalcResponseDTO implements \JsonSerializable {
     private $orderNo;
 
     /**
-     * 订单的可退金额
+     * 订单可退款金额
      * @var int
      */
     private $refundableAmt;
 
     /**
-     * 扩展信息
-     * @var stdClass
+     * 
+     * @var array
      */
-    private $extension;
+    private $refundableItemList;
 
 
 
@@ -64,19 +64,19 @@ class RefundableAmountCalcResponseDTO implements \JsonSerializable {
     }
 
     /**
-     * @return stdClass
+     * @return array
      */
-    public function getExtension(): stdClass
+    public function getRefundableItemList(): array
     {
-        return $this->extension;
+        return $this->refundableItemList;
     }
 
     /**
-     * @param stdClass $extension
+     * @param array $refundableItemList
      */
-    public function setExtension(stdClass $extension): void
+    public function setRefundableItemList(array $refundableItemList): void
     {
-        $this->extension = $extension;
+        $this->refundableItemList = $refundableItemList;
     }
 
     public function jsonSerialize() {

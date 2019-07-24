@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Trade\RefundableAmountCalcResponseDTOOutPar
 
 interface RefundableAmountCalcExtPoint {
 
-    public function calc(RefundableAmountCalcRequestDTO $request) : RefundableAmountCalcResponseDTOOutParam;
+    public function calculate(RefundableAmountCalcRequestDTO $request) : RefundableAmountCalcResponseDTOOutParam;
 
 }
