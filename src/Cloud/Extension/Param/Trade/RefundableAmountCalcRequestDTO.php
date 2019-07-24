@@ -32,7 +32,7 @@ class RefundableAmountCalcRequestDTO implements \JsonSerializable {
 
     /**
      * 
-     * @var RefundOrderDTO
+     * @var array
      */
     private $refundOrderList;
 
@@ -87,17 +87,17 @@ class RefundableAmountCalcRequestDTO implements \JsonSerializable {
     }
 
     /**
-     * @return RefundOrderDTO
+     * @return array
      */
-    public function getRefundOrderList(): RefundOrderDTO
+    public function getRefundOrderList(): array
     {
         return $this->refundOrderList;
     }
 
     /**
-     * @param RefundOrderDTO $refundOrderList
+     * @param array $refundOrderList
      */
-    public function setRefundOrderList(RefundOrderDTO $refundOrderList): void
+    public function setRefundOrderList(array $refundOrderList): void
     {
         $this->refundOrderList = $refundOrderList;
     }

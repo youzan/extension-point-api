@@ -55,7 +55,7 @@ class RefundOrderDTO implements \JsonSerializable {
 
     /**
      * 
-     * @var RefundOrderItemDTO
+     * @var array
      */
     private $itemList;
 
@@ -174,17 +174,17 @@ class RefundOrderDTO implements \JsonSerializable {
     }
 
     /**
-     * @return RefundOrderItemDTO
+     * @return array
      */
-    public function getItemList(): RefundOrderItemDTO
+    public function getItemList(): array
     {
         return $this->itemList;
     }
 
     /**
-     * @param RefundOrderItemDTO $itemList
+     * @param array $itemList
      */
-    public function setItemList(RefundOrderItemDTO $itemList): void
+    public function setItemList(array $itemList): void
     {
         $this->itemList = $itemList;
     }
