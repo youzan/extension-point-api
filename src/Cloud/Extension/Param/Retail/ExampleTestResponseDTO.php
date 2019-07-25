@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
-
+use DateTime;
 
 /**
  * 
@@ -22,6 +22,12 @@ class ExampleTestResponseDTO implements \JsonSerializable {
      * @var array
      */
     private $responseString;
+
+    /**
+     * 
+     * @var DateTime
+     */
+    private $responseDate;
 
 
 
@@ -55,6 +61,22 @@ class ExampleTestResponseDTO implements \JsonSerializable {
     public function setResponseString(array $responseString): void
     {
         $this->responseString = $responseString;
+    }
+
+    /**
+     * @return DateTime
+     */
+    public function getResponseDate(): DateTime
+    {
+        return $this->responseDate;
+    }
+
+    /**
+     * @param DateTime $responseDate
+     */
+    public function setResponseDate(DateTime $responseDate): void
+    {
+        $this->responseDate = $responseDate;
     }
 
     public function jsonSerialize() {
