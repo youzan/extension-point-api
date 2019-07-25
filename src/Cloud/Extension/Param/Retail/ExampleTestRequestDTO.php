@@ -3,6 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
 use DateTime;
+use StdClass;
 
 /**
  * 
@@ -58,6 +59,12 @@ class ExampleTestRequestDTO implements \JsonSerializable {
      * @var int
      */
     private $testShort;
+
+    /**
+     * 
+     * @var stdClass
+     */
+    private $extttMap;
 
 
 
@@ -187,6 +194,22 @@ class ExampleTestRequestDTO implements \JsonSerializable {
     public function setTestShort(int $testShort): void
     {
         $this->testShort = $testShort;
+    }
+
+    /**
+     * @return stdClass
+     */
+    public function getExtttMap(): stdClass
+    {
+        return $this->extttMap;
+    }
+
+    /**
+     * @param stdClass $extttMap
+     */
+    public function setExtttMap(stdClass $extttMap): void
+    {
+        $this->extttMap = $extttMap;
     }
 
     public function jsonSerialize() {

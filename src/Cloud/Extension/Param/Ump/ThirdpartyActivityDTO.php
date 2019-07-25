@@ -18,6 +18,12 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     private $id;
 
     /**
+     * 标题
+     * @var string
+     */
+    private $title;
+
+    /**
      * 优惠方式 1 - 代金券类型，单位分 2 - 折扣券类型，真是折扣等于 value/10，如9.5折，value &#x3D; 95
      * @var int
      */
@@ -57,6 +63,22 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     public function setId(int $id): void
     {
         $this->id = $id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
+
+    /**
+     * @param string $title
+     */
+    public function setTitle(string $title): void
+    {
+        $this->title = $title;
     }
 
     /**
