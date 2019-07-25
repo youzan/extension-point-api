@@ -3,12 +3,11 @@
 namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
 use DateTime;
-use StdClass;
 
 /**
  * 
  * @author Baymax
- * @create 2019-07-24 16:20:39.0
+ * @create Wed Jul 24 16:20:39 CST 2019
  */
 class ExampleTestRequestDTO implements \JsonSerializable {
 
@@ -29,12 +28,6 @@ class ExampleTestRequestDTO implements \JsonSerializable {
      * @var string
      */
     private $testString2;
-
-    /**
-     * 测试boolean
-     * @var bool
-     */
-    private $testBoolean;
 
     /**
      * 
@@ -59,12 +52,6 @@ class ExampleTestRequestDTO implements \JsonSerializable {
      * @var int
      */
     private $testShort;
-
-    /**
-     * 
-     * @var stdClass
-     */
-    private $extttMap;
 
 
 
@@ -114,22 +101,6 @@ class ExampleTestRequestDTO implements \JsonSerializable {
     public function setTestString2(string $testString2): void
     {
         $this->testString2 = $testString2;
-    }
-
-    /**
-     * @return bool
-     */
-    public function getTestBoolean(): bool
-    {
-        return $this->testBoolean;
-    }
-
-    /**
-     * @param bool $testBoolean
-     */
-    public function setTestBoolean(bool $testBoolean): void
-    {
-        $this->testBoolean = $testBoolean;
     }
 
     /**
@@ -194,22 +165,6 @@ class ExampleTestRequestDTO implements \JsonSerializable {
     public function setTestShort(int $testShort): void
     {
         $this->testShort = $testShort;
-    }
-
-    /**
-     * @return stdClass
-     */
-    public function getExtttMap(): stdClass
-    {
-        return $this->extttMap;
-    }
-
-    /**
-     * @param stdClass $extttMap
-     */
-    public function setExtttMap(stdClass $extttMap): void
-    {
-        $this->extttMap = $extttMap;
     }
 
     public function jsonSerialize() {

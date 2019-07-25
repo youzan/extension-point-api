@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Retail\ExampleTestResponseDTO;
 /**
  * 返回类
  * @author Baymax
- * @create 2019-07-24 16:20:39.0
+ * @create Wed Jul 24 16:20:39 CST 2019
  */
 class ExampleTestResponseDTOOutParam implements \JsonSerializable {
 
