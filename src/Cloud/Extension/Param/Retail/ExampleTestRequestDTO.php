@@ -25,6 +25,12 @@ class ExampleTestRequestDTO implements \JsonSerializable {
 
     /**
      * 
+     * @var string
+     */
+    private $testString2;
+
+    /**
+     * 
      * @var int
      */
     private $testInt;
@@ -79,6 +85,22 @@ class ExampleTestRequestDTO implements \JsonSerializable {
     public function setTestString1(string $testString1): void
     {
         $this->testString1 = $testString1;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTestString2(): string
+    {
+        return $this->testString2;
+    }
+
+    /**
+     * @param string $testString2
+     */
+    public function setTestString2(string $testString2): void
+    {
+        $this->testString2 = $testString2;
     }
 
     /**
