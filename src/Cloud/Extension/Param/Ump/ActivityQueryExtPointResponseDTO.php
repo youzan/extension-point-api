@@ -3,6 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param\Ump;
 
 use Com\Youzan\Cloud\Extension\Param\Ump\ThirdpartyActivityDTO;
+use StdClass;
 
 /**
  * 
@@ -16,6 +17,18 @@ class ActivityQueryExtPointResponseDTO implements \JsonSerializable {
      * @var ThirdpartyActivityDTO
      */
     private $thirdpartyActivity;
+
+    /**
+     * 扩展点版本号
+     * @var int
+     */
+    private $versionNo;
+
+    /**
+     * extMap
+     * @var stdClass
+     */
+    private $extMap;
 
 
 
@@ -33,6 +46,38 @@ class ActivityQueryExtPointResponseDTO implements \JsonSerializable {
     public function setThirdpartyActivity(ThirdpartyActivityDTO $thirdpartyActivity): void
     {
         $this->thirdpartyActivity = $thirdpartyActivity;
+    }
+
+    /**
+     * @return int
+     */
+    public function getVersionNo(): int
+    {
+        return $this->versionNo;
+    }
+
+    /**
+     * @param int $versionNo
+     */
+    public function setVersionNo(int $versionNo): void
+    {
+        $this->versionNo = $versionNo;
+    }
+
+    /**
+     * @return stdClass
+     */
+    public function getExtMap(): stdClass
+    {
+        return $this->extMap;
+    }
+
+    /**
+     * @param stdClass $extMap
+     */
+    public function setExtMap(stdClass $extMap): void
+    {
+        $this->extMap = $extMap;
     }
 
     public function jsonSerialize() {
