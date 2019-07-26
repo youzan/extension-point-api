@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Refund\ItemDTO;
 /**
  * 退款资金变更消息体
  * @author Baymax
- * @create 2018-12-19 21:16:28.0
+ * @create Wed Dec 19 21:16:28 CST 2018
  */
 class RefundFundChangedMessageDTO implements \JsonSerializable {
 
@@ -25,7 +25,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
 
     /**
      * 订单商品
-     * @var array
+     * @var ItemDTO
      */
     private $items;
 
@@ -130,17 +130,17 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     }
 
     /**
-     * @return array
+     * @return ItemDTO
      */
-    public function getItems(): array
+    public function getItems(): ItemDTO
     {
         return $this->items;
     }
 
     /**
-     * @param array $items
+     * @param ItemDTO $items
      */
-    public function setItems(array $items): void
+    public function setItems(ItemDTO $items): void
     {
         $this->items = $items;
     }
