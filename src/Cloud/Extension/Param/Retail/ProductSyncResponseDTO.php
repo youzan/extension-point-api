@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
-
+use Com\Youzan\Cloud\Extension\Param\Retail\ProductSyncDTO;
 
 /**
  * 
@@ -13,26 +13,48 @@ class ProductSyncResponseDTO implements \JsonSerializable {
 
     /**
      * 
-     * @var bool
+     * @var int
      */
-    private $success;
+    private $totalCount;
+
+    /**
+     * 
+     * @var ProductSyncDTO
+     */
+    private $productSyncDTO;
 
 
 
     /**
-     * @return bool
+     * @return int
      */
-    public function getSuccess(): bool
+    public function getTotalCount(): int
     {
-        return $this->success;
+        return $this->totalCount;
     }
 
     /**
-     * @param bool $success
+     * @param int $totalCount
      */
-    public function setSuccess(bool $success): void
+    public function setTotalCount(int $totalCount): void
     {
-        $this->success = $success;
+        $this->totalCount = $totalCount;
+    }
+
+    /**
+     * @return ProductSyncDTO
+     */
+    public function getProductSyncDTO(): ProductSyncDTO
+    {
+        return $this->productSyncDTO;
+    }
+
+    /**
+     * @param ProductSyncDTO $productSyncDTO
+     */
+    public function setProductSyncDTO(ProductSyncDTO $productSyncDTO): void
+    {
+        $this->productSyncDTO = $productSyncDTO;
     }
 
     public function jsonSerialize() {

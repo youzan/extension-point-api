@@ -34,7 +34,7 @@ class ExampleTestResponseDTO implements \JsonSerializable {
      * 
      * @var stdClass
      */
-    private $extttMap;
+    private $extttMap1221312;
 
 
 
@@ -89,17 +89,17 @@ class ExampleTestResponseDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtttMap(): stdClass
+    public function getExtttMap1221312(): stdClass
     {
-        return $this->extttMap;
+        return $this->extttMap1221312;
     }
 
     /**
-     * @param stdClass $extttMap
+     * @param stdClass $extttMap1221312
      */
-    public function setExtttMap(stdClass $extttMap): void
+    public function setExtttMap1221312(stdClass $extttMap1221312): void
     {
-        $this->extttMap = $extttMap;
+        $this->extttMap1221312 = $extttMap1221312;
     }
 
     public function jsonSerialize() {
