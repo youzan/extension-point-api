@@ -3,6 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
 use DateTime;
+use Com\Youzan\Cloud\Extension\Param\Retail\YZRefundOrderItemDTO;
 
 /**
  * 
@@ -70,6 +71,12 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
      * @var string
      */
     private $buyerName;
+
+    /**
+     * 
+     * @var array
+     */
+    private $refundItems;
 
 
 
@@ -231,6 +238,22 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     public function setBuyerName(string $buyerName): void
     {
         $this->buyerName = $buyerName;
+    }
+
+    /**
+     * @return array
+     */
+    public function getRefundItems(): array
+    {
+        return $this->refundItems;
+    }
+
+    /**
+     * @param array $refundItems
+     */
+    public function setRefundItems(array $refundItems): void
+    {
+        $this->refundItems = $refundItems;
     }
 
     public function jsonSerialize() {

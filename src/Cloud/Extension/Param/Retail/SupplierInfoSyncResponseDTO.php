@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
-
+use Com\Youzan\Cloud\Extension\Param\Retail\SupplierSyncDTO;
 
 /**
  * 
@@ -18,28 +18,10 @@ class SupplierInfoSyncResponseDTO implements \JsonSerializable {
     private $totalCount;
 
     /**
-     * 供应商名称，供应商名称不能为空
-     * @var string
+     * 
+     * @var array
      */
-    private $supplierName;
-
-    /**
-     * 供应商编码
-     * @var string
-     */
-    private $supplierCode;
-
-    /**
-     * 公司电话
-     * @var string
-     */
-    private $phone;
-
-    /**
-     * 联系人
-     * @var string
-     */
-    private $contacts;
+    private $supplierOrderSyncDTOList;
 
 
 
@@ -60,67 +42,19 @@ class SupplierInfoSyncResponseDTO implements \JsonSerializable {
     }
 
     /**
-     * @return string
+     * @return array
      */
-    public function getSupplierName(): string
+    public function getSupplierOrderSyncDTOList(): array
     {
-        return $this->supplierName;
+        return $this->supplierOrderSyncDTOList;
     }
 
     /**
-     * @param string $supplierName
+     * @param array $supplierOrderSyncDTOList
      */
-    public function setSupplierName(string $supplierName): void
+    public function setSupplierOrderSyncDTOList(array $supplierOrderSyncDTOList): void
     {
-        $this->supplierName = $supplierName;
-    }
-
-    /**
-     * @return string
-     */
-    public function getSupplierCode(): string
-    {
-        return $this->supplierCode;
-    }
-
-    /**
-     * @param string $supplierCode
-     */
-    public function setSupplierCode(string $supplierCode): void
-    {
-        $this->supplierCode = $supplierCode;
-    }
-
-    /**
-     * @return string
-     */
-    public function getPhone(): string
-    {
-        return $this->phone;
-    }
-
-    /**
-     * @param string $phone
-     */
-    public function setPhone(string $phone): void
-    {
-        $this->phone = $phone;
-    }
-
-    /**
-     * @return string
-     */
-    public function getContacts(): string
-    {
-        return $this->contacts;
-    }
-
-    /**
-     * @param string $contacts
-     */
-    public function setContacts(string $contacts): void
-    {
-        $this->contacts = $contacts;
+        $this->supplierOrderSyncDTOList = $supplierOrderSyncDTOList;
     }
 
     public function jsonSerialize() {
