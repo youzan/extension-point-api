@@ -19,7 +19,7 @@ class ProductSyncResponseDTO implements \JsonSerializable {
 
     /**
      * 
-     * @var ProductSyncDTO
+     * @var array
      */
     private $productSyncDTO;
 
@@ -42,17 +42,17 @@ class ProductSyncResponseDTO implements \JsonSerializable {
     }
 
     /**
-     * @return ProductSyncDTO
+     * @return array
      */
-    public function getProductSyncDTO(): ProductSyncDTO
+    public function getProductSyncDTO(): array
     {
         return $this->productSyncDTO;
     }
 
     /**
-     * @param ProductSyncDTO $productSyncDTO
+     * @param array $productSyncDTO
      */
-    public function setProductSyncDTO(ProductSyncDTO $productSyncDTO): void
+    public function setProductSyncDTO(array $productSyncDTO): void
     {
         $this->productSyncDTO = $productSyncDTO;
     }
