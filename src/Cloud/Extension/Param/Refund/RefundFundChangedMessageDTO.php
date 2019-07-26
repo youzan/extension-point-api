@@ -25,7 +25,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
 
     /**
      * 订单商品
-     * @var ItemDTO
+     * @var array
      */
     private $items;
 
@@ -130,17 +130,17 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     }
 
     /**
-     * @return ItemDTO
+     * @return array
      */
-    public function getItems(): ItemDTO
+    public function getItems(): array
     {
         return $this->items;
     }
 
     /**
-     * @param ItemDTO $items
+     * @param array $items
      */
-    public function setItems(ItemDTO $items): void
+    public function setItems(array $items): void
     {
         $this->items = $items;
     }
