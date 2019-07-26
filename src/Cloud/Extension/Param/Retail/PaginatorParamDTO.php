@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
-
+use Com\Youzan\Cloud\Extension\Param\Retail\QueryTimeCondition;
 
 /**
  * 
@@ -22,6 +22,12 @@ class PaginatorParamDTO implements \JsonSerializable {
      * @var int
      */
     private $pageNo;
+
+    /**
+     * 
+     * @var QueryTimeCondition
+     */
+    private $queryCondition;
 
 
 
@@ -55,6 +61,22 @@ class PaginatorParamDTO implements \JsonSerializable {
     public function setPageNo(int $pageNo): void
     {
         $this->pageNo = $pageNo;
+    }
+
+    /**
+     * @return QueryTimeCondition
+     */
+    public function getQueryCondition(): QueryTimeCondition
+    {
+        return $this->queryCondition;
+    }
+
+    /**
+     * @param QueryTimeCondition $queryCondition
+     */
+    public function setQueryCondition(QueryTimeCondition $queryCondition): void
+    {
+        $this->queryCondition = $queryCondition;
     }
 
     public function jsonSerialize() {

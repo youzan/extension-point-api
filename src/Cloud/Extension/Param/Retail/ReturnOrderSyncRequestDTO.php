@@ -3,6 +3,8 @@
 namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
 use DateTime;
+use Com\Youzan\Cloud\Extension\Param\Retail\YZReturnOrderItemDTO;
+use Com\Youzan\Cloud\Extension\Param\Retail\YZLogisticsDTO;
 
 /**
  * 
@@ -64,6 +66,18 @@ class ReturnOrderSyncRequestDTO implements \JsonSerializable {
      * @var int
      */
     private $version;
+
+    /**
+     * 
+     * @var array
+     */
+    private $returnItems;
+
+    /**
+     * 
+     * @var YZLogisticsDTO
+     */
+    private $yzLogisticsDTO;
 
 
 
@@ -209,6 +223,38 @@ class ReturnOrderSyncRequestDTO implements \JsonSerializable {
     public function setVersion(int $version): void
     {
         $this->version = $version;
+    }
+
+    /**
+     * @return array
+     */
+    public function getReturnItems(): array
+    {
+        return $this->returnItems;
+    }
+
+    /**
+     * @param array $returnItems
+     */
+    public function setReturnItems(array $returnItems): void
+    {
+        $this->returnItems = $returnItems;
+    }
+
+    /**
+     * @return YZLogisticsDTO
+     */
+    public function getYzLogisticsDTO(): YZLogisticsDTO
+    {
+        return $this->yzLogisticsDTO;
+    }
+
+    /**
+     * @param YZLogisticsDTO $yzLogisticsDTO
+     */
+    public function setYzLogisticsDTO(YZLogisticsDTO $yzLogisticsDTO): void
+    {
+        $this->yzLogisticsDTO = $yzLogisticsDTO;
     }
 
     public function jsonSerialize() {

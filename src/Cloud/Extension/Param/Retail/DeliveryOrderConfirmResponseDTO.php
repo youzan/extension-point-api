@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
-
+use Com\Youzan\Cloud\Extension\Param\Retail\DeliveryOrderConfirmSyncDTO;
 
 /**
  * 
@@ -16,6 +16,12 @@ class DeliveryOrderConfirmResponseDTO implements \JsonSerializable {
      * @var int
      */
     private $totalCount;
+
+    /**
+     * 
+     * @var array
+     */
+    private $deliveryOrderConfirmSyncDTOList;
 
 
 
@@ -33,6 +39,22 @@ class DeliveryOrderConfirmResponseDTO implements \JsonSerializable {
     public function setTotalCount(int $totalCount): void
     {
         $this->totalCount = $totalCount;
+    }
+
+    /**
+     * @return array
+     */
+    public function getDeliveryOrderConfirmSyncDTOList(): array
+    {
+        return $this->deliveryOrderConfirmSyncDTOList;
+    }
+
+    /**
+     * @param array $deliveryOrderConfirmSyncDTOList
+     */
+    public function setDeliveryOrderConfirmSyncDTOList(array $deliveryOrderConfirmSyncDTOList): void
+    {
+        $this->deliveryOrderConfirmSyncDTOList = $deliveryOrderConfirmSyncDTOList;
     }
 
     public function jsonSerialize() {
