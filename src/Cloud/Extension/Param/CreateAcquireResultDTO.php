@@ -7,39 +7,17 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 
  * @author Baymax
- * @create 2019-07-23 20:24:20.0
+ * @create 2019-07-29 20:50:49.0
  */
-class SubmitPayResultDTO implements \JsonSerializable {
+class CreateAcquireResultDTO implements \JsonSerializable {
 
     /**
-     * 订单号
-     * @var string
-     */
-    private $orderNo;
-
-    /**
-     * 
+     * 支付回单号
      * @var string
      */
     private $payId;
 
 
-
-    /**
-     * @return string
-     */
-    public function getOrderNo(): string
-    {
-        return $this->orderNo;
-    }
-
-    /**
-     * @param string $orderNo
-     */
-    public function setOrderNo(string $orderNo): void
-    {
-        $this->orderNo = $orderNo;
-    }
 
     /**
      * @return string
