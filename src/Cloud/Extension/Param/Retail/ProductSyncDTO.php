@@ -19,7 +19,7 @@ class ProductSyncDTO implements \JsonSerializable {
 
     /**
      * 类目ID
-     * @var string
+     * @var int
      */
     private $categoryId;
 
@@ -102,17 +102,17 @@ class ProductSyncDTO implements \JsonSerializable {
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getCategoryId(): string
+    public function getCategoryId(): int
     {
         return $this->categoryId;
     }
 
     /**
-     * @param string $categoryId
+     * @param int $categoryId
      */
-    public function setCategoryId(string $categoryId): void
+    public function setCategoryId(int $categoryId): void
     {
         $this->categoryId = $categoryId;
     }
