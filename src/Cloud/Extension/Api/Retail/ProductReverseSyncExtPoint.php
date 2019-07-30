@@ -3,10 +3,10 @@
 namespace Com\Youzan\Cloud\Extension\Api\Retail;
 
 use Com\Youzan\Cloud\Extension\Param\PaginatorParamDTO;
-use Com\Youzan\Cloud\Extension\Param\Retail\ProductReverseSyncResponseDTOOutParam;
+use Com\Youzan\Cloud\Extension\Param\Retail\ProductReverseResultDTOOutParam;
 
 interface ProductReverseSyncExtPoint {
 
-    public function sync(PaginatorParamDTO $request) : ProductReverseSyncResponseDTOOutParam;
+    public function sync(PaginatorParamDTO $request) : ProductReverseResultDTOOutParam;
 
 }

@@ -18,6 +18,18 @@ class ProductSyncDTO implements \JsonSerializable {
     private $name;
 
     /**
+     * 类目ID
+     * @var string
+     */
+    private $categoryId;
+
+    /**
+     * 类目名称
+     * @var string
+     */
+    private $categoryName;
+
+    /**
      * 单位
      * @var string
      */
@@ -87,6 +99,38 @@ class ProductSyncDTO implements \JsonSerializable {
     public function setName(string $name): void
     {
         $this->name = $name;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCategoryId(): string
+    {
+        return $this->categoryId;
+    }
+
+    /**
+     * @param string $categoryId
+     */
+    public function setCategoryId(string $categoryId): void
+    {
+        $this->categoryId = $categoryId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCategoryName(): string
+    {
+        return $this->categoryName;
+    }
+
+    /**
+     * @param string $categoryName
+     */
+    public function setCategoryName(string $categoryName): void
+    {
+        $this->categoryName = $categoryName;
     }
 
     /**
