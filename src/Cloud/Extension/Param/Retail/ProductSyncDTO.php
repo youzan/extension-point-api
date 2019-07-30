@@ -73,7 +73,7 @@ class ProductSyncDTO implements \JsonSerializable {
 
     /**
      * 规格信息(无规格商品可以为空)
-     * @var SkuDTO
+     * @var array
      */
     private $skus;
 
@@ -246,17 +246,17 @@ class ProductSyncDTO implements \JsonSerializable {
     }
 
     /**
-     * @return SkuDTO
+     * @return array
      */
-    public function getSkus(): SkuDTO
+    public function getSkus(): array
     {
         return $this->skus;
     }
 
     /**
-     * @param SkuDTO $skus
+     * @param array $skus
      */
-    public function setSkus(SkuDTO $skus): void
+    public function setSkus(array $skus): void
     {
         $this->skus = $skus;
     }
