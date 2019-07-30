@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\StockAllotOutOrderResultDTOOutParam;
 
 interface StockAllotOutOrderReverseSyncExtPoint {
 
-    public function distributionOutOrder(PaginatorParamDTO $paramDTO) : StockAllotOutOrderResultDTOOutParam;
+    public function readPaginatorData(PaginatorParamDTO $paramDTO) : StockAllotOutOrderResultDTOOutParam;
 
 }
