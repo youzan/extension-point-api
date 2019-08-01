@@ -2,6 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
+use StdClass;
 use DateTime;
 use Com\Youzan\Cloud\Extension\Param\Retail\YZRefundOrderItemDTO;
 
@@ -11,6 +12,12 @@ use Com\Youzan\Cloud\Extension\Param\Retail\YZRefundOrderItemDTO;
  * @create 2019-07-25 11:45:35.0
  */
 class RefundOrderSyncRequestDTO implements \JsonSerializable {
+
+    /**
+     * 鉴权参数
+     * @var stdClass
+     */
+    private $authMap;
 
     /**
      * 退款单号
@@ -79,6 +86,22 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     private $refundItems;
 
 
+
+    /**
+     * @return stdClass
+     */
+    public function getAuthMap(): stdClass
+    {
+        return $this->authMap;
+    }
+
+    /**
+     * @param stdClass $authMap
+     */
+    public function setAuthMap(stdClass $authMap): void
+    {
+        $this->authMap = $authMap;
+    }
 
     /**
      * @return string

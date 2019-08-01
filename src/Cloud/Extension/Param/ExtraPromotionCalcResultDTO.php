@@ -3,6 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param;
 
 use StdClass;
+use Com\Youzan\Cloud\Extension\Param\ExtCalculatePriceItemResponseDTO;
 
 /**
  * 
@@ -34,6 +35,12 @@ class ExtraPromotionCalcResultDTO implements \JsonSerializable {
      * @var string
      */
     private $extraPromotionDesc;
+
+    /**
+     * 商品级优惠信息
+     * @var array
+     */
+    private $goodsPreferences;
 
 
 
@@ -99,6 +106,22 @@ class ExtraPromotionCalcResultDTO implements \JsonSerializable {
     public function setExtraPromotionDesc(string $extraPromotionDesc): void
     {
         $this->extraPromotionDesc = $extraPromotionDesc;
+    }
+
+    /**
+     * @return array
+     */
+    public function getGoodsPreferences(): array
+    {
+        return $this->goodsPreferences;
+    }
+
+    /**
+     * @param array $goodsPreferences
+     */
+    public function setGoodsPreferences(array $goodsPreferences): void
+    {
+        $this->goodsPreferences = $goodsPreferences;
     }
 
     public function jsonSerialize() {
