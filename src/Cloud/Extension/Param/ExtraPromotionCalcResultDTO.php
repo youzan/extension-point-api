@@ -3,12 +3,11 @@
 namespace Com\Youzan\Cloud\Extension\Param;
 
 use StdClass;
-use Com\Youzan\Cloud\Extension\Param\ExtCalculatePriceItemResultDTO;
 
 /**
  * 
  * @author Baymax
- * @create 2018-10-08 20:26:05.0
+ * @create Mon Oct 08 20:26:05 CST 2018
  */
 class ExtraPromotionCalcResultDTO implements \JsonSerializable {
 
@@ -35,12 +34,6 @@ class ExtraPromotionCalcResultDTO implements \JsonSerializable {
      * @var string
      */
     private $extraPromotionDesc;
-
-    /**
-     * 商品级优惠信息
-     * @var array
-     */
-    private $goodsPreferences;
 
 
 
@@ -106,22 +99,6 @@ class ExtraPromotionCalcResultDTO implements \JsonSerializable {
     public function setExtraPromotionDesc(string $extraPromotionDesc): void
     {
         $this->extraPromotionDesc = $extraPromotionDesc;
-    }
-
-    /**
-     * @return array
-     */
-    public function getGoodsPreferences(): array
-    {
-        return $this->goodsPreferences;
-    }
-
-    /**
-     * @param array $goodsPreferences
-     */
-    public function setGoodsPreferences(array $goodsPreferences): void
-    {
-        $this->goodsPreferences = $goodsPreferences;
     }
 
     public function jsonSerialize() {
