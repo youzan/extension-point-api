@@ -18,6 +18,18 @@ class SubmitPayParamDTO implements \JsonSerializable {
     private $orderNo;
 
     /**
+     * 支付回单号
+     * @var string
+     */
+    private $acquireNo;
+
+    /**
+     * 支付类型（UPWILD_WX 去野微信，SUNMI_WX 商米SDK-微信，SUNMI_ALIPAY 商米SDK-支付宝）
+     * @var string
+     */
+    private $payType;
+
+    /**
      * 支付金额,单位：分
      * @var int
      */
@@ -57,6 +69,38 @@ class SubmitPayParamDTO implements \JsonSerializable {
     public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAcquireNo(): string
+    {
+        return $this->acquireNo;
+    }
+
+    /**
+     * @param string $acquireNo
+     */
+    public function setAcquireNo(string $acquireNo): void
+    {
+        $this->acquireNo = $acquireNo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPayType(): string
+    {
+        return $this->payType;
+    }
+
+    /**
+     * @param string $payType
+     */
+    public function setPayType(string $payType): void
+    {
+        $this->payType = $payType;
     }
 
     /**

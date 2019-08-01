@@ -18,10 +18,10 @@ class SubmitPayResultDTO implements \JsonSerializable {
     private $orderNo;
 
     /**
-     * 
+     * 支付回单号
      * @var string
      */
-    private $payId;
+    private $acquireNo;
 
 
 
@@ -44,17 +44,17 @@ class SubmitPayResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPayId(): string
+    public function getAcquireNo(): string
     {
-        return $this->payId;
+        return $this->acquireNo;
     }
 
     /**
-     * @param string $payId
+     * @param string $acquireNo
      */
-    public function setPayId(string $payId): void
+    public function setAcquireNo(string $acquireNo): void
     {
-        $this->payId = $payId;
+        $this->acquireNo = $acquireNo;
     }
 
     public function jsonSerialize() {
