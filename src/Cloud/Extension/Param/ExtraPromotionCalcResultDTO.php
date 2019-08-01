@@ -3,7 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param;
 
 use StdClass;
-use Com\Youzan\Cloud\Extension\Param\ExtCalculatePriceItemResponseDTO;
+use Com\Youzan\Cloud\Extension\Param\ExtCalculatePriceItemResultDTO;
 
 /**
  * 
