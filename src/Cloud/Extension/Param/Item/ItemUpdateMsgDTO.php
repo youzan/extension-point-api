@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Item;
 /**
  * 
  * @author Baymax
- * @create 2019-08-02 10:08:13.0
+ * @create Fri Aug 02 10:08:13 CST 2019
  */
 class ItemUpdateMsgDTO implements \JsonSerializable {
 
