@@ -42,7 +42,7 @@ class TicketItemResponseDTO implements \JsonSerializable {
     private $title;
 
     /**
-     * 商品价格
+     * 券实付金额
      * @var int
      */
     private $price;

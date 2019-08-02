@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param;
+namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
-use Com\Youzan\Cloud\Extension\Param\ExtraPromotionCalcResultDTO;
+use Com\Youzan\Cloud\Extension\Param\Retail\DistributionOrderSyncResponseDTO;
 
 /**
  * 返回类
  * @author Baymax
- * @create 2018-10-08 20:26:05.0
+ * @create 2019-08-02 11:53:03.0
  */
-class ExtraPromotionCalcResultDTOOutParam implements \JsonSerializable {
+class DistributionOrderSyncResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ExtraPromotionCalcResultDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var ExtraPromotionCalcResultDTO
+     * @var DistributionOrderSyncResponseDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ExtraPromotionCalcResultDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return ExtraPromotionCalcResultDTO
+     * @return DistributionOrderSyncResponseDTO
      */
-    public function getData(): ExtraPromotionCalcResultDTO
+    public function getData(): DistributionOrderSyncResponseDTO
     {
         return $this->data;
     }
 
     /**
-     * @param ExtraPromotionCalcResultDTO $data
+     * @param DistributionOrderSyncResponseDTO $data
      */
-    public function setData(ExtraPromotionCalcResultDTO $data): void
+    public function setData(DistributionOrderSyncResponseDTO $data): void
     {
         $this->data = $data;
     }

@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Item;
 /**
  * 
  * @author Baymax
- * @create Fri Aug 02 10:08:13 CST 2019
+ * @create 2019-08-02 10:08:13.0
  */
 class ItemUpdateMsgDTO implements \JsonSerializable {
 
@@ -18,7 +18,7 @@ class ItemUpdateMsgDTO implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * 消息体
+     * 消息体需UrlDecode解码 具体字段说明https://doc.youzanyun.com/doc#/content/27027/27084
      * @var string
      */
     private $msg;
