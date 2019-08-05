@@ -2,6 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
+use StdClass;
 use DateTime;
 use Com\Youzan\Cloud\Extension\Param\Retail\ApplyOrderReturnItemDTO;
 
@@ -11,6 +12,12 @@ use Com\Youzan\Cloud\Extension\Param\Retail\ApplyOrderReturnItemDTO;
  * @create 2019-08-02 15:55:17.0
  */
 class ApplyReturnOrderSyncRequestDTO implements \JsonSerializable {
+
+    /**
+     * 鉴权参数
+     * @var stdClass
+     */
+    private $authMap;
 
     /**
      * 单据编号
@@ -43,6 +50,22 @@ class ApplyReturnOrderSyncRequestDTO implements \JsonSerializable {
     private $yzApplyOrderReturnItemDTOs;
 
 
+
+    /**
+     * @return stdClass
+     */
+    public function getAuthMap(): stdClass
+    {
+        return $this->authMap;
+    }
+
+    /**
+     * @param stdClass $authMap
+     */
+    public function setAuthMap(stdClass $authMap): void
+    {
+        $this->authMap = $authMap;
+    }
 
     /**
      * @return string

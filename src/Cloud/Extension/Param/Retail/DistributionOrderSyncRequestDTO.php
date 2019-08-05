@@ -2,6 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
+use StdClass;
 use Com\Youzan\Cloud\Extension\Param\Retail\DistributionOrderItemDTO;
 use DateTime;
 
@@ -11,6 +12,12 @@ use DateTime;
  * @create 2019-08-02 11:53:03.0
  */
 class DistributionOrderSyncRequestDTO implements \JsonSerializable {
+
+    /**
+     * 鉴权参数
+     * @var stdClass
+     */
+    private $authMap;
 
     /**
      * 配送单号
@@ -91,6 +98,22 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     private $distributedOutTime;
 
 
+
+    /**
+     * @return stdClass
+     */
+    public function getAuthMap(): stdClass
+    {
+        return $this->authMap;
+    }
+
+    /**
+     * @param stdClass $authMap
+     */
+    public function setAuthMap(stdClass $authMap): void
+    {
+        $this->authMap = $authMap;
+    }
 
     /**
      * @return string

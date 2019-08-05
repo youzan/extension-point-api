@@ -2,6 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
+use StdClass;
 use DateTime;
 use Com\Youzan\Cloud\Extension\Param\StockOrderItemResultDTO;
 
@@ -11,6 +12,12 @@ use Com\Youzan\Cloud\Extension\Param\StockOrderItemResultDTO;
  * @create 2019-08-02 15:22:28.0
  */
 class PurchaseReturnOrderSyncRequestDTO implements \JsonSerializable {
+
+    /**
+     * 鉴权参数
+     * @var stdClass
+     */
+    private $authMap;
 
     /**
      * 供应商Code
@@ -73,6 +80,22 @@ class PurchaseReturnOrderSyncRequestDTO implements \JsonSerializable {
     private $orderItems;
 
 
+
+    /**
+     * @return stdClass
+     */
+    public function getAuthMap(): stdClass
+    {
+        return $this->authMap;
+    }
+
+    /**
+     * @param stdClass $authMap
+     */
+    public function setAuthMap(stdClass $authMap): void
+    {
+        $this->authMap = $authMap;
+    }
 
     /**
      * @return string
