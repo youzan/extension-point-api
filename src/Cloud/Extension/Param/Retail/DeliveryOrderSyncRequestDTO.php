@@ -2,6 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
+use StdClass;
 use DateTime;
 use Com\Youzan\Cloud\Extension\Param\Retail\BuyerInfoDTO;
 use Com\Youzan\Cloud\Extension\Param\Retail\ReceiverInfoDTO;
@@ -13,6 +14,12 @@ use Com\Youzan\Cloud\Extension\Param\Retail\DeliveryOrderItemDTO;
  * @create 2019-07-23 14:49:51.0
  */
 class DeliveryOrderSyncRequestDTO implements \JsonSerializable {
+
+    /**
+     * 鉴权参数
+     * @var stdClass
+     */
+    private $authMap;
 
     /**
      * 发货单号
@@ -117,6 +124,22 @@ class DeliveryOrderSyncRequestDTO implements \JsonSerializable {
     private $realSalesAmount;
 
 
+
+    /**
+     * @return stdClass
+     */
+    public function getAuthMap(): stdClass
+    {
+        return $this->authMap;
+    }
+
+    /**
+     * @param stdClass $authMap
+     */
+    public function setAuthMap(stdClass $authMap): void
+    {
+        $this->authMap = $authMap;
+    }
 
     /**
      * @return string
