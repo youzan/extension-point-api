@@ -3,6 +3,9 @@
 namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
 use DateTime;
+use Com\Youzan\Cloud\Extension\Param\Retail\BuyerInfoDTO;
+use Com\Youzan\Cloud\Extension\Param\Retail\ReceiverInfoDTO;
+use Com\Youzan\Cloud\Extension\Param\Retail\DeliveryOrderItemDTO;
 
 /**
  * 
@@ -76,6 +79,24 @@ class DeliveryOrderSyncRequestDTO implements \JsonSerializable {
      * @var int
      */
     private $payType;
+
+    /**
+     * 买家信息
+     * @var BuyerInfoDTO
+     */
+    private $buyerInfo;
+
+    /**
+     * 收件人信息
+     * @var ReceiverInfoDTO
+     */
+    private $receiverInfo;
+
+    /**
+     * 商品明细
+     * @var array
+     */
+    private $orderItems;
 
     /**
      * 发货单整单金额，未计任何优惠，未计邮费
@@ -271,6 +292,54 @@ class DeliveryOrderSyncRequestDTO implements \JsonSerializable {
     public function setPayType(int $payType): void
     {
         $this->payType = $payType;
+    }
+
+    /**
+     * @return BuyerInfoDTO
+     */
+    public function getBuyerInfo(): BuyerInfoDTO
+    {
+        return $this->buyerInfo;
+    }
+
+    /**
+     * @param BuyerInfoDTO $buyerInfo
+     */
+    public function setBuyerInfo(BuyerInfoDTO $buyerInfo): void
+    {
+        $this->buyerInfo = $buyerInfo;
+    }
+
+    /**
+     * @return ReceiverInfoDTO
+     */
+    public function getReceiverInfo(): ReceiverInfoDTO
+    {
+        return $this->receiverInfo;
+    }
+
+    /**
+     * @param ReceiverInfoDTO $receiverInfo
+     */
+    public function setReceiverInfo(ReceiverInfoDTO $receiverInfo): void
+    {
+        $this->receiverInfo = $receiverInfo;
+    }
+
+    /**
+     * @return array
+     */
+    public function getOrderItems(): array
+    {
+        return $this->orderItems;
+    }
+
+    /**
+     * @param array $orderItems
+     */
+    public function setOrderItems(array $orderItems): void
+    {
+        $this->orderItems = $orderItems;
     }
 
     /**
