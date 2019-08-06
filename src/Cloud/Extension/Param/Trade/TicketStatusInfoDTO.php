@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 /**
  * 
  * @author Baymax
- * @create 2019-07-24 13:19:41.0
+ * @create Wed Jul 24 13:19:41 CST 2019
  */
 class TicketStatusInfoDTO implements \JsonSerializable {
 
@@ -18,7 +18,7 @@ class TicketStatusInfoDTO implements \JsonSerializable {
     private $ticketNo;
 
     /**
-     * 核销状态：DEFALUT(0, &quot;默认&quot;),NOT_VERIFIED(1, &quot;未核销&quot;)，VERIFIED(2, &quot;已核销&quot;),  DISABLED(3, &quot;已失效&quot;),EXPIRED(4, &quot;已过期&quot;),REFUNDING(5, &quot;退款中&quot;);
+     * 核销状态
      * @var int
      */
     private $verifyState;
