@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Item;
 /**
  * 
  * @author Baymax
- * @create Fri Aug 02 10:08:13 CST 2019
+ * @create 2019-08-02 10:08:13.0
  */
 class ItemUpdateMsgDTO implements \JsonSerializable {
 
@@ -18,28 +18,22 @@ class ItemUpdateMsgDTO implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * 消息体
+     * 变动后 title	商品标题 price	商家价格 origin	 postage	统一运费 num	序号 goodsNo	商品编码 isVirtual	虚拟商品类型 messages	商品留言 class1	分类 class2	分类 joinLevelDiscount	是否参加会员折扣 deliveryTemplateId	运费模板id tag	分组（已废弃，不建议使用） hideStock	是否隐藏库存 picture	商品主图 pictureHeight	商品图片高度 startSoldTime	开售时间 subTitle	商品简介 quota	商品限购数量 content	商品详情 components	商品详情 isLock	商品锁
      * @var string
      */
-    private $msg;
+    private $after;
 
     /**
-     * id
+     * 变动前
      * @var string
      */
-    private $id;
+    private $before;
 
     /**
-     * 商品删除	ITEM_DELETE 部分售罄（多sku商品某sku售罄）	SOLD_OUT_PART 全部售罄	SOLD_OUT_ALL 售罄恢复	SOLD_OUT_REVERT 商品上架	ITEM_SALE_UP 商品下架	ITEM_SALE_DOWN 商品规格新增	SKU_CREATE 商品规格删除	SKU_DELETE 商品规格编辑	SKU_UPDATE   商品新增	ITEM_CREATE 商品编辑	ITEM_UPDATE
+     * 类型 ITEM_CREATE 商品新增  ITEM_UPDATE	商品编辑 	  ITEM_DELETE	商品删除	  SOLD_OUT_PART	部分售罄		  SOLD_OUT_ALL	全部售罄	  SOLD_OUT_REVERT	售罄恢复  ITEM_SALE_UP	商品上架	  ITEM_SALE_DOWN	商品下架 	  ITEM_GROUP_CREATE 分组新增  ITEM_GROUP_UPDATE	分组编辑 	  ITEM_GROUP_DELETE	分组删除
      * @var string
      */
-    private $status;
-
-    /**
-     * 商品状态事件 ITEM_STATE 商品基础信息事件 ITEM_INFO 商品规格信息事件 ITEM_SKU_INFO
-     * @var string
-     */
-    private $type;
+    private $eventTypeEnum;
 
 
 
@@ -62,65 +56,49 @@ class ItemUpdateMsgDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMsg(): string
+    public function getAfter(): string
     {
-        return $this->msg;
+        return $this->after;
     }
 
     /**
-     * @param string $msg
+     * @param string $after
      */
-    public function setMsg(string $msg): void
+    public function setAfter(string $after): void
     {
-        $this->msg = $msg;
-    }
-
-    /**
-     * @return string
-     */
-    public function getId(): string
-    {
-        return $this->id;
-    }
-
-    /**
-     * @param string $id
-     */
-    public function setId(string $id): void
-    {
-        $this->id = $id;
+        $this->after = $after;
     }
 
     /**
      * @return string
      */
-    public function getStatus(): string
+    public function getBefore(): string
     {
-        return $this->status;
+        return $this->before;
     }
 
     /**
-     * @param string $status
+     * @param string $before
      */
-    public function setStatus(string $status): void
+    public function setBefore(string $before): void
     {
-        $this->status = $status;
+        $this->before = $before;
     }
 
     /**
      * @return string
      */
-    public function getType(): string
+    public function getEventTypeEnum(): string
     {
-        return $this->type;
+        return $this->eventTypeEnum;
     }
 
     /**
-     * @param string $type
+     * @param string $eventTypeEnum
      */
-    public function setType(string $type): void
+    public function setEventTypeEnum(string $eventTypeEnum): void
     {
-        $this->type = $type;
+        $this->eventTypeEnum = $eventTypeEnum;
     }
 
     public function jsonSerialize() {
