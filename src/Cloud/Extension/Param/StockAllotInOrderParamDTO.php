@@ -68,6 +68,12 @@ class StockAllotInOrderParamDTO implements \JsonSerializable {
     private $sourceOrderNo;
 
     /**
+     * 外部单号
+     * @var string
+     */
+    private $outerNo;
+
+    /**
      * 明细单
      * @var array
      */
@@ -217,6 +223,22 @@ class StockAllotInOrderParamDTO implements \JsonSerializable {
     public function setSourceOrderNo(string $sourceOrderNo): void
     {
         $this->sourceOrderNo = $sourceOrderNo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOuterNo(): string
+    {
+        return $this->outerNo;
+    }
+
+    /**
+     * @param string $outerNo
+     */
+    public function setOuterNo(string $outerNo): void
+    {
+        $this->outerNo = $outerNo;
     }
 
     /**
