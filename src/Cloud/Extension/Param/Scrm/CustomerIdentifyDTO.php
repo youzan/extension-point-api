@@ -23,6 +23,12 @@ class CustomerIdentifyDTO implements \JsonSerializable {
      */
     private $accountId;
 
+    /**
+     * 店铺ID
+     * @var int
+     */
+    private $kdtId;
+
 
 
     /**
@@ -55,6 +61,22 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     public function setAccountId(string $accountId): void
     {
         $this->accountId = $accountId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getKdtId(): int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
     }
 
     public function jsonSerialize() {
