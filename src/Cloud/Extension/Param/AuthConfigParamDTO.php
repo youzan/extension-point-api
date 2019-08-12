@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 class AuthConfigParamDTO implements \JsonSerializable {
 
     /**
-     * 店铺ID
+     * 店铺号
      * @var int
      */
     private $kdtId;

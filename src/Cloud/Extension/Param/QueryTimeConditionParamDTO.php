@@ -12,13 +12,13 @@ use DateTime;
 class QueryTimeConditionParamDTO implements \JsonSerializable {
 
     /**
-     * 上次最后执行时间：如 2018-11-21 10:44:31
+     * 开始时间
      * @var DateTime
      */
     private $startTime;
 
     /**
-     * 时间间隔（单位为分钟），默认值0不做时间间隔
+     * 截止时间
      * @var DateTime
      */
     private $endTime;

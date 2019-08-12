@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\DistributionOutOrderItemResultDTO;
 use Com\Youzan\Cloud\Extension\Param\PluginHistoryOrderResultDTO;
 
 /**
- * 
+ * 调拨出库单信息
  * @author Baymax
  * @create 2019-07-21 22:31:59.0
  */

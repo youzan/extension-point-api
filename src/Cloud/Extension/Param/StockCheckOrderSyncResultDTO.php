@@ -6,7 +6,7 @@ use DateTime;
 use Com\Youzan\Cloud\Extension\Param\StockOrderItemResultDTO;
 
 /**
- * 
+ * 库存盘点信息
  * @author Baymax
  * @create 2019-07-22 02:19:47.0
  */

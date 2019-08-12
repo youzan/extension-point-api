@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
 
 /**
- * 
+ * 退款明细
  * @author Baymax
  * @create 2019-07-26 10:35:03.0
  */

@@ -12,19 +12,19 @@ namespace Com\Youzan\Cloud\Extension\Param;
 class ExtPointExtraPriceResultDTO implements \JsonSerializable {
 
     /**
-     * 费用名称 (限制15个字符)
+     * 附加费用名称 (限制15个字符)
      * @var string
      */
     private $name;
 
     /**
-     * 费用描述 (限制15个字符)
+     * 附加费用描述 (限制15个字符)
      * @var string
      */
     private $desc;
 
     /**
-     * 金额
+     * 附加费用金额（单位分）
      * @var int
      */
     private $price;

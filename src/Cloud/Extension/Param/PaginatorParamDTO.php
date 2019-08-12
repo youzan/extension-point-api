@@ -13,7 +13,7 @@ use Com\Youzan\Cloud\Extension\Param\QueryTimeConditionParamDTO;
 class PaginatorParamDTO implements \JsonSerializable {
 
     /**
-     * 鉴权参数
+     * 鉴权信息
      * @var stdClass
      */
     private $authMap;

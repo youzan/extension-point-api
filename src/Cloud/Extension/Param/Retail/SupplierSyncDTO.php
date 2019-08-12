@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
 
 /**
- * 
+ * 供应商信息
  * @author Baymax
  * @create 2019-07-26 10:29:58.0
  */

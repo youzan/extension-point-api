@@ -14,7 +14,7 @@ use Com\Youzan\Cloud\Extension\Param\Retail\ApplyOrderReturnItemDTO;
 class ApplyReturnOrderSyncRequestDTO implements \JsonSerializable {
 
     /**
-     * 鉴权参数
+     * 鉴权信息
      * @var stdClass
      */
     private $authMap;
@@ -38,7 +38,7 @@ class ApplyReturnOrderSyncRequestDTO implements \JsonSerializable {
     private $orderType;
 
     /**
-     * 日期格式 (YYYY-MM-DD HH:MM:SS)
+     * 日期格式
      * @var DateTime
      */
     private $orderCreateTime;

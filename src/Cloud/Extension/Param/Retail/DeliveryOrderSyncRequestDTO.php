@@ -64,25 +64,25 @@ class DeliveryOrderSyncRequestDTO implements \JsonSerializable {
     private $remark;
 
     /**
-     * 发货单状态
+     * 发货单状态： WAIT_DELIVER&#x3D;待发货或待核销 DELIVERED&#x3D;已发货或已核销 NO_NEED_TO_DELIVER&#x3D;无需发货
      * @var string
      */
     private $status;
 
     /**
-     * 销售渠道
+     * 销售渠道： ALL_SALE_WAY&#x3D;所有销售渠道 ONLINE&#x3D;网店 OFFLINE&#x3D;门店
      * @var string
      */
     private $saleWay;
 
     /**
-     * 配送方式
+     * 物流方式： EXPRESS&#x3D;快递 LOCAL_DELIVERY&#x3D;同城送 SELF_FETCH&#x3D;自提
      * @var string
      */
     private $distType;
 
     /**
-     * 支付方式
+     * 支付类型: 0&#x3D;老的方式,支付方式与支付渠道组合在一起 1&#x3D;无需支付 2&#x3D;现付 3&#x3D;部分支付 4&#x3D;货到付款 5&#x3D;线下收银 6&#x3D;单次支付 7&#x3D;阶段支付
      * @var int
      */
     private $payType;
@@ -106,19 +106,19 @@ class DeliveryOrderSyncRequestDTO implements \JsonSerializable {
     private $orderItems;
 
     /**
-     * 发货单整单金额，未计任何优惠，未计邮费
+     * 货单整单金额，未计任何优惠，未计邮费（计算规则：sales_price(明细1) * quantity(明细1) + sales_price(明细2) * quantity(明细2)）元
      * @var string
      */
     private $salesAmount;
 
     /**
-     * 发货单实付邮费
+     * 发货单实付邮费（元）
      * @var string
      */
     private $postage;
 
     /**
-     * 发货单实付金额 ，包含邮费
+     * 发货单实付金额 ，包含邮费（计算规则：real_sales_amount(明细1) + real_sales_amount(明细2) + postage）元
      * @var string
      */
     private $realSalesAmount;

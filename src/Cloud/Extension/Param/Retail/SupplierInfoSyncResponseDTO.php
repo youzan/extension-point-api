@@ -12,13 +12,13 @@ use Com\Youzan\Cloud\Extension\Param\Retail\SupplierSyncDTO;
 class SupplierInfoSyncResponseDTO implements \JsonSerializable {
 
     /**
-     * 记录总数
+     * 查询总数
      * @var int
      */
     private $totalCount;
 
     /**
-     * 
+     * 供应商信息
      * @var array
      */
     private $supplierOrderSyncDTOList;

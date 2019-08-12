@@ -20,7 +20,7 @@ class PurchaseOrderParamDTO implements \JsonSerializable {
     private $orderItems;
 
     /**
-     * 鉴权校验
+     * 鉴权信息
      * @var stdClass
      */
     private $authMap;
@@ -38,13 +38,13 @@ class PurchaseOrderParamDTO implements \JsonSerializable {
     private $estimatedArrivalTime;
 
     /**
-     * 不含税成本价总价
+     * 不含税成本价总价（元）
      * @var string
      */
     private $withoutTaxTotalCost;
 
     /**
-     * 含税成本价总价
+     * 含税成本价总价（元）
      * @var string
      */
     private $withTaxTotalCost;

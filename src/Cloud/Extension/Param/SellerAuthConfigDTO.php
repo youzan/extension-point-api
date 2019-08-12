@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 class SellerAuthConfigDTO implements \JsonSerializable {
 
     /**
-     * 鉴权key列表
+     * 鉴权信息
      * @var array
      */
     private $authKeys;

@@ -13,7 +13,7 @@ use DateTime;
 class ProductSyncRequestDTO implements \JsonSerializable {
 
     /**
-     * 鉴权参数
+     * 鉴权信息
      * @var stdClass
      */
     private $authMap;
@@ -25,7 +25,7 @@ class ProductSyncRequestDTO implements \JsonSerializable {
     private $operateType;
 
     /**
-     * 
+     * 仓库编码
      * @var string
      */
     private $warehouseCode;
@@ -79,7 +79,7 @@ class ProductSyncRequestDTO implements \JsonSerializable {
     private $outputTaxRate;
 
     /**
-     * 进项税
+     * 进项税字符串
      * @var string
      */
     private $inputTaxRate;

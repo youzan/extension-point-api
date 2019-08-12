@@ -14,7 +14,7 @@ use Com\Youzan\Cloud\Extension\Param\Retail\YZRefundOrderItemDTO;
 class RefundOrderSyncRequestDTO implements \JsonSerializable {
 
     /**
-     * 鉴权参数
+     * 鉴权信息
      * @var stdClass
      */
     private $authMap;
@@ -38,7 +38,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     private $createTime;
 
     /**
-     * 退款类型
+     * 退款类型： BUYER_APPLY_REFUND&#x3D;买家申请退款 SELLER_REFUND&#x3D;商家主动退款 SYSTEM_REFUND&#x3D;一键退款，特殊类型退款
      * @var string
      */
     private $refundType;
@@ -56,7 +56,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     private $refundFee;
 
     /**
-     * 退款状态
+     * 退款状态： REFUND_WAIT_SELLER_AGREE&#x3D;买家已经申请退款，等待卖家同意 REFUND_SELLER_REFUSE_BUYER&#x3D;卖家拒绝退款 REFUND_WAIT_BUYER_RETURN_GOODS&#x3D;卖家已经同意退货，等待买家退货 REFUND_WAIT_SELLER_CONFIRM_GOODS&#x3D;买家已经退货，等待卖家确认收货 REFUND_SELLER_REFUSE_RETURN_GOODS&#x3D;卖家未收到货,拒绝退款 REFUND_CLOSED&#x3D;退款关闭 REFUND_SUCCESS&#x3D;退款成功
      * @var string
      */
     private $refundStatus;
@@ -80,7 +80,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     private $buyerName;
 
     /**
-     * 
+     * 退款明细
      * @var array
      */
     private $refundItems;

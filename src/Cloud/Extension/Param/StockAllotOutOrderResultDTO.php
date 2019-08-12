@@ -12,13 +12,13 @@ use Com\Youzan\Cloud\Extension\Param\StockAllotOutOrderSyncResultDTO;
 class StockAllotOutOrderResultDTO implements \JsonSerializable {
 
     /**
-     * 总数
+     * 查询总数
      * @var int
      */
     private $totalCount;
 
     /**
-     * 
+     * 调拨出库单信息
      * @var array
      */
     private $stockAllotOutOrderSyncDTOS;

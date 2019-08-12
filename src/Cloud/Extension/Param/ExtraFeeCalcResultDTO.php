@@ -19,7 +19,7 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     private $extraFeeDetail;
 
     /**
-     * 附加费用总额
+     * 附加费用总额（已弃用，请使用orderExtraPrice字段）
      * @var int
      */
     private $totalExtraFeeAmount;
@@ -31,7 +31,7 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     private $orderNo;
 
     /**
-     * 附加费用说明,会显示在下单页
+     * 附加费用说明（已弃用，请使用orderExtraPrice字段）
      * @var string
      */
     private $extraFeeDesc;

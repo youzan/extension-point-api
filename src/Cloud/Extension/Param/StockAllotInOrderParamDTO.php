@@ -14,7 +14,7 @@ use Com\Youzan\Cloud\Extension\Param\StockOrderItemResultDTO;
 class StockAllotInOrderParamDTO implements \JsonSerializable {
 
     /**
-     * 鉴权参数
+     * 鉴权信息
      * @var stdClass
      */
     private $authMap;
