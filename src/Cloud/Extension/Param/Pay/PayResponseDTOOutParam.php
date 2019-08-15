@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Trade;
+namespace Com\Youzan\Cloud\Extension\Param\Pay;
 
-use Com\Youzan\Cloud\Extension\Param\Trade\RefundableAmountCalcResponseDTO;
+use Com\Youzan\Cloud\Extension\Param\Pay\PayResponseDTO;
 
 /**
  * 返回类
  * @author Baymax
- * @create 2019-07-23 17:37:38.0
+ * @create 2019-08-15 11:23:21.0
  */
-class RefundableAmountCalcResponseDTOOutParam implements \JsonSerializable {
+class PayResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class RefundableAmountCalcResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var RefundableAmountCalcResponseDTO
+     * @var PayResponseDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class RefundableAmountCalcResponseDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return RefundableAmountCalcResponseDTO
+     * @return PayResponseDTO
      */
-    public function getData(): RefundableAmountCalcResponseDTO
+    public function getData(): PayResponseDTO
     {
         return $this->data;
     }
 
     /**
-     * @param RefundableAmountCalcResponseDTO $data
+     * @param PayResponseDTO $data
      */
-    public function setData(RefundableAmountCalcResponseDTO $data): void
+    public function setData(PayResponseDTO $data): void
     {
         $this->data = $data;
     }
