@@ -21,7 +21,7 @@ class RefundRequestDTO implements \JsonSerializable {
      * 有赞支付单号
      * @var string
      */
-    private $outTradeNo;
+    private $yzTradeNo;
 
     /**
      * 外部支付单号
@@ -33,7 +33,7 @@ class RefundRequestDTO implements \JsonSerializable {
      * 有赞退款单号
      * @var string
      */
-    private $outRefundNo;
+    private $yzRefundNo;
 
     /**
      * 退款金额
@@ -92,17 +92,17 @@ class RefundRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOutTradeNo(): string
+    public function getYzTradeNo(): string
     {
-        return $this->outTradeNo;
+        return $this->yzTradeNo;
     }
 
     /**
-     * @param string $outTradeNo
+     * @param string $yzTradeNo
      */
-    public function setOutTradeNo(string $outTradeNo): void
+    public function setYzTradeNo(string $yzTradeNo): void
     {
-        $this->outTradeNo = $outTradeNo;
+        $this->yzTradeNo = $yzTradeNo;
     }
 
     /**
@@ -124,17 +124,17 @@ class RefundRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOutRefundNo(): string
+    public function getYzRefundNo(): string
     {
-        return $this->outRefundNo;
+        return $this->yzRefundNo;
     }
 
     /**
-     * @param string $outRefundNo
+     * @param string $yzRefundNo
      */
-    public function setOutRefundNo(string $outRefundNo): void
+    public function setYzRefundNo(string $yzRefundNo): void
     {
-        $this->outRefundNo = $outRefundNo;
+        $this->yzRefundNo = $yzRefundNo;
     }
 
     /**

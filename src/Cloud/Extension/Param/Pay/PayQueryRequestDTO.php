@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 class PayQueryRequestDTO implements \JsonSerializable {
 
     /**
-     * 支付单号
+     * 外部支付单号
      * @var string
      */
     private $tradeNo;
@@ -21,7 +21,7 @@ class PayQueryRequestDTO implements \JsonSerializable {
      * 有赞支付单号
      * @var string
      */
-    private $outTradeNo;
+    private $yzTradeNo;
 
     /**
      * 商户号
@@ -50,17 +50,17 @@ class PayQueryRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOutTradeNo(): string
+    public function getYzTradeNo(): string
     {
-        return $this->outTradeNo;
+        return $this->yzTradeNo;
     }
 
     /**
-     * @param string $outTradeNo
+     * @param string $yzTradeNo
      */
-    public function setOutTradeNo(string $outTradeNo): void
+    public function setYzTradeNo(string $yzTradeNo): void
     {
-        $this->outTradeNo = $outTradeNo;
+        $this->yzTradeNo = $yzTradeNo;
     }
 
     /**
