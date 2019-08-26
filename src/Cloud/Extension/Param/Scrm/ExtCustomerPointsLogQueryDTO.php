@@ -29,6 +29,12 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
      */
     private $extCustomerInfoDTO;
 
+    /**
+     * 0:全部 1:收入 2:支出 3:冻结
+     * @var int
+     */
+    private $type;
+
 
 
     /**
@@ -77,6 +83,22 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     public function setExtCustomerInfoDTO(ExtCustomerInfoDTO $extCustomerInfoDTO): void
     {
         $this->extCustomerInfoDTO = $extCustomerInfoDTO;
+    }
+
+    /**
+     * @return int
+     */
+    public function getType(): int
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param int $type
+     */
+    public function setType(int $type): void
+    {
+        $this->type = $type;
     }
 
     public function jsonSerialize() {
