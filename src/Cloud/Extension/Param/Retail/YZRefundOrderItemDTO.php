@@ -18,6 +18,12 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     private $deliveryOrderNo;
 
     /**
+     * 商品明细ID
+     * @var string
+     */
+    private $orderItemNo;
+
+    /**
      * 商品编码
      * @var string
      */
@@ -81,6 +87,22 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     public function setDeliveryOrderNo(string $deliveryOrderNo): void
     {
         $this->deliveryOrderNo = $deliveryOrderNo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOrderItemNo(): string
+    {
+        return $this->orderItemNo;
+    }
+
+    /**
+     * @param string $orderItemNo
+     */
+    public function setOrderItemNo(string $orderItemNo): void
+    {
+        $this->orderItemNo = $orderItemNo;
     }
 
     /**
