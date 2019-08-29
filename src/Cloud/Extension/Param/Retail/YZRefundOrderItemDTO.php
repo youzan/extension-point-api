@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Retail;
 /**
  * 退款明细
  * @author Baymax
- * @create 2019-07-26 10:35:03.0
+ * @create Fri Jul 26 10:35:03 CST 2019
  */
 class YZRefundOrderItemDTO implements \JsonSerializable {
 
@@ -16,12 +16,6 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
      * @var string
      */
     private $deliveryOrderNo;
-
-    /**
-     * 商品明细ID
-     * @var string
-     */
-    private $orderItemNo;
 
     /**
      * 商品编码
@@ -87,22 +81,6 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     public function setDeliveryOrderNo(string $deliveryOrderNo): void
     {
         $this->deliveryOrderNo = $deliveryOrderNo;
-    }
-
-    /**
-     * @return string
-     */
-    public function getOrderItemNo(): string
-    {
-        return $this->orderItemNo;
-    }
-
-    /**
-     * @param string $orderItemNo
-     */
-    public function setOrderItemNo(string $orderItemNo): void
-    {
-        $this->orderItemNo = $orderItemNo;
     }
 
     /**

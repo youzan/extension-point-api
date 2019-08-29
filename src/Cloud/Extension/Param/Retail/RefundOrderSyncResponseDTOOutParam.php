@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Retail\RefundOrderSyncResponseDTO;
 /**
  * 返回类
  * @author Baymax
- * @create 2019-07-25 11:45:35.0
+ * @create Thu Jul 25 11:45:35 CST 2019
  */
 class RefundOrderSyncResponseDTOOutParam implements \JsonSerializable {
 
