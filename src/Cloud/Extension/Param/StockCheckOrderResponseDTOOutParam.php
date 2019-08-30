@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\StockCheckOrderResponseDTO;
 /**
  * 返回类
  * @author Baymax
- * @create Mon Jul 22 02:19:47 CST 2019
+ * @create 2019-07-22 02:19:47.0
  */
 class StockCheckOrderResponseDTOOutParam implements \JsonSerializable {
 

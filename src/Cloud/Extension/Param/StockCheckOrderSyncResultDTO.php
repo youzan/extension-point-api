@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\StockOrderItemResultDTO;
 /**
  * 库存盘点信息
  * @author Baymax
- * @create Mon Jul 22 02:19:47 CST 2019
+ * @create 2019-07-22 02:19:47.0
  */
 class StockCheckOrderSyncResultDTO implements \JsonSerializable {
 
