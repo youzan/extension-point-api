@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Coupon\CouponTakeBackResultExtDTO;
 /**
  * 响应参数返回类
  * @author Baymax
- * @create 2018-09-28 19:26:29.0
+ * @create Fri Sep 28 19:26:29 CST 2018
  */
 class CouponTakeBackResultExtDTOOutParam implements \JsonSerializable {
 
