@@ -62,10 +62,16 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     private $refusedReason;
 
     /**
-     * 入库单据编号
+     * 出库单据编号
      * @var string
      */
     private $outBizNo;
+
+    /**
+     * 入库单据编号
+     * @var string
+     */
+    private $inBizNo;
 
     /**
      * 备注
@@ -241,6 +247,22 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     public function setOutBizNo(string $outBizNo): void
     {
         $this->outBizNo = $outBizNo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInBizNo(): string
+    {
+        return $this->inBizNo;
+    }
+
+    /**
+     * @param string $inBizNo
+     */
+    public function setInBizNo(string $inBizNo): void
+    {
+        $this->inBizNo = $inBizNo;
     }
 
     /**

@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Coupon;
 /**
  * 优惠活动信息
  * @author Baymax
- * @create Fri Sep 28 18:50:33 CST 2018
+ * @create 2018-09-28 18:50:33.0
  */
 class PromotionInfoExtDTO implements \JsonSerializable {
 
