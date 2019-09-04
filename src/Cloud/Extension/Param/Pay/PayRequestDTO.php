@@ -32,7 +32,7 @@ class PayRequestDTO implements \JsonSerializable {
 
     /**
      * 支付总金额，单位为分
-     * @var string
+     * @var int
      */
     private $payAmount;
 
@@ -141,17 +141,17 @@ class PayRequestDTO implements \JsonSerializable {
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getPayAmount(): string
+    public function getPayAmount(): int
     {
         return $this->payAmount;
     }
 
     /**
-     * @param string $payAmount
+     * @param int $payAmount
      */
-    public function setPayAmount(string $payAmount): void
+    public function setPayAmount(int $payAmount): void
     {
         $this->payAmount = $payAmount;
     }

@@ -63,19 +63,13 @@ class RefundResponseDTO implements \JsonSerializable {
      * 退款状态
      * @var string
      */
-    private $refundState;
+    private $refundStatus;
 
     /**
      * 退款状态描述
      * @var string
      */
-    private $refundStateDesc;
-
-    /**
-     * 错误信息
-     * @var string
-     */
-    private $errorReason;
+    private $refundStatusDesc;
 
 
 
@@ -210,49 +204,33 @@ class RefundResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundState(): string
+    public function getRefundStatus(): string
     {
-        return $this->refundState;
+        return $this->refundStatus;
     }
 
     /**
-     * @param string $refundState
+     * @param string $refundStatus
      */
-    public function setRefundState(string $refundState): void
+    public function setRefundStatus(string $refundStatus): void
     {
-        $this->refundState = $refundState;
-    }
-
-    /**
-     * @return string
-     */
-    public function getRefundStateDesc(): string
-    {
-        return $this->refundStateDesc;
-    }
-
-    /**
-     * @param string $refundStateDesc
-     */
-    public function setRefundStateDesc(string $refundStateDesc): void
-    {
-        $this->refundStateDesc = $refundStateDesc;
+        $this->refundStatus = $refundStatus;
     }
 
     /**
      * @return string
      */
-    public function getErrorReason(): string
+    public function getRefundStatusDesc(): string
     {
-        return $this->errorReason;
+        return $this->refundStatusDesc;
     }
 
     /**
-     * @param string $errorReason
+     * @param string $refundStatusDesc
      */
-    public function setErrorReason(string $errorReason): void
+    public function setRefundStatusDesc(string $refundStatusDesc): void
     {
-        $this->errorReason = $errorReason;
+        $this->refundStatusDesc = $refundStatusDesc;
     }
 
     public function jsonSerialize() {

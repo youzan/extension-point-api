@@ -63,25 +63,19 @@ class RefundQueryResponseDTO implements \JsonSerializable {
      * 退款状态
      * @var string
      */
-    private $refundState;
+    private $refundStatus;
 
     /**
      * 退款状态描述
      * @var string
      */
-    private $refundStateDesc;
+    private $refundStatusDesc;
 
     /**
      * 退款完成时间
      * @var DateTime
      */
     private $finishTime;
-
-    /**
-     * 错误信息
-     * @var string
-     */
-    private $errorReason;
 
 
 
@@ -216,33 +210,33 @@ class RefundQueryResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundState(): string
+    public function getRefundStatus(): string
     {
-        return $this->refundState;
+        return $this->refundStatus;
     }
 
     /**
-     * @param string $refundState
+     * @param string $refundStatus
      */
-    public function setRefundState(string $refundState): void
+    public function setRefundStatus(string $refundStatus): void
     {
-        $this->refundState = $refundState;
+        $this->refundStatus = $refundStatus;
     }
 
     /**
      * @return string
      */
-    public function getRefundStateDesc(): string
+    public function getRefundStatusDesc(): string
     {
-        return $this->refundStateDesc;
+        return $this->refundStatusDesc;
     }
 
     /**
-     * @param string $refundStateDesc
+     * @param string $refundStatusDesc
      */
-    public function setRefundStateDesc(string $refundStateDesc): void
+    public function setRefundStatusDesc(string $refundStatusDesc): void
     {
-        $this->refundStateDesc = $refundStateDesc;
+        $this->refundStatusDesc = $refundStatusDesc;
     }
 
     /**
@@ -259,22 +253,6 @@ class RefundQueryResponseDTO implements \JsonSerializable {
     public function setFinishTime(DateTime $finishTime): void
     {
         $this->finishTime = $finishTime;
-    }
-
-    /**
-     * @return string
-     */
-    public function getErrorReason(): string
-    {
-        return $this->errorReason;
-    }
-
-    /**
-     * @param string $errorReason
-     */
-    public function setErrorReason(string $errorReason): void
-    {
-        $this->errorReason = $errorReason;
     }
 
     public function jsonSerialize() {

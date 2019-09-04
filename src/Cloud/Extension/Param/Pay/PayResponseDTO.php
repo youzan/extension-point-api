@@ -40,19 +40,19 @@ class PayResponseDTO implements \JsonSerializable {
      * 支付完成时间
      * @var DateTime
      */
-    private $timeEnd;
+    private $payTime;
 
     /**
      * 支付成功：SUCCESS,  支付失败：FAIL,  支付中：PAYING,  预支付成功：PRE_PAY_SUCCESS
      * @var string
      */
-    private $tradeState;
+    private $tradeStatus;
 
     /**
      * 支付状态描述
      * @var string
      */
-    private $tradeStateDesc;
+    private $tradeStatusDesc;
 
     /**
      * 支付渠道
@@ -83,12 +83,6 @@ class PayResponseDTO implements \JsonSerializable {
      * @var stdClass
      */
     private $extra;
-
-    /**
-     * 错误信息
-     * @var string
-     */
-    private $errorReason;
 
 
 
@@ -159,49 +153,49 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @return DateTime
      */
-    public function getTimeEnd(): DateTime
+    public function getPayTime(): DateTime
     {
-        return $this->timeEnd;
+        return $this->payTime;
     }
 
     /**
-     * @param DateTime $timeEnd
+     * @param DateTime $payTime
      */
-    public function setTimeEnd(DateTime $timeEnd): void
+    public function setPayTime(DateTime $payTime): void
     {
-        $this->timeEnd = $timeEnd;
-    }
-
-    /**
-     * @return string
-     */
-    public function getTradeState(): string
-    {
-        return $this->tradeState;
-    }
-
-    /**
-     * @param string $tradeState
-     */
-    public function setTradeState(string $tradeState): void
-    {
-        $this->tradeState = $tradeState;
+        $this->payTime = $payTime;
     }
 
     /**
      * @return string
      */
-    public function getTradeStateDesc(): string
+    public function getTradeStatus(): string
     {
-        return $this->tradeStateDesc;
+        return $this->tradeStatus;
     }
 
     /**
-     * @param string $tradeStateDesc
+     * @param string $tradeStatus
      */
-    public function setTradeStateDesc(string $tradeStateDesc): void
+    public function setTradeStatus(string $tradeStatus): void
     {
-        $this->tradeStateDesc = $tradeStateDesc;
+        $this->tradeStatus = $tradeStatus;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTradeStatusDesc(): string
+    {
+        return $this->tradeStatusDesc;
+    }
+
+    /**
+     * @param string $tradeStatusDesc
+     */
+    public function setTradeStatusDesc(string $tradeStatusDesc): void
+    {
+        $this->tradeStatusDesc = $tradeStatusDesc;
     }
 
     /**
@@ -282,22 +276,6 @@ class PayResponseDTO implements \JsonSerializable {
     public function setExtra(stdClass $extra): void
     {
         $this->extra = $extra;
-    }
-
-    /**
-     * @return string
-     */
-    public function getErrorReason(): string
-    {
-        return $this->errorReason;
-    }
-
-    /**
-     * @param string $errorReason
-     */
-    public function setErrorReason(string $errorReason): void
-    {
-        $this->errorReason = $errorReason;
     }
 
     public function jsonSerialize() {

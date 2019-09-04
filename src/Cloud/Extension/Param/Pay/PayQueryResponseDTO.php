@@ -45,19 +45,19 @@ class PayQueryResponseDTO implements \JsonSerializable {
      * 支付成功：SUCCESS,  支付失败：FAIL,  支付中：PAYING,  预支付成功：PRE_PAY_SUCCESS
      * @var string
      */
-    private $tradeState;
+    private $tradeStatus;
 
     /**
      * 支付状态描述
      * @var string
      */
-    private $tradeStateDesc;
+    private $tradeStatusDesc;
 
     /**
      * 支付完成时间
      * @var string
      */
-    private $timeEnd;
+    private $payTime;
 
     /**
      * 币种信息
@@ -76,12 +76,6 @@ class PayQueryResponseDTO implements \JsonSerializable {
      * @var string
      */
     private $attach;
-
-    /**
-     * 错误信息
-     * @var string
-     */
-    private $errorReason;
 
 
 
@@ -168,49 +162,49 @@ class PayQueryResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTradeState(): string
+    public function getTradeStatus(): string
     {
-        return $this->tradeState;
+        return $this->tradeStatus;
     }
 
     /**
-     * @param string $tradeState
+     * @param string $tradeStatus
      */
-    public function setTradeState(string $tradeState): void
+    public function setTradeStatus(string $tradeStatus): void
     {
-        $this->tradeState = $tradeState;
-    }
-
-    /**
-     * @return string
-     */
-    public function getTradeStateDesc(): string
-    {
-        return $this->tradeStateDesc;
-    }
-
-    /**
-     * @param string $tradeStateDesc
-     */
-    public function setTradeStateDesc(string $tradeStateDesc): void
-    {
-        $this->tradeStateDesc = $tradeStateDesc;
+        $this->tradeStatus = $tradeStatus;
     }
 
     /**
      * @return string
      */
-    public function getTimeEnd(): string
+    public function getTradeStatusDesc(): string
     {
-        return $this->timeEnd;
+        return $this->tradeStatusDesc;
     }
 
     /**
-     * @param string $timeEnd
+     * @param string $tradeStatusDesc
      */
-    public function setTimeEnd(string $timeEnd): void
+    public function setTradeStatusDesc(string $tradeStatusDesc): void
     {
-        $this->timeEnd = $timeEnd;
+        $this->tradeStatusDesc = $tradeStatusDesc;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPayTime(): string
+    {
+        return $this->payTime;
+    }
+
+    /**
+     * @param string $payTime
+     */
+    public function setPayTime(string $payTime): void
+    {
+        $this->payTime = $payTime;
     }
 
     /**
@@ -259,22 +253,6 @@ class PayQueryResponseDTO implements \JsonSerializable {
     public function setAttach(string $attach): void
     {
         $this->attach = $attach;
-    }
-
-    /**
-     * @return string
-     */
-    public function getErrorReason(): string
-    {
-        return $this->errorReason;
-    }
-
-    /**
-     * @param string $errorReason
-     */
-    public function setErrorReason(string $errorReason): void
-    {
-        $this->errorReason = $errorReason;
     }
 
     public function jsonSerialize() {

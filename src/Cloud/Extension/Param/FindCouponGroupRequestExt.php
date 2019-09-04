@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 请求参数
  * @author Baymax
- * @create Wed Sep 26 19:40:59 CST 2018
+ * @create 2018-09-26 19:40:59.0
  */
 class FindCouponGroupRequestExt implements \JsonSerializable {
 
