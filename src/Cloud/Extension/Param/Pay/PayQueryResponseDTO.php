@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Pay;
 
-
+use DateTime;
 
 /**
  * 
@@ -55,7 +55,7 @@ class PayQueryResponseDTO implements \JsonSerializable {
 
     /**
      * 支付完成时间
-     * @var string
+     * @var DateTime
      */
     private $payTime;
 
@@ -192,17 +192,17 @@ class PayQueryResponseDTO implements \JsonSerializable {
     }
 
     /**
-     * @return string
+     * @return DateTime
      */
-    public function getPayTime(): string
+    public function getPayTime(): DateTime
     {
         return $this->payTime;
     }
 
     /**
-     * @param string $payTime
+     * @param DateTime $payTime
      */
-    public function setPayTime(string $payTime): void
+    public function setPayTime(DateTime $payTime): void
     {
         $this->payTime = $payTime;
     }

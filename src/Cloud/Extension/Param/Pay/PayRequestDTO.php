@@ -76,7 +76,7 @@ class PayRequestDTO implements \JsonSerializable {
      * 交易结束时间
      * @var DateTime
      */
-    private $timeEnd;
+    private $timeExpired;
 
     /**
      * 附加数据
@@ -255,17 +255,17 @@ class PayRequestDTO implements \JsonSerializable {
     /**
      * @return DateTime
      */
-    public function getTimeEnd(): DateTime
+    public function getTimeExpired(): DateTime
     {
-        return $this->timeEnd;
+        return $this->timeExpired;
     }
 
     /**
-     * @param DateTime $timeEnd
+     * @param DateTime $timeExpired
      */
-    public function setTimeEnd(DateTime $timeEnd): void
+    public function setTimeExpired(DateTime $timeExpired): void
     {
-        $this->timeEnd = $timeEnd;
+        $this->timeExpired = $timeExpired;
     }
 
     /**
