@@ -2,23 +2,23 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Test;
 
-use StdClass;
+
 
 /**
  * 执行结果
  * @author Baymax
- * @create 2018-09-17 21:46:05.0
+ * @create Mon Sep 17 21:46:05 CST 2018
  */
 class BizTestResponse implements \JsonSerializable {
 
     /**
      * 执行字符串结果
-     * @var stdClass
+     * @var string
      */
     private $content;
 
     /**
-     * 请求id
+     * 响应请求id
      * @var int
      */
     private $requestId;
@@ -26,17 +26,17 @@ class BizTestResponse implements \JsonSerializable {
 
 
     /**
-     * @return stdClass
+     * @return string
      */
-    public function getContent(): stdClass
+    public function getContent(): string
     {
         return $this->content;
     }
 
     /**
-     * @param stdClass $content
+     * @param string $content
      */
-    public function setContent(stdClass $content): void
+    public function setContent(string $content): void
     {
         $this->content = $content;
     }

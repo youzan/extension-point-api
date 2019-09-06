@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Coupon;
 use DateTime;
 
 /**
- * 
+ * 券组信息
  * @author Baymax
  * @create 2018-09-28 18:50:33.0
  */
