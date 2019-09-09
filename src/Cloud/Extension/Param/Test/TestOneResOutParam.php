@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Coupon;
+namespace Com\Youzan\Cloud\Extension\Param\Test;
 
-use Com\Youzan\Cloud\Extension\Param\Coupon\CouponFreezeResultExtDTO;
+use Com\Youzan\Cloud\Extension\Param\Test\TestOneRes;
 
 /**
  * 返回类
  * @author Baymax
- * @create 2018-09-28 18:50:33.0
+ * @create 2019-09-06 11:36:23.0
  */
-class CouponFreezeResultExtDTOOutParam implements \JsonSerializable {
+class TestOneResOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class CouponFreezeResultExtDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var CouponFreezeResultExtDTO
+     * @var TestOneRes
      */
     private $data;
 
@@ -84,17 +84,17 @@ class CouponFreezeResultExtDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return CouponFreezeResultExtDTO
+     * @return TestOneRes
      */
-    public function getData(): CouponFreezeResultExtDTO
+    public function getData(): TestOneRes
     {
         return $this->data;
     }
 
     /**
-     * @param CouponFreezeResultExtDTO $data
+     * @param TestOneRes $data
      */
-    public function setData(CouponFreezeResultExtDTO $data): void
+    public function setData(TestOneRes $data): void
     {
         $this->data = $data;
     }

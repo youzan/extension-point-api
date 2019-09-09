@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\CouponGroupBaseExt;
 /**
  * 返回参数
  * @author Baymax
- * @create Wed Sep 26 19:40:59 CST 2018
+ * @create 2018-09-26 19:40:59.0
  */
 class FindCouponGroupResponseExt implements \JsonSerializable {
 
