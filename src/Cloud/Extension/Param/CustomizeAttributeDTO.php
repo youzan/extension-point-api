@@ -1,0 +1,63 @@
+<?php
+
+namespace Com\Youzan\Cloud\Extension\Param;
+
+
+
+/**
+ * 
+ * @author Baymax
+ * @create 2019-09-10 17:13:06.0
+ */
+class CustomizeAttributeDTO implements \JsonSerializable {
+
+    /**
+     * 
+     * @var string
+     */
+    private $name;
+
+    /**
+     * 
+     * @var string
+     */
+    private $value;
+
+
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $name
+     */
+    public function setName(string $name): void
+    {
+        $this->name = $name;
+    }
+
+    /**
+     * @return string
+     */
+    public function getValue(): string
+    {
+        return $this->value;
+    }
+
+    /**
+     * @param string $value
+     */
+    public function setValue(string $value): void
+    {
+        $this->value = $value;
+    }
+
+    public function jsonSerialize() {
+        return get_object_vars($this);
+    }
+}

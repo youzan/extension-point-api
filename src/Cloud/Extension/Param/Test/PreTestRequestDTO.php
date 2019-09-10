@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Test;
 
-
+use Com\Youzan\Cloud\Extension\Param\Test\PreTestInnserParam;
 
 /**
  * 
@@ -22,6 +22,12 @@ class PreTestRequestDTO implements \JsonSerializable {
      * @var string
      */
     private $content;
+
+    /**
+     * 
+     * @var PreTestInnserParam
+     */
+    private $param;
 
 
 
@@ -55,6 +61,22 @@ class PreTestRequestDTO implements \JsonSerializable {
     public function setContent(string $content): void
     {
         $this->content = $content;
+    }
+
+    /**
+     * @return PreTestInnserParam
+     */
+    public function getParam(): PreTestInnserParam
+    {
+        return $this->param;
+    }
+
+    /**
+     * @param PreTestInnserParam $param
+     */
+    public function setParam(PreTestInnserParam $param): void
+    {
+        $this->param = $param;
     }
 
     public function jsonSerialize() {

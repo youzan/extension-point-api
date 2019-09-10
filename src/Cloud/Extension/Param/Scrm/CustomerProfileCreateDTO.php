@@ -3,6 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
 use Com\Youzan\Cloud\Extension\Param\Scrm\ContactAddressCreateDTO;
+use Com\Youzan\Cloud\Extension\Param\CustomizeAttributeDTO;
 
 /**
  * 
@@ -46,6 +47,12 @@ class CustomerProfileCreateDTO implements \JsonSerializable {
      * @var string
      */
     private $email;
+
+    /**
+     * 
+     * @var array
+     */
+    private $attributeList;
 
 
 
@@ -143,6 +150,22 @@ class CustomerProfileCreateDTO implements \JsonSerializable {
     public function setEmail(string $email): void
     {
         $this->email = $email;
+    }
+
+    /**
+     * @return array
+     */
+    public function getAttributeList(): array
+    {
+        return $this->attributeList;
+    }
+
+    /**
+     * @param array $attributeList
+     */
+    public function setAttributeList(array $attributeList): void
+    {
+        $this->attributeList = $attributeList;
     }
 
     public function jsonSerialize() {

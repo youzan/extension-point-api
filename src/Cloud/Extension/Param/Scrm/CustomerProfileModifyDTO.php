@@ -3,6 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
 use Com\Youzan\Cloud\Extension\Param\Scrm\ContactAddressModifyDTO;
+use Com\Youzan\Cloud\Extension\Param\CustomizeAttributeDTO;
 
 /**
  * 
@@ -34,6 +35,12 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
      * @var ContactAddressModifyDTO
      */
     private $contactAddressModifyDTO;
+
+    /**
+     * 
+     * @var array
+     */
+    private $attributeList;
 
 
 
@@ -99,6 +106,22 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
     public function setContactAddressModifyDTO(ContactAddressModifyDTO $contactAddressModifyDTO): void
     {
         $this->contactAddressModifyDTO = $contactAddressModifyDTO;
+    }
+
+    /**
+     * @return array
+     */
+    public function getAttributeList(): array
+    {
+        return $this->attributeList;
+    }
+
+    /**
+     * @param array $attributeList
+     */
+    public function setAttributeList(array $attributeList): void
+    {
+        $this->attributeList = $attributeList;
     }
 
     public function jsonSerialize() {
