@@ -23,6 +23,12 @@ class CustomizeAttributeDTO implements \JsonSerializable {
      */
     private $value;
 
+    /**
+     * 
+     * @var int
+     */
+    private $dataType;
+
 
 
     /**
@@ -55,6 +61,22 @@ class CustomizeAttributeDTO implements \JsonSerializable {
     public function setValue(string $value): void
     {
         $this->value = $value;
+    }
+
+    /**
+     * @return int
+     */
+    public function getDataType(): int
+    {
+        return $this->dataType;
+    }
+
+    /**
+     * @param int $dataType
+     */
+    public function setDataType(int $dataType): void
+    {
+        $this->dataType = $dataType;
     }
 
     public function jsonSerialize() {
