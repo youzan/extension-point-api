@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Test;
 
-use StdClass;
+
 
 /**
  * 执行结果
@@ -13,7 +13,7 @@ class BizTestResponse implements \JsonSerializable {
 
     /**
      * 执行字符串结果
-     * @var stdClass
+     * @var string
      */
     private $content;
 
@@ -26,17 +26,17 @@ class BizTestResponse implements \JsonSerializable {
 
 
     /**
-     * @return stdClass
+     * @return string
      */
-    public function getContent(): stdClass
+    public function getContent(): string
     {
         return $this->content;
     }
 
     /**
-     * @param stdClass $content
+     * @param string $content
      */
-    public function setContent(stdClass $content): void
+    public function setContent(string $content): void
     {
         $this->content = $content;
     }
