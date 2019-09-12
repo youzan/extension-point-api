@@ -43,6 +43,12 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     private $bizValue;
 
     /**
+     * 
+     * @var int
+     */
+    private $kdtId;
+
+    /**
      * 帐号信息
      * @var ExtCustomerInfoDTO
      */
@@ -128,6 +134,22 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     public function setBizValue(string $bizValue): void
     {
         $this->bizValue = $bizValue;
+    }
+
+    /**
+     * @return int
+     */
+    public function getKdtId(): int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
     }
 
     /**
