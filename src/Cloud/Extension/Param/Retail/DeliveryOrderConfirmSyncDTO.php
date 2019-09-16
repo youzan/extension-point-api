@@ -2,12 +2,12 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Retail;
 
-use StdClass;
+
 
 /**
  * 
  * @author Baymax
- * @create 2019-07-26 10:54:00.0
+ * @create Fri Jul 26 10:54:00 CST 2019
  */
 class DeliveryOrderConfirmSyncDTO implements \JsonSerializable {
 
@@ -18,34 +18,34 @@ class DeliveryOrderConfirmSyncDTO implements \JsonSerializable {
     private $deliveryOrderNo;
 
     /**
+     * 仓库编码
+     * @var string
+     */
+    private $warehouseCode;
+
+    /**
      * 商品明细ID
      * @var array
      */
     private $orderItemNos;
 
     /**
-     * 
-     * @var string
-     */
-    private $logisticsNo;
-
-    /**
      * 物流公司编号，可以通过请求 youzan.logistics.express.get 该接口获得
      * @var string
      */
-    private $logisticsType;
+    private $logisticsId;
 
     /**
      * 运单号
-     * @var bool
+     * @var string
      */
-    private $isPartSync;
+    private $expressCode;
 
     /**
      * 操作人名字
-     * @var stdClass
+     * @var string
      */
-    private $extInfo;
+    private $operatorName;
 
 
 
@@ -63,6 +63,22 @@ class DeliveryOrderConfirmSyncDTO implements \JsonSerializable {
     public function setDeliveryOrderNo(string $deliveryOrderNo): void
     {
         $this->deliveryOrderNo = $deliveryOrderNo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getWarehouseCode(): string
+    {
+        return $this->warehouseCode;
+    }
+
+    /**
+     * @param string $warehouseCode
+     */
+    public function setWarehouseCode(string $warehouseCode): void
+    {
+        $this->warehouseCode = $warehouseCode;
     }
 
     /**
@@ -84,65 +100,49 @@ class DeliveryOrderConfirmSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLogisticsNo(): string
+    public function getLogisticsId(): string
     {
-        return $this->logisticsNo;
+        return $this->logisticsId;
     }
 
     /**
-     * @param string $logisticsNo
+     * @param string $logisticsId
      */
-    public function setLogisticsNo(string $logisticsNo): void
+    public function setLogisticsId(string $logisticsId): void
     {
-        $this->logisticsNo = $logisticsNo;
+        $this->logisticsId = $logisticsId;
     }
 
     /**
      * @return string
      */
-    public function getLogisticsType(): string
+    public function getExpressCode(): string
     {
-        return $this->logisticsType;
+        return $this->expressCode;
     }
 
     /**
-     * @param string $logisticsType
+     * @param string $expressCode
      */
-    public function setLogisticsType(string $logisticsType): void
+    public function setExpressCode(string $expressCode): void
     {
-        $this->logisticsType = $logisticsType;
+        $this->expressCode = $expressCode;
     }
 
     /**
-     * @return bool
+     * @return string
      */
-    public function getIsPartSync(): bool
+    public function getOperatorName(): string
     {
-        return $this->isPartSync;
+        return $this->operatorName;
     }
 
     /**
-     * @param bool $isPartSync
+     * @param string $operatorName
      */
-    public function setIsPartSync(bool $isPartSync): void
+    public function setOperatorName(string $operatorName): void
     {
-        $this->isPartSync = $isPartSync;
-    }
-
-    /**
-     * @return stdClass
-     */
-    public function getExtInfo(): stdClass
-    {
-        return $this->extInfo;
-    }
-
-    /**
-     * @param stdClass $extInfo
-     */
-    public function setExtInfo(stdClass $extInfo): void
-    {
-        $this->extInfo = $extInfo;
+        $this->operatorName = $operatorName;
     }
 
     public function jsonSerialize() {

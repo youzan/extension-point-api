@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Retail\DeliveryOrderConfirmResponseDTO;
 /**
  * 返回类
  * @author Baymax
- * @create 2019-07-25 14:17:34.0
+ * @create Thu Jul 25 14:17:34 CST 2019
  */
 class DeliveryOrderConfirmResponseDTOOutParam implements \JsonSerializable {
 
