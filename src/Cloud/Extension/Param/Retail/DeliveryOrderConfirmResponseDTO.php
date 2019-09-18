@@ -12,13 +12,13 @@ use Com\Youzan\Cloud\Extension\Param\Retail\DeliveryOrderConfirmSyncDTO;
 class DeliveryOrderConfirmResponseDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 查询总数
      * @var int
      */
     private $totalCount;
 
     /**
-     * 
+     * 发货单确认返回信息
      * @var array
      */
     private $deliveryOrderConfirmSyncDTOList;

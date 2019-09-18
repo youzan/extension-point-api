@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Retail;
 use StdClass;
 
 /**
- * 
+ * 发货单确认返回信息
  * @author Baymax
  * @create 2019-07-26 10:54:00.0
  */
@@ -24,7 +24,7 @@ class DeliveryOrderConfirmSyncDTO implements \JsonSerializable {
     private $orderItemNos;
 
     /**
-     * 
+     * 运单号
      * @var string
      */
     private $logisticsNo;
@@ -36,7 +36,7 @@ class DeliveryOrderConfirmSyncDTO implements \JsonSerializable {
     private $logisticsType;
 
     /**
-     * 运单号
+     * 0: 不拆单发货  1：拆单发货
      * @var bool
      */
     private $isPartSync;
