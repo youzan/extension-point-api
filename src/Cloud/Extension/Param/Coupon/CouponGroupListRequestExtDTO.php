@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Coupon;
 /**
  * 请求参数
  * @author Baymax
- * @create Sat Sep 29 21:40:57 CST 2018
+ * @create 2018-09-29 21:40:57.0
  */
 class CouponGroupListRequestExtDTO implements \JsonSerializable {
 

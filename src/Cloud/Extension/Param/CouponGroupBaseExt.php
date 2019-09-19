@@ -7,7 +7,7 @@ use DateTime;
 /**
  * 优惠券组信息
  * @author Baymax
- * @create Wed Sep 26 19:40:59 CST 2018
+ * @create 2018-09-26 19:40:59.0
  */
 class CouponGroupBaseExt implements \JsonSerializable {
 
