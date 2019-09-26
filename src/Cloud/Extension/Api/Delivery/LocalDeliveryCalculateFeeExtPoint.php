@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Delivery\LocalDeliveryFeeResponseDTOOutPara
 
 interface LocalDeliveryCalculateFeeExtPoint {
 
-    public function handle(LocalDeliveryOrderDTO $localDeliveryOrderDTO) : LocalDeliveryFeeResponseDTOOutParam;
+    public function handle(LocalDeliveryOrderDTO $localDeliveryFeeDTO) : LocalDeliveryFeeResponseDTOOutParam;
 
 }

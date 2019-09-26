@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Delivery\BaseResponseDTOOutParam;
 
 interface LocalDeliveryConfirmOrderExtPoint {
 
-    public function handle(LocalDeliveryOrderIdDTO $localDeliveryOrderIdDTO) : BaseResponseDTOOutParam;
+    public function handle(LocalDeliveryOrderIdDTO $orderIdDTO) : BaseResponseDTOOutParam;
 
 }
