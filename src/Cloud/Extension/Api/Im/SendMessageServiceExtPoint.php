@@ -2,8 +2,8 @@
 
 namespace Com\Youzan\Cloud\Extension\Api\Im;
 
-use Com\Youzan\Cloud\Extension\Param\RobotMsgReq;
-use Com\Youzan\Cloud\Extension\Param\RobotMsgRespOutParam;
+use Com\Youzan\Cloud\Extension\Param\Im\RobotMsgReq;
+use Com\Youzan\Cloud\Extension\Param\Im\RobotMsgRespOutParam;
 
 interface SendMessageServiceExtPoint {
 
