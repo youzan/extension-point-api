@@ -12,26 +12,26 @@ namespace Com\Youzan\Cloud\Extension\Param\Im;
 class RobotMsgData implements \JsonSerializable {
 
     /**
-     * 
+     * 消息内容
      * @var string
      */
     private $content;
 
     /**
-     * 
+     * 消息类型
      * @var string
      */
     private $msgType;
 
     /**
-     * 
+     * 扩展字段 {标准 JSON 格式}
      * @var string
      */
     private $ext;
 
     /**
-     * 
-     * @var string
+     * 0:正常发消息; 1:无答案; 2:请求转人工
+     * @var int
      */
     private $status;
 
@@ -86,17 +86,17 @@ class RobotMsgData implements \JsonSerializable {
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getStatus(): string
+    public function getStatus(): int
     {
         return $this->status;
     }
 
     /**
-     * @param string $status
+     * @param int $status
      */
-    public function setStatus(string $status): void
+    public function setStatus(int $status): void
     {
         $this->status = $status;
     }
