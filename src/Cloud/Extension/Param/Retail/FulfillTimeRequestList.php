@@ -13,7 +13,7 @@ class FulfillTimeRequestList implements \JsonSerializable {
 
     /**
      * 
-     * @var int
+     * @var string
      */
     private $skuNo;
 
@@ -32,17 +32,17 @@ class FulfillTimeRequestList implements \JsonSerializable {
 
 
     /**
-     * @return int
+     * @return string
      */
-    public function getSkuNo(): int
+    public function getSkuNo(): string
     {
         return $this->skuNo;
     }
 
     /**
-     * @param int $skuNo
+     * @param string $skuNo
      */
-    public function setSkuNo(int $skuNo): void
+    public function setSkuNo(string $skuNo): void
     {
         $this->skuNo = $skuNo;
     }
