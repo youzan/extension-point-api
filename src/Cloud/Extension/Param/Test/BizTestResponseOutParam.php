@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Test\BizTestResponse;
 /**
  * 执行结果返回类
  * @author Baymax
- * @create 2018-09-17 21:46:05.0
+ * @create Mon Sep 17 21:46:05 CST 2018
  */
 class BizTestResponseOutParam implements \JsonSerializable {
 

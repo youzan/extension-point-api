@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Test;
 /**
  * 执行结果
  * @author Baymax
- * @create 2018-09-17 21:46:05.0
+ * @create Mon Sep 17 21:46:05 CST 2018
  */
 class BizTestResponse implements \JsonSerializable {
 
@@ -18,7 +18,7 @@ class BizTestResponse implements \JsonSerializable {
     private $content;
 
     /**
-     * 请求id
+     * 响应请求id
      * @var int
      */
     private $requestId;
