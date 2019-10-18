@@ -4,6 +4,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 
 use StdClass;
 use Com\Youzan\Cloud\Extension\Param\ItemCalcDTO;
+use Com\Youzan\Cloud\Extension\Param\ExtPointUserMsgDTO;
 
 /**
  * 
@@ -53,6 +54,12 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
      * @var int
      */
     private $kdtId;
+
+    /**
+     * 买家信息
+     * @var ExtPointUserMsgDTO
+     */
+    private $buyerInfo;
 
 
 
@@ -166,6 +173,22 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return ExtPointUserMsgDTO
+     */
+    public function getBuyerInfo(): ExtPointUserMsgDTO
+    {
+        return $this->buyerInfo;
+    }
+
+    /**
+     * @param ExtPointUserMsgDTO $buyerInfo
+     */
+    public function setBuyerInfo(ExtPointUserMsgDTO $buyerInfo): void
+    {
+        $this->buyerInfo = $buyerInfo;
     }
 
     public function jsonSerialize() {
