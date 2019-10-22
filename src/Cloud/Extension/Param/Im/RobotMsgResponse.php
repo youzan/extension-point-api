@@ -12,19 +12,19 @@ namespace Com\Youzan\Cloud\Extension\Param\Im;
 class RobotMsgResponse implements \JsonSerializable {
 
     /**
-     * 消息内容
+     * 机器人响应的消息内容，将会回复给用户
      * @var string
      */
     private $content;
 
     /**
-     * 消息类型
+     * 消息类型，文本：text，图片：image，当消息类型为image时，响应content的内容使用图片链接，请将图片通过素材接口youzan.materials.storage.platform.img.upload上传，拿到有赞图片链接响应
      * @var string
      */
     private $msgType;
 
     /**
-     * 0:正常发消息; 1:无答案; 2:请求转人工
+     * 0:正常发消息; 1:无答案; 2:请求转人工，当无匹配答案时，请响应status为1，并且msgType和content不要响应内容
      * @var int
      */
     private $status;

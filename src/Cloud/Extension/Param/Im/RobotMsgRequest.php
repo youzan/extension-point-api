@@ -12,13 +12,13 @@ namespace Com\Youzan\Cloud\Extension\Param\Im;
 class RobotMsgRequest implements \JsonSerializable {
 
     /**
-     * 消息内容
+     * 用户咨询的消息内容
      * @var string
      */
     private $content;
 
     /**
-     * 消息类型
+     * 消息类型，文本：text，图片：image，当消息类型为image时，content的内容为图片链接
      * @var string
      */
     private $msgType;
