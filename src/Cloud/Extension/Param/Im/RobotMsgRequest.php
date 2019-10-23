@@ -24,7 +24,7 @@ class RobotMsgRequest implements \JsonSerializable {
     private $msgType;
 
     /**
-     * 扩展字段 {标准 JSON 格式}
+     * 扩展字段 {标准 JSON 格式}，见示例值。shopId为店铺id值；userId为用户唯一id值；userName为用户昵称；goodsAlias为商品别名，可通过接口youzan.item.detail.api.Item.alias获取商品信息，当咨询从商品详情页发起时才有值
      * @var string
      */
     private $ext;
