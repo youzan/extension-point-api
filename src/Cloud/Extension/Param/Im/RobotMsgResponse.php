@@ -24,7 +24,7 @@ class RobotMsgResponse implements \JsonSerializable {
     private $msgType;
 
     /**
-     * 0:正常发消息; 1:无答案; 2:请求转人工，当无匹配答案时，请响应status为1，并且msgType和content不要响应内容
+     * 0:正常发消息; 1:无答案; 2:请求转人工。当无匹配答案时，响应status为1，将会触发转人工服务，此时msgType和content可以响应无答案话术，也可以不响应内容
      * @var int
      */
     private $status;
