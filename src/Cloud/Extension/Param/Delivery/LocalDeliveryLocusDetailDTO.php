@@ -66,7 +66,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     private $riderLat;
 
     /**
-     * ??
+     * 
      * @var array
      */
     private $logisticInfo;
@@ -90,7 +90,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     private $distance;
 
     /**
-     * 退款违约金(单位分)??
+     * 退款违约金，单位为分
      * @var int
      */
     private $deductFee;

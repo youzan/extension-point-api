@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Delivery;
 class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
 
     /**
-     * 店铺id??
+     * 标识店铺唯一渠道门店id
      * @var string
      */
     private $originalShopId;

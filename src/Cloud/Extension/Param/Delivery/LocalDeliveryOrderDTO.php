@@ -18,7 +18,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     private $orderOriginalId;
 
     /**
-     * 订单重量，单位克
+     * 订单重量，单位为克
      * @var int
      */
     private $orderWeight;
@@ -150,7 +150,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     private $expectFetchTime;
 
     /**
-     * 小费 (单位分）
+     * 小费 ，单位为分
      * @var int
      */
     private $tips;

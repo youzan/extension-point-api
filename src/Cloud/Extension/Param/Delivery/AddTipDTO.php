@@ -24,7 +24,7 @@ class AddTipDTO implements \JsonSerializable {
     private $orderOriginalId;
 
     /**
-     * 小费金额，单位(分)
+     * 小费金额，单位为分
      * @var int
      */
     private $tip;
