@@ -18,7 +18,7 @@ class LocalDeliveryCommitAuditResponseDTO implements \JsonSerializable {
     private $auditResult;
 
     /**
-     * 失败原因ID 1 -&gt; 运力不足,暂无法提供服务; 2 -&gt; 超出物流商服务范围; 3 -&gt; 店铺不存在; 4 -&gt; 门店地址信息不准确; 5 -&gt; 品类不明确,不支持上线; 6 -&gt; 所提交品类与实际经营品类不符
+     * 失败原因
      * @var string
      */
     private $fialReason;
