@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Delivery;
 class LocalDeliveryCancelResponseDTO implements \JsonSerializable {
 
     /**
-     * 取消违约金（单位分）
+     * 取消违约金，单位为分
      * @var int
      */
     private $deductFee;
