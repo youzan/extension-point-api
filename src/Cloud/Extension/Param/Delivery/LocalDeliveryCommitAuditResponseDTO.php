@@ -18,10 +18,16 @@ class LocalDeliveryCommitAuditResponseDTO implements \JsonSerializable {
     private $auditResult;
 
     /**
+     * 失败code值  1:运力不足,暂无法提供服务;2:超出物流商服务范围;3:店铺不存在;4:门店地址信息不准确;5:品类不明确,不支持上线;6:所提交品类与实际经营品类不符
+     * @var int
+     */
+    private $code;
+
+    /**
      * 失败原因
      * @var string
      */
-    private $fialReason;
+    private $failReason;
 
 
 
@@ -42,19 +48,35 @@ class LocalDeliveryCommitAuditResponseDTO implements \JsonSerializable {
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getFialReason(): string
+    public function getCode(): int
     {
-        return $this->fialReason;
+        return $this->code;
     }
 
     /**
-     * @param string $fialReason
+     * @param int $code
      */
-    public function setFialReason(string $fialReason): void
+    public function setCode(int $code): void
     {
-        $this->fialReason = $fialReason;
+        $this->code = $code;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFailReason(): string
+    {
+        return $this->failReason;
+    }
+
+    /**
+     * @param string $failReason
+     */
+    public function setFailReason(string $failReason): void
+    {
+        $this->failReason = $failReason;
     }
 
     public function jsonSerialize() {
