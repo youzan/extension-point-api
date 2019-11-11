@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\Coupon\AssetsGoodsPromotionExtDTO;
 /**
  * 请求参数
  * @author Baymax
- * @create 2018-09-29 10:43:38.0
+ * @create Sat Sep 29 10:43:38 CST 2018
  */
 class CalculatedCouponsRequestExtDTO implements \JsonSerializable {
 
