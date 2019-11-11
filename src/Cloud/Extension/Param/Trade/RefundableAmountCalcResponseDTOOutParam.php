@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Trade\RefundableAmountCalcResponseDTO;
 /**
  * 返回类
  * @author Baymax
- * @create Tue Jul 23 17:37:38 CST 2019
+ * @create 2019-07-23 17:37:38.0
  */
 class RefundableAmountCalcResponseDTOOutParam implements \JsonSerializable {
 
