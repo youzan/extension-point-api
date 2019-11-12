@@ -32,7 +32,7 @@ class ValueCardRefundResponseDTO implements \JsonSerializable {
 
     /**
      * 退款完成时间
-     * @var DateTime
+     * @var int
      */
     private $refundDt;
 
@@ -93,17 +93,17 @@ class ValueCardRefundResponseDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getRefundDt(): DateTime
+    public function getRefundDt(): int
     {
         return $this->refundDt;
     }
 
     /**
-     * @param DateTime $refundDt
+     * @param int $refundDt
      */
-    public function setRefundDt(DateTime $refundDt): void
+    public function setRefundDt(int $refundDt): void
     {
         $this->refundDt = $refundDt;
     }

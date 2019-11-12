@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Coupon;
 /**
  * 
  * @author Baymax
- * @create Sun Sep 30 15:25:27 CST 2018
+ * @create 2018-09-30 15:25:27.0
  */
 class CouponUnFreezeRequestExtDTO implements \JsonSerializable {
 

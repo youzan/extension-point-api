@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Coupon\CouponExtDTO;
 /**
  * 返回参数
  * @author Baymax
- * @create Fri Sep 28 19:32:07 CST 2018
+ * @create 2018-09-28 19:32:07.0
  */
 class CouponDetailResultExtDTO implements \JsonSerializable {
 

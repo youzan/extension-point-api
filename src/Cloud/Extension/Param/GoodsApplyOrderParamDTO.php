@@ -87,7 +87,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
 
     /**
      * 单据日期
-     * @var DateTime
+     * @var int
      */
     private $createdTime;
 
@@ -298,17 +298,17 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getCreatedTime(): DateTime
+    public function getCreatedTime(): int
     {
         return $this->createdTime;
     }
 
     /**
-     * @param DateTime $createdTime
+     * @param int $createdTime
      */
-    public function setCreatedTime(DateTime $createdTime): void
+    public function setCreatedTime(int $createdTime): void
     {
         $this->createdTime = $createdTime;
     }

@@ -51,7 +51,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
 
     /**
      * 单据日期
-     * @var DateTime
+     * @var int
      */
     private $createTime;
 
@@ -178,17 +178,17 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getCreateTime(): DateTime
+    public function getCreateTime(): int
     {
         return $this->createTime;
     }
 
     /**
-     * @param DateTime $createTime
+     * @param int $createTime
      */
-    public function setCreateTime(DateTime $createTime): void
+    public function setCreateTime(int $createTime): void
     {
         $this->createTime = $createTime;
     }

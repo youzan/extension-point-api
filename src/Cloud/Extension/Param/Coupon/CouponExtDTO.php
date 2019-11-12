@@ -52,7 +52,7 @@ class CouponExtDTO implements \JsonSerializable {
 
     /**
      * 
-     * @var DateTime
+     * @var int
      */
     private $takeAt;
 
@@ -155,17 +155,17 @@ class CouponExtDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getTakeAt(): DateTime
+    public function getTakeAt(): int
     {
         return $this->takeAt;
     }
 
     /**
-     * @param DateTime $takeAt
+     * @param int $takeAt
      */
-    public function setTakeAt(DateTime $takeAt): void
+    public function setTakeAt(int $takeAt): void
     {
         $this->takeAt = $takeAt;
     }

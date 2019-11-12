@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Coupon;
 use DateTime;
 
 /**
- * 券组信息
+ * 
  * @author Baymax
  * @create 2018-09-28 18:50:33.0
  */
@@ -61,13 +61,13 @@ class CouponGroupExtDTO implements \JsonSerializable {
 
     /**
      * 开始有效日期 时间戳
-     * @var DateTime
+     * @var int
      */
     private $beginAt;
 
     /**
      * 到期时间 时间戳
-     * @var DateTime
+     * @var int
      */
     private $endAt;
 
@@ -115,7 +115,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
 
     /**
      * 创建时间
-     * @var DateTime
+     * @var int
      */
     private $createdAt;
 
@@ -250,33 +250,33 @@ class CouponGroupExtDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getBeginAt(): DateTime
+    public function getBeginAt(): int
     {
         return $this->beginAt;
     }
 
     /**
-     * @param DateTime $beginAt
+     * @param int $beginAt
      */
-    public function setBeginAt(DateTime $beginAt): void
+    public function setBeginAt(int $beginAt): void
     {
         $this->beginAt = $beginAt;
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getEndAt(): DateTime
+    public function getEndAt(): int
     {
         return $this->endAt;
     }
 
     /**
-     * @param DateTime $endAt
+     * @param int $endAt
      */
-    public function setEndAt(DateTime $endAt): void
+    public function setEndAt(int $endAt): void
     {
         $this->endAt = $endAt;
     }
@@ -394,17 +394,17 @@ class CouponGroupExtDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getCreatedAt(): DateTime
+    public function getCreatedAt(): int
     {
         return $this->createdAt;
     }
 
     /**
-     * @param DateTime $createdAt
+     * @param int $createdAt
      */
-    public function setCreatedAt(DateTime $createdAt): void
+    public function setCreatedAt(int $createdAt): void
     {
         $this->createdAt = $createdAt;
     }

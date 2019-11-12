@@ -44,7 +44,7 @@ class ValueCardRefundRequestDTO implements \JsonSerializable {
 
     /**
      * 退款发起时间
-     * @var DateTime
+     * @var int
      */
     private $tradeTime;
 
@@ -137,17 +137,17 @@ class ValueCardRefundRequestDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getTradeTime(): DateTime
+    public function getTradeTime(): int
     {
         return $this->tradeTime;
     }
 
     /**
-     * @param DateTime $tradeTime
+     * @param int $tradeTime
      */
-    public function setTradeTime(DateTime $tradeTime): void
+    public function setTradeTime(int $tradeTime): void
     {
         $this->tradeTime = $tradeTime;
     }

@@ -50,7 +50,7 @@ class ValueCardPayResponseDTO implements \JsonSerializable {
 
     /**
      * 支付完成时间
-     * @var DateTime
+     * @var int
      */
     private $paymentDt;
 
@@ -183,17 +183,17 @@ class ValueCardPayResponseDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getPaymentDt(): DateTime
+    public function getPaymentDt(): int
     {
         return $this->paymentDt;
     }
 
     /**
-     * @param DateTime $paymentDt
+     * @param int $paymentDt
      */
-    public function setPaymentDt(DateTime $paymentDt): void
+    public function setPaymentDt(int $paymentDt): void
     {
         $this->paymentDt = $paymentDt;
     }

@@ -7,7 +7,7 @@ use DateTime;
 /**
  * 优惠券组信息
  * @author Baymax
- * @create Wed Sep 26 19:40:59 CST 2018
+ * @create 2018-09-26 19:40:59.0
  */
 class CouponGroupBaseExt implements \JsonSerializable {
 
@@ -49,13 +49,13 @@ class CouponGroupBaseExt implements \JsonSerializable {
 
     /**
      * 有效开始时间
-     * @var DateTime
+     * @var int
      */
     private $beginAt;
 
     /**
      * 有效结束时间
-     * @var DateTime
+     * @var int
      */
     private $endAt;
 
@@ -85,7 +85,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
 
     /**
      * 创建时间
-     * @var DateTime
+     * @var int
      */
     private $createdAt;
 
@@ -188,33 +188,33 @@ class CouponGroupBaseExt implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getBeginAt(): DateTime
+    public function getBeginAt(): int
     {
         return $this->beginAt;
     }
 
     /**
-     * @param DateTime $beginAt
+     * @param int $beginAt
      */
-    public function setBeginAt(DateTime $beginAt): void
+    public function setBeginAt(int $beginAt): void
     {
         $this->beginAt = $beginAt;
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getEndAt(): DateTime
+    public function getEndAt(): int
     {
         return $this->endAt;
     }
 
     /**
-     * @param DateTime $endAt
+     * @param int $endAt
      */
-    public function setEndAt(DateTime $endAt): void
+    public function setEndAt(int $endAt): void
     {
         $this->endAt = $endAt;
     }
@@ -284,17 +284,17 @@ class CouponGroupBaseExt implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getCreatedAt(): DateTime
+    public function getCreatedAt(): int
     {
         return $this->createdAt;
     }
 
     /**
-     * @param DateTime $createdAt
+     * @param int $createdAt
      */
-    public function setCreatedAt(DateTime $createdAt): void
+    public function setCreatedAt(int $createdAt): void
     {
         $this->createdAt = $createdAt;
     }

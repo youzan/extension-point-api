@@ -55,7 +55,7 @@ class PayQueryResponseDTO implements \JsonSerializable {
 
     /**
      * 支付完成时间
-     * @var DateTime
+     * @var int
      */
     private $payTime;
 
@@ -192,17 +192,17 @@ class PayQueryResponseDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getPayTime(): DateTime
+    public function getPayTime(): int
     {
         return $this->payTime;
     }
 
     /**
-     * @param DateTime $payTime
+     * @param int $payTime
      */
-    public function setPayTime(DateTime $payTime): void
+    public function setPayTime(int $payTime): void
     {
         $this->payTime = $payTime;
     }

@@ -33,7 +33,7 @@ class PurchaseOrderParamDTO implements \JsonSerializable {
 
     /**
      * 预计到达时间
-     * @var DateTime
+     * @var int
      */
     private $estimatedArrivalTime;
 
@@ -136,17 +136,17 @@ class PurchaseOrderParamDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getEstimatedArrivalTime(): DateTime
+    public function getEstimatedArrivalTime(): int
     {
         return $this->estimatedArrivalTime;
     }
 
     /**
-     * @param DateTime $estimatedArrivalTime
+     * @param int $estimatedArrivalTime
      */
-    public function setEstimatedArrivalTime(DateTime $estimatedArrivalTime): void
+    public function setEstimatedArrivalTime(int $estimatedArrivalTime): void
     {
         $this->estimatedArrivalTime = $estimatedArrivalTime;
     }

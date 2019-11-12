@@ -56,13 +56,13 @@ class ThirdpartyVoucherDTO implements \JsonSerializable {
 
     /**
      * 凭证有效期开始时间
-     * @var DateTime
+     * @var int
      */
     private $validStartTime;
 
     /**
      * 凭证有效期结束时间
-     * @var DateTime
+     * @var int
      */
     private $validEndTime;
 
@@ -187,33 +187,33 @@ class ThirdpartyVoucherDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getValidStartTime(): DateTime
+    public function getValidStartTime(): int
     {
         return $this->validStartTime;
     }
 
     /**
-     * @param DateTime $validStartTime
+     * @param int $validStartTime
      */
-    public function setValidStartTime(DateTime $validStartTime): void
+    public function setValidStartTime(int $validStartTime): void
     {
         $this->validStartTime = $validStartTime;
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getValidEndTime(): DateTime
+    public function getValidEndTime(): int
     {
         return $this->validEndTime;
     }
 
     /**
-     * @param DateTime $validEndTime
+     * @param int $validEndTime
      */
-    public function setValidEndTime(DateTime $validEndTime): void
+    public function setValidEndTime(int $validEndTime): void
     {
         $this->validEndTime = $validEndTime;
     }

@@ -62,49 +62,49 @@ class OrderMsgDTO implements \JsonSerializable {
 
     /**
      * 超期时间
-     * @var DateTime
+     * @var int
      */
     private $expiredTime;
 
     /**
      * 订单取消时间
-     * @var DateTime
+     * @var int
      */
     private $closeTime;
 
     /**
      * 订单生效时间
-     * @var DateTime
+     * @var int
      */
     private $effectTime;
 
     /**
      * 订单更新时间
-     * @var DateTime
+     * @var int
      */
     private $updateTime;
 
     /**
      * 订单完成时间
-     * @var DateTime
+     * @var int
      */
     private $successTime;
 
     /**
      * 订单收货时间
-     * @var DateTime
+     * @var int
      */
     private $receiveTime;
 
     /**
      * 商家确认时间
-     * @var DateTime
+     * @var int
      */
     private $confirmTime;
 
     /**
      * 发货时间
-     * @var DateTime
+     * @var int
      */
     private $shipTime;
 
@@ -116,13 +116,13 @@ class OrderMsgDTO implements \JsonSerializable {
 
     /**
      * 订单支付时间
-     * @var DateTime
+     * @var int
      */
     private $payTime;
 
     /**
      * 订单创建时间
-     * @var DateTime
+     * @var int
      */
     private $createTime;
 
@@ -367,129 +367,129 @@ class OrderMsgDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getExpiredTime(): DateTime
+    public function getExpiredTime(): int
     {
         return $this->expiredTime;
     }
 
     /**
-     * @param DateTime $expiredTime
+     * @param int $expiredTime
      */
-    public function setExpiredTime(DateTime $expiredTime): void
+    public function setExpiredTime(int $expiredTime): void
     {
         $this->expiredTime = $expiredTime;
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getCloseTime(): DateTime
+    public function getCloseTime(): int
     {
         return $this->closeTime;
     }
 
     /**
-     * @param DateTime $closeTime
+     * @param int $closeTime
      */
-    public function setCloseTime(DateTime $closeTime): void
+    public function setCloseTime(int $closeTime): void
     {
         $this->closeTime = $closeTime;
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getEffectTime(): DateTime
+    public function getEffectTime(): int
     {
         return $this->effectTime;
     }
 
     /**
-     * @param DateTime $effectTime
+     * @param int $effectTime
      */
-    public function setEffectTime(DateTime $effectTime): void
+    public function setEffectTime(int $effectTime): void
     {
         $this->effectTime = $effectTime;
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getUpdateTime(): DateTime
+    public function getUpdateTime(): int
     {
         return $this->updateTime;
     }
 
     /**
-     * @param DateTime $updateTime
+     * @param int $updateTime
      */
-    public function setUpdateTime(DateTime $updateTime): void
+    public function setUpdateTime(int $updateTime): void
     {
         $this->updateTime = $updateTime;
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getSuccessTime(): DateTime
+    public function getSuccessTime(): int
     {
         return $this->successTime;
     }
 
     /**
-     * @param DateTime $successTime
+     * @param int $successTime
      */
-    public function setSuccessTime(DateTime $successTime): void
+    public function setSuccessTime(int $successTime): void
     {
         $this->successTime = $successTime;
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getReceiveTime(): DateTime
+    public function getReceiveTime(): int
     {
         return $this->receiveTime;
     }
 
     /**
-     * @param DateTime $receiveTime
+     * @param int $receiveTime
      */
-    public function setReceiveTime(DateTime $receiveTime): void
+    public function setReceiveTime(int $receiveTime): void
     {
         $this->receiveTime = $receiveTime;
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getConfirmTime(): DateTime
+    public function getConfirmTime(): int
     {
         return $this->confirmTime;
     }
 
     /**
-     * @param DateTime $confirmTime
+     * @param int $confirmTime
      */
-    public function setConfirmTime(DateTime $confirmTime): void
+    public function setConfirmTime(int $confirmTime): void
     {
         $this->confirmTime = $confirmTime;
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getShipTime(): DateTime
+    public function getShipTime(): int
     {
         return $this->shipTime;
     }
 
     /**
-     * @param DateTime $shipTime
+     * @param int $shipTime
      */
-    public function setShipTime(DateTime $shipTime): void
+    public function setShipTime(int $shipTime): void
     {
         $this->shipTime = $shipTime;
     }
@@ -511,33 +511,33 @@ class OrderMsgDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getPayTime(): DateTime
+    public function getPayTime(): int
     {
         return $this->payTime;
     }
 
     /**
-     * @param DateTime $payTime
+     * @param int $payTime
      */
-    public function setPayTime(DateTime $payTime): void
+    public function setPayTime(int $payTime): void
     {
         $this->payTime = $payTime;
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getCreateTime(): DateTime
+    public function getCreateTime(): int
     {
         return $this->createTime;
     }
 
     /**
-     * @param DateTime $createTime
+     * @param int $createTime
      */
-    public function setCreateTime(DateTime $createTime): void
+    public function setCreateTime(int $createTime): void
     {
         $this->createTime = $createTime;
     }

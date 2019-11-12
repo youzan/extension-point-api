@@ -49,7 +49,7 @@ class CustomerPayCardDTO implements \JsonSerializable {
 
     /**
      * 到期时间
-     * @var DateTime
+     * @var int
      */
     private $expireDate;
 
@@ -152,17 +152,17 @@ class CustomerPayCardDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getExpireDate(): DateTime
+    public function getExpireDate(): int
     {
         return $this->expireDate;
     }
 
     /**
-     * @param DateTime $expireDate
+     * @param int $expireDate
      */
-    public function setExpireDate(DateTime $expireDate): void
+    public function setExpireDate(int $expireDate): void
     {
         $this->expireDate = $expireDate;
     }

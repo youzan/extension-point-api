@@ -128,13 +128,13 @@ class RefundOrderChangedMessage implements \JsonSerializable {
 
     /**
      * 添加时间
-     * @var DateTime
+     * @var int
      */
     private $createTime;
 
     /**
      * 更新时间
-     * @var DateTime
+     * @var int
      */
     private $updateTime;
 
@@ -457,33 +457,33 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getCreateTime(): DateTime
+    public function getCreateTime(): int
     {
         return $this->createTime;
     }
 
     /**
-     * @param DateTime $createTime
+     * @param int $createTime
      */
-    public function setCreateTime(DateTime $createTime): void
+    public function setCreateTime(int $createTime): void
     {
         $this->createTime = $createTime;
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getUpdateTime(): DateTime
+    public function getUpdateTime(): int
     {
         return $this->updateTime;
     }
 
     /**
-     * @param DateTime $updateTime
+     * @param int $updateTime
      */
-    public function setUpdateTime(DateTime $updateTime): void
+    public function setUpdateTime(int $updateTime): void
     {
         $this->updateTime = $updateTime;
     }

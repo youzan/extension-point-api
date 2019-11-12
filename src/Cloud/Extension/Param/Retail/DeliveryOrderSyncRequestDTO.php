@@ -47,13 +47,13 @@ class DeliveryOrderSyncRequestDTO implements \JsonSerializable {
 
     /**
      * 创建日期
-     * @var DateTime
+     * @var int
      */
     private $createTime;
 
     /**
      * 订单创建日期
-     * @var DateTime
+     * @var int
      */
     private $orderCreateTime;
 
@@ -206,33 +206,33 @@ class DeliveryOrderSyncRequestDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getCreateTime(): DateTime
+    public function getCreateTime(): int
     {
         return $this->createTime;
     }
 
     /**
-     * @param DateTime $createTime
+     * @param int $createTime
      */
-    public function setCreateTime(DateTime $createTime): void
+    public function setCreateTime(int $createTime): void
     {
         $this->createTime = $createTime;
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getOrderCreateTime(): DateTime
+    public function getOrderCreateTime(): int
     {
         return $this->orderCreateTime;
     }
 
     /**
-     * @param DateTime $orderCreateTime
+     * @param int $orderCreateTime
      */
-    public function setOrderCreateTime(DateTime $orderCreateTime): void
+    public function setOrderCreateTime(int $orderCreateTime): void
     {
         $this->orderCreateTime = $orderCreateTime;
     }

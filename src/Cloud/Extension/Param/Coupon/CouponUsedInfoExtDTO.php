@@ -20,7 +20,7 @@ class CouponUsedInfoExtDTO implements \JsonSerializable {
 
     /**
      * 使用时间
-     * @var DateTime
+     * @var int
      */
     private $usedAt;
 
@@ -61,17 +61,17 @@ class CouponUsedInfoExtDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getUsedAt(): DateTime
+    public function getUsedAt(): int
     {
         return $this->usedAt;
     }
 
     /**
-     * @param DateTime $usedAt
+     * @param int $usedAt
      */
-    public function setUsedAt(DateTime $usedAt): void
+    public function setUsedAt(int $usedAt): void
     {
         $this->usedAt = $usedAt;
     }

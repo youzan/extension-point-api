@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Test\BizTestData;
 /**
  * 请求对象
  * @author Baymax
- * @create Mon Sep 17 21:46:05 CST 2018
+ * @create 2018-09-17 21:46:05.0
  */
 class BizTestRequest implements \JsonSerializable {
 
