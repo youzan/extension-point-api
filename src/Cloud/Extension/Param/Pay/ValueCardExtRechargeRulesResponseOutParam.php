@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Scrm;
+namespace Com\Youzan\Cloud\Extension\Param\Pay;
 
-use Com\Youzan\Cloud\Extension\Param\Scrm\CustomerProfileDTO;
+use Com\Youzan\Cloud\Extension\Param\Pay\ValueCardExtRechargeRulesResponse;
 
 /**
  * 返回类
  * @author Baymax
- * @create 2018-10-09 16:05:49.0
+ * @create 2019-11-22 12:15:26.0
  */
-class CustomerProfileDTOOutParam implements \JsonSerializable {
+class ValueCardExtRechargeRulesResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class CustomerProfileDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var CustomerProfileDTO
+     * @var ValueCardExtRechargeRulesResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class CustomerProfileDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return CustomerProfileDTO
+     * @return ValueCardExtRechargeRulesResponse
      */
-    public function getData(): CustomerProfileDTO
+    public function getData(): ValueCardExtRechargeRulesResponse
     {
         return $this->data;
     }
 
     /**
-     * @param CustomerProfileDTO $data
+     * @param ValueCardExtRechargeRulesResponse $data
      */
-    public function setData(CustomerProfileDTO $data): void
+    public function setData(ValueCardExtRechargeRulesResponse $data): void
     {
         $this->data = $data;
     }
