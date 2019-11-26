@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Trade\TicketOrderItem;
 /**
  * 
  * @author Baymax
- * @create 2019-09-04 18:01:28.0
+ * @create Wed Sep 04 18:01:28 CST 2019
  */
 class CreateTicketRequestDTO implements \JsonSerializable {
 
@@ -28,12 +28,6 @@ class CreateTicketRequestDTO implements \JsonSerializable {
      * @var string
      */
     private $buyerPhone;
-
-    /**
-     * 买家姓名
-     * @var string
-     */
-    private $buyerName;
 
     /**
      * 店铺
@@ -95,22 +89,6 @@ class CreateTicketRequestDTO implements \JsonSerializable {
     public function setBuyerPhone(string $buyerPhone): void
     {
         $this->buyerPhone = $buyerPhone;
-    }
-
-    /**
-     * @return string
-     */
-    public function getBuyerName(): string
-    {
-        return $this->buyerName;
-    }
-
-    /**
-     * @param string $buyerName
-     */
-    public function setBuyerName(string $buyerName): void
-    {
-        $this->buyerName = $buyerName;
     }
 
     /**

@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\GoodsInfo;
 /**
  * 
  * @author Baymax
- * @create 2019-09-04 18:01:28.0
+ * @create Wed Sep 04 18:01:28 CST 2019
  */
 class TicketOrderItem implements \JsonSerializable {
 
@@ -29,12 +29,6 @@ class TicketOrderItem implements \JsonSerializable {
      * @var int
      */
     private $num;
-
-    /**
-     * 商品备注
-     * @var string
-     */
-    private $memo;
 
     /**
      * 商品信息
@@ -90,22 +84,6 @@ class TicketOrderItem implements \JsonSerializable {
     public function setNum(int $num): void
     {
         $this->num = $num;
-    }
-
-    /**
-     * @return string
-     */
-    public function getMemo(): string
-    {
-        return $this->memo;
-    }
-
-    /**
-     * @param string $memo
-     */
-    public function setMemo(string $memo): void
-    {
-        $this->memo = $memo;
     }
 
     /**
