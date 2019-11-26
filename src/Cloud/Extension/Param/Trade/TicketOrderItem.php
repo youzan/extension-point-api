@@ -31,6 +31,12 @@ class TicketOrderItem implements \JsonSerializable {
     private $num;
 
     /**
+     * 商品备注
+     * @var string
+     */
+    private $memo;
+
+    /**
      * 商品信息
      * @var GoodsInfo
      */
@@ -84,6 +90,22 @@ class TicketOrderItem implements \JsonSerializable {
     public function setNum(int $num): void
     {
         $this->num = $num;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMemo(): string
+    {
+        return $this->memo;
+    }
+
+    /**
+     * @param string $memo
+     */
+    public function setMemo(string $memo): void
+    {
+        $this->memo = $memo;
     }
 
     /**
