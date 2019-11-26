@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Trade\CreateTicketResponseDTO;
 /**
  * 返回类
  * @author Baymax
- * @create Wed Sep 04 18:01:28 CST 2019
+ * @create 2019-09-04 18:01:28.0
  */
 class CreateTicketResponseDTOOutParam implements \JsonSerializable {
 
