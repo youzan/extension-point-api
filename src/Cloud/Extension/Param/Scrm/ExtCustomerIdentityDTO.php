@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 /**
  * 用户识别信息
  * @author Baymax
- * @create Fri Oct 12 14:13:44 CST 2018
+ * @create 2018-10-12 14:13:44.0
  */
 class ExtCustomerIdentityDTO implements \JsonSerializable {
 
@@ -22,6 +22,12 @@ class ExtCustomerIdentityDTO implements \JsonSerializable {
      * @var string
      */
     private $accountId;
+
+    /**
+     * 商户店铺ID
+     * @var int
+     */
+    private $kdtId;
 
 
 
@@ -55,6 +61,22 @@ class ExtCustomerIdentityDTO implements \JsonSerializable {
     public function setAccountId(string $accountId): void
     {
         $this->accountId = $accountId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getKdtId(): int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
     }
 
     public function jsonSerialize() {

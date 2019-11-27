@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ContactAddressDTO;
 /**
  * 
  * @author Baymax
- * @create Tue Oct 09 16:05:49 CST 2018
+ * @create 2018-10-09 16:05:49.0
  */
 class CustomerProfileDTO implements \JsonSerializable {
 

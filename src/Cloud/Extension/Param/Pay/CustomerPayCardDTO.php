@@ -53,6 +53,36 @@ class CustomerPayCardDTO implements \JsonSerializable {
      */
     private $expireDate;
 
+    /**
+     * 背景图
+     * @var string
+     */
+    private $backgroundImage;
+
+    /**
+     * 卡状态 : init: 初始化; normal: 正常状态; freeze: C端冻结状态; cmpfrz: 完全冻结状态; close: 注销; receding: 退卡中; receded: 已退卡;
+     * @var string
+     */
+    private $cardStatus;
+
+    /**
+     * 卡类型 ： BALANCE_CARD：储值余额类型； VALUE_CARD：储值卡； ALL：全部 （默认）
+     * @var string
+     */
+    private $cardType;
+
+    /**
+     * 本金余额，单位（分）
+     * @var int
+     */
+    private $principalDnom;
+
+    /**
+     * 赠送金余额，单位（分）
+     * @var int
+     */
+    private $sumBonusDnom;
+
 
 
     /**
@@ -165,6 +195,86 @@ class CustomerPayCardDTO implements \JsonSerializable {
     public function setExpireDate(DateTime $expireDate): void
     {
         $this->expireDate = $expireDate;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBackgroundImage(): string
+    {
+        return $this->backgroundImage;
+    }
+
+    /**
+     * @param string $backgroundImage
+     */
+    public function setBackgroundImage(string $backgroundImage): void
+    {
+        $this->backgroundImage = $backgroundImage;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCardStatus(): string
+    {
+        return $this->cardStatus;
+    }
+
+    /**
+     * @param string $cardStatus
+     */
+    public function setCardStatus(string $cardStatus): void
+    {
+        $this->cardStatus = $cardStatus;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCardType(): string
+    {
+        return $this->cardType;
+    }
+
+    /**
+     * @param string $cardType
+     */
+    public function setCardType(string $cardType): void
+    {
+        $this->cardType = $cardType;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPrincipalDnom(): int
+    {
+        return $this->principalDnom;
+    }
+
+    /**
+     * @param int $principalDnom
+     */
+    public function setPrincipalDnom(int $principalDnom): void
+    {
+        $this->principalDnom = $principalDnom;
+    }
+
+    /**
+     * @return int
+     */
+    public function getSumBonusDnom(): int
+    {
+        return $this->sumBonusDnom;
+    }
+
+    /**
+     * @param int $sumBonusDnom
+     */
+    public function setSumBonusDnom(int $sumBonusDnom): void
+    {
+        $this->sumBonusDnom = $sumBonusDnom;
     }
 
     public function jsonSerialize() {
