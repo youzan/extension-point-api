@@ -15,24 +15,24 @@ class ValueCardExtRechargeRulesResponse implements \JsonSerializable {
      * 
      * @var array
      */
-    private $valueCardExtRechargeRules;
+    private $productInfos;
 
 
 
     /**
      * @return array
      */
-    public function getValueCardExtRechargeRules(): array
+    public function getProductInfos(): array
     {
-        return $this->valueCardExtRechargeRules;
+        return $this->productInfos;
     }
 
     /**
-     * @param array $valueCardExtRechargeRules
+     * @param array $productInfos
      */
-    public function setValueCardExtRechargeRules(array $valueCardExtRechargeRules): void
+    public function setProductInfos(array $productInfos): void
     {
-        $this->valueCardExtRechargeRules = $valueCardExtRechargeRules;
+        $this->productInfos = $productInfos;
     }
 
     public function jsonSerialize() {
