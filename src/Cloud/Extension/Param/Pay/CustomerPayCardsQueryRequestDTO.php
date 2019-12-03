@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Pay\ItemContext;
 /**
  * 
  * @author Baymax
- * @create 2019-04-30 10:42:54.0
+ * @create Tue Apr 30 10:42:54 CST 2019
  */
 class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
 
@@ -40,18 +40,6 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
      * @var string
      */
     private $yzOpenId;
-
-    /**
-     * 用户手机号
-     * @var string
-     */
-    private $userPhone;
-
-    /**
-     * 卡类型 ： BALANCE_CARD：储值余额类型； VALUE_CARD：储值卡； ALL：全部 （默认）
-     * @var string
-     */
-    private $cardType;
 
 
 
@@ -133,38 +121,6 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
-    }
-
-    /**
-     * @return string
-     */
-    public function getUserPhone(): string
-    {
-        return $this->userPhone;
-    }
-
-    /**
-     * @param string $userPhone
-     */
-    public function setUserPhone(string $userPhone): void
-    {
-        $this->userPhone = $userPhone;
-    }
-
-    /**
-     * @return string
-     */
-    public function getCardType(): string
-    {
-        return $this->cardType;
-    }
-
-    /**
-     * @param string $cardType
-     */
-    public function setCardType(string $cardType): void
-    {
-        $this->cardType = $cardType;
     }
 
     public function jsonSerialize() {
