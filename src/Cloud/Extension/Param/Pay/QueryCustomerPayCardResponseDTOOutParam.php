@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Pay\QueryCustomerPayCardResponseDTO;
 /**
  * 返回类
  * @author Baymax
- * @create 2019-04-30 11:01:58.0
+ * @create Tue Apr 30 11:01:58 CST 2019
  */
 class QueryCustomerPayCardResponseDTOOutParam implements \JsonSerializable {
 

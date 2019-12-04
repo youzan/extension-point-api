@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 
 
 /**
- * 历史退款的商品
+ * 
  * @author Baymax
- * @create 2019-07-24 13:31:29.0
+ * @create Wed Jul 24 13:31:29 CST 2019
  */
 class RefundOrderItemDTO implements \JsonSerializable {
 
