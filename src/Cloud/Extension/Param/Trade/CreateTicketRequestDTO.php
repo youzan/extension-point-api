@@ -30,6 +30,12 @@ class CreateTicketRequestDTO implements \JsonSerializable {
     private $buyerPhone;
 
     /**
+     * 买家姓名
+     * @var string
+     */
+    private $buyerName;
+
+    /**
      * 店铺
      * @var int
      */
@@ -89,6 +95,22 @@ class CreateTicketRequestDTO implements \JsonSerializable {
     public function setBuyerPhone(string $buyerPhone): void
     {
         $this->buyerPhone = $buyerPhone;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBuyerName(): string
+    {
+        return $this->buyerName;
+    }
+
+    /**
+     * @param string $buyerName
+     */
+    public function setBuyerName(string $buyerName): void
+    {
+        $this->buyerName = $buyerName;
     }
 
     /**
