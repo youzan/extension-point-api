@@ -19,7 +19,7 @@ class PointsMessageDTO implements \JsonSerializable {
 
     /**
      * 时间
-     * @var DateTime
+     * @var int
      */
     private $job_time;
 
@@ -42,17 +42,17 @@ class PointsMessageDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getJob_time(): DateTime
+    public function getJob_time(): int
     {
         return $this->job_time;
     }
 
     /**
-     * @param DateTime $job_time
+     * @param int $job_time
      */
-    public function setJob_time(DateTime $job_time): void
+    public function setJob_time(int $job_time): void
     {
         $this->job_time = $job_time;
     }

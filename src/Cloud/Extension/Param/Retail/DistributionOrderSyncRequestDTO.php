@@ -93,7 +93,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
 
     /**
      * 配送出库时间
-     * @var DateTime
+     * @var int
      */
     private $distributedOutTime;
 
@@ -308,17 +308,17 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getDistributedOutTime(): DateTime
+    public function getDistributedOutTime(): int
     {
         return $this->distributedOutTime;
     }
 
     /**
-     * @param DateTime $distributedOutTime
+     * @param int $distributedOutTime
      */
-    public function setDistributedOutTime(DateTime $distributedOutTime): void
+    public function setDistributedOutTime(int $distributedOutTime): void
     {
         $this->distributedOutTime = $distributedOutTime;
     }

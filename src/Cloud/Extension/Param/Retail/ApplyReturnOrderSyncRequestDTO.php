@@ -39,7 +39,7 @@ class ApplyReturnOrderSyncRequestDTO implements \JsonSerializable {
 
     /**
      * 日期格式
-     * @var DateTime
+     * @var int
      */
     private $orderCreateTime;
 
@@ -116,17 +116,17 @@ class ApplyReturnOrderSyncRequestDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getOrderCreateTime(): DateTime
+    public function getOrderCreateTime(): int
     {
         return $this->orderCreateTime;
     }
 
     /**
-     * @param DateTime $orderCreateTime
+     * @param int $orderCreateTime
      */
-    public function setOrderCreateTime(DateTime $orderCreateTime): void
+    public function setOrderCreateTime(int $orderCreateTime): void
     {
         $this->orderCreateTime = $orderCreateTime;
     }

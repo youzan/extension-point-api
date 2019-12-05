@@ -73,7 +73,7 @@ class RefundQueryResponseDTO implements \JsonSerializable {
 
     /**
      * 退款完成时间
-     * @var DateTime
+     * @var int
      */
     private $finishTime;
 
@@ -240,17 +240,17 @@ class RefundQueryResponseDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getFinishTime(): DateTime
+    public function getFinishTime(): int
     {
         return $this->finishTime;
     }
 
     /**
-     * @param DateTime $finishTime
+     * @param int $finishTime
      */
-    public function setFinishTime(DateTime $finishTime): void
+    public function setFinishTime(int $finishTime): void
     {
         $this->finishTime = $finishTime;
     }

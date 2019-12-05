@@ -68,13 +68,13 @@ class PayRequestDTO implements \JsonSerializable {
 
     /**
      * 交易起始时间
-     * @var DateTime
+     * @var int
      */
     private $timeStart;
 
     /**
      * 交易结束时间
-     * @var DateTime
+     * @var int
      */
     private $timeExpired;
 
@@ -237,33 +237,33 @@ class PayRequestDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getTimeStart(): DateTime
+    public function getTimeStart(): int
     {
         return $this->timeStart;
     }
 
     /**
-     * @param DateTime $timeStart
+     * @param int $timeStart
      */
-    public function setTimeStart(DateTime $timeStart): void
+    public function setTimeStart(int $timeStart): void
     {
         $this->timeStart = $timeStart;
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getTimeExpired(): DateTime
+    public function getTimeExpired(): int
     {
         return $this->timeExpired;
     }
 
     /**
-     * @param DateTime $timeExpired
+     * @param int $timeExpired
      */
-    public function setTimeExpired(DateTime $timeExpired): void
+    public function setTimeExpired(int $timeExpired): void
     {
         $this->timeExpired = $timeExpired;
     }

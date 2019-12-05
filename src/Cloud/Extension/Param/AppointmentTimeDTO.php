@@ -13,46 +13,46 @@ class AppointmentTimeDTO implements \JsonSerializable {
 
     /**
      * 结束时间
-     * @var DateTime
+     * @var int
      */
     private $endTime;
 
     /**
      * 开始时间
-     * @var DateTime
+     * @var int
      */
     private $startTime;
 
 
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getEndTime(): DateTime
+    public function getEndTime(): int
     {
         return $this->endTime;
     }
 
     /**
-     * @param DateTime $endTime
+     * @param int $endTime
      */
-    public function setEndTime(DateTime $endTime): void
+    public function setEndTime(int $endTime): void
     {
         $this->endTime = $endTime;
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getStartTime(): DateTime
+    public function getStartTime(): int
     {
         return $this->startTime;
     }
 
     /**
-     * @param DateTime $startTime
+     * @param int $startTime
      */
-    public function setStartTime(DateTime $startTime): void
+    public function setStartTime(int $startTime): void
     {
         $this->startTime = $startTime;
     }

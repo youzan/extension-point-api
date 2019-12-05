@@ -25,13 +25,13 @@ class ExtCustomerLevelDTO implements \JsonSerializable {
 
     /**
      * 等级有效期开始时间
-     * @var DateTime
+     * @var int
      */
     private $termBeginAt;
 
     /**
      * 等级有效期结束时间
-     * @var DateTime
+     * @var int
      */
     private $termEndAt;
 
@@ -70,33 +70,33 @@ class ExtCustomerLevelDTO implements \JsonSerializable {
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getTermBeginAt(): DateTime
+    public function getTermBeginAt(): int
     {
         return $this->termBeginAt;
     }
 
     /**
-     * @param DateTime $termBeginAt
+     * @param int $termBeginAt
      */
-    public function setTermBeginAt(DateTime $termBeginAt): void
+    public function setTermBeginAt(int $termBeginAt): void
     {
         $this->termBeginAt = $termBeginAt;
     }
 
     /**
-     * @return DateTime
+     * @return int
      */
-    public function getTermEndAt(): DateTime
+    public function getTermEndAt(): int
     {
         return $this->termEndAt;
     }
 
     /**
-     * @param DateTime $termEndAt
+     * @param int $termEndAt
      */
-    public function setTermEndAt(DateTime $termEndAt): void
+    public function setTermEndAt(int $termEndAt): void
     {
         $this->termEndAt = $termEndAt;
     }
