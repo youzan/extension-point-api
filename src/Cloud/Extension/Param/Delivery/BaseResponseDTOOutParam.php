@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Delivery\BaseResponseDTO;
 /**
  * 返回类
  * @author Baymax
- * @create 2019-09-19 17:27:24.0
+ * @create Thu Sep 19 17:27:24 CST 2019
  */
 class BaseResponseDTOOutParam implements \JsonSerializable {
 
