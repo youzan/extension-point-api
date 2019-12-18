@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Clbsdemo;
 
-use StdClass;
+
 
 /**
  * 
@@ -22,12 +22,6 @@ class BizTestRequestDTO implements \JsonSerializable {
      * @var string
      */
     private $content;
-
-    /**
-     * 
-     * @var stdClass
-     */
-    private $extMap;
 
 
 
@@ -61,22 +55,6 @@ class BizTestRequestDTO implements \JsonSerializable {
     public function setContent(string $content): void
     {
         $this->content = $content;
-    }
-
-    /**
-     * @return stdClass
-     */
-    public function getExtMap(): stdClass
-    {
-        return $this->extMap;
-    }
-
-    /**
-     * @param stdClass $extMap
-     */
-    public function setExtMap(stdClass $extMap): void
-    {
-        $this->extMap = $extMap;
     }
 
     public function jsonSerialize() {

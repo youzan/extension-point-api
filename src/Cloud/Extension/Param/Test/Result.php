@@ -3,7 +3,6 @@
 namespace Com\Youzan\Cloud\Extension\Param\Test;
 
 use Com\Youzan\Cloud\Extension\Param\Test\PreTestResponseDTO;
-use StdClass;
 
 /**
  * 
@@ -41,12 +40,6 @@ class Result implements \JsonSerializable {
      * @var string
      */
     private $requestId;
-
-    /**
-     * 
-     * @var stdClass
-     */
-    private $content;
 
 
 
@@ -128,22 +121,6 @@ class Result implements \JsonSerializable {
     public function setRequestId(string $requestId): void
     {
         $this->requestId = $requestId;
-    }
-
-    /**
-     * @return stdClass
-     */
-    public function getContent(): stdClass
-    {
-        return $this->content;
-    }
-
-    /**
-     * @param stdClass $content
-     */
-    public function setContent(stdClass $content): void
-    {
-        $this->content = $content;
     }
 
     public function jsonSerialize() {
