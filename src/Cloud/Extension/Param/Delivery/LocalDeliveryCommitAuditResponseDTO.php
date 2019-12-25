@@ -18,7 +18,7 @@ class LocalDeliveryCommitAuditResponseDTO implements \JsonSerializable {
     private $auditResult;
 
     /**
-     * 失败code值  1:运力不足,暂无法提供服务;2:超出物流商服务范围;3:门店地址信息不准确;4:品类不明确,不支持上线;5:所提交品类与实际经营品类不符;1000:其它原因
+     * 失败code值  1:运力不足,暂无法提供服务;2:超出物流商服务范围;3:门店地址信息不准确;4:品类不明确,不支持上线;5:所提交品类与实际经营品类不符;6,您的店铺未完成与服务商账号的绑定，请前往&quot;应用市场-去使用&quot;绑定;1000:其它原因
      * @var int
      */
     private $code;

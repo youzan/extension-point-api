@@ -20,21 +20,21 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
 
     /**
      * 分销员用户id
-     * @var int
+     * @var string
      */
-    private $dsUid;
+    private $dsOPenId;
 
     /**
      * 邀请方分销员用户id      * 若没有则为空
-     * @var int
+     * @var string
      */
-    private $fromDsUid;
+    private $fromDsOpenId;
 
     /**
      * 买家uid
-     * @var int
+     * @var string
      */
-    private $ctUid;
+    private $ctOpenId;
 
     /**
      * 订单号
@@ -103,51 +103,51 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getDsUid(): int
+    public function getDsOPenId(): string
     {
-        return $this->dsUid;
+        return $this->dsOPenId;
     }
 
     /**
-     * @param int $dsUid
+     * @param string $dsOPenId
      */
-    public function setDsUid(int $dsUid): void
+    public function setDsOPenId(string $dsOPenId): void
     {
-        $this->dsUid = $dsUid;
+        $this->dsOPenId = $dsOPenId;
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getFromDsUid(): int
+    public function getFromDsOpenId(): string
     {
-        return $this->fromDsUid;
+        return $this->fromDsOpenId;
     }
 
     /**
-     * @param int $fromDsUid
+     * @param string $fromDsOpenId
      */
-    public function setFromDsUid(int $fromDsUid): void
+    public function setFromDsOpenId(string $fromDsOpenId): void
     {
-        $this->fromDsUid = $fromDsUid;
+        $this->fromDsOpenId = $fromDsOpenId;
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getCtUid(): int
+    public function getCtOpenId(): string
     {
-        return $this->ctUid;
+        return $this->ctOpenId;
     }
 
     /**
-     * @param int $ctUid
+     * @param string $ctOpenId
      */
-    public function setCtUid(int $ctUid): void
+    public function setCtOpenId(string $ctOpenId): void
     {
-        $this->ctUid = $ctUid;
+        $this->ctOpenId = $ctOpenId;
     }
 
     /**
