@@ -22,7 +22,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
      * 分销员用户id
      * @var string
      */
-    private $dsOPenId;
+    private $dsOpenId;
 
     /**
      * 邀请方分销员用户id      * 若没有则为空
@@ -105,17 +105,17 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDsOPenId(): string
+    public function getDsOpenId(): string
     {
-        return $this->dsOPenId;
+        return $this->dsOpenId;
     }
 
     /**
-     * @param string $dsOPenId
+     * @param string $dsOpenId
      */
-    public function setDsOPenId(string $dsOPenId): void
+    public function setDsOpenId(string $dsOpenId): void
     {
-        $this->dsOPenId = $dsOPenId;
+        $this->dsOpenId = $dsOpenId;
     }
 
     /**
