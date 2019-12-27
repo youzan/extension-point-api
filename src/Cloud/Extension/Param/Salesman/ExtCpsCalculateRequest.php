@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\Salesman\ExtPromotionDTO;
 /**
  * 请求参数
  * @author Baymax
- * @create Thu Dec 12 09:29:19 CST 2019
+ * @create 2019-12-12 09:29:19.0
  */
 class ExtCpsCalculateRequest implements \JsonSerializable {
 
@@ -19,22 +19,22 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     private $shopName;
 
     /**
-     * 分销员用户id
-     * @var int
+     * 分销员yzopenid
+     * @var string
      */
-    private $dsUid;
+    private $dsOpenId;
 
     /**
-     * 邀请方分销员用户id      * 若没有则为空
-     * @var int
+     * 邀请方分销员yzopenid   * 若没有则为空
+     * @var string
      */
-    private $fromDsUid;
+    private $fromDsOpenId;
 
     /**
-     * 买家uid
-     * @var int
+     * 买家yzopenid
+     * @var string
      */
-    private $ctUid;
+    private $ctOpenId;
 
     /**
      * 订单号
@@ -103,51 +103,51 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getDsUid(): int
+    public function getDsOpenId(): string
     {
-        return $this->dsUid;
+        return $this->dsOpenId;
     }
 
     /**
-     * @param int $dsUid
+     * @param string $dsOpenId
      */
-    public function setDsUid(int $dsUid): void
+    public function setDsOpenId(string $dsOpenId): void
     {
-        $this->dsUid = $dsUid;
+        $this->dsOpenId = $dsOpenId;
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getFromDsUid(): int
+    public function getFromDsOpenId(): string
     {
-        return $this->fromDsUid;
+        return $this->fromDsOpenId;
     }
 
     /**
-     * @param int $fromDsUid
+     * @param string $fromDsOpenId
      */
-    public function setFromDsUid(int $fromDsUid): void
+    public function setFromDsOpenId(string $fromDsOpenId): void
     {
-        $this->fromDsUid = $fromDsUid;
+        $this->fromDsOpenId = $fromDsOpenId;
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getCtUid(): int
+    public function getCtOpenId(): string
     {
-        return $this->ctUid;
+        return $this->ctOpenId;
     }
 
     /**
-     * @param int $ctUid
+     * @param string $ctOpenId
      */
-    public function setCtUid(int $ctUid): void
+    public function setCtOpenId(string $ctOpenId): void
     {
-        $this->ctUid = $ctUid;
+        $this->ctOpenId = $ctOpenId;
     }
 
     /**
