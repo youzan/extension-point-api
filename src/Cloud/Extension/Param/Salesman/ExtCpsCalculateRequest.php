@@ -19,19 +19,19 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     private $shopName;
 
     /**
-     * 分销员用户id
+     * 分销员yzopenid
      * @var string
      */
     private $dsOpenId;
 
     /**
-     * 邀请方分销员用户id      * 若没有则为空
+     * 邀请方分销员yzopenid   * 若没有则为空
      * @var string
      */
     private $fromDsOpenId;
 
     /**
-     * 买家uid
+     * 买家yzopenid
      * @var string
      */
     private $ctOpenId;
