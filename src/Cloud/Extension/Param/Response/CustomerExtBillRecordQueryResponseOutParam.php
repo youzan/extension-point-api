@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Pay;
+namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Com\Youzan\Cloud\Extension\Param\Pay\ValueCardExtRechargeResponse;
+use Com\Youzan\Cloud\Extension\Param\Response\CustomerExtBillRecordQueryResponse;
 
 /**
  * 返回类
  * @author Baymax
- * @create 2019-11-22 11:54:57.0
+ * @create 2020-01-06 11:40:30.0
  */
-class ValueCardExtRechargeResponseOutParam implements \JsonSerializable {
+class CustomerExtBillRecordQueryResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ValueCardExtRechargeResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var ValueCardExtRechargeResponse
+     * @var CustomerExtBillRecordQueryResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ValueCardExtRechargeResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return ValueCardExtRechargeResponse
+     * @return CustomerExtBillRecordQueryResponse
      */
-    public function getData(): ValueCardExtRechargeResponse
+    public function getData(): CustomerExtBillRecordQueryResponse
     {
         return $this->data;
     }
 
     /**
-     * @param ValueCardExtRechargeResponse $data
+     * @param CustomerExtBillRecordQueryResponse $data
      */
-    public function setData(ValueCardExtRechargeResponse $data): void
+    public function setData(CustomerExtBillRecordQueryResponse $data): void
     {
         $this->data = $data;
     }

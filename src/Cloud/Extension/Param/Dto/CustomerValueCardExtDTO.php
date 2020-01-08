@@ -1,33 +1,39 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Pay;
+namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
-
+use DateTime;
 
 /**
- * 
+ * 卡列表
  * @author Baymax
- * @create 2019-11-22 11:54:57.0
+ * @create 2020-01-06 12:52:32.0
  */
-class ValueCardExtRechargeResponse implements \JsonSerializable {
+class CustomerValueCardExtDTO implements \JsonSerializable {
 
     /**
-     * 充值状态
-     * @var int
-     */
-    private $rechargeStatus;
-
-    /**
-     * 有赞用户ID
-     * @var int
-     */
-    private $buyerId;
-
-    /**
-     * 业务充值单号，以此做幂等
+     * 使用说明
      * @var string
      */
-    private $rechargeNo;
+    private $useSpecification;
+
+    /**
+     * 是否可用
+     * @var bool
+     */
+    private $usable;
+
+    /**
+     * 不可用原因
+     * @var string
+     */
+    private $unusableReason;
+
+    /**
+     * 到期时间
+     * @var int
+     */
+    private $expireDate;
 
     /**
      * 卡名称
@@ -48,89 +54,99 @@ class ValueCardExtRechargeResponse implements \JsonSerializable {
     private $backgroundImage;
 
     /**
-     * 卡状态
+     * 卡状态 * INIT	初始化      * NORMAL	正常      * CFREEZE	冻结      * CLOSE	已注销      * RECEDING	退卡处理中      * RECEDED	已退卡
      * @var string
      */
     private $cardStatus;
 
     /**
-     * 卡类型
+     * 卡类型 * BALANCE_CARD：储值余额类型      * VALUE_CARD：储值卡      * ALL：全部 （默认）
      * @var string
      */
     private $cardType;
 
     /**
-     * 卡内总余额，单位（分）
+     * 卡内总余额
      * @var int
      */
     private $balance;
 
     /**
-     * 本金余额，单位（分）
+     * 本金余额
      * @var int
      */
     private $principalDnom;
 
     /**
-     * 赠送金余额，单位（分）
+     * 赠送金余额
      * @var int
      */
     private $sumBonusDnom;
 
-    /**
-     * 用户手机号
-     * @var string
-     */
-    private $userPhone;
-
 
 
     /**
-     * @return int
+     * @return string
      */
-    public function getRechargeStatus(): int
+    public function getUseSpecification(): string
     {
-        return $this->rechargeStatus;
+        return $this->useSpecification;
     }
 
     /**
-     * @param int $rechargeStatus
+     * @param string $useSpecification
      */
-    public function setRechargeStatus(int $rechargeStatus): void
+    public function setUseSpecification(string $useSpecification): void
     {
-        $this->rechargeStatus = $rechargeStatus;
+        $this->useSpecification = $useSpecification;
     }
 
     /**
-     * @return int
+     * @return bool
      */
-    public function getBuyerId(): int
+    public function getUsable(): bool
     {
-        return $this->buyerId;
+        return $this->usable;
     }
 
     /**
-     * @param int $buyerId
+     * @param bool $usable
      */
-    public function setBuyerId(int $buyerId): void
+    public function setUsable(bool $usable): void
     {
-        $this->buyerId = $buyerId;
+        $this->usable = $usable;
     }
 
     /**
      * @return string
      */
-    public function getRechargeNo(): string
+    public function getUnusableReason(): string
     {
-        return $this->rechargeNo;
+        return $this->unusableReason;
     }
 
     /**
-     * @param string $rechargeNo
+     * @param string $unusableReason
      */
-    public function setRechargeNo(string $rechargeNo): void
+    public function setUnusableReason(string $unusableReason): void
     {
-        $this->rechargeNo = $rechargeNo;
+        $this->unusableReason = $unusableReason;
+    }
+
+    /**
+     * @return int
+     */
+    public function getExpireDate(): int
+    {
+        return $this->expireDate;
+    }
+
+    /**
+     * @param int $expireDate
+     */
+    public function setExpireDate(int $expireDate): void
+    {
+        $this->expireDate = $expireDate;
     }
 
     /**
@@ -259,22 +275,6 @@ class ValueCardExtRechargeResponse implements \JsonSerializable {
     public function setSumBonusDnom(int $sumBonusDnom): void
     {
         $this->sumBonusDnom = $sumBonusDnom;
-    }
-
-    /**
-     * @return string
-     */
-    public function getUserPhone(): string
-    {
-        return $this->userPhone;
-    }
-
-    /**
-     * @param string $userPhone
-     */
-    public function setUserPhone(string $userPhone): void
-    {
-        $this->userPhone = $userPhone;
     }
 
     public function jsonSerialize() {
