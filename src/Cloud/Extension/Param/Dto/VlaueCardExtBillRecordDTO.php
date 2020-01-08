@@ -5,74 +5,74 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 use DateTime;
 
 /**
- * 
+ * 卡列表
  * @author Baymax
  * @create 2020-01-06 11:40:30.0
  */
 class VlaueCardExtBillRecordDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 订单号
      * @var string
      */
     private $orderNo;
 
     /**
-     * 
+     * 订单号
      * @var string
      */
     private $bizDetailNo;
 
     /**
-     * 
+     * 资金流向* ADD：增加 	 * DECREASE：减少
      * @var string
      */
     private $fundFlow;
 
     /**
-     * 
+     * 业务类型 * RECHARGE：充值 	 * REFUND：退款 	 * PAY：支付 	 * RECHARGE_BONUS：充值赠送 	 * RECEDE_CARD：储值卡退卡
      * @var string
      */
     private $bizType;
 
     /**
-     * 
+     * 交易时间（毫秒）
      * @var int
      */
     private $tradeTime;
 
     /**
-     * 
+     * 操作总金额，单位分
      * @var string
      */
     private $amount;
 
     /**
-     * 
+     * 操作赠送金金额，单位分
      * @var string
      */
     private $bonusAmount;
 
     /**
-     * 
+     * 操作后卡内余额,单元分
      * @var string
      */
     private $currentDenomination;
 
     /**
-     * 
+     * 操作后赠送金余额，单位分
      * @var string
      */
     private $currentBonusDenomination;
 
     /**
-     * 
+     * 汇总卡号
      * @var string
      */
     private $cardNo;
 
     /**
-     * 
+     * 手机号
      * @var string
      */
     private $userPhone;

@@ -78,7 +78,7 @@ class ValueCardExtRechargeResponse implements \JsonSerializable {
     private $sumBonusDnom;
 
     /**
-     * 
+     * 用户手机号
      * @var string
      */
     private $userPhone;

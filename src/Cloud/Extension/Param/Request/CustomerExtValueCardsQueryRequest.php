@@ -12,25 +12,25 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
 
     /**
-     * 
-     * @var int
+     * 用户标识
+     * @var string
      */
-    private $buyerId;
+    private $yzOpenId;
 
     /**
-     * 
+     * 用户手机
      * @var string
      */
     private $userPhone;
 
     /**
-     * 
+     * 卡类型 BALANCE_CARD: 储值余额类型 VALUE_CARD：储值卡 ALL:全部
      * @var string
      */
     private $cardType;
 
     /**
-     * 
+     * 店铺标识
      * @var int
      */
     private $kdtId;
@@ -38,19 +38,19 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
 
 
     /**
-     * @return int
+     * @return string
      */
-    public function getBuyerId(): int
+    public function getYzOpenId(): string
     {
-        return $this->buyerId;
+        return $this->yzOpenId;
     }
 
     /**
-     * @param int $buyerId
+     * @param string $yzOpenId
      */
-    public function setBuyerId(int $buyerId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
-        $this->buyerId = $buyerId;
+        $this->yzOpenId = $yzOpenId;
     }
 
     /**

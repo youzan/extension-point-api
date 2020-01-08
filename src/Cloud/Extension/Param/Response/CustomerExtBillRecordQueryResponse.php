@@ -12,13 +12,13 @@ use Com\Youzan\Cloud\Extension\Param\Dto\VlaueCardExtBillRecordDTO;
 class CustomerExtBillRecordQueryResponse implements \JsonSerializable {
 
     /**
-     * 
+     * 卡列表
      * @var array
      */
     private $valueCardBillRecords;
 
     /**
-     * 
+     * 记录总条数（用于分页）
      * @var int
      */
     private $totalNum;

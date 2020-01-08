@@ -5,80 +5,80 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 use DateTime;
 
 /**
- * 
+ * 卡列表
  * @author Baymax
  * @create 2020-01-06 12:52:32.0
  */
 class CustomerValueCardExtDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 使用说明
      * @var string
      */
     private $useSpecification;
 
     /**
-     * 
+     * 是否可用
      * @var bool
      */
     private $usable;
 
     /**
-     * 
+     * 不可用原因
      * @var string
      */
     private $unusableReason;
 
     /**
-     * 
+     * 到期时间
      * @var int
      */
     private $expireDate;
 
     /**
-     * 
+     * 卡名称
      * @var string
      */
     private $cardName;
 
     /**
-     * 
+     * 卡号
      * @var string
      */
     private $cardNo;
 
     /**
-     * 
+     * 背景图
      * @var string
      */
     private $backgroundImage;
 
     /**
-     * 
+     * 卡状态 * INIT	初始化      * NORMAL	正常      * CFREEZE	冻结      * CLOSE	已注销      * RECEDING	退卡处理中      * RECEDED	已退卡
      * @var string
      */
     private $cardStatus;
 
     /**
-     * 
+     * 卡类型 * BALANCE_CARD：储值余额类型      * VALUE_CARD：储值卡      * ALL：全部 （默认）
      * @var string
      */
     private $cardType;
 
     /**
-     * 
+     * 卡内总余额
      * @var int
      */
     private $balance;
 
     /**
-     * 
+     * 本金余额
      * @var int
      */
     private $principalDnom;
 
     /**
-     * 
+     * 赠送金余额
      * @var int
      */
     private $sumBonusDnom;

@@ -12,49 +12,49 @@ use DateTime;
 class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
 
     /**
-     * 
+     * 用户手机号
      * @var string
      */
     private $userPhone;
 
     /**
-     * 
+     * 汇总卡号
      * @var string
      */
     private $cardNo;
 
     /**
-     * 
+     * 业务类型   * RECHARGE：充值      * REFUND：退款      * PAY：支付      * RECHARGE_BONUS：充值赠送      * RECEDE_CARD：储值卡退卡
      * @var string
      */
     private $bizType;
 
     /**
-     * 
+     * 订单号
      * @var string
      */
     private $orderNo;
 
     /**
-     * 
+     * 起始时间（毫秒）
      * @var int
      */
     private $beginTradeTime;
 
     /**
-     * 
+     * 结束时间（毫秒）
      * @var int
      */
     private $endTradeTime;
 
     /**
-     * 
+     * 页码，页数据, 默认为 1
      * @var int
      */
     private $page;
 
     /**
-     * 
+     * 一页获取的 数据条数, 默认为 10
      * @var int
      */
     private $pageSize;

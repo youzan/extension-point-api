@@ -12,7 +12,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\CustomerValueCardExtDTO;
 class CustomerExtValueCardsQueryResponse implements \JsonSerializable {
 
     /**
-     * 
+     * 卡列表
      * @var array
      */
     private $valueCardCustomerCards;
