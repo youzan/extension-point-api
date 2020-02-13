@@ -12,13 +12,13 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 class ExtCustomerPointsStatusDTO implements \JsonSerializable {
 
     /**
-     * 累计获得的积分数(只增不减)
+     * 累计获得的积分数(只增不减)，当会员不存在时设置为0
      * @var int
      */
     private $totalPoints;
 
     /**
-     * 当前积分
+     * 当前积分，当会员不存在时设置为0
      * @var int
      */
     private $currentPoints;
