@@ -13,7 +13,7 @@ use StdClass;
 class VoucherQueryExtPointResponse implements \JsonSerializable {
 
     /**
-     * 
+     * 外部券信息
      * @var ThirdpartyVouchersDTO
      */
     private $thirdpartyVoucher;

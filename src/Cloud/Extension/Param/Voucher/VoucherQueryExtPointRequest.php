@@ -12,19 +12,19 @@ use StdClass;
 class VoucherQueryExtPointRequest implements \JsonSerializable {
 
     /**
-     * 
+     * 外部券id
      * @var int
      */
     private $id;
 
     /**
-     * 
+     * 扩展点版本号
      * @var int
      */
     private $versionNo;
 
     /**
-     * 
+     * 扩展字段
      * @var stdClass
      */
     private $extMap;

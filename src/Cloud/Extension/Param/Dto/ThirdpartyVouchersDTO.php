@@ -6,68 +6,68 @@ use DateTime;
 use StdClass;
 
 /**
- * 
+ * 外部券信息
  * @author Baymax
  * @create 2020-02-12 16:35:56.0
  */
 class ThirdpartyVouchersDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 凭证id
      * @var int
      */
     private $id;
 
     /**
-     * 
+     * 活动id
      * @var int
      */
     private $activityId;
 
     /**
-     * 
+     * 券面额 - 为折扣优惠方式时，只能取1-99 - 为代金优惠方式时 小于10W * 100 分
      * @var int
      */
     private $value;
 
     /**
-     * 
+     * 面额      CNY - 人民币(目前仅支持)      USD - 美金      HKD - 港币
      * @var string
      */
     private $currency;
 
     /**
-     * 
+     * 1 - 代金券     2 - 折扣券
      * @var int
      */
     private $preferentialMode;
 
     /**
-     * 
+     * 优惠券归属用户id
      * @var int
      */
     private $userId;
 
     /**
-     * 
+     * 凭证状态      1. 生效 &#x3D; 未使用 and 未过期      2. 已使用      3. 已过期 &#x3D; 未使用 and 已过期      4. 已失效 &#x3D; 已使用 or 已过期      5. 已锁定
      * @var int
      */
     private $status;
 
     /**
-     * 
+     * 凭证有效期开始时间
      * @var int
      */
     private $validStartTime;
 
     /**
-     * 
+     * 凭证有效期结束时间
      * @var int
      */
     private $validEndTime;
 
     /**
-     * 
+     * 扩展字段
      * @var stdClass
      */
     private $extMap;
