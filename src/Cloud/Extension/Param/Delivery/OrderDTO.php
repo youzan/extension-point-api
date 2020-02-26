@@ -68,7 +68,7 @@ class OrderDTO implements \JsonSerializable {
 
     /**
      * 子订单信息
-     * @var OrderItemMsgDTO
+     * @var array
      */
     private $orderItemList;
 
@@ -219,17 +219,17 @@ class OrderDTO implements \JsonSerializable {
     }
 
     /**
-     * @return OrderItemMsgDTO
+     * @return array
      */
-    public function getOrderItemList(): OrderItemMsgDTO
+    public function getOrderItemList(): array
     {
         return $this->orderItemList;
     }
 
     /**
-     * @param OrderItemMsgDTO $orderItemList
+     * @param array $orderItemList
      */
-    public function setOrderItemList(OrderItemMsgDTO $orderItemList): void
+    public function setOrderItemList(array $orderItemList): void
     {
         $this->orderItemList = $orderItemList;
     }
