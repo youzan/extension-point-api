@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Voucher\VoucherQueryExtPointResponseOutPara
 
 interface VoucherQueryExtPoint {
 
-    public function query(VoucherQueryExtPointRequest $) : VoucherQueryExtPointResponseOutParam;
+    public function query(VoucherQueryExtPointRequest $request) : VoucherQueryExtPointResponseOutParam;
 
 }
