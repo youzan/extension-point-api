@@ -31,9 +31,9 @@ class ThirdpartyVoucherSendExtPointRequest implements \JsonSerializable {
 
     /**
      * 用户id
-     * @var int
+     * @var string
      */
-    private $userId;
+    private $yzOpenId;
 
     /**
      * 发券业务名称（与requestId一起保证发放幂等）
@@ -110,19 +110,19 @@ class ThirdpartyVoucherSendExtPointRequest implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getUserId(): int
+    public function getYzOpenId(): string
     {
-        return $this->userId;
+        return $this->yzOpenId;
     }
 
     /**
-     * @param int $userId
+     * @param string $yzOpenId
      */
-    public function setUserId(int $userId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
-        $this->userId = $userId;
+        $this->yzOpenId = $yzOpenId;
     }
 
     /**

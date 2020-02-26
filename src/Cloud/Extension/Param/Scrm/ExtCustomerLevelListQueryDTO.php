@@ -13,14 +13,14 @@ use StdClass;
 class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
 
     /**
-     * 用户识别信息
+     * 17658987654
      * @var ExtCustomerIdentityDTO
      */
     private $extCustomerIdentityDTO;
 
     /**
-     * 
-     * @var int
+     * 商户店铺ID
+     * @var string
      */
     private $kdtId;
 
@@ -28,7 +28,7 @@ class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
      * 
      * @var stdClass
      */
-    private $extMap;
+    private $extensionMap;
 
 
 
@@ -49,17 +49,17 @@ class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getKdtId(): int
+    public function getKdtId(): string
     {
         return $this->kdtId;
     }
 
     /**
-     * @param int $kdtId
+     * @param string $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(string $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -67,17 +67,17 @@ class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): stdClass
+    public function getExtensionMap(): stdClass
     {
-        return $this->extMap;
+        return $this->extensionMap;
     }
 
     /**
-     * @param stdClass $extMap
+     * @param stdClass $extensionMap
      */
-    public function setExtMap(stdClass $extMap): void
+    public function setExtensionMap(stdClass $extensionMap): void
     {
-        $this->extMap = $extMap;
+        $this->extensionMap = $extensionMap;
     }
 
     public function jsonSerialize() {

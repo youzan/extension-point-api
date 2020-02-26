@@ -25,9 +25,9 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
 
     /**
      * 用户id
-     * @var int
+     * @var string
      */
-    private $userId;
+    private $yzOpenId;
 
     /**
      * 订单号
@@ -88,19 +88,19 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getUserId(): int
+    public function getYzOpenId(): string
     {
-        return $this->userId;
+        return $this->yzOpenId;
     }
 
     /**
-     * @param int $userId
+     * @param string $yzOpenId
      */
-    public function setUserId(int $userId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
-        $this->userId = $userId;
+        $this->yzOpenId = $yzOpenId;
     }
 
     /**

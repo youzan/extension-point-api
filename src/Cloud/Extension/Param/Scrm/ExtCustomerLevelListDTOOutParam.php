@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerLevelListDTO;
 
 /**
- * 响应参数返回类
+ * 返回类
  * @author Baymax
  * @create 2018-10-12 14:13:44.0
  */
