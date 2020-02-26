@@ -3,6 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param\Delivery;
 
 use Com\Youzan\Cloud\Extension\Param\BuyerDTO;
+use Com\Youzan\Cloud\Extension\Param\OrderItemMsgDTO;
 
 /**
  * 订单信息
@@ -64,6 +65,12 @@ class OrderDTO implements \JsonSerializable {
      * @var BuyerDTO
      */
     private $buyerDTO;
+
+    /**
+     * 子订单信息
+     * @var OrderItemMsgDTO
+     */
+    private $orderItemList;
 
 
 
@@ -209,6 +216,22 @@ class OrderDTO implements \JsonSerializable {
     public function setBuyerDTO(BuyerDTO $buyerDTO): void
     {
         $this->buyerDTO = $buyerDTO;
+    }
+
+    /**
+     * @return OrderItemMsgDTO
+     */
+    public function getOrderItemList(): OrderItemMsgDTO
+    {
+        return $this->orderItemList;
+    }
+
+    /**
+     * @param OrderItemMsgDTO $orderItemList
+     */
+    public function setOrderItemList(OrderItemMsgDTO $orderItemList): void
+    {
+        $this->orderItemList = $orderItemList;
     }
 
     public function jsonSerialize() {

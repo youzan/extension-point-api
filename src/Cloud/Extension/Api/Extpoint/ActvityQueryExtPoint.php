@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Activity\ActivityQueryExtPointResponseOutPa
 
 interface ActvityQueryExtPoint {
 
-    public function query(ActivityQueryExtPointRequest $) : ActivityQueryExtPointResponseOutParam;
+    public function query(ActivityQueryExtPointRequest $request) : ActivityQueryExtPointResponseOutParam;
 
 }

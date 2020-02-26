@@ -12,22 +12,10 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 class ExtCustomerPointsLogDTO implements \JsonSerializable {
 
     /**
-     * 操作人名称
-     * @var string
-     */
-    private $operatorName;
-
-    /**
-     * 积分变动时间
+     * 积分变动值
      * @var int
      */
-    private $createdAt;
-
-    /**
-     * 积分变动描述
-     * @var string
-     */
-    private $description;
+    private $amount;
 
     /**
      * 积分变动类型(increase/decrease)
@@ -36,27 +24,71 @@ class ExtCustomerPointsLogDTO implements \JsonSerializable {
     private $type;
 
     /**
-     * 积分变动值
+     * 积分变动描述
+     * @var string
+     */
+    private $description;
+
+    /**
+     * 积分变动时间
      * @var int
      */
-    private $amount;
+    private $createdAt;
+
+    /**
+     * 操作人名称
+     * @var string
+     */
+    private $operatorName;
 
 
+
+    /**
+     * @return int
+     */
+    public function getAmount(): int
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param int $amount
+     */
+    public function setAmount(int $amount): void
+    {
+        $this->amount = $amount;
+    }
 
     /**
      * @return string
      */
-    public function getOperatorName(): string
+    public function getType(): string
     {
-        return $this->operatorName;
+        return $this->type;
     }
 
     /**
-     * @param string $operatorName
+     * @param string $type
      */
-    public function setOperatorName(string $operatorName): void
+    public function setType(string $type): void
     {
-        $this->operatorName = $operatorName;
+        $this->type = $type;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription(string $description): void
+    {
+        $this->description = $description;
     }
 
     /**
@@ -78,49 +110,17 @@ class ExtCustomerPointsLogDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDescription(): string
+    public function getOperatorName(): string
     {
-        return $this->description;
+        return $this->operatorName;
     }
 
     /**
-     * @param string $description
+     * @param string $operatorName
      */
-    public function setDescription(string $description): void
+    public function setOperatorName(string $operatorName): void
     {
-        $this->description = $description;
-    }
-
-    /**
-     * @return string
-     */
-    public function getType(): string
-    {
-        return $this->type;
-    }
-
-    /**
-     * @param string $type
-     */
-    public function setType(string $type): void
-    {
-        $this->type = $type;
-    }
-
-    /**
-     * @return int
-     */
-    public function getAmount(): int
-    {
-        return $this->amount;
-    }
-
-    /**
-     * @param int $amount
-     */
-    public function setAmount(int $amount): void
-    {
-        $this->amount = $amount;
+        $this->operatorName = $operatorName;
     }
 
     public function jsonSerialize() {

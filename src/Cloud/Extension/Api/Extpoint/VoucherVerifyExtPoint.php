@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Voucher\VoucherVerifyExtPointResponseOutPar
 
 interface VoucherVerifyExtPoint {
 
-    public function verify(VoucherVerifyExtPointRequest $) : VoucherVerifyExtPointResponseOutParam;
+    public function verify(VoucherVerifyExtPointRequest $request) : VoucherVerifyExtPointResponseOutParam;
 
 }

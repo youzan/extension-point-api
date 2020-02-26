@@ -12,10 +12,10 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerInfoDTO;
 class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
 
     /**
-     * 单页条数，限制50
-     * @var int
+     * 帐号信息
+     * @var ExtCustomerInfoDTO
      */
-    private $pageSize;
+    private $extCustomerInfoDTO;
 
     /**
      * 页码
@@ -24,10 +24,10 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     private $page;
 
     /**
-     * 帐号信息
-     * @var ExtCustomerInfoDTO
+     * 单页条数，限制50
+     * @var int
      */
-    private $extCustomerInfoDTO;
+    private $pageSize;
 
     /**
      * 0:全部 1:收入 2:支出 3:冻结
@@ -38,19 +38,19 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
 
 
     /**
-     * @return int
+     * @return ExtCustomerInfoDTO
      */
-    public function getPageSize(): int
+    public function getExtCustomerInfoDTO(): ExtCustomerInfoDTO
     {
-        return $this->pageSize;
+        return $this->extCustomerInfoDTO;
     }
 
     /**
-     * @param int $pageSize
+     * @param ExtCustomerInfoDTO $extCustomerInfoDTO
      */
-    public function setPageSize(int $pageSize): void
+    public function setExtCustomerInfoDTO(ExtCustomerInfoDTO $extCustomerInfoDTO): void
     {
-        $this->pageSize = $pageSize;
+        $this->extCustomerInfoDTO = $extCustomerInfoDTO;
     }
 
     /**
@@ -70,19 +70,19 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     }
 
     /**
-     * @return ExtCustomerInfoDTO
+     * @return int
      */
-    public function getExtCustomerInfoDTO(): ExtCustomerInfoDTO
+    public function getPageSize(): int
     {
-        return $this->extCustomerInfoDTO;
+        return $this->pageSize;
     }
 
     /**
-     * @param ExtCustomerInfoDTO $extCustomerInfoDTO
+     * @param int $pageSize
      */
-    public function setExtCustomerInfoDTO(ExtCustomerInfoDTO $extCustomerInfoDTO): void
+    public function setPageSize(int $pageSize): void
     {
-        $this->extCustomerInfoDTO = $extCustomerInfoDTO;
+        $this->pageSize = $pageSize;
     }
 
     /**

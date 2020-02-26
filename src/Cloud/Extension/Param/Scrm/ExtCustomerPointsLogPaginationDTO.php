@@ -12,34 +12,18 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerPointsLogDTO;
 class ExtCustomerPointsLogPaginationDTO implements \JsonSerializable {
 
     /**
-     * 积分变动总数
-     * @var int
-     */
-    private $total;
-
-    /**
      * 积分变动日志列表
      * @var array
      */
     private $logDTOList;
 
-
-
     /**
-     * @return int
+     * 积分变动总数
+     * @var int
      */
-    public function getTotal(): int
-    {
-        return $this->total;
-    }
+    private $total;
 
-    /**
-     * @param int $total
-     */
-    public function setTotal(int $total): void
-    {
-        $this->total = $total;
-    }
+
 
     /**
      * @return array
@@ -55,6 +39,22 @@ class ExtCustomerPointsLogPaginationDTO implements \JsonSerializable {
     public function setLogDTOList(array $logDTOList): void
     {
         $this->logDTOList = $logDTOList;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTotal(): int
+    {
+        return $this->total;
+    }
+
+    /**
+     * @param int $total
+     */
+    public function setTotal(int $total): void
+    {
+        $this->total = $total;
     }
 
     public function jsonSerialize() {
