@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Voucher\AvailableVouchersQueryExtPointRespo
 
 interface AvailableVouchersQueryExtPoint {
 
-    public function listAvailableVouchers(AvailableVouchersQueryExtPointRequest $) : AvailableVouchersQueryExtPointResponseOutParam;
+    public function listAvailableVouchers(AvailableVouchersQueryExtPointRequest $request) : AvailableVouchersQueryExtPointResponseOutParam;
 
 }

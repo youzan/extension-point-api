@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Voucher\VoucherRefundExtPointResponseOutPar
 
 interface VoucherRefundExtPoint {
 
-    public function refund(VoucherRefundExtPointRequest $) : VoucherRefundExtPointResponseOutParam;
+    public function refund(VoucherRefundExtPointRequest $request) : VoucherRefundExtPointResponseOutParam;
 
 }
