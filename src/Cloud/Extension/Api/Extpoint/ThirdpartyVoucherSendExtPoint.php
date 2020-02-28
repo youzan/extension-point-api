@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Voucher\ThirdpartyVoucherSendExtPointRespon
 
 interface ThirdpartyVoucherSendExtPoint {
 
-    public function send(ThirdpartyVoucherSendExtPointRequest $request) : ThirdpartyVoucherSendExtPointResponseOutParam;
+    public function send(ThirdpartyVoucherSendExtPointRequest $) : ThirdpartyVoucherSendExtPointResponseOutParam;
 
 }

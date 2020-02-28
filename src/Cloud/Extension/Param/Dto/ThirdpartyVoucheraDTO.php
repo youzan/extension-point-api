@@ -49,7 +49,7 @@ class ThirdpartyVoucheraDTO implements \JsonSerializable {
     private $yzOpenId;
 
     /**
-     * 凭证状态      1. 生效 &#x3D; 未使用 and 未过期      2. 已使用      3. 已过期 &#x3D; 未使用 and 已过期      4. 已失效 &#x3D; 已使用 or 已过期      5. 已锁定
+     * 凭证状态： 1.已领取未使用 2.已使用 3.未使用已过期
      * @var int
      */
     private $status;

@@ -42,12 +42,6 @@ class ValueCardExtPayRequest implements \JsonSerializable {
     private $goodDesc;
 
     /**
-     * 店铺ID
-     * @var int
-     */
-    private $kdtId;
-
-    /**
      * 有赞用户ID
      * @var int
      */
@@ -70,6 +64,12 @@ class ValueCardExtPayRequest implements \JsonSerializable {
      * @var int
      */
     private $tradeTime;
+
+    /**
+     * 店铺ID
+     * @var int
+     */
+    private $kdtId;
 
 
 
@@ -156,22 +156,6 @@ class ValueCardExtPayRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
-    {
-        return $this->kdtId;
-    }
-
-    /**
-     * @param int $kdtId
-     */
-    public function setKdtId(int $kdtId): void
-    {
-        $this->kdtId = $kdtId;
-    }
-
-    /**
-     * @return int
-     */
     public function getBuyerId(): int
     {
         return $this->buyerId;
@@ -231,6 +215,22 @@ class ValueCardExtPayRequest implements \JsonSerializable {
     public function setTradeTime(int $tradeTime): void
     {
         $this->tradeTime = $tradeTime;
+    }
+
+    /**
+     * @return int
+     */
+    public function getKdtId(): int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
     }
 
     public function jsonSerialize() {

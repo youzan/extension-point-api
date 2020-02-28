@@ -24,7 +24,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     private $cardNo;
 
     /**
-     * 业务类型   * RECHARGE：充值      * REFUND：退款      * PAY：支付      * RECHARGE_BONUS：充值赠送      * RECEDE_CARD：储值卡退卡
+     * 业务类型
      * @var string
      */
     private $bizType;
@@ -60,7 +60,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     private $pageSize;
 
     /**
-     * 
+     * 店铺ID
      * @var int
      */
     private $kdtId;

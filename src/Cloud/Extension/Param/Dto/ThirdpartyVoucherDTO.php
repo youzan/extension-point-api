@@ -49,7 +49,7 @@ class ThirdpartyVoucherDTO implements \JsonSerializable {
     private $yzOpenId;
 
     /**
-     * 凭证状态      * 1. 生效 &#x3D; 未使用 and 未过期      * 2. 已使用      * 3. 已过期 &#x3D; 未使用 and 已过期      * 4. 已失效 &#x3D; 已使用 or 已过期      * 5. 已锁定
+     * 凭证状态： 1.已领取未使用 2.已使用 3.未使用已过期
      * @var int
      */
     private $status;
@@ -71,6 +71,18 @@ class ThirdpartyVoucherDTO implements \JsonSerializable {
      * @var stdClass
      */
     private $extMap;
+
+    /**
+     * 凭证发放时间
+     * @var int
+     */
+    private $sendAt;
+
+    /**
+     * 核销码
+     * @var string
+     */
+    private $verifyCode;
 
 
 
@@ -232,6 +244,38 @@ class ThirdpartyVoucherDTO implements \JsonSerializable {
     public function setExtMap(stdClass $extMap): void
     {
         $this->extMap = $extMap;
+    }
+
+    /**
+     * @return int
+     */
+    public function getSendAt(): int
+    {
+        return $this->sendAt;
+    }
+
+    /**
+     * @param int $sendAt
+     */
+    public function setSendAt(int $sendAt): void
+    {
+        $this->sendAt = $sendAt;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVerifyCode(): string
+    {
+        return $this->verifyCode;
+    }
+
+    /**
+     * @param string $verifyCode
+     */
+    public function setVerifyCode(string $verifyCode): void
+    {
+        $this->verifyCode = $verifyCode;
     }
 
     public function jsonSerialize() {

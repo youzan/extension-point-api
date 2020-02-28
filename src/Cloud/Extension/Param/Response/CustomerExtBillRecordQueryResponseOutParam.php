@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 use Com\Youzan\Cloud\Extension\Param\Response\CustomerExtBillRecordQueryResponse;
 
 /**
- * 返回类
+ * 卡列表返回类
  * @author Baymax
  * @create 2020-01-06 11:40:30.0
  */

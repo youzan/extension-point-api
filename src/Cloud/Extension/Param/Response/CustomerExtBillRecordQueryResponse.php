@@ -5,20 +5,20 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 use Com\Youzan\Cloud\Extension\Param\Dto\VlaueCardExtBillRecordDTO;
 
 /**
- * 
+ * 卡列表
  * @author Baymax
  * @create 2020-01-06 11:40:30.0
  */
 class CustomerExtBillRecordQueryResponse implements \JsonSerializable {
 
     /**
-     * 卡列表
+     * 
      * @var array
      */
     private $valueCardBillRecords;
 
     /**
-     * 记录总条数（用于分页）
+     * 总条数
      * @var int
      */
     private $totalNum;

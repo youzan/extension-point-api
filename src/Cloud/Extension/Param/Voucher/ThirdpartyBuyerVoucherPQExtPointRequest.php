@@ -30,7 +30,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     private $activityIds;
 
     /**
-     * 优惠券状态 0. 全部 1. 生效 &#x3D; 未使用 and 未过期,  2. 已使用  3. 已过期 &#x3D; 未使用 and 已过期  4. 已失效 &#x3D; 已使用 or 已过期 5. 已锁定
+     * 优惠券查询状态： 0. 全部 1. 未使用 and 未过期 2. 已使用 or 已过期
      * @var int
      */
     private $status;

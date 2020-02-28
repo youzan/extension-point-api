@@ -18,7 +18,7 @@ class ValueCardExtRechargeNoticeDocRequest implements \JsonSerializable {
     private $cardNo;
 
     /**
-     * 店铺id
+     * 店铺ID
      * @var int
      */
     private $kdtId;

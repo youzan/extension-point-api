@@ -24,6 +24,12 @@ class ValueCardExtRechargeResponse implements \JsonSerializable {
     private $buyerId;
 
     /**
+     * 用户手机号
+     * @var string
+     */
+    private $userPhone;
+
+    /**
      * 业务充值单号，以此做幂等
      * @var string
      */
@@ -77,12 +83,6 @@ class ValueCardExtRechargeResponse implements \JsonSerializable {
      */
     private $sumBonusDnom;
 
-    /**
-     * 用户手机号
-     * @var string
-     */
-    private $userPhone;
-
 
 
     /**
@@ -115,6 +115,22 @@ class ValueCardExtRechargeResponse implements \JsonSerializable {
     public function setBuyerId(int $buyerId): void
     {
         $this->buyerId = $buyerId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUserPhone(): string
+    {
+        return $this->userPhone;
+    }
+
+    /**
+     * @param string $userPhone
+     */
+    public function setUserPhone(string $userPhone): void
+    {
+        $this->userPhone = $userPhone;
     }
 
     /**
@@ -259,22 +275,6 @@ class ValueCardExtRechargeResponse implements \JsonSerializable {
     public function setSumBonusDnom(int $sumBonusDnom): void
     {
         $this->sumBonusDnom = $sumBonusDnom;
-    }
-
-    /**
-     * @return string
-     */
-    public function getUserPhone(): string
-    {
-        return $this->userPhone;
-    }
-
-    /**
-     * @param string $userPhone
-     */
-    public function setUserPhone(string $userPhone): void
-    {
-        $this->userPhone = $userPhone;
     }
 
     public function jsonSerialize() {
