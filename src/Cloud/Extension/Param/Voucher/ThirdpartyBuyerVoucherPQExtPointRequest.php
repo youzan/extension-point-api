@@ -33,7 +33,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
      * 优惠券查询状态： 0. 全部 1. 未使用 and 未过期 2. 已使用 or 已过期
      * @var int
      */
-    private $status;
+    private $searchStatus;
 
     /**
      * 页码
@@ -112,17 +112,17 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStatus(): int
+    public function getSearchStatus(): int
     {
-        return $this->status;
+        return $this->searchStatus;
     }
 
     /**
-     * @param int $status
+     * @param int $searchStatus
      */
-    public function setStatus(int $status): void
+    public function setSearchStatus(int $searchStatus): void
     {
-        $this->status = $status;
+        $this->searchStatus = $searchStatus;
     }
 
     /**

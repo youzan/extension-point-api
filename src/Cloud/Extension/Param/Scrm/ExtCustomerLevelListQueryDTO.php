@@ -6,14 +6,14 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerIdentityDTO;
 use StdClass;
 
 /**
- * 请求参数
+ * 
  * @author Baymax
  * @create 2018-10-12 14:13:44.0
  */
 class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
 
     /**
-     * 17658987654
+     * 用户识别信息
      * @var ExtCustomerIdentityDTO
      */
     private $extCustomerIdentityDTO;

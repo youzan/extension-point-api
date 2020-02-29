@@ -36,7 +36,7 @@ class ValueCardExtPayResponse implements \JsonSerializable {
     private $payAmount;
 
     /**
-     * 支付状态   NOPAY: 未支付; SUCCESS: 成功; FAIL: 失败; PAYING: 支付中; UNKNOW: 未知; CLOSED: 已经关闭
+     * 支付状态
      * @var string
      */
     private $payStatus;

@@ -76,7 +76,7 @@ class ThirdpartyVoucherDTO implements \JsonSerializable {
      * 凭证发放时间
      * @var int
      */
-    private $sendAt;
+    private $sentAt;
 
     /**
      * 核销码
@@ -249,17 +249,17 @@ class ThirdpartyVoucherDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSendAt(): int
+    public function getSentAt(): int
     {
-        return $this->sendAt;
+        return $this->sentAt;
     }
 
     /**
-     * @param int $sendAt
+     * @param int $sentAt
      */
-    public function setSendAt(int $sendAt): void
+    public function setSentAt(int $sentAt): void
     {
-        $this->sendAt = $sendAt;
+        $this->sentAt = $sentAt;
     }
 
     /**
