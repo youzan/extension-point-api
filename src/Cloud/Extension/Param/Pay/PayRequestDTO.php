@@ -13,79 +13,79 @@ use StdClass;
 class PayRequestDTO implements \JsonSerializable {
 
     /**
-     * 有赞商户号
+     * 
      * @var string
      */
     private $mchId;
 
     /**
-     * 有赞支付单号
+     * 
      * @var string
      */
-    private $yzTradeNo;
+    private $outTradeNo;
 
     /**
-     * 支付方式
+     * 
      * @var string
      */
     private $tradeType;
 
     /**
-     * 支付总金额，单位为分
+     * 
      * @var int
      */
     private $payAmount;
 
     /**
-     * 币种信息，默认为CNY
+     * 
      * @var string
      */
     private $payCurrency;
 
     /**
-     * 通知地址
+     * 
      * @var string
      */
     private $notifyUrl;
 
     /**
-     * 终端IP
+     * 
      * @var string
      */
     private $clientIp;
 
     /**
-     * 支付渠道
+     * 
      * @var string
      */
     private $payChannel;
 
     /**
-     * 场景信息
+     * 
      * @var string
      */
     private $payEnv;
 
     /**
-     * 交易起始时间
+     * 
      * @var int
      */
     private $timeStart;
 
     /**
-     * 交易结束时间
+     * 
      * @var int
      */
-    private $timeExpired;
+    private $timeExpire;
 
     /**
-     * 附加数据
+     * 
      * @var string
      */
     private $attach;
 
     /**
-     * 扩展字段
+     * 
      * @var stdClass
      */
     private $extra;
@@ -111,17 +111,17 @@ class PayRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzTradeNo(): string
+    public function getOutTradeNo(): string
     {
-        return $this->yzTradeNo;
+        return $this->outTradeNo;
     }
 
     /**
-     * @param string $yzTradeNo
+     * @param string $outTradeNo
      */
-    public function setYzTradeNo(string $yzTradeNo): void
+    public function setOutTradeNo(string $outTradeNo): void
     {
-        $this->yzTradeNo = $yzTradeNo;
+        $this->outTradeNo = $outTradeNo;
     }
 
     /**
@@ -255,17 +255,17 @@ class PayRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTimeExpired(): int
+    public function getTimeExpire(): int
     {
-        return $this->timeExpired;
+        return $this->timeExpire;
     }
 
     /**
-     * @param int $timeExpired
+     * @param int $timeExpire
      */
-    public function setTimeExpired(int $timeExpired): void
+    public function setTimeExpire(int $timeExpire): void
     {
-        $this->timeExpired = $timeExpired;
+        $this->timeExpire = $timeExpire;
     }
 
     /**

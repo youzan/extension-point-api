@@ -13,73 +13,73 @@ use StdClass;
 class PayResponseDTO implements \JsonSerializable {
 
     /**
-     * 有赞支付单号
+     * 
      * @var string
      */
-    private $yzTradeNo;
+    private $outTradeNo;
 
     /**
-     * 外部支付单号
+     * 
      * @var string
      */
     private $tradeNo;
 
     /**
-     * 商户号
+     * 
      * @var string
      */
     private $mchId;
 
     /**
-     * 支付方式
+     * 
      * @var string
      */
     private $tradeType;
 
     /**
-     * 支付完成时间
+     * 
      * @var int
      */
-    private $payTime;
+    private $timeEnd;
 
     /**
-     * 支付成功：SUCCESS,  支付失败：FAIL,  支付中：PAYING,  预支付成功：PRE_PAY_SUCCESS
+     * 
      * @var string
      */
-    private $tradeStatus;
+    private $tradeState;
 
     /**
-     * 支付状态描述
+     * 
      * @var string
      */
-    private $tradeStatusDesc;
+    private $tradeStateDesc;
 
     /**
-     * 支付渠道
+     * 
      * @var string
      */
     private $payChannel;
 
     /**
-     * 支付总金额
+     * 
      * @var int
      */
     private $payAmount;
 
     /**
-     * 币种信息
+     * 
      * @var string
      */
     private $payCurrency;
 
     /**
-     * 附加数据
+     * 
      * @var string
      */
     private $attach;
 
     /**
-     * 扩展字段
+     * 
      * @var stdClass
      */
     private $extra;
@@ -89,17 +89,17 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzTradeNo(): string
+    public function getOutTradeNo(): string
     {
-        return $this->yzTradeNo;
+        return $this->outTradeNo;
     }
 
     /**
-     * @param string $yzTradeNo
+     * @param string $outTradeNo
      */
-    public function setYzTradeNo(string $yzTradeNo): void
+    public function setOutTradeNo(string $outTradeNo): void
     {
-        $this->yzTradeNo = $yzTradeNo;
+        $this->outTradeNo = $outTradeNo;
     }
 
     /**
@@ -153,49 +153,49 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPayTime(): int
+    public function getTimeEnd(): int
     {
-        return $this->payTime;
+        return $this->timeEnd;
     }
 
     /**
-     * @param int $payTime
+     * @param int $timeEnd
      */
-    public function setPayTime(int $payTime): void
+    public function setTimeEnd(int $timeEnd): void
     {
-        $this->payTime = $payTime;
-    }
-
-    /**
-     * @return string
-     */
-    public function getTradeStatus(): string
-    {
-        return $this->tradeStatus;
-    }
-
-    /**
-     * @param string $tradeStatus
-     */
-    public function setTradeStatus(string $tradeStatus): void
-    {
-        $this->tradeStatus = $tradeStatus;
+        $this->timeEnd = $timeEnd;
     }
 
     /**
      * @return string
      */
-    public function getTradeStatusDesc(): string
+    public function getTradeState(): string
     {
-        return $this->tradeStatusDesc;
+        return $this->tradeState;
     }
 
     /**
-     * @param string $tradeStatusDesc
+     * @param string $tradeState
      */
-    public function setTradeStatusDesc(string $tradeStatusDesc): void
+    public function setTradeState(string $tradeState): void
     {
-        $this->tradeStatusDesc = $tradeStatusDesc;
+        $this->tradeState = $tradeState;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTradeStateDesc(): string
+    {
+        return $this->tradeStateDesc;
+    }
+
+    /**
+     * @param string $tradeStateDesc
+     */
+    public function setTradeStateDesc(string $tradeStateDesc): void
+    {
+        $this->tradeStateDesc = $tradeStateDesc;
     }
 
     /**
