@@ -37,6 +37,12 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
     private $contactAddressModifyDTO;
 
     /**
+     * 邮箱
+     * @var string
+     */
+    private $email;
+
+    /**
      * 
      * @var array
      */
@@ -106,6 +112,22 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
     public function setContactAddressModifyDTO(ContactAddressModifyDTO $contactAddressModifyDTO): void
     {
         $this->contactAddressModifyDTO = $contactAddressModifyDTO;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param string $email
+     */
+    public function setEmail(string $email): void
+    {
+        $this->email = $email;
     }
 
     /**
