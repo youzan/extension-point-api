@@ -22,7 +22,7 @@ class PayRequestDTO implements \JsonSerializable {
      * 
      * @var string
      */
-    private $outTradeNo;
+    private $yzTradeNo;
 
     /**
      * 
@@ -76,7 +76,7 @@ class PayRequestDTO implements \JsonSerializable {
      * 
      * @var int
      */
-    private $timeExpire;
+    private $timeExpired;
 
     /**
      * 
@@ -111,17 +111,17 @@ class PayRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOutTradeNo(): string
+    public function getYzTradeNo(): string
     {
-        return $this->outTradeNo;
+        return $this->yzTradeNo;
     }
 
     /**
-     * @param string $outTradeNo
+     * @param string $yzTradeNo
      */
-    public function setOutTradeNo(string $outTradeNo): void
+    public function setYzTradeNo(string $yzTradeNo): void
     {
-        $this->outTradeNo = $outTradeNo;
+        $this->yzTradeNo = $yzTradeNo;
     }
 
     /**
@@ -255,17 +255,17 @@ class PayRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTimeExpire(): int
+    public function getTimeExpired(): int
     {
-        return $this->timeExpire;
+        return $this->timeExpired;
     }
 
     /**
-     * @param int $timeExpire
+     * @param int $timeExpired
      */
-    public function setTimeExpire(int $timeExpire): void
+    public function setTimeExpired(int $timeExpired): void
     {
-        $this->timeExpire = $timeExpire;
+        $this->timeExpired = $timeExpired;
     }
 
     /**

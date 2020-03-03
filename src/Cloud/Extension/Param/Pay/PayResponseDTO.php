@@ -16,7 +16,7 @@ class PayResponseDTO implements \JsonSerializable {
      * 
      * @var string
      */
-    private $outTradeNo;
+    private $yzTradeNo;
 
     /**
      * 
@@ -40,19 +40,19 @@ class PayResponseDTO implements \JsonSerializable {
      * 
      * @var int
      */
-    private $timeEnd;
+    private $payTime;
 
     /**
      * 
      * @var string
      */
-    private $tradeState;
+    private $tradeStatus;
 
     /**
      * 
      * @var string
      */
-    private $tradeStateDesc;
+    private $tradeStatusDesc;
 
     /**
      * 
@@ -89,17 +89,17 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOutTradeNo(): string
+    public function getYzTradeNo(): string
     {
-        return $this->outTradeNo;
+        return $this->yzTradeNo;
     }
 
     /**
-     * @param string $outTradeNo
+     * @param string $yzTradeNo
      */
-    public function setOutTradeNo(string $outTradeNo): void
+    public function setYzTradeNo(string $yzTradeNo): void
     {
-        $this->outTradeNo = $outTradeNo;
+        $this->yzTradeNo = $yzTradeNo;
     }
 
     /**
@@ -153,49 +153,49 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTimeEnd(): int
+    public function getPayTime(): int
     {
-        return $this->timeEnd;
+        return $this->payTime;
     }
 
     /**
-     * @param int $timeEnd
+     * @param int $payTime
      */
-    public function setTimeEnd(int $timeEnd): void
+    public function setPayTime(int $payTime): void
     {
-        $this->timeEnd = $timeEnd;
-    }
-
-    /**
-     * @return string
-     */
-    public function getTradeState(): string
-    {
-        return $this->tradeState;
-    }
-
-    /**
-     * @param string $tradeState
-     */
-    public function setTradeState(string $tradeState): void
-    {
-        $this->tradeState = $tradeState;
+        $this->payTime = $payTime;
     }
 
     /**
      * @return string
      */
-    public function getTradeStateDesc(): string
+    public function getTradeStatus(): string
     {
-        return $this->tradeStateDesc;
+        return $this->tradeStatus;
     }
 
     /**
-     * @param string $tradeStateDesc
+     * @param string $tradeStatus
      */
-    public function setTradeStateDesc(string $tradeStateDesc): void
+    public function setTradeStatus(string $tradeStatus): void
     {
-        $this->tradeStateDesc = $tradeStateDesc;
+        $this->tradeStatus = $tradeStatus;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTradeStatusDesc(): string
+    {
+        return $this->tradeStatusDesc;
+    }
+
+    /**
+     * @param string $tradeStatusDesc
+     */
+    public function setTradeStatusDesc(string $tradeStatusDesc): void
+    {
+        $this->tradeStatusDesc = $tradeStatusDesc;
     }
 
     /**
