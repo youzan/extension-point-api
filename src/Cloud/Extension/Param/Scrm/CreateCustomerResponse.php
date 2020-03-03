@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 class CreateCustomerResponse implements \JsonSerializable {
 
     /**
-     * 是否成功 ture表示成功 false表示失败
+     * 是否成功
      * @var bool
      */
     private $success;

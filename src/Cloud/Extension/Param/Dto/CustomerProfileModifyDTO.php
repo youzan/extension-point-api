@@ -1,22 +1,16 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Scrm;
+namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
-use Com\Youzan\Cloud\Extension\Param\Scrm\ContactAddressCreateDTO;
-use Com\Youzan\Cloud\Extension\Param\Dto\CustomizeAttributeDO;
+use Com\Youzan\Cloud\Extension\Param\Scrm\ContactAddressModifyDTO;
+use Com\Youzan\Cloud\Extension\Param\CustomizeAttributeDTO;
 
 /**
  * 
  * @author Baymax
- * @create 2018-09-29 21:29:50.0
+ * @create 2020-03-03 14:42:08.0
  */
-class MemberProfileCreateDTO implements \JsonSerializable {
-
-    /**
-     * 注册手机号
-     * @var string
-     */
-    private $registerMobile;
+class CustomerProfileModifyDTO implements \JsonSerializable {
 
     /**
      * 姓名
@@ -37,10 +31,10 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     private $birthday;
 
     /**
-     * 
-     * @var ContactAddressCreateDTO
+     * 联系地址
+     * @var ContactAddressModifyDTO
      */
-    private $contactAddressCreateDTO;
+    private $contactAddressModifyDTO;
 
     /**
      * 邮箱
@@ -55,22 +49,6 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     private $attributeList;
 
 
-
-    /**
-     * @return string
-     */
-    public function getRegisterMobile(): string
-    {
-        return $this->registerMobile;
-    }
-
-    /**
-     * @param string $registerMobile
-     */
-    public function setRegisterMobile(string $registerMobile): void
-    {
-        $this->registerMobile = $registerMobile;
-    }
 
     /**
      * @return string
@@ -121,19 +99,19 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     }
 
     /**
-     * @return ContactAddressCreateDTO
+     * @return ContactAddressModifyDTO
      */
-    public function getContactAddressCreateDTO(): ContactAddressCreateDTO
+    public function getContactAddressModifyDTO(): ContactAddressModifyDTO
     {
-        return $this->contactAddressCreateDTO;
+        return $this->contactAddressModifyDTO;
     }
 
     /**
-     * @param ContactAddressCreateDTO $contactAddressCreateDTO
+     * @param ContactAddressModifyDTO $contactAddressModifyDTO
      */
-    public function setContactAddressCreateDTO(ContactAddressCreateDTO $contactAddressCreateDTO): void
+    public function setContactAddressModifyDTO(ContactAddressModifyDTO $contactAddressModifyDTO): void
     {
-        $this->contactAddressCreateDTO = $contactAddressCreateDTO;
+        $this->contactAddressModifyDTO = $contactAddressModifyDTO;
     }
 
     /**

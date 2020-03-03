@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
-use Com\Youzan\Cloud\Extension\Param\Scrm\ContactAddressCreateDTO;
+use Com\Youzan\Cloud\Extension\Param\Dto\ContactAddressCreateDTO;
 use Com\Youzan\Cloud\Extension\Param\CustomizeAttributeDTO;
 
 /**

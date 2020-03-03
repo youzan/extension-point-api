@@ -1,13 +1,13 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Scrm;
+namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
 
 
 /**
- * 
+ * 联系地址
  * @author Baymax
- * @create 2018-09-29 21:13:57.0
+ * @create 2020-03-03 14:41:59.0
  */
 class ContactAddressCreateDTO implements \JsonSerializable {
 

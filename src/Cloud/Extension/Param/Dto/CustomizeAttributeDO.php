@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param;
+namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
 
 
 /**
  * 
  * @author Baymax
- * @create 2019-09-10 17:13:06.0
+ * @create 2020-03-03 14:42:12.0
  */
-class CustomizeAttributeDTO implements \JsonSerializable {
+class CustomizeAttributeDO implements \JsonSerializable {
 
     /**
      * 

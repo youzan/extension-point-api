@@ -3,7 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
 use Com\Youzan\Cloud\Extension\Param\Scrm\CustomerIdentifyDTO;
-use Com\Youzan\Cloud\Extension\Param\Scrm\CustomerProfileModifyDTO;
+use Com\Youzan\Cloud\Extension\Param\Dto\CustomerProfileModifyDTO;
 
 /**
  * 
