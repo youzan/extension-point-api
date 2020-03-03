@@ -25,7 +25,7 @@ class ExtCustomerIdentityDTO implements \JsonSerializable {
 
     /**
      * 商户店铺ID
-     * @var string
+     * @var int
      */
     private $kdtId;
 
@@ -64,17 +64,17 @@ class ExtCustomerIdentityDTO implements \JsonSerializable {
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getKdtId(): string
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
 
     /**
-     * @param string $kdtId
+     * @param int $kdtId
      */
-    public function setKdtId(string $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
