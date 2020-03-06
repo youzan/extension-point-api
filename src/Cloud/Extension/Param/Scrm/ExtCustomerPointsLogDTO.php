@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 /**
  * 积分变动日志列表
  * @author Baymax
- * @create 2018-11-04 21:41:34.0
+ * @create Sun Nov 04 21:41:34 CST 2018
  */
 class ExtCustomerPointsLogDTO implements \JsonSerializable {
 

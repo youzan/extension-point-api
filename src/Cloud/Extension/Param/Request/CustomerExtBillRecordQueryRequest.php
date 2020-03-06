@@ -7,7 +7,7 @@ use DateTime;
 /**
  * 
  * @author Baymax
- * @create 2020-01-06 11:40:29.0
+ * @create Mon Jan 06 11:40:29 CST 2020
  */
 class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
 

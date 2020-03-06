@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Retail;
 /**
  * 
  * @author Baymax
- * @create 2019-07-23 14:49:51.0
+ * @create Tue Jul 23 14:49:51 CST 2019
  */
 class DeliveryOrderSyncResponseDTO implements \JsonSerializable {
 

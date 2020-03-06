@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\OrderCreateSelfValidateResultDTO;
 /**
  * 返回类
  * @author Baymax
- * @create 2018-09-30 17:35:52.0
+ * @create Sun Sep 30 17:35:52 CST 2018
  */
 class OrderCreateSelfValidateResultDTOOutParam implements \JsonSerializable {
 

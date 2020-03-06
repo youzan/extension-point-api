@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 订单级额外费用 (包含在订单是否金额里面)
  * @author Baymax
- * @create 2019-07-22 13:12:35.0
+ * @create Mon Jul 22 13:12:35 CST 2019
  */
 class ExtPointExtraPriceResultDTO implements \JsonSerializable {
 

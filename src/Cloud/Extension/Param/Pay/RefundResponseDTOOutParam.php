@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Pay\RefundResponseDTO;
 /**
  * 返回类
  * @author Baymax
- * @create 2019-08-15 16:24:20.0
+ * @create Thu Aug 15 16:24:20 CST 2019
  */
 class RefundResponseDTOOutParam implements \JsonSerializable {
 

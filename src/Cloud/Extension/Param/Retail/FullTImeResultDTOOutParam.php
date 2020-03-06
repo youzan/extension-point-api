@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Retail\FullTImeResultDTO;
 /**
  * 返回类
  * @author Baymax
- * @create 2019-10-12 10:30:49.0
+ * @create Sat Oct 12 10:30:49 CST 2019
  */
 class FullTImeResultDTOOutParam implements \JsonSerializable {
 

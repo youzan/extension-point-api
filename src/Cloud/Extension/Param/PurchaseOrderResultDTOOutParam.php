@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\PurchaseOrderResultDTO;
 /**
  * 返回类
  * @author Baymax
- * @create 2019-07-20 10:12:09.0
+ * @create Sat Jul 20 10:12:09 CST 2019
  */
 class PurchaseOrderResultDTOOutParam implements \JsonSerializable {
 
