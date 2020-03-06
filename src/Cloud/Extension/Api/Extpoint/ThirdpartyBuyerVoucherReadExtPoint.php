@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Voucher\ThirdpartyBuyerVoucherPQExtPointRes
 
 interface ThirdpartyBuyerVoucherReadExtPoint {
 
-    public function list(ThirdpartyBuyerVoucherPQExtPointRequest $) : ThirdpartyBuyerVoucherPQExtPointResponseOutParam;
+    public function list(ThirdpartyBuyerVoucherPQExtPointRequest $request) : ThirdpartyBuyerVoucherPQExtPointResponseOutParam;
 
 }

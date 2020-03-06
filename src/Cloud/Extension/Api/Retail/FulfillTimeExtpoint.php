@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Retail\FullTImeResultDTOOutParam;
 
 interface FulfillTimeExtpoint {
 
-    public function batchQueryFulfillTime(FulfillTimeListRequestDTO $) : FullTImeResultDTOOutParam;
+    public function batchQueryFulfillTime(FulfillTimeListRequestDTO $request) : FullTImeResultDTOOutParam;
 
 }

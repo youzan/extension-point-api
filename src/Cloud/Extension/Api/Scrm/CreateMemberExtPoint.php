@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\CreateMemberResponseOutParam;
 
 interface CreateMemberExtPoint {
 
-    public function execute(CreateMemberRequestDTO $) : CreateMemberResponseOutParam;
+    public function execute(CreateMemberRequestDTO $request) : CreateMemberResponseOutParam;
 
 }

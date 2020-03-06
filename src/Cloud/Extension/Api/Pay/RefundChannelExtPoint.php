@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Pay\RefundResponseDTOOutParam;
 
 interface RefundChannelExtPoint {
 
-    public function refund(RefundRequestDTO $) : RefundResponseDTOOutParam;
+    public function refund(RefundRequestDTO $request) : RefundResponseDTOOutParam;
 
 }

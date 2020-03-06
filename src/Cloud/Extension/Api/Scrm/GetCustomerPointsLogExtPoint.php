@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerPointsLogPaginationDTOOutPa
 
 interface GetCustomerPointsLogExtPoint {
 
-    public function invoke(ExtCustomerPointsLogQueryDTO $) : ExtCustomerPointsLogPaginationDTOOutParam;
+    public function invoke(ExtCustomerPointsLogQueryDTO $request) : ExtCustomerPointsLogPaginationDTOOutParam;
 
 }

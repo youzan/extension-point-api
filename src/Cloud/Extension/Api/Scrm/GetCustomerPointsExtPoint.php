@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerPointsStatusDTOOutParam;
 
 interface GetCustomerPointsExtPoint {
 
-    public function invoke(ExtCustomerPointsQueryDTO $) : ExtCustomerPointsStatusDTOOutParam;
+    public function invoke(ExtCustomerPointsQueryDTO $request) : ExtCustomerPointsStatusDTOOutParam;
 
 }
