@@ -19,13 +19,13 @@ class AvailableVouchersQueryExtPointResponse implements \JsonSerializable {
     private $thirdpartyVouchers;
 
     /**
-     * 
+     * 扩展点版本
      * @var int
      */
     private $versionNo;
 
     /**
-     * 
+     * 扩展字段
      * @var stdClass
      */
     private $extMap;

@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerLevelListDTOOutParam;
 
 interface GetCustomerLevelListExtPoint {
 
-    public function invoke(ExtCustomerLevelListQueryDTO $request) : ExtCustomerLevelListDTOOutParam;
+    public function invoke(ExtCustomerLevelListQueryDTO $) : ExtCustomerLevelListDTOOutParam;
 
 }

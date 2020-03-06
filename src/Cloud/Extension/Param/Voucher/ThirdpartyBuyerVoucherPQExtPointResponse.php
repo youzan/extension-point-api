@@ -3,7 +3,6 @@
 namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 
 use Com\Youzan\Cloud\Extension\Param\Dto\ThirdpartyVoucherDTO;
-use StdClass;
 
 /**
  * 
@@ -23,12 +22,6 @@ class ThirdpartyBuyerVoucherPQExtPointResponse implements \JsonSerializable {
      * @var int
      */
     private $versionNo;
-
-    /**
-     * 
-     * @var stdClass
-     */
-    private $extMap;
 
 
 
@@ -62,22 +55,6 @@ class ThirdpartyBuyerVoucherPQExtPointResponse implements \JsonSerializable {
     public function setVersionNo(int $versionNo): void
     {
         $this->versionNo = $versionNo;
-    }
-
-    /**
-     * @return stdClass
-     */
-    public function getExtMap(): stdClass
-    {
-        return $this->extMap;
-    }
-
-    /**
-     * @param stdClass $extMap
-     */
-    public function setExtMap(stdClass $extMap): void
-    {
-        $this->extMap = $extMap;
     }
 
     public function jsonSerialize() {

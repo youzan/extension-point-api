@@ -24,13 +24,13 @@ class AvailableVouchersQueryExtPointRequest implements \JsonSerializable {
     private $activityIds;
 
     /**
-     * 
+     * 扩展点版本号
      * @var int
      */
     private $versionNo;
 
     /**
-     * 
+     * 扩展字段
      * @var stdClass
      */
     private $extMap;

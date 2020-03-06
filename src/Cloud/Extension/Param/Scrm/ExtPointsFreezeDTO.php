@@ -2,8 +2,8 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
-use StdClass;
 use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerInfoDTO;
+use StdClass;
 
 /**
  * 请求参数
@@ -13,16 +13,16 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerInfoDTO;
 class ExtPointsFreezeDTO implements \JsonSerializable {
 
     /**
-     * 扩展信息
-     * @var stdClass
+     * 帐号信息
+     * @var ExtCustomerInfoDTO
      */
-    private $extraInfo;
+    private $extCustomerInfoDTO;
 
     /**
-     * 积分消耗来源，300：积分商城；301：积分抵扣
+     * 店铺标识
      * @var int
      */
-    private $consumeSource;
+    private $kdtId;
 
     /**
      * 积分冻结值
@@ -31,61 +31,61 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     private $amount;
 
     /**
+     * 
+     * @var string
+     */
+    private $bizValue;
+
+    /**
      * 积分冻结描述
      * @var string
      */
     private $description;
 
     /**
-     * 业务唯一标识
-     * @var string
-     */
-    private $bizValue;
-
-    /**
-     * 
+     * 积分消耗来源，300：积分商城；301：积分抵扣
      * @var int
      */
-    private $kdtId;
+    private $consumeSource;
 
     /**
-     * 帐号信息
-     * @var ExtCustomerInfoDTO
+     * 扩展信息
+     * @var stdClass
      */
-    private $extCustomerInfoDTO;
+    private $extraInfo;
 
 
 
     /**
-     * @return stdClass
+     * @return ExtCustomerInfoDTO
      */
-    public function getExtraInfo(): stdClass
+    public function getExtCustomerInfoDTO(): ExtCustomerInfoDTO
     {
-        return $this->extraInfo;
+        return $this->extCustomerInfoDTO;
     }
 
     /**
-     * @param stdClass $extraInfo
+     * @param ExtCustomerInfoDTO $extCustomerInfoDTO
      */
-    public function setExtraInfo(stdClass $extraInfo): void
+    public function setExtCustomerInfoDTO(ExtCustomerInfoDTO $extCustomerInfoDTO): void
     {
-        $this->extraInfo = $extraInfo;
+        $this->extCustomerInfoDTO = $extCustomerInfoDTO;
     }
 
     /**
      * @return int
      */
-    public function getConsumeSource(): int
+    public function getKdtId(): int
     {
-        return $this->consumeSource;
+        return $this->kdtId;
     }
 
     /**
-     * @param int $consumeSource
+     * @param int $kdtId
      */
-    public function setConsumeSource(int $consumeSource): void
+    public function setKdtId(int $kdtId): void
     {
-        $this->consumeSource = $consumeSource;
+        $this->kdtId = $kdtId;
     }
 
     /**
@@ -107,22 +107,6 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDescription(): string
-    {
-        return $this->description;
-    }
-
-    /**
-     * @param string $description
-     */
-    public function setDescription(string $description): void
-    {
-        $this->description = $description;
-    }
-
-    /**
-     * @return string
-     */
     public function getBizValue(): string
     {
         return $this->bizValue;
@@ -137,35 +121,51 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     }
 
     /**
+     * @return string
+     */
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription(string $description): void
+    {
+        $this->description = $description;
+    }
+
+    /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getConsumeSource(): int
     {
-        return $this->kdtId;
+        return $this->consumeSource;
     }
 
     /**
-     * @param int $kdtId
+     * @param int $consumeSource
      */
-    public function setKdtId(int $kdtId): void
+    public function setConsumeSource(int $consumeSource): void
     {
-        $this->kdtId = $kdtId;
+        $this->consumeSource = $consumeSource;
     }
 
     /**
-     * @return ExtCustomerInfoDTO
+     * @return stdClass
      */
-    public function getExtCustomerInfoDTO(): ExtCustomerInfoDTO
+    public function getExtraInfo(): stdClass
     {
-        return $this->extCustomerInfoDTO;
+        return $this->extraInfo;
     }
 
     /**
-     * @param ExtCustomerInfoDTO $extCustomerInfoDTO
+     * @param stdClass $extraInfo
      */
-    public function setExtCustomerInfoDTO(ExtCustomerInfoDTO $extCustomerInfoDTO): void
+    public function setExtraInfo(stdClass $extraInfo): void
     {
-        $this->extCustomerInfoDTO = $extCustomerInfoDTO;
+        $this->extraInfo = $extraInfo;
     }
 
     public function jsonSerialize() {

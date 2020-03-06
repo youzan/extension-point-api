@@ -67,7 +67,7 @@ class ThirdpartyVoucherDTO implements \JsonSerializable {
     private $validEndTime;
 
     /**
-     * 
+     * 扩展字段
      * @var stdClass
      */
     private $extMap;

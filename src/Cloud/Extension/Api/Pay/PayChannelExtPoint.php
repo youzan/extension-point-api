@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Pay\PayResponseDTOOutParam;
 
 interface PayChannelExtPoint {
 
-    public function pay(PayRequestDTO $request) : PayResponseDTOOutParam;
+    public function pay(PayRequestDTO $) : PayResponseDTOOutParam;
 
 }

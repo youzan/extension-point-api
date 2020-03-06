@@ -2,8 +2,8 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
-use StdClass;
 use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerInfoDTO;
+use StdClass;
 
 /**
  * 请求参数
@@ -11,24 +11,6 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerInfoDTO;
  * @create 2018-10-08 17:30:15.0
  */
 class ExtPointsDecreaseDTO implements \JsonSerializable {
-
-    /**
-     * 操作人名称
-     * @var string
-     */
-    private $operatorName;
-
-    /**
-     * 扩展信息
-     * @var stdClass
-     */
-    private $extraInfo;
-
-    /**
-     * 积分扣减事件，200：活动扣减积分；201：交易退款扣减积分
-     * @var int
-     */
-    private $eventType;
 
     /**
      * 帐号信息
@@ -49,60 +31,30 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     private $description;
 
     /**
+     * 积分扣减事件，200：活动扣减积分；201：交易退款扣减积分
+     * @var int
+     */
+    private $eventType;
+
+    /**
      * 业务唯一标识
      * @var string
      */
     private $bizValue;
 
-
+    /**
+     * 扩展信息
+     * @var stdClass
+     */
+    private $extraInfo;
 
     /**
-     * @return string
+     * 操作人名称
+     * @var string
      */
-    public function getOperatorName(): string
-    {
-        return $this->operatorName;
-    }
+    private $operatorName;
 
-    /**
-     * @param string $operatorName
-     */
-    public function setOperatorName(string $operatorName): void
-    {
-        $this->operatorName = $operatorName;
-    }
 
-    /**
-     * @return stdClass
-     */
-    public function getExtraInfo(): stdClass
-    {
-        return $this->extraInfo;
-    }
-
-    /**
-     * @param stdClass $extraInfo
-     */
-    public function setExtraInfo(stdClass $extraInfo): void
-    {
-        $this->extraInfo = $extraInfo;
-    }
-
-    /**
-     * @return int
-     */
-    public function getEventType(): int
-    {
-        return $this->eventType;
-    }
-
-    /**
-     * @param int $eventType
-     */
-    public function setEventType(int $eventType): void
-    {
-        $this->eventType = $eventType;
-    }
 
     /**
      * @return ExtCustomerInfoDTO
@@ -153,6 +105,22 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     }
 
     /**
+     * @return int
+     */
+    public function getEventType(): int
+    {
+        return $this->eventType;
+    }
+
+    /**
+     * @param int $eventType
+     */
+    public function setEventType(int $eventType): void
+    {
+        $this->eventType = $eventType;
+    }
+
+    /**
      * @return string
      */
     public function getBizValue(): string
@@ -166,6 +134,38 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     public function setBizValue(string $bizValue): void
     {
         $this->bizValue = $bizValue;
+    }
+
+    /**
+     * @return stdClass
+     */
+    public function getExtraInfo(): stdClass
+    {
+        return $this->extraInfo;
+    }
+
+    /**
+     * @param stdClass $extraInfo
+     */
+    public function setExtraInfo(stdClass $extraInfo): void
+    {
+        $this->extraInfo = $extraInfo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOperatorName(): string
+    {
+        return $this->operatorName;
+    }
+
+    /**
+     * @param string $operatorName
+     */
+    public function setOperatorName(string $operatorName): void
+    {
+        $this->operatorName = $operatorName;
     }
 
     public function jsonSerialize() {

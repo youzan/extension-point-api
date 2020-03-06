@@ -12,13 +12,13 @@ use StdClass;
 class VoucherVerifyExtPointResponse implements \JsonSerializable {
 
     /**
-     * 核销是否成功
+     * 核销是否成功（请求成功）
      * @var bool
      */
     private $verifySuccess;
 
     /**
-     * 是否为核销操作幂等成功
+     * 是否为核销操作幂等成功，若不是幂等，则为false
      * @var bool
      */
     private $idempotentSuccess;
@@ -27,7 +27,7 @@ class VoucherVerifyExtPointResponse implements \JsonSerializable {
      * 订单号
      * @var string
      */
-    private $order;
+    private $orderNo;
 
     /**
      * 订单号来源
@@ -36,19 +36,19 @@ class VoucherVerifyExtPointResponse implements \JsonSerializable {
     private $orderSource;
 
     /**
-     * 
+     * 一般为错误信息
      * @var string
      */
     private $errorMsg;
 
     /**
-     * 
+     * 扩展点版本号
      * @var int
      */
     private $versionNo;
 
     /**
-     * 
+     * 扩展字段
      * @var stdClass
      */
     private $extMap;
@@ -90,17 +90,17 @@ class VoucherVerifyExtPointResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrder(): string
+    public function getOrderNo(): string
     {
-        return $this->order;
+        return $this->orderNo;
     }
 
     /**
-     * @param string $order
+     * @param string $orderNo
      */
-    public function setOrder(string $order): void
+    public function setOrderNo(string $orderNo): void
     {
-        $this->order = $order;
+        $this->orderNo = $orderNo;
     }
 
     /**

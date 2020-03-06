@@ -27,7 +27,7 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
      * 订单号
      * @var string
      */
-    private $order;
+    private $orderNo;
 
     /**
      * 订单号来源 订单号+订单来源唯一确定一个买家订单
@@ -84,17 +84,17 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrder(): string
+    public function getOrderNo(): string
     {
-        return $this->order;
+        return $this->orderNo;
     }
 
     /**
-     * @param string $order
+     * @param string $orderNo
      */
-    public function setOrder(string $order): void
+    public function setOrderNo(string $orderNo): void
     {
-        $this->order = $order;
+        $this->orderNo = $orderNo;
     }
 
     /**

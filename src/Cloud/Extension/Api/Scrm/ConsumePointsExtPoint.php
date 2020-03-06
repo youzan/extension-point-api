@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ResultOutParam;
 
 interface ConsumePointsExtPoint {
 
-    public function invoke(ExtPointsConsumeDTO $extPointsConsumeDTO) : ResultOutParam;
+    public function invoke(ExtPointsConsumeDTO $) : ResultOutParam;
 
 }
