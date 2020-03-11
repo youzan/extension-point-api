@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Retail\FulfillTimeRequestListDTO;
 /**
  * 
  * @author Baymax
- * @create 2019-10-12 10:30:48.0
+ * @create Sat Oct 12 10:30:48 CST 2019
  */
 class FulfillTimeListRequestDTO implements \JsonSerializable {
 
