@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 /**
  * 
  * @author Baymax
- * @create Thu Aug 15 16:24:20 CST 2019
+ * @create 2019-08-15 16:24:20.0
  */
 class RefundResponseDTO implements \JsonSerializable {
 

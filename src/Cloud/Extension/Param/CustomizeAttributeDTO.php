@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 
  * @author Baymax
- * @create Tue Sep 10 17:13:06 CST 2019
+ * @create 2019-09-10 17:13:06.0
  */
 class CustomizeAttributeDTO implements \JsonSerializable {
 
@@ -19,15 +19,15 @@ class CustomizeAttributeDTO implements \JsonSerializable {
 
     /**
      * 
-     * @var string
-     */
-    private $value;
-
-    /**
-     * 
      * @var int
      */
     private $dataType;
+
+    /**
+     * 
+     * @var string
+     */
+    private $value;
 
 
 
@@ -48,22 +48,6 @@ class CustomizeAttributeDTO implements \JsonSerializable {
     }
 
     /**
-     * @return string
-     */
-    public function getValue(): string
-    {
-        return $this->value;
-    }
-
-    /**
-     * @param string $value
-     */
-    public function setValue(string $value): void
-    {
-        $this->value = $value;
-    }
-
-    /**
      * @return int
      */
     public function getDataType(): int
@@ -77,6 +61,22 @@ class CustomizeAttributeDTO implements \JsonSerializable {
     public function setDataType(int $dataType): void
     {
         $this->dataType = $dataType;
+    }
+
+    /**
+     * @return string
+     */
+    public function getValue(): string
+    {
+        return $this->value;
+    }
+
+    /**
+     * @param string $value
+     */
+    public function setValue(string $value): void
+    {
+        $this->value = $value;
     }
 
     public function jsonSerialize() {

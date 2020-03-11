@@ -8,84 +8,84 @@ use StdClass;
 /**
  * 
  * @author Baymax
- * @create Thu Aug 15 11:23:21 CST 2019
+ * @create 2019-08-15 11:23:21.0
  */
 class PayRequestDTO implements \JsonSerializable {
 
     /**
-     * 有赞商户号
+     * 
      * @var string
      */
     private $mchId;
 
     /**
-     * 有赞支付单号
+     * 
      * @var string
      */
     private $yzTradeNo;
 
     /**
-     * 支付方式
+     * 
      * @var string
      */
     private $tradeType;
 
     /**
-     * 支付总金额，单位为分
+     * 
      * @var int
      */
     private $payAmount;
 
     /**
-     * 币种信息，默认为CNY
+     * 
      * @var string
      */
     private $payCurrency;
 
     /**
-     * 通知地址
+     * 
      * @var string
      */
     private $notifyUrl;
 
     /**
-     * 终端IP
+     * 
      * @var string
      */
     private $clientIp;
 
     /**
-     * 支付渠道
+     * 
      * @var string
      */
     private $payChannel;
 
     /**
-     * 场景信息
+     * 
      * @var string
      */
     private $payEnv;
 
     /**
-     * 交易起始时间
+     * 
      * @var int
      */
     private $timeStart;
 
     /**
-     * 交易结束时间
+     * 
      * @var int
      */
     private $timeExpired;
 
     /**
-     * 附加数据
+     * 
      * @var string
      */
     private $attach;
 
     /**
-     * 扩展字段
+     * 
      * @var stdClass
      */
     private $extra;

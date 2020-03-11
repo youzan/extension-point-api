@@ -11,7 +11,7 @@ use Com\Youzan\Cloud\Extension\Param\Retail\DeliveryOrderItemDTO;
 /**
  * 
  * @author Baymax
- * @create Tue Jul 23 14:49:51 CST 2019
+ * @create 2019-07-23 14:49:51.0
  */
 class DeliveryOrderSyncRequestDTO implements \JsonSerializable {
 

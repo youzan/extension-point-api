@@ -9,7 +9,7 @@ use DateTime;
 /**
  * 采购单明细
  * @author Baymax
- * @create Sat Jul 20 10:12:09 CST 2019
+ * @create 2019-07-20 10:12:09.0
  */
 class PurchaseOrderParamDTO implements \JsonSerializable {
 
