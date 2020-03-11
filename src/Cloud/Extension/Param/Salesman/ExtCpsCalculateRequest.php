@@ -6,74 +6,74 @@ use Com\Youzan\Cloud\Extension\Param\Salesman\ExtOrderItemDTO;
 use Com\Youzan\Cloud\Extension\Param\Salesman\ExtPromotionDTO;
 
 /**
- * 请求参数
+ * 
  * @author Baymax
  * @create 2019-12-12 09:29:19.0
  */
 class ExtCpsCalculateRequest implements \JsonSerializable {
 
     /**
-     * 店铺名
+     * 
      * @var string
      */
     private $shopName;
 
     /**
-     * 分销员yzopenid
-     * @var string
+     * 
+     * @var int
      */
     private $dsOpenId;
 
     /**
-     * 邀请方分销员yzopenid   * 若没有则为空
-     * @var string
+     * 
+     * @var int
      */
     private $fromDsOpenId;
 
     /**
-     * 买家yzopenid
-     * @var string
+     * 
+     * @var int
      */
     private $ctOpenId;
 
     /**
-     * 订单号
+     * 
      * @var string
      */
     private $orderNo;
 
     /**
-     * 订单总价 &#x3D; realPay + postage
+     * 
      * @var int
      */
     private $pay;
 
     /**
-     * 订单实付金额 （分）： 不包含邮费
+     * 
      * @var int
      */
     private $realPay;
 
     /**
-     * 邮费（分）
+     * 
      * @var int
      */
     private $postage;
 
     /**
-     * 是否包邮
+     * 
      * @var int
      */
     private $isFreePostage;
 
     /**
-     * 订单商品信息
+     * 
      * @var array
      */
     private $items;
 
     /**
-     * 优惠明细
+     * 
      * @var ExtPromotionDTO
      */
     private $promotion;
@@ -103,49 +103,49 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getDsOpenId(): string
+    public function getDsOpenId(): int
     {
         return $this->dsOpenId;
     }
 
     /**
-     * @param string $dsOpenId
+     * @param int $dsOpenId
      */
-    public function setDsOpenId(string $dsOpenId): void
+    public function setDsOpenId(int $dsOpenId): void
     {
         $this->dsOpenId = $dsOpenId;
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getFromDsOpenId(): string
+    public function getFromDsOpenId(): int
     {
         return $this->fromDsOpenId;
     }
 
     /**
-     * @param string $fromDsOpenId
+     * @param int $fromDsOpenId
      */
-    public function setFromDsOpenId(string $fromDsOpenId): void
+    public function setFromDsOpenId(int $fromDsOpenId): void
     {
         $this->fromDsOpenId = $fromDsOpenId;
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getCtOpenId(): string
+    public function getCtOpenId(): int
     {
         return $this->ctOpenId;
     }
 
     /**
-     * @param string $ctOpenId
+     * @param int $ctOpenId
      */
-    public function setCtOpenId(string $ctOpenId): void
+    public function setCtOpenId(int $ctOpenId): void
     {
         $this->ctOpenId = $ctOpenId;
     }

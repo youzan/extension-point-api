@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ResultOutParam;
 
 interface IncreasePointsExtPoint {
 
-    public function invoke(ExtPointsIncreaseDTO $request) : ResultOutParam;
+    public function invoke(ExtPointsIncreaseDTO $) : ResultOutParam;
 
 }

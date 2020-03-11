@@ -5,62 +5,62 @@ namespace Com\Youzan\Cloud\Extension\Param\Salesman;
 
 
 /**
- * 计价商品级优惠
+ * 
  * @author Baymax
  * @create 2019-12-12 09:29:19.0
  */
 class ExtOrderItemPriceChangeLog implements \JsonSerializable {
 
     /**
-     * 订单号
+     * 
      * @var string
      */
     private $orderNo;
 
     /**
-     * 订单商品id
+     * 
      * @var int
      */
     private $itemId;
 
     /**
-     * 修改字段
+     * 
      * @var string
      */
     private $fieldName;
 
     /**
-     * 价格变化类型
+     * 
      * @var string
      */
     private $changeType;
 
     /**
-     * 原价
+     * 
      * @var int
      */
     private $oldValue;
 
     /**
-     * 现价
+     * 
      * @var int
      */
     private $newValue;
 
     /**
-     * 标签
+     * 
      * @var int
      */
     private $tag;
 
     /**
-     * 价格变化详细信息
+     * 
      * @var string
      */
     private $detail;
 
     /**
-     * 预留扩展字段
+     * 
      * @var string
      */
     private $extra;

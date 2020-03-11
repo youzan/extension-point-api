@@ -24,37 +24,37 @@ class ExtItemCpsDetail implements \JsonSerializable {
     private $skuId;
 
     /**
-     * 商品数量
+     * 
      * @var int
      */
     private $num;
 
     /**
-     * 商品实付金额 回传
+     * 
      * @var int
      */
     private $realPay;
 
     /**
-     * 商品佣金
+     * 
      * @var int
      */
     private $cpsMoney;
 
     /**
-     * 商品佣金比例          * 50% —— 5000          * 10.8% - 1080
+     * 
      * @var int
      */
     private $iRate;
 
     /**
-     * 商品邀请奖励
+     * 
      * @var int
      */
     private $bonusMoney;
 
     /**
-     * 邀请奖励比例          * 格式同 iRate
+     * 
      * @var int
      */
     private $iiRate;

@@ -24,10 +24,10 @@ class ExtCustomerIdentityDTO implements \JsonSerializable {
     private $accountType;
 
     /**
-     * 商户店铺ID
-     * @var int
+     * 有赞OpenId
+     * @var string
      */
-    private $kdtId;
+    private $yzOpenId;
 
 
 
@@ -64,19 +64,19 @@ class ExtCustomerIdentityDTO implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getKdtId(): int
+    public function getYzOpenId(): string
     {
-        return $this->kdtId;
+        return $this->yzOpenId;
     }
 
     /**
-     * @param int $kdtId
+     * @param string $yzOpenId
      */
-    public function setKdtId(int $kdtId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
-        $this->kdtId = $kdtId;
+        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {
