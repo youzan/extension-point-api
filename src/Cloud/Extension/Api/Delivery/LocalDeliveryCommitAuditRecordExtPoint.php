@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Delivery\LocalDeliveryCommitAuditResponseDT
 
 interface LocalDeliveryCommitAuditRecordExtPoint {
 
-    public function handle(LocalDeliveryCommitAuditDTO $shopChannelDTO) : LocalDeliveryCommitAuditResponseDTOOutParam;
+    public function handle(LocalDeliveryCommitAuditDTO $request) : LocalDeliveryCommitAuditResponseDTOOutParam;
 
 }

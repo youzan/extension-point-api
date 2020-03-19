@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Delivery;
 class LocalDeliveryCommitAuditResponseDTO implements \JsonSerializable {
 
     /**
-     * 审核结果，   1 -&gt; 审核中 ; 2 -&gt; 审核成功; 3 -&gt; 审核失败
+     * 审核结果，   1 -&amp;gt; 审核中 ; 2 -&amp;gt; 审核成功; 3 -&amp;gt; 审核失败
      * @var int
      */
     private $auditResult;

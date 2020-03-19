@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Model;
 
-
+use Com\Youzan\Cloud\Extension\Param\Xxx\XXXDTO;
 
 /**
  * 
@@ -19,9 +19,15 @@ class BizTestResponseDTO implements \JsonSerializable {
 
     /**
      * 
-     * @var string
+     * @var array
      */
     private $message;
+
+    /**
+     * 
+     * @var array
+     */
+    private $errorData;
 
 
 
@@ -42,19 +48,35 @@ class BizTestResponseDTO implements \JsonSerializable {
     }
 
     /**
-     * @return string
+     * @return array
      */
-    public function getMessage(): string
+    public function getMessage(): array
     {
         return $this->message;
     }
 
     /**
-     * @param string $message
+     * @param array $message
      */
-    public function setMessage(string $message): void
+    public function setMessage(array $message): void
     {
         $this->message = $message;
+    }
+
+    /**
+     * @return array
+     */
+    public function getErrorData(): array
+    {
+        return $this->errorData;
+    }
+
+    /**
+     * @param array $errorData
+     */
+    public function setErrorData(array $errorData): void
+    {
+        $this->errorData = $errorData;
     }
 
     public function jsonSerialize() {
