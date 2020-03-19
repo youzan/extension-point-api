@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Result\VisitedSubShopPageQueryResultOutPara
 
 interface SubShopVisitExtPoint {
 
-    public function search(ShopSearchForVisitRequest $) : VisitedSubShopPageQueryResultOutParam;
+    public function search(ShopSearchForVisitRequest $request) : VisitedSubShopPageQueryResultOutParam;
 
 }
