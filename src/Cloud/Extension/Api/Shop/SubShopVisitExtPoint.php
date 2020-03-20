@@ -9,4 +9,6 @@ interface SubShopVisitExtPoint {
 
     public function search(ShopSearchForVisitRequest $request) : VisitedSubShopPageQueryResultOutParam;
 
+    public function search(ShopSearchForVisitRequest $request) : VisitedSubShopPageQueryResultOutParam;
+
 }

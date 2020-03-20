@@ -12,37 +12,37 @@ namespace Com\Youzan\Cloud\Extension\Param\Retail;
 class FulfillTimeResponseListDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 门店/仓库编码
      * @var string
      */
     private $wareHouseCode;
 
     /**
-     * 
+     * sku编码
      * @var string
      */
     private $skuNo;
 
     /**
-     * 
+     * 商品数量
      * @var int
      */
     private $num;
 
     /**
-     * 
+     * 买家距离(km)
      * @var string
      */
     private $distance;
 
     /**
-     * 
+     * 备货时常(秒)
      * @var int
      */
     private $totalStoreSeconds;
 
     /**
-     * 
+     * 配送时长(秒)
      * @var int
      */
     private $totalDeliverySeconds;
