@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ModifyCustomerResponseDTOOutParam;
 
 interface ModifyCustomerExtPoint {
 
-    public function execute(ModifyCustomerRequestDTO $) : ModifyCustomerResponseDTOOutParam;
+    public function execute(ModifyCustomerRequestDTO $request) : ModifyCustomerResponseDTOOutParam;
 
 }
