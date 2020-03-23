@@ -8,18 +8,18 @@ use StdClass;
 /**
  * 请求参数
  * @author Baymax
- * @create Fri Oct 12 14:13:44 CST 2018
+ * @create 2018-10-12 14:13:44.0
  */
 class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
 
     /**
-     * 用户识别信息
+     * 17658987654
      * @var ExtCustomerIdentityDTO
      */
     private $extCustomerIdentityDTO;
 
     /**
-     * 
+     * 商户店铺ID
      * @var int
      */
     private $kdtId;
@@ -28,7 +28,7 @@ class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
      * 
      * @var stdClass
      */
-    private $extMap;
+    private $extensionMap;
 
 
 
@@ -67,17 +67,17 @@ class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): stdClass
+    public function getExtensionMap(): stdClass
     {
-        return $this->extMap;
+        return $this->extensionMap;
     }
 
     /**
-     * @param stdClass $extMap
+     * @param stdClass $extensionMap
      */
-    public function setExtMap(stdClass $extMap): void
+    public function setExtensionMap(stdClass $extensionMap): void
     {
-        $this->extMap = $extMap;
+        $this->extensionMap = $extensionMap;
     }
 
     public function jsonSerialize() {

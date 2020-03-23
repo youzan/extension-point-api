@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ModifyMemberResponseOutParam;
 
 interface ModifyMemberExtPoint {
 
-    public function execute(ModifyMemberRequestDTO $modifyMemberRequest) : ModifyMemberResponseOutParam;
+    public function execute(ModifyMemberRequestDTO $request) : ModifyMemberResponseOutParam;
 
 }

@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 /**
  * 
  * @author Baymax
- * @create Fri Nov 22 11:54:57 CST 2019
+ * @create 2019-11-22 11:54:57.0
  */
 class ValueCardExtRechargeRequest implements \JsonSerializable {
 
@@ -24,7 +24,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     private $acquireNo;
 
     /**
-     * 卡号  注：单卡场景下，可能为空，此时业务方需要自调用开卡接口
+     * 卡号 注：单卡场景下，可能为空，此时业务方需要自调用开卡接口
      * @var string
      */
     private $cardNo;
@@ -60,16 +60,34 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     private $userPhone;
 
     /**
-     * 店铺id
-     * @var int
-     */
-    private $kdtId;
-
-    /**
      * 充值的时候使用的 支付方式
      * @var string
      */
     private $payMethod;
+
+    /**
+     * 礼包号
+     * @var string
+     */
+    private $giftPackId;
+
+    /**
+     * 礼包版本 默认：V 1.0
+     * @var string
+     */
+    private $giftPackVersion;
+
+    /**
+     * 描述，说明, 最大120字, 不做校验默认空字符串
+     * @var string
+     */
+    private $remark;
+
+    /**
+     * 店铺id
+     * @var int
+     */
+    private $kdtId;
 
     /**
      * 支付渠道
@@ -82,24 +100,6 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
      * @var string
      */
     private $markPayMethod;
-
-    /**
-     * 礼包号
-     * @var string
-     */
-    private $giftPackId;
-
-    /**
-     * 礼包版本   默认：V 1.0
-     * @var string
-     */
-    private $giftPackVersion;
-
-    /**
-     * 描述，说明, 最大120字, 不做校验默认空字符串
-     * @var string
-     */
-    private $remark;
 
 
 
@@ -232,22 +232,6 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     }
 
     /**
-     * @return int
-     */
-    public function getKdtId(): int
-    {
-        return $this->kdtId;
-    }
-
-    /**
-     * @param int $kdtId
-     */
-    public function setKdtId(int $kdtId): void
-    {
-        $this->kdtId = $kdtId;
-    }
-
-    /**
      * @return string
      */
     public function getPayMethod(): string
@@ -261,38 +245,6 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     public function setPayMethod(string $payMethod): void
     {
         $this->payMethod = $payMethod;
-    }
-
-    /**
-     * @return int
-     */
-    public function getPayChannel(): int
-    {
-        return $this->payChannel;
-    }
-
-    /**
-     * @param int $payChannel
-     */
-    public function setPayChannel(int $payChannel): void
-    {
-        $this->payChannel = $payChannel;
-    }
-
-    /**
-     * @return string
-     */
-    public function getMarkPayMethod(): string
-    {
-        return $this->markPayMethod;
-    }
-
-    /**
-     * @param string $markPayMethod
-     */
-    public function setMarkPayMethod(string $markPayMethod): void
-    {
-        $this->markPayMethod = $markPayMethod;
     }
 
     /**
@@ -341,6 +293,54 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     public function setRemark(string $remark): void
     {
         $this->remark = $remark;
+    }
+
+    /**
+     * @return int
+     */
+    public function getKdtId(): int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPayChannel(): int
+    {
+        return $this->payChannel;
+    }
+
+    /**
+     * @param int $payChannel
+     */
+    public function setPayChannel(int $payChannel): void
+    {
+        $this->payChannel = $payChannel;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMarkPayMethod(): string
+    {
+        return $this->markPayMethod;
+    }
+
+    /**
+     * @param string $markPayMethod
+     */
+    public function setMarkPayMethod(string $markPayMethod): void
+    {
+        $this->markPayMethod = $markPayMethod;
     }
 
     public function jsonSerialize() {

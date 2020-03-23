@@ -5,17 +5,11 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
 
 /**
- * 用户识别信息
+ * 17658987654
  * @author Baymax
- * @create Fri Oct 12 14:13:44 CST 2018
+ * @create 2018-10-12 14:13:44.0
  */
 class ExtCustomerIdentityDTO implements \JsonSerializable {
-
-    /**
-     * 帐号类型，目前有以下几种类型，WxOpenId：微信openId，WxUnionId：微信unionId，Mobile：手机号，YouZanAccount：有赞帐号
-     * @var string
-     */
-    private $accountType;
 
     /**
      * 帐号ID
@@ -24,28 +18,18 @@ class ExtCustomerIdentityDTO implements \JsonSerializable {
     private $accountId;
 
     /**
-     * 商户店铺ID
+     * 帐号类型，目前有以下几种类型，WxOpenId：微信openId，WxUnionId：微信unionId，Mobile：手机号，YouZanAccount：有赞帐号
+     * @var string
+     */
+    private $accountType;
+
+    /**
+     * 有赞OpenId来识别唯一用户信息
      * @var int
      */
-    private $kdtId;
+    private $yzOpenId;
 
 
-
-    /**
-     * @return string
-     */
-    public function getAccountType(): string
-    {
-        return $this->accountType;
-    }
-
-    /**
-     * @param string $accountType
-     */
-    public function setAccountType(string $accountType): void
-    {
-        $this->accountType = $accountType;
-    }
 
     /**
      * @return string
@@ -64,19 +48,35 @@ class ExtCustomerIdentityDTO implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getKdtId(): int
+    public function getAccountType(): string
     {
-        return $this->kdtId;
+        return $this->accountType;
     }
 
     /**
-     * @param int $kdtId
+     * @param string $accountType
      */
-    public function setKdtId(int $kdtId): void
+    public function setAccountType(string $accountType): void
     {
-        $this->kdtId = $kdtId;
+        $this->accountType = $accountType;
+    }
+
+    /**
+     * @return int
+     */
+    public function getYzOpenId(): int
+    {
+        return $this->yzOpenId;
+    }
+
+    /**
+     * @param int $yzOpenId
+     */
+    public function setYzOpenId(int $yzOpenId): void
+    {
+        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {

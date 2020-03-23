@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Delivery\BaseResponseDTOOutParam;
 
 interface LocalDeliveryAddTipExtPoint {
 
-    public function handle(AddTipDTO $addTipDTO) : BaseResponseDTOOutParam;
+    public function handle(AddTipDTO $request) : BaseResponseDTOOutParam;
 
 }

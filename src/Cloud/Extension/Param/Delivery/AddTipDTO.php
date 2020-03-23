@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Delivery;
 /**
  * 
  * @author Baymax
- * @create Thu Sep 19 17:27:24 CST 2019
+ * @create 2019-09-19 17:27:24.0
  */
 class AddTipDTO implements \JsonSerializable {
 

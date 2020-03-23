@@ -7,42 +7,42 @@ namespace Com\Youzan\Cloud\Extension\Param\Retail;
 /**
  * 
  * @author Baymax
- * @create Sat Oct 12 10:30:49 CST 2019
+ * @create 2019-10-12 10:30:49.0
  */
 class FulfillTimeResponseListDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 门店/仓库编码
      * @var string
      */
     private $wareHouseCode;
 
     /**
-     * 
+     * sku编码
      * @var string
      */
     private $skuNo;
 
     /**
-     * 
+     * 商品数量
      * @var int
      */
     private $num;
 
     /**
-     * 
+     * 买家距离(km)
      * @var string
      */
     private $distance;
 
     /**
-     * 
+     * 备货时常(秒)
      * @var int
      */
     private $totalStoreSeconds;
 
     /**
-     * 
+     * 配送时长(秒)
      * @var int
      */
     private $totalDeliverySeconds;

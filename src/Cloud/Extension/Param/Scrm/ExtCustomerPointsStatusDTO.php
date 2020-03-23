@@ -7,15 +7,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 /**
  * 
  * @author Baymax
- * @create Thu Oct 11 17:21:06 CST 2018
+ * @create 2018-10-11 17:21:06.0
  */
 class ExtCustomerPointsStatusDTO implements \JsonSerializable {
-
-    /**
-     * 累计获得的积分数(只增不减)，当会员不存在时设置为0
-     * @var int
-     */
-    private $totalPoints;
 
     /**
      * 当前积分，当会员不存在时设置为0
@@ -23,23 +17,13 @@ class ExtCustomerPointsStatusDTO implements \JsonSerializable {
      */
     private $currentPoints;
 
-
-
     /**
-     * @return int
+     * 累计获得的积分数(只增不减)，当会员不存在时设置为0
+     * @var int
      */
-    public function getTotalPoints(): int
-    {
-        return $this->totalPoints;
-    }
+    private $totalPoints;
 
-    /**
-     * @param int $totalPoints
-     */
-    public function setTotalPoints(int $totalPoints): void
-    {
-        $this->totalPoints = $totalPoints;
-    }
+
 
     /**
      * @return int
@@ -55,6 +39,22 @@ class ExtCustomerPointsStatusDTO implements \JsonSerializable {
     public function setCurrentPoints(int $currentPoints): void
     {
         $this->currentPoints = $currentPoints;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTotalPoints(): int
+    {
+        return $this->totalPoints;
+    }
+
+    /**
+     * @param int $totalPoints
+     */
+    public function setTotalPoints(int $totalPoints): void
+    {
+        $this->totalPoints = $totalPoints;
     }
 
     public function jsonSerialize() {

@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Delivery;
 /**
  * 
  * @author Baymax
- * @create Thu Sep 19 19:08:53 CST 2019
+ * @create 2019-09-19 19:08:53.0
  */
 class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
 
@@ -24,7 +24,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     private $shopName;
 
     /**
-     * 业务类型 1 -&gt; 食品小吃; 2 -&gt; 食品饮料; 3 -&gt; 鲜花; 8 -&gt; 文印票务; 9 -&gt; 商超便利店; 13 -&gt; 水果生鲜; 20 -&gt; 医药; 21 -&gt; 蛋糕; 24 -&gt; 酒品; 26 -&gt; 服装; 27 -&gt; 汽修零配; 28 -&gt; 数码; 5 -&gt; 其他
+     * 业务类型 1 -&amp;gt; 食品小吃; 2 -&amp;gt; 食品饮料; 3 -&amp;gt; 鲜花; 8 -&amp;gt; 文印票务; 9 -&amp;gt; 商超便利店; 13 -&amp;gt; 水果生鲜; 20 -&amp;gt; 医药; 21 -&amp;gt; 蛋糕; 24 -&amp;gt; 酒品; 26 -&amp;gt; 服装; 27 -&amp;gt; 汽修零配; 28 -&amp;gt; 数码; 5 -&amp;gt; 其他
      * @var int
      */
     private $business;

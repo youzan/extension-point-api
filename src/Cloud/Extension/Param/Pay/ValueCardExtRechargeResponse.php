@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 /**
  * 
  * @author Baymax
- * @create Fri Nov 22 11:54:57 CST 2019
+ * @create 2019-11-22 11:54:57.0
  */
 class ValueCardExtRechargeResponse implements \JsonSerializable {
 
@@ -22,6 +22,12 @@ class ValueCardExtRechargeResponse implements \JsonSerializable {
      * @var int
      */
     private $buyerId;
+
+    /**
+     * 用户手机号
+     * @var string
+     */
+    private $userPhone;
 
     /**
      * 业务充值单号，以此做幂等
@@ -77,12 +83,6 @@ class ValueCardExtRechargeResponse implements \JsonSerializable {
      */
     private $sumBonusDnom;
 
-    /**
-     * 用户手机号
-     * @var string
-     */
-    private $userPhone;
-
 
 
     /**
@@ -115,6 +115,22 @@ class ValueCardExtRechargeResponse implements \JsonSerializable {
     public function setBuyerId(int $buyerId): void
     {
         $this->buyerId = $buyerId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUserPhone(): string
+    {
+        return $this->userPhone;
+    }
+
+    /**
+     * @param string $userPhone
+     */
+    public function setUserPhone(string $userPhone): void
+    {
+        $this->userPhone = $userPhone;
     }
 
     /**
@@ -259,22 +275,6 @@ class ValueCardExtRechargeResponse implements \JsonSerializable {
     public function setSumBonusDnom(int $sumBonusDnom): void
     {
         $this->sumBonusDnom = $sumBonusDnom;
-    }
-
-    /**
-     * @return string
-     */
-    public function getUserPhone(): string
-    {
-        return $this->userPhone;
-    }
-
-    /**
-     * @param string $userPhone
-     */
-    public function setUserPhone(string $userPhone): void
-    {
-        $this->userPhone = $userPhone;
     }
 
     public function jsonSerialize() {

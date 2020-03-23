@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\CustomizeAttributeDTO;
 /**
  * 
  * @author Baymax
- * @create Wed Oct 10 13:15:37 CST 2018
+ * @create 2018-10-10 13:15:37.0
  */
 class CustomerProfileModifyDTO implements \JsonSerializable {
 
@@ -35,6 +35,12 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
      * @var ContactAddressModifyDTO
      */
     private $contactAddressModifyDTO;
+
+    /**
+     * 邮箱
+     * @var string
+     */
+    private $email;
 
     /**
      * 
@@ -106,6 +112,22 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
     public function setContactAddressModifyDTO(ContactAddressModifyDTO $contactAddressModifyDTO): void
     {
         $this->contactAddressModifyDTO = $contactAddressModifyDTO;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param string $email
+     */
+    public function setEmail(string $email): void
+    {
+        $this->email = $email;
     }
 
     /**

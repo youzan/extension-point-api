@@ -7,15 +7,9 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerPointsLogDTO;
 /**
  * 请求参数
  * @author Baymax
- * @create Sun Nov 04 21:41:34 CST 2018
+ * @create 2018-11-04 21:41:34.0
  */
 class ExtCustomerPointsLogPaginationDTO implements \JsonSerializable {
-
-    /**
-     * 积分变动总数
-     * @var int
-     */
-    private $total;
 
     /**
      * 积分变动日志列表
@@ -23,23 +17,13 @@ class ExtCustomerPointsLogPaginationDTO implements \JsonSerializable {
      */
     private $logDTOList;
 
-
-
     /**
-     * @return int
+     * 积分变动总数
+     * @var int
      */
-    public function getTotal(): int
-    {
-        return $this->total;
-    }
+    private $total;
 
-    /**
-     * @param int $total
-     */
-    public function setTotal(int $total): void
-    {
-        $this->total = $total;
-    }
+
 
     /**
      * @return array
@@ -55,6 +39,22 @@ class ExtCustomerPointsLogPaginationDTO implements \JsonSerializable {
     public function setLogDTOList(array $logDTOList): void
     {
         $this->logDTOList = $logDTOList;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTotal(): int
+    {
+        return $this->total;
+    }
+
+    /**
+     * @param int $total
+     */
+    public function setTotal(int $total): void
+    {
+        $this->total = $total;
     }
 
     public function jsonSerialize() {
