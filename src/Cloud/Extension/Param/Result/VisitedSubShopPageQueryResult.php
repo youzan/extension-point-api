@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Chain\SubShopVisitInfo;
 /**
  * 
  * @author Baymax
- * @create 2020-03-19 10:50:21.0
+ * @create Thu Mar 19 10:50:21 CST 2020
  */
 class VisitedSubShopPageQueryResult implements \JsonSerializable {
 

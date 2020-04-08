@@ -30,10 +30,34 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     private $cardType;
 
     /**
-     * 店铺标识
-     * @var int
+     * 卡状态：INIT:初始化,NORMAL:正常,CFREEZE:冻结,CLOSE:已注销,RECEDING:退卡处理中,RECEDED:已退卡
+     * @var string
      */
-    private $kdtId;
+    private $cardStatus;
+
+    /**
+     * 卡号
+     * @var array
+     */
+    private $cardNoList;
+
+    /**
+     * 页码，页数据, 默认为 1
+     * @var array
+     */
+    private $page;
+
+    /**
+     * 一页获取的 数据条数, 默认为 10
+     * @var array
+     */
+    private $pageSize;
+
+    /**
+     * 有赞UID
+     * @var array
+     */
+    private $buyerId;
 
 
 
@@ -86,19 +110,83 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getKdtId(): int
+    public function getCardStatus(): string
     {
-        return $this->kdtId;
+        return $this->cardStatus;
     }
 
     /**
-     * @param int $kdtId
+     * @param string $cardStatus
      */
-    public function setKdtId(int $kdtId): void
+    public function setCardStatus(string $cardStatus): void
     {
-        $this->kdtId = $kdtId;
+        $this->cardStatus = $cardStatus;
+    }
+
+    /**
+     * @return array
+     */
+    public function getCardNoList(): array
+    {
+        return $this->cardNoList;
+    }
+
+    /**
+     * @param array $cardNoList
+     */
+    public function setCardNoList(array $cardNoList): void
+    {
+        $this->cardNoList = $cardNoList;
+    }
+
+    /**
+     * @return array
+     */
+    public function getPage(): array
+    {
+        return $this->page;
+    }
+
+    /**
+     * @param array $page
+     */
+    public function setPage(array $page): void
+    {
+        $this->page = $page;
+    }
+
+    /**
+     * @return array
+     */
+    public function getPageSize(): array
+    {
+        return $this->pageSize;
+    }
+
+    /**
+     * @param array $pageSize
+     */
+    public function setPageSize(array $pageSize): void
+    {
+        $this->pageSize = $pageSize;
+    }
+
+    /**
+     * @return array
+     */
+    public function getBuyerId(): array
+    {
+        return $this->buyerId;
+    }
+
+    /**
+     * @param array $buyerId
+     */
+    public function setBuyerId(array $buyerId): void
+    {
+        $this->buyerId = $buyerId;
     }
 
     public function jsonSerialize() {

@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Scrm;
+namespace Com\Youzan\Cloud\Extension\Param\Beauty;
 
-use Com\Youzan\Cloud\Extension\Param\Scrm\ModifyMemberResponse;
+use Com\Youzan\Cloud\Extension\Param\Beauty\GroupOpenCheckResponseDTO;
 
 /**
  * 返回类
  * @author Baymax
- * @create 2018-09-29 21:39:22.0
+ * @create 2020-03-20 14:36:00.0
  */
-class ModifyMemberResponseOutParam implements \JsonSerializable {
+class GroupOpenCheckResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ModifyMemberResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var ModifyMemberResponse
+     * @var GroupOpenCheckResponseDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ModifyMemberResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return ModifyMemberResponse
+     * @return GroupOpenCheckResponseDTO
      */
-    public function getData(): ModifyMemberResponse
+    public function getData(): GroupOpenCheckResponseDTO
     {
         return $this->data;
     }
 
     /**
-     * @param ModifyMemberResponse $data
+     * @param GroupOpenCheckResponseDTO $data
      */
-    public function setData(ModifyMemberResponse $data): void
+    public function setData(GroupOpenCheckResponseDTO $data): void
     {
         $this->data = $data;
     }
