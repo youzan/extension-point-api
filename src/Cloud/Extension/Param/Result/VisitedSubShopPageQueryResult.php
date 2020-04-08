@@ -12,25 +12,25 @@ use Com\Youzan\Cloud\Extension\Param\Chain\SubShopVisitInfo;
 class VisitedSubShopPageQueryResult implements \JsonSerializable {
 
     /**
-     * 
+     * 买家上次访问的分店kdtId
      * @var int
      */
     private $lastVisitedKdtId;
 
     /**
-     * 
+     * 符合条件的分店总数
      * @var int
      */
     private $total;
 
     /**
-     * 
+     * 页码
      * @var int
      */
     private $pageNum;
 
     /**
-     * 
+     * 每页条数
      * @var int
      */
     private $pageSize;

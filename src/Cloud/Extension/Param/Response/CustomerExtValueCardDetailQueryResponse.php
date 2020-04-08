@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Dto;
+namespace Com\Youzan\Cloud\Extension\Param\Response;
 
 use DateTime;
 
 /**
  * 
  * @author Baymax
- * @create 2020-01-06 12:52:32.0
+ * @create 2020-03-24 11:28:49.0
  */
-class CustomerValueCardExtDTO implements \JsonSerializable {
+class CustomerExtValueCardDetailQueryResponse implements \JsonSerializable {
 
     /**
      * 使用说明
@@ -18,7 +18,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     private $useSpecification;
 
     /**
-     * 是否可用
+     * 是否可用，true:可用，false:不可用
      * @var bool
      */
     private $usable;
@@ -30,7 +30,13 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     private $unusableReason;
 
     /**
-     * 过期时间
+     * 有效期类型，1：永久有效，2：固定期限
+     * @var int
+     */
+    private $strategyType;
+
+    /**
+     * 到期时间，有效期类型为固定期限时必填
      * @var int
      */
     private $expireDate;
@@ -48,46 +54,40 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     private $cardNo;
 
     /**
-     * 背景图
+     * 背景图，为空则默认填充有赞背景图
      * @var string
      */
     private $backgroundImage;
 
     /**
-     * 卡状态 * INIT 初始化 * NORMAL 正常 * CFREEZE 冻结 * CLOSE 已注销 * RECEDING 退卡处理中 * RECEDED 已退卡
+     * 卡状态
      * @var string
      */
     private $cardStatus;
 
     /**
-     * 卡类型 * BALANCE_CARD：储值余额类型 * VALUE_CARD：储值卡 * ALL：全部 （默认）
+     * 卡类型
      * @var string
      */
     private $cardType;
 
     /**
-     * 卡内总余额（分）
+     * 卡内总余额
      * @var int
      */
     private $balance;
 
     /**
-     * 本金余额（分）
+     * 本金余额
      * @var int
      */
     private $principalDnom;
 
     /**
-     * 赠送金余额（分）
+     * 赠送金余额
      * @var int
      */
     private $sumBonusDnom;
-
-    /**
-     * 过期类型
-     * @var int
-     */
-    private $strategyType;
 
 
 
@@ -137,6 +137,22 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     public function setUnusableReason(string $unusableReason): void
     {
         $this->unusableReason = $unusableReason;
+    }
+
+    /**
+     * @return int
+     */
+    public function getStrategyType(): int
+    {
+        return $this->strategyType;
+    }
+
+    /**
+     * @param int $strategyType
+     */
+    public function setStrategyType(int $strategyType): void
+    {
+        $this->strategyType = $strategyType;
     }
 
     /**
@@ -281,22 +297,6 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     public function setSumBonusDnom(int $sumBonusDnom): void
     {
         $this->sumBonusDnom = $sumBonusDnom;
-    }
-
-    /**
-     * @return int
-     */
-    public function getStrategyType(): int
-    {
-        return $this->strategyType;
-    }
-
-    /**
-     * @param int $strategyType
-     */
-    public function setStrategyType(int $strategyType): void
-    {
-        $this->strategyType = $strategyType;
     }
 
     public function jsonSerialize() {

@@ -12,43 +12,43 @@ namespace Com\Youzan\Cloud\Extension\Param\Common;
 class Address implements \JsonSerializable {
 
     /**
-     * 
+     * 省份
      * @var string
      */
     private $province;
 
     /**
-     * 
+     * 城市
      * @var string
      */
     private $city;
 
     /**
-     * 
+     * 区县
      * @var string
      */
     private $county;
 
     /**
-     * 
+     * 区县地址编码
      * @var int
      */
     private $countyId;
 
     /**
-     * 
+     * 详细地址
      * @var string
      */
     private $address;
 
     /**
-     * 
+     * 经度，百度坐标系
      * @var string
      */
     private $lng;
 
     /**
-     * 
+     * 纬度，百度坐标系
      * @var string
      */
     private $lat;

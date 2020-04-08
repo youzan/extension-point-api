@@ -42,7 +42,7 @@ class RefundResponseDTO implements \JsonSerializable {
     private $refundNo;
 
     /**
-     * 退款金额
+     * 退款金额，单位为分
      * @var int
      */
     private $refundAmount;
@@ -60,7 +60,7 @@ class RefundResponseDTO implements \JsonSerializable {
     private $attach;
 
     /**
-     * 退款状态
+     * 退款申请成功：APPLY_SUCCESS  退款申请失败：APPLY_FAIL  退款状态未知：UNKNOW（此状态返回时候，有赞会不换单号重试退款申请操作）
      * @var string
      */
     private $refundStatus;

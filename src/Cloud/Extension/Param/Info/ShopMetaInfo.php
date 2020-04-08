@@ -5,26 +5,26 @@ namespace Com\Youzan\Cloud\Extension\Param\Info;
 
 
 /**
- * 
+ * 仅appendShopMetaInfo&#x3D;true时有值
  * @author Baymax
  * @create 2020-03-19 10:50:21.0
  */
 class ShopMetaInfo implements \JsonSerializable {
 
     /**
-     * 
+     * 店铺kdtId
      * @var int
      */
     private $kdtId;
 
     /**
-     * 
+     * 店铺名称
      * @var string
      */
     private $shopName;
 
     /**
-     * 
+     * 店铺锁定状态：0正常 1锁定 9删除
      * @var int
      */
     private $lockStatus;

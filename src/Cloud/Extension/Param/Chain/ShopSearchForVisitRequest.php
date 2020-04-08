@@ -12,133 +12,127 @@ namespace Com\Youzan\Cloud\Extension\Param\Chain;
 class ShopSearchForVisitRequest implements \JsonSerializable {
 
     /**
-     * 
+     * 营销活动别名（将根据活动支持的店铺过滤）。只要透传该参数
      * @var string
      */
     private $umpAlias;
 
     /**
-     * 
+     * 营销活动类型（将根据活动支持的店铺过滤）：collectgift 收藏有礼，checkin 日历签到；只要透传该参数
      * @var string
      */
     private $umpType;
 
     /**
-     * 
+     * 总部kdtId
      * @var int
      */
     private $hqKdtId;
 
     /**
-     * 
+     * 店铺名称
      * @var string
      */
     private $shopName;
 
     /**
-     * 
-     * @var int
+     * 买家openId
+     * @var string
      */
-    private $buyerId;
+    private $yzOpenId;
 
     /**
-     * 
+     * 经营模式：1直营，2加盟
      * @var array
      */
     private $joinTypes;
 
     /**
-     * 
+     * 店铺生命周期：try 试用期，valid 有效期，protect 保护期，close 打烊。一般不展示打烊的店铺
      * @var array
      */
     private $shopLifecycleStatuses;
 
     /**
-     * 
-     * @var string
-     */
-    private $sortName;
-
-    /**
-     * 
+     * 1 升序 2 降序
      * @var int
      */
     private $sortType;
 
     /**
-     * 
+     * 店铺角色列表：2 表示门店或网店。当前只有2
      * @var array
      */
     private $shopRoleList;
 
     /**
-     * 
+     * 店铺所在省份
      * @var string
      */
     private $province;
 
     /**
-     * 
+     * 店铺所在城市
      * @var string
      */
     private $city;
 
     /**
-     * 
+     * 买家位置经度，百度坐标系
      * @var string
      */
     private $lng;
 
     /**
-     * 
+     * 买家位置纬度，百度坐标系
      * @var string
      */
     private $lat;
 
     /**
-     * 
+     * 是否开启网店：true开启，false关闭。用于区分shopRole&#x3D;2的店铺
      * @var bool
      */
     private $onlineOpen;
 
     /**
-     * 
+     * 是否开启线下店：true开启，false关闭。用于区分shopRole&#x3D;2的店铺
      * @var bool
      */
     private $offlineOpen;
 
     /**
-     * 
+     * 返回值是否填充店铺元数据，true 填充，false 不填充。只要透传该参数
      * @var bool
      */
     private $appendShopMetaInfo;
 
     /**
-     * 
+     * 排除店铺kdtId列表
      * @var array
      */
     private $excludeKdtIds;
 
     /**
-     * 
+     * 页码。从1到100。
      * @var int
      */
     private $pageNum;
 
     /**
-     * 
+     * 每页条数，最大100
      * @var int
      */
     private $pageSize;
 
     /**
-     * 
+     * 指定店铺kdtId列表
      * @var array
      */
     private $kdtIds;
 
     /**
-     * 
+     * 是否展示网店切换，针对网店的补充条件
      * @var bool
      */
     private $isShowOnlineShopSwitch;
@@ -210,19 +204,19 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getBuyerId(): int
+    public function getYzOpenId(): string
     {
-        return $this->buyerId;
+        return $this->yzOpenId;
     }
 
     /**
-     * @param int $buyerId
+     * @param string $yzOpenId
      */
-    public function setBuyerId(int $buyerId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
-        $this->buyerId = $buyerId;
+        $this->yzOpenId = $yzOpenId;
     }
 
     /**
@@ -255,22 +249,6 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     public function setShopLifecycleStatuses(array $shopLifecycleStatuses): void
     {
         $this->shopLifecycleStatuses = $shopLifecycleStatuses;
-    }
-
-    /**
-     * @return string
-     */
-    public function getSortName(): string
-    {
-        return $this->sortName;
-    }
-
-    /**
-     * @param string $sortName
-     */
-    public function setSortName(string $sortName): void
-    {
-        $this->sortName = $sortName;
     }
 
     /**

@@ -3,7 +3,6 @@
 namespace Com\Youzan\Cloud\Extension\Param\Chain;
 
 use Com\Youzan\Cloud\Extension\Param\Common\Address;
-use Com\Youzan\Cloud\Extension\Param\Common\Manager;
 use DateTime;
 use Com\Youzan\Cloud\Extension\Param\Info\ShopMetaInfo;
 
@@ -15,37 +14,37 @@ use Com\Youzan\Cloud\Extension\Param\Info\ShopMetaInfo;
 class SubShopVisitInfo implements \JsonSerializable {
 
     /**
-     * 
+     * 店铺kdtId
      * @var int
      */
     private $kdtId;
 
     /**
-     * 
+     * 总部kdtId
      * @var int
      */
     private $hqKdtId;
 
     /**
-     * 
+     * 店铺名称
      * @var string
      */
     private $shopName;
 
     /**
-     * 
+     * 店铺logo url
      * @var string
      */
     private $logo;
 
     /**
-     * 
+     * 店铺角色列表：2 表示门店或网店。当前只有2
      * @var int
      */
     private $shopRole;
 
     /**
-     * 
+     * 经营模式：1 直营，2 加盟
      * @var int
      */
     private $joinType;
@@ -57,37 +56,25 @@ class SubShopVisitInfo implements \JsonSerializable {
     private $address;
 
     /**
-     * 
-     * @var Manager
-     */
-    private $manager;
-
-    /**
-     * 
+     * 店铺生命周期阶段：try 试用期，valid 有效期，protect 保护期，close 打烊
      * @var string
      */
     private $lifecycleStatus;
 
     /**
-     * 
+     * 当前生命周期阶段结束时间
      * @var int
      */
     private $lifecycleEndTime;
 
     /**
-     * 
-     * @var int
-     */
-    private $staffNum;
-
-    /**
-     * 
+     * 距离，单位m
      * @var int
      */
     private $distance;
 
     /**
-     * 
+     * 仅appendShopMetaInfo&#x3D;true时有值
      * @var ShopMetaInfo
      */
     private $shopMetaInfo;
@@ -207,22 +194,6 @@ class SubShopVisitInfo implements \JsonSerializable {
     }
 
     /**
-     * @return Manager
-     */
-    public function getManager(): Manager
-    {
-        return $this->manager;
-    }
-
-    /**
-     * @param Manager $manager
-     */
-    public function setManager(Manager $manager): void
-    {
-        $this->manager = $manager;
-    }
-
-    /**
      * @return string
      */
     public function getLifecycleStatus(): string
@@ -252,22 +223,6 @@ class SubShopVisitInfo implements \JsonSerializable {
     public function setLifecycleEndTime(int $lifecycleEndTime): void
     {
         $this->lifecycleEndTime = $lifecycleEndTime;
-    }
-
-    /**
-     * @return int
-     */
-    public function getStaffNum(): int
-    {
-        return $this->staffNum;
-    }
-
-    /**
-     * @param int $staffNum
-     */
-    public function setStaffNum(int $staffNum): void
-    {
-        $this->staffNum = $staffNum;
     }
 
     /**
