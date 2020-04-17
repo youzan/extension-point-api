@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Beauty;
+namespace Com\Youzan\Cloud\Extension\Param\Account;
 
-use Com\Youzan\Cloud\Extension\Param\Beauty\NewCustomerCheckResponseDTO;
+use Com\Youzan\Cloud\Extension\Param\Account\ExtAccountVerifyResponseDTO;
 
 /**
  * 返回类
  * @author Baymax
- * @create Fri Mar 20 17:16:03 CST 2020
+ * @create 2020-04-16 10:50:54.0
  */
-class NewCustomerCheckResponseDTOOutParam implements \JsonSerializable {
+class ExtAccountVerifyResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class NewCustomerCheckResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var NewCustomerCheckResponseDTO
+     * @var ExtAccountVerifyResponseDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class NewCustomerCheckResponseDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return NewCustomerCheckResponseDTO
+     * @return ExtAccountVerifyResponseDTO
      */
-    public function getData(): NewCustomerCheckResponseDTO
+    public function getData(): ExtAccountVerifyResponseDTO
     {
         return $this->data;
     }
 
     /**
-     * @param NewCustomerCheckResponseDTO $data
+     * @param ExtAccountVerifyResponseDTO $data
      */
-    public function setData(NewCustomerCheckResponseDTO $data): void
+    public function setData(ExtAccountVerifyResponseDTO $data): void
     {
         $this->data = $data;
     }

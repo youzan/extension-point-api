@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Beauty;
 /**
  * 
  * @author Baymax
- * @create 2020-03-20 14:36:00.0
+ * @create Fri Mar 20 14:36:00 CST 2020
  */
 class GroupOpenCheckResponseDTO implements \JsonSerializable {
 

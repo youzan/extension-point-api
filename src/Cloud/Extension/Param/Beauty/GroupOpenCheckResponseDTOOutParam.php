@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Beauty\GroupOpenCheckResponseDTO;
 /**
  * 返回类
  * @author Baymax
- * @create 2020-03-20 14:36:00.0
+ * @create Fri Mar 20 14:36:00 CST 2020
  */
 class GroupOpenCheckResponseDTOOutParam implements \JsonSerializable {
 
