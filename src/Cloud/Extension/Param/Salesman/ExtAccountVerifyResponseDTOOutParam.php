@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Salesman\ExtAccountVerifyResponseDTO;
 /**
  * 返回类
  * @author Baymax
- * @create 2019-04-12 20:34:00.0
+ * @create Fri Apr 12 20:34:00 CST 2019
  */
 class ExtAccountVerifyResponseDTOOutParam implements \JsonSerializable {
 
