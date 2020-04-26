@@ -3,6 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param;
 
 use Com\Youzan\Cloud\Extension\Param\SkuCompositeId;
+use Com\Youzan\Cloud\Extension\Param\ShopCompositeId;
 
 /**
  * 交易条目
@@ -16,6 +17,12 @@ class TradeItemDTO implements \JsonSerializable {
      * @var SkuCompositeId
      */
     private $skuCompositeId;
+
+    /**
+     * shop复合Id
+     * @var ShopCompositeId
+     */
+    private $shopCompositeId;
 
     /**
      * 数量
@@ -51,6 +58,22 @@ class TradeItemDTO implements \JsonSerializable {
     public function setSkuCompositeId(SkuCompositeId $skuCompositeId): void
     {
         $this->skuCompositeId = $skuCompositeId;
+    }
+
+    /**
+     * @return ShopCompositeId
+     */
+    public function getShopCompositeId(): ShopCompositeId
+    {
+        return $this->shopCompositeId;
+    }
+
+    /**
+     * @param ShopCompositeId $shopCompositeId
+     */
+    public function setShopCompositeId(ShopCompositeId $shopCompositeId): void
+    {
+        $this->shopCompositeId = $shopCompositeId;
     }
 
     /**
