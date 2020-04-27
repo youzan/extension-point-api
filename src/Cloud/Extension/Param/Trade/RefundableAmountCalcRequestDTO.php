@@ -19,7 +19,7 @@ class RefundableAmountCalcRequestDTO implements \JsonSerializable {
     private $orderNo;
 
     /**
-     * 
+     * 商品标识
      * @var int
      */
     private $goodsId;

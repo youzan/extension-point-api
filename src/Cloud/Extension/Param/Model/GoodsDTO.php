@@ -1,0 +1,107 @@
+<?php
+
+namespace Com\Youzan\Cloud\Extension\Param\Model;
+
+use Com\Youzan\Cloud\Extension\Param\Model\GoodsIdentityDTO;
+
+/**
+ * 
+ * @author Baymax
+ * @create 2020-04-27 17:33:11.0
+ */
+class GoodsDTO implements \JsonSerializable {
+
+    /**
+     * 
+     * @var GoodsIdentityDTO
+     */
+    private $goodsIdentity;
+
+    /**
+     * 
+     * @var int
+     */
+    private $price;
+
+    /**
+     * 
+     * @var int
+     */
+    private $pay;
+
+    /**
+     * 
+     * @var int
+     */
+    private $num;
+
+
+
+    /**
+     * @return GoodsIdentityDTO
+     */
+    public function getGoodsIdentity(): GoodsIdentityDTO
+    {
+        return $this->goodsIdentity;
+    }
+
+    /**
+     * @param GoodsIdentityDTO $goodsIdentity
+     */
+    public function setGoodsIdentity(GoodsIdentityDTO $goodsIdentity): void
+    {
+        $this->goodsIdentity = $goodsIdentity;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPrice(): int
+    {
+        return $this->price;
+    }
+
+    /**
+     * @param int $price
+     */
+    public function setPrice(int $price): void
+    {
+        $this->price = $price;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPay(): int
+    {
+        return $this->pay;
+    }
+
+    /**
+     * @param int $pay
+     */
+    public function setPay(int $pay): void
+    {
+        $this->pay = $pay;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNum(): int
+    {
+        return $this->num;
+    }
+
+    /**
+     * @param int $num
+     */
+    public function setNum(int $num): void
+    {
+        $this->num = $num;
+    }
+
+    public function jsonSerialize() {
+        return get_object_vars($this);
+    }
+}
