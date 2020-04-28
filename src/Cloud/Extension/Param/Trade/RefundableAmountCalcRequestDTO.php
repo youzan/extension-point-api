@@ -19,6 +19,12 @@ class RefundableAmountCalcRequestDTO implements \JsonSerializable {
     private $orderNo;
 
     /**
+     * 商品标识
+     * @var int
+     */
+    private $goodsId;
+
+    /**
      * 订单级别可退
      * @var int
      */
@@ -52,6 +58,22 @@ class RefundableAmountCalcRequestDTO implements \JsonSerializable {
     public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
+    }
+
+    /**
+     * @return int
+     */
+    public function getGoodsId(): int
+    {
+        return $this->goodsId;
+    }
+
+    /**
+     * @param int $goodsId
+     */
+    public function setGoodsId(int $goodsId): void
+    {
+        $this->goodsId = $goodsId;
     }
 
     /**

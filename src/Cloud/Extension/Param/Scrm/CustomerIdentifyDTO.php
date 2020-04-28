@@ -35,6 +35,12 @@ class CustomerIdentifyDTO implements \JsonSerializable {
      */
     private $mobile;
 
+    /**
+     * 
+     * @var string
+     */
+    private $yzOpenId;
+
 
 
     /**
@@ -99,6 +105,22 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     public function setMobile(string $mobile): void
     {
         $this->mobile = $mobile;
+    }
+
+    /**
+     * @return string
+     */
+    public function getYzOpenId(): string
+    {
+        return $this->yzOpenId;
+    }
+
+    /**
+     * @param string $yzOpenId
+     */
+    public function setYzOpenId(string $yzOpenId): void
+    {
+        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {
