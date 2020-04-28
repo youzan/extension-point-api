@@ -13,7 +13,7 @@ class RefundableFeeDTO implements \JsonSerializable {
 
     /**
      * 子订单标识
-     * @var int
+     * @var string
      */
     private $itemId;
 
@@ -26,17 +26,17 @@ class RefundableFeeDTO implements \JsonSerializable {
 
 
     /**
-     * @return int
+     * @return string
      */
-    public function getItemId(): int
+    public function getItemId(): string
     {
         return $this->itemId;
     }
 
     /**
-     * @param int $itemId
+     * @param string $itemId
      */
-    public function setItemId(int $itemId): void
+    public function setItemId(string $itemId): void
     {
         $this->itemId = $itemId;
     }
