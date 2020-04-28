@@ -39,7 +39,7 @@ class RefundableAmountCalcRequestDTO implements \JsonSerializable {
 
     /**
      * 商品级别可退金额数据
-     * @var RefundableFeeDTO
+     * @var array
      */
     private $itemRefundableFeeList;
 
@@ -110,17 +110,17 @@ class RefundableAmountCalcRequestDTO implements \JsonSerializable {
     }
 
     /**
-     * @return RefundableFeeDTO
+     * @return array
      */
-    public function getItemRefundableFeeList(): RefundableFeeDTO
+    public function getItemRefundableFeeList(): array
     {
         return $this->itemRefundableFeeList;
     }
 
     /**
-     * @param RefundableFeeDTO $itemRefundableFeeList
+     * @param array $itemRefundableFeeList
      */
-    public function setItemRefundableFeeList(RefundableFeeDTO $itemRefundableFeeList): void
+    public function setItemRefundableFeeList(array $itemRefundableFeeList): void
     {
         $this->itemRefundableFeeList = $itemRefundableFeeList;
     }
