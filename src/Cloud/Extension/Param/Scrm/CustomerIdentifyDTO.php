@@ -30,13 +30,13 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * 
+     * 手机号
      * @var string
      */
     private $mobile;
 
     /**
-     * 
+     * yzOpenId
      * @var string
      */
     private $yzOpenId;
