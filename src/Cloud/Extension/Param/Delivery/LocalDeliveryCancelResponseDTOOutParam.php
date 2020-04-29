@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Delivery\LocalDeliveryCancelResponseDTO;
 /**
  * 返回类
  * @author Baymax
- * @create Thu Sep 19 18:20:05 CST 2019
+ * @create 2019-09-19 18:20:05.0
  */
 class LocalDeliveryCancelResponseDTOOutParam implements \JsonSerializable {
 

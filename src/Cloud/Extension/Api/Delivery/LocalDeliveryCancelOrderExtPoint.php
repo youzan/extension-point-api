@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Delivery\LocalDeliveryCancelResponseDTOOutP
 
 interface LocalDeliveryCancelOrderExtPoint {
 
-    public function handle(LocalDeliveryCancelDTO $cancelDTO) : LocalDeliveryCancelResponseDTOOutParam;
+    public function handle(LocalDeliveryCancelDTO $request) : LocalDeliveryCancelResponseDTOOutParam;
 
 }
