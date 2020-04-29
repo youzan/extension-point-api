@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Delivery\LocalDeliveryGetDeductFeeResponseD
 
 interface LocalDeliveryGetDeductFeeExtPoint {
 
-    public function handle(LocalDeliveryGetDeductFeeDTO $orderIdDTO) : LocalDeliveryGetDeductFeeResponseDTOOutParam;
+    public function handle(LocalDeliveryGetDeductFeeDTO $request) : LocalDeliveryGetDeductFeeResponseDTOOutParam;
 
 }

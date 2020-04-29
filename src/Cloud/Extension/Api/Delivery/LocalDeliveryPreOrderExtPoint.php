@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Delivery\LocalDeliveryPreOrderResponseDTOOu
 
 interface LocalDeliveryPreOrderExtPoint {
 
-    public function handle(LocalDeliveryOrderDTO $localDeliveryFeeDTO) : LocalDeliveryPreOrderResponseDTOOutParam;
+    public function handle(LocalDeliveryOrderDTO $request) : LocalDeliveryPreOrderResponseDTOOutParam;
 
 }

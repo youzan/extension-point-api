@@ -43,19 +43,19 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
 
     /**
      * 页码，页数据, 默认为 1
-     * @var array
+     * @var int
      */
     private $page;
 
     /**
      * 一页获取的 数据条数, 默认为 10
-     * @var array
+     * @var int
      */
     private $pageSize;
 
     /**
      * 有赞UID
-     * @var array
+     * @var string
      */
     private $buyerId;
 
@@ -142,49 +142,49 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     }
 
     /**
-     * @return array
+     * @return int
      */
-    public function getPage(): array
+    public function getPage(): int
     {
         return $this->page;
     }
 
     /**
-     * @param array $page
+     * @param int $page
      */
-    public function setPage(array $page): void
+    public function setPage(int $page): void
     {
         $this->page = $page;
     }
 
     /**
-     * @return array
+     * @return int
      */
-    public function getPageSize(): array
+    public function getPageSize(): int
     {
         return $this->pageSize;
     }
 
     /**
-     * @param array $pageSize
+     * @param int $pageSize
      */
-    public function setPageSize(array $pageSize): void
+    public function setPageSize(int $pageSize): void
     {
         $this->pageSize = $pageSize;
     }
 
     /**
-     * @return array
+     * @return string
      */
-    public function getBuyerId(): array
+    public function getBuyerId(): string
     {
         return $this->buyerId;
     }
 
     /**
-     * @param array $buyerId
+     * @param string $buyerId
      */
-    public function setBuyerId(array $buyerId): void
+    public function setBuyerId(string $buyerId): void
     {
         $this->buyerId = $buyerId;
     }

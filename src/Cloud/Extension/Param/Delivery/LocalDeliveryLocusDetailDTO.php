@@ -18,7 +18,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     private $orderOriginalId;
 
     /**
-     * 订单详情状态 1 —&gt; 待接单; 2 —&gt; 待取货|已接单; 3 —&gt; 配送中; 4 —&gt; 已完成; 5 —&gt; 已取消;
+     * 订单详情状态 1 —&amp;gt; 待接单; 2 —&amp;gt; 待取货|已接单; 3 —&amp;gt; 配送中; 4 —&amp;gt; 已完成; 5 —&amp;gt; 已取消;
      * @var int
      */
     private $orderStatus;
