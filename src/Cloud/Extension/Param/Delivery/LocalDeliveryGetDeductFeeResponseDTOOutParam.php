@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Delivery\LocalDeliveryGetDeductFeeResponseD
 /**
  * 返回类
  * @author Baymax
- * @create 2019-09-19 19:22:52.0
+ * @create Thu Sep 19 19:22:52 CST 2019
  */
 class LocalDeliveryGetDeductFeeResponseDTOOutParam implements \JsonSerializable {
 
