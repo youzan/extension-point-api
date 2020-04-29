@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Delivery\LocalDeliveryPreOrderResponseDTO;
 /**
  * 返回类
  * @author Baymax
- * @create 2019-09-19 19:51:17.0
+ * @create Thu Sep 19 19:51:17 CST 2019
  */
 class LocalDeliveryPreOrderResponseDTOOutParam implements \JsonSerializable {
 
