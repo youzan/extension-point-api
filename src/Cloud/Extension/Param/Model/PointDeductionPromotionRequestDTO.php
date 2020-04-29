@@ -4,7 +4,6 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 
 use Com\Youzan\Cloud\Extension\Param\Model\UserDTO;
 use Com\Youzan\Cloud\Extension\Param\Model\GoodsDTO;
-use StdClass;
 
 /**
  * 
@@ -60,12 +59,6 @@ class PointDeductionPromotionRequestDTO implements \JsonSerializable {
      * @var int
      */
     private $usePoints;
-
-    /**
-     * 
-     * @var stdClass
-     */
-    private $extraInfo;
 
 
 
@@ -195,22 +188,6 @@ class PointDeductionPromotionRequestDTO implements \JsonSerializable {
     public function setUsePoints(int $usePoints): void
     {
         $this->usePoints = $usePoints;
-    }
-
-    /**
-     * @return stdClass
-     */
-    public function getExtraInfo(): stdClass
-    {
-        return $this->extraInfo;
-    }
-
-    /**
-     * @param stdClass $extraInfo
-     */
-    public function setExtraInfo(stdClass $extraInfo): void
-    {
-        $this->extraInfo = $extraInfo;
     }
 
     public function jsonSerialize() {
