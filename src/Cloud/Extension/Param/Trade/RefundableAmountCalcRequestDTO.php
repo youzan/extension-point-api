@@ -4,11 +4,12 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 
 use StdClass;
 use Com\Youzan\Cloud\Extension\Param\Trade\RefundOrderDTO;
+use Com\Youzan\Cloud\Extension\Param\Trade\RefundableFeeDTO;
 
 /**
  * 
  * @author Baymax
- * @create Tue Jul 23 17:37:38 CST 2019
+ * @create 2019-07-23 17:37:38.0
  */
 class RefundableAmountCalcRequestDTO implements \JsonSerializable {
 
@@ -17,12 +18,6 @@ class RefundableAmountCalcRequestDTO implements \JsonSerializable {
      * @var string
      */
     private $orderNo;
-
-    /**
-     * 商品标识
-     * @var int
-     */
-    private $goodsId;
 
     /**
      * 订单级别可退
@@ -42,6 +37,12 @@ class RefundableAmountCalcRequestDTO implements \JsonSerializable {
      */
     private $refundOrderList;
 
+    /**
+     * 商品级别可退金额数据
+     * @var array
+     */
+    private $itemRefundableFeeList;
+
 
 
     /**
@@ -58,22 +59,6 @@ class RefundableAmountCalcRequestDTO implements \JsonSerializable {
     public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
-    }
-
-    /**
-     * @return int
-     */
-    public function getGoodsId(): int
-    {
-        return $this->goodsId;
-    }
-
-    /**
-     * @param int $goodsId
-     */
-    public function setGoodsId(int $goodsId): void
-    {
-        $this->goodsId = $goodsId;
     }
 
     /**
@@ -122,6 +107,22 @@ class RefundableAmountCalcRequestDTO implements \JsonSerializable {
     public function setRefundOrderList(array $refundOrderList): void
     {
         $this->refundOrderList = $refundOrderList;
+    }
+
+    /**
+     * @return array
+     */
+    public function getItemRefundableFeeList(): array
+    {
+        return $this->itemRefundableFeeList;
+    }
+
+    /**
+     * @param array $itemRefundableFeeList
+     */
+    public function setItemRefundableFeeList(array $itemRefundableFeeList): void
+    {
+        $this->itemRefundableFeeList = $itemRefundableFeeList;
     }
 
     public function jsonSerialize() {

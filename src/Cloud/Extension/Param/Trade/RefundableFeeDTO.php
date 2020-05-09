@@ -5,23 +5,23 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 
 
 /**
- * 
+ * 商品级别可退金额数据
  * @author Baymax
- * @create 2019-07-24 13:48:58.0
+ * @create 2020-04-27 20:55:56.0
  */
-class RefundableItemDTO implements \JsonSerializable {
+class RefundableFeeDTO implements \JsonSerializable {
 
     /**
-     * 商品项标识
+     * 子订单标识
      * @var string
      */
     private $itemId;
 
     /**
-     * 商品可退金额
+     * 商品当前可退金额
      * @var int
      */
-    private $refundableAmt;
+    private $itemRefundableFee;
 
 
 
@@ -44,17 +44,17 @@ class RefundableItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRefundableAmt(): int
+    public function getItemRefundableFee(): int
     {
-        return $this->refundableAmt;
+        return $this->itemRefundableFee;
     }
 
     /**
-     * @param int $refundableAmt
+     * @param int $itemRefundableFee
      */
-    public function setRefundableAmt(int $refundableAmt): void
+    public function setItemRefundableFee(int $itemRefundableFee): void
     {
-        $this->refundableAmt = $refundableAmt;
+        $this->itemRefundableFee = $itemRefundableFee;
     }
 
     public function jsonSerialize() {
