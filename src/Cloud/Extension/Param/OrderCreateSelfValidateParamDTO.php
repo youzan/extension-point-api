@@ -47,6 +47,12 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
      */
     private $yzOpenId;
 
+    /**
+     * 店铺id
+     * @var int
+     */
+    private $shopId;
+
 
 
     /**
@@ -143,6 +149,22 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getShopId(): int
+    {
+        return $this->shopId;
+    }
+
+    /**
+     * @param int $shopId
+     */
+    public function setShopId(int $shopId): void
+    {
+        $this->shopId = $shopId;
     }
 
     public function jsonSerialize() {
