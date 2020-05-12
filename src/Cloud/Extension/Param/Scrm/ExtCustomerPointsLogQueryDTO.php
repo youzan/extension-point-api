@@ -35,6 +35,18 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
      */
     private $type;
 
+    /**
+     * 开始时间戳（秒级）
+     * @var int
+     */
+    private $beginTime;
+
+    /**
+     * 结束时间戳（秒级）
+     * @var int
+     */
+    private $endTime;
+
 
 
     /**
@@ -99,6 +111,38 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     public function setType(int $type): void
     {
         $this->type = $type;
+    }
+
+    /**
+     * @return int
+     */
+    public function getBeginTime(): int
+    {
+        return $this->beginTime;
+    }
+
+    /**
+     * @param int $beginTime
+     */
+    public function setBeginTime(int $beginTime): void
+    {
+        $this->beginTime = $beginTime;
+    }
+
+    /**
+     * @return int
+     */
+    public function getEndTime(): int
+    {
+        return $this->endTime;
+    }
+
+    /**
+     * @param int $endTime
+     */
+    public function setEndTime(int $endTime): void
+    {
+        $this->endTime = $endTime;
     }
 
     public function jsonSerialize() {
