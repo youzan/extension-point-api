@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\TradeGroupDTO;
 /**
  * 
  * @author Baymax
- * @create Sun Sep 30 17:35:52 CST 2018
+ * @create 2018-09-30 17:35:52.0
  */
 class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
 
@@ -46,6 +46,12 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
      * @var string
      */
     private $yzOpenId;
+
+    /**
+     * 多网点ID
+     * @var int
+     */
+    private $nodeKdtid;
 
 
 
@@ -143,6 +149,22 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNodeKdtid(): int
+    {
+        return $this->nodeKdtid;
+    }
+
+    /**
+     * @param int $nodeKdtid
+     */
+    public function setNodeKdtid(int $nodeKdtid): void
+    {
+        $this->nodeKdtid = $nodeKdtid;
     }
 
     public function jsonSerialize() {
