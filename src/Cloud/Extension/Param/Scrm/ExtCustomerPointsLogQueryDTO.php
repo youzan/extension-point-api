@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerInfoDTO;
 /**
  * 请求参数
  * @author Baymax
- * @create Sun Nov 04 21:41:34 CST 2018
+ * @create 2018-11-04 21:41:34.0
  */
 class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
 
@@ -34,6 +34,18 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
      * @var int
      */
     private $type;
+
+    /**
+     * 开始时间戳（秒级）
+     * @var int
+     */
+    private $beginTime;
+
+    /**
+     * 结束时间戳（秒级）
+     * @var int
+     */
+    private $endTime;
 
 
 
@@ -99,6 +111,38 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     public function setType(int $type): void
     {
         $this->type = $type;
+    }
+
+    /**
+     * @return int
+     */
+    public function getBeginTime(): int
+    {
+        return $this->beginTime;
+    }
+
+    /**
+     * @param int $beginTime
+     */
+    public function setBeginTime(int $beginTime): void
+    {
+        $this->beginTime = $beginTime;
+    }
+
+    /**
+     * @return int
+     */
+    public function getEndTime(): int
+    {
+        return $this->endTime;
+    }
+
+    /**
+     * @param int $endTime
+     */
+    public function setEndTime(int $endTime): void
+    {
+        $this->endTime = $endTime;
     }
 
     public function jsonSerialize() {
