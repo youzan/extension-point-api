@@ -15,10 +15,10 @@ class ValueCardTakeRequest implements \JsonSerializable {
      * 领取人有赞开放ID
      * @var string
      */
-    private $buyerId;
+    private $yzOpenId;
 
     /**
-     * 赠送记录ID
+     * 赠送记录ID（调用方生成，取值自give扩展点返回giveId字段）
      * @var string
      */
     private $giveId;
@@ -28,17 +28,17 @@ class ValueCardTakeRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBuyerId(): string
+    public function getYzOpenId(): string
     {
-        return $this->buyerId;
+        return $this->yzOpenId;
     }
 
     /**
-     * @param string $buyerId
+     * @param string $yzOpenId
      */
-    public function setBuyerId(string $buyerId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
-        $this->buyerId = $buyerId;
+        $this->yzOpenId = $yzOpenId;
     }
 
     /**

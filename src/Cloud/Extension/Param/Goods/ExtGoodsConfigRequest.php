@@ -23,6 +23,24 @@ class ExtGoodsConfigRequest implements \JsonSerializable {
      */
     private $kdtId;
 
+    /**
+     * 分销员openId
+     * @var string
+     */
+    private $dsOpenId;
+
+    /**
+     * 分销员等级
+     * @var int
+     */
+    private $deLevel;
+
+    /**
+     * 分销员手机号
+     * @var string
+     */
+    private $dsMobile;
+
 
 
     /**
@@ -55,6 +73,54 @@ class ExtGoodsConfigRequest implements \JsonSerializable {
     public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDsOpenId(): string
+    {
+        return $this->dsOpenId;
+    }
+
+    /**
+     * @param string $dsOpenId
+     */
+    public function setDsOpenId(string $dsOpenId): void
+    {
+        $this->dsOpenId = $dsOpenId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getDeLevel(): int
+    {
+        return $this->deLevel;
+    }
+
+    /**
+     * @param int $deLevel
+     */
+    public function setDeLevel(int $deLevel): void
+    {
+        $this->deLevel = $deLevel;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDsMobile(): string
+    {
+        return $this->dsMobile;
+    }
+
+    /**
+     * @param string $dsMobile
+     */
+    public function setDsMobile(string $dsMobile): void
+    {
+        $this->dsMobile = $dsMobile;
     }
 
     public function jsonSerialize() {

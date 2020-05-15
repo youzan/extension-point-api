@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Goods;
 
-use Com\Youzan\Cloud\Extension\Param\Goods\ExtGoodsLevelRate;
+
 
 /**
  * 
@@ -24,10 +24,22 @@ class ExtGoodsConfigDetail implements \JsonSerializable {
     private $goodsId;
 
     /**
-     * 商品佣金设置，包含每个等级
-     * @var array
+     * 分销员等级，回传请求参数等级值
+     * @var int
      */
-    private $levelRateList;
+    private $level;
+
+    /**
+     * 一级佣金比例。返回整数. 大于0，小于等于 10000。示例 ：10.5% : 1050, 5% : 500
+     * @var int
+     */
+    private $iRate;
+
+    /**
+     * 二级佣金比例（邀请奖励）。返回整数. 大于0，小于等于10000.示例 ：10.5% : 1050, 5% :500
+     * @var int
+     */
+    private $iiRate;
 
 
 
@@ -64,19 +76,51 @@ class ExtGoodsConfigDetail implements \JsonSerializable {
     }
 
     /**
-     * @return array
+     * @return int
      */
-    public function getLevelRateList(): array
+    public function getLevel(): int
     {
-        return $this->levelRateList;
+        return $this->level;
     }
 
     /**
-     * @param array $levelRateList
+     * @param int $level
      */
-    public function setLevelRateList(array $levelRateList): void
+    public function setLevel(int $level): void
     {
-        $this->levelRateList = $levelRateList;
+        $this->level = $level;
+    }
+
+    /**
+     * @return int
+     */
+    public function getIRate(): int
+    {
+        return $this->iRate;
+    }
+
+    /**
+     * @param int $iRate
+     */
+    public function setIRate(int $iRate): void
+    {
+        $this->iRate = $iRate;
+    }
+
+    /**
+     * @return int
+     */
+    public function getIiRate(): int
+    {
+        return $this->iiRate;
+    }
+
+    /**
+     * @param int $iiRate
+     */
+    public function setIiRate(int $iiRate): void
+    {
+        $this->iiRate = $iiRate;
     }
 
     public function jsonSerialize() {

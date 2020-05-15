@@ -59,6 +59,12 @@ class ItemCalcDTO implements \JsonSerializable {
      */
     private $totalPrice;
 
+    /**
+     * 
+     * @var stdClass
+     */
+    private $extModelMap;
+
 
 
     /**
@@ -187,6 +193,22 @@ class ItemCalcDTO implements \JsonSerializable {
     public function setTotalPrice(int $totalPrice): void
     {
         $this->totalPrice = $totalPrice;
+    }
+
+    /**
+     * @return stdClass
+     */
+    public function getExtModelMap(): stdClass
+    {
+        return $this->extModelMap;
+    }
+
+    /**
+     * @param stdClass $extModelMap
+     */
+    public function setExtModelMap(stdClass $extModelMap): void
+    {
+        $this->extModelMap = $extModelMap;
     }
 
     public function jsonSerialize() {
