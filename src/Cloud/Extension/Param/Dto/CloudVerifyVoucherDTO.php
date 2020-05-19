@@ -33,7 +33,7 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
      * 券归属人id
      * @var string
      */
-    private $userId;
+    private $yzOpenId;
 
     /**
      * 凭证有效期开始时间
@@ -112,17 +112,17 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUserId(): string
+    public function getYzOpenId(): string
     {
-        return $this->userId;
+        return $this->yzOpenId;
     }
 
     /**
-     * @param string $userId
+     * @param string $yzOpenId
      */
-    public function setUserId(string $userId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
-        $this->userId = $userId;
+        $this->yzOpenId = $yzOpenId;
     }
 
     /**

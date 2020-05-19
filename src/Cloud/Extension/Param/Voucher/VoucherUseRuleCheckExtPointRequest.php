@@ -28,7 +28,7 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
      * 用户Id
      * @var string
      */
-    private $userId;
+    private $yzOpenId;
 
     /**
      * 
@@ -85,17 +85,17 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUserId(): string
+    public function getYzOpenId(): string
     {
-        return $this->userId;
+        return $this->yzOpenId;
     }
 
     /**
-     * @param string $userId
+     * @param string $yzOpenId
      */
-    public function setUserId(string $userId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
-        $this->userId = $userId;
+        $this->yzOpenId = $yzOpenId;
     }
 
     /**
