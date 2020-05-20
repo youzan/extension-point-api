@@ -8,78 +8,78 @@ use StdClass;
 /**
  * 
  * @author Baymax
- * @create Thu Aug 15 11:23:21 CST 2019
+ * @create 2019-08-15 11:23:21.0
  */
 class PayResponseDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 有赞支付单号
      * @var string
      */
     private $yzTradeNo;
 
     /**
-     * 
+     * 外部支付单号；有赞云支付通道扩展点服务回执单号
      * @var string
      */
     private $tradeNo;
 
     /**
-     * 
+     * 有赞分配的商户号
      * @var string
      */
     private $mchId;
 
     /**
-     * 
+     * 支付方式，例如微信、支付宝，同PAY_CHANNEL_API
      * @var string
      */
     private $tradeType;
 
     /**
-     * 
+     * 支付完成时间
      * @var int
      */
     private $payTime;
 
     /**
-     * 
+     * 支付状态  支付成功：SUCCESS,  支付失败：FAIL,  支付中：PAYING,  预支付成功：PRE_PAY_SUCCESS
      * @var string
      */
     private $tradeStatus;
 
     /**
-     * 
+     * 支付状态描述
      * @var string
      */
     private $tradeStatusDesc;
 
     /**
-     * 
+     * 支付渠道，同PAY_CHANNEL
      * @var string
      */
     private $payChannel;
 
     /**
-     * 
+     * 金额（单位为分 ）
      * @var int
      */
     private $payAmount;
 
     /**
-     * 
+     * 币种信息（默认为CNY）
      * @var string
      */
     private $payCurrency;
 
     /**
-     * 
+     * 附加数据（需原路返回）
      * @var string
      */
     private $attach;
 
     /**
-     * 
+     * 扩展字段
      * @var stdClass
      */
     private $extra;
