@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 
  * @author Baymax
- * @create Thu Aug 15 16:24:20 CST 2019
+ * @create 2019-08-15 16:24:20.0
  */
 class RefundRequestDTO implements \JsonSerializable {
 
@@ -18,13 +18,13 @@ class RefundRequestDTO implements \JsonSerializable {
     private $mchId;
 
     /**
-     * 有赞支付单号
+     * 有赞支付单号（和外部支付单号二选一，不能同时为空）
      * @var string
      */
     private $yzTradeNo;
 
     /**
-     * 外部支付单号
+     * 外部支付单号（和有赞支付单号二选一，不能同时为空）
      * @var string
      */
     private $tradeNo;
@@ -36,13 +36,13 @@ class RefundRequestDTO implements \JsonSerializable {
     private $yzRefundNo;
 
     /**
-     * 退款金额
+     * 退款金额，单位为分
      * @var int
      */
     private $refundAmount;
 
     /**
-     * 退款币种信息
+     * 退款币种信息。默认为CNY
      * @var string
      */
     private $refundCurrency;
