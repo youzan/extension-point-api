@@ -36,7 +36,7 @@ class CustomerExtValueCardDetailQueryResponse implements \JsonSerializable {
     private $strategyType;
 
     /**
-     * 到期时间，有效期类型为固定期限时必填
+     * 到期时间，有效期类型为固定期限时必填,Unix毫秒时间类型
      * @var int
      */
     private $expireDate;
@@ -48,43 +48,43 @@ class CustomerExtValueCardDetailQueryResponse implements \JsonSerializable {
     private $cardName;
 
     /**
-     * 卡号
+     * 卡号（调用方生成，总长度不得大于24）
      * @var string
      */
     private $cardNo;
 
     /**
-     * 背景图，为空则默认填充有赞背景图
+     * 背景图（http全路径,总长度不得大于225）
      * @var string
      */
     private $backgroundImage;
 
     /**
-     * 卡状态
+     * 卡状态：INIT:初始化,NORMAL:正常,CFREEZE:冻结,CLOSE:已注销,RECEDING:退卡处理中,RECEDED:已退卡
      * @var string
      */
     private $cardStatus;
 
     /**
-     * 卡类型
+     * 卡类型 BALANCE_CARD: 储值余额类型 VALUE_CARD：储值卡 ALL:全部
      * @var string
      */
     private $cardType;
 
     /**
-     * 卡内总余额
+     * 卡内总余额（分）
      * @var int
      */
     private $balance;
 
     /**
-     * 本金余额
+     * 本金余额（分）
      * @var int
      */
     private $principalDnom;
 
     /**
-     * 赠送金余额
+     * 赠送金余额（分）
      * @var int
      */
     private $sumBonusDnom;

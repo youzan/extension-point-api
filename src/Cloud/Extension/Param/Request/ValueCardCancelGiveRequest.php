@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 class ValueCardCancelGiveRequest implements \JsonSerializable {
 
     /**
-     * 赠送记录ID
+     * 赠送记录ID（调用方生成，取值自give赠送扩展点返回giveId）
      * @var string
      */
     private $giveId;
@@ -21,7 +21,7 @@ class ValueCardCancelGiveRequest implements \JsonSerializable {
      * 赠送人有赞开发ID
      * @var string
      */
-    private $buyerId;
+    private $yzOpenId;
 
 
 
@@ -44,17 +44,17 @@ class ValueCardCancelGiveRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBuyerId(): string
+    public function getYzOpenId(): string
     {
-        return $this->buyerId;
+        return $this->yzOpenId;
     }
 
     /**
-     * @param string $buyerId
+     * @param string $yzOpenId
      */
-    public function setBuyerId(string $buyerId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
-        $this->buyerId = $buyerId;
+        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {
