@@ -9,7 +9,7 @@ use StdClass;
 /**
  * 交易条目
  * @author Baymax
- * @create 2019-03-26 13:18:47.0
+ * @create Tue Mar 26 13:18:47 CST 2019
  */
 class TradeItemDTO implements \JsonSerializable {
 

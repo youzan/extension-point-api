@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param;
 
-
+use StdClass;
 
 /**
  * 复合id
@@ -22,6 +22,12 @@ class SkuCompositeId implements \JsonSerializable {
      * @var int
      */
     private $skuId;
+
+    /**
+     * 模型扩展字段
+     * @var stdClass
+     */
+    private $extModelMap;
 
 
 
@@ -55,6 +61,22 @@ class SkuCompositeId implements \JsonSerializable {
     public function setSkuId(int $skuId): void
     {
         $this->skuId = $skuId;
+    }
+
+    /**
+     * @return stdClass
+     */
+    public function getExtModelMap(): stdClass
+    {
+        return $this->extModelMap;
+    }
+
+    /**
+     * @param stdClass $extModelMap
+     */
+    public function setExtModelMap(stdClass $extModelMap): void
+    {
+        $this->extModelMap = $extModelMap;
     }
 
     public function jsonSerialize() {

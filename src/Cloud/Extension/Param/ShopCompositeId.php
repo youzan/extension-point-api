@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * shop复合Id
  * @author Baymax
- * @create 2020-04-23 18:07:47.0
+ * @create Thu Apr 23 18:07:47 CST 2020
  */
 class ShopCompositeId implements \JsonSerializable {
 

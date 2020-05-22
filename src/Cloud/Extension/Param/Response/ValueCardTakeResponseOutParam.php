@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Pay;
+namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Com\Youzan\Cloud\Extension\Param\Pay\PayResponseDTO;
+use Com\Youzan\Cloud\Extension\Param\Response\ValueCardTakeResponse;
 
 /**
  * 返回类
  * @author Baymax
- * @create Thu Aug 15 11:23:21 CST 2019
+ * @create 2020-03-24 10:55:54.0
  */
-class PayResponseDTOOutParam implements \JsonSerializable {
+class ValueCardTakeResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class PayResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var PayResponseDTO
+     * @var ValueCardTakeResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class PayResponseDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return PayResponseDTO
+     * @return ValueCardTakeResponse
      */
-    public function getData(): PayResponseDTO
+    public function getData(): ValueCardTakeResponse
     {
         return $this->data;
     }
 
     /**
-     * @param PayResponseDTO $data
+     * @param ValueCardTakeResponse $data
      */
-    public function setData(PayResponseDTO $data): void
+    public function setData(ValueCardTakeResponse $data): void
     {
         $this->data = $data;
     }
