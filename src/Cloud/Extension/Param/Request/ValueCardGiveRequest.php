@@ -15,22 +15,22 @@ class ValueCardGiveRequest implements \JsonSerializable {
      * 赠送人有赞开放ID
      * @var int
      */
-    private $buyerId;
+    private $yzOpenId;
 
     /**
-     * 待赠送卡号
+     * 待赠送卡号（调用方生成，取值自卡详情扩展点返回 cardNo 字段）
      * @var string
      */
     private $cardNo;
 
     /**
-     * 赠送语（不可超过115位）
+     * 赠送语（长度不得大于115）
      * @var string
      */
     private $giftMessage;
 
     /**
-     * 署名（不可超过15位）
+     * 署名（长度不得超过15位）
      * @var string
      */
     private $senderSign;
@@ -40,17 +40,17 @@ class ValueCardGiveRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBuyerId(): int
+    public function getYzOpenId(): int
     {
-        return $this->buyerId;
+        return $this->yzOpenId;
     }
 
     /**
-     * @param int $buyerId
+     * @param int $yzOpenId
      */
-    public function setBuyerId(int $buyerId): void
+    public function setYzOpenId(int $yzOpenId): void
     {
-        $this->buyerId = $buyerId;
+        $this->yzOpenId = $yzOpenId;
     }
 
     /**

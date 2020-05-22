@@ -18,7 +18,7 @@ class ValueCardBuyCenterRequest implements \JsonSerializable {
     private $page;
 
     /**
-     * 一页获取的数据条数, 默认为 10
+     * 一页获取的数据条数, 默认为10
      * @var int
      */
     private $pageSize;

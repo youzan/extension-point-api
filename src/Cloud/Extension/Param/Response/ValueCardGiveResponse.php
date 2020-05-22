@@ -18,7 +18,7 @@ class ValueCardGiveResponse implements \JsonSerializable {
     private $cardNo;
 
     /**
-     * 赠送记录ID
+     * 赠送记录ID（调用方赠送记录主键，由调用方生成，最大长度不得超过25）
      * @var string
      */
     private $giveId;

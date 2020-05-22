@@ -15,10 +15,10 @@ class ValueCardActivateRequest implements \JsonSerializable {
      * 用户有赞开放ID
      * @var string
      */
-    private $buyerId;
+    private $yzOpenId;
 
     /**
-     * 卡号
+     * 卡号（调用方生成，取值自卡详情扩展点返回cardNo字段）
      * @var string
      */
     private $cardNo;
@@ -28,17 +28,17 @@ class ValueCardActivateRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBuyerId(): string
+    public function getYzOpenId(): string
     {
-        return $this->buyerId;
+        return $this->yzOpenId;
     }
 
     /**
-     * @param string $buyerId
+     * @param string $yzOpenId
      */
-    public function setBuyerId(string $buyerId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
-        $this->buyerId = $buyerId;
+        $this->yzOpenId = $yzOpenId;
     }
 
     /**
