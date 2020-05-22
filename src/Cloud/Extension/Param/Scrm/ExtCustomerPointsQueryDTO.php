@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerInfoDTO;
 /**
  * 
  * @author Baymax
- * @create Thu Oct 11 17:21:06 CST 2018
+ * @create 2018-10-11 17:21:06.0
  */
 class ExtCustomerPointsQueryDTO implements \JsonSerializable {
 
@@ -16,6 +16,18 @@ class ExtCustomerPointsQueryDTO implements \JsonSerializable {
      * @var ExtCustomerInfoDTO
      */
     private $extCustomerInfoDTO;
+
+    /**
+     * 店铺id
+     * @var int
+     */
+    private $kdtId;
+
+    /**
+     * node_id 分店id（当是连锁且用户访问的是分店时有此参数）
+     * @var int
+     */
+    private $nodeId;
 
 
 
@@ -33,6 +45,38 @@ class ExtCustomerPointsQueryDTO implements \JsonSerializable {
     public function setExtCustomerInfoDTO(ExtCustomerInfoDTO $extCustomerInfoDTO): void
     {
         $this->extCustomerInfoDTO = $extCustomerInfoDTO;
+    }
+
+    /**
+     * @return int
+     */
+    public function getKdtId(): int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNodeId(): int
+    {
+        return $this->nodeId;
+    }
+
+    /**
+     * @param int $nodeId
+     */
+    public function setNodeId(int $nodeId): void
+    {
+        $this->nodeId = $nodeId;
     }
 
     public function jsonSerialize() {

@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerInfoDTO;
 /**
  * 请求参数
  * @author Baymax
- * @create Sun Nov 04 21:41:34 CST 2018
+ * @create 2018-11-04 21:41:34.0
  */
 class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
 
@@ -46,6 +46,18 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
      * @var int
      */
     private $endTime;
+
+    /**
+     * 店铺id
+     * @var int
+     */
+    private $kdtId;
+
+    /**
+     * node_id 分店id（当是连锁且用户访问的是分店时有此参数）
+     * @var int
+     */
+    private $nodeId;
 
 
 
@@ -143,6 +155,38 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     public function setEndTime(int $endTime): void
     {
         $this->endTime = $endTime;
+    }
+
+    /**
+     * @return int
+     */
+    public function getKdtId(): int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNodeId(): int
+    {
+        return $this->nodeId;
+    }
+
+    /**
+     * @param int $nodeId
+     */
+    public function setNodeId(int $nodeId): void
+    {
+        $this->nodeId = $nodeId;
     }
 
     public function jsonSerialize() {
