@@ -48,13 +48,13 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     private $orderNoSource;
 
     /**
-     * 
+     * 扩展字段
      * @var stdClass
      */
     private $extMap;
 
     /**
-     * 
+     * 扩展点版本号
      * @var int
      */
     private $versionNo;
