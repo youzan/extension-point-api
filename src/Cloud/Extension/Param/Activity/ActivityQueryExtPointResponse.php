@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 
  * @author Baymax
- * @create 2020-02-12 16:36:21.0
+ * @create Wed Feb 12 16:36:21 CST 2020
  */
 class ActivityQueryExtPointResponse implements \JsonSerializable {
 

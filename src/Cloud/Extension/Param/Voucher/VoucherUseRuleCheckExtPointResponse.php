@@ -2,29 +2,30 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 
+use Com\Youzan\Cloud\Extension\Param\Dto\CloudVerifyVoucherDTO;
 use StdClass;
 
 /**
  * 
  * @author Baymax
- * @create Wed Feb 12 16:35:56 CST 2020
+ * @create 2020-05-18 16:24:01.0
  */
-class VoucherQueryExtPointRequest implements \JsonSerializable {
+class VoucherUseRuleCheckExtPointResponse implements \JsonSerializable {
 
     /**
-     * 外部券id
-     * @var int
+     * 
+     * @var array
      */
-    private $id;
+    private $cloudVerifyVoucherList;
 
     /**
-     * 扩展点版本号
+     * 
      * @var int
      */
     private $versionNo;
 
     /**
-     * 扩展字段
+     * 
      * @var stdClass
      */
     private $extMap;
@@ -32,19 +33,19 @@ class VoucherQueryExtPointRequest implements \JsonSerializable {
 
 
     /**
-     * @return int
+     * @return array
      */
-    public function getId(): int
+    public function getCloudVerifyVoucherList(): array
     {
-        return $this->id;
+        return $this->cloudVerifyVoucherList;
     }
 
     /**
-     * @param int $id
+     * @param array $cloudVerifyVoucherList
      */
-    public function setId(int $id): void
+    public function setCloudVerifyVoucherList(array $cloudVerifyVoucherList): void
     {
-        $this->id = $id;
+        $this->cloudVerifyVoucherList = $cloudVerifyVoucherList;
     }
 
     /**

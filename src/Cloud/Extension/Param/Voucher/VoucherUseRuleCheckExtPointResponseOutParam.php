@@ -2,14 +2,14 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 
-use Com\Youzan\Cloud\Extension\Param\Voucher\VoucherRefundExtPointResponse;
+use Com\Youzan\Cloud\Extension\Param\Voucher\VoucherUseRuleCheckExtPointResponse;
 
 /**
  * 返回类
  * @author Baymax
- * @create Wed Feb 12 16:36:12 CST 2020
+ * @create 2020-05-18 16:24:01.0
  */
-class VoucherRefundExtPointResponseOutParam implements \JsonSerializable {
+class VoucherUseRuleCheckExtPointResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class VoucherRefundExtPointResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var VoucherRefundExtPointResponse
+     * @var VoucherUseRuleCheckExtPointResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class VoucherRefundExtPointResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return VoucherRefundExtPointResponse
+     * @return VoucherUseRuleCheckExtPointResponse
      */
-    public function getData(): VoucherRefundExtPointResponse
+    public function getData(): VoucherUseRuleCheckExtPointResponse
     {
         return $this->data;
     }
 
     /**
-     * @param VoucherRefundExtPointResponse $data
+     * @param VoucherUseRuleCheckExtPointResponse $data
      */
-    public function setData(VoucherRefundExtPointResponse $data): void
+    public function setData(VoucherUseRuleCheckExtPointResponse $data): void
     {
         $this->data = $data;
     }
