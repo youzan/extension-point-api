@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 
  * @author Baymax
- * @create Wed Feb 12 16:36:12 CST 2020
+ * @create 2020-02-12 16:36:12.0
  */
 class VoucherRefundExtPointResponse implements \JsonSerializable {
 
@@ -48,13 +48,13 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     private $orderNoSource;
 
     /**
-     * 
+     * 扩展字段
      * @var stdClass
      */
     private $extMap;
 
     /**
-     * 
+     * 扩展点版本号
      * @var int
      */
     private $versionNo;

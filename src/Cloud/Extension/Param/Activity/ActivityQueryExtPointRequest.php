@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 
  * @author Baymax
- * @create Wed Feb 12 16:36:21 CST 2020
+ * @create 2020-02-12 16:36:21.0
  */
 class ActivityQueryExtPointRequest implements \JsonSerializable {
 
@@ -28,6 +28,12 @@ class ActivityQueryExtPointRequest implements \JsonSerializable {
      * @var stdClass
      */
     private $extMap;
+
+    /**
+     * 当前店铺Id
+     * @var int
+     */
+    private $kdtId;
 
 
 
@@ -77,6 +83,22 @@ class ActivityQueryExtPointRequest implements \JsonSerializable {
     public function setExtMap(stdClass $extMap): void
     {
         $this->extMap = $extMap;
+    }
+
+    /**
+     * @return int
+     */
+    public function getKdtId(): int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
     }
 
     public function jsonSerialize() {
