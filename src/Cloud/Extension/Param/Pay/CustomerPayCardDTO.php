@@ -83,6 +83,12 @@ class CustomerPayCardDTO implements \JsonSerializable {
      */
     private $sumBonusDnom;
 
+    /**
+     * 是否支持充值，true：支持，false：不支持
+     * @var bool
+     */
+    private $needRecharge;
+
 
 
     /**
@@ -275,6 +281,22 @@ class CustomerPayCardDTO implements \JsonSerializable {
     public function setSumBonusDnom(int $sumBonusDnom): void
     {
         $this->sumBonusDnom = $sumBonusDnom;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getNeedRecharge(): bool
+    {
+        return $this->needRecharge;
+    }
+
+    /**
+     * @param bool $needRecharge
+     */
+    public function setNeedRecharge(bool $needRecharge): void
+    {
+        $this->needRecharge = $needRecharge;
     }
 
     public function jsonSerialize() {

@@ -12,13 +12,13 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
 
     /**
-     * 用户标识
+     * 有赞UID
      * @var string
      */
-    private $yzOpenId;
+    private $buyerId;
 
     /**
-     * 用户手机
+     * 用户手机号
      * @var string
      */
     private $userPhone;
@@ -36,7 +36,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     private $cardStatus;
 
     /**
-     * 卡号
+     * 卡号（调用方生成，取值自列表查询扩展点返回 cardNo 字段）
      * @var array
      */
     private $cardNoList;
@@ -54,27 +54,27 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     private $pageSize;
 
     /**
-     * 有赞UID
+     * 用户有赞开放ID
      * @var string
      */
-    private $buyerId;
+    private $yzOpenId;
 
 
 
     /**
      * @return string
      */
-    public function getYzOpenId(): string
+    public function getBuyerId(): string
     {
-        return $this->yzOpenId;
+        return $this->buyerId;
     }
 
     /**
-     * @param string $yzOpenId
+     * @param string $buyerId
      */
-    public function setYzOpenId(string $yzOpenId): void
+    public function setBuyerId(string $buyerId): void
     {
-        $this->yzOpenId = $yzOpenId;
+        $this->buyerId = $buyerId;
     }
 
     /**
@@ -176,17 +176,17 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBuyerId(): string
+    public function getYzOpenId(): string
     {
-        return $this->buyerId;
+        return $this->yzOpenId;
     }
 
     /**
-     * @param string $buyerId
+     * @param string $yzOpenId
      */
-    public function setBuyerId(string $buyerId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
-        $this->buyerId = $buyerId;
+        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {

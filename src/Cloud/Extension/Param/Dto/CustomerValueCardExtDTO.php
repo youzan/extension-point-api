@@ -12,25 +12,25 @@ use DateTime;
 class CustomerValueCardExtDTO implements \JsonSerializable {
 
     /**
-     * 使用说明
+     * 卡片使用说明
      * @var string
      */
     private $useSpecification;
 
     /**
-     * 是否可用
+     * 是否可用，true:可用，false:不可用
      * @var bool
      */
     private $usable;
 
     /**
-     * 不可用原因
+     * 不可用原因，当usable字段为不可用时必填
      * @var string
      */
     private $unusableReason;
 
     /**
-     * 过期时间
+     * 到期时间，有效期类型为固定期限时必填,Unix毫秒时间类型
      * @var int
      */
     private $expireDate;
@@ -42,13 +42,13 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     private $cardName;
 
     /**
-     * 卡号
+     * 卡号（调用方生成，取值自列表查询扩展点返回 cardNo 字段）
      * @var string
      */
     private $cardNo;
 
     /**
-     * 背景图
+     * 背景图（http全路径,总长度不得大于225）
      * @var string
      */
     private $backgroundImage;
@@ -84,10 +84,16 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     private $sumBonusDnom;
 
     /**
-     * 过期类型
+     * 有效期类型，1：永久有效，2：固定期限
      * @var int
      */
     private $strategyType;
+
+    /**
+     * 是否支持充值，true：支持，false：不支持
+     * @var bool
+     */
+    private $needRecharge;
 
 
 
@@ -297,6 +303,22 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     public function setStrategyType(int $strategyType): void
     {
         $this->strategyType = $strategyType;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getNeedRecharge(): bool
+    {
+        return $this->needRecharge;
+    }
+
+    /**
+     * @param bool $needRecharge
+     */
+    public function setNeedRecharge(bool $needRecharge): void
+    {
+        $this->needRecharge = $needRecharge;
     }
 
     public function jsonSerialize() {
