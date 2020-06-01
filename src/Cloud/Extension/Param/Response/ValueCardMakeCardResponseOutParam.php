@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Scrm;
+namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Com\Youzan\Cloud\Extension\Param\Scrm\Result;
+use Com\Youzan\Cloud\Extension\Param\Response\ValueCardMakeCardResponse;
 
 /**
  * 返回类
  * @author Baymax
- * @create 2018-09-29 21:13:57.0
+ * @create 2020-03-24 11:28:58.0
  */
-class ResultOutParam implements \JsonSerializable {
+class ValueCardMakeCardResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ResultOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var Result
+     * @var ValueCardMakeCardResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ResultOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return Result
+     * @return ValueCardMakeCardResponse
      */
-    public function getData(): Result
+    public function getData(): ValueCardMakeCardResponse
     {
         return $this->data;
     }
 
     /**
-     * @param Result $data
+     * @param ValueCardMakeCardResponse $data
      */
-    public function setData(Result $data): void
+    public function setData(ValueCardMakeCardResponse $data): void
     {
         $this->data = $data;
     }
