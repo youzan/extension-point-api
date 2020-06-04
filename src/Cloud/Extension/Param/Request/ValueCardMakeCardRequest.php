@@ -12,7 +12,7 @@ use DateTime;
 class ValueCardMakeCardRequest implements \JsonSerializable {
 
     /**
-     * 订单编号
+     * 有赞购卡订单编号
      * @var string
      */
     private $orderNo;
@@ -36,31 +36,31 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     private $payPrice;
 
     /**
-     * 支付方式
+     * 支付方式（ECARD:E卡支付，CREDIT_CARD：贷记卡支付，WX_JS：微信支付，DEBIT_CARD：借记卡支付，ALIPAY_WAP：支付宝支付）
      * @var string
      */
     private $payMethod;
 
     /**
-     * 支付时间
+     * 支付时间,Unix毫秒时间类型
      * @var int
      */
     private $payTime;
 
     /**
-     * 下单时间
+     * 下单时间,Unix毫秒时间类型
      * @var int
      */
     private $orderTime;
 
     /**
-     * 礼包ID
+     * 礼包ID（调用方生成，长度不得大于24）
      * @var string
      */
     private $giftPackId;
 
     /**
-     * 礼包版本号
+     * 礼包版本（调用方生成，长度不得大于24）
      * @var string
      */
     private $giftPackVersion;

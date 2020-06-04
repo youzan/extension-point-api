@@ -12,7 +12,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\ValueCardExtProductBuyDTO;
 class ValueCardBuyDetailDTO implements \JsonSerializable {
 
     /**
-     * SPU编号（商品级别）
+     * SPU编号（商品级别,调用方生成,长度不得大于24）
      * @var string
      */
     private $productSpuNo;
@@ -24,7 +24,7 @@ class ValueCardBuyDetailDTO implements \JsonSerializable {
     private $templateName;
 
     /**
-     * 模板图片
+     * 模板图片（http全路径,最大长度不得大于225）
      * @var string
      */
     private $templateImg;

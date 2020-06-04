@@ -24,7 +24,7 @@ class CustomerExtValueCardDetailQueryRequest implements \JsonSerializable {
     private $userPhone;
 
     /**
-     * 卡号（调用方生成，取值子卡列表查询扩展点返回 cardNo 字段）
+     * 卡号（调用方生成，取值自列表查询扩展点返回 cardNo 字段）
      * @var string
      */
     private $cardNo;

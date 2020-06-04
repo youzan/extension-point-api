@@ -5,32 +5,32 @@ namespace Com\Youzan\Cloud\Extension\Param\Giftpack;
 
 
 /**
- * 
+ * 会员卡权益列表
  * @author Baymax
  * @create 2020-03-24 10:56:53.0
  */
 class MemberCardRightsDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 会员卡ID
      * @var string
      */
     private $cardId;
 
     /**
-     * 
+     * 会员卡名称
      * @var string
      */
     private $cardName;
 
     /**
-     * 
+     * 是否是非会员专享
      * @var bool
      */
     private $nonmemberOnly;
 
     /**
-     * 
+     * VALID:有效 OVERDUE:过期
      * @var string
      */
     private $cardStatus;

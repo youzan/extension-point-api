@@ -54,7 +54,7 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     private $available;
 
     /**
-     * 不可用原因
+     * 不可用原因，当available &#x3D; false时，必填
      * @var string
      */
     private $reason;

@@ -15,10 +15,10 @@ class ValueCardBuyDetailRequest implements \JsonSerializable {
      * 用户有赞开放ID
      * @var string
      */
-    private $buyerId;
+    private $yzOpenId;
 
     /**
-     * SPU编号（商品级别）
+     * SPU编号（商品级别,调用方生成,长度不得大于24）
      * @var string
      */
     private $productSpuNo;
@@ -28,17 +28,17 @@ class ValueCardBuyDetailRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBuyerId(): string
+    public function getYzOpenId(): string
     {
-        return $this->buyerId;
+        return $this->yzOpenId;
     }
 
     /**
-     * @param string $buyerId
+     * @param string $yzOpenId
      */
-    public function setBuyerId(string $buyerId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
-        $this->buyerId = $buyerId;
+        $this->yzOpenId = $yzOpenId;
     }
 
     /**

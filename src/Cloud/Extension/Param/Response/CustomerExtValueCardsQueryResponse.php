@@ -18,7 +18,7 @@ class CustomerExtValueCardsQueryResponse implements \JsonSerializable {
     private $valueCardCustomerCards;
 
     /**
-     * 
+     * 数据总条数，用于分页
      * @var int
      */
     private $totalNum;

@@ -5,32 +5,32 @@ namespace Com\Youzan\Cloud\Extension\Param\Giftpack;
 
 
 /**
- * 
+ * 赠品权益
  * @author Baymax
  * @create 2020-03-24 10:56:53.0
  */
 class PresentRightsDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 赠品ID
      * @var int
      */
     private $presentId;
 
     /**
-     * 
+     * 赠品名称
      * @var string
      */
     private $presentName;
 
     /**
-     * 
+     * 图片url
      * @var string
      */
     private $picUrl;
 
     /**
-     * 
+     * 赠品状态（VALID:有效，OUTOFSTOCK：无库存，DELETED：已删除，OVERDUE：过期，NOTSTARTED：未开始）
      * @var string
      */
     private $presentStatus;

@@ -5,20 +5,20 @@ namespace Com\Youzan\Cloud\Extension\Param\Giftpack;
 
 
 /**
- * 
+ * 积分权益
  * @author Baymax
  * @create 2020-03-24 10:56:53.0
  */
 class PointRightsDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 积分值
      * @var int
      */
     private $point;
 
     /**
-     * 
+     * 自定义积分名称
      * @var string
      */
     private $customPointName;

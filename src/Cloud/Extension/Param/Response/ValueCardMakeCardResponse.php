@@ -18,13 +18,13 @@ class ValueCardMakeCardResponse implements \JsonSerializable {
     private $cardNos;
 
     /**
-     * 外部订单单号
+     * 外部订单单号（调用方生成订单号，请保证唯一，且长度不超过25）
      * @var string
      */
     private $extOrderNo;
 
     /**
-     * 制卡状态：success制卡成功，fail制卡失败（会触发退款），如果超出库存或者其他校验不通过请返回制卡失败
+     * 制卡状态：SUCCESS制卡成功，FAIL制卡失败（会触发退款），如果超出库存或者其他校验不通过请返回制卡失败
      * @var string
      */
     private $makeSuccess;

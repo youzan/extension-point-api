@@ -12,7 +12,7 @@ use Com\Youzan\Cloud\Extension\Param\Giftpack\GiftPackInfoExtDTO;
 class ValueCardExtProductBuyDTO implements \JsonSerializable {
 
     /**
-     * SKU编号（规格级别）
+     * SKU编号（规格级别,调用方生成,长度不得大于24）
      * @var string
      */
     private $productSkuNo;

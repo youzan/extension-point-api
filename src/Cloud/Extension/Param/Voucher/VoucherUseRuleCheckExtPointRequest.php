@@ -19,7 +19,7 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
     private $verifyKdtId;
 
     /**
-     * 核销网点Id
+     * 核销网点Id，没有开启多网点则此参数为空
      * @var int
      */
     private $verifyStoreId;

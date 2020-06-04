@@ -18,43 +18,43 @@ use Com\Youzan\Cloud\Extension\Param\Giftpack\PresentRightsDTO;
 class GiftPackRightsDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 优惠券权益列表
      * @var array
      */
     private $couponRights;
 
     /**
-     * 
+     * 会员卡权益列表
      * @var array
      */
     private $memberCardRights;
 
     /**
-     * 
+     * 外部权益列表
      * @var array
      */
     private $outerRights;
 
     /**
-     * 
+     * 积分权益
      * @var PointRightsDTO
      */
     private $pointRights;
 
     /**
-     * 
+     * 成长值权益
      * @var GrowthPointRightsDTO
      */
     private $growthPointRights;
 
     /**
-     * 
+     * 储值赠送金权益
      * @var BonusAmountRightsDTO
      */
     private $bonusAmountRights;
 
     /**
-     * 
+     * 赠品权益
      * @var PresentRightsDTO
      */
     private $presentRights;

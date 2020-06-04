@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Giftpack;
 
 
 /**
- * 
+ * 成长值权益
  * @author Baymax
  * @create 2020-03-24 10:56:53.0
  */
 class GrowthPointRightsDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 成长值
      * @var int
      */
     private $growthPoint;
