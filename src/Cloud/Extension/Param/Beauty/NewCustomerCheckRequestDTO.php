@@ -29,6 +29,12 @@ class NewCustomerCheckRequestDTO implements \JsonSerializable {
      */
     private $yzOpenId;
 
+    /**
+     * 用赞用户唯一标示
+     * @var int
+     */
+    private $userId;
+
 
 
     /**
@@ -77,6 +83,22 @@ class NewCustomerCheckRequestDTO implements \JsonSerializable {
     public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getUserId(): int
+    {
+        return $this->userId;
+    }
+
+    /**
+     * @param int $userId
+     */
+    public function setUserId(int $userId): void
+    {
+        $this->userId = $userId;
     }
 
     public function jsonSerialize() {
