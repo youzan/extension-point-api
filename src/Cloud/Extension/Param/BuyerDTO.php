@@ -41,12 +41,6 @@ class BuyerDTO implements \JsonSerializable {
      */
     private $buyerId;
 
-    /**
-     * 买家标识
-     * @var string
-     */
-    private $yzOpenId;
-
 
 
     /**
@@ -127,22 +121,6 @@ class BuyerDTO implements \JsonSerializable {
     public function setBuyerId(int $buyerId): void
     {
         $this->buyerId = $buyerId;
-    }
-
-    /**
-     * @return string
-     */
-    public function getYzOpenId(): string
-    {
-        return $this->yzOpenId;
-    }
-
-    /**
-     * @param string $yzOpenId
-     */
-    public function setYzOpenId(string $yzOpenId): void
-    {
-        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {

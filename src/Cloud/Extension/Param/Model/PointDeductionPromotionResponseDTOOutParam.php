@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param;
+namespace Com\Youzan\Cloud\Extension\Param\Model;
 
-use Com\Youzan\Cloud\Extension\Param\GoPayResultDTO;
+use Com\Youzan\Cloud\Extension\Param\Model\PointDeductionPromotionResponseDTO;
 
 /**
- * 去支付出参返回类
+ * 返回类
  * @author Baymax
- * @create Tue Sep 25 17:50:17 CST 2018
+ * @create 2020-04-27 17:33:11.0
  */
-class GoPayResultDTOOutParam implements \JsonSerializable {
+class PointDeductionPromotionResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class GoPayResultDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var GoPayResultDTO
+     * @var PointDeductionPromotionResponseDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class GoPayResultDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return GoPayResultDTO
+     * @return PointDeductionPromotionResponseDTO
      */
-    public function getData(): GoPayResultDTO
+    public function getData(): PointDeductionPromotionResponseDTO
     {
         return $this->data;
     }
 
     /**
-     * @param GoPayResultDTO $data
+     * @param PointDeductionPromotionResponseDTO $data
      */
-    public function setData(GoPayResultDTO $data): void
+    public function setData(PointDeductionPromotionResponseDTO $data): void
     {
         $this->data = $data;
     }

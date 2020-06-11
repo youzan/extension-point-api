@@ -12,16 +12,10 @@ namespace Com\Youzan\Cloud\Extension\Param;
 class RefundPayParamDTO implements \JsonSerializable {
 
     /**
-     * 退款流水号
-     * @var string
-     */
-    private $refundNo;
-
-    /**
      * 退款单号
      * @var string
      */
-    private $refundId;
+    private $refundNo;
 
     /**
      * 退款完成回调通知地址
@@ -75,22 +69,6 @@ class RefundPayParamDTO implements \JsonSerializable {
     public function setRefundNo(string $refundNo): void
     {
         $this->refundNo = $refundNo;
-    }
-
-    /**
-     * @return string
-     */
-    public function getRefundId(): string
-    {
-        return $this->refundId;
-    }
-
-    /**
-     * @param string $refundId
-     */
-    public function setRefundId(string $refundId): void
-    {
-        $this->refundId = $refundId;
     }
 
     /**
