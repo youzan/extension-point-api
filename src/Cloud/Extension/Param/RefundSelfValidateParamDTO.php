@@ -41,24 +41,6 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
      */
     private $disputeFlowType;
 
-    /**
-     * 买家标识
-     * @var string
-     */
-    private $yzOpenId;
-
-    /**
-     * 本次退款申请的总退款金额 单位:分
-     * @var int
-     */
-    private $refundFee;
-
-    /**
-     * 失效卡券数量
-     * @var int
-     */
-    private $disabledCouponCount;
-
 
 
     /**
@@ -139,54 +121,6 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     public function setDisputeFlowType(string $disputeFlowType): void
     {
         $this->disputeFlowType = $disputeFlowType;
-    }
-
-    /**
-     * @return string
-     */
-    public function getYzOpenId(): string
-    {
-        return $this->yzOpenId;
-    }
-
-    /**
-     * @param string $yzOpenId
-     */
-    public function setYzOpenId(string $yzOpenId): void
-    {
-        $this->yzOpenId = $yzOpenId;
-    }
-
-    /**
-     * @return int
-     */
-    public function getRefundFee(): int
-    {
-        return $this->refundFee;
-    }
-
-    /**
-     * @param int $refundFee
-     */
-    public function setRefundFee(int $refundFee): void
-    {
-        $this->refundFee = $refundFee;
-    }
-
-    /**
-     * @return int
-     */
-    public function getDisabledCouponCount(): int
-    {
-        return $this->disabledCouponCount;
-    }
-
-    /**
-     * @param int $disabledCouponCount
-     */
-    public function setDisabledCouponCount(int $disabledCouponCount): void
-    {
-        $this->disabledCouponCount = $disabledCouponCount;
     }
 
     public function jsonSerialize() {

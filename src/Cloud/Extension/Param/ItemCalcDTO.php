@@ -60,7 +60,7 @@ class ItemCalcDTO implements \JsonSerializable {
     private $totalPrice;
 
     /**
-     * 
+     * 扩展模型
      * @var stdClass
      */
     private $extModelMap;

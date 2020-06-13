@@ -60,7 +60,7 @@ class GoPayParamDTO implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * 用户标识
+     *  用户标识
      * @var string
      */
     private $yzOpenId;

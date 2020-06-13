@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\OrderCreateSelfValidateResultDTOOutParam;
 
 interface OrderCreateSelfValidateExtPoint {
 
-    public function validate(OrderCreateSelfValidateParamDTO $request) : OrderCreateSelfValidateResultDTOOutParam;
+    public function validate(OrderCreateSelfValidateParamDTO $orderCreateSelfValidateParamDTO) : OrderCreateSelfValidateResultDTOOutParam;
 
 }

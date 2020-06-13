@@ -32,6 +32,12 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     private $orderNo;
 
     /**
+     * 商户店铺ID
+     * @var int
+     */
+    private $kdtId;
+
+    /**
      * 商品现价格之和：商品价格列表中totalPrice之和
      * @var int
      */
@@ -48,12 +54,6 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
      * @var int
      */
     private $totalPrice;
-
-    /**
-     * 商户店铺ID
-     * @var int
-     */
-    private $kdtId;
 
     /**
      * 买家信息
@@ -114,6 +114,22 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
+    public function getKdtId(): int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return int
+     */
     public function getItemsPrice(): int
     {
         return $this->itemsPrice;
@@ -157,22 +173,6 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     public function setTotalPrice(int $totalPrice): void
     {
         $this->totalPrice = $totalPrice;
-    }
-
-    /**
-     * @return int
-     */
-    public function getKdtId(): int
-    {
-        return $this->kdtId;
-    }
-
-    /**
-     * @param int $kdtId
-     */
-    public function setKdtId(int $kdtId): void
-    {
-        $this->kdtId = $kdtId;
     }
 
     /**

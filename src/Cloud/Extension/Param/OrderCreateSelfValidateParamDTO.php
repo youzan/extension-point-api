@@ -42,16 +42,16 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     private $tradeGroupDTOS;
 
     /**
-     * 连锁店铺id
-     * @var int
-     */
-    private $nodeKdtid;
-
-    /**
-     * 有赞用户开放id
+     * 用户标识
      * @var string
      */
     private $yzOpenId;
+
+    /**
+     * 多网点ID
+     * @var int
+     */
+    private $nodeKdtid;
 
 
 
@@ -136,22 +136,6 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     }
 
     /**
-     * @return int
-     */
-    public function getNodeKdtid(): int
-    {
-        return $this->nodeKdtid;
-    }
-
-    /**
-     * @param int $nodeKdtid
-     */
-    public function setNodeKdtid(int $nodeKdtid): void
-    {
-        $this->nodeKdtid = $nodeKdtid;
-    }
-
-    /**
      * @return string
      */
     public function getYzOpenId(): string
@@ -165,6 +149,22 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNodeKdtid(): int
+    {
+        return $this->nodeKdtid;
+    }
+
+    /**
+     * @param int $nodeKdtid
+     */
+    public function setNodeKdtid(int $nodeKdtid): void
+    {
+        $this->nodeKdtid = $nodeKdtid;
     }
 
     public function jsonSerialize() {

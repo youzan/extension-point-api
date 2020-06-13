@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 
 
 /**
- * 订单级额外费用 (包含在订单是否金额里面)
+ *  订单级额外费用 (包含在订单是否金额里面)
  * @author Baymax
  * @create 2019-07-22 13:12:35.0
  */
@@ -30,7 +30,7 @@ class ExtPointExtraPriceResultDTO implements \JsonSerializable {
     private $price;
 
     /**
-     * 是否可退款 (仅订单级有效，商品级一定可退)
+     *  是否可退款 (仅订单级有效，商品级一定可退)
      * @var bool
      */
     private $refundable;
