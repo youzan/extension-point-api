@@ -13,24 +13,24 @@ class UserInfo implements \JsonSerializable {
 
     /**
      * 用户id
-     * @var int
+     * @var string
      */
     private $buyerId;
 
 
 
     /**
-     * @return int
+     * @return string
      */
-    public function getBuyerId(): int
+    public function getBuyerId(): string
     {
         return $this->buyerId;
     }
 
     /**
-     * @param int $buyerId
+     * @param string $buyerId
      */
-    public function setBuyerId(int $buyerId): void
+    public function setBuyerId(string $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
