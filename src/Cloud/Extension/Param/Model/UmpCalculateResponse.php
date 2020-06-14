@@ -12,13 +12,13 @@ use Com\Youzan\Cloud\Extension\Param\Model\ActivityResponse;
 class UmpCalculateResponse implements \JsonSerializable {
 
     /**
-     * 外部优惠活动详情
-     * @var ActivityResponse
+     * 外部优惠详情（如果多个活动，需要按照执行顺序排序）
+     * @var array
      */
     private $activities;
 
     /**
-     * 外部优惠总优惠金额/分
+     * 外部优惠总金额（单位/分）
      * @var int
      */
     private $decrease;
@@ -26,17 +26,17 @@ class UmpCalculateResponse implements \JsonSerializable {
 
 
     /**
-     * @return ActivityResponse
+     * @return array
      */
-    public function getActivities(): ActivityResponse
+    public function getActivities(): array
     {
         return $this->activities;
     }
 
     /**
-     * @param ActivityResponse $activities
+     * @param array $activities
      */
-    public function setActivities(ActivityResponse $activities): void
+    public function setActivities(array $activities): void
     {
         $this->activities = $activities;
     }

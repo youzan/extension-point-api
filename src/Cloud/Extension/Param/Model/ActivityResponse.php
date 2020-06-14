@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 use Com\Youzan\Cloud\Extension\Param\Model\GoodsResponse;
 
 /**
- * 外部优惠活动详情
+ * 外部优惠详情（如果多个活动，需要按照执行顺序排序）
  * @author Baymax
  * @create 2020-06-11 11:03:35.0
  */
 class ActivityResponse implements \JsonSerializable {
 
     /**
-     * 外部优惠活动id
+     * 活动id（ &gt; 0 的整数，可从1开始延续，区分不同活动）
      * @var int
      */
     private $activityId;
@@ -24,19 +24,19 @@ class ActivityResponse implements \JsonSerializable {
     private $activityName;
 
     /**
-     * 外部优惠活动级别：order、goods（目前仅支持order）
+     * 活动级别（商品级优惠 &#x3D; &quot;goods&quot; / 订单级优惠 &#x3D; &quot;order&quot;），目前必须传订单级
      * @var string
      */
     private $promotionLevel;
 
     /**
-     * 外部活动优惠金额/分
+     * 外部活动总优惠（单位/分）
      * @var int
      */
     private $decrease;
 
     /**
-     * 外部活动涉及的商品优惠详情
+     * 商品详细优惠
      * @var array
      */
     private $goodsResponseList;
