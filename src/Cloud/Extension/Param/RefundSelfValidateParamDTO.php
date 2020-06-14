@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 
  * @author Baymax
- * @create Mon Oct 08 16:18:50 CST 2018
+ * @create 2018-10-08 16:18:50.0
  */
 class RefundSelfValidateParamDTO implements \JsonSerializable {
 
@@ -40,12 +40,6 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
      * @var string
      */
     private $disputeFlowType;
-
-    /**
-     * 买家标识
-     * @var string
-     */
-    private $yzOpenId;
 
 
 
@@ -127,22 +121,6 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     public function setDisputeFlowType(string $disputeFlowType): void
     {
         $this->disputeFlowType = $disputeFlowType;
-    }
-
-    /**
-     * @return string
-     */
-    public function getYzOpenId(): string
-    {
-        return $this->yzOpenId;
-    }
-
-    /**
-     * @param string $yzOpenId
-     */
-    public function setYzOpenId(string $yzOpenId): void
-    {
-        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {

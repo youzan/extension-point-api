@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Trade;
+namespace Com\Youzan\Cloud\Extension\Param\Model;
 
-use Com\Youzan\Cloud\Extension\Param\Trade\PluginNotifyResultDTO;
+use Com\Youzan\Cloud\Extension\Param\Model\UmpCalculateResponse;
 
 /**
- * 返回类
+ * 外部接口出参返回类
  * @author Baymax
- * @create 2018-11-06 20:20:56.0
+ * @create 2020-06-11 11:03:35.0
  */
-class PluginNotifyResultDTOOutParam implements \JsonSerializable {
+class UmpCalculateResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class PluginNotifyResultDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var PluginNotifyResultDTO
+     * @var UmpCalculateResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class PluginNotifyResultDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return PluginNotifyResultDTO
+     * @return UmpCalculateResponse
      */
-    public function getData(): PluginNotifyResultDTO
+    public function getData(): UmpCalculateResponse
     {
         return $this->data;
     }
 
     /**
-     * @param PluginNotifyResultDTO $data
+     * @param UmpCalculateResponse $data
      */
-    public function setData(PluginNotifyResultDTO $data): void
+    public function setData(UmpCalculateResponse $data): void
     {
         $this->data = $data;
     }

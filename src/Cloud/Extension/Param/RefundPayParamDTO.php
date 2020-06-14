@@ -53,6 +53,12 @@ class RefundPayParamDTO implements \JsonSerializable {
      */
     private $kdtId;
 
+    /**
+     * 退款单号
+     * @var string
+     */
+    private $refundId;
+
 
 
     /**
@@ -165,6 +171,22 @@ class RefundPayParamDTO implements \JsonSerializable {
     public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRefundId(): string
+    {
+        return $this->refundId;
+    }
+
+    /**
+     * @param string $refundId
+     */
+    public function setRefundId(string $refundId): void
+    {
+        $this->refundId = $refundId;
     }
 
     public function jsonSerialize() {
