@@ -37,7 +37,7 @@ class Goods implements \JsonSerializable {
 
     /**
      * 优惠后价格（单位/分）
-     * @var array
+     * @var int
      */
     private $realPay;
 
@@ -108,17 +108,17 @@ class Goods implements \JsonSerializable {
     }
 
     /**
-     * @return array
+     * @return int
      */
-    public function getRealPay(): array
+    public function getRealPay(): int
     {
         return $this->realPay;
     }
 
     /**
-     * @param array $realPay
+     * @param int $realPay
      */
-    public function setRealPay(array $realPay): void
+    public function setRealPay(int $realPay): void
     {
         $this->realPay = $realPay;
     }
