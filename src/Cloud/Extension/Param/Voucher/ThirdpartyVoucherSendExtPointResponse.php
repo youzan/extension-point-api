@@ -53,6 +53,12 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
      */
     private $extMap;
 
+    /**
+     * 三方券面额, 单位为分
+     * @var int
+     */
+    private $value;
+
 
 
     /**
@@ -165,6 +171,22 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
     public function setExtMap(stdClass $extMap): void
     {
         $this->extMap = $extMap;
+    }
+
+    /**
+     * @return int
+     */
+    public function getValue(): int
+    {
+        return $this->value;
+    }
+
+    /**
+     * @param int $value
+     */
+    public function setValue(int $value): void
+    {
+        $this->value = $value;
     }
 
     public function jsonSerialize() {
