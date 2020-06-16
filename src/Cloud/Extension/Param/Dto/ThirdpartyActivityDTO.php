@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 活动信息
  * @author Baymax
- * @create Wed Feb 12 16:36:21 CST 2020
+ * @create 2020-02-12 16:36:21.0
  */
 class ThirdpartyActivityDTO implements \JsonSerializable {
 
@@ -46,6 +46,24 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
      * @var stdClass
      */
     private $extMap;
+
+    /**
+     * 面额生成规则类型  1:固定值(满减券，折扣券) &#x3D;&#x3D;&gt;   value字段 （默认值）  3:范围随机(随机金额券) &#x3D;&#x3D;&gt; 随机范围为minValue ~ maxValue之间
+     * @var int
+     */
+    private $voucherValueGenerateType;
+
+    /**
+     * 随机券面额范围下限（单位：分）,随机金额券-&gt;此参数为必填
+     * @var int
+     */
+    private $minValue;
+
+    /**
+     * 随机券面额范围上限（单位：分）,随机金额券-&gt;此参数为必填
+     * @var int
+     */
+    private $maxValue;
 
 
 
@@ -143,6 +161,54 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     public function setExtMap(stdClass $extMap): void
     {
         $this->extMap = $extMap;
+    }
+
+    /**
+     * @return int
+     */
+    public function getVoucherValueGenerateType(): int
+    {
+        return $this->voucherValueGenerateType;
+    }
+
+    /**
+     * @param int $voucherValueGenerateType
+     */
+    public function setVoucherValueGenerateType(int $voucherValueGenerateType): void
+    {
+        $this->voucherValueGenerateType = $voucherValueGenerateType;
+    }
+
+    /**
+     * @return int
+     */
+    public function getMinValue(): int
+    {
+        return $this->minValue;
+    }
+
+    /**
+     * @param int $minValue
+     */
+    public function setMinValue(int $minValue): void
+    {
+        $this->minValue = $minValue;
+    }
+
+    /**
+     * @return int
+     */
+    public function getMaxValue(): int
+    {
+        return $this->maxValue;
+    }
+
+    /**
+     * @param int $maxValue
+     */
+    public function setMaxValue(int $maxValue): void
+    {
+        $this->maxValue = $maxValue;
     }
 
     public function jsonSerialize() {

@@ -8,18 +8,18 @@ use Com\Youzan\Cloud\Extension\Param\ExtPointExtraPriceResultDTO;
 /**
  * 
  * @author Baymax
- * @create Mon Oct 08 11:32:37 CST 2018
+ * @create 2018-10-08 11:32:37.0
  */
 class ExtraFeeCalcResultDTO implements \JsonSerializable {
 
     /**
-     * 附加费用列表（已弃用，请传空值）
+     *  附加费用列表（已弃用，请传空值）
      * @var stdClass
      */
     private $extraFeeDetail;
 
     /**
-     * 附加费用总额（已弃用，请使用orderExtraPrice字段）
+     *  附加费用总额（已弃用，请使用orderExtraPrice字段）
      * @var int
      */
     private $totalExtraFeeAmount;
@@ -31,14 +31,14 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     private $orderNo;
 
     /**
-     * 附加费用说明（已弃用，请使用orderExtraPrice字段）
+     *  附加费用说明（已弃用，请使用orderExtraPrice字段）
      * @var string
      */
     private $extraFeeDesc;
 
     /**
-     * 订单级额外费用 (包含在订单是否金额里面)
-     * @var array
+     *  订单级额外费用 (包含在订单是否金额里面)
+     * @var ExtPointExtraPriceResultDTO
      */
     private $orderExtraPrice;
 
@@ -109,17 +109,17 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     }
 
     /**
-     * @return array
+     * @return ExtPointExtraPriceResultDTO
      */
-    public function getOrderExtraPrice(): array
+    public function getOrderExtraPrice(): ExtPointExtraPriceResultDTO
     {
         return $this->orderExtraPrice;
     }
 
     /**
-     * @param array $orderExtraPrice
+     * @param ExtPointExtraPriceResultDTO $orderExtraPrice
      */
-    public function setOrderExtraPrice(array $orderExtraPrice): void
+    public function setOrderExtraPrice(ExtPointExtraPriceResultDTO $orderExtraPrice): void
     {
         $this->orderExtraPrice = $orderExtraPrice;
     }

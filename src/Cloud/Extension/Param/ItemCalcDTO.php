@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 商品信息
  * @author Baymax
- * @create Mon Oct 08 11:32:37 CST 2018
+ * @create 2018-10-08 11:32:37.0
  */
 class ItemCalcDTO implements \JsonSerializable {
 
@@ -58,6 +58,12 @@ class ItemCalcDTO implements \JsonSerializable {
      * @var int
      */
     private $totalPrice;
+
+    /**
+     * 扩展模型
+     * @var stdClass
+     */
+    private $extModelMap;
 
 
 
@@ -187,6 +193,22 @@ class ItemCalcDTO implements \JsonSerializable {
     public function setTotalPrice(int $totalPrice): void
     {
         $this->totalPrice = $totalPrice;
+    }
+
+    /**
+     * @return stdClass
+     */
+    public function getExtModelMap(): stdClass
+    {
+        return $this->extModelMap;
+    }
+
+    /**
+     * @param stdClass $extModelMap
+     */
+    public function setExtModelMap(stdClass $extModelMap): void
+    {
+        $this->extModelMap = $extModelMap;
     }
 
     public function jsonSerialize() {

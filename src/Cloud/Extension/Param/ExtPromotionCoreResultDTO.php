@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 
  * @author Baymax
- * @create Thu Aug 01 11:46:51 CST 2019
+ * @create 2019-08-01 11:46:51.0
  */
 class ExtPromotionCoreResultDTO implements \JsonSerializable {
 
