@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Delivery;
 /**
  * 
  * @author Baymax
- * @create 2019-09-19 19:45:04.0
+ * @create Thu Sep 19 19:45:04 CST 2019
  */
 class AuditRecordRequestDTO implements \JsonSerializable {
 
