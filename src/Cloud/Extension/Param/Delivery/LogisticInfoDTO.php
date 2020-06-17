@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Delivery;
 /**
  * 
  * @author Baymax
- * @create Thu Sep 19 19:38:10 CST 2019
+ * @create 2019-09-19 19:38:10.0
  */
 class LogisticInfoDTO implements \JsonSerializable {
 

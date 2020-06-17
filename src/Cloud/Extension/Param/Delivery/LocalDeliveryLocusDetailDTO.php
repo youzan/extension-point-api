@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Delivery\LogisticInfoDTO;
 /**
  * 
  * @author Baymax
- * @create Thu Sep 19 19:38:10 CST 2019
+ * @create 2019-09-19 19:38:10.0
  */
 class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
 
@@ -54,13 +54,13 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     private $riderPhone;
 
     /**
-     * 骑手经度
+     * 骑手经度（高德坐标系）
      * @var string
      */
     private $riderLng;
 
     /**
-     * 骑手纬度
+     * 骑手纬度（高的坐标系）
      * @var string
      */
     private $riderLat;
