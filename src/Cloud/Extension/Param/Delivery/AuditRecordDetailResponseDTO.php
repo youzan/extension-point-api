@@ -54,7 +54,7 @@ class AuditRecordDetailResponseDTO implements \JsonSerializable {
     private $shopAddress;
 
     /**
-     * 店铺经纬度来源，默认为3，表示高德经纬度，暂时只支持高德
+     * 店铺经纬度来源，1:腾讯地图, 2:百度地图, 3:高德地图
      * @var int
      */
     private $positionSource;

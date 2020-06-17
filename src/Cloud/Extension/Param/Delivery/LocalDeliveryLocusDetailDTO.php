@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Delivery\LogisticInfoDTO;
 /**
  * 
  * @author Baymax
- * @create 2019-09-19 19:38:10.0
+ * @create Thu Sep 19 19:38:10 CST 2019
  */
 class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
 
