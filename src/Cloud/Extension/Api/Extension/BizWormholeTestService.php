@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Model\BizTestResponseDTOOutParam;
 
 interface BizWormholeTestService {
 
-    public function invoke(BizTestRequestDTO $request) : BizTestResponseDTOOutParam;
+    public function invoke(BizTestRequestDTO $requestDTO) : BizTestResponseDTOOutParam;
 
 }

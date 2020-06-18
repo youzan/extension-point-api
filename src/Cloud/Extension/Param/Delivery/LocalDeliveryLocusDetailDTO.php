@@ -54,13 +54,13 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     private $riderPhone;
 
     /**
-     * 骑手经度
+     * 骑手经度（高德坐标系）
      * @var string
      */
     private $riderLng;
 
     /**
-     * 骑手纬度
+     * 骑手纬度（高的坐标系）
      * @var string
      */
     private $riderLat;
