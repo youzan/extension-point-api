@@ -7,24 +7,24 @@ use Com\Youzan\Cloud\Extension\Param\Model\Goods;
 /**
  * 优惠详情
  * @author Baymax
- * @create Thu Jun 11 11:03:35 CST 2020
+ * @create 2020-06-11 11:03:35.0
  */
 class BillingDiscount implements \JsonSerializable {
 
     /**
-     * 商品优惠详情
+     * 商品及均摊优惠详情
      * @var array
      */
     private $goodsList;
 
     /**
-     * 订单实付金额/分
+     * 订单总支付金额（单位/分）
      * @var int
      */
     private $pay;
 
     /**
-     * 订单优惠金额/分
+     * 订单总优惠（单位/分）
      * @var int
      */
     private $decrease;

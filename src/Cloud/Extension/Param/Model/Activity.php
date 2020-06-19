@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 
 
 /**
- * 优惠活动详情
+ * 商品级活动优惠 / 订单级优惠活动均摊优惠
  * @author Baymax
- * @create Thu Jun 11 11:03:35 CST 2020
+ * @create 2020-06-11 11:03:35.0
  */
 class Activity implements \JsonSerializable {
 

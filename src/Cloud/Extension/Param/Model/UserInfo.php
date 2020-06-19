@@ -7,30 +7,30 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 /**
  * 用户信息
  * @author Baymax
- * @create Thu Jun 11 11:03:35 CST 2020
+ * @create 2020-06-11 11:03:35.0
  */
 class UserInfo implements \JsonSerializable {
 
     /**
      * 用户id
-     * @var int
+     * @var string
      */
     private $buyerId;
 
 
 
     /**
-     * @return int
+     * @return string
      */
-    public function getBuyerId(): int
+    public function getBuyerId(): string
     {
         return $this->buyerId;
     }
 
     /**
-     * @param int $buyerId
+     * @param string $buyerId
      */
-    public function setBuyerId(int $buyerId): void
+    public function setBuyerId(string $buyerId): void
     {
         $this->buyerId = $buyerId;
     }

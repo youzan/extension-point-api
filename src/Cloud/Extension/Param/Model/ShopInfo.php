@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 /**
  * 店铺信息
  * @author Baymax
- * @create Thu Jun 11 11:03:35 CST 2020
+ * @create 2020-06-11 11:03:35.0
  */
 class ShopInfo implements \JsonSerializable {
 

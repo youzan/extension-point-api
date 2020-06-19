@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 use Com\Youzan\Cloud\Extension\Param\Model\Activity;
 
 /**
- * 商品优惠详情
+ * 商品及均摊优惠详情
  * @author Baymax
- * @create Thu Jun 11 11:03:35 CST 2020
+ * @create 2020-06-11 11:03:35.0
  */
 class Goods implements \JsonSerializable {
 
@@ -30,14 +30,14 @@ class Goods implements \JsonSerializable {
     private $orderItemId;
 
     /**
-     * 优惠活动详情
+     * 商品级活动优惠 / 订单级优惠活动均摊优惠
      * @var array
      */
     private $appliedActivities;
 
     /**
-     * 商品实付金额
-     * @var array
+     * 优惠后价格（单位/分）
+     * @var int
      */
     private $realPay;
 
@@ -108,17 +108,17 @@ class Goods implements \JsonSerializable {
     }
 
     /**
-     * @return array
+     * @return int
      */
-    public function getRealPay(): array
+    public function getRealPay(): int
     {
         return $this->realPay;
     }
 
     /**
-     * @param array $realPay
+     * @param int $realPay
      */
-    public function setRealPay(array $realPay): void
+    public function setRealPay(int $realPay): void
     {
         $this->realPay = $realPay;
     }

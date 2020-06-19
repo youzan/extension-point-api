@@ -9,7 +9,7 @@ use Com\Youzan\Cloud\Extension\Param\Model\ShopInfo;
 /**
  * 订单基本信息：商品、用户、店铺、订单号
  * @author Baymax
- * @create Thu Jun 11 11:03:35 CST 2020
+ * @create 2020-06-11 11:03:35.0
  */
 class BillingBaseInfo implements \JsonSerializable {
 
