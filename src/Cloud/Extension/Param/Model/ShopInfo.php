@@ -15,46 +15,46 @@ class ShopInfo implements \JsonSerializable {
      * 当前店铺id
      * @var int
      */
-    private $shopId;
+    private $kdtId;
 
     /**
      * 总店id
      * @var int
      */
-    private $hqShopId;
+    private $rootKdtId;
 
 
 
     /**
      * @return int
      */
-    public function getShopId(): int
+    public function getKdtId(): int
     {
-        return $this->shopId;
+        return $this->kdtId;
     }
 
     /**
-     * @param int $shopId
+     * @param int $kdtId
      */
-    public function setShopId(int $shopId): void
+    public function setKdtId(int $kdtId): void
     {
-        $this->shopId = $shopId;
+        $this->kdtId = $kdtId;
     }
 
     /**
      * @return int
      */
-    public function getHqShopId(): int
+    public function getRootKdtId(): int
     {
-        return $this->hqShopId;
+        return $this->rootKdtId;
     }
 
     /**
-     * @param int $hqShopId
+     * @param int $rootKdtId
      */
-    public function setHqShopId(int $hqShopId): void
+    public function setRootKdtId(int $rootKdtId): void
     {
-        $this->hqShopId = $hqShopId;
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {
