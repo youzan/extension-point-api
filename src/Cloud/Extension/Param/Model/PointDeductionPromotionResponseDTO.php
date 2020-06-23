@@ -12,49 +12,49 @@ use StdClass;
 class PointDeductionPromotionResponseDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 下单店铺id
      * @var int
      */
     private $kdtId;
 
     /**
-     * 
+     * 订单号
      * @var string
      */
     private $orderNo;
 
     /**
-     * 
+     * 当前积分抵现可用状态。1&#x3D;用户积分数不足；2&#x3D;订单金额未达到门槛；3&#x3D;可以抵现。注意：当仅当状态为3时，才会进行订单优惠，状态1和2不进行订单优惠，只做前端展示
      * @var int
      */
     private $pointDeductionStatus;
 
     /**
-     * 
+     * 消耗积分数
      * @var int
      */
     private $costPoints;
 
     /**
-     * 
+     * 本次下单抵现金额，单位：分。如返回1000，则表示抵现10元
      * @var int
      */
     private $decrease;
 
     /**
-     * 
+     * 用户剩余积分
      * @var int
      */
     private $remainPoints;
 
     /**
-     * 
+     * 积分抵现比例。100&#x3D;100积分：1元
      * @var int
      */
     private $rate;
 
     /**
-     * 
+     * 额外扩展信息，可以返回到前端扩展点
      * @var stdClass
      */
     private $extraInfo;

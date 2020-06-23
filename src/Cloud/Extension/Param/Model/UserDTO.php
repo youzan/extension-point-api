@@ -12,13 +12,13 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 class UserDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 用户id
      * @var string
      */
-    private $buyerId;
+    private $yzOpenId;
 
     /**
-     * 
+     * 用户手机号，非必传
      * @var string
      */
     private $mobile;
@@ -28,17 +28,17 @@ class UserDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBuyerId(): string
+    public function getYzOpenId(): string
     {
-        return $this->buyerId;
+        return $this->yzOpenId;
     }
 
     /**
-     * @param string $buyerId
+     * @param string $yzOpenId
      */
-    public function setBuyerId(string $buyerId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
-        $this->buyerId = $buyerId;
+        $this->yzOpenId = $yzOpenId;
     }
 
     /**

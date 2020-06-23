@@ -12,13 +12,13 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 class GoodsInfo implements \JsonSerializable {
 
     /**
-     * 商品id
+     * 商品统一itemId。商品不再区分总店、分店商品id，只需要统一的itemId，itemId+总店/任意分店Id即可查询商品
      * @var int
      */
-    private $goodsId;
+    private $itemId;
 
     /**
-     * 规格id
+     * 规格统一skuId。商品不再区分总店、分店skuid，只需要统一的skuId，skuId+总店/任意分店Id即可查询商品
      * @var int
      */
     private $skuId;
@@ -46,17 +46,17 @@ class GoodsInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGoodsId(): int
+    public function getItemId(): int
     {
-        return $this->goodsId;
+        return $this->itemId;
     }
 
     /**
-     * @param int $goodsId
+     * @param int $itemId
      */
-    public function setGoodsId(int $goodsId): void
+    public function setItemId(int $itemId): void
     {
-        $this->goodsId = $goodsId;
+        $this->itemId = $itemId;
     }
 
     /**
