@@ -12,19 +12,19 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 class GoodsIdentityDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 商品id
      * @var int
      */
     private $goodsId;
 
     /**
-     * 
+     * 规格id
      * @var int
      */
     private $skuId;
 
     /**
-     * 
+     * 订单商品id
      * @var int
      */
     private $orderItemId;

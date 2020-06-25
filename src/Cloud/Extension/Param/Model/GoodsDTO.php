@@ -18,19 +18,19 @@ class GoodsDTO implements \JsonSerializable {
     private $goodsIdentity;
 
     /**
-     * 
+     * 商品原价，单位：分
      * @var int
      */
     private $price;
 
     /**
-     * 
+     * 商品实付金额，是经过有赞营销计算均摊后，单位：分
      * @var int
      */
     private $pay;
 
     /**
-     * 
+     * 商品数量
      * @var int
      */
     private $num;

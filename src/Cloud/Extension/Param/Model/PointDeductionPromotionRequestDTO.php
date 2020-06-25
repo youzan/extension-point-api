@@ -13,25 +13,25 @@ use Com\Youzan\Cloud\Extension\Param\Model\GoodsDTO;
 class PointDeductionPromotionRequestDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 下单店铺id
      * @var int
      */
     private $kdtId;
 
     /**
-     * 
+     * 订单号
      * @var string
      */
     private $orderNo;
 
     /**
-     * 
+     * 经过有赞营销计算后的邮费，单位：分
      * @var int
      */
     private $postage;
 
     /**
-     * 
+     * 经过有赞营销计算后的订单总金额，单位：分
      * @var int
      */
     private $orderTotalPay;
@@ -49,13 +49,13 @@ class PointDeductionPromotionRequestDTO implements \JsonSerializable {
     private $goodsDTOList;
 
     /**
-     * 
+     * 用户当前总积分数
      * @var int
      */
     private $userPoints;
 
     /**
-     * 
+     * 用户自主选择使用积分数
      * @var int
      */
     private $usePoints;
