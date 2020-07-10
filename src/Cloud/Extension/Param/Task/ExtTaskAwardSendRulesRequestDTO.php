@@ -15,13 +15,13 @@ class ExtTaskAwardSendRulesRequestDTO implements \JsonSerializable {
      * 总部ID：若单店（hqKdtId &#x3D; kdtId）
      * @var int
      */
-    private $hqKdtId;
+    private $rootKdtId;
 
     /**
      * 销售员openId
      * @var string
      */
-    private $openId;
+    private $yzOpenId;
 
     /**
      * 任务奖励ID
@@ -36,7 +36,7 @@ class ExtTaskAwardSendRulesRequestDTO implements \JsonSerializable {
     private $awardGrade;
 
     /**
-     * 任务要求类型：1：推广订单金额，2：推广订单数，3：推广商品数
+     * 任务要求类型：1：推广订单金额 单位（分），2：推广订单数，3：推广商品数
      * @var int
      */
     private $taskDemandType;
@@ -64,33 +64,33 @@ class ExtTaskAwardSendRulesRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getHqKdtId(): int
+    public function getRootKdtId(): int
     {
-        return $this->hqKdtId;
+        return $this->rootKdtId;
     }
 
     /**
-     * @param int $hqKdtId
+     * @param int $rootKdtId
      */
-    public function setHqKdtId(int $hqKdtId): void
+    public function setRootKdtId(int $rootKdtId): void
     {
-        $this->hqKdtId = $hqKdtId;
+        $this->rootKdtId = $rootKdtId;
     }
 
     /**
      * @return string
      */
-    public function getOpenId(): string
+    public function getYzOpenId(): string
     {
-        return $this->openId;
+        return $this->yzOpenId;
     }
 
     /**
-     * @param string $openId
+     * @param string $yzOpenId
      */
-    public function setOpenId(string $openId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
-        $this->openId = $openId;
+        $this->yzOpenId = $yzOpenId;
     }
 
     /**

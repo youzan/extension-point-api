@@ -30,7 +30,7 @@ class ExtTaskAwardRuleDescRequestDTO implements \JsonSerializable {
     private $awardGradeList;
 
     /**
-     * 任务要求类型:1:订单金额,2:推广订单数,3:推广商品件数
+     * 任务要求类型:1:订单金额 单位（分）,2:推广订单数,3:推广商品件数
      * @var int
      */
     private $taskDemandType;

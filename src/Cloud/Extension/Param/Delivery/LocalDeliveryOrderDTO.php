@@ -161,6 +161,12 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
      */
     private $kdtId;
 
+    /**
+     * 有赞订单号，E开头+年月日时分秒+随机数，长度24位字母和数字组合	
+     * @var string
+     */
+    private $outOrderNo;
+
 
 
     /**
@@ -561,6 +567,22 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOutOrderNo(): string
+    {
+        return $this->outOrderNo;
+    }
+
+    /**
+     * @param string $outOrderNo
+     */
+    public function setOutOrderNo(string $outOrderNo): void
+    {
+        $this->outOrderNo = $outOrderNo;
     }
 
     public function jsonSerialize() {
