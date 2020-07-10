@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Salesman\ExtItemCpsDetail;
 /**
  * 
  * @author Baymax
- * @create Thu Dec 12 09:29:19 CST 2019
+ * @create 2019-12-12 09:29:19.0
  */
 class ExtCpsCalculateResponse implements \JsonSerializable {
 
@@ -24,31 +24,31 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     private $orderNo;
 
     /**
-     * 订单的实付金额
+     * 
      * @var int
      */
     private $realPay;
 
     /**
-     * 订单佣金比例      * 如果订单包含多个商品且佣金比例不同，传 0      *  5% —— 500      *  10.5% - 1050
+     * 
      * @var int
      */
     private $iRate;
 
     /**
-     * 订单佣金 &#x3D; sum(商品佣金)
+     * 
      * @var int
      */
     private $cpsMoney;
 
     /**
-     * 商品邀请奖励      * 如果订单包含多个商品且邀请奖励不同, 传 0      * 5% —— 500      * 10.5% - 1050
+     * 
      * @var int
      */
     private $iiRate;
 
     /**
-     * 订单邀请奖励 &#x3D; sum(商品邀请奖励)
+     * 
      * @var int
      */
     private $bonusMoney;

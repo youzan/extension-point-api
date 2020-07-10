@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Salesman;
 
 
 /**
- * 订单商品信息
+ * 
  * @author Baymax
- * @create Thu Dec 12 09:29:19 CST 2019
+ * @create 2019-12-12 09:29:19.0
  */
 class ExtOrderItemDTO implements \JsonSerializable {
 
@@ -30,37 +30,37 @@ class ExtOrderItemDTO implements \JsonSerializable {
     private $skuId;
 
     /**
-     * 商品sku
+     * 
      * @var string
      */
     private $sku;
 
     /**
-     * 商品名称
+     * 
      * @var string
      */
     private $goodsName;
 
     /**
-     * 商品数量
+     * 
      * @var int
      */
     private $num;
 
     /**
-     * 商品原单价
+     * 
      * @var int
      */
     private $originUnitPrice;
 
     /**
-     * 现商品单价，减去了商品优惠。以分为单位
+     * 
      * @var int
      */
     private $unitPrice;
 
     /**
-     * 商品实付金额。
+     * 
      * @var int
      */
     private $realPay;

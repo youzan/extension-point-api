@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Pay;
+namespace Com\Youzan\Cloud\Extension\Param\Task;
 
-use Com\Youzan\Cloud\Extension\Param\Pay\ValueCardExtRefundResponse;
+use Com\Youzan\Cloud\Extension\Param\Task\ExtTaskAwardRulesDescResponseDTO;
 
 /**
  * 返回类
  * @author Baymax
- * @create 2019-11-22 15:16:12.0
+ * @create 2020-06-16 20:15:41.0
  */
-class ValueCardExtRefundResponseOutParam implements \JsonSerializable {
+class ExtTaskAwardRulesDescResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ValueCardExtRefundResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var ValueCardExtRefundResponse
+     * @var ExtTaskAwardRulesDescResponseDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ValueCardExtRefundResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return ValueCardExtRefundResponse
+     * @return ExtTaskAwardRulesDescResponseDTO
      */
-    public function getData(): ValueCardExtRefundResponse
+    public function getData(): ExtTaskAwardRulesDescResponseDTO
     {
         return $this->data;
     }
 
     /**
-     * @param ValueCardExtRefundResponse $data
+     * @param ExtTaskAwardRulesDescResponseDTO $data
      */
-    public function setData(ValueCardExtRefundResponse $data): void
+    public function setData(ExtTaskAwardRulesDescResponseDTO $data): void
     {
         $this->data = $data;
     }

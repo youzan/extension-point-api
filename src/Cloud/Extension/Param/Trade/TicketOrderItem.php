@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\GoodsInfo;
 /**
  * 
  * @author Baymax
- * @create Wed Sep 04 18:01:28 CST 2019
+ * @create 2019-09-04 18:01:28.0
  */
 class TicketOrderItem implements \JsonSerializable {
 
