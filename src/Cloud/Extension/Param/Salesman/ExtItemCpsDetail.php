@@ -12,49 +12,49 @@ namespace Com\Youzan\Cloud\Extension\Param\Salesman;
 class ExtItemCpsDetail implements \JsonSerializable {
 
     /**
-     * 
+     * 商品id（回传）
      * @var int
      */
     private $itemId;
 
     /**
-     * 
+     * 规格id（回传）
      * @var int
      */
     private $skuId;
 
     /**
-     * 
+     * 商品数量（回传）
      * @var int
      */
     private $num;
 
     /**
-     * 
+     * 商品实付金额（回传）
      * @var int
      */
     private $realPay;
 
     /**
-     * 
+     * 商品佣金（分）&#x3D; realPay * iRate
      * @var int
      */
     private $cpsMoney;
 
     /**
-     * 
+     * 商品佣金比例
      * @var int
      */
     private $iRate;
 
     /**
-     * 
+     * 商品邀请奖励（分）&#x3D; realPay * iiRate
      * @var int
      */
     private $bonusMoney;
 
     /**
-     * 
+     * 商品邀请比例
      * @var int
      */
     private $iiRate;

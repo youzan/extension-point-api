@@ -12,55 +12,55 @@ namespace Com\Youzan\Cloud\Extension\Param\Salesman;
 class ExtOrderItemDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 订单号
      * @var string
      */
     private $orderNo;
 
     /**
-     * 
+     * 商品id
      * @var int
      */
     private $itemId;
 
     /**
-     * 
+     * 规格id
      * @var int
      */
     private $skuId;
 
     /**
-     * 
+     * 商品规格
      * @var string
      */
     private $sku;
 
     /**
-     * 
+     * 商品名称
      * @var string
      */
     private $goodsName;
 
     /**
-     * 
+     * 商品数量
      * @var int
      */
     private $num;
 
     /**
-     * 
+     * 商品原单价（优惠前）
      * @var int
      */
     private $originUnitPrice;
 
     /**
-     * 
+     * 商品现单价（优惠后）
      * @var int
      */
     private $unitPrice;
 
     /**
-     * 
+     * 商品实付金额&#x3D; 现单价 * 商品数量
      * @var int
      */
     private $realPay;

@@ -24,13 +24,13 @@ class ExtOrderPriceChangeLog implements \JsonSerializable {
     private $fieldName;
 
     /**
-     * 
+     * 优惠前金额
      * @var int
      */
     private $oldValue;
 
     /**
-     * 
+     * 优惠后金额
      * @var int
      */
     private $newValue;

@@ -12,43 +12,43 @@ use Com\Youzan\Cloud\Extension\Param\Salesman\ExtItemCpsDetail;
 class ExtCpsCalculateResponse implements \JsonSerializable {
 
     /**
-     * 
+     * 店铺id（回传）
      * @var int
      */
     private $kdtId;
 
     /**
-     * 
+     * 订单号（回传）
      * @var string
      */
     private $orderNo;
 
     /**
-     * 
+     * 订单实付金额（回传）
      * @var int
      */
     private $realPay;
 
     /**
-     * 
+     * 订单佣金比例 5% — 500，10.5% - 1050，如果订单包含多个商品且佣金比例不同，传 0
      * @var int
      */
     private $iRate;
 
     /**
-     * 
+     * 订单佣金 （分）
      * @var int
      */
     private $cpsMoney;
 
     /**
-     * 
+     * 订单邀请比例 5% — 500，10.5% - 1050，如果订单包含多个商品且邀请比例不同，传 0
      * @var int
      */
     private $iiRate;
 
     /**
-     * 
+     * 订单邀请奖励（分）
      * @var int
      */
     private $bonusMoney;
