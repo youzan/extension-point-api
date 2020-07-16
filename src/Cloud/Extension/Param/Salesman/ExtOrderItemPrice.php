@@ -5,86 +5,86 @@ namespace Com\Youzan\Cloud\Extension\Param\Salesman;
 
 
 /**
- * 
+ * 商品明细
  * @author Baymax
  * @create 2019-12-12 09:29:19.0
  */
 class ExtOrderItemPrice implements \JsonSerializable {
 
     /**
-     * 
+     * 商品现单价（优惠后）
      * @var int
      */
     private $unitPrice;
 
     /**
-     * 
+     * 商品总价 &#x3D; 商品单价 * 数量
      * @var int
      */
     private $totalPrice;
 
     /**
-     * 
+     * 商品原单价（优惠前）
      * @var int
      */
     private $originUnitPrice;
 
     /**
-     * 
+     * 商品数量
      * @var int
      */
     private $num;
 
     /**
-     * 
+     * 订单号
      * @var string
      */
     private $orderNo;
 
     /**
-     * 
+     * 订单商品id
      * @var int
      */
     private $itemId;
 
     /**
-     * 
+     * 是否赠品 1：是赠品 0：不是赠品
      * @var int
      */
     private $present;
 
     /**
-     * 
+     * 商品id
      * @var int
      */
     private $goodsId;
 
     /**
-     * 
+     * 卖家店铺id
      * @var int
      */
     private $kdtId;
 
     /**
-     * 
+     * 卖家店铺id（老字段可以忽略）
      * @var int
      */
     private $shopId;
 
     /**
-     * 
+     * 商品规格id
      * @var int
      */
     private $skuId;
 
     /**
-     * 
+     * 扩展信息
      * @var string
      */
     private $extra;
 
     /**
-     * 
+     * 标记字段
      * @var int
      */
     private $tags;

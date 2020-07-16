@@ -23,6 +23,12 @@ class ExtCustomerInfoDTO implements \JsonSerializable {
      */
     private $accountType;
 
+    /**
+     * 有赞OpenId
+     * @var string
+     */
+    private $yzOpenId;
+
 
 
     /**
@@ -55,6 +61,22 @@ class ExtCustomerInfoDTO implements \JsonSerializable {
     public function setAccountType(string $accountType): void
     {
         $this->accountType = $accountType;
+    }
+
+    /**
+     * @return string
+     */
+    public function getYzOpenId(): string
+    {
+        return $this->yzOpenId;
+    }
+
+    /**
+     * @param string $yzOpenId
+     */
+    public function setYzOpenId(string $yzOpenId): void
+    {
+        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {

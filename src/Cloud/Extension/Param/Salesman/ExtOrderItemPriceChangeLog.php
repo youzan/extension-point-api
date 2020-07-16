@@ -12,13 +12,13 @@ namespace Com\Youzan\Cloud\Extension\Param\Salesman;
 class ExtOrderItemPriceChangeLog implements \JsonSerializable {
 
     /**
-     * 
+     * 订单号
      * @var string
      */
     private $orderNo;
 
     /**
-     * 
+     * 订单商品id
      * @var int
      */
     private $itemId;
@@ -36,13 +36,13 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     private $changeType;
 
     /**
-     * 
+     * 优惠前金额
      * @var int
      */
     private $oldValue;
 
     /**
-     * 
+     * 优惠后金额
      * @var int
      */
     private $newValue;

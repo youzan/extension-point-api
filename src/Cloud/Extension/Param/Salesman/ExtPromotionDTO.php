@@ -7,14 +7,14 @@ use Com\Youzan\Cloud\Extension\Param\Salesman\ExtOrderPriceChangeLog;
 use Com\Youzan\Cloud\Extension\Param\Salesman\ExtOrderItemPriceChangeLog;
 
 /**
- * 
+ * 优惠信息
  * @author Baymax
  * @create 2019-12-12 09:29:19.0
  */
 class ExtPromotionDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 商品明细
      * @var array
      */
     private $extOrderItemPrice;

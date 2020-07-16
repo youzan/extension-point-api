@@ -13,55 +13,55 @@ use Com\Youzan\Cloud\Extension\Param\Salesman\ExtPromotionDTO;
 class ExtCpsCalculateRequest implements \JsonSerializable {
 
     /**
-     * 
+     * 店铺名称
      * @var string
      */
     private $shopName;
 
     /**
-     * 
+     * 分销员openId
      * @var int
      */
     private $dsOpenId;
 
     /**
-     * 
+     * 分销员上级openId
      * @var int
      */
     private $fromDsOpenId;
 
     /**
-     * 
+     * 客户openId
      * @var int
      */
     private $ctOpenId;
 
     /**
-     * 
+     * 订单号
      * @var string
      */
     private $orderNo;
 
     /**
-     * 
+     * 订单应付金额
      * @var int
      */
     private $pay;
 
     /**
-     * 
+     * 订单实付金额
      * @var int
      */
     private $realPay;
 
     /**
-     * 
+     * 邮费
      * @var int
      */
     private $postage;
 
     /**
-     * 
+     * 是否包邮 1:包邮 0:包邮
      * @var int
      */
     private $isFreePostage;
@@ -73,13 +73,13 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     private $items;
 
     /**
-     * 
+     * 优惠信息
      * @var ExtPromotionDTO
      */
     private $promotion;
 
     /**
-     * 
+     * 店铺id
      * @var int
      */
     private $kdtId;
