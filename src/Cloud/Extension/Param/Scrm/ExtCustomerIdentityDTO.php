@@ -25,7 +25,7 @@ class ExtCustomerIdentityDTO implements \JsonSerializable {
 
     /**
      * 有赞OpenId来识别唯一用户信息
-     * @var int
+     * @var string
      */
     private $yzOpenId;
 
@@ -64,17 +64,17 @@ class ExtCustomerIdentityDTO implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getYzOpenId(): int
+    public function getYzOpenId(): string
     {
         return $this->yzOpenId;
     }
 
     /**
-     * @param int $yzOpenId
+     * @param string $yzOpenId
      */
-    public function setYzOpenId(int $yzOpenId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
