@@ -43,6 +43,12 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
      */
     private $extPointUserDTO;
 
+    /**
+     * 配送方式
+     * @var int
+     */
+    private $logisticsType;
+
 
 
     /**
@@ -123,6 +129,22 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
     public function setExtPointUserDTO(ExtPointUserMsgDTO $extPointUserDTO): void
     {
         $this->extPointUserDTO = $extPointUserDTO;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLogisticsType(): int
+    {
+        return $this->logisticsType;
+    }
+
+    /**
+     * @param int $logisticsType
+     */
+    public function setLogisticsType(int $logisticsType): void
+    {
+        $this->logisticsType = $logisticsType;
     }
 
     public function jsonSerialize() {

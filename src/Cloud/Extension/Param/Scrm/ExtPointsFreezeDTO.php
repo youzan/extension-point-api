@@ -19,7 +19,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     private $extCustomerInfoDTO;
 
     /**
-     * 店铺标识
+     * 总部id
      * @var int
      */
     private $kdtId;
@@ -53,6 +53,12 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
      * @var stdClass
      */
     private $extraInfo;
+
+    /**
+     * node_id 分店id（当是连锁且用户访问的是分店时有此参数）
+     * @var int
+     */
+    private $nodeId;
 
 
 
@@ -166,6 +172,22 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     public function setExtraInfo(stdClass $extraInfo): void
     {
         $this->extraInfo = $extraInfo;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNodeId(): int
+    {
+        return $this->nodeId;
+    }
+
+    /**
+     * @param int $nodeId
+     */
+    public function setNodeId(int $nodeId): void
+    {
+        $this->nodeId = $nodeId;
     }
 
     public function jsonSerialize() {

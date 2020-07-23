@@ -42,6 +42,18 @@ class ExtPointsConsumeDTO implements \JsonSerializable {
      */
     private $extraInfo;
 
+    /**
+     * 总部id
+     * @var int
+     */
+    private $kdtId;
+
+    /**
+     * node_id 分店id（当是连锁且用户访问的是分店时有此参数）
+     * @var int
+     */
+    private $nodeId;
+
 
 
     /**
@@ -122,6 +134,38 @@ class ExtPointsConsumeDTO implements \JsonSerializable {
     public function setExtraInfo(stdClass $extraInfo): void
     {
         $this->extraInfo = $extraInfo;
+    }
+
+    /**
+     * @return int
+     */
+    public function getKdtId(): int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNodeId(): int
+    {
+        return $this->nodeId;
+    }
+
+    /**
+     * @param int $nodeId
+     */
+    public function setNodeId(int $nodeId): void
+    {
+        $this->nodeId = $nodeId;
     }
 
     public function jsonSerialize() {
