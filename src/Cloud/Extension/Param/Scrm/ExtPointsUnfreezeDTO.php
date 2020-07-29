@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 请求参数
  * @author Baymax
- * @create Sun Sep 30 14:45:43 CST 2018
+ * @create 2018-09-30 14:45:43.0
  */
 class ExtPointsUnfreezeDTO implements \JsonSerializable {
 
@@ -19,7 +19,7 @@ class ExtPointsUnfreezeDTO implements \JsonSerializable {
     private $extCustomerInfoDTO;
 
     /**
-     * 
+     * 总部id
      * @var int
      */
     private $kdtId;
@@ -47,6 +47,12 @@ class ExtPointsUnfreezeDTO implements \JsonSerializable {
      * @var stdClass
      */
     private $extraInfo;
+
+    /**
+     * node_id 分店id（当是连锁且用户访问的是分店时有此参数）
+     * @var int
+     */
+    private $nodeId;
 
 
 
@@ -144,6 +150,22 @@ class ExtPointsUnfreezeDTO implements \JsonSerializable {
     public function setExtraInfo(stdClass $extraInfo): void
     {
         $this->extraInfo = $extraInfo;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNodeId(): int
+    {
+        return $this->nodeId;
+    }
+
+    /**
+     * @param int $nodeId
+     */
+    public function setNodeId(int $nodeId): void
+    {
+        $this->nodeId = $nodeId;
     }
 
     public function jsonSerialize() {
