@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\ExtPointExtraPriceResultDTO;
 /**
  * 
  * @author Baymax
- * @create Mon Oct 08 11:32:37 CST 2018
+ * @create 2018-10-08 11:32:37.0
  */
 class ExtraFeeCalcResultDTO implements \JsonSerializable {
 
@@ -38,7 +38,7 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
 
     /**
      *  订单级额外费用 (包含在订单是否金额里面)
-     * @var ExtPointExtraPriceResultDTO
+     * @var array
      */
     private $orderExtraPrice;
 
@@ -109,17 +109,17 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     }
 
     /**
-     * @return ExtPointExtraPriceResultDTO
+     * @return array
      */
-    public function getOrderExtraPrice(): ExtPointExtraPriceResultDTO
+    public function getOrderExtraPrice(): array
     {
         return $this->orderExtraPrice;
     }
 
     /**
-     * @param ExtPointExtraPriceResultDTO $orderExtraPrice
+     * @param array $orderExtraPrice
      */
-    public function setOrderExtraPrice(ExtPointExtraPriceResultDTO $orderExtraPrice): void
+    public function setOrderExtraPrice(array $orderExtraPrice): void
     {
         $this->orderExtraPrice = $orderExtraPrice;
     }

@@ -9,7 +9,7 @@ use Com\Youzan\Cloud\Extension\Param\ExtPointUserMsgDTO;
 /**
  * 
  * @author Baymax
- * @create Mon Oct 08 11:32:37 CST 2018
+ * @create 2018-10-08 11:32:37.0
  */
 class ExtraFeeCalcParamDTO implements \JsonSerializable {
 
@@ -42,6 +42,12 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
      * @var ExtPointUserMsgDTO
      */
     private $extPointUserDTO;
+
+    /**
+     * 配送方式 0 - 快递 1 - 自提 2 -  商家配送
+     * @var int
+     */
+    private $logisticsType;
 
 
 
@@ -123,6 +129,22 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
     public function setExtPointUserDTO(ExtPointUserMsgDTO $extPointUserDTO): void
     {
         $this->extPointUserDTO = $extPointUserDTO;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLogisticsType(): int
+    {
+        return $this->logisticsType;
+    }
+
+    /**
+     * @param int $logisticsType
+     */
+    public function setLogisticsType(int $logisticsType): void
+    {
+        $this->logisticsType = $logisticsType;
     }
 
     public function jsonSerialize() {
