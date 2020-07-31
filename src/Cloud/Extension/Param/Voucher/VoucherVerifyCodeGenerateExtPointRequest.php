@@ -18,10 +18,10 @@ class VoucherVerifyCodeGenerateExtPointRequest implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * 总部店铺Id
+     * 总部店铺Id，如果是单店不是连锁，该字段为空
      * @var int
      */
-    private $hqKdtId;
+    private $rootKdtId;
 
     /**
      * 内部活动Id
@@ -68,17 +68,17 @@ class VoucherVerifyCodeGenerateExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getHqKdtId(): int
+    public function getRootKdtId(): int
     {
-        return $this->hqKdtId;
+        return $this->rootKdtId;
     }
 
     /**
-     * @param int $hqKdtId
+     * @param int $rootKdtId
      */
-    public function setHqKdtId(int $hqKdtId): void
+    public function setRootKdtId(int $rootKdtId): void
     {
-        $this->hqKdtId = $hqKdtId;
+        $this->rootKdtId = $rootKdtId;
     }
 
     /**
