@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
 
 /**
- * 联系地址
+ * 
  * @author Baymax
  * @create 2018-09-29 21:13:57.0
  */

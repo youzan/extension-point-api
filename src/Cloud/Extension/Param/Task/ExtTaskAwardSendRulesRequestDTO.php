@@ -59,6 +59,18 @@ class ExtTaskAwardSendRulesRequestDTO implements \JsonSerializable {
      */
     private $kdtId;
 
+    /**
+     * 任务奖励开始时间，单位ms
+     * @var int
+     */
+    private $taskStartTime;
+
+    /**
+     * 任务奖励结束时间，当商家提前终止任务时，结束时间是终止时间,单位ms
+     * @var int
+     */
+    private $taskEndTime;
+
 
 
     /**
@@ -187,6 +199,38 @@ class ExtTaskAwardSendRulesRequestDTO implements \JsonSerializable {
     public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTaskStartTime(): int
+    {
+        return $this->taskStartTime;
+    }
+
+    /**
+     * @param int $taskStartTime
+     */
+    public function setTaskStartTime(int $taskStartTime): void
+    {
+        $this->taskStartTime = $taskStartTime;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTaskEndTime(): int
+    {
+        return $this->taskEndTime;
+    }
+
+    /**
+     * @param int $taskEndTime
+     */
+    public function setTaskEndTime(int $taskEndTime): void
+    {
+        $this->taskEndTime = $taskEndTime;
     }
 
     public function jsonSerialize() {
