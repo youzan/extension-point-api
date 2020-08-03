@@ -44,7 +44,7 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
     private $extPointUserDTO;
 
     /**
-     * 配送方式
+     * 配送方式 0 - 快递 1 - 自提 2 -  商家配送
      * @var int
      */
     private $logisticsType;
