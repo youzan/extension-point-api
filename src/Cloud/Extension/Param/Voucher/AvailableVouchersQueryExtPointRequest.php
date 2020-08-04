@@ -41,6 +41,12 @@ class AvailableVouchersQueryExtPointRequest implements \JsonSerializable {
      */
     private $kdtId;
 
+    /**
+     * 总部店铺Id，若为单店，则该值为当前店铺Id
+     * @var int
+     */
+    private $rootKdtId;
+
 
 
     /**
@@ -121,6 +127,22 @@ class AvailableVouchersQueryExtPointRequest implements \JsonSerializable {
     public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {

@@ -6,14 +6,14 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerIdentityDTO;
 use StdClass;
 
 /**
- * 请求参数
+ * 
  * @author Baymax
  * @create 2018-10-12 14:13:44.0
  */
 class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
 
     /**
-     * 17658987654
+     * 用户识别信息
      * @var ExtCustomerIdentityDTO
      */
     private $extCustomerIdentityDTO;
@@ -29,6 +29,12 @@ class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
      * @var stdClass
      */
     private $extensionMap;
+
+    /**
+     * node_id 分店id（当是连锁且用户访问的是分店时有此参数）
+     * @var int
+     */
+    private $nodeId;
 
 
 
@@ -78,6 +84,22 @@ class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
     public function setExtensionMap(stdClass $extensionMap): void
     {
         $this->extensionMap = $extensionMap;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNodeId(): int
+    {
+        return $this->nodeId;
+    }
+
+    /**
+     * @param int $nodeId
+     */
+    public function setNodeId(int $nodeId): void
+    {
+        $this->nodeId = $nodeId;
     }
 
     public function jsonSerialize() {

@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
 
 /**
- * 17658987654
+ * 用户识别信息
  * @author Baymax
  * @create 2018-10-12 14:13:44.0
  */
@@ -24,7 +24,7 @@ class ExtCustomerIdentityDTO implements \JsonSerializable {
     private $accountType;
 
     /**
-     * 有赞OpenId来识别唯一用户信息
+     * 有赞OpenId
      * @var string
      */
     private $yzOpenId;

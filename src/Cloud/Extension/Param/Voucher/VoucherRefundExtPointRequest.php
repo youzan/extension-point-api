@@ -53,6 +53,12 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
      */
     private $versionNo;
 
+    /**
+     * 总部店铺Id，若为单店，则该值为当前店铺Id
+     * @var int
+     */
+    private $rootKdtId;
+
 
 
     /**
@@ -165,6 +171,22 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     public function setVersionNo(int $versionNo): void
     {
         $this->versionNo = $versionNo;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {
