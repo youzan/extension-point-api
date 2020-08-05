@@ -30,8 +30,8 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * yzOpenId
-     * @var int
+     * yzOpenId是有赞对外开放的有赞用户唯一标识，建议开发者使用
+     * @var string
      */
     private $yzOpenId;
 
@@ -86,17 +86,17 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getYzOpenId(): int
+    public function getYzOpenId(): string
     {
         return $this->yzOpenId;
     }
 
     /**
-     * @param int $yzOpenId
+     * @param string $yzOpenId
      */
-    public function setYzOpenId(int $yzOpenId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }

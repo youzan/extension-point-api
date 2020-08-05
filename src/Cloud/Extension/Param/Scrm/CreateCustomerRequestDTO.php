@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\CustomerProfileCreateDTO;
 /**
  * 
  * @author Baymax
- * @create Sat Sep 29 21:13:57 CST 2018
+ * @create 2018-09-29 21:13:57.0
  */
 class CreateCustomerRequestDTO implements \JsonSerializable {
 

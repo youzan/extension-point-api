@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Voucher\VoucherRefundExtPointResponse;
 /**
  * 返回类
  * @author Baymax
- * @create 2020-02-12 16:36:12.0
+ * @create Wed Feb 12 16:36:12 CST 2020
  */
 class VoucherRefundExtPointResponseOutParam implements \JsonSerializable {
 
