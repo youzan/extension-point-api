@@ -24,7 +24,7 @@ class ExtCustomerIdentityDTO implements \JsonSerializable {
     private $accountType;
 
     /**
-     * 有赞OpenId
+     * yzOpenId是有赞对外开放的有赞用户唯一标识，建议开发者使用
      * @var string
      */
     private $yzOpenId;
