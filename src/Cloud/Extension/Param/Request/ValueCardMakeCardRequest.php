@@ -67,7 +67,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
 
     /**
      * 有赞用户开放ID
-     * @var array
+     * @var string
      */
     private $yzOpenId;
 
@@ -218,17 +218,17 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     }
 
     /**
-     * @return array
+     * @return string
      */
-    public function getYzOpenId(): array
+    public function getYzOpenId(): string
     {
         return $this->yzOpenId;
     }
 
     /**
-     * @param array $yzOpenId
+     * @param string $yzOpenId
      */
-    public function setYzOpenId(array $yzOpenId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
