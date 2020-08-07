@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 
  * @author Baymax
- * @create Wed Feb 12 16:35:56 CST 2020
+ * @create 2020-02-12 16:35:56.0
  */
 class VoucherQueryExtPointRequest implements \JsonSerializable {
 
@@ -34,6 +34,12 @@ class VoucherQueryExtPointRequest implements \JsonSerializable {
      * @var int
      */
     private $kdtId;
+
+    /**
+     * 总部店铺Id，若为单店，则该值为当前店铺Id
+     * @var int
+     */
+    private $rootKdtId;
 
 
 
@@ -99,6 +105,22 @@ class VoucherQueryExtPointRequest implements \JsonSerializable {
     public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {

@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 
  * @author Baymax
- * @create Wed Feb 12 16:36:12 CST 2020
+ * @create 2020-02-12 16:36:12.0
  */
 class VoucherRefundExtPointRequest implements \JsonSerializable {
 
@@ -52,6 +52,12 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
      * @var int
      */
     private $versionNo;
+
+    /**
+     * 总部店铺Id，若为单店，则该值为当前店铺Id
+     * @var int
+     */
+    private $rootKdtId;
 
 
 
@@ -165,6 +171,22 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     public function setVersionNo(int $versionNo): void
     {
         $this->versionNo = $versionNo;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {

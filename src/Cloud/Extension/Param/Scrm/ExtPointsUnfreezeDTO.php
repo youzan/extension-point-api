@@ -49,7 +49,7 @@ class ExtPointsUnfreezeDTO implements \JsonSerializable {
     private $extraInfo;
 
     /**
-     * node_id 分店id（当是连锁且用户访问的是分店时有此参数）
+     * 触发店铺的店铺id，当连锁触发返回分店id，总部触发返回总部id，单店触发返回单店店铺id
      * @var int
      */
     private $nodeId;

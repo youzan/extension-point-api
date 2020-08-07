@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 
  * @author Baymax
- * @create Mon May 18 16:24:01 CST 2020
+ * @create 2020-05-18 16:24:01.0
  */
 class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
 
@@ -47,6 +47,12 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
      * @var stdClass
      */
     private $extMap;
+
+    /**
+     * 总部店铺Id，若为单店，则该值为当前店铺Id
+     * @var int
+     */
+    private $rootKdtId;
 
 
 
@@ -144,6 +150,22 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
     public function setExtMap(stdClass $extMap): void
     {
         $this->extMap = $extMap;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {
