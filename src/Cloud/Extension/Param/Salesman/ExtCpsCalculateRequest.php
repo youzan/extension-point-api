@@ -20,19 +20,19 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
 
     /**
      * 分销员openId
-     * @var int
+     * @var string
      */
     private $dsOpenId;
 
     /**
      * 分销员上级openId
-     * @var int
+     * @var string
      */
     private $fromDsOpenId;
 
     /**
      * 客户openId
-     * @var int
+     * @var string
      */
     private $ctOpenId;
 
@@ -103,49 +103,49 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getDsOpenId(): int
+    public function getDsOpenId(): string
     {
         return $this->dsOpenId;
     }
 
     /**
-     * @param int $dsOpenId
+     * @param string $dsOpenId
      */
-    public function setDsOpenId(int $dsOpenId): void
+    public function setDsOpenId(string $dsOpenId): void
     {
         $this->dsOpenId = $dsOpenId;
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getFromDsOpenId(): int
+    public function getFromDsOpenId(): string
     {
         return $this->fromDsOpenId;
     }
 
     /**
-     * @param int $fromDsOpenId
+     * @param string $fromDsOpenId
      */
-    public function setFromDsOpenId(int $fromDsOpenId): void
+    public function setFromDsOpenId(string $fromDsOpenId): void
     {
         $this->fromDsOpenId = $fromDsOpenId;
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getCtOpenId(): int
+    public function getCtOpenId(): string
     {
         return $this->ctOpenId;
     }
 
     /**
-     * @param int $ctOpenId
+     * @param string $ctOpenId
      */
-    public function setCtOpenId(int $ctOpenId): void
+    public function setCtOpenId(string $ctOpenId): void
     {
         $this->ctOpenId = $ctOpenId;
     }

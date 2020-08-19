@@ -12,34 +12,18 @@ use Com\Youzan\Cloud\Extension\Param\Pay\GiftPackInfoExtDTO;
 class ValueCardExtRechargeRuleDTO implements \JsonSerializable {
 
     /**
-     * 礼包信息
-     * @var array
-     */
-    private $giftPacks;
-
-    /**
      * 金额，单位（分）
      * @var int
      */
     private $amount;
 
-
-
     /**
-     * @return array
+     * 礼包信息
+     * @var array
      */
-    public function getGiftPacks(): array
-    {
-        return $this->giftPacks;
-    }
+    private $giftPacks;
 
-    /**
-     * @param array $giftPacks
-     */
-    public function setGiftPacks(array $giftPacks): void
-    {
-        $this->giftPacks = $giftPacks;
-    }
+
 
     /**
      * @return int
@@ -55,6 +39,22 @@ class ValueCardExtRechargeRuleDTO implements \JsonSerializable {
     public function setAmount(int $amount): void
     {
         $this->amount = $amount;
+    }
+
+    /**
+     * @return array
+     */
+    public function getGiftPacks(): array
+    {
+        return $this->giftPacks;
+    }
+
+    /**
+     * @param array $giftPacks
+     */
+    public function setGiftPacks(array $giftPacks): void
+    {
+        $this->giftPacks = $giftPacks;
     }
 
     public function jsonSerialize() {

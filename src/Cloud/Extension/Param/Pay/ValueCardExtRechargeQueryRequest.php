@@ -23,6 +23,12 @@ class ValueCardExtRechargeQueryRequest implements \JsonSerializable {
      */
     private $kdtId;
 
+    /**
+     * 总部店铺ID
+     * @var int
+     */
+    private $rootKdtId;
+
 
 
     /**
@@ -55,6 +61,22 @@ class ValueCardExtRechargeQueryRequest implements \JsonSerializable {
     public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {

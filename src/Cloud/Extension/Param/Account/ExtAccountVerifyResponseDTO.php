@@ -18,7 +18,7 @@ class ExtAccountVerifyResponseDTO implements \JsonSerializable {
     private $status;
 
     /**
-     * 审核结果备注，非必填。审核不通过时可以填写不通过的原因
+     * 长度限制256字符。审核结果备注。非必填。审核不通过时可以填写不通过的原因。
      * @var string
      */
     private $remark;

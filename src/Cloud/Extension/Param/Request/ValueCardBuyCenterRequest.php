@@ -23,6 +23,18 @@ class ValueCardBuyCenterRequest implements \JsonSerializable {
      */
     private $pageSize;
 
+    /**
+     * 店铺ID
+     * @var int
+     */
+    private $kdtId;
+
+    /**
+     * 总部店铺ID
+     * @var int
+     */
+    private $rootKdtId;
+
 
 
     /**
@@ -55,6 +67,38 @@ class ValueCardBuyCenterRequest implements \JsonSerializable {
     public function setPageSize(int $pageSize): void
     {
         $this->pageSize = $pageSize;
+    }
+
+    /**
+     * @return int
+     */
+    public function getKdtId(): int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {

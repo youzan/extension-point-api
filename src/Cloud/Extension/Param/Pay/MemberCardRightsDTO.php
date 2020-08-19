@@ -30,7 +30,7 @@ class MemberCardRightsDTO implements \JsonSerializable {
     private $nonmemberOnly;
 
     /**
-     * VALID:有效 OVERDUE:过期
+     * 卡状态
      * @var string
      */
     private $cardStatus;

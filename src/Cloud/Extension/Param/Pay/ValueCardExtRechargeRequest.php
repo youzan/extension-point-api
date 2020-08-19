@@ -101,6 +101,18 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
      */
     private $markPayMethod;
 
+    /**
+     * 有赞开放ID
+     * @var string
+     */
+    private $yzOpenId;
+
+    /**
+     * 总部店铺Id
+     * @var int
+     */
+    private $rootKdtId;
+
 
 
     /**
@@ -341,6 +353,38 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     public function setMarkPayMethod(string $markPayMethod): void
     {
         $this->markPayMethod = $markPayMethod;
+    }
+
+    /**
+     * @return string
+     */
+    public function getYzOpenId(): string
+    {
+        return $this->yzOpenId;
+    }
+
+    /**
+     * @param string $yzOpenId
+     */
+    public function setYzOpenId(string $yzOpenId): void
+    {
+        $this->yzOpenId = $yzOpenId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {

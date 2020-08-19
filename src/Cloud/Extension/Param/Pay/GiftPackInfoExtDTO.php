@@ -48,7 +48,7 @@ class GiftPackInfoExtDTO implements \JsonSerializable {
     private $unavailableReason;
 
     /**
-     * 规则说明
+     * 规则详细说明
      * @var string
      */
     private $remark;

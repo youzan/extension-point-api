@@ -54,6 +54,18 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
      */
     private $operatorName;
 
+    /**
+     * 总部id
+     * @var int
+     */
+    private $kdtId;
+
+    /**
+     * 触发店铺的店铺id，当连锁触发返回分店id，总部触发返回总部id，单店触发返回单店店铺id
+     * @var int
+     */
+    private $nodeId;
+
 
 
     /**
@@ -166,6 +178,38 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     public function setOperatorName(string $operatorName): void
     {
         $this->operatorName = $operatorName;
+    }
+
+    /**
+     * @return int
+     */
+    public function getKdtId(): int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNodeId(): int
+    {
+        return $this->nodeId;
+    }
+
+    /**
+     * @param int $nodeId
+     */
+    public function setNodeId(int $nodeId): void
+    {
+        $this->nodeId = $nodeId;
     }
 
     public function jsonSerialize() {
