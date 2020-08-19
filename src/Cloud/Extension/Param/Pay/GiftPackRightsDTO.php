@@ -13,7 +13,7 @@ use Com\Youzan\Cloud\Extension\Param\Pay\OuterRightsDTO;
 /**
  * 权益内容
  * @author Baymax
- * @create 2019-11-22 12:15:26.0
+ * @create Fri Nov 22 12:15:26 CST 2019
  */
 class GiftPackRightsDTO implements \JsonSerializable {
 

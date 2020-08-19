@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\CardProductBaseInfoDTO;
 /**
  * 
  * @author Baymax
- * @create 2020-03-24 11:29:24.0
+ * @create Tue Mar 24 11:29:24 CST 2020
  */
 class ValueCardBuyCenterResponse implements \JsonSerializable {
 

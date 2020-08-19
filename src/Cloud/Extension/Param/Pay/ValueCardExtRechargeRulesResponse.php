@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Pay\ValueCardExtRechargeRuleDTO;
 /**
  * 
  * @author Baymax
- * @create 2019-11-22 12:15:26.0
+ * @create Fri Nov 22 12:15:26 CST 2019
  */
 class ValueCardExtRechargeRulesResponse implements \JsonSerializable {
 

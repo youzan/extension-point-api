@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Pay\GiftPackInfoExtDTO;
 /**
  * 
  * @author Baymax
- * @create 2019-11-22 15:09:19.0
+ * @create Fri Nov 22 15:09:19 CST 2019
  */
 class ValueCardExtRechargeRuleDTO implements \JsonSerializable {
 

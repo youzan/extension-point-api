@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Response;
+namespace Com\Youzan\Cloud\Extension\Param\Model;
 
-use Com\Youzan\Cloud\Extension\Param\Response\ValueCardTakeResponse;
+use Com\Youzan\Cloud\Extension\Param\Model\BizTestResponseDTO;
 
 /**
  * 返回类
  * @author Baymax
- * @create Tue Mar 24 10:55:54 CST 2020
+ * @create 2020-01-16 19:48:24.0
  */
-class ValueCardTakeResponseOutParam implements \JsonSerializable {
+class BizTestResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ValueCardTakeResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var ValueCardTakeResponse
+     * @var BizTestResponseDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ValueCardTakeResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return ValueCardTakeResponse
+     * @return BizTestResponseDTO
      */
-    public function getData(): ValueCardTakeResponse
+    public function getData(): BizTestResponseDTO
     {
         return $this->data;
     }
 
     /**
-     * @param ValueCardTakeResponse $data
+     * @param BizTestResponseDTO $data
      */
-    public function setData(ValueCardTakeResponse $data): void
+    public function setData(BizTestResponseDTO $data): void
     {
         $this->data = $data;
     }

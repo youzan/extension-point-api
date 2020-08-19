@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Account\ExtAccountVerifyDTO;
 /**
  * 
  * @author Baymax
- * @create 2020-04-16 10:50:54.0
+ * @create Thu Apr 16 10:50:54 CST 2020
  */
 class ExtAccountVerifyRequestDTO implements \JsonSerializable {
 

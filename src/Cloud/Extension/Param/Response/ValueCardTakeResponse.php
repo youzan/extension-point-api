@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 /**
  * 
  * @author Baymax
- * @create 2020-03-24 10:55:54.0
+ * @create Tue Mar 24 10:55:54 CST 2020
  */
 class ValueCardTakeResponse implements \JsonSerializable {
 

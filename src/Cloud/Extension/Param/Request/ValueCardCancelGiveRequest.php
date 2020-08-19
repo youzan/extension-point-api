@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 /**
  * 
  * @author Baymax
- * @create 2020-03-24 11:29:05.0
+ * @create Tue Mar 24 11:29:05 CST 2020
  */
 class ValueCardCancelGiveRequest implements \JsonSerializable {
 
