@@ -59,6 +59,12 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
      */
     private $yzOpenId;
 
+    /**
+     * 总部店铺ID
+     * @var int
+     */
+    private $rootKdtId;
+
 
 
     /**
@@ -187,6 +193,22 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {
