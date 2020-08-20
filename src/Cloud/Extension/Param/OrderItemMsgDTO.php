@@ -14,7 +14,7 @@ use Com\Youzan\Cloud\Extension\Param\SkuDTO;
 class OrderItemMsgDTO implements \JsonSerializable {
 
     /**
-     * 商品信息
+     *  商品信息
      * @var GoodsInfo
      */
     private $goodsInfo;
@@ -26,19 +26,19 @@ class OrderItemMsgDTO implements \JsonSerializable {
     private $extra;
 
     /**
-     * 实付金额
+     *  实付金额
      * @var int
      */
     private $realPay;
 
     /**
-     * 标
+     *  标
      * @var stdClass
      */
     private $tags;
 
     /**
-     * 限购数
+     *  限购数
      * @var int
      */
     private $quotaNum;
@@ -62,13 +62,13 @@ class OrderItemMsgDTO implements \JsonSerializable {
     private $snapShot;
 
     /**
-     * sku信息
+     *  sku信息
      * @var SkuDTO
      */
     private $skuDTO;
 
     /**
-     * 子订单id
+     *  子订单id
      * @var int
      */
     private $id;
