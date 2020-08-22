@@ -25,7 +25,7 @@ class ShopEnterRequest implements \JsonSerializable {
 
     /**
      * 买家用户id
-     * @var int
+     * @var string
      */
     private $buyerId;
 
@@ -49,7 +49,7 @@ class ShopEnterRequest implements \JsonSerializable {
 
     /**
      * 业务来源
-     * @var int
+     * @var array
      */
     private $bizType;
 
@@ -94,17 +94,17 @@ class ShopEnterRequest implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getBuyerId(): int
+    public function getBuyerId(): string
     {
         return $this->buyerId;
     }
 
     /**
-     * @param int $buyerId
+     * @param string $buyerId
      */
-    public function setBuyerId(int $buyerId): void
+    public function setBuyerId(string $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
@@ -158,17 +158,17 @@ class ShopEnterRequest implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return array
      */
-    public function getBizType(): int
+    public function getBizType(): array
     {
         return $this->bizType;
     }
 
     /**
-     * @param int $bizType
+     * @param array $bizType
      */
-    public function setBizType(int $bizType): void
+    public function setBizType(array $bizType): void
     {
         $this->bizType = $bizType;
     }

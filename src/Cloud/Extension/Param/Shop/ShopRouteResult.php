@@ -24,7 +24,7 @@ class ShopRouteResult implements \JsonSerializable {
     private $routeKdtId;
 
     /**
-     * 
+     * 店铺地址
      * @var AddressVO
      */
     private $addressVO;
