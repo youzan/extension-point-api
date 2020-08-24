@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param;
 use Com\Youzan\Cloud\Extension\Param\SkuCompositeId;
 
 /**
- * sku信息
+ *  sku信息
  * @author Baymax
  * @create 2018-10-22 20:30:57.0
  */
 class SkuDTO implements \JsonSerializable {
 
     /**
-     * 商品现价
+     *  商品现价
      * @var int
      */
     private $currentPrice;
@@ -24,7 +24,7 @@ class SkuDTO implements \JsonSerializable {
     private $originPrice;
 
     /**
-     * 是否外部商品
+     *  是否外部商品
      * @var bool
      */
     private $outside;
@@ -48,7 +48,7 @@ class SkuDTO implements \JsonSerializable {
     private $skuCode;
 
     /**
-     * 图片地址
+     *  图片地址
      * @var string
      */
     private $imageUrl;
@@ -60,7 +60,7 @@ class SkuDTO implements \JsonSerializable {
     private $name;
 
     /**
-     * 复合id
+     *  复合id
      * @var SkuCompositeId
      */
     private $skuCompositeId;

@@ -7,7 +7,7 @@ use DateTime;
 /**
  * 
  * @author Baymax
- * @create Fri Nov 22 11:42:40 CST 2019
+ * @create 2019-11-22 11:42:40.0
  */
 class ValueCardExtPayRequest implements \JsonSerializable {
 
@@ -42,12 +42,6 @@ class ValueCardExtPayRequest implements \JsonSerializable {
     private $goodDesc;
 
     /**
-     * 有赞用户ID
-     * @var int
-     */
-    private $buyerId;
-
-    /**
      * 用户手机号
      * @var string
      */
@@ -70,6 +64,18 @@ class ValueCardExtPayRequest implements \JsonSerializable {
      * @var int
      */
     private $kdtId;
+
+    /**
+     * 有赞用户开放Id
+     * @var string
+     */
+    private $yzOpenId;
+
+    /**
+     * 总部ID
+     * @var int
+     */
+    private $rootKdtId;
 
 
 
@@ -154,22 +160,6 @@ class ValueCardExtPayRequest implements \JsonSerializable {
     }
 
     /**
-     * @return int
-     */
-    public function getBuyerId(): int
-    {
-        return $this->buyerId;
-    }
-
-    /**
-     * @param int $buyerId
-     */
-    public function setBuyerId(int $buyerId): void
-    {
-        $this->buyerId = $buyerId;
-    }
-
-    /**
      * @return string
      */
     public function getUserPhone(): string
@@ -231,6 +221,38 @@ class ValueCardExtPayRequest implements \JsonSerializable {
     public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getYzOpenId(): string
+    {
+        return $this->yzOpenId;
+    }
+
+    /**
+     * @param string $yzOpenId
+     */
+    public function setYzOpenId(string $yzOpenId): void
+    {
+        $this->yzOpenId = $yzOpenId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {

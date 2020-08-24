@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Pay\GiftPackRightsDTO;
 /**
  * 礼包信息
  * @author Baymax
- * @create Fri Nov 22 12:15:26 CST 2019
+ * @create 2019-11-22 12:15:26.0
  */
 class GiftPackInfoExtDTO implements \JsonSerializable {
 
@@ -48,7 +48,7 @@ class GiftPackInfoExtDTO implements \JsonSerializable {
     private $unavailableReason;
 
     /**
-     * 规则说明
+     * 规则详细说明
      * @var string
      */
     private $remark;

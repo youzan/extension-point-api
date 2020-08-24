@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 /**
  * 会员卡权益列表
  * @author Baymax
- * @create Fri Nov 22 12:15:26 CST 2019
+ * @create 2019-11-22 12:15:26.0
  */
 class MemberCardRightsDTO implements \JsonSerializable {
 
@@ -30,7 +30,7 @@ class MemberCardRightsDTO implements \JsonSerializable {
     private $nonmemberOnly;
 
     /**
-     * VALID:有效 OVERDUE:过期
+     * 卡状态
      * @var string
      */
     private $cardStatus;

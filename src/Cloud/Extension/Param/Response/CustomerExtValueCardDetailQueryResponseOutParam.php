@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\CustomerExtValueCardDetailQueryRes
 /**
  * 返回类
  * @author Baymax
- * @create Tue Mar 24 11:28:49 CST 2020
+ * @create 2020-03-24 11:28:49.0
  */
 class CustomerExtValueCardDetailQueryResponseOutParam implements \JsonSerializable {
 

@@ -7,7 +7,7 @@ use DateTime;
 /**
  * 
  * @author Baymax
- * @create Fri Nov 22 11:42:41 CST 2019
+ * @create 2019-11-22 11:42:41.0
  */
 class ValueCardExtPayResponse implements \JsonSerializable {
 
@@ -36,7 +36,7 @@ class ValueCardExtPayResponse implements \JsonSerializable {
     private $payAmount;
 
     /**
-     * 支付状态
+     * 支付状态   NOPAY: 未支付; SUCCESS: 成功; FAIL: 失败; PAYING: 支付中; UNKNOW: 未知; CLOSED: 已经关闭
      * @var string
      */
     private $payStatus;

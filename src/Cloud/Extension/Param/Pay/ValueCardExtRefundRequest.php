@@ -7,7 +7,7 @@ use DateTime;
 /**
  * 
  * @author Baymax
- * @create Fri Nov 22 15:16:11 CST 2019
+ * @create 2019-11-22 15:16:11.0
  */
 class ValueCardExtRefundRequest implements \JsonSerializable {
 
@@ -58,6 +58,12 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
      * @var int
      */
     private $kdtId;
+
+    /**
+     * 总部店铺ID
+     * @var int
+     */
+    private $rootKdtId;
 
 
 
@@ -187,6 +193,22 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {

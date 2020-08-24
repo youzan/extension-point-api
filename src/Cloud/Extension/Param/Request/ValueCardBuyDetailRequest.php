@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 /**
  * 
  * @author Baymax
- * @create Tue Mar 24 10:56:53 CST 2020
+ * @create 2020-03-24 10:56:53.0
  */
 class ValueCardBuyDetailRequest implements \JsonSerializable {
 
@@ -22,6 +22,18 @@ class ValueCardBuyDetailRequest implements \JsonSerializable {
      * @var string
      */
     private $productSpuNo;
+
+    /**
+     * 店铺ID
+     * @var int
+     */
+    private $kdtId;
+
+    /**
+     * 总部店铺ID
+     * @var int
+     */
+    private $rootKdtId;
 
 
 
@@ -55,6 +67,38 @@ class ValueCardBuyDetailRequest implements \JsonSerializable {
     public function setProductSpuNo(string $productSpuNo): void
     {
         $this->productSpuNo = $productSpuNo;
+    }
+
+    /**
+     * @return int
+     */
+    public function getKdtId(): int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {

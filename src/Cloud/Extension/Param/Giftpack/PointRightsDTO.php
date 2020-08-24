@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Giftpack;
 /**
  * 积分权益
  * @author Baymax
- * @create Tue Mar 24 10:56:53 CST 2020
+ * @create 2020-03-24 10:56:53.0
  */
 class PointRightsDTO implements \JsonSerializable {
 

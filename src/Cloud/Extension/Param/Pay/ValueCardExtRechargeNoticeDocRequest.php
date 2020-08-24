@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 /**
  * 
  * @author Baymax
- * @create Fri Nov 22 11:57:30 CST 2019
+ * @create 2019-11-22 11:57:30.0
  */
 class ValueCardExtRechargeNoticeDocRequest implements \JsonSerializable {
 
@@ -22,6 +22,12 @@ class ValueCardExtRechargeNoticeDocRequest implements \JsonSerializable {
      * @var int
      */
     private $kdtId;
+
+    /**
+     * 总部店铺ID
+     * @var int
+     */
+    private $rootKdtId;
 
 
 
@@ -55,6 +61,22 @@ class ValueCardExtRechargeNoticeDocRequest implements \JsonSerializable {
     public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {

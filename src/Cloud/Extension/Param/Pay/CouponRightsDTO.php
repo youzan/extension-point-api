@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 /**
  * 优惠券权益列表
  * @author Baymax
- * @create Fri Nov 22 12:15:26 CST 2019
+ * @create 2019-11-22 12:15:26.0
  */
 class CouponRightsDTO implements \JsonSerializable {
 
@@ -30,7 +30,7 @@ class CouponRightsDTO implements \JsonSerializable {
     private $count;
 
     /**
-     * 活动状态 1.有效 2.无库存 3.已过期 4.已失效 -1.已删除
+     * 活动状态
      * @var int
      */
     private $status;

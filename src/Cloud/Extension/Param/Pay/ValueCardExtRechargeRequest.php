@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 /**
  * 
  * @author Baymax
- * @create Fri Nov 22 11:54:57 CST 2019
+ * @create 2019-11-22 11:54:57.0
  */
 class ValueCardExtRechargeRequest implements \JsonSerializable {
 
@@ -100,6 +100,18 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
      * @var string
      */
     private $markPayMethod;
+
+    /**
+     * 有赞开放ID
+     * @var string
+     */
+    private $yzOpenId;
+
+    /**
+     * 总部店铺Id
+     * @var int
+     */
+    private $rootKdtId;
 
 
 
@@ -341,6 +353,38 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     public function setMarkPayMethod(string $markPayMethod): void
     {
         $this->markPayMethod = $markPayMethod;
+    }
+
+    /**
+     * @return string
+     */
+    public function getYzOpenId(): string
+    {
+        return $this->yzOpenId;
+    }
+
+    /**
+     * @param string $yzOpenId
+     */
+    public function setYzOpenId(string $yzOpenId): void
+    {
+        $this->yzOpenId = $yzOpenId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {

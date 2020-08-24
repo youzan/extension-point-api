@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Giftpack\GiftPackInfoExtDTO;
 /**
  * 子商品（SKU）集合
  * @author Baymax
- * @create Tue Mar 24 10:56:53 CST 2020
+ * @create 2020-03-24 10:56:53.0
  */
 class ValueCardExtProductBuyDTO implements \JsonSerializable {
 

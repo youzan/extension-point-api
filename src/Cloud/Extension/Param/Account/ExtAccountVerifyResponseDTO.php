@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Account;
 /**
  * 
  * @author Baymax
- * @create Thu Apr 16 10:50:54 CST 2020
+ * @create 2020-04-16 10:50:54.0
  */
 class ExtAccountVerifyResponseDTO implements \JsonSerializable {
 
@@ -18,7 +18,7 @@ class ExtAccountVerifyResponseDTO implements \JsonSerializable {
     private $status;
 
     /**
-     * 审核结果备注，非必填。审核不通过时可以填写不通过的原因
+     * 长度限制256字符。审核结果备注。非必填。审核不通过时可以填写不通过的原因。
      * @var string
      */
     private $remark;

@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Giftpack;
 /**
  * 外部权益列表
  * @author Baymax
- * @create Tue Mar 24 10:56:53 CST 2020
+ * @create 2020-03-24 10:56:53.0
  */
 class OuterRightsDTO implements \JsonSerializable {
 

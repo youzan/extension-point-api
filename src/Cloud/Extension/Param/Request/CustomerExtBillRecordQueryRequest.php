@@ -7,7 +7,7 @@ use DateTime;
 /**
  * 
  * @author Baymax
- * @create Mon Jan 06 11:40:29 CST 2020
+ * @create 2020-01-06 11:40:29.0
  */
 class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
 
@@ -64,6 +64,18 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
      * @var int
      */
     private $kdtId;
+
+    /**
+     * 有赞开放id
+     * @var string
+     */
+    private $buyerId;
+
+    /**
+     * 总部店铺ID
+     * @var int
+     */
+    private $rootKdtId;
 
 
 
@@ -209,6 +221,38 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBuyerId(): string
+    {
+        return $this->buyerId;
+    }
+
+    /**
+     * @param string $buyerId
+     */
+    public function setBuyerId(string $buyerId): void
+    {
+        $this->buyerId = $buyerId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {

@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 /**
  * 
  * @author Baymax
- * @create Tue Mar 24 11:29:24 CST 2020
+ * @create 2020-03-24 11:29:24.0
  */
 class ValueCardBuyCenterRequest implements \JsonSerializable {
 
@@ -22,6 +22,18 @@ class ValueCardBuyCenterRequest implements \JsonSerializable {
      * @var int
      */
     private $pageSize;
+
+    /**
+     * 店铺ID
+     * @var int
+     */
+    private $kdtId;
+
+    /**
+     * 总部店铺ID
+     * @var int
+     */
+    private $rootKdtId;
 
 
 
@@ -55,6 +67,38 @@ class ValueCardBuyCenterRequest implements \JsonSerializable {
     public function setPageSize(int $pageSize): void
     {
         $this->pageSize = $pageSize;
+    }
+
+    /**
+     * @return int
+     */
+    public function getKdtId(): int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {

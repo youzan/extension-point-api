@@ -7,7 +7,7 @@ use DateTime;
 /**
  * 
  * @author Baymax
- * @create Tue Mar 24 11:28:58 CST 2020
+ * @create 2020-03-24 11:28:58.0
  */
 class ValueCardMakeCardRequest implements \JsonSerializable {
 
@@ -70,6 +70,18 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
      * @var string
      */
     private $yzOpenId;
+
+    /**
+     * 店铺ID
+     * @var int
+     */
+    private $kdtId;
+
+    /**
+     * 总部店铺ID
+     * @var int
+     */
+    private $rootKdtId;
 
 
 
@@ -231,6 +243,38 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getKdtId(): int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {

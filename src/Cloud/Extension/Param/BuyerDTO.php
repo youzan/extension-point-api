@@ -42,7 +42,7 @@ class BuyerDTO implements \JsonSerializable {
     private $buyerId;
 
     /**
-     * 买家标识
+     *  买家标识
      * @var string
      */
     private $yzOpenId;

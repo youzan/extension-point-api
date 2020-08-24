@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Pay;
+namespace Com\Youzan\Cloud\Extension\Param\Shop;
 
-use Com\Youzan\Cloud\Extension\Param\Pay\ValueCardExtRechargeNoticeDocResponse;
+use Com\Youzan\Cloud\Extension\Param\Shop\ShopRouteResult;
 
 /**
  * 返回类
  * @author Baymax
- * @create 2019-11-22 11:57:30.0
+ * @create 2020-08-10 16:52:53.0
  */
-class ValueCardExtRechargeNoticeDocResponseOutParam implements \JsonSerializable {
+class ShopRouteResultOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ValueCardExtRechargeNoticeDocResponseOutParam implements \JsonSerializable
 
     /**
      *
-     * @var ValueCardExtRechargeNoticeDocResponse
+     * @var ShopRouteResult
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ValueCardExtRechargeNoticeDocResponseOutParam implements \JsonSerializable
     }
 
     /**
-     * @return ValueCardExtRechargeNoticeDocResponse
+     * @return ShopRouteResult
      */
-    public function getData(): ValueCardExtRechargeNoticeDocResponse
+    public function getData(): ShopRouteResult
     {
         return $this->data;
     }
 
     /**
-     * @param ValueCardExtRechargeNoticeDocResponse $data
+     * @param ShopRouteResult $data
      */
-    public function setData(ValueCardExtRechargeNoticeDocResponse $data): void
+    public function setData(ShopRouteResult $data): void
     {
         $this->data = $data;
     }

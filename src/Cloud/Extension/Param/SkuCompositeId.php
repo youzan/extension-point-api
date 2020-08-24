@@ -2,10 +2,10 @@
 
 namespace Com\Youzan\Cloud\Extension\Param;
 
-use StdClass;
+
 
 /**
- * 复合id
+ *  复合id
  * @author Baymax
  * @create 2018-10-22 20:30:57.0
  */
@@ -18,16 +18,10 @@ class SkuCompositeId implements \JsonSerializable {
     private $goodsId;
 
     /**
-     * 商品skuID
+     *  商品skuID
      * @var int
      */
     private $skuId;
-
-    /**
-     * 模型扩展字段
-     * @var stdClass
-     */
-    private $extModelMap;
 
 
 
@@ -61,22 +55,6 @@ class SkuCompositeId implements \JsonSerializable {
     public function setSkuId(int $skuId): void
     {
         $this->skuId = $skuId;
-    }
-
-    /**
-     * @return stdClass
-     */
-    public function getExtModelMap(): stdClass
-    {
-        return $this->extModelMap;
-    }
-
-    /**
-     * @param stdClass $extModelMap
-     */
-    public function setExtModelMap(stdClass $extModelMap): void
-    {
-        $this->extModelMap = $extModelMap;
     }
 
     public function jsonSerialize() {

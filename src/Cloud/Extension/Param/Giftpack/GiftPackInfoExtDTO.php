@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Giftpack\GiftPackRightsDTO;
 /**
  * 礼包集合（同充值礼包一样）
  * @author Baymax
- * @create Tue Mar 24 10:56:53 CST 2020
+ * @create 2020-03-24 10:56:53.0
  */
 class GiftPackInfoExtDTO implements \JsonSerializable {
 
