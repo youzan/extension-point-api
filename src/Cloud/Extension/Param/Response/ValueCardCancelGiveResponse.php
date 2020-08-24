@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 /**
  * 
  * @author Baymax
- * @create Tue Mar 24 11:29:05 CST 2020
+ * @create 2020-03-24 11:29:05.0
  */
 class ValueCardCancelGiveResponse implements \JsonSerializable {
 

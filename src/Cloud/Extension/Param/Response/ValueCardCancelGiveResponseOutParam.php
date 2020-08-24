@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\ValueCardCancelGiveResponse;
 /**
  * 返回类
  * @author Baymax
- * @create Tue Mar 24 11:29:05 CST 2020
+ * @create 2020-03-24 11:29:05.0
  */
 class ValueCardCancelGiveResponseOutParam implements \JsonSerializable {
 

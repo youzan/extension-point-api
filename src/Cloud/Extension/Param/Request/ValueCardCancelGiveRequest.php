@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 /**
  * 
  * @author Baymax
- * @create Tue Mar 24 11:29:05 CST 2020
+ * @create 2020-03-24 11:29:05.0
  */
 class ValueCardCancelGiveRequest implements \JsonSerializable {
 
@@ -18,10 +18,22 @@ class ValueCardCancelGiveRequest implements \JsonSerializable {
     private $giveId;
 
     /**
-     * 赠送人有赞开发ID
+     * 赠送人有赞开放ID
      * @var string
      */
     private $yzOpenId;
+
+    /**
+     * 店铺ID
+     * @var int
+     */
+    private $kdtId;
+
+    /**
+     * 总部店铺ID
+     * @var int
+     */
+    private $rootKdtId;
 
 
 
@@ -55,6 +67,38 @@ class ValueCardCancelGiveRequest implements \JsonSerializable {
     public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getKdtId(): int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {

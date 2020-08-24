@@ -66,10 +66,10 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * 有赞开放id
+     * 有赞开放ID
      * @var string
      */
-    private $buyerId;
+    private $yzOpenId;
 
     /**
      * 总部店铺ID
@@ -226,17 +226,17 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBuyerId(): string
+    public function getYzOpenId(): string
     {
-        return $this->buyerId;
+        return $this->yzOpenId;
     }
 
     /**
-     * @param string $buyerId
+     * @param string $yzOpenId
      */
-    public function setBuyerId(string $buyerId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
-        $this->buyerId = $buyerId;
+        $this->yzOpenId = $yzOpenId;
     }
 
     /**
