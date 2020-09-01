@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Shop;
 /**
  * 
  * @author Baymax
- * @create 2020-08-11 14:49:48.0
+ * @create Tue Aug 11 14:49:48 CST 2020
  */
 class ShopEnterRequest implements \JsonSerializable {
 

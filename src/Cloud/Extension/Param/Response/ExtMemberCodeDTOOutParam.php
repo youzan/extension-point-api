@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Shop;
+namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Com\Youzan\Cloud\Extension\Param\Shop\ShopRouteResult;
+use Com\Youzan\Cloud\Extension\Param\Response\ExtMemberCodeDTO;
 
 /**
  * 返回类
  * @author Baymax
- * @create Mon Aug 10 16:52:53 CST 2020
+ * @create 2020-08-25 15:40:11.0
  */
-class ShopRouteResultOutParam implements \JsonSerializable {
+class ExtMemberCodeDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ShopRouteResultOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var ShopRouteResult
+     * @var ExtMemberCodeDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ShopRouteResultOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return ShopRouteResult
+     * @return ExtMemberCodeDTO
      */
-    public function getData(): ShopRouteResult
+    public function getData(): ExtMemberCodeDTO
     {
         return $this->data;
     }
 
     /**
-     * @param ShopRouteResult $data
+     * @param ExtMemberCodeDTO $data
      */
-    public function setData(ShopRouteResult $data): void
+    public function setData(ExtMemberCodeDTO $data): void
     {
         $this->data = $data;
     }

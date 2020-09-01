@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 /**
  * 商品级别可退金额数据
  * @author Baymax
- * @create 2020-04-27 20:55:56.0
+ * @create Mon Apr 27 20:55:56 CST 2020
  */
 class RefundableFeeDTO implements \JsonSerializable {
 

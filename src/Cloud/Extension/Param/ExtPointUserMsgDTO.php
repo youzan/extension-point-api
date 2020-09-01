@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 买家信息
  * @author Baymax
- * @create 2019-03-27 11:42:10.0
+ * @create Wed Mar 27 11:42:10 CST 2019
  */
 class ExtPointUserMsgDTO implements \JsonSerializable {
 
@@ -48,7 +48,7 @@ class ExtPointUserMsgDTO implements \JsonSerializable {
     private $phoneNo;
 
     /**
-     *  用户标识
+     * 用户标识
      * @var string
      */
     private $yzOpenId;

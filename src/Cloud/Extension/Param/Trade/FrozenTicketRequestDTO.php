@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 /**
  * 
  * @author Baymax
- * @create 2019-07-23 19:47:34.0
+ * @create Tue Jul 23 19:47:34 CST 2019
  */
 class FrozenTicketRequestDTO implements \JsonSerializable {
 
