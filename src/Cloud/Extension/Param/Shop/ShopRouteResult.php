@@ -18,13 +18,13 @@ class ShopRouteResult implements \JsonSerializable {
     private $routeType;
 
     /**
-     * 路由到店铺则返回进店店铺kdtId
+     * 路由到店铺则返回进店店铺kdtId(当routeType&#x3D;2和3不返回)
      * @var int
      */
     private $routeKdtId;
 
     /**
-     * 店铺地址
+     * 店铺地址(当routeType&#x3D;2和3不返回)
      * @var AddressVO
      */
     private $addressVO;

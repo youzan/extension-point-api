@@ -48,7 +48,7 @@ class ExtPointUserMsgDTO implements \JsonSerializable {
     private $phoneNo;
 
     /**
-     *  用户标识
+     * 用户标识
      * @var string
      */
     private $yzOpenId;

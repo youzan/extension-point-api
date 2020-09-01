@@ -27,7 +27,7 @@ class ShopEnterRequest implements \JsonSerializable {
      * 买家用户id
      * @var string
      */
-    private $buyerId;
+    private $yzOpenId;
 
     /**
      * 来源渠道,小程序、H5
@@ -42,22 +42,46 @@ class ShopEnterRequest implements \JsonSerializable {
     private $url;
 
     /**
-     * 微信unionid
+     * 纬度
+     * @var string
+     */
+    private $lat;
+
+    /**
+     * 经度
+     * @var string
+     */
+    private $lng;
+
+    /**
+     * 国家
+     * @var string
+     */
+    private $countryName;
+
+    /**
+     * 省
+     * @var string
+     */
+    private $provinceName;
+
+    /**
+     * 市
+     * @var string
+     */
+    private $cityName;
+
+    /**
+     * 区
+     * @var string
+     */
+    private $countyName;
+
+    /**
+     * 获取定位动作标识 0:首次进店 1:同意定位授权 2:拒绝定位授权
      * @var int
      */
-    private $unionid;
-
-    /**
-     * 业务来源
-     * @var array
-     */
-    private $bizType;
-
-    /**
-     * 跳过会员归属进店规则店铺
-     * @var bool
-     */
-    private $directEnterSign;
+    private $positionBehaviorSign;
 
 
 
@@ -96,17 +120,17 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBuyerId(): string
+    public function getYzOpenId(): string
     {
-        return $this->buyerId;
+        return $this->yzOpenId;
     }
 
     /**
-     * @param string $buyerId
+     * @param string $yzOpenId
      */
-    public function setBuyerId(string $buyerId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
-        $this->buyerId = $buyerId;
+        $this->yzOpenId = $yzOpenId;
     }
 
     /**
@@ -142,51 +166,115 @@ class ShopEnterRequest implements \JsonSerializable {
     }
 
     /**
+     * @return string
+     */
+    public function getLat(): string
+    {
+        return $this->lat;
+    }
+
+    /**
+     * @param string $lat
+     */
+    public function setLat(string $lat): void
+    {
+        $this->lat = $lat;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLng(): string
+    {
+        return $this->lng;
+    }
+
+    /**
+     * @param string $lng
+     */
+    public function setLng(string $lng): void
+    {
+        $this->lng = $lng;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCountryName(): string
+    {
+        return $this->countryName;
+    }
+
+    /**
+     * @param string $countryName
+     */
+    public function setCountryName(string $countryName): void
+    {
+        $this->countryName = $countryName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getProvinceName(): string
+    {
+        return $this->provinceName;
+    }
+
+    /**
+     * @param string $provinceName
+     */
+    public function setProvinceName(string $provinceName): void
+    {
+        $this->provinceName = $provinceName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCityName(): string
+    {
+        return $this->cityName;
+    }
+
+    /**
+     * @param string $cityName
+     */
+    public function setCityName(string $cityName): void
+    {
+        $this->cityName = $cityName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCountyName(): string
+    {
+        return $this->countyName;
+    }
+
+    /**
+     * @param string $countyName
+     */
+    public function setCountyName(string $countyName): void
+    {
+        $this->countyName = $countyName;
+    }
+
+    /**
      * @return int
      */
-    public function getUnionid(): int
+    public function getPositionBehaviorSign(): int
     {
-        return $this->unionid;
+        return $this->positionBehaviorSign;
     }
 
     /**
-     * @param int $unionid
+     * @param int $positionBehaviorSign
      */
-    public function setUnionid(int $unionid): void
+    public function setPositionBehaviorSign(int $positionBehaviorSign): void
     {
-        $this->unionid = $unionid;
-    }
-
-    /**
-     * @return array
-     */
-    public function getBizType(): array
-    {
-        return $this->bizType;
-    }
-
-    /**
-     * @param array $bizType
-     */
-    public function setBizType(array $bizType): void
-    {
-        $this->bizType = $bizType;
-    }
-
-    /**
-     * @return bool
-     */
-    public function getDirectEnterSign(): bool
-    {
-        return $this->directEnterSign;
-    }
-
-    /**
-     * @param bool $directEnterSign
-     */
-    public function setDirectEnterSign(bool $directEnterSign): void
-    {
-        $this->directEnterSign = $directEnterSign;
+        $this->positionBehaviorSign = $positionBehaviorSign;
     }
 
     public function jsonSerialize() {

@@ -30,13 +30,13 @@ class GoodsInfo implements \JsonSerializable {
     private $itemValidityEnd;
 
     /**
-     *  电子卡券有效期类型
+     * 电子卡券有效期类型
      * @var int
      */
     private $validityType;
 
     /**
-     *  电子卡券有效期天数
+     * 电子卡券有效期天数
      * @var int
      */
     private $itemValidityDay;

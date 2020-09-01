@@ -18,7 +18,7 @@ class ValueCardCancelGiveRequest implements \JsonSerializable {
     private $giveId;
 
     /**
-     * 赠送人有赞开发ID
+     * 赠送人有赞开放ID
      * @var string
      */
     private $yzOpenId;
