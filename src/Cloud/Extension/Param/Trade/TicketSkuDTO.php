@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 /**
  * 商品sku信息
  * @author Baymax
- * @create Wed Sep 04 18:01:28 CST 2019
+ * @create 2019-09-04 18:01:28.0
  */
 class TicketSkuDTO implements \JsonSerializable {
 
