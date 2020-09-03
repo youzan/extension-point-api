@@ -33,13 +33,37 @@ class InsertOptMenuItem implements \JsonSerializable {
      * 
      * @var string
      */
-    private $after;
+    private $menuAfter;
 
     /**
      * 
      * @var int
      */
-    private $sort;
+    private $menuSort;
+
+    /**
+     * 
+     * @var string
+     */
+    private $categoryAfter;
+
+    /**
+     * 
+     * @var int
+     */
+    private $categorySort;
+
+    /**
+     * 
+     * @var int
+     */
+    private $menuItemType;
+
+    /**
+     * 
+     * @var string
+     */
+    private $category;
 
 
 
@@ -94,33 +118,97 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAfter(): string
+    public function getMenuAfter(): string
     {
-        return $this->after;
+        return $this->menuAfter;
     }
 
     /**
-     * @param string $after
+     * @param string $menuAfter
      */
-    public function setAfter(string $after): void
+    public function setMenuAfter(string $menuAfter): void
     {
-        $this->after = $after;
+        $this->menuAfter = $menuAfter;
     }
 
     /**
      * @return int
      */
-    public function getSort(): int
+    public function getMenuSort(): int
     {
-        return $this->sort;
+        return $this->menuSort;
     }
 
     /**
-     * @param int $sort
+     * @param int $menuSort
      */
-    public function setSort(int $sort): void
+    public function setMenuSort(int $menuSort): void
     {
-        $this->sort = $sort;
+        $this->menuSort = $menuSort;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCategoryAfter(): string
+    {
+        return $this->categoryAfter;
+    }
+
+    /**
+     * @param string $categoryAfter
+     */
+    public function setCategoryAfter(string $categoryAfter): void
+    {
+        $this->categoryAfter = $categoryAfter;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCategorySort(): int
+    {
+        return $this->categorySort;
+    }
+
+    /**
+     * @param int $categorySort
+     */
+    public function setCategorySort(int $categorySort): void
+    {
+        $this->categorySort = $categorySort;
+    }
+
+    /**
+     * @return int
+     */
+    public function getMenuItemType(): int
+    {
+        return $this->menuItemType;
+    }
+
+    /**
+     * @param int $menuItemType
+     */
+    public function setMenuItemType(int $menuItemType): void
+    {
+        $this->menuItemType = $menuItemType;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCategory(): string
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param string $category
+     */
+    public function setCategory(string $category): void
+    {
+        $this->category = $category;
     }
 
     public function jsonSerialize() {

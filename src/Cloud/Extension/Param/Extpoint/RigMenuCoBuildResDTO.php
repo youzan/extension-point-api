@@ -15,7 +15,7 @@ class RigMenuCoBuildResDTO implements \JsonSerializable {
      * 
      * @var string
      */
-    private $tenantId;
+    private $kdtId;
 
     /**
      * 
@@ -34,17 +34,17 @@ class RigMenuCoBuildResDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTenantId(): string
+    public function getKdtId(): string
     {
-        return $this->tenantId;
+        return $this->kdtId;
     }
 
     /**
-     * @param string $tenantId
+     * @param string $kdtId
      */
-    public function setTenantId(string $tenantId): void
+    public function setKdtId(string $kdtId): void
     {
-        $this->tenantId = $tenantId;
+        $this->kdtId = $kdtId;
     }
 
     /**
