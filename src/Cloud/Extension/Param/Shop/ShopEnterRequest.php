@@ -83,6 +83,12 @@ class ShopEnterRequest implements \JsonSerializable {
      */
     private $positionBehaviorSign;
 
+    /**
+     * 用户获取定位行为标记:1:强制进店0:默认值
+     * @var int
+     */
+    private $directEnterSign;
+
 
 
     /**
@@ -275,6 +281,22 @@ class ShopEnterRequest implements \JsonSerializable {
     public function setPositionBehaviorSign(int $positionBehaviorSign): void
     {
         $this->positionBehaviorSign = $positionBehaviorSign;
+    }
+
+    /**
+     * @return int
+     */
+    public function getDirectEnterSign(): int
+    {
+        return $this->directEnterSign;
+    }
+
+    /**
+     * @param int $directEnterSign
+     */
+    public function setDirectEnterSign(int $directEnterSign): void
+    {
+        $this->directEnterSign = $directEnterSign;
     }
 
     public function jsonSerialize() {
