@@ -29,6 +29,12 @@ class RigMenuCoBuildResDTO implements \JsonSerializable {
      */
     private $insertOpt;
 
+    /**
+     * 
+     * @var string
+     */
+    private $appId;
+
 
 
     /**
@@ -77,6 +83,22 @@ class RigMenuCoBuildResDTO implements \JsonSerializable {
     public function setInsertOpt(InsertOptMenuEntity $insertOpt): void
     {
         $this->insertOpt = $insertOpt;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAppId(): string
+    {
+        return $this->appId;
+    }
+
+    /**
+     * @param string $appId
+     */
+    public function setAppId(string $appId): void
+    {
+        $this->appId = $appId;
     }
 
     public function jsonSerialize() {
