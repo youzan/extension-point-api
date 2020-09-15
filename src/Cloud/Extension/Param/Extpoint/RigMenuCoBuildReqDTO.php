@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Extpoint;
 
-
+use Com\Youzan\Cloud\Extension\Param\Extpoint\RigExtStaffEntity;
 
 /**
  * 
@@ -22,6 +22,12 @@ class RigMenuCoBuildReqDTO implements \JsonSerializable {
      * @var string
      */
     private $bizCode;
+
+    /**
+     * 
+     * @var RigExtStaffEntity
+     */
+    private $staffInfo;
 
 
 
@@ -55,6 +61,22 @@ class RigMenuCoBuildReqDTO implements \JsonSerializable {
     public function setBizCode(string $bizCode): void
     {
         $this->bizCode = $bizCode;
+    }
+
+    /**
+     * @return RigExtStaffEntity
+     */
+    public function getStaffInfo(): RigExtStaffEntity
+    {
+        return $this->staffInfo;
+    }
+
+    /**
+     * @param RigExtStaffEntity $staffInfo
+     */
+    public function setStaffInfo(RigExtStaffEntity $staffInfo): void
+    {
+        $this->staffInfo = $staffInfo;
     }
 
     public function jsonSerialize() {
