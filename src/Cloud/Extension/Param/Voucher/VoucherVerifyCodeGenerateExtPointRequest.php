@@ -47,6 +47,12 @@ class VoucherVerifyCodeGenerateExtPointRequest implements \JsonSerializable {
      */
     private $extMap;
 
+    /**
+     * 请求Id，用来保证幂等
+     * @var string
+     */
+    private $requestId;
+
 
 
     /**
@@ -143,6 +149,22 @@ class VoucherVerifyCodeGenerateExtPointRequest implements \JsonSerializable {
     public function setExtMap(stdClass $extMap): void
     {
         $this->extMap = $extMap;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRequestId(): string
+    {
+        return $this->requestId;
+    }
+
+    /**
+     * @param string $requestId
+     */
+    public function setRequestId(string $requestId): void
+    {
+        $this->requestId = $requestId;
     }
 
     public function jsonSerialize() {
