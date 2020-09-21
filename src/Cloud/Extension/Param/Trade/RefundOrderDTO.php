@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Trade\RefundOrderItemDTO;
 /**
  * 历史退款记录列表
  * @author Baymax
- * @create Wed Jul 24 13:21:39 CST 2019
+ * @create 2019-07-24 13:21:39.0
  */
 class RefundOrderDTO implements \JsonSerializable {
 

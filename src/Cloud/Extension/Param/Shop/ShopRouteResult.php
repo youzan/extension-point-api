@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Vo\AddressVO;
 /**
  * 
  * @author Baymax
- * @create Mon Aug 10 16:52:53 CST 2020
+ * @create 2020-08-10 16:52:53.0
  */
 class ShopRouteResult implements \JsonSerializable {
 

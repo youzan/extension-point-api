@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Shop;
 /**
  * 
  * @author Baymax
- * @create Tue Aug 11 14:49:48 CST 2020
+ * @create 2020-08-11 14:49:48.0
  */
 class ShopEnterRequest implements \JsonSerializable {
 
@@ -82,6 +82,12 @@ class ShopEnterRequest implements \JsonSerializable {
      * @var int
      */
     private $positionBehaviorSign;
+
+    /**
+     * 用户获取定位行为标记:1:强制进店0:默认值
+     * @var int
+     */
+    private $directEnterSign;
 
 
 
@@ -275,6 +281,22 @@ class ShopEnterRequest implements \JsonSerializable {
     public function setPositionBehaviorSign(int $positionBehaviorSign): void
     {
         $this->positionBehaviorSign = $positionBehaviorSign;
+    }
+
+    /**
+     * @return int
+     */
+    public function getDirectEnterSign(): int
+    {
+        return $this->directEnterSign;
+    }
+
+    /**
+     * @param int $directEnterSign
+     */
+    public function setDirectEnterSign(int $directEnterSign): void
+    {
+        $this->directEnterSign = $directEnterSign;
     }
 
     public function jsonSerialize() {

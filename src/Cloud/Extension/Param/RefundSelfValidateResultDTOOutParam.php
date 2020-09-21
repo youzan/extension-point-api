@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\RefundSelfValidateResultDTO;
 /**
  * 返回类
  * @author Baymax
- * @create Mon Oct 08 16:18:50 CST 2018
+ * @create 2018-10-08 16:18:50.0
  */
 class RefundSelfValidateResultDTOOutParam implements \JsonSerializable {
 

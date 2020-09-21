@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Shop\ShopRouteResult;
 /**
  * 返回类
  * @author Baymax
- * @create Mon Aug 10 16:52:53 CST 2020
+ * @create 2020-08-10 16:52:53.0
  */
 class ShopRouteResultOutParam implements \JsonSerializable {
 

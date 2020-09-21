@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param;
+namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 
-use Com\Youzan\Cloud\Extension\Param\ExtraPromotionCalcResultDTO;
+use Com\Youzan\Cloud\Extension\Param\Voucher\ThirdpartyVoucherBatchSendExtPointResponse;
 
 /**
  * 返回类
  * @author Baymax
- * @create 2018-10-08 20:26:05.0
+ * @create 2020-08-24 10:33:40.0
  */
-class ExtraPromotionCalcResultDTOOutParam implements \JsonSerializable {
+class ThirdpartyVoucherBatchSendExtPointResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ExtraPromotionCalcResultDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var ExtraPromotionCalcResultDTO
+     * @var ThirdpartyVoucherBatchSendExtPointResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ExtraPromotionCalcResultDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return ExtraPromotionCalcResultDTO
+     * @return ThirdpartyVoucherBatchSendExtPointResponse
      */
-    public function getData(): ExtraPromotionCalcResultDTO
+    public function getData(): ThirdpartyVoucherBatchSendExtPointResponse
     {
         return $this->data;
     }
 
     /**
-     * @param ExtraPromotionCalcResultDTO $data
+     * @param ThirdpartyVoucherBatchSendExtPointResponse $data
      */
-    public function setData(ExtraPromotionCalcResultDTO $data): void
+    public function setData(ThirdpartyVoucherBatchSendExtPointResponse $data): void
     {
         $this->data = $data;
     }
