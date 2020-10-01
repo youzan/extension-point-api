@@ -47,6 +47,18 @@ class CustomerProfileDTO implements \JsonSerializable {
      */
     private $email;
 
+    /**
+     * 最新的昵称
+     * @var string
+     */
+    private $latestNickName;
+
+    /**
+     * 最新的头像
+     * @var string
+     */
+    private $latestAvatar;
+
 
 
     /**
@@ -143,6 +155,38 @@ class CustomerProfileDTO implements \JsonSerializable {
     public function setEmail(string $email): void
     {
         $this->email = $email;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLatestNickName(): string
+    {
+        return $this->latestNickName;
+    }
+
+    /**
+     * @param string $latestNickName
+     */
+    public function setLatestNickName(string $latestNickName): void
+    {
+        $this->latestNickName = $latestNickName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLatestAvatar(): string
+    {
+        return $this->latestAvatar;
+    }
+
+    /**
+     * @param string $latestAvatar
+     */
+    public function setLatestAvatar(string $latestAvatar): void
+    {
+        $this->latestAvatar = $latestAvatar;
     }
 
     public function jsonSerialize() {
