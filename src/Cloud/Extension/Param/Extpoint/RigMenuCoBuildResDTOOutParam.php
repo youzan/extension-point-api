@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Scrm;
+namespace Com\Youzan\Cloud\Extension\Param\Extpoint;
 
-use Com\Youzan\Cloud\Extension\Param\Scrm\CreateMemberResponse;
+use Com\Youzan\Cloud\Extension\Param\Extpoint\RigMenuCoBuildResDTO;
 
 /**
  * 返回类
  * @author Baymax
- * @create Sat Sep 29 21:29:50 CST 2018
+ * @create 2020-09-01 17:22:42.0
  */
-class CreateMemberResponseOutParam implements \JsonSerializable {
+class RigMenuCoBuildResDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class CreateMemberResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var CreateMemberResponse
+     * @var RigMenuCoBuildResDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class CreateMemberResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return CreateMemberResponse
+     * @return RigMenuCoBuildResDTO
      */
-    public function getData(): CreateMemberResponse
+    public function getData(): RigMenuCoBuildResDTO
     {
         return $this->data;
     }
 
     /**
-     * @param CreateMemberResponse $data
+     * @param RigMenuCoBuildResDTO $data
      */
-    public function setData(CreateMemberResponse $data): void
+    public function setData(RigMenuCoBuildResDTO $data): void
     {
         $this->data = $data;
     }
