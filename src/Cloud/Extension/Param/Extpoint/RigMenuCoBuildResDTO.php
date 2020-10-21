@@ -12,13 +12,13 @@ use Com\Youzan\Cloud\Extension\Param\Extpoint\InsertOptMenuEntity;
 class RigMenuCoBuildResDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 店铺ID
      * @var string
      */
     private $kdtId;
 
     /**
-     * 
+     * 店铺类型，同上
      * @var string
      */
     private $bizCode;
@@ -30,7 +30,7 @@ class RigMenuCoBuildResDTO implements \JsonSerializable {
     private $insertOpt;
 
     /**
-     * 
+     * 平台分配的应用appId
      * @var string
      */
     private $appId;

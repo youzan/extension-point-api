@@ -12,7 +12,7 @@ use Com\Youzan\Cloud\Extension\Param\Extpoint\InsertOptMenuItem;
 class InsertOptMenuEntity implements \JsonSerializable {
 
     /**
-     * 
+     * 操作类型	，暂时只自持新增
      * @var string
      */
     private $optType;

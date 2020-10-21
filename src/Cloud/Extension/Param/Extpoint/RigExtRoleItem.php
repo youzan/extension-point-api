@@ -12,19 +12,19 @@ namespace Com\Youzan\Cloud\Extension\Param\Extpoint;
 class RigExtRoleItem implements \JsonSerializable {
 
     /**
-     * 
+     * 员工角色ID
      * @var int
      */
     private $roleId;
 
     /**
-     * 
+     * 角色名称
      * @var string
      */
     private $roleName;
 
     /**
-     * 
+     * 角色类型：1默认角色， 2：自定义角色
      * @var int
      */
     private $roleType;

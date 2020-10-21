@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Customer;
+namespace Com\Youzan\Cloud\Extension\Param\Account;
 
-use Com\Youzan\Cloud\Extension\Param\Customer\ExtCustomerRelationBindResponseDTO;
+use Com\Youzan\Cloud\Extension\Param\Account\ExtAccountApplyCheckResponseDTO;
 
 /**
- * 扩展点调用返回实体返回类
+ * 返回类
  * @author Baymax
- * @create 2020-09-29 15:49:12.0
+ * @create 2020-10-13 17:48:00.0
  */
-class ExtCustomerRelationBindResponseDTOOutParam implements \JsonSerializable {
+class ExtAccountApplyCheckResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ExtCustomerRelationBindResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var ExtCustomerRelationBindResponseDTO
+     * @var ExtAccountApplyCheckResponseDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ExtCustomerRelationBindResponseDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return ExtCustomerRelationBindResponseDTO
+     * @return ExtAccountApplyCheckResponseDTO
      */
-    public function getData(): ExtCustomerRelationBindResponseDTO
+    public function getData(): ExtAccountApplyCheckResponseDTO
     {
         return $this->data;
     }
 
     /**
-     * @param ExtCustomerRelationBindResponseDTO $data
+     * @param ExtAccountApplyCheckResponseDTO $data
      */
-    public function setData(ExtCustomerRelationBindResponseDTO $data): void
+    public function setData(ExtAccountApplyCheckResponseDTO $data): void
     {
         $this->data = $data;
     }

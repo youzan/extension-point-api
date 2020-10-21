@@ -12,55 +12,55 @@ namespace Com\Youzan\Cloud\Extension\Param\Extpoint;
 class InsertOptMenuItem implements \JsonSerializable {
 
     /**
-     * 
+     * 父级路径，以 ”/&quot; 字符表示路径，只支持一级菜单下的二级菜单定制
      * @var string
      */
     private $parentPath;
 
     /**
-     * 
+     * 菜单名称
      * @var string
      */
     private $name;
 
     /**
-     * 
+     * 菜单调整路径，只支持相对路径
      * @var string
      */
     private $url;
 
     /**
-     * 
+     * 若category不存在，忽略该参数设置；  若category存在，放置对应category下的menuAfter后面，如menuAfter不存在或未设置，默认放置最后
      * @var string
      */
     private $menuAfter;
 
     /**
-     * 
+     * 若多个menu放置在同一个menuAfter后面，默认根据menuSort从小到大排序
      * @var int
      */
     private $menuSort;
 
     /**
-     * 
+     * 如果category已存在，忽略该参数设置；  若category是新增的，放置对应的categoryAfter后面，  如果categoryAfter不存在，默认放置最后
      * @var string
      */
     private $categoryAfter;
 
     /**
-     * 
+     * 如果category已存在，忽略该参数设置；  如果新增的多个二级菜单分组category放置在同一个categoryAfter后面，  根据categorySort字段排序放置，默认从小到大排序
      * @var int
      */
     private $categorySort;
 
     /**
-     * 
+     * 资源类型，默认 1： 菜单，预留扩展字段
      * @var int
      */
     private $menuItemType;
 
     /**
-     * 
+     * 二级菜单分组名称，如未设置，默认放置二级菜单最后，以 ”/&quot; 字符表示路径,若分组不存在，新增该分组
      * @var string
      */
     private $category;

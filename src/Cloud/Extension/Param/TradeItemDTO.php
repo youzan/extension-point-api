@@ -35,6 +35,12 @@ class TradeItemDTO implements \JsonSerializable {
      */
     private $memo;
 
+    /**
+     * 价格日历中的游玩日期
+     * @var string
+     */
+    private $ticketCalendarEffectiveTime;
+
 
 
     /**
@@ -99,6 +105,22 @@ class TradeItemDTO implements \JsonSerializable {
     public function setMemo(string $memo): void
     {
         $this->memo = $memo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTicketCalendarEffectiveTime(): string
+    {
+        return $this->ticketCalendarEffectiveTime;
+    }
+
+    /**
+     * @param string $ticketCalendarEffectiveTime
+     */
+    public function setTicketCalendarEffectiveTime(string $ticketCalendarEffectiveTime): void
+    {
+        $this->ticketCalendarEffectiveTime = $ticketCalendarEffectiveTime;
     }
 
     public function jsonSerialize() {

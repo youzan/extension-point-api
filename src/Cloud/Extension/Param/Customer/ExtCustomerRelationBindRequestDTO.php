@@ -5,38 +5,38 @@ namespace Com\Youzan\Cloud\Extension\Param\Customer;
 
 
 /**
- * 
+ * 扩展点调用实体
  * @author Baymax
  * @create 2020-09-29 15:49:12.0
  */
 class ExtCustomerRelationBindRequestDTO implements \JsonSerializable {
 
     /**
-     * 
-     * @var int
+     * 销售员openId
+     * @var string
      */
-    private $dsUid;
+    private $dsYzOpenId;
 
     /**
-     * 
+     * 粉丝类型
      * @var int
      */
     private $fansType;
 
     /**
-     * 
-     * @var int
+     * 客户openId
+     * @var string
      */
-    private $ctUid;
+    private $ctYzOpenId;
 
     /**
-     * 
+     * 绑定类似来源
      * @var int
      */
     private $bindSourceType;
 
     /**
-     * 
+     * 店铺id
      * @var int
      */
     private $kdtId;
@@ -44,19 +44,19 @@ class ExtCustomerRelationBindRequestDTO implements \JsonSerializable {
 
 
     /**
-     * @return int
+     * @return string
      */
-    public function getDsUid(): int
+    public function getDsYzOpenId(): string
     {
-        return $this->dsUid;
+        return $this->dsYzOpenId;
     }
 
     /**
-     * @param int $dsUid
+     * @param string $dsYzOpenId
      */
-    public function setDsUid(int $dsUid): void
+    public function setDsYzOpenId(string $dsYzOpenId): void
     {
-        $this->dsUid = $dsUid;
+        $this->dsYzOpenId = $dsYzOpenId;
     }
 
     /**
@@ -76,19 +76,19 @@ class ExtCustomerRelationBindRequestDTO implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getCtUid(): int
+    public function getCtYzOpenId(): string
     {
-        return $this->ctUid;
+        return $this->ctYzOpenId;
     }
 
     /**
-     * @param int $ctUid
+     * @param string $ctYzOpenId
      */
-    public function setCtUid(int $ctUid): void
+    public function setCtYzOpenId(string $ctYzOpenId): void
     {
-        $this->ctUid = $ctUid;
+        $this->ctYzOpenId = $ctYzOpenId;
     }
 
     /**

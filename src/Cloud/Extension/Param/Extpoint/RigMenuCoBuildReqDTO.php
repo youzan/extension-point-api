@@ -12,13 +12,13 @@ use Com\Youzan\Cloud\Extension\Param\Extpoint\RigExtStaffEntity;
 class RigMenuCoBuildReqDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 店铺ID
      * @var string
      */
     private $kdtId;
 
     /**
-     * 
+     * 店铺类型，微商城单店： wsc_single，教育单店：wsc_edu_single，教育总部：wsc_edu_hq，教育校区：wsc_edu_online，零售总部：retail_hq，零售门店：retail_store，零售网店：retail_online，零售单店：retail_single，前置仓：retail_front_warehouse，合伙人：retail_partner，微商城4.0L版总部：retail_v_wsc_hq，微商城4.0L版网店：retail_v_wsc_online，微商城4.0L版合伙人：retail_v_wsc_partner
      * @var string
      */
     private $bizCode;

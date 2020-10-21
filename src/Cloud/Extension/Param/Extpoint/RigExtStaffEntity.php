@@ -12,13 +12,13 @@ use Com\Youzan\Cloud\Extension\Param\Extpoint\RigExtRoleItem;
 class RigExtStaffEntity implements \JsonSerializable {
 
     /**
-     * 
+     * 员工ID
      * @var string
      */
     private $staffId;
 
     /**
-     * 
+     * 员工手机号
      * @var string
      */
     private $mobile;

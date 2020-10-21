@@ -60,6 +60,12 @@ class MemberProfileCreateDTO implements \JsonSerializable {
      */
     private $memberSourceKdtId;
 
+    /**
+     * 归属分店
+     * @var int
+     */
+    private $ascriptionKdtId;
+
 
 
     /**
@@ -188,6 +194,22 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     public function setMemberSourceKdtId(int $memberSourceKdtId): void
     {
         $this->memberSourceKdtId = $memberSourceKdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getAscriptionKdtId(): int
+    {
+        return $this->ascriptionKdtId;
+    }
+
+    /**
+     * @param int $ascriptionKdtId
+     */
+    public function setAscriptionKdtId(int $ascriptionKdtId): void
+    {
+        $this->ascriptionKdtId = $ascriptionKdtId;
     }
 
     public function jsonSerialize() {
