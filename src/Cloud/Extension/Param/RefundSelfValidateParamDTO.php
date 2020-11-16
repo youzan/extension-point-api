@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param;
 
-
+use Com\Youzan\Cloud\Extension\Param\RefundItemDTO;
 
 /**
  * 
@@ -40,6 +40,12 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
      * @var string
      */
     private $disputeFlowType;
+
+    /**
+     * 退款商品信息
+     * @var array
+     */
+    private $refundOrderItems;
 
 
 
@@ -121,6 +127,22 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     public function setDisputeFlowType(string $disputeFlowType): void
     {
         $this->disputeFlowType = $disputeFlowType;
+    }
+
+    /**
+     * @return array
+     */
+    public function getRefundOrderItems(): array
+    {
+        return $this->refundOrderItems;
+    }
+
+    /**
+     * @param array $refundOrderItems
+     */
+    public function setRefundOrderItems(array $refundOrderItems): void
+    {
+        $this->refundOrderItems = $refundOrderItems;
     }
 
     public function jsonSerialize() {

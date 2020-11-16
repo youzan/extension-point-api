@@ -5,6 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 use Com\Youzan\Cloud\Extension\Param\Model\GoodsInfo;
 use Com\Youzan\Cloud\Extension\Param\Model\UserInfo;
 use Com\Youzan\Cloud\Extension\Param\Model\ShopInfo;
+use StdClass;
 
 /**
  * 订单基本信息：商品、用户、店铺、订单号
@@ -36,6 +37,12 @@ class BillingBaseInfo implements \JsonSerializable {
      * @var string
      */
     private $orderNo;
+
+    /**
+     * 扩展字段
+     * @var stdClass
+     */
+    private $extraInfo;
 
 
 
@@ -101,6 +108,22 @@ class BillingBaseInfo implements \JsonSerializable {
     public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
+    }
+
+    /**
+     * @return stdClass
+     */
+    public function getExtraInfo(): stdClass
+    {
+        return $this->extraInfo;
+    }
+
+    /**
+     * @param stdClass $extraInfo
+     */
+    public function setExtraInfo(stdClass $extraInfo): void
+    {
+        $this->extraInfo = $extraInfo;
     }
 
     public function jsonSerialize() {
