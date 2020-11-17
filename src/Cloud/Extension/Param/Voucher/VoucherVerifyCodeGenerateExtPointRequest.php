@@ -53,6 +53,12 @@ class VoucherVerifyCodeGenerateExtPointRequest implements \JsonSerializable {
      */
     private $requestId;
 
+    /**
+     * 用户Id
+     * @var int
+     */
+    private $yzOpenId;
+
 
 
     /**
@@ -165,6 +171,22 @@ class VoucherVerifyCodeGenerateExtPointRequest implements \JsonSerializable {
     public function setRequestId(string $requestId): void
     {
         $this->requestId = $requestId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getYzOpenId(): int
+    {
+        return $this->yzOpenId;
+    }
+
+    /**
+     * @param int $yzOpenId
+     */
+    public function setYzOpenId(int $yzOpenId): void
+    {
+        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {
