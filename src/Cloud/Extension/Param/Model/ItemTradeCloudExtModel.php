@@ -12,13 +12,13 @@ use StdClass;
 class ItemTradeCloudExtModel implements \JsonSerializable {
 
     /**
-     * 店铺ID
+     * 商品ID
      * @var int
      */
     private $itemId;
 
     /**
-     * 商品ID
+     * 店铺ID
      * @var int
      */
     private $kdtId;
