@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 /**
  * 商品详细优惠
  * @author Baymax
- * @create 2020-06-11 11:03:35.0
+ * @create Thu Jun 11 11:03:35 CST 2020
  */
 class GoodsResponse implements \JsonSerializable {
 

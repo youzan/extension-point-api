@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 /**
  * 商品基础信息
  * @author Baymax
- * @create 2020-06-11 11:03:35.0
+ * @create Thu Jun 11 11:03:35 CST 2020
  */
 class GoodsInfo implements \JsonSerializable {
 

@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Model\GoodsResponse;
 /**
  * 外部优惠详情（如果多个活动，需要按照执行顺序排序）
  * @author Baymax
- * @create 2020-06-11 11:03:35.0
+ * @create Thu Jun 11 11:03:35 CST 2020
  */
 class ActivityResponse implements \JsonSerializable {
 

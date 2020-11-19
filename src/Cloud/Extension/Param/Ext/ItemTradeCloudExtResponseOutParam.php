@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param;
+namespace Com\Youzan\Cloud\Extension\Param\Ext;
 
-use Com\Youzan\Cloud\Extension\Param\RefundSelfValidateResultDTO;
+use Com\Youzan\Cloud\Extension\Param\Ext\ItemTradeCloudExtResponse;
 
 /**
  * 返回类
  * @author Baymax
- * @create Mon Oct 08 16:18:50 CST 2018
+ * @create 2020-11-16 20:06:15.0
  */
-class RefundSelfValidateResultDTOOutParam implements \JsonSerializable {
+class ItemTradeCloudExtResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class RefundSelfValidateResultDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var RefundSelfValidateResultDTO
+     * @var ItemTradeCloudExtResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class RefundSelfValidateResultDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return RefundSelfValidateResultDTO
+     * @return ItemTradeCloudExtResponse
      */
-    public function getData(): RefundSelfValidateResultDTO
+    public function getData(): ItemTradeCloudExtResponse
     {
         return $this->data;
     }
 
     /**
-     * @param RefundSelfValidateResultDTO $data
+     * @param ItemTradeCloudExtResponse $data
      */
-    public function setData(RefundSelfValidateResultDTO $data): void
+    public function setData(ItemTradeCloudExtResponse $data): void
     {
         $this->data = $data;
     }
