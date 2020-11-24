@@ -24,7 +24,7 @@ class ItemTradeCloudExtModel implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * 商品扩展数据。key有：warehouse
+     * 商品扩展数据。key有：warehouse，仓储信息，字符串，长度：4，海淘商品按仓储拆虚拟子单，其他请勿使用；
      * @var stdClass
      */
     private $extraInfo;
