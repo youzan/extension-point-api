@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Ext;
 
 
 /**
- * 返回值
+ * test实打实大师
  * @author Baymax
  * @create 2020-03-18 14:45:32.0
  */
 class RespDTO implements \JsonSerializable {
 
     /**
-     * 
+     * test
      * @var string
      */
     private $result;

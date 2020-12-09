@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Ext;
 
 
 /**
- * 
+ * 1
  * @author Baymax
  * @create 2020-03-18 14:45:32.0
  */
 class RequestDTO implements \JsonSerializable {
 
     /**
-     * 店铺id
+     * test
      * @var string
      */
     private $kdtId;

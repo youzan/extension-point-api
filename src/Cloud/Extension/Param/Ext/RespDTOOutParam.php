@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Ext;
 use Com\Youzan\Cloud\Extension\Param\Ext\RespDTO;
 
 /**
- * 返回值返回类
+ * test实打实大师返回类
  * @author Baymax
  * @create 2020-03-18 14:45:32.0
  */
