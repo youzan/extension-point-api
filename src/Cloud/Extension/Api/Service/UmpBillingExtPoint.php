@@ -9,4 +9,6 @@ interface UmpBillingExtPoint {
 
     public function calculate(UmpCalculateRequest $request) : UmpCalculateResponseOutParam;
 
+    public function billingCalculate(UmpCalculateRequest $request) : UmpCalculateResponseOutParam;
+
 }

@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 class UserInfo implements \JsonSerializable {
 
     /**
-     * 用户id
+     * 用户ID
      * @var string
      */
     private $yzOpenId;

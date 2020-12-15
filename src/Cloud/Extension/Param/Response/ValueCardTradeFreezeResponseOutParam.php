@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Model;
+namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Com\Youzan\Cloud\Extension\Param\Model\UmpCalculateResponse;
+use Com\Youzan\Cloud\Extension\Param\Response\ValueCardTradeFreezeResponse;
 
 /**
- * 响应参数返回类
+ * 返回类
  * @author Baymax
- * @create 2020-06-11 11:03:35.0
+ * @create 2020-12-14 16:04:02.0
  */
-class UmpCalculateResponseOutParam implements \JsonSerializable {
+class ValueCardTradeFreezeResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class UmpCalculateResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var UmpCalculateResponse
+     * @var ValueCardTradeFreezeResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class UmpCalculateResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return UmpCalculateResponse
+     * @return ValueCardTradeFreezeResponse
      */
-    public function getData(): UmpCalculateResponse
+    public function getData(): ValueCardTradeFreezeResponse
     {
         return $this->data;
     }
 
     /**
-     * @param UmpCalculateResponse $data
+     * @param ValueCardTradeFreezeResponse $data
      */
-    public function setData(UmpCalculateResponse $data): void
+    public function setData(ValueCardTradeFreezeResponse $data): void
     {
         $this->data = $data;
     }

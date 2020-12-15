@@ -77,6 +77,12 @@ class ValueCardExtPayRequest implements \JsonSerializable {
      */
     private $rootKdtId;
 
+    /**
+     * NORMAL_PAY 普通支付，FREEZE_PAY 冻结支付
+     * @var string
+     */
+    private $bizType;
+
 
 
     /**
@@ -253,6 +259,22 @@ class ValueCardExtPayRequest implements \JsonSerializable {
     public function setRootKdtId(int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBizType(): string
+    {
+        return $this->bizType;
+    }
+
+    /**
+     * @param string $bizType
+     */
+    public function setBizType(string $bizType): void
+    {
+        $this->bizType = $bizType;
     }
 
     public function jsonSerialize() {
