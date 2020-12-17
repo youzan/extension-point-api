@@ -15,24 +15,24 @@ class Result implements \JsonSerializable {
      * 是否成功 ture表示成功 false表示失败
      * @var bool
      */
-    private $data;
+    private $isSuccess;
 
 
 
     /**
      * @return bool
      */
-    public function getData(): bool
+    public function getIsSuccess(): bool
     {
-        return $this->data;
+        return $this->isSuccess;
     }
 
     /**
-     * @param bool $data
+     * @param bool $isSuccess
      */
-    public function setData(bool $data): void
+    public function setIsSuccess(bool $isSuccess): void
     {
-        $this->data = $data;
+        $this->isSuccess = $isSuccess;
     }
 
     public function jsonSerialize() {
