@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Chain;
 /**
  * 
  * @author Baymax
- * @create Thu Mar 19 10:50:21 CST 2020
+ * @create 2020-03-19 10:50:21.0
  */
 class ShopSearchForVisitRequest implements \JsonSerializable {
 
@@ -136,6 +136,12 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
      * @var bool
      */
     private $isShowOnlineShopSwitch;
+
+    /**
+     *  适用店铺业务标识, Json String格式，包含业务方标识bizType（ 1: 营销  2:会员  3:销售员）和业务方参数bizAlias
+     * @var string
+     */
+    private $suitableBizJsonToString;
 
 
 
@@ -473,6 +479,22 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     public function setIsShowOnlineShopSwitch(bool $isShowOnlineShopSwitch): void
     {
         $this->isShowOnlineShopSwitch = $isShowOnlineShopSwitch;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSuitableBizJsonToString(): string
+    {
+        return $this->suitableBizJsonToString;
+    }
+
+    /**
+     * @param string $suitableBizJsonToString
+     */
+    public function setSuitableBizJsonToString(string $suitableBizJsonToString): void
+    {
+        $this->suitableBizJsonToString = $suitableBizJsonToString;
     }
 
     public function jsonSerialize() {

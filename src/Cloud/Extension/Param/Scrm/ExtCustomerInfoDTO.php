@@ -12,13 +12,13 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 class ExtCustomerInfoDTO implements \JsonSerializable {
 
     /**
-     * 帐号类型，目前有以下几种类型，WxOpenId：微信openId，WxUnionId：微信unionId，Mobile：手机号，YouZanAccount：有赞帐号
+     * 帐号id
      * @var string
      */
     private $accountId;
 
     /**
-     * 账号id
+     * 帐号类型，目前有以下几种类型，WxOpenId：微信openId，WxUnionId：微信unionId，Mobile：手机号，YouZanAccount：有赞帐号
      * @var string
      */
     private $accountType;

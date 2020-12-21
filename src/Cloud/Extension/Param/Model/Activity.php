@@ -5,38 +5,38 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 
 
 /**
- * 商品级活动优惠 / 订单级优惠活动均摊优惠
+ * 应用的活动
  * @author Baymax
- * @create Thu Jun 11 11:03:35 CST 2020
+ * @create 2020-06-11 11:03:35.0
  */
 class Activity implements \JsonSerializable {
 
     /**
-     * 优惠活动类型
+     * 活动类型码
      * @var int
      */
     private $appType;
 
     /**
-     * 优惠活动id
+     * 活动ID
      * @var int
      */
     private $activityId;
 
     /**
-     * 优惠活动级别：order、goods
+     * 活动级别
      * @var string
      */
     private $promotionLevel;
 
     /**
-     * 活动优惠金额/分
+     * 活动减价
      * @var int
      */
     private $decrease;
 
     /**
-     * 附加信息
+     * 活动拓展信息
      * @var string
      */
     private $extra;

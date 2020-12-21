@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Result\VisitedSubShopPageQueryResult;
 /**
  * 返回类
  * @author Baymax
- * @create Thu Mar 19 10:50:21 CST 2020
+ * @create 2020-03-19 10:50:21.0
  */
 class VisitedSubShopPageQueryResultOutParam implements \JsonSerializable {
 
