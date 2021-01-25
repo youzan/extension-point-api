@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Yyy;
 /**
  * 
  * @author Baymax
- * @create 2020-03-18 14:32:14.0
+ * @create Wed Mar 18 14:32:14 CST 2020
  */
 class YYYDTO implements \JsonSerializable {
 

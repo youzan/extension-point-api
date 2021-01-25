@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Delivery\LocalDeliveryCommitAuditResponseDT
 /**
  * 返回类
  * @author Baymax
- * @create 2019-09-19 19:08:53.0
+ * @create Thu Sep 19 19:08:53 CST 2019
  */
 class LocalDeliveryCommitAuditResponseDTOOutParam implements \JsonSerializable {
 

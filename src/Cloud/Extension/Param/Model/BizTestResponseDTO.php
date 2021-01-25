@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Xxx\XXXDTO;
 /**
  * 
  * @author Baymax
- * @create 2020-01-16 19:48:24.0
+ * @create Thu Jan 16 19:48:24 CST 2020
  */
 class BizTestResponseDTO implements \JsonSerializable {
 

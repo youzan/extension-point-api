@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 /**
  * 
  * @author Baymax
- * @create 2018-09-29 21:13:57.0
+ * @create Sat Sep 29 21:13:57 CST 2018
  */
 class Result implements \JsonSerializable {
 
@@ -15,24 +15,24 @@ class Result implements \JsonSerializable {
      * 是否成功 ture表示成功 false表示失败
      * @var bool
      */
-    private $isSuccess;
+    private $data;
 
 
 
     /**
      * @return bool
      */
-    public function getIsSuccess(): bool
+    public function getData(): bool
     {
-        return $this->isSuccess;
+        return $this->data;
     }
 
     /**
-     * @param bool $isSuccess
+     * @param bool $data
      */
-    public function setIsSuccess(bool $isSuccess): void
+    public function setData(bool $data): void
     {
-        $this->isSuccess = $isSuccess;
+        $this->data = $data;
     }
 
     public function jsonSerialize() {

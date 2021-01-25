@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
 
 /**
- * 帐号信息
+ * 
  * @author Baymax
  * @create 2018-09-30 14:22:43.0
  */

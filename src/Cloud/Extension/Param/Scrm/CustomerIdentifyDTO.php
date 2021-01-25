@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 /**
  * 
  * @author Baymax
- * @create 2018-09-29 21:13:57.0
+ * @create Sat Sep 29 21:13:57 CST 2018
  */
 class CustomerIdentifyDTO implements \JsonSerializable {
 
@@ -30,7 +30,7 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * yzOpenId
+     * yzOpenId是有赞对外开放的有赞用户唯一标识，建议开发者使用
      * @var string
      */
     private $yzOpenId;
