@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Yyy;
 
 
 /**
- * 
+ * 123
  * @author Baymax
  * @create 2020-03-18 14:32:14.0
  */
 class YYYDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 232
      * @var string
      */
     private $data3;

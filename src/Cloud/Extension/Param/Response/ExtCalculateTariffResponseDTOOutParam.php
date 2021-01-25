@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Model;
+namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Com\Youzan\Cloud\Extension\Param\Model\BizTestResponseDTO;
+use Com\Youzan\Cloud\Extension\Param\Response\ExtCalculateTariffResponseDTO;
 
 /**
- * asdsad返回类
+ * 出参返回类
  * @author Baymax
- * @create 2020-01-16 19:48:24.0
+ * @create 2020-12-24 11:30:20.0
  */
-class BizTestResponseDTOOutParam implements \JsonSerializable {
+class ExtCalculateTariffResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class BizTestResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var BizTestResponseDTO
+     * @var ExtCalculateTariffResponseDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class BizTestResponseDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return BizTestResponseDTO
+     * @return ExtCalculateTariffResponseDTO
      */
-    public function getData(): BizTestResponseDTO
+    public function getData(): ExtCalculateTariffResponseDTO
     {
         return $this->data;
     }
 
     /**
-     * @param BizTestResponseDTO $data
+     * @param ExtCalculateTariffResponseDTO $data
      */
-    public function setData(BizTestResponseDTO $data): void
+    public function setData(ExtCalculateTariffResponseDTO $data): void
     {
         $this->data = $data;
     }

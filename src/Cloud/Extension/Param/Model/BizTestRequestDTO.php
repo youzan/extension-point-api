@@ -5,32 +5,32 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 use StdClass;
 
 /**
- * 
+ * hahh
  * @author Baymax
  * @create 2020-01-16 19:48:24.0
  */
 class BizTestRequestDTO implements \JsonSerializable {
 
     /**
-     * 
+     * hahah
      * @var int
      */
     private $requestId;
 
     /**
-     * 
+     * jaja
      * @var string
      */
     private $content;
 
     /**
-     * 
+     * adasd
      * @var string
      */
     private $message;
 
     /**
-     * 
+     * adsad
      * @var stdClass
      */
     private $extMap;

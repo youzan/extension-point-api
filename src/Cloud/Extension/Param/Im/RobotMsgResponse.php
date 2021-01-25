@@ -24,7 +24,7 @@ class RobotMsgResponse implements \JsonSerializable {
     private $msgType;
 
     /**
-     * 0:正常发消息; 1:无答案; 2:请求转人工。当无匹配答案时，响应status为1，将会触发转人工服务，此时msgType和content可以响应无答案话术，也可以不响应内容
+     * 0:正常发消息; 1:无答案; 2:请求转人工; 3:异步应答。当status&#x3D;1时，将会触发转人工服务，此时msgType和content可以响应无答案话术，也可以不响应内容,不响应内容则触发转人工，连续2次无答案会触发转人工。当status&#x3D;3时，不会触发转人工，可以使用接口youzan.message.courier.robot.apply异步发送机器人消息，连续2次异步应答，并且没有触发异步发送机器人消息，则从第二次异步应答时延迟6s转人工。
      * @var int
      */
     private $status;

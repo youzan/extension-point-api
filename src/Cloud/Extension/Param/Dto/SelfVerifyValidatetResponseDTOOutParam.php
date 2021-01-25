@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Model;
+namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
-use Com\Youzan\Cloud\Extension\Param\Model\BizTestResponseDTO;
+use Com\Youzan\Cloud\Extension\Param\Dto\SelfVerifyValidatetResponseDTO;
 
 /**
- * asdsad返回类
+ * 返回类
  * @author Baymax
- * @create 2020-01-16 19:48:24.0
+ * @create 2020-12-23 10:44:38.0
  */
-class BizTestResponseDTOOutParam implements \JsonSerializable {
+class SelfVerifyValidatetResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class BizTestResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var BizTestResponseDTO
+     * @var SelfVerifyValidatetResponseDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class BizTestResponseDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return BizTestResponseDTO
+     * @return SelfVerifyValidatetResponseDTO
      */
-    public function getData(): BizTestResponseDTO
+    public function getData(): SelfVerifyValidatetResponseDTO
     {
         return $this->data;
     }
 
     /**
-     * @param BizTestResponseDTO $data
+     * @param SelfVerifyValidatetResponseDTO $data
      */
-    public function setData(BizTestResponseDTO $data): void
+    public function setData(SelfVerifyValidatetResponseDTO $data): void
     {
         $this->data = $data;
     }

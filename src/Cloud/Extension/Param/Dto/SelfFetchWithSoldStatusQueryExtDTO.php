@@ -1,30 +1,42 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Request;
+namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
 
 
 /**
- * 
+ * 接口入参对象
  * @author Baymax
- * @create 2020-08-25 15:40:11.0
+ * @create 2021-01-22 10:18:32.0
  */
-class ExtGenMemberCodeDTO implements \JsonSerializable {
+class SelfFetchWithSoldStatusQueryExtDTO implements \JsonSerializable {
 
     /**
-     * 连锁场景：总部kdtId；单店场景：店铺kdtId；
+     * 微商城单店店铺ID
      * @var int
      */
     private $kdtId;
 
     /**
-     * 用户id
+     * 用户ID
      * @var string
      */
     private $yzOpenId;
 
     /**
-     * 触发当前请求的店铺id
+     * 分销员ID
+     * @var string
+     */
+    private $salesmanYzOpenId;
+
+    /**
+     * 微商城连锁总店店铺ID
+     * @var int
+     */
+    private $rootKdtId;
+
+    /**
+     * 微商城连锁网店店铺ID
      * @var int
      */
     private $nodeKdtId;
@@ -61,6 +73,38 @@ class ExtGenMemberCodeDTO implements \JsonSerializable {
     public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSalesmanYzOpenId(): string
+    {
+        return $this->salesmanYzOpenId;
+    }
+
+    /**
+     * @param string $salesmanYzOpenId
+     */
+    public function setSalesmanYzOpenId(string $salesmanYzOpenId): void
+    {
+        $this->salesmanYzOpenId = $salesmanYzOpenId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     /**

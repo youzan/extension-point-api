@@ -66,6 +66,12 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
      */
     private $nodeId;
 
+    /**
+     * 
+     * @var string
+     */
+    private $bizToken;
+
 
 
     /**
@@ -210,6 +216,22 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     public function setNodeId(int $nodeId): void
     {
         $this->nodeId = $nodeId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBizToken(): string
+    {
+        return $this->bizToken;
+    }
+
+    /**
+     * @param string $bizToken
+     */
+    public function setBizToken(string $bizToken): void
+    {
+        $this->bizToken = $bizToken;
     }
 
     public function jsonSerialize() {

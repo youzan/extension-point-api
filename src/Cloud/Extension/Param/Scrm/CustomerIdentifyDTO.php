@@ -24,7 +24,7 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     private $accountId;
 
     /**
-     * 店铺ID
+     * 连锁场景：总部kdtId；单店场景：店铺kdtId；
      * @var int
      */
     private $kdtId;
@@ -34,6 +34,12 @@ class CustomerIdentifyDTO implements \JsonSerializable {
      * @var string
      */
     private $yzOpenId;
+
+    /**
+     * 触发当前请求的店铺id
+     * @var int
+     */
+    private $nodeKdtId;
 
 
 
@@ -99,6 +105,22 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNodeKdtId(): int
+    {
+        return $this->nodeKdtId;
+    }
+
+    /**
+     * @param int $nodeKdtId
+     */
+    public function setNodeKdtId(int $nodeKdtId): void
+    {
+        $this->nodeKdtId = $nodeKdtId;
     }
 
     public function jsonSerialize() {

@@ -15,7 +15,7 @@ class Goods implements \JsonSerializable {
      * 商品ID
      * @var int
      */
-    private $goodsId;
+    private $itemId;
 
     /**
      * SKU ID
@@ -46,17 +46,17 @@ class Goods implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGoodsId(): int
+    public function getItemId(): int
     {
-        return $this->goodsId;
+        return $this->itemId;
     }
 
     /**
-     * @param int $goodsId
+     * @param int $itemId
      */
-    public function setGoodsId(int $goodsId): void
+    public function setItemId(int $itemId): void
     {
-        $this->goodsId = $goodsId;
+        $this->itemId = $itemId;
     }
 
     /**

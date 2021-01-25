@@ -54,6 +54,18 @@ class ExtPointsConsumeDTO implements \JsonSerializable {
      */
     private $nodeId;
 
+    /**
+     * 业务唯一标识
+     * @var string
+     */
+    private $bizToken;
+
+    /**
+     * 积分数量
+     * @var int
+     */
+    private $amount;
+
 
 
     /**
@@ -166,6 +178,38 @@ class ExtPointsConsumeDTO implements \JsonSerializable {
     public function setNodeId(int $nodeId): void
     {
         $this->nodeId = $nodeId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBizToken(): string
+    {
+        return $this->bizToken;
+    }
+
+    /**
+     * @param string $bizToken
+     */
+    public function setBizToken(string $bizToken): void
+    {
+        $this->bizToken = $bizToken;
+    }
+
+    /**
+     * @return int
+     */
+    public function getAmount(): int
+    {
+        return $this->amount;
+    }
+
+    /**
+     * @param int $amount
+     */
+    public function setAmount(int $amount): void
+    {
+        $this->amount = $amount;
     }
 
     public function jsonSerialize() {

@@ -18,10 +18,16 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     private $buyerId;
 
     /**
-     * 店铺id
-     * @var int
+     * 用户手机号
+     * @var string
      */
-    private $kdtId;
+    private $userPhone;
+
+    /**
+     * 卡类型 ： BALANCE_CARD：储值余额类型； VALUE_CARD：储值卡； ALL：全部 （默认）
+     * @var string
+     */
+    private $cardType;
 
     /**
      * 店铺类型
@@ -36,22 +42,16 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     private $items;
 
     /**
+     * 店铺id
+     * @var int
+     */
+    private $kdtId;
+
+    /**
      * 用户标识
      * @var string
      */
     private $yzOpenId;
-
-    /**
-     * 用户手机号
-     * @var string
-     */
-    private $userPhone;
-
-    /**
-     * 卡类型 ： BALANCE_CARD：储值余额类型； VALUE_CARD：储值卡； ALL：全部 （默认）
-     * @var string
-     */
-    private $cardType;
 
 
 
@@ -72,19 +72,35 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getKdtId(): int
+    public function getUserPhone(): string
     {
-        return $this->kdtId;
+        return $this->userPhone;
     }
 
     /**
-     * @param int $kdtId
+     * @param string $userPhone
      */
-    public function setKdtId(int $kdtId): void
+    public function setUserPhone(string $userPhone): void
     {
-        $this->kdtId = $kdtId;
+        $this->userPhone = $userPhone;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCardType(): string
+    {
+        return $this->cardType;
+    }
+
+    /**
+     * @param string $cardType
+     */
+    public function setCardType(string $cardType): void
+    {
+        $this->cardType = $cardType;
     }
 
     /**
@@ -120,6 +136,22 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     }
 
     /**
+     * @return int
+     */
+    public function getKdtId(): int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
+    }
+
+    /**
      * @return string
      */
     public function getYzOpenId(): string
@@ -133,38 +165,6 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
-    }
-
-    /**
-     * @return string
-     */
-    public function getUserPhone(): string
-    {
-        return $this->userPhone;
-    }
-
-    /**
-     * @param string $userPhone
-     */
-    public function setUserPhone(string $userPhone): void
-    {
-        $this->userPhone = $userPhone;
-    }
-
-    /**
-     * @return string
-     */
-    public function getCardType(): string
-    {
-        return $this->cardType;
-    }
-
-    /**
-     * @param string $cardType
-     */
-    public function setCardType(string $cardType): void
-    {
-        $this->cardType = $cardType;
     }
 
     public function jsonSerialize() {

@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Model;
+namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
-use Com\Youzan\Cloud\Extension\Param\Model\BizTestResponseDTO;
+use Com\Youzan\Cloud\Extension\Param\Dto\SelfFetchWithSoldStatusResultExtDTO;
 
 /**
- * asdsad返回类
+ * 第一层返回结果封装data对象返回类
  * @author Baymax
- * @create 2020-01-16 19:48:24.0
+ * @create 2021-01-22 10:18:32.0
  */
-class BizTestResponseDTOOutParam implements \JsonSerializable {
+class SelfFetchWithSoldStatusResultExtDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class BizTestResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var BizTestResponseDTO
+     * @var SelfFetchWithSoldStatusResultExtDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class BizTestResponseDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return BizTestResponseDTO
+     * @return SelfFetchWithSoldStatusResultExtDTO
      */
-    public function getData(): BizTestResponseDTO
+    public function getData(): SelfFetchWithSoldStatusResultExtDTO
     {
         return $this->data;
     }
 
     /**
-     * @param BizTestResponseDTO $data
+     * @param SelfFetchWithSoldStatusResultExtDTO $data
      */
-    public function setData(BizTestResponseDTO $data): void
+    public function setData(SelfFetchWithSoldStatusResultExtDTO $data): void
     {
         $this->data = $data;
     }

@@ -54,6 +54,12 @@ class CustomerProfileCreateDTO implements \JsonSerializable {
      */
     private $attributeList;
 
+    /**
+     * 归属分店
+     * @var int
+     */
+    private $ascriptionKdtId;
+
 
 
     /**
@@ -166,6 +172,22 @@ class CustomerProfileCreateDTO implements \JsonSerializable {
     public function setAttributeList(array $attributeList): void
     {
         $this->attributeList = $attributeList;
+    }
+
+    /**
+     * @return int
+     */
+    public function getAscriptionKdtId(): int
+    {
+        return $this->ascriptionKdtId;
+    }
+
+    /**
+     * @param int $ascriptionKdtId
+     */
+    public function setAscriptionKdtId(int $ascriptionKdtId): void
+    {
+        $this->ascriptionKdtId = $ascriptionKdtId;
     }
 
     public function jsonSerialize() {

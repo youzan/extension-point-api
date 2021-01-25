@@ -12,24 +12,6 @@ use DateTime;
 class CustomerPayCardDTO implements \JsonSerializable {
 
     /**
-     * 卡名称
-     * @var string
-     */
-    private $cardName;
-
-    /**
-     * 卡号
-     * @var string
-     */
-    private $cardNo;
-
-    /**
-     * 余额（分）
-     * @var int
-     */
-    private $balance;
-
-    /**
      * 使用说明
      * @var string
      */
@@ -54,6 +36,18 @@ class CustomerPayCardDTO implements \JsonSerializable {
     private $expireDate;
 
     /**
+     * 卡名称
+     * @var string
+     */
+    private $cardName;
+
+    /**
+     * 卡号
+     * @var string
+     */
+    private $cardNo;
+
+    /**
      * 背景图
      * @var string
      */
@@ -72,6 +66,12 @@ class CustomerPayCardDTO implements \JsonSerializable {
     private $cardType;
 
     /**
+     * 余额（分）
+     * @var int
+     */
+    private $balance;
+
+    /**
      * 本金余额，单位（分）
      * @var int
      */
@@ -83,61 +83,7 @@ class CustomerPayCardDTO implements \JsonSerializable {
      */
     private $sumBonusDnom;
 
-    /**
-     * 是否支持充值，true：支持，false：不支持
-     * @var bool
-     */
-    private $needRecharge;
 
-
-
-    /**
-     * @return string
-     */
-    public function getCardName(): string
-    {
-        return $this->cardName;
-    }
-
-    /**
-     * @param string $cardName
-     */
-    public function setCardName(string $cardName): void
-    {
-        $this->cardName = $cardName;
-    }
-
-    /**
-     * @return string
-     */
-    public function getCardNo(): string
-    {
-        return $this->cardNo;
-    }
-
-    /**
-     * @param string $cardNo
-     */
-    public function setCardNo(string $cardNo): void
-    {
-        $this->cardNo = $cardNo;
-    }
-
-    /**
-     * @return int
-     */
-    public function getBalance(): int
-    {
-        return $this->balance;
-    }
-
-    /**
-     * @param int $balance
-     */
-    public function setBalance(int $balance): void
-    {
-        $this->balance = $balance;
-    }
 
     /**
      * @return string
@@ -206,6 +152,38 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @return string
      */
+    public function getCardName(): string
+    {
+        return $this->cardName;
+    }
+
+    /**
+     * @param string $cardName
+     */
+    public function setCardName(string $cardName): void
+    {
+        $this->cardName = $cardName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCardNo(): string
+    {
+        return $this->cardNo;
+    }
+
+    /**
+     * @param string $cardNo
+     */
+    public function setCardNo(string $cardNo): void
+    {
+        $this->cardNo = $cardNo;
+    }
+
+    /**
+     * @return string
+     */
     public function getBackgroundImage(): string
     {
         return $this->backgroundImage;
@@ -254,6 +232,22 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @return int
      */
+    public function getBalance(): int
+    {
+        return $this->balance;
+    }
+
+    /**
+     * @param int $balance
+     */
+    public function setBalance(int $balance): void
+    {
+        $this->balance = $balance;
+    }
+
+    /**
+     * @return int
+     */
     public function getPrincipalDnom(): int
     {
         return $this->principalDnom;
@@ -281,22 +275,6 @@ class CustomerPayCardDTO implements \JsonSerializable {
     public function setSumBonusDnom(int $sumBonusDnom): void
     {
         $this->sumBonusDnom = $sumBonusDnom;
-    }
-
-    /**
-     * @return bool
-     */
-    public function getNeedRecharge(): bool
-    {
-        return $this->needRecharge;
-    }
-
-    /**
-     * @param bool $needRecharge
-     */
-    public function setNeedRecharge(bool $needRecharge): void
-    {
-        $this->needRecharge = $needRecharge;
     }
 
     public function jsonSerialize() {

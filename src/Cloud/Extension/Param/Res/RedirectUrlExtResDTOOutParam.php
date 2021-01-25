@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Model;
+namespace Com\Youzan\Cloud\Extension\Param\Res;
 
-use Com\Youzan\Cloud\Extension\Param\Model\BizTestResponseDTO;
+use Com\Youzan\Cloud\Extension\Param\Res\RedirectUrlExtResDTO;
 
 /**
- * asdsad返回类
+ * 请求出参返回类
  * @author Baymax
- * @create 2020-01-16 19:48:24.0
+ * @create 2021-01-05 17:51:36.0
  */
-class BizTestResponseDTOOutParam implements \JsonSerializable {
+class RedirectUrlExtResDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class BizTestResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var BizTestResponseDTO
+     * @var RedirectUrlExtResDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class BizTestResponseDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return BizTestResponseDTO
+     * @return RedirectUrlExtResDTO
      */
-    public function getData(): BizTestResponseDTO
+    public function getData(): RedirectUrlExtResDTO
     {
         return $this->data;
     }
 
     /**
-     * @param BizTestResponseDTO $data
+     * @param RedirectUrlExtResDTO $data
      */
-    public function setData(BizTestResponseDTO $data): void
+    public function setData(RedirectUrlExtResDTO $data): void
     {
         $this->data = $data;
     }
