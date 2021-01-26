@@ -29,7 +29,7 @@ class DeliveryBizValidatorReqDTO implements \JsonSerializable {
     /**
      * @return OrderDTO
      */
-    public function getOrderDTO(): OrderDTO
+    public function getOrderDTO(): ?OrderDTO
     {
         return $this->orderDTO;
     }
@@ -37,7 +37,7 @@ class DeliveryBizValidatorReqDTO implements \JsonSerializable {
     /**
      * @param OrderDTO $orderDTO
      */
-    public function setOrderDTO(OrderDTO $orderDTO): void
+    public function setOrderDTO(?OrderDTO $orderDTO): void
     {
         $this->orderDTO = $orderDTO;
     }
@@ -45,7 +45,7 @@ class DeliveryBizValidatorReqDTO implements \JsonSerializable {
     /**
      * @return CurrentDeliveryRequestDTO
      */
-    public function getCurrentDeliveryRequestDTO(): CurrentDeliveryRequestDTO
+    public function getCurrentDeliveryRequestDTO(): ?CurrentDeliveryRequestDTO
     {
         return $this->currentDeliveryRequestDTO;
     }
@@ -53,7 +53,7 @@ class DeliveryBizValidatorReqDTO implements \JsonSerializable {
     /**
      * @param CurrentDeliveryRequestDTO $currentDeliveryRequestDTO
      */
-    public function setCurrentDeliveryRequestDTO(CurrentDeliveryRequestDTO $currentDeliveryRequestDTO): void
+    public function setCurrentDeliveryRequestDTO(?CurrentDeliveryRequestDTO $currentDeliveryRequestDTO): void
     {
         $this->currentDeliveryRequestDTO = $currentDeliveryRequestDTO;
     }

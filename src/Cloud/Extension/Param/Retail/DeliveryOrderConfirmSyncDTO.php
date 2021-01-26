@@ -52,7 +52,7 @@ class DeliveryOrderConfirmSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDeliveryOrderNo(): string
+    public function getDeliveryOrderNo(): ?string
     {
         return $this->deliveryOrderNo;
     }
@@ -60,7 +60,7 @@ class DeliveryOrderConfirmSyncDTO implements \JsonSerializable {
     /**
      * @param string $deliveryOrderNo
      */
-    public function setDeliveryOrderNo(string $deliveryOrderNo): void
+    public function setDeliveryOrderNo(?string $deliveryOrderNo): void
     {
         $this->deliveryOrderNo = $deliveryOrderNo;
     }
@@ -68,7 +68,7 @@ class DeliveryOrderConfirmSyncDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getOrderItemNos(): array
+    public function getOrderItemNos(): ?array
     {
         return $this->orderItemNos;
     }
@@ -76,7 +76,7 @@ class DeliveryOrderConfirmSyncDTO implements \JsonSerializable {
     /**
      * @param array $orderItemNos
      */
-    public function setOrderItemNos(array $orderItemNos): void
+    public function setOrderItemNos(?array $orderItemNos): void
     {
         $this->orderItemNos = $orderItemNos;
     }
@@ -84,7 +84,7 @@ class DeliveryOrderConfirmSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLogisticsNo(): string
+    public function getLogisticsNo(): ?string
     {
         return $this->logisticsNo;
     }
@@ -92,7 +92,7 @@ class DeliveryOrderConfirmSyncDTO implements \JsonSerializable {
     /**
      * @param string $logisticsNo
      */
-    public function setLogisticsNo(string $logisticsNo): void
+    public function setLogisticsNo(?string $logisticsNo): void
     {
         $this->logisticsNo = $logisticsNo;
     }
@@ -100,7 +100,7 @@ class DeliveryOrderConfirmSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLogisticsType(): string
+    public function getLogisticsType(): ?string
     {
         return $this->logisticsType;
     }
@@ -108,7 +108,7 @@ class DeliveryOrderConfirmSyncDTO implements \JsonSerializable {
     /**
      * @param string $logisticsType
      */
-    public function setLogisticsType(string $logisticsType): void
+    public function setLogisticsType(?string $logisticsType): void
     {
         $this->logisticsType = $logisticsType;
     }
@@ -116,7 +116,7 @@ class DeliveryOrderConfirmSyncDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getIsPartSync(): bool
+    public function getIsPartSync(): ?bool
     {
         return $this->isPartSync;
     }
@@ -124,7 +124,7 @@ class DeliveryOrderConfirmSyncDTO implements \JsonSerializable {
     /**
      * @param bool $isPartSync
      */
-    public function setIsPartSync(bool $isPartSync): void
+    public function setIsPartSync(?bool $isPartSync): void
     {
         $this->isPartSync = $isPartSync;
     }
@@ -132,7 +132,7 @@ class DeliveryOrderConfirmSyncDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtInfo(): stdClass
+    public function getExtInfo(): ?stdClass
     {
         return $this->extInfo;
     }
@@ -140,7 +140,7 @@ class DeliveryOrderConfirmSyncDTO implements \JsonSerializable {
     /**
      * @param stdClass $extInfo
      */
-    public function setExtInfo(stdClass $extInfo): void
+    public function setExtInfo(?stdClass $extInfo): void
     {
         $this->extInfo = $extInfo;
     }

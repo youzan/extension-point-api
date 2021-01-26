@@ -82,7 +82,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -90,7 +90,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -98,7 +98,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBizDetailNo(): string
+    public function getBizDetailNo(): ?string
     {
         return $this->bizDetailNo;
     }
@@ -106,7 +106,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @param string $bizDetailNo
      */
-    public function setBizDetailNo(string $bizDetailNo): void
+    public function setBizDetailNo(?string $bizDetailNo): void
     {
         $this->bizDetailNo = $bizDetailNo;
     }
@@ -114,7 +114,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getFundFlow(): string
+    public function getFundFlow(): ?string
     {
         return $this->fundFlow;
     }
@@ -122,7 +122,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @param string $fundFlow
      */
-    public function setFundFlow(string $fundFlow): void
+    public function setFundFlow(?string $fundFlow): void
     {
         $this->fundFlow = $fundFlow;
     }
@@ -130,7 +130,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBizType(): string
+    public function getBizType(): ?string
     {
         return $this->bizType;
     }
@@ -138,7 +138,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @param string $bizType
      */
-    public function setBizType(string $bizType): void
+    public function setBizType(?string $bizType): void
     {
         $this->bizType = $bizType;
     }
@@ -146,7 +146,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTradeTime(): int
+    public function getTradeTime(): ?int
     {
         return $this->tradeTime;
     }
@@ -154,7 +154,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @param int $tradeTime
      */
-    public function setTradeTime(int $tradeTime): void
+    public function setTradeTime(?int $tradeTime): void
     {
         $this->tradeTime = $tradeTime;
     }
@@ -162,7 +162,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAmount(): string
+    public function getAmount(): ?string
     {
         return $this->amount;
     }
@@ -170,7 +170,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @param string $amount
      */
-    public function setAmount(string $amount): void
+    public function setAmount(?string $amount): void
     {
         $this->amount = $amount;
     }
@@ -178,7 +178,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBonusAmount(): string
+    public function getBonusAmount(): ?string
     {
         return $this->bonusAmount;
     }
@@ -186,7 +186,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @param string $bonusAmount
      */
-    public function setBonusAmount(string $bonusAmount): void
+    public function setBonusAmount(?string $bonusAmount): void
     {
         $this->bonusAmount = $bonusAmount;
     }
@@ -194,7 +194,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCurrentDenomination(): string
+    public function getCurrentDenomination(): ?string
     {
         return $this->currentDenomination;
     }
@@ -202,7 +202,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @param string $currentDenomination
      */
-    public function setCurrentDenomination(string $currentDenomination): void
+    public function setCurrentDenomination(?string $currentDenomination): void
     {
         $this->currentDenomination = $currentDenomination;
     }
@@ -210,7 +210,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCurrentBonusDenomination(): string
+    public function getCurrentBonusDenomination(): ?string
     {
         return $this->currentBonusDenomination;
     }
@@ -218,7 +218,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @param string $currentBonusDenomination
      */
-    public function setCurrentBonusDenomination(string $currentBonusDenomination): void
+    public function setCurrentBonusDenomination(?string $currentBonusDenomination): void
     {
         $this->currentBonusDenomination = $currentBonusDenomination;
     }
@@ -226,7 +226,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardNo(): string
+    public function getCardNo(): ?string
     {
         return $this->cardNo;
     }
@@ -234,7 +234,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @param string $cardNo
      */
-    public function setCardNo(string $cardNo): void
+    public function setCardNo(?string $cardNo): void
     {
         $this->cardNo = $cardNo;
     }
@@ -242,7 +242,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUserPhone(): string
+    public function getUserPhone(): ?string
     {
         return $this->userPhone;
     }
@@ -250,7 +250,7 @@ class VlaueCardExtBillRecordDTO implements \JsonSerializable {
     /**
      * @param string $userPhone
      */
-    public function setUserPhone(string $userPhone): void
+    public function setUserPhone(?string $userPhone): void
     {
         $this->userPhone = $userPhone;
     }

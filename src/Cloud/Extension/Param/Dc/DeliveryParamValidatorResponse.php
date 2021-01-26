@@ -34,7 +34,7 @@ class DeliveryParamValidatorResponse implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getValidateResult(): bool
+    public function getValidateResult(): ?bool
     {
         return $this->validateResult;
     }
@@ -42,7 +42,7 @@ class DeliveryParamValidatorResponse implements \JsonSerializable {
     /**
      * @param bool $validateResult
      */
-    public function setValidateResult(bool $validateResult): void
+    public function setValidateResult(?bool $validateResult): void
     {
         $this->validateResult = $validateResult;
     }
@@ -50,7 +50,7 @@ class DeliveryParamValidatorResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMessage(): string
+    public function getMessage(): ?string
     {
         return $this->message;
     }
@@ -58,7 +58,7 @@ class DeliveryParamValidatorResponse implements \JsonSerializable {
     /**
      * @param string $message
      */
-    public function setMessage(string $message): void
+    public function setMessage(?string $message): void
     {
         $this->message = $message;
     }
@@ -66,7 +66,7 @@ class DeliveryParamValidatorResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCode(): int
+    public function getCode(): ?int
     {
         return $this->code;
     }
@@ -74,7 +74,7 @@ class DeliveryParamValidatorResponse implements \JsonSerializable {
     /**
      * @param int $code
      */
-    public function setCode(int $code): void
+    public function setCode(?int $code): void
     {
         $this->code = $code;
     }

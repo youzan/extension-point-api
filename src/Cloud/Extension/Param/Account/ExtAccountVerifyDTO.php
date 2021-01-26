@@ -34,7 +34,7 @@ class ExtAccountVerifyDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -42,7 +42,7 @@ class ExtAccountVerifyDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -50,7 +50,7 @@ class ExtAccountVerifyDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDsOpenId(): string
+    public function getDsOpenId(): ?string
     {
         return $this->dsOpenId;
     }
@@ -58,7 +58,7 @@ class ExtAccountVerifyDTO implements \JsonSerializable {
     /**
      * @param string $dsOpenId
      */
-    public function setDsOpenId(string $dsOpenId): void
+    public function setDsOpenId(?string $dsOpenId): void
     {
         $this->dsOpenId = $dsOpenId;
     }
@@ -66,7 +66,7 @@ class ExtAccountVerifyDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getFromDsOpenId(): string
+    public function getFromDsOpenId(): ?string
     {
         return $this->fromDsOpenId;
     }
@@ -74,7 +74,7 @@ class ExtAccountVerifyDTO implements \JsonSerializable {
     /**
      * @param string $fromDsOpenId
      */
-    public function setFromDsOpenId(string $fromDsOpenId): void
+    public function setFromDsOpenId(?string $fromDsOpenId): void
     {
         $this->fromDsOpenId = $fromDsOpenId;
     }

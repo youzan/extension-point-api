@@ -22,7 +22,7 @@ class FindCouponGroupResponseExt implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getCouponGroupBaseExt(): array
+    public function getCouponGroupBaseExt(): ?array
     {
         return $this->couponGroupBaseExt;
     }
@@ -30,7 +30,7 @@ class FindCouponGroupResponseExt implements \JsonSerializable {
     /**
      * @param array $couponGroupBaseExt
      */
-    public function setCouponGroupBaseExt(array $couponGroupBaseExt): void
+    public function setCouponGroupBaseExt(?array $couponGroupBaseExt): void
     {
         $this->couponGroupBaseExt = $couponGroupBaseExt;
     }

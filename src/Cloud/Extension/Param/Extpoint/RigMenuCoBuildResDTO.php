@@ -40,7 +40,7 @@ class RigMenuCoBuildResDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getKdtId(): string
+    public function getKdtId(): ?string
     {
         return $this->kdtId;
     }
@@ -48,7 +48,7 @@ class RigMenuCoBuildResDTO implements \JsonSerializable {
     /**
      * @param string $kdtId
      */
-    public function setKdtId(string $kdtId): void
+    public function setKdtId(?string $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -56,7 +56,7 @@ class RigMenuCoBuildResDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBizCode(): string
+    public function getBizCode(): ?string
     {
         return $this->bizCode;
     }
@@ -64,7 +64,7 @@ class RigMenuCoBuildResDTO implements \JsonSerializable {
     /**
      * @param string $bizCode
      */
-    public function setBizCode(string $bizCode): void
+    public function setBizCode(?string $bizCode): void
     {
         $this->bizCode = $bizCode;
     }
@@ -72,7 +72,7 @@ class RigMenuCoBuildResDTO implements \JsonSerializable {
     /**
      * @return InsertOptMenuEntity
      */
-    public function getInsertOpt(): InsertOptMenuEntity
+    public function getInsertOpt(): ?InsertOptMenuEntity
     {
         return $this->insertOpt;
     }
@@ -80,7 +80,7 @@ class RigMenuCoBuildResDTO implements \JsonSerializable {
     /**
      * @param InsertOptMenuEntity $insertOpt
      */
-    public function setInsertOpt(InsertOptMenuEntity $insertOpt): void
+    public function setInsertOpt(?InsertOptMenuEntity $insertOpt): void
     {
         $this->insertOpt = $insertOpt;
     }
@@ -88,7 +88,7 @@ class RigMenuCoBuildResDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAppId(): string
+    public function getAppId(): ?string
     {
         return $this->appId;
     }
@@ -96,7 +96,7 @@ class RigMenuCoBuildResDTO implements \JsonSerializable {
     /**
      * @param string $appId
      */
-    public function setAppId(string $appId): void
+    public function setAppId(?string $appId): void
     {
         $this->appId = $appId;
     }

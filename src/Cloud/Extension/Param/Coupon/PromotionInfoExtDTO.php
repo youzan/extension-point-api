@@ -46,7 +46,7 @@ class PromotionInfoExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPromotionType(): string
+    public function getPromotionType(): ?string
     {
         return $this->promotionType;
     }
@@ -54,7 +54,7 @@ class PromotionInfoExtDTO implements \JsonSerializable {
     /**
      * @param string $promotionType
      */
-    public function setPromotionType(string $promotionType): void
+    public function setPromotionType(?string $promotionType): void
     {
         $this->promotionType = $promotionType;
     }
@@ -62,7 +62,7 @@ class PromotionInfoExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPromotionId(): int
+    public function getPromotionId(): ?int
     {
         return $this->promotionId;
     }
@@ -70,7 +70,7 @@ class PromotionInfoExtDTO implements \JsonSerializable {
     /**
      * @param int $promotionId
      */
-    public function setPromotionId(int $promotionId): void
+    public function setPromotionId(?int $promotionId): void
     {
         $this->promotionId = $promotionId;
     }
@@ -78,7 +78,7 @@ class PromotionInfoExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPrePay(): int
+    public function getPrePay(): ?int
     {
         return $this->prePay;
     }
@@ -86,7 +86,7 @@ class PromotionInfoExtDTO implements \JsonSerializable {
     /**
      * @param int $prePay
      */
-    public function setPrePay(int $prePay): void
+    public function setPrePay(?int $prePay): void
     {
         $this->prePay = $prePay;
     }
@@ -94,7 +94,7 @@ class PromotionInfoExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNewPay(): int
+    public function getNewPay(): ?int
     {
         return $this->newPay;
     }
@@ -102,7 +102,7 @@ class PromotionInfoExtDTO implements \JsonSerializable {
     /**
      * @param int $newPay
      */
-    public function setNewPay(int $newPay): void
+    public function setNewPay(?int $newPay): void
     {
         $this->newPay = $newPay;
     }
@@ -110,7 +110,7 @@ class PromotionInfoExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDecrease(): int
+    public function getDecrease(): ?int
     {
         return $this->decrease;
     }
@@ -118,7 +118,7 @@ class PromotionInfoExtDTO implements \JsonSerializable {
     /**
      * @param int $decrease
      */
-    public function setDecrease(int $decrease): void
+    public function setDecrease(?int $decrease): void
     {
         $this->decrease = $decrease;
     }

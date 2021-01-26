@@ -65,7 +65,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     /**
      * @return ExtCustomerInfoDTO
      */
-    public function getExtCustomerInfoDTO(): ExtCustomerInfoDTO
+    public function getExtCustomerInfoDTO(): ?ExtCustomerInfoDTO
     {
         return $this->extCustomerInfoDTO;
     }
@@ -73,7 +73,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     /**
      * @param ExtCustomerInfoDTO $extCustomerInfoDTO
      */
-    public function setExtCustomerInfoDTO(ExtCustomerInfoDTO $extCustomerInfoDTO): void
+    public function setExtCustomerInfoDTO(?ExtCustomerInfoDTO $extCustomerInfoDTO): void
     {
         $this->extCustomerInfoDTO = $extCustomerInfoDTO;
     }
@@ -81,7 +81,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -89,7 +89,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -97,7 +97,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getAmount(): int
+    public function getAmount(): ?int
     {
         return $this->amount;
     }
@@ -105,7 +105,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     /**
      * @param int $amount
      */
-    public function setAmount(int $amount): void
+    public function setAmount(?int $amount): void
     {
         $this->amount = $amount;
     }
@@ -113,7 +113,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBizValue(): string
+    public function getBizValue(): ?string
     {
         return $this->bizValue;
     }
@@ -121,7 +121,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     /**
      * @param string $bizValue
      */
-    public function setBizValue(string $bizValue): void
+    public function setBizValue(?string $bizValue): void
     {
         $this->bizValue = $bizValue;
     }
@@ -129,7 +129,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDescription(): string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -137,7 +137,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     /**
      * @param string $description
      */
-    public function setDescription(string $description): void
+    public function setDescription(?string $description): void
     {
         $this->description = $description;
     }
@@ -145,7 +145,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getConsumeSource(): int
+    public function getConsumeSource(): ?int
     {
         return $this->consumeSource;
     }
@@ -153,7 +153,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     /**
      * @param int $consumeSource
      */
-    public function setConsumeSource(int $consumeSource): void
+    public function setConsumeSource(?int $consumeSource): void
     {
         $this->consumeSource = $consumeSource;
     }
@@ -161,7 +161,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtraInfo(): stdClass
+    public function getExtraInfo(): ?stdClass
     {
         return $this->extraInfo;
     }
@@ -169,7 +169,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     /**
      * @param stdClass $extraInfo
      */
-    public function setExtraInfo(stdClass $extraInfo): void
+    public function setExtraInfo(?stdClass $extraInfo): void
     {
         $this->extraInfo = $extraInfo;
     }
@@ -177,7 +177,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNodeId(): int
+    public function getNodeId(): ?int
     {
         return $this->nodeId;
     }
@@ -185,7 +185,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     /**
      * @param int $nodeId
      */
-    public function setNodeId(int $nodeId): void
+    public function setNodeId(?int $nodeId): void
     {
         $this->nodeId = $nodeId;
     }

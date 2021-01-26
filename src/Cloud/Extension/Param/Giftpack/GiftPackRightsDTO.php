@@ -64,7 +64,7 @@ class GiftPackRightsDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getCouponRights(): array
+    public function getCouponRights(): ?array
     {
         return $this->couponRights;
     }
@@ -72,7 +72,7 @@ class GiftPackRightsDTO implements \JsonSerializable {
     /**
      * @param array $couponRights
      */
-    public function setCouponRights(array $couponRights): void
+    public function setCouponRights(?array $couponRights): void
     {
         $this->couponRights = $couponRights;
     }
@@ -80,7 +80,7 @@ class GiftPackRightsDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getMemberCardRights(): array
+    public function getMemberCardRights(): ?array
     {
         return $this->memberCardRights;
     }
@@ -88,7 +88,7 @@ class GiftPackRightsDTO implements \JsonSerializable {
     /**
      * @param array $memberCardRights
      */
-    public function setMemberCardRights(array $memberCardRights): void
+    public function setMemberCardRights(?array $memberCardRights): void
     {
         $this->memberCardRights = $memberCardRights;
     }
@@ -96,7 +96,7 @@ class GiftPackRightsDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getOuterRights(): array
+    public function getOuterRights(): ?array
     {
         return $this->outerRights;
     }
@@ -104,7 +104,7 @@ class GiftPackRightsDTO implements \JsonSerializable {
     /**
      * @param array $outerRights
      */
-    public function setOuterRights(array $outerRights): void
+    public function setOuterRights(?array $outerRights): void
     {
         $this->outerRights = $outerRights;
     }
@@ -112,7 +112,7 @@ class GiftPackRightsDTO implements \JsonSerializable {
     /**
      * @return PointRightsDTO
      */
-    public function getPointRights(): PointRightsDTO
+    public function getPointRights(): ?PointRightsDTO
     {
         return $this->pointRights;
     }
@@ -120,7 +120,7 @@ class GiftPackRightsDTO implements \JsonSerializable {
     /**
      * @param PointRightsDTO $pointRights
      */
-    public function setPointRights(PointRightsDTO $pointRights): void
+    public function setPointRights(?PointRightsDTO $pointRights): void
     {
         $this->pointRights = $pointRights;
     }
@@ -128,7 +128,7 @@ class GiftPackRightsDTO implements \JsonSerializable {
     /**
      * @return GrowthPointRightsDTO
      */
-    public function getGrowthPointRights(): GrowthPointRightsDTO
+    public function getGrowthPointRights(): ?GrowthPointRightsDTO
     {
         return $this->growthPointRights;
     }
@@ -136,7 +136,7 @@ class GiftPackRightsDTO implements \JsonSerializable {
     /**
      * @param GrowthPointRightsDTO $growthPointRights
      */
-    public function setGrowthPointRights(GrowthPointRightsDTO $growthPointRights): void
+    public function setGrowthPointRights(?GrowthPointRightsDTO $growthPointRights): void
     {
         $this->growthPointRights = $growthPointRights;
     }
@@ -144,7 +144,7 @@ class GiftPackRightsDTO implements \JsonSerializable {
     /**
      * @return BonusAmountRightsDTO
      */
-    public function getBonusAmountRights(): BonusAmountRightsDTO
+    public function getBonusAmountRights(): ?BonusAmountRightsDTO
     {
         return $this->bonusAmountRights;
     }
@@ -152,7 +152,7 @@ class GiftPackRightsDTO implements \JsonSerializable {
     /**
      * @param BonusAmountRightsDTO $bonusAmountRights
      */
-    public function setBonusAmountRights(BonusAmountRightsDTO $bonusAmountRights): void
+    public function setBonusAmountRights(?BonusAmountRightsDTO $bonusAmountRights): void
     {
         $this->bonusAmountRights = $bonusAmountRights;
     }
@@ -160,7 +160,7 @@ class GiftPackRightsDTO implements \JsonSerializable {
     /**
      * @return PresentRightsDTO
      */
-    public function getPresentRights(): PresentRightsDTO
+    public function getPresentRights(): ?PresentRightsDTO
     {
         return $this->presentRights;
     }
@@ -168,7 +168,7 @@ class GiftPackRightsDTO implements \JsonSerializable {
     /**
      * @param PresentRightsDTO $presentRights
      */
-    public function setPresentRights(PresentRightsDTO $presentRights): void
+    public function setPresentRights(?PresentRightsDTO $presentRights): void
     {
         $this->presentRights = $presentRights;
     }

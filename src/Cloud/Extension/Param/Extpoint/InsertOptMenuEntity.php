@@ -28,7 +28,7 @@ class InsertOptMenuEntity implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOptType(): string
+    public function getOptType(): ?string
     {
         return $this->optType;
     }
@@ -36,7 +36,7 @@ class InsertOptMenuEntity implements \JsonSerializable {
     /**
      * @param string $optType
      */
-    public function setOptType(string $optType): void
+    public function setOptType(?string $optType): void
     {
         $this->optType = $optType;
     }
@@ -44,7 +44,7 @@ class InsertOptMenuEntity implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getMenuItems(): array
+    public function getMenuItems(): ?array
     {
         return $this->menuItems;
     }
@@ -52,7 +52,7 @@ class InsertOptMenuEntity implements \JsonSerializable {
     /**
      * @param array $menuItems
      */
-    public function setMenuItems(array $menuItems): void
+    public function setMenuItems(?array $menuItems): void
     {
         $this->menuItems = $menuItems;
     }

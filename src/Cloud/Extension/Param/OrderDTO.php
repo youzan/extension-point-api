@@ -52,7 +52,7 @@ class OrderDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getItems(): array
+    public function getItems(): ?array
     {
         return $this->items;
     }
@@ -60,7 +60,7 @@ class OrderDTO implements \JsonSerializable {
     /**
      * @param array $items
      */
-    public function setItems(array $items): void
+    public function setItems(?array $items): void
     {
         $this->items = $items;
     }
@@ -68,7 +68,7 @@ class OrderDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getExpireTime(): int
+    public function getExpireTime(): ?int
     {
         return $this->expireTime;
     }
@@ -76,7 +76,7 @@ class OrderDTO implements \JsonSerializable {
     /**
      * @param int $expireTime
      */
-    public function setExpireTime(int $expireTime): void
+    public function setExpireTime(?int $expireTime): void
     {
         $this->expireTime = $expireTime;
     }
@@ -84,7 +84,7 @@ class OrderDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderPayAmount(): int
+    public function getOrderPayAmount(): ?int
     {
         return $this->orderPayAmount;
     }
@@ -92,7 +92,7 @@ class OrderDTO implements \JsonSerializable {
     /**
      * @param int $orderPayAmount
      */
-    public function setOrderPayAmount(int $orderPayAmount): void
+    public function setOrderPayAmount(?int $orderPayAmount): void
     {
         $this->orderPayAmount = $orderPayAmount;
     }
@@ -100,7 +100,7 @@ class OrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCurrencyCode(): string
+    public function getCurrencyCode(): ?string
     {
         return $this->currencyCode;
     }
@@ -108,7 +108,7 @@ class OrderDTO implements \JsonSerializable {
     /**
      * @param string $currencyCode
      */
-    public function setCurrencyCode(string $currencyCode): void
+    public function setCurrencyCode(?string $currencyCode): void
     {
         $this->currencyCode = $currencyCode;
     }
@@ -116,7 +116,7 @@ class OrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTradeDesc(): string
+    public function getTradeDesc(): ?string
     {
         return $this->tradeDesc;
     }
@@ -124,7 +124,7 @@ class OrderDTO implements \JsonSerializable {
     /**
      * @param string $tradeDesc
      */
-    public function setTradeDesc(string $tradeDesc): void
+    public function setTradeDesc(?string $tradeDesc): void
     {
         $this->tradeDesc = $tradeDesc;
     }
@@ -132,7 +132,7 @@ class OrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNO(): string
+    public function getOrderNO(): ?string
     {
         return $this->orderNO;
     }
@@ -140,7 +140,7 @@ class OrderDTO implements \JsonSerializable {
     /**
      * @param string $orderNO
      */
-    public function setOrderNO(string $orderNO): void
+    public function setOrderNO(?string $orderNO): void
     {
         $this->orderNO = $orderNO;
     }

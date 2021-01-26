@@ -46,7 +46,7 @@ class ExtCustomerRelationBindRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDsYzOpenId(): string
+    public function getDsYzOpenId(): ?string
     {
         return $this->dsYzOpenId;
     }
@@ -54,7 +54,7 @@ class ExtCustomerRelationBindRequestDTO implements \JsonSerializable {
     /**
      * @param string $dsYzOpenId
      */
-    public function setDsYzOpenId(string $dsYzOpenId): void
+    public function setDsYzOpenId(?string $dsYzOpenId): void
     {
         $this->dsYzOpenId = $dsYzOpenId;
     }
@@ -62,7 +62,7 @@ class ExtCustomerRelationBindRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getFansType(): int
+    public function getFansType(): ?int
     {
         return $this->fansType;
     }
@@ -70,7 +70,7 @@ class ExtCustomerRelationBindRequestDTO implements \JsonSerializable {
     /**
      * @param int $fansType
      */
-    public function setFansType(int $fansType): void
+    public function setFansType(?int $fansType): void
     {
         $this->fansType = $fansType;
     }
@@ -78,7 +78,7 @@ class ExtCustomerRelationBindRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCtYzOpenId(): string
+    public function getCtYzOpenId(): ?string
     {
         return $this->ctYzOpenId;
     }
@@ -86,7 +86,7 @@ class ExtCustomerRelationBindRequestDTO implements \JsonSerializable {
     /**
      * @param string $ctYzOpenId
      */
-    public function setCtYzOpenId(string $ctYzOpenId): void
+    public function setCtYzOpenId(?string $ctYzOpenId): void
     {
         $this->ctYzOpenId = $ctYzOpenId;
     }
@@ -94,7 +94,7 @@ class ExtCustomerRelationBindRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBindSourceType(): int
+    public function getBindSourceType(): ?int
     {
         return $this->bindSourceType;
     }
@@ -102,7 +102,7 @@ class ExtCustomerRelationBindRequestDTO implements \JsonSerializable {
     /**
      * @param int $bindSourceType
      */
-    public function setBindSourceType(int $bindSourceType): void
+    public function setBindSourceType(?int $bindSourceType): void
     {
         $this->bindSourceType = $bindSourceType;
     }
@@ -110,7 +110,7 @@ class ExtCustomerRelationBindRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -118,7 +118,7 @@ class ExtCustomerRelationBindRequestDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

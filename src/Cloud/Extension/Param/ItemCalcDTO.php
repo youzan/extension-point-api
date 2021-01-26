@@ -70,7 +70,7 @@ class ItemCalcDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getSelfDefineData(): stdClass
+    public function getSelfDefineData(): ?stdClass
     {
         return $this->selfDefineData;
     }
@@ -78,7 +78,7 @@ class ItemCalcDTO implements \JsonSerializable {
     /**
      * @param stdClass $selfDefineData
      */
-    public function setSelfDefineData(stdClass $selfDefineData): void
+    public function setSelfDefineData(?stdClass $selfDefineData): void
     {
         $this->selfDefineData = $selfDefineData;
     }
@@ -86,7 +86,7 @@ class ItemCalcDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderItemId(): int
+    public function getOrderItemId(): ?int
     {
         return $this->orderItemId;
     }
@@ -94,7 +94,7 @@ class ItemCalcDTO implements \JsonSerializable {
     /**
      * @param int $orderItemId
      */
-    public function setOrderItemId(int $orderItemId): void
+    public function setOrderItemId(?int $orderItemId): void
     {
         $this->orderItemId = $orderItemId;
     }
@@ -102,7 +102,7 @@ class ItemCalcDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getWeight(): int
+    public function getWeight(): ?int
     {
         return $this->weight;
     }
@@ -110,7 +110,7 @@ class ItemCalcDTO implements \JsonSerializable {
     /**
      * @param int $weight
      */
-    public function setWeight(int $weight): void
+    public function setWeight(?int $weight): void
     {
         $this->weight = $weight;
     }
@@ -118,7 +118,7 @@ class ItemCalcDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNum(): int
+    public function getNum(): ?int
     {
         return $this->num;
     }
@@ -126,7 +126,7 @@ class ItemCalcDTO implements \JsonSerializable {
     /**
      * @param int $num
      */
-    public function setNum(int $num): void
+    public function setNum(?int $num): void
     {
         $this->num = $num;
     }
@@ -134,7 +134,7 @@ class ItemCalcDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOriginUnitPrice(): int
+    public function getOriginUnitPrice(): ?int
     {
         return $this->originUnitPrice;
     }
@@ -142,7 +142,7 @@ class ItemCalcDTO implements \JsonSerializable {
     /**
      * @param int $originUnitPrice
      */
-    public function setOriginUnitPrice(int $originUnitPrice): void
+    public function setOriginUnitPrice(?int $originUnitPrice): void
     {
         $this->originUnitPrice = $originUnitPrice;
     }
@@ -150,7 +150,7 @@ class ItemCalcDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSkuId(): int
+    public function getSkuId(): ?int
     {
         return $this->skuId;
     }
@@ -158,7 +158,7 @@ class ItemCalcDTO implements \JsonSerializable {
     /**
      * @param int $skuId
      */
-    public function setSkuId(int $skuId): void
+    public function setSkuId(?int $skuId): void
     {
         $this->skuId = $skuId;
     }
@@ -166,7 +166,7 @@ class ItemCalcDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGoodsId(): int
+    public function getGoodsId(): ?int
     {
         return $this->goodsId;
     }
@@ -174,7 +174,7 @@ class ItemCalcDTO implements \JsonSerializable {
     /**
      * @param int $goodsId
      */
-    public function setGoodsId(int $goodsId): void
+    public function setGoodsId(?int $goodsId): void
     {
         $this->goodsId = $goodsId;
     }
@@ -182,7 +182,7 @@ class ItemCalcDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalPrice(): int
+    public function getTotalPrice(): ?int
     {
         return $this->totalPrice;
     }
@@ -190,7 +190,7 @@ class ItemCalcDTO implements \JsonSerializable {
     /**
      * @param int $totalPrice
      */
-    public function setTotalPrice(int $totalPrice): void
+    public function setTotalPrice(?int $totalPrice): void
     {
         $this->totalPrice = $totalPrice;
     }
@@ -198,7 +198,7 @@ class ItemCalcDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtModelMap(): stdClass
+    public function getExtModelMap(): ?stdClass
     {
         return $this->extModelMap;
     }
@@ -206,7 +206,7 @@ class ItemCalcDTO implements \JsonSerializable {
     /**
      * @param stdClass $extModelMap
      */
-    public function setExtModelMap(stdClass $extModelMap): void
+    public function setExtModelMap(?stdClass $extModelMap): void
     {
         $this->extModelMap = $extModelMap;
     }

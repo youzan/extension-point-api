@@ -41,7 +41,7 @@ class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
     /**
      * @return ExtCustomerIdentityDTO
      */
-    public function getExtCustomerIdentityDTO(): ExtCustomerIdentityDTO
+    public function getExtCustomerIdentityDTO(): ?ExtCustomerIdentityDTO
     {
         return $this->extCustomerIdentityDTO;
     }
@@ -49,7 +49,7 @@ class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
     /**
      * @param ExtCustomerIdentityDTO $extCustomerIdentityDTO
      */
-    public function setExtCustomerIdentityDTO(ExtCustomerIdentityDTO $extCustomerIdentityDTO): void
+    public function setExtCustomerIdentityDTO(?ExtCustomerIdentityDTO $extCustomerIdentityDTO): void
     {
         $this->extCustomerIdentityDTO = $extCustomerIdentityDTO;
     }
@@ -57,7 +57,7 @@ class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -65,7 +65,7 @@ class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -73,7 +73,7 @@ class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtensionMap(): stdClass
+    public function getExtensionMap(): ?stdClass
     {
         return $this->extensionMap;
     }
@@ -81,7 +81,7 @@ class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
     /**
      * @param stdClass $extensionMap
      */
-    public function setExtensionMap(stdClass $extensionMap): void
+    public function setExtensionMap(?stdClass $extensionMap): void
     {
         $this->extensionMap = $extensionMap;
     }
@@ -89,7 +89,7 @@ class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNodeId(): int
+    public function getNodeId(): ?int
     {
         return $this->nodeId;
     }
@@ -97,7 +97,7 @@ class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
     /**
      * @param int $nodeId
      */
-    public function setNodeId(int $nodeId): void
+    public function setNodeId(?int $nodeId): void
     {
         $this->nodeId = $nodeId;
     }

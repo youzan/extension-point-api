@@ -124,7 +124,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
@@ -132,7 +132,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @param int $id
      */
-    public function setId(int $id): void
+    public function setId(?int $id): void
     {
         $this->id = $id;
     }
@@ -140,7 +140,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAlias(): string
+    public function getAlias(): ?string
     {
         return $this->alias;
     }
@@ -148,7 +148,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @param string $alias
      */
-    public function setAlias(string $alias): void
+    public function setAlias(?string $alias): void
     {
         $this->alias = $alias;
     }
@@ -156,7 +156,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTitle(): string
+    public function getTitle(): ?string
     {
         return $this->title;
     }
@@ -164,7 +164,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @param string $title
      */
-    public function setTitle(string $title): void
+    public function setTitle(?string $title): void
     {
         $this->title = $title;
     }
@@ -172,7 +172,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDescription(): string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -180,7 +180,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @param string $description
      */
-    public function setDescription(string $description): void
+    public function setDescription(?string $description): void
     {
         $this->description = $description;
     }
@@ -188,7 +188,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPriceCondition(): int
+    public function getPriceCondition(): ?int
     {
         return $this->priceCondition;
     }
@@ -196,7 +196,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @param int $priceCondition
      */
-    public function setPriceCondition(int $priceCondition): void
+    public function setPriceCondition(?int $priceCondition): void
     {
         $this->priceCondition = $priceCondition;
     }
@@ -204,7 +204,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getConditionDesc(): string
+    public function getConditionDesc(): ?string
     {
         return $this->conditionDesc;
     }
@@ -212,7 +212,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @param string $conditionDesc
      */
-    public function setConditionDesc(string $conditionDesc): void
+    public function setConditionDesc(?string $conditionDesc): void
     {
         $this->conditionDesc = $conditionDesc;
     }
@@ -220,7 +220,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPreferentialType(): int
+    public function getPreferentialType(): ?int
     {
         return $this->preferentialType;
     }
@@ -228,7 +228,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @param int $preferentialType
      */
-    public function setPreferentialType(int $preferentialType): void
+    public function setPreferentialType(?int $preferentialType): void
     {
         $this->preferentialType = $preferentialType;
     }
@@ -236,7 +236,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPreferentialValue(): int
+    public function getPreferentialValue(): ?int
     {
         return $this->preferentialValue;
     }
@@ -244,7 +244,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @param int $preferentialValue
      */
-    public function setPreferentialValue(int $preferentialValue): void
+    public function setPreferentialValue(?int $preferentialValue): void
     {
         $this->preferentialValue = $preferentialValue;
     }
@@ -252,7 +252,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBeginAt(): int
+    public function getBeginAt(): ?int
     {
         return $this->beginAt;
     }
@@ -260,7 +260,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @param int $beginAt
      */
-    public function setBeginAt(int $beginAt): void
+    public function setBeginAt(?int $beginAt): void
     {
         $this->beginAt = $beginAt;
     }
@@ -268,7 +268,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getEndAt(): int
+    public function getEndAt(): ?int
     {
         return $this->endAt;
     }
@@ -276,7 +276,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @param int $endAt
      */
-    public function setEndAt(int $endAt): void
+    public function setEndAt(?int $endAt): void
     {
         $this->endAt = $endAt;
     }
@@ -284,7 +284,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getParticipateGoodsType(): int
+    public function getParticipateGoodsType(): ?int
     {
         return $this->participateGoodsType;
     }
@@ -292,7 +292,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @param int $participateGoodsType
      */
-    public function setParticipateGoodsType(int $participateGoodsType): void
+    public function setParticipateGoodsType(?int $participateGoodsType): void
     {
         $this->participateGoodsType = $participateGoodsType;
     }
@@ -300,7 +300,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSize(): int
+    public function getSize(): ?int
     {
         return $this->size;
     }
@@ -308,7 +308,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @param int $size
      */
-    public function setSize(int $size): void
+    public function setSize(?int $size): void
     {
         $this->size = $size;
     }
@@ -316,7 +316,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStockSize(): int
+    public function getStockSize(): ?int
     {
         return $this->stockSize;
     }
@@ -324,7 +324,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @param int $stockSize
      */
-    public function setStockSize(int $stockSize): void
+    public function setStockSize(?int $stockSize): void
     {
         $this->stockSize = $stockSize;
     }
@@ -332,7 +332,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalTake(): int
+    public function getTotalTake(): ?int
     {
         return $this->totalTake;
     }
@@ -340,7 +340,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @param int $totalTake
      */
-    public function setTotalTake(int $totalTake): void
+    public function setTotalTake(?int $totalTake): void
     {
         $this->totalTake = $totalTake;
     }
@@ -348,7 +348,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalUsed(): int
+    public function getTotalUsed(): ?int
     {
         return $this->totalUsed;
     }
@@ -356,7 +356,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @param int $totalUsed
      */
-    public function setTotalUsed(int $totalUsed): void
+    public function setTotalUsed(?int $totalUsed): void
     {
         $this->totalUsed = $totalUsed;
     }
@@ -364,7 +364,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGroupType(): int
+    public function getGroupType(): ?int
     {
         return $this->groupType;
     }
@@ -372,7 +372,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @param int $groupType
      */
-    public function setGroupType(int $groupType): void
+    public function setGroupType(?int $groupType): void
     {
         $this->groupType = $groupType;
     }
@@ -380,7 +380,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStatus(): int
+    public function getStatus(): ?int
     {
         return $this->status;
     }
@@ -388,7 +388,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @param int $status
      */
-    public function setStatus(int $status): void
+    public function setStatus(?int $status): void
     {
         $this->status = $status;
     }
@@ -396,7 +396,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCreatedAt(): int
+    public function getCreatedAt(): ?int
     {
         return $this->createdAt;
     }
@@ -404,7 +404,7 @@ class CouponGroupExtDTO implements \JsonSerializable {
     /**
      * @param int $createdAt
      */
-    public function setCreatedAt(int $createdAt): void
+    public function setCreatedAt(?int $createdAt): void
     {
         $this->createdAt = $createdAt;
     }

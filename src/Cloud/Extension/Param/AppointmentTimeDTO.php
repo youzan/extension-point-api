@@ -28,7 +28,7 @@ class AppointmentTimeDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getEndTime(): int
+    public function getEndTime(): ?int
     {
         return $this->endTime;
     }
@@ -36,7 +36,7 @@ class AppointmentTimeDTO implements \JsonSerializable {
     /**
      * @param int $endTime
      */
-    public function setEndTime(int $endTime): void
+    public function setEndTime(?int $endTime): void
     {
         $this->endTime = $endTime;
     }
@@ -44,7 +44,7 @@ class AppointmentTimeDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStartTime(): int
+    public function getStartTime(): ?int
     {
         return $this->startTime;
     }
@@ -52,7 +52,7 @@ class AppointmentTimeDTO implements \JsonSerializable {
     /**
      * @param int $startTime
      */
-    public function setStartTime(int $startTime): void
+    public function setStartTime(?int $startTime): void
     {
         $this->startTime = $startTime;
     }

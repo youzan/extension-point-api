@@ -34,7 +34,7 @@ class DisabledTicketRequestDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getTicketNoList(): array
+    public function getTicketNoList(): ?array
     {
         return $this->ticketNoList;
     }
@@ -42,7 +42,7 @@ class DisabledTicketRequestDTO implements \JsonSerializable {
     /**
      * @param array $ticketNoList
      */
-    public function setTicketNoList(array $ticketNoList): void
+    public function setTicketNoList(?array $ticketNoList): void
     {
         $this->ticketNoList = $ticketNoList;
     }
@@ -50,7 +50,7 @@ class DisabledTicketRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -58,7 +58,7 @@ class DisabledTicketRequestDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -66,7 +66,7 @@ class DisabledTicketRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -74,7 +74,7 @@ class DisabledTicketRequestDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

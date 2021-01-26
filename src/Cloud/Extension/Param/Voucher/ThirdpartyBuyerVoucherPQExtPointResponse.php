@@ -28,7 +28,7 @@ class ThirdpartyBuyerVoucherPQExtPointResponse implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getThirdpartyVouchers(): array
+    public function getThirdpartyVouchers(): ?array
     {
         return $this->thirdpartyVouchers;
     }
@@ -36,7 +36,7 @@ class ThirdpartyBuyerVoucherPQExtPointResponse implements \JsonSerializable {
     /**
      * @param array $thirdpartyVouchers
      */
-    public function setThirdpartyVouchers(array $thirdpartyVouchers): void
+    public function setThirdpartyVouchers(?array $thirdpartyVouchers): void
     {
         $this->thirdpartyVouchers = $thirdpartyVouchers;
     }
@@ -44,7 +44,7 @@ class ThirdpartyBuyerVoucherPQExtPointResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersionNo(): int
+    public function getVersionNo(): ?int
     {
         return $this->versionNo;
     }
@@ -52,7 +52,7 @@ class ThirdpartyBuyerVoucherPQExtPointResponse implements \JsonSerializable {
     /**
      * @param int $versionNo
      */
-    public function setVersionNo(int $versionNo): void
+    public function setVersionNo(?int $versionNo): void
     {
         $this->versionNo = $versionNo;
     }

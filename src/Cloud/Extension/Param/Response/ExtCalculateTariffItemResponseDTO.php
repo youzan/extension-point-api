@@ -34,7 +34,7 @@ class ExtCalculateTariffItemResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderItemId(): int
+    public function getOrderItemId(): ?int
     {
         return $this->orderItemId;
     }
@@ -42,7 +42,7 @@ class ExtCalculateTariffItemResponseDTO implements \JsonSerializable {
     /**
      * @param int $orderItemId
      */
-    public function setOrderItemId(int $orderItemId): void
+    public function setOrderItemId(?int $orderItemId): void
     {
         $this->orderItemId = $orderItemId;
     }
@@ -50,7 +50,7 @@ class ExtCalculateTariffItemResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGoodsTariff(): int
+    public function getGoodsTariff(): ?int
     {
         return $this->goodsTariff;
     }
@@ -58,7 +58,7 @@ class ExtCalculateTariffItemResponseDTO implements \JsonSerializable {
     /**
      * @param int $goodsTariff
      */
-    public function setGoodsTariff(int $goodsTariff): void
+    public function setGoodsTariff(?int $goodsTariff): void
     {
         $this->goodsTariff = $goodsTariff;
     }
@@ -66,7 +66,7 @@ class ExtCalculateTariffItemResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPostageTariff(): int
+    public function getPostageTariff(): ?int
     {
         return $this->postageTariff;
     }
@@ -74,7 +74,7 @@ class ExtCalculateTariffItemResponseDTO implements \JsonSerializable {
     /**
      * @param int $postageTariff
      */
-    public function setPostageTariff(int $postageTariff): void
+    public function setPostageTariff(?int $postageTariff): void
     {
         $this->postageTariff = $postageTariff;
     }

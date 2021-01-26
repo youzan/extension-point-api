@@ -34,7 +34,7 @@ class AddTipDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -42,7 +42,7 @@ class AddTipDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -50,7 +50,7 @@ class AddTipDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderOriginalId(): string
+    public function getOrderOriginalId(): ?string
     {
         return $this->orderOriginalId;
     }
@@ -58,7 +58,7 @@ class AddTipDTO implements \JsonSerializable {
     /**
      * @param string $orderOriginalId
      */
-    public function setOrderOriginalId(string $orderOriginalId): void
+    public function setOrderOriginalId(?string $orderOriginalId): void
     {
         $this->orderOriginalId = $orderOriginalId;
     }
@@ -66,7 +66,7 @@ class AddTipDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTip(): int
+    public function getTip(): ?int
     {
         return $this->tip;
     }
@@ -74,7 +74,7 @@ class AddTipDTO implements \JsonSerializable {
     /**
      * @param int $tip
      */
-    public function setTip(int $tip): void
+    public function setTip(?int $tip): void
     {
         $this->tip = $tip;
     }

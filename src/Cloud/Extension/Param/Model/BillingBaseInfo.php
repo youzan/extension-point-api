@@ -56,7 +56,7 @@ class BillingBaseInfo implements \JsonSerializable {
     /**
      * @return ActivityInfo
      */
-    public function getActivityInfo(): ActivityInfo
+    public function getActivityInfo(): ?ActivityInfo
     {
         return $this->activityInfo;
     }
@@ -64,7 +64,7 @@ class BillingBaseInfo implements \JsonSerializable {
     /**
      * @param ActivityInfo $activityInfo
      */
-    public function setActivityInfo(ActivityInfo $activityInfo): void
+    public function setActivityInfo(?ActivityInfo $activityInfo): void
     {
         $this->activityInfo = $activityInfo;
     }
@@ -72,7 +72,7 @@ class BillingBaseInfo implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getGoodsInfoList(): array
+    public function getGoodsInfoList(): ?array
     {
         return $this->goodsInfoList;
     }
@@ -80,7 +80,7 @@ class BillingBaseInfo implements \JsonSerializable {
     /**
      * @param array $goodsInfoList
      */
-    public function setGoodsInfoList(array $goodsInfoList): void
+    public function setGoodsInfoList(?array $goodsInfoList): void
     {
         $this->goodsInfoList = $goodsInfoList;
     }
@@ -88,7 +88,7 @@ class BillingBaseInfo implements \JsonSerializable {
     /**
      * @return UserInfo
      */
-    public function getUserInfo(): UserInfo
+    public function getUserInfo(): ?UserInfo
     {
         return $this->userInfo;
     }
@@ -96,7 +96,7 @@ class BillingBaseInfo implements \JsonSerializable {
     /**
      * @param UserInfo $userInfo
      */
-    public function setUserInfo(UserInfo $userInfo): void
+    public function setUserInfo(?UserInfo $userInfo): void
     {
         $this->userInfo = $userInfo;
     }
@@ -104,7 +104,7 @@ class BillingBaseInfo implements \JsonSerializable {
     /**
      * @return ShopInfo
      */
-    public function getShopInfo(): ShopInfo
+    public function getShopInfo(): ?ShopInfo
     {
         return $this->shopInfo;
     }
@@ -112,7 +112,7 @@ class BillingBaseInfo implements \JsonSerializable {
     /**
      * @param ShopInfo $shopInfo
      */
-    public function setShopInfo(ShopInfo $shopInfo): void
+    public function setShopInfo(?ShopInfo $shopInfo): void
     {
         $this->shopInfo = $shopInfo;
     }
@@ -120,7 +120,7 @@ class BillingBaseInfo implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -128,7 +128,7 @@ class BillingBaseInfo implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -136,7 +136,7 @@ class BillingBaseInfo implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtraInfo(): stdClass
+    public function getExtraInfo(): ?stdClass
     {
         return $this->extraInfo;
     }
@@ -144,7 +144,7 @@ class BillingBaseInfo implements \JsonSerializable {
     /**
      * @param stdClass $extraInfo
      */
-    public function setExtraInfo(stdClass $extraInfo): void
+    public function setExtraInfo(?stdClass $extraInfo): void
     {
         $this->extraInfo = $extraInfo;
     }

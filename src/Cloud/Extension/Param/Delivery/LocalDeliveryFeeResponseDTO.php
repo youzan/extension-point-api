@@ -34,7 +34,7 @@ class LocalDeliveryFeeResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDeliveryFee(): int
+    public function getDeliveryFee(): ?int
     {
         return $this->deliveryFee;
     }
@@ -42,7 +42,7 @@ class LocalDeliveryFeeResponseDTO implements \JsonSerializable {
     /**
      * @param int $deliveryFee
      */
-    public function setDeliveryFee(int $deliveryFee): void
+    public function setDeliveryFee(?int $deliveryFee): void
     {
         $this->deliveryFee = $deliveryFee;
     }
@@ -50,7 +50,7 @@ class LocalDeliveryFeeResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDistance(): int
+    public function getDistance(): ?int
     {
         return $this->distance;
     }
@@ -58,7 +58,7 @@ class LocalDeliveryFeeResponseDTO implements \JsonSerializable {
     /**
      * @param int $distance
      */
-    public function setDistance(int $distance): void
+    public function setDistance(?int $distance): void
     {
         $this->distance = $distance;
     }
@@ -66,7 +66,7 @@ class LocalDeliveryFeeResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getFeeStatus(): int
+    public function getFeeStatus(): ?int
     {
         return $this->feeStatus;
     }
@@ -74,7 +74,7 @@ class LocalDeliveryFeeResponseDTO implements \JsonSerializable {
     /**
      * @param int $feeStatus
      */
-    public function setFeeStatus(int $feeStatus): void
+    public function setFeeStatus(?int $feeStatus): void
     {
         $this->feeStatus = $feeStatus;
     }

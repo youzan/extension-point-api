@@ -28,7 +28,7 @@ class ValueCardExtRechargeNoticeDocResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getNoticeDoc(): string
+    public function getNoticeDoc(): ?string
     {
         return $this->noticeDoc;
     }
@@ -36,7 +36,7 @@ class ValueCardExtRechargeNoticeDocResponse implements \JsonSerializable {
     /**
      * @param string $noticeDoc
      */
-    public function setNoticeDoc(string $noticeDoc): void
+    public function setNoticeDoc(?string $noticeDoc): void
     {
         $this->noticeDoc = $noticeDoc;
     }
@@ -44,7 +44,7 @@ class ValueCardExtRechargeNoticeDocResponse implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getForcedChoice(): bool
+    public function getForcedChoice(): ?bool
     {
         return $this->forcedChoice;
     }
@@ -52,7 +52,7 @@ class ValueCardExtRechargeNoticeDocResponse implements \JsonSerializable {
     /**
      * @param bool $forcedChoice
      */
-    public function setForcedChoice(bool $forcedChoice): void
+    public function setForcedChoice(?bool $forcedChoice): void
     {
         $this->forcedChoice = $forcedChoice;
     }

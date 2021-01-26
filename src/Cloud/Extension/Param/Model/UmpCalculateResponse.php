@@ -28,7 +28,7 @@ class UmpCalculateResponse implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getActivities(): array
+    public function getActivities(): ?array
     {
         return $this->activities;
     }
@@ -36,7 +36,7 @@ class UmpCalculateResponse implements \JsonSerializable {
     /**
      * @param array $activities
      */
-    public function setActivities(array $activities): void
+    public function setActivities(?array $activities): void
     {
         $this->activities = $activities;
     }
@@ -44,7 +44,7 @@ class UmpCalculateResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDecrease(): int
+    public function getDecrease(): ?int
     {
         return $this->decrease;
     }
@@ -52,7 +52,7 @@ class UmpCalculateResponse implements \JsonSerializable {
     /**
      * @param int $decrease
      */
-    public function setDecrease(int $decrease): void
+    public function setDecrease(?int $decrease): void
     {
         $this->decrease = $decrease;
     }

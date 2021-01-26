@@ -58,7 +58,7 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
@@ -66,7 +66,7 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     /**
      * @param int $id
      */
-    public function setId(int $id): void
+    public function setId(?int $id): void
     {
         $this->id = $id;
     }
@@ -74,7 +74,7 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -82,7 +82,7 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -90,7 +90,7 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBuyerId(): int
+    public function getBuyerId(): ?int
     {
         return $this->buyerId;
     }
@@ -98,7 +98,7 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     /**
      * @param int $buyerId
      */
-    public function setBuyerId(int $buyerId): void
+    public function setBuyerId(?int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
@@ -106,7 +106,7 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -114,7 +114,7 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -122,7 +122,7 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNoSource(): string
+    public function getOrderNoSource(): ?string
     {
         return $this->orderNoSource;
     }
@@ -130,7 +130,7 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     /**
      * @param string $orderNoSource
      */
-    public function setOrderNoSource(string $orderNoSource): void
+    public function setOrderNoSource(?string $orderNoSource): void
     {
         $this->orderNoSource = $orderNoSource;
     }
@@ -138,7 +138,7 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): stdClass
+    public function getExtMap(): ?stdClass
     {
         return $this->extMap;
     }
@@ -146,7 +146,7 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     /**
      * @param stdClass $extMap
      */
-    public function setExtMap(stdClass $extMap): void
+    public function setExtMap(?stdClass $extMap): void
     {
         $this->extMap = $extMap;
     }
@@ -154,7 +154,7 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersionNo(): int
+    public function getVersionNo(): ?int
     {
         return $this->versionNo;
     }
@@ -162,7 +162,7 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     /**
      * @param int $versionNo
      */
-    public function setVersionNo(int $versionNo): void
+    public function setVersionNo(?int $versionNo): void
     {
         $this->versionNo = $versionNo;
     }
