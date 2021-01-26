@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
 
 /**
- * 
+ * 客户标识
  * @author Baymax
- * @create Sat Sep 29 21:13:57 CST 2018
+ * @create 2018-09-29 21:13:57.0
  */
 class CustomerIdentifyDTO implements \JsonSerializable {
 
@@ -24,16 +24,22 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     private $accountId;
 
     /**
-     * 店铺ID
+     * 连锁场景：总部kdtId；单店场景：店铺kdtId；
      * @var int
      */
     private $kdtId;
 
     /**
-     * yzOpenId是有赞对外开放的有赞用户唯一标识，建议开发者使用
+     * yzOpenId
      * @var string
      */
     private $yzOpenId;
+
+    /**
+     * 触发当前请求的店铺id
+     * @var int
+     */
+    private $nodeKdtId;
 
 
 
@@ -99,6 +105,22 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNodeKdtId(): int
+    {
+        return $this->nodeKdtId;
+    }
+
+    /**
+     * @param int $nodeKdtId
+     */
+    public function setNodeKdtId(int $nodeKdtId): void
+    {
+        $this->nodeKdtId = $nodeKdtId;
     }
 
     public function jsonSerialize() {
