@@ -58,7 +58,7 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBuyerId(): int
+    public function getBuyerId(): ?int
     {
         return $this->buyerId;
     }
@@ -66,7 +66,7 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     /**
      * @param int $buyerId
      */
-    public function setBuyerId(int $buyerId): void
+    public function setBuyerId(?int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
@@ -74,7 +74,7 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUserPhone(): string
+    public function getUserPhone(): ?string
     {
         return $this->userPhone;
     }
@@ -82,7 +82,7 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     /**
      * @param string $userPhone
      */
-    public function setUserPhone(string $userPhone): void
+    public function setUserPhone(?string $userPhone): void
     {
         $this->userPhone = $userPhone;
     }
@@ -90,7 +90,7 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardType(): string
+    public function getCardType(): ?string
     {
         return $this->cardType;
     }
@@ -98,7 +98,7 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     /**
      * @param string $cardType
      */
-    public function setCardType(string $cardType): void
+    public function setCardType(?string $cardType): void
     {
         $this->cardType = $cardType;
     }
@@ -106,7 +106,7 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getShopType(): int
+    public function getShopType(): ?int
     {
         return $this->shopType;
     }
@@ -114,7 +114,7 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     /**
      * @param int $shopType
      */
-    public function setShopType(int $shopType): void
+    public function setShopType(?int $shopType): void
     {
         $this->shopType = $shopType;
     }
@@ -122,7 +122,7 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getItems(): array
+    public function getItems(): ?array
     {
         return $this->items;
     }
@@ -130,7 +130,7 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     /**
      * @param array $items
      */
-    public function setItems(array $items): void
+    public function setItems(?array $items): void
     {
         $this->items = $items;
     }
@@ -138,7 +138,7 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -146,7 +146,7 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -154,7 +154,7 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): string
+    public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
     }
@@ -162,7 +162,7 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(string $yzOpenId): void
+    public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }

@@ -28,7 +28,7 @@ class CustomerExtValueCardsQueryResponse implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getValueCardCustomerCards(): array
+    public function getValueCardCustomerCards(): ?array
     {
         return $this->valueCardCustomerCards;
     }
@@ -36,7 +36,7 @@ class CustomerExtValueCardsQueryResponse implements \JsonSerializable {
     /**
      * @param array $valueCardCustomerCards
      */
-    public function setValueCardCustomerCards(array $valueCardCustomerCards): void
+    public function setValueCardCustomerCards(?array $valueCardCustomerCards): void
     {
         $this->valueCardCustomerCards = $valueCardCustomerCards;
     }
@@ -44,7 +44,7 @@ class CustomerExtValueCardsQueryResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalNum(): int
+    public function getTotalNum(): ?int
     {
         return $this->totalNum;
     }
@@ -52,7 +52,7 @@ class CustomerExtValueCardsQueryResponse implements \JsonSerializable {
     /**
      * @param int $totalNum
      */
-    public function setTotalNum(int $totalNum): void
+    public function setTotalNum(?int $totalNum): void
     {
         $this->totalNum = $totalNum;
     }

@@ -22,7 +22,7 @@ class FullTImeResultDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getFulfillTimeResponseList(): array
+    public function getFulfillTimeResponseList(): ?array
     {
         return $this->fulfillTimeResponseList;
     }
@@ -30,7 +30,7 @@ class FullTImeResultDTO implements \JsonSerializable {
     /**
      * @param array $fulfillTimeResponseList
      */
-    public function setFulfillTimeResponseList(array $fulfillTimeResponseList): void
+    public function setFulfillTimeResponseList(?array $fulfillTimeResponseList): void
     {
         $this->fulfillTimeResponseList = $fulfillTimeResponseList;
     }

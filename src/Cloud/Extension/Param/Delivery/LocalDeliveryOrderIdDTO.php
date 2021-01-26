@@ -28,7 +28,7 @@ class LocalDeliveryOrderIdDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderOriginalId(): string
+    public function getOrderOriginalId(): ?string
     {
         return $this->orderOriginalId;
     }
@@ -36,7 +36,7 @@ class LocalDeliveryOrderIdDTO implements \JsonSerializable {
     /**
      * @param string $orderOriginalId
      */
-    public function setOrderOriginalId(string $orderOriginalId): void
+    public function setOrderOriginalId(?string $orderOriginalId): void
     {
         $this->orderOriginalId = $orderOriginalId;
     }
@@ -44,7 +44,7 @@ class LocalDeliveryOrderIdDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -52,7 +52,7 @@ class LocalDeliveryOrderIdDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

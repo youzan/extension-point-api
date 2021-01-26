@@ -22,7 +22,7 @@ class ExtBenefitTemplateBatchGetDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getCarrierInfoList(): array
+    public function getCarrierInfoList(): ?array
     {
         return $this->carrierInfoList;
     }
@@ -30,7 +30,7 @@ class ExtBenefitTemplateBatchGetDTO implements \JsonSerializable {
     /**
      * @param array $carrierInfoList
      */
-    public function setCarrierInfoList(array $carrierInfoList): void
+    public function setCarrierInfoList(?array $carrierInfoList): void
     {
         $this->carrierInfoList = $carrierInfoList;
     }

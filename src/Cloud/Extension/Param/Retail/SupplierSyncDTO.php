@@ -82,7 +82,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSupplierName(): string
+    public function getSupplierName(): ?string
     {
         return $this->supplierName;
     }
@@ -90,7 +90,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @param string $supplierName
      */
-    public function setSupplierName(string $supplierName): void
+    public function setSupplierName(?string $supplierName): void
     {
         $this->supplierName = $supplierName;
     }
@@ -98,7 +98,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSupplierCode(): string
+    public function getSupplierCode(): ?string
     {
         return $this->supplierCode;
     }
@@ -106,7 +106,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @param string $supplierCode
      */
-    public function setSupplierCode(string $supplierCode): void
+    public function setSupplierCode(?string $supplierCode): void
     {
         $this->supplierCode = $supplierCode;
     }
@@ -114,7 +114,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPhone(): string
+    public function getPhone(): ?string
     {
         return $this->phone;
     }
@@ -122,7 +122,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @param string $phone
      */
-    public function setPhone(string $phone): void
+    public function setPhone(?string $phone): void
     {
         $this->phone = $phone;
     }
@@ -130,7 +130,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getContacts(): string
+    public function getContacts(): ?string
     {
         return $this->contacts;
     }
@@ -138,7 +138,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @param string $contacts
      */
-    public function setContacts(string $contacts): void
+    public function setContacts(?string $contacts): void
     {
         $this->contacts = $contacts;
     }
@@ -146,7 +146,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getContactsPhone(): string
+    public function getContactsPhone(): ?string
     {
         return $this->contactsPhone;
     }
@@ -154,7 +154,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @param string $contactsPhone
      */
-    public function setContactsPhone(string $contactsPhone): void
+    public function setContactsPhone(?string $contactsPhone): void
     {
         $this->contactsPhone = $contactsPhone;
     }
@@ -162,7 +162,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAddress(): string
+    public function getAddress(): ?string
     {
         return $this->address;
     }
@@ -170,7 +170,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @param string $address
      */
-    public function setAddress(string $address): void
+    public function setAddress(?string $address): void
     {
         $this->address = $address;
     }
@@ -178,7 +178,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRemark(): string
+    public function getRemark(): ?string
     {
         return $this->remark;
     }
@@ -186,7 +186,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @param string $remark
      */
-    public function setRemark(string $remark): void
+    public function setRemark(?string $remark): void
     {
         $this->remark = $remark;
     }
@@ -194,7 +194,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getQq(): string
+    public function getQq(): ?string
     {
         return $this->qq;
     }
@@ -202,7 +202,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @param string $qq
      */
-    public function setQq(string $qq): void
+    public function setQq(?string $qq): void
     {
         $this->qq = $qq;
     }
@@ -210,7 +210,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getWeiXin(): string
+    public function getWeiXin(): ?string
     {
         return $this->weiXin;
     }
@@ -218,7 +218,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @param string $weiXin
      */
-    public function setWeiXin(string $weiXin): void
+    public function setWeiXin(?string $weiXin): void
     {
         $this->weiXin = $weiXin;
     }
@@ -226,7 +226,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getFax(): string
+    public function getFax(): ?string
     {
         return $this->fax;
     }
@@ -234,7 +234,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @param string $fax
      */
-    public function setFax(string $fax): void
+    public function setFax(?string $fax): void
     {
         $this->fax = $fax;
     }
@@ -242,7 +242,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getEmail(): string
+    public function getEmail(): ?string
     {
         return $this->email;
     }
@@ -250,7 +250,7 @@ class SupplierSyncDTO implements \JsonSerializable {
     /**
      * @param string $email
      */
-    public function setEmail(string $email): void
+    public function setEmail(?string $email): void
     {
         $this->email = $email;
     }

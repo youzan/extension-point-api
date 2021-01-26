@@ -34,7 +34,7 @@ class RigExtRoleItem implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRoleId(): int
+    public function getRoleId(): ?int
     {
         return $this->roleId;
     }
@@ -42,7 +42,7 @@ class RigExtRoleItem implements \JsonSerializable {
     /**
      * @param int $roleId
      */
-    public function setRoleId(int $roleId): void
+    public function setRoleId(?int $roleId): void
     {
         $this->roleId = $roleId;
     }
@@ -50,7 +50,7 @@ class RigExtRoleItem implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRoleName(): string
+    public function getRoleName(): ?string
     {
         return $this->roleName;
     }
@@ -58,7 +58,7 @@ class RigExtRoleItem implements \JsonSerializable {
     /**
      * @param string $roleName
      */
-    public function setRoleName(string $roleName): void
+    public function setRoleName(?string $roleName): void
     {
         $this->roleName = $roleName;
     }
@@ -66,7 +66,7 @@ class RigExtRoleItem implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRoleType(): int
+    public function getRoleType(): ?int
     {
         return $this->roleType;
     }
@@ -74,7 +74,7 @@ class RigExtRoleItem implements \JsonSerializable {
     /**
      * @param int $roleType
      */
-    public function setRoleType(int $roleType): void
+    public function setRoleType(?int $roleType): void
     {
         $this->roleType = $roleType;
     }

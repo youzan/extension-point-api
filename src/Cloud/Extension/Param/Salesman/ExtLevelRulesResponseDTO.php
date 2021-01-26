@@ -34,7 +34,7 @@ class ExtLevelRulesResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getLevel(): int
+    public function getLevel(): ?int
     {
         return $this->level;
     }
@@ -42,7 +42,7 @@ class ExtLevelRulesResponseDTO implements \JsonSerializable {
     /**
      * @param int $level
      */
-    public function setLevel(int $level): void
+    public function setLevel(?int $level): void
     {
         $this->level = $level;
     }
@@ -50,7 +50,7 @@ class ExtLevelRulesResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLevelName(): string
+    public function getLevelName(): ?string
     {
         return $this->levelName;
     }
@@ -58,7 +58,7 @@ class ExtLevelRulesResponseDTO implements \JsonSerializable {
     /**
      * @param string $levelName
      */
-    public function setLevelName(string $levelName): void
+    public function setLevelName(?string $levelName): void
     {
         $this->levelName = $levelName;
     }
@@ -66,7 +66,7 @@ class ExtLevelRulesResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRules(): string
+    public function getRules(): ?string
     {
         return $this->rules;
     }
@@ -74,7 +74,7 @@ class ExtLevelRulesResponseDTO implements \JsonSerializable {
     /**
      * @param string $rules
      */
-    public function setRules(string $rules): void
+    public function setRules(?string $rules): void
     {
         $this->rules = $rules;
     }

@@ -34,7 +34,7 @@ class ShipOrderSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getSelfDefineData(): stdClass
+    public function getSelfDefineData(): ?stdClass
     {
         return $this->selfDefineData;
     }
@@ -42,7 +42,7 @@ class ShipOrderSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @param stdClass $selfDefineData
      */
-    public function setSelfDefineData(stdClass $selfDefineData): void
+    public function setSelfDefineData(?stdClass $selfDefineData): void
     {
         $this->selfDefineData = $selfDefineData;
     }
@@ -50,7 +50,7 @@ class ShipOrderSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getUseId(): int
+    public function getUseId(): ?int
     {
         return $this->useId;
     }
@@ -58,7 +58,7 @@ class ShipOrderSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @param int $useId
      */
-    public function setUseId(int $useId): void
+    public function setUseId(?int $useId): void
     {
         $this->useId = $useId;
     }
@@ -66,7 +66,7 @@ class ShipOrderSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -74,7 +74,7 @@ class ShipOrderSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

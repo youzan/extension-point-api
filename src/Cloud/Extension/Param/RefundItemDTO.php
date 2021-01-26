@@ -34,7 +34,7 @@ class RefundItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRefundGoodsNum(): int
+    public function getRefundGoodsNum(): ?int
     {
         return $this->refundGoodsNum;
     }
@@ -42,7 +42,7 @@ class RefundItemDTO implements \JsonSerializable {
     /**
      * @param int $refundGoodsNum
      */
-    public function setRefundGoodsNum(int $refundGoodsNum): void
+    public function setRefundGoodsNum(?int $refundGoodsNum): void
     {
         $this->refundGoodsNum = $refundGoodsNum;
     }
@@ -50,7 +50,7 @@ class RefundItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOid(): int
+    public function getOid(): ?int
     {
         return $this->oid;
     }
@@ -58,7 +58,7 @@ class RefundItemDTO implements \JsonSerializable {
     /**
      * @param int $oid
      */
-    public function setOid(int $oid): void
+    public function setOid(?int $oid): void
     {
         $this->oid = $oid;
     }
@@ -66,7 +66,7 @@ class RefundItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderGoodsNum(): int
+    public function getOrderGoodsNum(): ?int
     {
         return $this->orderGoodsNum;
     }
@@ -74,7 +74,7 @@ class RefundItemDTO implements \JsonSerializable {
     /**
      * @param int $orderGoodsNum
      */
-    public function setOrderGoodsNum(int $orderGoodsNum): void
+    public function setOrderGoodsNum(?int $orderGoodsNum): void
     {
         $this->orderGoodsNum = $orderGoodsNum;
     }

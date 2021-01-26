@@ -22,7 +22,7 @@ class ItemTradeCloudExtResponse implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getItemTradeCloudExtModelList(): array
+    public function getItemTradeCloudExtModelList(): ?array
     {
         return $this->itemTradeCloudExtModelList;
     }
@@ -30,7 +30,7 @@ class ItemTradeCloudExtResponse implements \JsonSerializable {
     /**
      * @param array $itemTradeCloudExtModelList
      */
-    public function setItemTradeCloudExtModelList(array $itemTradeCloudExtModelList): void
+    public function setItemTradeCloudExtModelList(?array $itemTradeCloudExtModelList): void
     {
         $this->itemTradeCloudExtModelList = $itemTradeCloudExtModelList;
     }

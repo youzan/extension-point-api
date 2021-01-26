@@ -22,7 +22,7 @@ class FreezePointsResponse implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getIsSuccess(): bool
+    public function getIsSuccess(): ?bool
     {
         return $this->isSuccess;
     }
@@ -30,7 +30,7 @@ class FreezePointsResponse implements \JsonSerializable {
     /**
      * @param bool $isSuccess
      */
-    public function setIsSuccess(bool $isSuccess): void
+    public function setIsSuccess(?bool $isSuccess): void
     {
         $this->isSuccess = $isSuccess;
     }

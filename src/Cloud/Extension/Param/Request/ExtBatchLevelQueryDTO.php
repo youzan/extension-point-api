@@ -34,7 +34,7 @@ class ExtBatchLevelQueryDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getLevelAliasSet(): array
+    public function getLevelAliasSet(): ?array
     {
         return $this->levelAliasSet;
     }
@@ -42,7 +42,7 @@ class ExtBatchLevelQueryDTO implements \JsonSerializable {
     /**
      * @param array $levelAliasSet
      */
-    public function setLevelAliasSet(array $levelAliasSet): void
+    public function setLevelAliasSet(?array $levelAliasSet): void
     {
         $this->levelAliasSet = $levelAliasSet;
     }
@@ -50,7 +50,7 @@ class ExtBatchLevelQueryDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBizTrafficId(): string
+    public function getBizTrafficId(): ?string
     {
         return $this->bizTrafficId;
     }
@@ -58,7 +58,7 @@ class ExtBatchLevelQueryDTO implements \JsonSerializable {
     /**
      * @param string $bizTrafficId
      */
-    public function setBizTrafficId(string $bizTrafficId): void
+    public function setBizTrafficId(?string $bizTrafficId): void
     {
         $this->bizTrafficId = $bizTrafficId;
     }
@@ -66,7 +66,7 @@ class ExtBatchLevelQueryDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtensionMap(): stdClass
+    public function getExtensionMap(): ?stdClass
     {
         return $this->extensionMap;
     }
@@ -74,7 +74,7 @@ class ExtBatchLevelQueryDTO implements \JsonSerializable {
     /**
      * @param stdClass $extensionMap
      */
-    public function setExtensionMap(stdClass $extensionMap): void
+    public function setExtensionMap(?stdClass $extensionMap): void
     {
         $this->extensionMap = $extensionMap;
     }

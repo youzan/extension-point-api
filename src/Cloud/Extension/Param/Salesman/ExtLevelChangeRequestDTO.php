@@ -136,7 +136,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBuyerId(): int
+    public function getBuyerId(): ?int
     {
         return $this->buyerId;
     }
@@ -144,7 +144,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $buyerId
      */
-    public function setBuyerId(int $buyerId): void
+    public function setBuyerId(?int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
@@ -152,7 +152,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getLevel(): int
+    public function getLevel(): ?int
     {
         return $this->level;
     }
@@ -160,7 +160,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $level
      */
-    public function setLevel(int $level): void
+    public function setLevel(?int $level): void
     {
         $this->level = $level;
     }
@@ -168,7 +168,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderNum(): int
+    public function getOrderNum(): ?int
     {
         return $this->orderNum;
     }
@@ -176,7 +176,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $orderNum
      */
-    public function setOrderNum(int $orderNum): void
+    public function setOrderNum(?int $orderNum): void
     {
         $this->orderNum = $orderNum;
     }
@@ -184,7 +184,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getMoney(): int
+    public function getMoney(): ?int
     {
         return $this->money;
     }
@@ -192,7 +192,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $money
      */
-    public function setMoney(int $money): void
+    public function setMoney(?int $money): void
     {
         $this->money = $money;
     }
@@ -200,7 +200,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCpsMoney(): int
+    public function getCpsMoney(): ?int
     {
         return $this->cpsMoney;
     }
@@ -208,7 +208,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $cpsMoney
      */
-    public function setCpsMoney(int $cpsMoney): void
+    public function setCpsMoney(?int $cpsMoney): void
     {
         $this->cpsMoney = $cpsMoney;
     }
@@ -216,7 +216,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBonusMoney(): int
+    public function getBonusMoney(): ?int
     {
         return $this->bonusMoney;
     }
@@ -224,7 +224,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $bonusMoney
      */
-    public function setBonusMoney(int $bonusMoney): void
+    public function setBonusMoney(?int $bonusMoney): void
     {
         $this->bonusMoney = $bonusMoney;
     }
@@ -232,7 +232,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getProfit(): int
+    public function getProfit(): ?int
     {
         return $this->profit;
     }
@@ -240,7 +240,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $profit
      */
-    public function setProfit(int $profit): void
+    public function setProfit(?int $profit): void
     {
         $this->profit = $profit;
     }
@@ -248,7 +248,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalRecommendMoney(): int
+    public function getTotalRecommendMoney(): ?int
     {
         return $this->totalRecommendMoney;
     }
@@ -256,7 +256,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $totalRecommendMoney
      */
-    public function setTotalRecommendMoney(int $totalRecommendMoney): void
+    public function setTotalRecommendMoney(?int $totalRecommendMoney): void
     {
         $this->totalRecommendMoney = $totalRecommendMoney;
     }
@@ -264,7 +264,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalPayConsumeMoney(): int
+    public function getTotalPayConsumeMoney(): ?int
     {
         return $this->totalPayConsumeMoney;
     }
@@ -272,7 +272,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $totalPayConsumeMoney
      */
-    public function setTotalPayConsumeMoney(int $totalPayConsumeMoney): void
+    public function setTotalPayConsumeMoney(?int $totalPayConsumeMoney): void
     {
         $this->totalPayConsumeMoney = $totalPayConsumeMoney;
     }
@@ -280,7 +280,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalSuccessConsumeMoney(): int
+    public function getTotalSuccessConsumeMoney(): ?int
     {
         return $this->totalSuccessConsumeMoney;
     }
@@ -288,7 +288,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $totalSuccessConsumeMoney
      */
-    public function setTotalSuccessConsumeMoney(int $totalSuccessConsumeMoney): void
+    public function setTotalSuccessConsumeMoney(?int $totalSuccessConsumeMoney): void
     {
         $this->totalSuccessConsumeMoney = $totalSuccessConsumeMoney;
     }
@@ -296,7 +296,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalFinishConsumeMoney(): int
+    public function getTotalFinishConsumeMoney(): ?int
     {
         return $this->totalFinishConsumeMoney;
     }
@@ -304,7 +304,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $totalFinishConsumeMoney
      */
-    public function setTotalFinishConsumeMoney(int $totalFinishConsumeMoney): void
+    public function setTotalFinishConsumeMoney(?int $totalFinishConsumeMoney): void
     {
         $this->totalFinishConsumeMoney = $totalFinishConsumeMoney;
     }
@@ -312,7 +312,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalCustomerNum(): int
+    public function getTotalCustomerNum(): ?int
     {
         return $this->totalCustomerNum;
     }
@@ -320,7 +320,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $totalCustomerNum
      */
-    public function setTotalCustomerNum(int $totalCustomerNum): void
+    public function setTotalCustomerNum(?int $totalCustomerNum): void
     {
         $this->totalCustomerNum = $totalCustomerNum;
     }
@@ -328,7 +328,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalInviteNum(): int
+    public function getTotalInviteNum(): ?int
     {
         return $this->totalInviteNum;
     }
@@ -336,7 +336,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $totalInviteNum
      */
-    public function setTotalInviteNum(int $totalInviteNum): void
+    public function setTotalInviteNum(?int $totalInviteNum): void
     {
         $this->totalInviteNum = $totalInviteNum;
     }
@@ -344,7 +344,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRecommendMoney(): int
+    public function getRecommendMoney(): ?int
     {
         return $this->recommendMoney;
     }
@@ -352,7 +352,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $recommendMoney
      */
-    public function setRecommendMoney(int $recommendMoney): void
+    public function setRecommendMoney(?int $recommendMoney): void
     {
         $this->recommendMoney = $recommendMoney;
     }
@@ -360,7 +360,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPayConsumeMoney(): int
+    public function getPayConsumeMoney(): ?int
     {
         return $this->payConsumeMoney;
     }
@@ -368,7 +368,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $payConsumeMoney
      */
-    public function setPayConsumeMoney(int $payConsumeMoney): void
+    public function setPayConsumeMoney(?int $payConsumeMoney): void
     {
         $this->payConsumeMoney = $payConsumeMoney;
     }
@@ -376,7 +376,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSuccessConsumeMoney(): int
+    public function getSuccessConsumeMoney(): ?int
     {
         return $this->successConsumeMoney;
     }
@@ -384,7 +384,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $successConsumeMoney
      */
-    public function setSuccessConsumeMoney(int $successConsumeMoney): void
+    public function setSuccessConsumeMoney(?int $successConsumeMoney): void
     {
         $this->successConsumeMoney = $successConsumeMoney;
     }
@@ -392,7 +392,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getFinishConsumeMoney(): int
+    public function getFinishConsumeMoney(): ?int
     {
         return $this->finishConsumeMoney;
     }
@@ -400,7 +400,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $finishConsumeMoney
      */
-    public function setFinishConsumeMoney(int $finishConsumeMoney): void
+    public function setFinishConsumeMoney(?int $finishConsumeMoney): void
     {
         $this->finishConsumeMoney = $finishConsumeMoney;
     }
@@ -408,7 +408,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCustomerNum(): int
+    public function getCustomerNum(): ?int
     {
         return $this->customerNum;
     }
@@ -416,7 +416,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $customerNum
      */
-    public function setCustomerNum(int $customerNum): void
+    public function setCustomerNum(?int $customerNum): void
     {
         $this->customerNum = $customerNum;
     }
@@ -424,7 +424,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getInviteNum(): int
+    public function getInviteNum(): ?int
     {
         return $this->inviteNum;
     }
@@ -432,7 +432,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param int $inviteNum
      */
-    public function setInviteNum(int $inviteNum): void
+    public function setInviteNum(?int $inviteNum): void
     {
         $this->inviteNum = $inviteNum;
     }
@@ -440,7 +440,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenid(): string
+    public function getYzOpenid(): ?string
     {
         return $this->yzOpenid;
     }
@@ -448,7 +448,7 @@ class ExtLevelChangeRequestDTO implements \JsonSerializable {
     /**
      * @param string $yzOpenid
      */
-    public function setYzOpenid(string $yzOpenid): void
+    public function setYzOpenid(?string $yzOpenid): void
     {
         $this->yzOpenid = $yzOpenid;
     }

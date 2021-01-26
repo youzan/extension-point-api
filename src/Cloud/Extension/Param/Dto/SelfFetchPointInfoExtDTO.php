@@ -40,7 +40,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStoreId(): int
+    public function getStoreId(): ?int
     {
         return $this->storeId;
     }
@@ -48,7 +48,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param int $storeId
      */
-    public function setStoreId(int $storeId): void
+    public function setStoreId(?int $storeId): void
     {
         $this->storeId = $storeId;
     }
@@ -56,7 +56,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -64,7 +64,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param string $name
      */
-    public function setName(string $name): void
+    public function setName(?string $name): void
     {
         $this->name = $name;
     }
@@ -72,7 +72,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDescription(): string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -80,7 +80,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param string $description
      */
-    public function setDescription(string $description): void
+    public function setDescription(?string $description): void
     {
         $this->description = $description;
     }
@@ -88,7 +88,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return AddressExtDTO
      */
-    public function getAddressInfo(): AddressExtDTO
+    public function getAddressInfo(): ?AddressExtDTO
     {
         return $this->addressInfo;
     }
@@ -96,7 +96,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param AddressExtDTO $addressInfo
      */
-    public function setAddressInfo(AddressExtDTO $addressInfo): void
+    public function setAddressInfo(?AddressExtDTO $addressInfo): void
     {
         $this->addressInfo = $addressInfo;
     }

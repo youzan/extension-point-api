@@ -58,7 +58,7 @@ class UnavailableItemMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -66,7 +66,7 @@ class UnavailableItemMsgDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -74,7 +74,7 @@ class UnavailableItemMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getShopId(): int
+    public function getShopId(): ?int
     {
         return $this->shopId;
     }
@@ -82,7 +82,7 @@ class UnavailableItemMsgDTO implements \JsonSerializable {
     /**
      * @param int $shopId
      */
-    public function setShopId(int $shopId): void
+    public function setShopId(?int $shopId): void
     {
         $this->shopId = $shopId;
     }
@@ -90,7 +90,7 @@ class UnavailableItemMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGoodsId(): int
+    public function getGoodsId(): ?int
     {
         return $this->goodsId;
     }
@@ -98,7 +98,7 @@ class UnavailableItemMsgDTO implements \JsonSerializable {
     /**
      * @param int $goodsId
      */
-    public function setGoodsId(int $goodsId): void
+    public function setGoodsId(?int $goodsId): void
     {
         $this->goodsId = $goodsId;
     }
@@ -106,7 +106,7 @@ class UnavailableItemMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSkuId(): int
+    public function getSkuId(): ?int
     {
         return $this->skuId;
     }
@@ -114,7 +114,7 @@ class UnavailableItemMsgDTO implements \JsonSerializable {
     /**
      * @param int $skuId
      */
-    public function setSkuId(int $skuId): void
+    public function setSkuId(?int $skuId): void
     {
         $this->skuId = $skuId;
     }
@@ -122,7 +122,7 @@ class UnavailableItemMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNum(): int
+    public function getNum(): ?int
     {
         return $this->num;
     }
@@ -130,7 +130,7 @@ class UnavailableItemMsgDTO implements \JsonSerializable {
     /**
      * @param int $num
      */
-    public function setNum(int $num): void
+    public function setNum(?int $num): void
     {
         $this->num = $num;
     }
@@ -138,7 +138,7 @@ class UnavailableItemMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGoodsType(): int
+    public function getGoodsType(): ?int
     {
         return $this->goodsType;
     }
@@ -146,7 +146,7 @@ class UnavailableItemMsgDTO implements \JsonSerializable {
     /**
      * @param int $goodsType
      */
-    public function setGoodsType(int $goodsType): void
+    public function setGoodsType(?int $goodsType): void
     {
         $this->goodsType = $goodsType;
     }
@@ -154,7 +154,7 @@ class UnavailableItemMsgDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getReason(): string
+    public function getReason(): ?string
     {
         return $this->reason;
     }
@@ -162,7 +162,7 @@ class UnavailableItemMsgDTO implements \JsonSerializable {
     /**
      * @param string $reason
      */
-    public function setReason(string $reason): void
+    public function setReason(?string $reason): void
     {
         $this->reason = $reason;
     }

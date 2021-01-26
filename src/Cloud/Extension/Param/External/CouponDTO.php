@@ -28,7 +28,7 @@ class CouponDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCouponId(): int
+    public function getCouponId(): ?int
     {
         return $this->couponId;
     }
@@ -36,7 +36,7 @@ class CouponDTO implements \JsonSerializable {
     /**
      * @param int $couponId
      */
-    public function setCouponId(int $couponId): void
+    public function setCouponId(?int $couponId): void
     {
         $this->couponId = $couponId;
     }
@@ -44,7 +44,7 @@ class CouponDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNumber(): int
+    public function getNumber(): ?int
     {
         return $this->number;
     }
@@ -52,7 +52,7 @@ class CouponDTO implements \JsonSerializable {
     /**
      * @param int $number
      */
-    public function setNumber(int $number): void
+    public function setNumber(?int $number): void
     {
         $this->number = $number;
     }

@@ -47,7 +47,7 @@ class TicketOrderItem implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemId(): int
+    public function getItemId(): ?int
     {
         return $this->itemId;
     }
@@ -55,7 +55,7 @@ class TicketOrderItem implements \JsonSerializable {
     /**
      * @param int $itemId
      */
-    public function setItemId(int $itemId): void
+    public function setItemId(?int $itemId): void
     {
         $this->itemId = $itemId;
     }
@@ -63,7 +63,7 @@ class TicketOrderItem implements \JsonSerializable {
     /**
      * @return TicketSkuDTO
      */
-    public function getSku(): TicketSkuDTO
+    public function getSku(): ?TicketSkuDTO
     {
         return $this->sku;
     }
@@ -71,7 +71,7 @@ class TicketOrderItem implements \JsonSerializable {
     /**
      * @param TicketSkuDTO $sku
      */
-    public function setSku(TicketSkuDTO $sku): void
+    public function setSku(?TicketSkuDTO $sku): void
     {
         $this->sku = $sku;
     }
@@ -79,7 +79,7 @@ class TicketOrderItem implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNum(): int
+    public function getNum(): ?int
     {
         return $this->num;
     }
@@ -87,7 +87,7 @@ class TicketOrderItem implements \JsonSerializable {
     /**
      * @param int $num
      */
-    public function setNum(int $num): void
+    public function setNum(?int $num): void
     {
         $this->num = $num;
     }
@@ -95,7 +95,7 @@ class TicketOrderItem implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMemo(): string
+    public function getMemo(): ?string
     {
         return $this->memo;
     }
@@ -103,7 +103,7 @@ class TicketOrderItem implements \JsonSerializable {
     /**
      * @param string $memo
      */
-    public function setMemo(string $memo): void
+    public function setMemo(?string $memo): void
     {
         $this->memo = $memo;
     }
@@ -111,7 +111,7 @@ class TicketOrderItem implements \JsonSerializable {
     /**
      * @return GoodsInfo
      */
-    public function getGoodsInfo(): GoodsInfo
+    public function getGoodsInfo(): ?GoodsInfo
     {
         return $this->goodsInfo;
     }
@@ -119,7 +119,7 @@ class TicketOrderItem implements \JsonSerializable {
     /**
      * @param GoodsInfo $goodsInfo
      */
-    public function setGoodsInfo(GoodsInfo $goodsInfo): void
+    public function setGoodsInfo(?GoodsInfo $goodsInfo): void
     {
         $this->goodsInfo = $goodsInfo;
     }

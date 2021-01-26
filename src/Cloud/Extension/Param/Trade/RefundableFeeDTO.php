@@ -28,7 +28,7 @@ class RefundableFeeDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getItemId(): string
+    public function getItemId(): ?string
     {
         return $this->itemId;
     }
@@ -36,7 +36,7 @@ class RefundableFeeDTO implements \JsonSerializable {
     /**
      * @param string $itemId
      */
-    public function setItemId(string $itemId): void
+    public function setItemId(?string $itemId): void
     {
         $this->itemId = $itemId;
     }
@@ -44,7 +44,7 @@ class RefundableFeeDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemRefundableFee(): int
+    public function getItemRefundableFee(): ?int
     {
         return $this->itemRefundableFee;
     }
@@ -52,7 +52,7 @@ class RefundableFeeDTO implements \JsonSerializable {
     /**
      * @param int $itemRefundableFee
      */
-    public function setItemRefundableFee(int $itemRefundableFee): void
+    public function setItemRefundableFee(?int $itemRefundableFee): void
     {
         $this->itemRefundableFee = $itemRefundableFee;
     }

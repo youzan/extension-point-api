@@ -22,7 +22,7 @@ class ExtAccountResponseDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getSalesman(): bool
+    public function getSalesman(): ?bool
     {
         return $this->salesman;
     }
@@ -30,7 +30,7 @@ class ExtAccountResponseDTO implements \JsonSerializable {
     /**
      * @param bool $salesman
      */
-    public function setSalesman(bool $salesman): void
+    public function setSalesman(?bool $salesman): void
     {
         $this->salesman = $salesman;
     }

@@ -58,7 +58,7 @@ class SubmitPayParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -66,7 +66,7 @@ class SubmitPayParamDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -74,7 +74,7 @@ class SubmitPayParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAcquireNo(): string
+    public function getAcquireNo(): ?string
     {
         return $this->acquireNo;
     }
@@ -82,7 +82,7 @@ class SubmitPayParamDTO implements \JsonSerializable {
     /**
      * @param string $acquireNo
      */
-    public function setAcquireNo(string $acquireNo): void
+    public function setAcquireNo(?string $acquireNo): void
     {
         $this->acquireNo = $acquireNo;
     }
@@ -90,7 +90,7 @@ class SubmitPayParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPayType(): string
+    public function getPayType(): ?string
     {
         return $this->payType;
     }
@@ -98,7 +98,7 @@ class SubmitPayParamDTO implements \JsonSerializable {
     /**
      * @param string $payType
      */
-    public function setPayType(string $payType): void
+    public function setPayType(?string $payType): void
     {
         $this->payType = $payType;
     }
@@ -106,7 +106,7 @@ class SubmitPayParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPayAmount(): int
+    public function getPayAmount(): ?int
     {
         return $this->payAmount;
     }
@@ -114,7 +114,7 @@ class SubmitPayParamDTO implements \JsonSerializable {
     /**
      * @param int $payAmount
      */
-    public function setPayAmount(int $payAmount): void
+    public function setPayAmount(?int $payAmount): void
     {
         $this->payAmount = $payAmount;
     }
@@ -122,7 +122,7 @@ class SubmitPayParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getGoodsName(): string
+    public function getGoodsName(): ?string
     {
         return $this->goodsName;
     }
@@ -130,7 +130,7 @@ class SubmitPayParamDTO implements \JsonSerializable {
     /**
      * @param string $goodsName
      */
-    public function setGoodsName(string $goodsName): void
+    public function setGoodsName(?string $goodsName): void
     {
         $this->goodsName = $goodsName;
     }
@@ -138,7 +138,7 @@ class SubmitPayParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAuthCode(): string
+    public function getAuthCode(): ?string
     {
         return $this->authCode;
     }
@@ -146,7 +146,7 @@ class SubmitPayParamDTO implements \JsonSerializable {
     /**
      * @param string $authCode
      */
-    public function setAuthCode(string $authCode): void
+    public function setAuthCode(?string $authCode): void
     {
         $this->authCode = $authCode;
     }
@@ -154,7 +154,7 @@ class SubmitPayParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRequestIp(): string
+    public function getRequestIp(): ?string
     {
         return $this->requestIp;
     }
@@ -162,7 +162,7 @@ class SubmitPayParamDTO implements \JsonSerializable {
     /**
      * @param string $requestIp
      */
-    public function setRequestIp(string $requestIp): void
+    public function setRequestIp(?string $requestIp): void
     {
         $this->requestIp = $requestIp;
     }

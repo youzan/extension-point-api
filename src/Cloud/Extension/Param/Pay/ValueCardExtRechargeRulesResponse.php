@@ -22,7 +22,7 @@ class ValueCardExtRechargeRulesResponse implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getProductInfos(): array
+    public function getProductInfos(): ?array
     {
         return $this->productInfos;
     }
@@ -30,7 +30,7 @@ class ValueCardExtRechargeRulesResponse implements \JsonSerializable {
     /**
      * @param array $productInfos
      */
-    public function setProductInfos(array $productInfos): void
+    public function setProductInfos(?array $productInfos): void
     {
         $this->productInfos = $productInfos;
     }

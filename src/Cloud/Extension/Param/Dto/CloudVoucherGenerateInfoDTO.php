@@ -22,7 +22,7 @@ class CloudVoucherGenerateInfoDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getVerifyCode(): string
+    public function getVerifyCode(): ?string
     {
         return $this->verifyCode;
     }
@@ -30,7 +30,7 @@ class CloudVoucherGenerateInfoDTO implements \JsonSerializable {
     /**
      * @param string $verifyCode
      */
-    public function setVerifyCode(string $verifyCode): void
+    public function setVerifyCode(?string $verifyCode): void
     {
         $this->verifyCode = $verifyCode;
     }

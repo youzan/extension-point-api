@@ -34,7 +34,7 @@ class ShopRouteResult implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRouteType(): int
+    public function getRouteType(): ?int
     {
         return $this->routeType;
     }
@@ -42,7 +42,7 @@ class ShopRouteResult implements \JsonSerializable {
     /**
      * @param int $routeType
      */
-    public function setRouteType(int $routeType): void
+    public function setRouteType(?int $routeType): void
     {
         $this->routeType = $routeType;
     }
@@ -50,7 +50,7 @@ class ShopRouteResult implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRouteKdtId(): int
+    public function getRouteKdtId(): ?int
     {
         return $this->routeKdtId;
     }
@@ -58,7 +58,7 @@ class ShopRouteResult implements \JsonSerializable {
     /**
      * @param int $routeKdtId
      */
-    public function setRouteKdtId(int $routeKdtId): void
+    public function setRouteKdtId(?int $routeKdtId): void
     {
         $this->routeKdtId = $routeKdtId;
     }
@@ -66,7 +66,7 @@ class ShopRouteResult implements \JsonSerializable {
     /**
      * @return AddressVO
      */
-    public function getAddressVO(): AddressVO
+    public function getAddressVO(): ?AddressVO
     {
         return $this->addressVO;
     }
@@ -74,7 +74,7 @@ class ShopRouteResult implements \JsonSerializable {
     /**
      * @param AddressVO $addressVO
      */
-    public function setAddressVO(AddressVO $addressVO): void
+    public function setAddressVO(?AddressVO $addressVO): void
     {
         $this->addressVO = $addressVO;
     }

@@ -34,7 +34,7 @@ class GoodsIdentityDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGoodsId(): int
+    public function getGoodsId(): ?int
     {
         return $this->goodsId;
     }
@@ -42,7 +42,7 @@ class GoodsIdentityDTO implements \JsonSerializable {
     /**
      * @param int $goodsId
      */
-    public function setGoodsId(int $goodsId): void
+    public function setGoodsId(?int $goodsId): void
     {
         $this->goodsId = $goodsId;
     }
@@ -50,7 +50,7 @@ class GoodsIdentityDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSkuId(): int
+    public function getSkuId(): ?int
     {
         return $this->skuId;
     }
@@ -58,7 +58,7 @@ class GoodsIdentityDTO implements \JsonSerializable {
     /**
      * @param int $skuId
      */
-    public function setSkuId(int $skuId): void
+    public function setSkuId(?int $skuId): void
     {
         $this->skuId = $skuId;
     }
@@ -66,7 +66,7 @@ class GoodsIdentityDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderItemId(): int
+    public function getOrderItemId(): ?int
     {
         return $this->orderItemId;
     }
@@ -74,7 +74,7 @@ class GoodsIdentityDTO implements \JsonSerializable {
     /**
      * @param int $orderItemId
      */
-    public function setOrderItemId(int $orderItemId): void
+    public function setOrderItemId(?int $orderItemId): void
     {
         $this->orderItemId = $orderItemId;
     }

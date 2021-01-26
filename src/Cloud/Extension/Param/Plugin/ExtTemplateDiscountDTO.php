@@ -22,7 +22,7 @@ class ExtTemplateDiscountDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDiscount(): int
+    public function getDiscount(): ?int
     {
         return $this->discount;
     }
@@ -30,7 +30,7 @@ class ExtTemplateDiscountDTO implements \JsonSerializable {
     /**
      * @param int $discount
      */
-    public function setDiscount(int $discount): void
+    public function setDiscount(?int $discount): void
     {
         $this->discount = $discount;
     }

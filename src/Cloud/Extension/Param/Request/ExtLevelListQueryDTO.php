@@ -28,7 +28,7 @@ class ExtLevelListQueryDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -36,7 +36,7 @@ class ExtLevelListQueryDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -44,7 +44,7 @@ class ExtLevelListQueryDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtensionMap(): stdClass
+    public function getExtensionMap(): ?stdClass
     {
         return $this->extensionMap;
     }
@@ -52,7 +52,7 @@ class ExtLevelListQueryDTO implements \JsonSerializable {
     /**
      * @param stdClass $extensionMap
      */
-    public function setExtensionMap(stdClass $extensionMap): void
+    public function setExtensionMap(?stdClass $extensionMap): void
     {
         $this->extensionMap = $extensionMap;
     }

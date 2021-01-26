@@ -52,7 +52,7 @@ class OpenIdBindNsqDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -60,7 +60,7 @@ class OpenIdBindNsqDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -68,7 +68,7 @@ class OpenIdBindNsqDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBuyerId(): string
+    public function getBuyerId(): ?string
     {
         return $this->buyerId;
     }
@@ -76,7 +76,7 @@ class OpenIdBindNsqDTO implements \JsonSerializable {
     /**
      * @param string $buyerId
      */
-    public function setBuyerId(string $buyerId): void
+    public function setBuyerId(?string $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
@@ -84,7 +84,7 @@ class OpenIdBindNsqDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOpenID(): string
+    public function getOpenID(): ?string
     {
         return $this->openID;
     }
@@ -92,7 +92,7 @@ class OpenIdBindNsqDTO implements \JsonSerializable {
     /**
      * @param string $openID
      */
-    public function setOpenID(string $openID): void
+    public function setOpenID(?string $openID): void
     {
         $this->openID = $openID;
     }
@@ -100,7 +100,7 @@ class OpenIdBindNsqDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -108,7 +108,7 @@ class OpenIdBindNsqDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -116,7 +116,7 @@ class OpenIdBindNsqDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getTpPsMap(): stdClass
+    public function getTpPsMap(): ?stdClass
     {
         return $this->tpPsMap;
     }
@@ -124,7 +124,7 @@ class OpenIdBindNsqDTO implements \JsonSerializable {
     /**
      * @param stdClass $tpPsMap
      */
-    public function setTpPsMap(stdClass $tpPsMap): void
+    public function setTpPsMap(?stdClass $tpPsMap): void
     {
         $this->tpPsMap = $tpPsMap;
     }
@@ -132,7 +132,7 @@ class OpenIdBindNsqDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUnionID(): string
+    public function getUnionID(): ?string
     {
         return $this->unionID;
     }
@@ -140,7 +140,7 @@ class OpenIdBindNsqDTO implements \JsonSerializable {
     /**
      * @param string $unionID
      */
-    public function setUnionID(string $unionID): void
+    public function setUnionID(?string $unionID): void
     {
         $this->unionID = $unionID;
     }

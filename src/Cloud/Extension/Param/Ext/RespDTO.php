@@ -22,7 +22,7 @@ class RespDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getResult(): string
+    public function getResult(): ?string
     {
         return $this->result;
     }
@@ -30,7 +30,7 @@ class RespDTO implements \JsonSerializable {
     /**
      * @param string $result
      */
-    public function setResult(string $result): void
+    public function setResult(?string $result): void
     {
         $this->result = $result;
     }
