@@ -46,7 +46,7 @@ class GoodsInfo implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getGoodsNo(): ?string
+    public function getGoodsNo(): string
     {
         return $this->goodsNo;
     }
@@ -54,7 +54,7 @@ class GoodsInfo implements \JsonSerializable {
     /**
      * @param string $goodsNo
      */
-    public function setGoodsNo(?string $goodsNo): void
+    public function setGoodsNo(string $goodsNo): void
     {
         $this->goodsNo = $goodsNo;
     }
@@ -62,7 +62,7 @@ class GoodsInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemValidityStart(): ?int
+    public function getItemValidityStart(): int
     {
         return $this->itemValidityStart;
     }
@@ -70,7 +70,7 @@ class GoodsInfo implements \JsonSerializable {
     /**
      * @param int $itemValidityStart
      */
-    public function setItemValidityStart(?int $itemValidityStart): void
+    public function setItemValidityStart(int $itemValidityStart): void
     {
         $this->itemValidityStart = $itemValidityStart;
     }
@@ -78,7 +78,7 @@ class GoodsInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemValidityEnd(): ?int
+    public function getItemValidityEnd(): int
     {
         return $this->itemValidityEnd;
     }
@@ -86,7 +86,7 @@ class GoodsInfo implements \JsonSerializable {
     /**
      * @param int $itemValidityEnd
      */
-    public function setItemValidityEnd(?int $itemValidityEnd): void
+    public function setItemValidityEnd(int $itemValidityEnd): void
     {
         $this->itemValidityEnd = $itemValidityEnd;
     }
@@ -94,7 +94,7 @@ class GoodsInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getValidityType(): ?int
+    public function getValidityType(): int
     {
         return $this->validityType;
     }
@@ -102,7 +102,7 @@ class GoodsInfo implements \JsonSerializable {
     /**
      * @param int $validityType
      */
-    public function setValidityType(?int $validityType): void
+    public function setValidityType(int $validityType): void
     {
         $this->validityType = $validityType;
     }
@@ -110,7 +110,7 @@ class GoodsInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemValidityDay(): ?int
+    public function getItemValidityDay(): int
     {
         return $this->itemValidityDay;
     }
@@ -118,7 +118,7 @@ class GoodsInfo implements \JsonSerializable {
     /**
      * @param int $itemValidityDay
      */
-    public function setItemValidityDay(?int $itemValidityDay): void
+    public function setItemValidityDay(int $itemValidityDay): void
     {
         $this->itemValidityDay = $itemValidityDay;
     }

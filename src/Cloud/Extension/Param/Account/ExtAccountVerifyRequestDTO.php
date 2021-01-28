@@ -34,7 +34,7 @@ class ExtAccountVerifyRequestDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getBuyerIds(): ?array
+    public function getBuyerIds(): array
     {
         return $this->buyerIds;
     }
@@ -42,7 +42,7 @@ class ExtAccountVerifyRequestDTO implements \JsonSerializable {
     /**
      * @param array $buyerIds
      */
-    public function setBuyerIds(?array $buyerIds): void
+    public function setBuyerIds(array $buyerIds): void
     {
         $this->buyerIds = $buyerIds;
     }
@@ -50,7 +50,7 @@ class ExtAccountVerifyRequestDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getAccountVerifyInfoList(): ?array
+    public function getAccountVerifyInfoList(): array
     {
         return $this->accountVerifyInfoList;
     }
@@ -58,7 +58,7 @@ class ExtAccountVerifyRequestDTO implements \JsonSerializable {
     /**
      * @param array $accountVerifyInfoList
      */
-    public function setAccountVerifyInfoList(?array $accountVerifyInfoList): void
+    public function setAccountVerifyInfoList(array $accountVerifyInfoList): void
     {
         $this->accountVerifyInfoList = $accountVerifyInfoList;
     }
@@ -66,7 +66,7 @@ class ExtAccountVerifyRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -74,7 +74,7 @@ class ExtAccountVerifyRequestDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

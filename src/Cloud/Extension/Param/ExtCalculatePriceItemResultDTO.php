@@ -28,7 +28,7 @@ class ExtCalculatePriceItemResultDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderItemId(): ?int
+    public function getOrderItemId(): int
     {
         return $this->orderItemId;
     }
@@ -36,7 +36,7 @@ class ExtCalculatePriceItemResultDTO implements \JsonSerializable {
     /**
      * @param int $orderItemId
      */
-    public function setOrderItemId(?int $orderItemId): void
+    public function setOrderItemId(int $orderItemId): void
     {
         $this->orderItemId = $orderItemId;
     }
@@ -44,7 +44,7 @@ class ExtCalculatePriceItemResultDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getPromotions(): ?array
+    public function getPromotions(): array
     {
         return $this->promotions;
     }
@@ -52,7 +52,7 @@ class ExtCalculatePriceItemResultDTO implements \JsonSerializable {
     /**
      * @param array $promotions
      */
-    public function setPromotions(?array $promotions): void
+    public function setPromotions(array $promotions): void
     {
         $this->promotions = $promotions;
     }

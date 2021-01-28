@@ -28,7 +28,7 @@ class ExtAccountApplyCheckResponseDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getCheckResult(): ?bool
+    public function getCheckResult(): bool
     {
         return $this->checkResult;
     }
@@ -36,7 +36,7 @@ class ExtAccountApplyCheckResponseDTO implements \JsonSerializable {
     /**
      * @param bool $checkResult
      */
-    public function setCheckResult(?bool $checkResult): void
+    public function setCheckResult(bool $checkResult): void
     {
         $this->checkResult = $checkResult;
     }
@@ -44,7 +44,7 @@ class ExtAccountApplyCheckResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCheckResultMessage(): ?string
+    public function getCheckResultMessage(): string
     {
         return $this->checkResultMessage;
     }
@@ -52,7 +52,7 @@ class ExtAccountApplyCheckResponseDTO implements \JsonSerializable {
     /**
      * @param string $checkResultMessage
      */
-    public function setCheckResultMessage(?string $checkResultMessage): void
+    public function setCheckResultMessage(string $checkResultMessage): void
     {
         $this->checkResultMessage = $checkResultMessage;
     }

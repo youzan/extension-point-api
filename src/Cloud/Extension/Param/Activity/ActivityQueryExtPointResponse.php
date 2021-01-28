@@ -28,7 +28,7 @@ class ActivityQueryExtPointResponse implements \JsonSerializable {
     /**
      * @return ThirdpartyActivityDTO
      */
-    public function getThirdpartyActivity(): ?ThirdpartyActivityDTO
+    public function getThirdpartyActivity(): ThirdpartyActivityDTO
     {
         return $this->thirdpartyActivity;
     }
@@ -36,7 +36,7 @@ class ActivityQueryExtPointResponse implements \JsonSerializable {
     /**
      * @param ThirdpartyActivityDTO $thirdpartyActivity
      */
-    public function setThirdpartyActivity(?ThirdpartyActivityDTO $thirdpartyActivity): void
+    public function setThirdpartyActivity(ThirdpartyActivityDTO $thirdpartyActivity): void
     {
         $this->thirdpartyActivity = $thirdpartyActivity;
     }
@@ -44,7 +44,7 @@ class ActivityQueryExtPointResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersionNo(): ?int
+    public function getVersionNo(): int
     {
         return $this->versionNo;
     }
@@ -52,7 +52,7 @@ class ActivityQueryExtPointResponse implements \JsonSerializable {
     /**
      * @param int $versionNo
      */
-    public function setVersionNo(?int $versionNo): void
+    public function setVersionNo(int $versionNo): void
     {
         $this->versionNo = $versionNo;
     }

@@ -52,7 +52,7 @@ class CouponCustomer implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getId(): ?string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -60,7 +60,7 @@ class CouponCustomer implements \JsonSerializable {
     /**
      * @param string $id
      */
-    public function setId(?string $id): void
+    public function setId(string $id): void
     {
         $this->id = $id;
     }
@@ -68,7 +68,7 @@ class CouponCustomer implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -76,7 +76,7 @@ class CouponCustomer implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -84,7 +84,7 @@ class CouponCustomer implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getVersion(): ?string
+    public function getVersion(): string
     {
         return $this->version;
     }
@@ -92,7 +92,7 @@ class CouponCustomer implements \JsonSerializable {
     /**
      * @param string $version
      */
-    public function setVersion(?string $version): void
+    public function setVersion(string $version): void
     {
         $this->version = $version;
     }
@@ -100,7 +100,7 @@ class CouponCustomer implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMsg(): ?string
+    public function getMsg(): string
     {
         return $this->msg;
     }
@@ -108,7 +108,7 @@ class CouponCustomer implements \JsonSerializable {
     /**
      * @param string $msg
      */
-    public function setMsg(?string $msg): void
+    public function setMsg(string $msg): void
     {
         $this->msg = $msg;
     }
@@ -116,7 +116,7 @@ class CouponCustomer implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getKdtName(): ?string
+    public function getKdtName(): string
     {
         return $this->kdtName;
     }
@@ -124,7 +124,7 @@ class CouponCustomer implements \JsonSerializable {
     /**
      * @param string $kdtName
      */
-    public function setKdtName(?string $kdtName): void
+    public function setKdtName(string $kdtName): void
     {
         $this->kdtName = $kdtName;
     }
@@ -132,7 +132,7 @@ class CouponCustomer implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getStatus(): ?string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -140,7 +140,7 @@ class CouponCustomer implements \JsonSerializable {
     /**
      * @param string $status
      */
-    public function setStatus(?string $status): void
+    public function setStatus(string $status): void
     {
         $this->status = $status;
     }

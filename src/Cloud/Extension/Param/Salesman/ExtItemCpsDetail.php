@@ -64,7 +64,7 @@ class ExtItemCpsDetail implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemId(): ?int
+    public function getItemId(): int
     {
         return $this->itemId;
     }
@@ -72,7 +72,7 @@ class ExtItemCpsDetail implements \JsonSerializable {
     /**
      * @param int $itemId
      */
-    public function setItemId(?int $itemId): void
+    public function setItemId(int $itemId): void
     {
         $this->itemId = $itemId;
     }
@@ -80,7 +80,7 @@ class ExtItemCpsDetail implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSkuId(): ?int
+    public function getSkuId(): int
     {
         return $this->skuId;
     }
@@ -88,7 +88,7 @@ class ExtItemCpsDetail implements \JsonSerializable {
     /**
      * @param int $skuId
      */
-    public function setSkuId(?int $skuId): void
+    public function setSkuId(int $skuId): void
     {
         $this->skuId = $skuId;
     }
@@ -96,7 +96,7 @@ class ExtItemCpsDetail implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNum(): ?int
+    public function getNum(): int
     {
         return $this->num;
     }
@@ -104,7 +104,7 @@ class ExtItemCpsDetail implements \JsonSerializable {
     /**
      * @param int $num
      */
-    public function setNum(?int $num): void
+    public function setNum(int $num): void
     {
         $this->num = $num;
     }
@@ -112,7 +112,7 @@ class ExtItemCpsDetail implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRealPay(): ?int
+    public function getRealPay(): int
     {
         return $this->realPay;
     }
@@ -120,7 +120,7 @@ class ExtItemCpsDetail implements \JsonSerializable {
     /**
      * @param int $realPay
      */
-    public function setRealPay(?int $realPay): void
+    public function setRealPay(int $realPay): void
     {
         $this->realPay = $realPay;
     }
@@ -128,7 +128,7 @@ class ExtItemCpsDetail implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCpsMoney(): ?int
+    public function getCpsMoney(): int
     {
         return $this->cpsMoney;
     }
@@ -136,7 +136,7 @@ class ExtItemCpsDetail implements \JsonSerializable {
     /**
      * @param int $cpsMoney
      */
-    public function setCpsMoney(?int $cpsMoney): void
+    public function setCpsMoney(int $cpsMoney): void
     {
         $this->cpsMoney = $cpsMoney;
     }
@@ -144,7 +144,7 @@ class ExtItemCpsDetail implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getIRate(): ?int
+    public function getIRate(): int
     {
         return $this->iRate;
     }
@@ -152,7 +152,7 @@ class ExtItemCpsDetail implements \JsonSerializable {
     /**
      * @param int $iRate
      */
-    public function setIRate(?int $iRate): void
+    public function setIRate(int $iRate): void
     {
         $this->iRate = $iRate;
     }
@@ -160,7 +160,7 @@ class ExtItemCpsDetail implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBonusMoney(): ?int
+    public function getBonusMoney(): int
     {
         return $this->bonusMoney;
     }
@@ -168,7 +168,7 @@ class ExtItemCpsDetail implements \JsonSerializable {
     /**
      * @param int $bonusMoney
      */
-    public function setBonusMoney(?int $bonusMoney): void
+    public function setBonusMoney(int $bonusMoney): void
     {
         $this->bonusMoney = $bonusMoney;
     }
@@ -176,7 +176,7 @@ class ExtItemCpsDetail implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getIiRate(): ?int
+    public function getIiRate(): int
     {
         return $this->iiRate;
     }
@@ -184,7 +184,7 @@ class ExtItemCpsDetail implements \JsonSerializable {
     /**
      * @param int $iiRate
      */
-    public function setIiRate(?int $iiRate): void
+    public function setIiRate(int $iiRate): void
     {
         $this->iiRate = $iiRate;
     }

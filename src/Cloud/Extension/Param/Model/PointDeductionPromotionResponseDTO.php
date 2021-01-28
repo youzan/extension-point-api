@@ -64,7 +64,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -72,7 +72,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -80,7 +80,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -88,7 +88,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -96,7 +96,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPointDeductionStatus(): ?int
+    public function getPointDeductionStatus(): int
     {
         return $this->pointDeductionStatus;
     }
@@ -104,7 +104,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     /**
      * @param int $pointDeductionStatus
      */
-    public function setPointDeductionStatus(?int $pointDeductionStatus): void
+    public function setPointDeductionStatus(int $pointDeductionStatus): void
     {
         $this->pointDeductionStatus = $pointDeductionStatus;
     }
@@ -112,7 +112,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCostPoints(): ?int
+    public function getCostPoints(): int
     {
         return $this->costPoints;
     }
@@ -120,7 +120,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     /**
      * @param int $costPoints
      */
-    public function setCostPoints(?int $costPoints): void
+    public function setCostPoints(int $costPoints): void
     {
         $this->costPoints = $costPoints;
     }
@@ -128,7 +128,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDecrease(): ?int
+    public function getDecrease(): int
     {
         return $this->decrease;
     }
@@ -136,7 +136,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     /**
      * @param int $decrease
      */
-    public function setDecrease(?int $decrease): void
+    public function setDecrease(int $decrease): void
     {
         $this->decrease = $decrease;
     }
@@ -144,7 +144,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRemainPoints(): ?int
+    public function getRemainPoints(): int
     {
         return $this->remainPoints;
     }
@@ -152,7 +152,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     /**
      * @param int $remainPoints
      */
-    public function setRemainPoints(?int $remainPoints): void
+    public function setRemainPoints(int $remainPoints): void
     {
         $this->remainPoints = $remainPoints;
     }
@@ -160,7 +160,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRate(): ?int
+    public function getRate(): int
     {
         return $this->rate;
     }
@@ -168,7 +168,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     /**
      * @param int $rate
      */
-    public function setRate(?int $rate): void
+    public function setRate(int $rate): void
     {
         $this->rate = $rate;
     }
@@ -176,7 +176,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtraInfo(): ?stdClass
+    public function getExtraInfo(): stdClass
     {
         return $this->extraInfo;
     }
@@ -184,7 +184,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     /**
      * @param stdClass $extraInfo
      */
-    public function setExtraInfo(?stdClass $extraInfo): void
+    public function setExtraInfo(stdClass $extraInfo): void
     {
         $this->extraInfo = $extraInfo;
     }

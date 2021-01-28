@@ -58,7 +58,7 @@ class GiftPackInfoExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getGiftPackId(): ?string
+    public function getGiftPackId(): string
     {
         return $this->giftPackId;
     }
@@ -66,7 +66,7 @@ class GiftPackInfoExtDTO implements \JsonSerializable {
     /**
      * @param string $giftPackId
      */
-    public function setGiftPackId(?string $giftPackId): void
+    public function setGiftPackId(string $giftPackId): void
     {
         $this->giftPackId = $giftPackId;
     }
@@ -74,7 +74,7 @@ class GiftPackInfoExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getGiftPackVersion(): ?string
+    public function getGiftPackVersion(): string
     {
         return $this->giftPackVersion;
     }
@@ -82,7 +82,7 @@ class GiftPackInfoExtDTO implements \JsonSerializable {
     /**
      * @param string $giftPackVersion
      */
-    public function setGiftPackVersion(?string $giftPackVersion): void
+    public function setGiftPackVersion(string $giftPackVersion): void
     {
         $this->giftPackVersion = $giftPackVersion;
     }
@@ -90,7 +90,7 @@ class GiftPackInfoExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getGiftPackName(): ?string
+    public function getGiftPackName(): string
     {
         return $this->giftPackName;
     }
@@ -98,7 +98,7 @@ class GiftPackInfoExtDTO implements \JsonSerializable {
     /**
      * @param string $giftPackName
      */
-    public function setGiftPackName(?string $giftPackName): void
+    public function setGiftPackName(string $giftPackName): void
     {
         $this->giftPackName = $giftPackName;
     }
@@ -106,7 +106,7 @@ class GiftPackInfoExtDTO implements \JsonSerializable {
     /**
      * @return GiftPackRightsDTO
      */
-    public function getGiftPackRights(): ?GiftPackRightsDTO
+    public function getGiftPackRights(): GiftPackRightsDTO
     {
         return $this->giftPackRights;
     }
@@ -114,7 +114,7 @@ class GiftPackInfoExtDTO implements \JsonSerializable {
     /**
      * @param GiftPackRightsDTO $giftPackRights
      */
-    public function setGiftPackRights(?GiftPackRightsDTO $giftPackRights): void
+    public function setGiftPackRights(GiftPackRightsDTO $giftPackRights): void
     {
         $this->giftPackRights = $giftPackRights;
     }
@@ -122,7 +122,7 @@ class GiftPackInfoExtDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getAvailable(): ?bool
+    public function getAvailable(): bool
     {
         return $this->available;
     }
@@ -130,7 +130,7 @@ class GiftPackInfoExtDTO implements \JsonSerializable {
     /**
      * @param bool $available
      */
-    public function setAvailable(?bool $available): void
+    public function setAvailable(bool $available): void
     {
         $this->available = $available;
     }
@@ -138,7 +138,7 @@ class GiftPackInfoExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUnavailableReason(): ?string
+    public function getUnavailableReason(): string
     {
         return $this->unavailableReason;
     }
@@ -146,7 +146,7 @@ class GiftPackInfoExtDTO implements \JsonSerializable {
     /**
      * @param string $unavailableReason
      */
-    public function setUnavailableReason(?string $unavailableReason): void
+    public function setUnavailableReason(string $unavailableReason): void
     {
         $this->unavailableReason = $unavailableReason;
     }
@@ -154,7 +154,7 @@ class GiftPackInfoExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRemark(): ?string
+    public function getRemark(): string
     {
         return $this->remark;
     }
@@ -162,7 +162,7 @@ class GiftPackInfoExtDTO implements \JsonSerializable {
     /**
      * @param string $remark
      */
-    public function setRemark(?string $remark): void
+    public function setRemark(string $remark): void
     {
         $this->remark = $remark;
     }

@@ -22,7 +22,7 @@ class AllLevelRulesResponseDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getExtLevelRulesResponseDTO(): ?array
+    public function getExtLevelRulesResponseDTO(): array
     {
         return $this->extLevelRulesResponseDTO;
     }
@@ -30,7 +30,7 @@ class AllLevelRulesResponseDTO implements \JsonSerializable {
     /**
      * @param array $extLevelRulesResponseDTO
      */
-    public function setExtLevelRulesResponseDTO(?array $extLevelRulesResponseDTO): void
+    public function setExtLevelRulesResponseDTO(array $extLevelRulesResponseDTO): void
     {
         $this->extLevelRulesResponseDTO = $extLevelRulesResponseDTO;
     }

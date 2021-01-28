@@ -28,7 +28,7 @@ class StockAllotOutOrderResultDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalCount(): ?int
+    public function getTotalCount(): int
     {
         return $this->totalCount;
     }
@@ -36,7 +36,7 @@ class StockAllotOutOrderResultDTO implements \JsonSerializable {
     /**
      * @param int $totalCount
      */
-    public function setTotalCount(?int $totalCount): void
+    public function setTotalCount(int $totalCount): void
     {
         $this->totalCount = $totalCount;
     }
@@ -44,7 +44,7 @@ class StockAllotOutOrderResultDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getStockAllotOutOrderSyncDTOS(): ?array
+    public function getStockAllotOutOrderSyncDTOS(): array
     {
         return $this->stockAllotOutOrderSyncDTOS;
     }
@@ -52,7 +52,7 @@ class StockAllotOutOrderResultDTO implements \JsonSerializable {
     /**
      * @param array $stockAllotOutOrderSyncDTOS
      */
-    public function setStockAllotOutOrderSyncDTOS(?array $stockAllotOutOrderSyncDTOS): void
+    public function setStockAllotOutOrderSyncDTOS(array $stockAllotOutOrderSyncDTOS): void
     {
         $this->stockAllotOutOrderSyncDTOS = $stockAllotOutOrderSyncDTOS;
     }

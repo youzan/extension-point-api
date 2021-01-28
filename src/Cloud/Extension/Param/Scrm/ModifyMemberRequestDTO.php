@@ -29,7 +29,7 @@ class ModifyMemberRequestDTO implements \JsonSerializable {
     /**
      * @return CustomerIdentifyDTO
      */
-    public function getCustomerIdentifyDTO(): ?CustomerIdentifyDTO
+    public function getCustomerIdentifyDTO(): CustomerIdentifyDTO
     {
         return $this->customerIdentifyDTO;
     }
@@ -37,7 +37,7 @@ class ModifyMemberRequestDTO implements \JsonSerializable {
     /**
      * @param CustomerIdentifyDTO $customerIdentifyDTO
      */
-    public function setCustomerIdentifyDTO(?CustomerIdentifyDTO $customerIdentifyDTO): void
+    public function setCustomerIdentifyDTO(CustomerIdentifyDTO $customerIdentifyDTO): void
     {
         $this->customerIdentifyDTO = $customerIdentifyDTO;
     }
@@ -45,7 +45,7 @@ class ModifyMemberRequestDTO implements \JsonSerializable {
     /**
      * @return MemberProfileModifyDTO
      */
-    public function getMemberProfileModifyDTO(): ?MemberProfileModifyDTO
+    public function getMemberProfileModifyDTO(): MemberProfileModifyDTO
     {
         return $this->memberProfileModifyDTO;
     }
@@ -53,7 +53,7 @@ class ModifyMemberRequestDTO implements \JsonSerializable {
     /**
      * @param MemberProfileModifyDTO $memberProfileModifyDTO
      */
-    public function setMemberProfileModifyDTO(?MemberProfileModifyDTO $memberProfileModifyDTO): void
+    public function setMemberProfileModifyDTO(MemberProfileModifyDTO $memberProfileModifyDTO): void
     {
         $this->memberProfileModifyDTO = $memberProfileModifyDTO;
     }

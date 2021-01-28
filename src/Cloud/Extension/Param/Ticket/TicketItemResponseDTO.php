@@ -52,7 +52,7 @@ class TicketItemResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTicketNo(): ?string
+    public function getTicketNo(): string
     {
         return $this->ticketNo;
     }
@@ -60,7 +60,7 @@ class TicketItemResponseDTO implements \JsonSerializable {
     /**
      * @param string $ticketNo
      */
-    public function setTicketNo(?string $ticketNo): void
+    public function setTicketNo(string $ticketNo): void
     {
         $this->ticketNo = $ticketNo;
     }
@@ -68,7 +68,7 @@ class TicketItemResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVerifyTime(): ?int
+    public function getVerifyTime(): int
     {
         return $this->verifyTime;
     }
@@ -76,7 +76,7 @@ class TicketItemResponseDTO implements \JsonSerializable {
     /**
      * @param int $verifyTime
      */
-    public function setVerifyTime(?int $verifyTime): void
+    public function setVerifyTime(int $verifyTime): void
     {
         $this->verifyTime = $verifyTime;
     }
@@ -84,7 +84,7 @@ class TicketItemResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVerifyState(): ?int
+    public function getVerifyState(): int
     {
         return $this->verifyState;
     }
@@ -92,7 +92,7 @@ class TicketItemResponseDTO implements \JsonSerializable {
     /**
      * @param int $verifyState
      */
-    public function setVerifyState(?int $verifyState): void
+    public function setVerifyState(int $verifyState): void
     {
         $this->verifyState = $verifyState;
     }
@@ -100,7 +100,7 @@ class TicketItemResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getUserId(): ?int
+    public function getUserId(): int
     {
         return $this->userId;
     }
@@ -108,7 +108,7 @@ class TicketItemResponseDTO implements \JsonSerializable {
     /**
      * @param int $userId
      */
-    public function setUserId(?int $userId): void
+    public function setUserId(int $userId): void
     {
         $this->userId = $userId;
     }
@@ -116,7 +116,7 @@ class TicketItemResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTitle(): ?string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -124,7 +124,7 @@ class TicketItemResponseDTO implements \JsonSerializable {
     /**
      * @param string $title
      */
-    public function setTitle(?string $title): void
+    public function setTitle(string $title): void
     {
         $this->title = $title;
     }
@@ -132,7 +132,7 @@ class TicketItemResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPrice(): ?int
+    public function getPrice(): int
     {
         return $this->price;
     }
@@ -140,7 +140,7 @@ class TicketItemResponseDTO implements \JsonSerializable {
     /**
      * @param int $price
      */
-    public function setPrice(?int $price): void
+    public function setPrice(int $price): void
     {
         $this->price = $price;
     }

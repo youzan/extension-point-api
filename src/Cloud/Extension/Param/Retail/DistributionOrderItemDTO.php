@@ -64,7 +64,7 @@ class DistributionOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuCode(): ?string
+    public function getSkuCode(): string
     {
         return $this->skuCode;
     }
@@ -72,7 +72,7 @@ class DistributionOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $skuCode
      */
-    public function setSkuCode(?string $skuCode): void
+    public function setSkuCode(string $skuCode): void
     {
         $this->skuCode = $skuCode;
     }
@@ -80,7 +80,7 @@ class DistributionOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProductName(): ?string
+    public function getProductName(): string
     {
         return $this->productName;
     }
@@ -88,7 +88,7 @@ class DistributionOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $productName
      */
-    public function setProductName(?string $productName): void
+    public function setProductName(string $productName): void
     {
         $this->productName = $productName;
     }
@@ -96,7 +96,7 @@ class DistributionOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuNo(): ?string
+    public function getSkuNo(): string
     {
         return $this->skuNo;
     }
@@ -104,7 +104,7 @@ class DistributionOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $skuNo
      */
-    public function setSkuNo(?string $skuNo): void
+    public function setSkuNo(string $skuNo): void
     {
         $this->skuNo = $skuNo;
     }
@@ -112,7 +112,7 @@ class DistributionOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUnit(): ?string
+    public function getUnit(): string
     {
         return $this->unit;
     }
@@ -120,7 +120,7 @@ class DistributionOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $unit
      */
-    public function setUnit(?string $unit): void
+    public function setUnit(string $unit): void
     {
         $this->unit = $unit;
     }
@@ -128,7 +128,7 @@ class DistributionOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getApplyNum(): ?string
+    public function getApplyNum(): string
     {
         return $this->applyNum;
     }
@@ -136,7 +136,7 @@ class DistributionOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $applyNum
      */
-    public function setApplyNum(?string $applyNum): void
+    public function setApplyNum(string $applyNum): void
     {
         $this->applyNum = $applyNum;
     }
@@ -144,7 +144,7 @@ class DistributionOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPreOutNum(): ?string
+    public function getPreOutNum(): string
     {
         return $this->preOutNum;
     }
@@ -152,7 +152,7 @@ class DistributionOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $preOutNum
      */
-    public function setPreOutNum(?string $preOutNum): void
+    public function setPreOutNum(string $preOutNum): void
     {
         $this->preOutNum = $preOutNum;
     }
@@ -160,7 +160,7 @@ class DistributionOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getActualOutNum(): ?string
+    public function getActualOutNum(): string
     {
         return $this->actualOutNum;
     }
@@ -168,7 +168,7 @@ class DistributionOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $actualOutNum
      */
-    public function setActualOutNum(?string $actualOutNum): void
+    public function setActualOutNum(string $actualOutNum): void
     {
         $this->actualOutNum = $actualOutNum;
     }
@@ -176,7 +176,7 @@ class DistributionOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getActualInNum(): ?string
+    public function getActualInNum(): string
     {
         return $this->actualInNum;
     }
@@ -184,7 +184,7 @@ class DistributionOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $actualInNum
      */
-    public function setActualInNum(?string $actualInNum): void
+    public function setActualInNum(string $actualInNum): void
     {
         $this->actualInNum = $actualInNum;
     }

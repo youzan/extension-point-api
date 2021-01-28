@@ -47,7 +47,7 @@ class LogisticsDTO implements \JsonSerializable {
     /**
      * @return AppointmentTimeDTO
      */
-    public function getAppointmentTime(): ?AppointmentTimeDTO
+    public function getAppointmentTime(): AppointmentTimeDTO
     {
         return $this->appointmentTime;
     }
@@ -55,7 +55,7 @@ class LogisticsDTO implements \JsonSerializable {
     /**
      * @param AppointmentTimeDTO $appointmentTime
      */
-    public function setAppointmentTime(?AppointmentTimeDTO $appointmentTime): void
+    public function setAppointmentTime(AppointmentTimeDTO $appointmentTime): void
     {
         $this->appointmentTime = $appointmentTime;
     }
@@ -63,7 +63,7 @@ class LogisticsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLogisticsType(): ?string
+    public function getLogisticsType(): string
     {
         return $this->logisticsType;
     }
@@ -71,7 +71,7 @@ class LogisticsDTO implements \JsonSerializable {
     /**
      * @param string $logisticsType
      */
-    public function setLogisticsType(?string $logisticsType): void
+    public function setLogisticsType(string $logisticsType): void
     {
         $this->logisticsType = $logisticsType;
     }
@@ -79,7 +79,7 @@ class LogisticsDTO implements \JsonSerializable {
     /**
      * @return AddressDTO
      */
-    public function getAddress(): ?AddressDTO
+    public function getAddress(): AddressDTO
     {
         return $this->address;
     }
@@ -87,7 +87,7 @@ class LogisticsDTO implements \JsonSerializable {
     /**
      * @param AddressDTO $address
      */
-    public function setAddress(?AddressDTO $address): void
+    public function setAddress(AddressDTO $address): void
     {
         $this->address = $address;
     }
@@ -95,7 +95,7 @@ class LogisticsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getReceiverTel(): ?string
+    public function getReceiverTel(): string
     {
         return $this->receiverTel;
     }
@@ -103,7 +103,7 @@ class LogisticsDTO implements \JsonSerializable {
     /**
      * @param string $receiverTel
      */
-    public function setReceiverTel(?string $receiverTel): void
+    public function setReceiverTel(string $receiverTel): void
     {
         $this->receiverTel = $receiverTel;
     }
@@ -111,7 +111,7 @@ class LogisticsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getReceiverName(): ?string
+    public function getReceiverName(): string
     {
         return $this->receiverName;
     }
@@ -119,7 +119,7 @@ class LogisticsDTO implements \JsonSerializable {
     /**
      * @param string $receiverName
      */
-    public function setReceiverName(?string $receiverName): void
+    public function setReceiverName(string $receiverName): void
     {
         $this->receiverName = $receiverName;
     }

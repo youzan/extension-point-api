@@ -34,7 +34,7 @@ class LotMachineMessageDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getUniqueCode(): ?array
+    public function getUniqueCode(): array
     {
         return $this->uniqueCode;
     }
@@ -42,7 +42,7 @@ class LotMachineMessageDTO implements \JsonSerializable {
     /**
      * @param array $uniqueCode
      */
-    public function setUniqueCode(?array $uniqueCode): void
+    public function setUniqueCode(array $uniqueCode): void
     {
         $this->uniqueCode = $uniqueCode;
     }
@@ -50,7 +50,7 @@ class LotMachineMessageDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -58,7 +58,7 @@ class LotMachineMessageDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -66,7 +66,7 @@ class LotMachineMessageDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBusinessDetailType(): ?int
+    public function getBusinessDetailType(): int
     {
         return $this->businessDetailType;
     }
@@ -74,7 +74,7 @@ class LotMachineMessageDTO implements \JsonSerializable {
     /**
      * @param int $businessDetailType
      */
-    public function setBusinessDetailType(?int $businessDetailType): void
+    public function setBusinessDetailType(int $businessDetailType): void
     {
         $this->businessDetailType = $businessDetailType;
     }

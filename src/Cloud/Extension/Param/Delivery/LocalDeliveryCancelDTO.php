@@ -40,7 +40,7 @@ class LocalDeliveryCancelDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCancelReasonId(): ?int
+    public function getCancelReasonId(): int
     {
         return $this->cancelReasonId;
     }
@@ -48,7 +48,7 @@ class LocalDeliveryCancelDTO implements \JsonSerializable {
     /**
      * @param int $cancelReasonId
      */
-    public function setCancelReasonId(?int $cancelReasonId): void
+    public function setCancelReasonId(int $cancelReasonId): void
     {
         $this->cancelReasonId = $cancelReasonId;
     }
@@ -56,7 +56,7 @@ class LocalDeliveryCancelDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCancelReason(): ?string
+    public function getCancelReason(): string
     {
         return $this->cancelReason;
     }
@@ -64,7 +64,7 @@ class LocalDeliveryCancelDTO implements \JsonSerializable {
     /**
      * @param string $cancelReason
      */
-    public function setCancelReason(?string $cancelReason): void
+    public function setCancelReason(string $cancelReason): void
     {
         $this->cancelReason = $cancelReason;
     }
@@ -72,7 +72,7 @@ class LocalDeliveryCancelDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderOriginalId(): ?string
+    public function getOrderOriginalId(): string
     {
         return $this->orderOriginalId;
     }
@@ -80,7 +80,7 @@ class LocalDeliveryCancelDTO implements \JsonSerializable {
     /**
      * @param string $orderOriginalId
      */
-    public function setOrderOriginalId(?string $orderOriginalId): void
+    public function setOrderOriginalId(string $orderOriginalId): void
     {
         $this->orderOriginalId = $orderOriginalId;
     }
@@ -88,7 +88,7 @@ class LocalDeliveryCancelDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -96,7 +96,7 @@ class LocalDeliveryCancelDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

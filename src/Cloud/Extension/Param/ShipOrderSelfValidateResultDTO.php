@@ -40,7 +40,7 @@ class ShipOrderSelfValidateResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMessage(): ?string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -48,7 +48,7 @@ class ShipOrderSelfValidateResultDTO implements \JsonSerializable {
     /**
      * @param string $message
      */
-    public function setMessage(?string $message): void
+    public function setMessage(string $message): void
     {
         $this->message = $message;
     }
@@ -56,7 +56,7 @@ class ShipOrderSelfValidateResultDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getValidateResult(): ?bool
+    public function getValidateResult(): bool
     {
         return $this->validateResult;
     }
@@ -64,7 +64,7 @@ class ShipOrderSelfValidateResultDTO implements \JsonSerializable {
     /**
      * @param bool $validateResult
      */
-    public function setValidateResult(?bool $validateResult): void
+    public function setValidateResult(bool $validateResult): void
     {
         $this->validateResult = $validateResult;
     }
@@ -72,7 +72,7 @@ class ShipOrderSelfValidateResultDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTea(): ?int
+    public function getTea(): int
     {
         return $this->tea;
     }
@@ -80,7 +80,7 @@ class ShipOrderSelfValidateResultDTO implements \JsonSerializable {
     /**
      * @param int $tea
      */
-    public function setTea(?int $tea): void
+    public function setTea(int $tea): void
     {
         $this->tea = $tea;
     }
@@ -88,7 +88,7 @@ class ShipOrderSelfValidateResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTest(): ?string
+    public function getTest(): string
     {
         return $this->test;
     }
@@ -96,7 +96,7 @@ class ShipOrderSelfValidateResultDTO implements \JsonSerializable {
     /**
      * @param string $test
      */
-    public function setTest(?string $test): void
+    public function setTest(string $test): void
     {
         $this->test = $test;
     }

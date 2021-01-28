@@ -22,7 +22,7 @@ class ItemTradeCloudExtRequest implements \JsonSerializable {
     /**
      * @return ItemExtParam
      */
-    public function getItemExtParam(): ?ItemExtParam
+    public function getItemExtParam(): ItemExtParam
     {
         return $this->itemExtParam;
     }
@@ -30,7 +30,7 @@ class ItemTradeCloudExtRequest implements \JsonSerializable {
     /**
      * @param ItemExtParam $itemExtParam
      */
-    public function setItemExtParam(?ItemExtParam $itemExtParam): void
+    public function setItemExtParam(ItemExtParam $itemExtParam): void
     {
         $this->itemExtParam = $itemExtParam;
     }

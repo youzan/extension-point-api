@@ -40,7 +40,7 @@ class RobotMsgRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
@@ -48,7 +48,7 @@ class RobotMsgRequest implements \JsonSerializable {
     /**
      * @param string $content
      */
-    public function setContent(?string $content): void
+    public function setContent(string $content): void
     {
         $this->content = $content;
     }
@@ -56,7 +56,7 @@ class RobotMsgRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMsgType(): ?string
+    public function getMsgType(): string
     {
         return $this->msgType;
     }
@@ -64,7 +64,7 @@ class RobotMsgRequest implements \JsonSerializable {
     /**
      * @param string $msgType
      */
-    public function setMsgType(?string $msgType): void
+    public function setMsgType(string $msgType): void
     {
         $this->msgType = $msgType;
     }
@@ -72,7 +72,7 @@ class RobotMsgRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getExt(): ?string
+    public function getExt(): string
     {
         return $this->ext;
     }
@@ -80,7 +80,7 @@ class RobotMsgRequest implements \JsonSerializable {
     /**
      * @param string $ext
      */
-    public function setExt(?string $ext): void
+    public function setExt(string $ext): void
     {
         $this->ext = $ext;
     }
@@ -88,7 +88,7 @@ class RobotMsgRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStatus(): ?int
+    public function getStatus(): int
     {
         return $this->status;
     }
@@ -96,7 +96,7 @@ class RobotMsgRequest implements \JsonSerializable {
     /**
      * @param int $status
      */
-    public function setStatus(?int $status): void
+    public function setStatus(int $status): void
     {
         $this->status = $status;
     }

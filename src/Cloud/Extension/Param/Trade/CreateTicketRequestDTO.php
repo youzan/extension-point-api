@@ -52,7 +52,7 @@ class CreateTicketRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -60,7 +60,7 @@ class CreateTicketRequestDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -68,7 +68,7 @@ class CreateTicketRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBuyerId(): ?int
+    public function getBuyerId(): int
     {
         return $this->buyerId;
     }
@@ -76,7 +76,7 @@ class CreateTicketRequestDTO implements \JsonSerializable {
     /**
      * @param int $buyerId
      */
-    public function setBuyerId(?int $buyerId): void
+    public function setBuyerId(int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
@@ -84,7 +84,7 @@ class CreateTicketRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBuyerPhone(): ?string
+    public function getBuyerPhone(): string
     {
         return $this->buyerPhone;
     }
@@ -92,7 +92,7 @@ class CreateTicketRequestDTO implements \JsonSerializable {
     /**
      * @param string $buyerPhone
      */
-    public function setBuyerPhone(?string $buyerPhone): void
+    public function setBuyerPhone(string $buyerPhone): void
     {
         $this->buyerPhone = $buyerPhone;
     }
@@ -100,7 +100,7 @@ class CreateTicketRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBuyerName(): ?string
+    public function getBuyerName(): string
     {
         return $this->buyerName;
     }
@@ -108,7 +108,7 @@ class CreateTicketRequestDTO implements \JsonSerializable {
     /**
      * @param string $buyerName
      */
-    public function setBuyerName(?string $buyerName): void
+    public function setBuyerName(string $buyerName): void
     {
         $this->buyerName = $buyerName;
     }
@@ -116,7 +116,7 @@ class CreateTicketRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -124,7 +124,7 @@ class CreateTicketRequestDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -132,7 +132,7 @@ class CreateTicketRequestDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getOrderItemList(): ?array
+    public function getOrderItemList(): array
     {
         return $this->orderItemList;
     }
@@ -140,7 +140,7 @@ class CreateTicketRequestDTO implements \JsonSerializable {
     /**
      * @param array $orderItemList
      */
-    public function setOrderItemList(?array $orderItemList): void
+    public function setOrderItemList(array $orderItemList): void
     {
         $this->orderItemList = $orderItemList;
     }

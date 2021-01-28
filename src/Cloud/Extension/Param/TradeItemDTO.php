@@ -46,7 +46,7 @@ class TradeItemDTO implements \JsonSerializable {
     /**
      * @return SkuCompositeId
      */
-    public function getSkuCompositeId(): ?SkuCompositeId
+    public function getSkuCompositeId(): SkuCompositeId
     {
         return $this->skuCompositeId;
     }
@@ -54,7 +54,7 @@ class TradeItemDTO implements \JsonSerializable {
     /**
      * @param SkuCompositeId $skuCompositeId
      */
-    public function setSkuCompositeId(?SkuCompositeId $skuCompositeId): void
+    public function setSkuCompositeId(SkuCompositeId $skuCompositeId): void
     {
         $this->skuCompositeId = $skuCompositeId;
     }
@@ -62,7 +62,7 @@ class TradeItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNum(): ?int
+    public function getNum(): int
     {
         return $this->num;
     }
@@ -70,7 +70,7 @@ class TradeItemDTO implements \JsonSerializable {
     /**
      * @param int $num
      */
-    public function setNum(?int $num): void
+    public function setNum(int $num): void
     {
         $this->num = $num;
     }
@@ -78,7 +78,7 @@ class TradeItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGoodsType(): ?int
+    public function getGoodsType(): int
     {
         return $this->goodsType;
     }
@@ -86,7 +86,7 @@ class TradeItemDTO implements \JsonSerializable {
     /**
      * @param int $goodsType
      */
-    public function setGoodsType(?int $goodsType): void
+    public function setGoodsType(int $goodsType): void
     {
         $this->goodsType = $goodsType;
     }
@@ -94,7 +94,7 @@ class TradeItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMemo(): ?string
+    public function getMemo(): string
     {
         return $this->memo;
     }
@@ -102,7 +102,7 @@ class TradeItemDTO implements \JsonSerializable {
     /**
      * @param string $memo
      */
-    public function setMemo(?string $memo): void
+    public function setMemo(string $memo): void
     {
         $this->memo = $memo;
     }
@@ -110,7 +110,7 @@ class TradeItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTicketCalendarEffectiveTime(): ?string
+    public function getTicketCalendarEffectiveTime(): string
     {
         return $this->ticketCalendarEffectiveTime;
     }
@@ -118,7 +118,7 @@ class TradeItemDTO implements \JsonSerializable {
     /**
      * @param string $ticketCalendarEffectiveTime
      */
-    public function setTicketCalendarEffectiveTime(?string $ticketCalendarEffectiveTime): void
+    public function setTicketCalendarEffectiveTime(string $ticketCalendarEffectiveTime): void
     {
         $this->ticketCalendarEffectiveTime = $ticketCalendarEffectiveTime;
     }

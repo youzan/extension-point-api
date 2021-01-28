@@ -22,7 +22,7 @@ class ExtTemplatePointsDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPoints(): ?int
+    public function getPoints(): int
     {
         return $this->points;
     }
@@ -30,7 +30,7 @@ class ExtTemplatePointsDTO implements \JsonSerializable {
     /**
      * @param int $points
      */
-    public function setPoints(?int $points): void
+    public function setPoints(int $points): void
     {
         $this->points = $points;
     }

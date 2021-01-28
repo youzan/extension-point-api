@@ -22,7 +22,7 @@ class ExtBenefitTemplateListDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getExtBenefitTemplateDTOList(): ?array
+    public function getExtBenefitTemplateDTOList(): array
     {
         return $this->extBenefitTemplateDTOList;
     }
@@ -30,7 +30,7 @@ class ExtBenefitTemplateListDTO implements \JsonSerializable {
     /**
      * @param array $extBenefitTemplateDTOList
      */
-    public function setExtBenefitTemplateDTOList(?array $extBenefitTemplateDTOList): void
+    public function setExtBenefitTemplateDTOList(array $extBenefitTemplateDTOList): void
     {
         $this->extBenefitTemplateDTOList = $extBenefitTemplateDTOList;
     }

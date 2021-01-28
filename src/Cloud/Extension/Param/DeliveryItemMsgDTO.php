@@ -40,7 +40,7 @@ class DeliveryItemMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemId(): ?int
+    public function getItemId(): int
     {
         return $this->itemId;
     }
@@ -48,7 +48,7 @@ class DeliveryItemMsgDTO implements \JsonSerializable {
     /**
      * @param int $itemId
      */
-    public function setItemId(?int $itemId): void
+    public function setItemId(int $itemId): void
     {
         $this->itemId = $itemId;
     }
@@ -56,7 +56,7 @@ class DeliveryItemMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNum(): ?int
+    public function getNum(): int
     {
         return $this->num;
     }
@@ -64,7 +64,7 @@ class DeliveryItemMsgDTO implements \JsonSerializable {
     /**
      * @param int $num
      */
-    public function setNum(?int $num): void
+    public function setNum(int $num): void
     {
         $this->num = $num;
     }
@@ -72,7 +72,7 @@ class DeliveryItemMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getWeight(): ?int
+    public function getWeight(): int
     {
         return $this->weight;
     }
@@ -80,7 +80,7 @@ class DeliveryItemMsgDTO implements \JsonSerializable {
     /**
      * @param int $weight
      */
-    public function setWeight(?int $weight): void
+    public function setWeight(int $weight): void
     {
         $this->weight = $weight;
     }
@@ -88,7 +88,7 @@ class DeliveryItemMsgDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getExtend(): ?string
+    public function getExtend(): string
     {
         return $this->extend;
     }
@@ -96,7 +96,7 @@ class DeliveryItemMsgDTO implements \JsonSerializable {
     /**
      * @param string $extend
      */
-    public function setExtend(?string $extend): void
+    public function setExtend(string $extend): void
     {
         $this->extend = $extend;
     }

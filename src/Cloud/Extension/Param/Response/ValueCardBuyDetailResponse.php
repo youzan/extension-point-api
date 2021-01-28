@@ -22,7 +22,7 @@ class ValueCardBuyDetailResponse implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getCardBuyDetails(): ?array
+    public function getCardBuyDetails(): array
     {
         return $this->cardBuyDetails;
     }
@@ -30,7 +30,7 @@ class ValueCardBuyDetailResponse implements \JsonSerializable {
     /**
      * @param array $cardBuyDetails
      */
-    public function setCardBuyDetails(?array $cardBuyDetails): void
+    public function setCardBuyDetails(array $cardBuyDetails): void
     {
         $this->cardBuyDetails = $cardBuyDetails;
     }

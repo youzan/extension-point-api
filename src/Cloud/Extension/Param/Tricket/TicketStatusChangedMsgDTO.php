@@ -89,7 +89,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -97,7 +97,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -105,7 +105,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -113,7 +113,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -121,7 +121,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getVirtualCode(): ?string
+    public function getVirtualCode(): string
     {
         return $this->virtualCode;
     }
@@ -129,7 +129,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @param string $virtualCode
      */
-    public function setVirtualCode(?string $virtualCode): void
+    public function setVirtualCode(string $virtualCode): void
     {
         $this->virtualCode = $virtualCode;
     }
@@ -137,7 +137,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVerifyTime(): ?int
+    public function getVerifyTime(): int
     {
         return $this->verifyTime;
     }
@@ -145,7 +145,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @param int $verifyTime
      */
-    public function setVerifyTime(?int $verifyTime): void
+    public function setVerifyTime(int $verifyTime): void
     {
         $this->verifyTime = $verifyTime;
     }
@@ -153,7 +153,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVerifyState(): ?int
+    public function getVerifyState(): int
     {
         return $this->verifyState;
     }
@@ -161,7 +161,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @param int $verifyState
      */
-    public function setVerifyState(?int $verifyState): void
+    public function setVerifyState(int $verifyState): void
     {
         $this->verifyState = $verifyState;
     }
@@ -169,7 +169,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getTicketItemResponseDTOList(): ?array
+    public function getTicketItemResponseDTOList(): array
     {
         return $this->ticketItemResponseDTOList;
     }
@@ -177,7 +177,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @param array $ticketItemResponseDTOList
      */
-    public function setTicketItemResponseDTOList(?array $ticketItemResponseDTOList): void
+    public function setTicketItemResponseDTOList(array $ticketItemResponseDTOList): void
     {
         $this->ticketItemResponseDTOList = $ticketItemResponseDTOList;
     }
@@ -185,7 +185,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getQrCode(): ?string
+    public function getQrCode(): string
     {
         return $this->qrCode;
     }
@@ -193,7 +193,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @param string $qrCode
      */
-    public function setQrCode(?string $qrCode): void
+    public function setQrCode(string $qrCode): void
     {
         $this->qrCode = $qrCode;
     }
@@ -201,7 +201,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBarCode(): ?string
+    public function getBarCode(): string
     {
         return $this->barCode;
     }
@@ -209,7 +209,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @param string $barCode
      */
-    public function setBarCode(?string $barCode): void
+    public function setBarCode(string $barCode): void
     {
         $this->barCode = $barCode;
     }
@@ -217,7 +217,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getLastRecordId(): ?int
+    public function getLastRecordId(): int
     {
         return $this->lastRecordId;
     }
@@ -225,7 +225,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @param int $lastRecordId
      */
-    public function setLastRecordId(?int $lastRecordId): void
+    public function setLastRecordId(int $lastRecordId): void
     {
         $this->lastRecordId = $lastRecordId;
     }
@@ -233,7 +233,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getEffectiveStartTime(): ?int
+    public function getEffectiveStartTime(): int
     {
         return $this->effectiveStartTime;
     }
@@ -241,7 +241,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @param int $effectiveStartTime
      */
-    public function setEffectiveStartTime(?int $effectiveStartTime): void
+    public function setEffectiveStartTime(int $effectiveStartTime): void
     {
         $this->effectiveStartTime = $effectiveStartTime;
     }
@@ -249,7 +249,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getEffectiveEndTime(): ?int
+    public function getEffectiveEndTime(): int
     {
         return $this->effectiveEndTime;
     }
@@ -257,7 +257,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @param int $effectiveEndTime
      */
-    public function setEffectiveEndTime(?int $effectiveEndTime): void
+    public function setEffectiveEndTime(int $effectiveEndTime): void
     {
         $this->effectiveEndTime = $effectiveEndTime;
     }
@@ -265,7 +265,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtra(): ?stdClass
+    public function getExtra(): stdClass
     {
         return $this->extra;
     }
@@ -273,7 +273,7 @@ class TicketStatusChangedMsgDTO implements \JsonSerializable {
     /**
      * @param stdClass $extra
      */
-    public function setExtra(?stdClass $extra): void
+    public function setExtra(stdClass $extra): void
     {
         $this->extra = $extra;
     }

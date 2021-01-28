@@ -22,7 +22,7 @@ class ExtTaskAwardSendRulesResponseDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getTaskAwardSendRules(): ?array
+    public function getTaskAwardSendRules(): array
     {
         return $this->taskAwardSendRules;
     }
@@ -30,7 +30,7 @@ class ExtTaskAwardSendRulesResponseDTO implements \JsonSerializable {
     /**
      * @param array $taskAwardSendRules
      */
-    public function setTaskAwardSendRules(?array $taskAwardSendRules): void
+    public function setTaskAwardSendRules(array $taskAwardSendRules): void
     {
         $this->taskAwardSendRules = $taskAwardSendRules;
     }

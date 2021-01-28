@@ -58,7 +58,7 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUserId(): ?string
+    public function getUserId(): string
     {
         return $this->userId;
     }
@@ -66,7 +66,7 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @param string $userId
      */
-    public function setUserId(?string $userId): void
+    public function setUserId(string $userId): void
     {
         $this->userId = $userId;
     }
@@ -74,7 +74,7 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -82,7 +82,7 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -90,7 +90,7 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPhoneNum(): ?string
+    public function getPhoneNum(): string
     {
         return $this->phoneNum;
     }
@@ -98,7 +98,7 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @param string $phoneNum
      */
-    public function setPhoneNum(?string $phoneNum): void
+    public function setPhoneNum(string $phoneNum): void
     {
         $this->phoneNum = $phoneNum;
     }
@@ -106,7 +106,7 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOuterUserId(): ?string
+    public function getOuterUserId(): string
     {
         return $this->outerUserId;
     }
@@ -114,7 +114,7 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @param string $outerUserId
      */
-    public function setOuterUserId(?string $outerUserId): void
+    public function setOuterUserId(string $outerUserId): void
     {
         $this->outerUserId = $outerUserId;
     }
@@ -122,7 +122,7 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getTradeGroupDTOS(): ?array
+    public function getTradeGroupDTOS(): array
     {
         return $this->tradeGroupDTOS;
     }
@@ -130,7 +130,7 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @param array $tradeGroupDTOS
      */
-    public function setTradeGroupDTOS(?array $tradeGroupDTOS): void
+    public function setTradeGroupDTOS(array $tradeGroupDTOS): void
     {
         $this->tradeGroupDTOS = $tradeGroupDTOS;
     }
@@ -138,7 +138,7 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): ?string
+    public function getYzOpenId(): string
     {
         return $this->yzOpenId;
     }
@@ -146,7 +146,7 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(?string $yzOpenId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -154,7 +154,7 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNodeKdtid(): ?int
+    public function getNodeKdtid(): int
     {
         return $this->nodeKdtid;
     }
@@ -162,7 +162,7 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @param int $nodeKdtid
      */
-    public function setNodeKdtid(?int $nodeKdtid): void
+    public function setNodeKdtid(int $nodeKdtid): void
     {
         $this->nodeKdtid = $nodeKdtid;
     }

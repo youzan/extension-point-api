@@ -28,7 +28,7 @@ class ValueCardBuyCenterResponse implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getCardProductBaseInfoDTOList(): ?array
+    public function getCardProductBaseInfoDTOList(): array
     {
         return $this->cardProductBaseInfoDTOList;
     }
@@ -36,7 +36,7 @@ class ValueCardBuyCenterResponse implements \JsonSerializable {
     /**
      * @param array $cardProductBaseInfoDTOList
      */
-    public function setCardProductBaseInfoDTOList(?array $cardProductBaseInfoDTOList): void
+    public function setCardProductBaseInfoDTOList(array $cardProductBaseInfoDTOList): void
     {
         $this->cardProductBaseInfoDTOList = $cardProductBaseInfoDTOList;
     }
@@ -44,7 +44,7 @@ class ValueCardBuyCenterResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotal(): ?int
+    public function getTotal(): int
     {
         return $this->total;
     }
@@ -52,7 +52,7 @@ class ValueCardBuyCenterResponse implements \JsonSerializable {
     /**
      * @param int $total
      */
-    public function setTotal(?int $total): void
+    public function setTotal(int $total): void
     {
         $this->total = $total;
     }

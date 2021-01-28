@@ -22,7 +22,7 @@ class RequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getKdtId(): ?string
+    public function getKdtId(): string
     {
         return $this->kdtId;
     }
@@ -30,7 +30,7 @@ class RequestDTO implements \JsonSerializable {
     /**
      * @param string $kdtId
      */
-    public function setKdtId(?string $kdtId): void
+    public function setKdtId(string $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

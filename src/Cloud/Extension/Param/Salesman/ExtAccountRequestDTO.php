@@ -40,7 +40,7 @@ class ExtAccountRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBuyerId(): ?int
+    public function getBuyerId(): int
     {
         return $this->buyerId;
     }
@@ -48,7 +48,7 @@ class ExtAccountRequestDTO implements \JsonSerializable {
     /**
      * @param int $buyerId
      */
-    public function setBuyerId(?int $buyerId): void
+    public function setBuyerId(int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
@@ -56,7 +56,7 @@ class ExtAccountRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getFromBuyerId(): ?int
+    public function getFromBuyerId(): int
     {
         return $this->fromBuyerId;
     }
@@ -64,7 +64,7 @@ class ExtAccountRequestDTO implements \JsonSerializable {
     /**
      * @param int $fromBuyerId
      */
-    public function setFromBuyerId(?int $fromBuyerId): void
+    public function setFromBuyerId(int $fromBuyerId): void
     {
         $this->fromBuyerId = $fromBuyerId;
     }
@@ -72,7 +72,7 @@ class ExtAccountRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -80,7 +80,7 @@ class ExtAccountRequestDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -88,7 +88,7 @@ class ExtAccountRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): ?string
+    public function getYzOpenId(): string
     {
         return $this->yzOpenId;
     }
@@ -96,7 +96,7 @@ class ExtAccountRequestDTO implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(?string $yzOpenId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }

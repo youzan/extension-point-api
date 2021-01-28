@@ -59,7 +59,7 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVerifyKdtId(): ?int
+    public function getVerifyKdtId(): int
     {
         return $this->verifyKdtId;
     }
@@ -67,7 +67,7 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
     /**
      * @param int $verifyKdtId
      */
-    public function setVerifyKdtId(?int $verifyKdtId): void
+    public function setVerifyKdtId(int $verifyKdtId): void
     {
         $this->verifyKdtId = $verifyKdtId;
     }
@@ -75,7 +75,7 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVerifyStoreId(): ?int
+    public function getVerifyStoreId(): int
     {
         return $this->verifyStoreId;
     }
@@ -83,7 +83,7 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
     /**
      * @param int $verifyStoreId
      */
-    public function setVerifyStoreId(?int $verifyStoreId): void
+    public function setVerifyStoreId(int $verifyStoreId): void
     {
         $this->verifyStoreId = $verifyStoreId;
     }
@@ -91,7 +91,7 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): ?string
+    public function getYzOpenId(): string
     {
         return $this->yzOpenId;
     }
@@ -99,7 +99,7 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(?string $yzOpenId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -107,7 +107,7 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getCloudVerifyVoucherList(): ?array
+    public function getCloudVerifyVoucherList(): array
     {
         return $this->cloudVerifyVoucherList;
     }
@@ -115,7 +115,7 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
     /**
      * @param array $cloudVerifyVoucherList
      */
-    public function setCloudVerifyVoucherList(?array $cloudVerifyVoucherList): void
+    public function setCloudVerifyVoucherList(array $cloudVerifyVoucherList): void
     {
         $this->cloudVerifyVoucherList = $cloudVerifyVoucherList;
     }
@@ -123,7 +123,7 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersionNo(): ?int
+    public function getVersionNo(): int
     {
         return $this->versionNo;
     }
@@ -131,7 +131,7 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
     /**
      * @param int $versionNo
      */
-    public function setVersionNo(?int $versionNo): void
+    public function setVersionNo(int $versionNo): void
     {
         $this->versionNo = $versionNo;
     }
@@ -139,7 +139,7 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): ?stdClass
+    public function getExtMap(): stdClass
     {
         return $this->extMap;
     }
@@ -147,7 +147,7 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
     /**
      * @param stdClass $extMap
      */
-    public function setExtMap(?stdClass $extMap): void
+    public function setExtMap(stdClass $extMap): void
     {
         $this->extMap = $extMap;
     }
@@ -155,7 +155,7 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRootKdtId(): ?int
+    public function getRootKdtId(): int
     {
         return $this->rootKdtId;
     }
@@ -163,7 +163,7 @@ class VoucherUseRuleCheckExtPointRequest implements \JsonSerializable {
     /**
      * @param int $rootKdtId
      */
-    public function setRootKdtId(?int $rootKdtId): void
+    public function setRootKdtId(int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
     }

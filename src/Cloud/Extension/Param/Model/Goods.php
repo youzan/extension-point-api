@@ -46,7 +46,7 @@ class Goods implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemId(): ?int
+    public function getItemId(): int
     {
         return $this->itemId;
     }
@@ -54,7 +54,7 @@ class Goods implements \JsonSerializable {
     /**
      * @param int $itemId
      */
-    public function setItemId(?int $itemId): void
+    public function setItemId(int $itemId): void
     {
         $this->itemId = $itemId;
     }
@@ -62,7 +62,7 @@ class Goods implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSkuId(): ?int
+    public function getSkuId(): int
     {
         return $this->skuId;
     }
@@ -70,7 +70,7 @@ class Goods implements \JsonSerializable {
     /**
      * @param int $skuId
      */
-    public function setSkuId(?int $skuId): void
+    public function setSkuId(int $skuId): void
     {
         $this->skuId = $skuId;
     }
@@ -78,7 +78,7 @@ class Goods implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderItemId(): ?int
+    public function getOrderItemId(): int
     {
         return $this->orderItemId;
     }
@@ -86,7 +86,7 @@ class Goods implements \JsonSerializable {
     /**
      * @param int $orderItemId
      */
-    public function setOrderItemId(?int $orderItemId): void
+    public function setOrderItemId(int $orderItemId): void
     {
         $this->orderItemId = $orderItemId;
     }
@@ -94,7 +94,7 @@ class Goods implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getAppliedActivities(): ?array
+    public function getAppliedActivities(): array
     {
         return $this->appliedActivities;
     }
@@ -102,7 +102,7 @@ class Goods implements \JsonSerializable {
     /**
      * @param array $appliedActivities
      */
-    public function setAppliedActivities(?array $appliedActivities): void
+    public function setAppliedActivities(array $appliedActivities): void
     {
         $this->appliedActivities = $appliedActivities;
     }
@@ -110,7 +110,7 @@ class Goods implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRealPay(): ?int
+    public function getRealPay(): int
     {
         return $this->realPay;
     }
@@ -118,7 +118,7 @@ class Goods implements \JsonSerializable {
     /**
      * @param int $realPay
      */
-    public function setRealPay(?int $realPay): void
+    public function setRealPay(int $realPay): void
     {
         $this->realPay = $realPay;
     }

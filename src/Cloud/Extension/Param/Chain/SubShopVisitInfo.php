@@ -84,7 +84,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -92,7 +92,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -100,7 +100,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getHqKdtId(): ?int
+    public function getHqKdtId(): int
     {
         return $this->hqKdtId;
     }
@@ -108,7 +108,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @param int $hqKdtId
      */
-    public function setHqKdtId(?int $hqKdtId): void
+    public function setHqKdtId(int $hqKdtId): void
     {
         $this->hqKdtId = $hqKdtId;
     }
@@ -116,7 +116,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getShopName(): ?string
+    public function getShopName(): string
     {
         return $this->shopName;
     }
@@ -124,7 +124,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @param string $shopName
      */
-    public function setShopName(?string $shopName): void
+    public function setShopName(string $shopName): void
     {
         $this->shopName = $shopName;
     }
@@ -132,7 +132,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLogo(): ?string
+    public function getLogo(): string
     {
         return $this->logo;
     }
@@ -140,7 +140,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @param string $logo
      */
-    public function setLogo(?string $logo): void
+    public function setLogo(string $logo): void
     {
         $this->logo = $logo;
     }
@@ -148,7 +148,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getShopRole(): ?int
+    public function getShopRole(): int
     {
         return $this->shopRole;
     }
@@ -156,7 +156,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @param int $shopRole
      */
-    public function setShopRole(?int $shopRole): void
+    public function setShopRole(int $shopRole): void
     {
         $this->shopRole = $shopRole;
     }
@@ -164,7 +164,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getJoinType(): ?int
+    public function getJoinType(): int
     {
         return $this->joinType;
     }
@@ -172,7 +172,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @param int $joinType
      */
-    public function setJoinType(?int $joinType): void
+    public function setJoinType(int $joinType): void
     {
         $this->joinType = $joinType;
     }
@@ -180,7 +180,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @return Address
      */
-    public function getAddress(): ?Address
+    public function getAddress(): Address
     {
         return $this->address;
     }
@@ -188,7 +188,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @param Address $address
      */
-    public function setAddress(?Address $address): void
+    public function setAddress(Address $address): void
     {
         $this->address = $address;
     }
@@ -196,7 +196,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLifecycleStatus(): ?string
+    public function getLifecycleStatus(): string
     {
         return $this->lifecycleStatus;
     }
@@ -204,7 +204,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @param string $lifecycleStatus
      */
-    public function setLifecycleStatus(?string $lifecycleStatus): void
+    public function setLifecycleStatus(string $lifecycleStatus): void
     {
         $this->lifecycleStatus = $lifecycleStatus;
     }
@@ -212,7 +212,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getLifecycleEndTime(): ?int
+    public function getLifecycleEndTime(): int
     {
         return $this->lifecycleEndTime;
     }
@@ -220,7 +220,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @param int $lifecycleEndTime
      */
-    public function setLifecycleEndTime(?int $lifecycleEndTime): void
+    public function setLifecycleEndTime(int $lifecycleEndTime): void
     {
         $this->lifecycleEndTime = $lifecycleEndTime;
     }
@@ -228,7 +228,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDistance(): ?int
+    public function getDistance(): int
     {
         return $this->distance;
     }
@@ -236,7 +236,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @param int $distance
      */
-    public function setDistance(?int $distance): void
+    public function setDistance(int $distance): void
     {
         $this->distance = $distance;
     }
@@ -244,7 +244,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @return ShopMetaInfo
      */
-    public function getShopMetaInfo(): ?ShopMetaInfo
+    public function getShopMetaInfo(): ShopMetaInfo
     {
         return $this->shopMetaInfo;
     }
@@ -252,7 +252,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     /**
      * @param ShopMetaInfo $shopMetaInfo
      */
-    public function setShopMetaInfo(?ShopMetaInfo $shopMetaInfo): void
+    public function setShopMetaInfo(ShopMetaInfo $shopMetaInfo): void
     {
         $this->shopMetaInfo = $shopMetaInfo;
     }

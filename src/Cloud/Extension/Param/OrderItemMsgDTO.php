@@ -78,7 +78,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @return GoodsInfo
      */
-    public function getGoodsInfo(): ?GoodsInfo
+    public function getGoodsInfo(): GoodsInfo
     {
         return $this->goodsInfo;
     }
@@ -86,7 +86,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @param GoodsInfo $goodsInfo
      */
-    public function setGoodsInfo(?GoodsInfo $goodsInfo): void
+    public function setGoodsInfo(GoodsInfo $goodsInfo): void
     {
         $this->goodsInfo = $goodsInfo;
     }
@@ -94,7 +94,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtra(): ?stdClass
+    public function getExtra(): stdClass
     {
         return $this->extra;
     }
@@ -102,7 +102,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @param stdClass $extra
      */
-    public function setExtra(?stdClass $extra): void
+    public function setExtra(stdClass $extra): void
     {
         $this->extra = $extra;
     }
@@ -110,7 +110,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRealPay(): ?int
+    public function getRealPay(): int
     {
         return $this->realPay;
     }
@@ -118,7 +118,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @param int $realPay
      */
-    public function setRealPay(?int $realPay): void
+    public function setRealPay(int $realPay): void
     {
         $this->realPay = $realPay;
     }
@@ -126,7 +126,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getTags(): ?stdClass
+    public function getTags(): stdClass
     {
         return $this->tags;
     }
@@ -134,7 +134,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @param stdClass $tags
      */
-    public function setTags(?stdClass $tags): void
+    public function setTags(stdClass $tags): void
     {
         $this->tags = $tags;
     }
@@ -142,7 +142,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getQuotaNum(): ?int
+    public function getQuotaNum(): int
     {
         return $this->quotaNum;
     }
@@ -150,7 +150,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @param int $quotaNum
      */
-    public function setQuotaNum(?int $quotaNum): void
+    public function setQuotaNum(int $quotaNum): void
     {
         $this->quotaNum = $quotaNum;
     }
@@ -158,7 +158,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNum(): ?int
+    public function getNum(): int
     {
         return $this->num;
     }
@@ -166,7 +166,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @param int $num
      */
-    public function setNum(?int $num): void
+    public function setNum(int $num): void
     {
         $this->num = $num;
     }
@@ -174,7 +174,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMemo(): ?string
+    public function getMemo(): string
     {
         return $this->memo;
     }
@@ -182,7 +182,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @param string $memo
      */
-    public function setMemo(?string $memo): void
+    public function setMemo(string $memo): void
     {
         $this->memo = $memo;
     }
@@ -190,7 +190,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSnapShot(): ?string
+    public function getSnapShot(): string
     {
         return $this->snapShot;
     }
@@ -198,7 +198,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @param string $snapShot
      */
-    public function setSnapShot(?string $snapShot): void
+    public function setSnapShot(string $snapShot): void
     {
         $this->snapShot = $snapShot;
     }
@@ -206,7 +206,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @return SkuDTO
      */
-    public function getSkuDTO(): ?SkuDTO
+    public function getSkuDTO(): SkuDTO
     {
         return $this->skuDTO;
     }
@@ -214,7 +214,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @param SkuDTO $skuDTO
      */
-    public function setSkuDTO(?SkuDTO $skuDTO): void
+    public function setSkuDTO(SkuDTO $skuDTO): void
     {
         $this->skuDTO = $skuDTO;
     }
@@ -222,7 +222,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -230,7 +230,7 @@ class OrderItemMsgDTO implements \JsonSerializable {
     /**
      * @param int $id
      */
-    public function setId(?int $id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }

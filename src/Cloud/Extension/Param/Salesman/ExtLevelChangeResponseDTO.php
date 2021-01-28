@@ -34,7 +34,7 @@ class ExtLevelChangeResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getLevel(): ?int
+    public function getLevel(): int
     {
         return $this->level;
     }
@@ -42,7 +42,7 @@ class ExtLevelChangeResponseDTO implements \JsonSerializable {
     /**
      * @param int $level
      */
-    public function setLevel(?int $level): void
+    public function setLevel(int $level): void
     {
         $this->level = $level;
     }
@@ -50,7 +50,7 @@ class ExtLevelChangeResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getChangeType(): ?int
+    public function getChangeType(): int
     {
         return $this->changeType;
     }
@@ -58,7 +58,7 @@ class ExtLevelChangeResponseDTO implements \JsonSerializable {
     /**
      * @param int $changeType
      */
-    public function setChangeType(?int $changeType): void
+    public function setChangeType(int $changeType): void
     {
         $this->changeType = $changeType;
     }
@@ -66,7 +66,7 @@ class ExtLevelChangeResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRemark(): ?string
+    public function getRemark(): string
     {
         return $this->remark;
     }
@@ -74,7 +74,7 @@ class ExtLevelChangeResponseDTO implements \JsonSerializable {
     /**
      * @param string $remark
      */
-    public function setRemark(?string $remark): void
+    public function setRemark(string $remark): void
     {
         $this->remark = $remark;
     }

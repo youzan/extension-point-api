@@ -70,7 +70,7 @@ class GoPayParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUserPhone(): ?string
+    public function getUserPhone(): string
     {
         return $this->userPhone;
     }
@@ -78,7 +78,7 @@ class GoPayParamDTO implements \JsonSerializable {
     /**
      * @param string $userPhone
      */
-    public function setUserPhone(?string $userPhone): void
+    public function setUserPhone(string $userPhone): void
     {
         $this->userPhone = $userPhone;
     }
@@ -86,7 +86,7 @@ class GoPayParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getFansType(): ?int
+    public function getFansType(): int
     {
         return $this->fansType;
     }
@@ -94,7 +94,7 @@ class GoPayParamDTO implements \JsonSerializable {
     /**
      * @param int $fansType
      */
-    public function setFansType(?int $fansType): void
+    public function setFansType(int $fansType): void
     {
         $this->fansType = $fansType;
     }
@@ -102,7 +102,7 @@ class GoPayParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getFansId(): ?string
+    public function getFansId(): string
     {
         return $this->fansId;
     }
@@ -110,7 +110,7 @@ class GoPayParamDTO implements \JsonSerializable {
     /**
      * @param string $fansId
      */
-    public function setFansId(?string $fansId): void
+    public function setFansId(string $fansId): void
     {
         $this->fansId = $fansId;
     }
@@ -118,7 +118,7 @@ class GoPayParamDTO implements \JsonSerializable {
     /**
      * @return OrderDTO
      */
-    public function getOrderDTO(): ?OrderDTO
+    public function getOrderDTO(): OrderDTO
     {
         return $this->orderDTO;
     }
@@ -126,7 +126,7 @@ class GoPayParamDTO implements \JsonSerializable {
     /**
      * @param OrderDTO $orderDTO
      */
-    public function setOrderDTO(?OrderDTO $orderDTO): void
+    public function setOrderDTO(OrderDTO $orderDTO): void
     {
         $this->orderDTO = $orderDTO;
     }
@@ -134,7 +134,7 @@ class GoPayParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPayResultPage(): ?string
+    public function getPayResultPage(): string
     {
         return $this->payResultPage;
     }
@@ -142,7 +142,7 @@ class GoPayParamDTO implements \JsonSerializable {
     /**
      * @param string $payResultPage
      */
-    public function setPayResultPage(?string $payResultPage): void
+    public function setPayResultPage(string $payResultPage): void
     {
         $this->payResultPage = $payResultPage;
     }
@@ -150,7 +150,7 @@ class GoPayParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPayAmount(): ?int
+    public function getPayAmount(): int
     {
         return $this->payAmount;
     }
@@ -158,7 +158,7 @@ class GoPayParamDTO implements \JsonSerializable {
     /**
      * @param int $payAmount
      */
-    public function setPayAmount(?int $payAmount): void
+    public function setPayAmount(int $payAmount): void
     {
         $this->payAmount = $payAmount;
     }
@@ -166,7 +166,7 @@ class GoPayParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUserId(): ?string
+    public function getUserId(): string
     {
         return $this->userId;
     }
@@ -174,7 +174,7 @@ class GoPayParamDTO implements \JsonSerializable {
     /**
      * @param string $userId
      */
-    public function setUserId(?string $userId): void
+    public function setUserId(string $userId): void
     {
         $this->userId = $userId;
     }
@@ -182,7 +182,7 @@ class GoPayParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -190,7 +190,7 @@ class GoPayParamDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -198,7 +198,7 @@ class GoPayParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): ?string
+    public function getYzOpenId(): string
     {
         return $this->yzOpenId;
     }
@@ -206,7 +206,7 @@ class GoPayParamDTO implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(?string $yzOpenId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }

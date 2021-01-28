@@ -46,7 +46,7 @@ class FansUnionidCreateDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDataTime(): ?string
+    public function getDataTime(): string
     {
         return $this->dataTime;
     }
@@ -54,7 +54,7 @@ class FansUnionidCreateDTO implements \JsonSerializable {
     /**
      * @param string $dataTime
      */
-    public function setDataTime(?string $dataTime): void
+    public function setDataTime(string $dataTime): void
     {
         $this->dataTime = $dataTime;
     }
@@ -62,7 +62,7 @@ class FansUnionidCreateDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -70,7 +70,7 @@ class FansUnionidCreateDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -78,7 +78,7 @@ class FansUnionidCreateDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getMpId(): ?int
+    public function getMpId(): int
     {
         return $this->mpId;
     }
@@ -86,7 +86,7 @@ class FansUnionidCreateDTO implements \JsonSerializable {
     /**
      * @param int $mpId
      */
-    public function setMpId(?int $mpId): void
+    public function setMpId(int $mpId): void
     {
         $this->mpId = $mpId;
     }
@@ -94,7 +94,7 @@ class FansUnionidCreateDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getFansId(): ?int
+    public function getFansId(): int
     {
         return $this->fansId;
     }
@@ -102,7 +102,7 @@ class FansUnionidCreateDTO implements \JsonSerializable {
     /**
      * @param int $fansId
      */
-    public function setFansId(?int $fansId): void
+    public function setFansId(int $fansId): void
     {
         $this->fansId = $fansId;
     }
@@ -110,7 +110,7 @@ class FansUnionidCreateDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUnionId(): ?string
+    public function getUnionId(): string
     {
         return $this->unionId;
     }
@@ -118,7 +118,7 @@ class FansUnionidCreateDTO implements \JsonSerializable {
     /**
      * @param string $unionId
      */
-    public function setUnionId(?string $unionId): void
+    public function setUnionId(string $unionId): void
     {
         $this->unionId = $unionId;
     }

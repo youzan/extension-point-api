@@ -28,7 +28,7 @@ class GoPayResultDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtension(): ?stdClass
+    public function getExtension(): stdClass
     {
         return $this->extension;
     }
@@ -36,7 +36,7 @@ class GoPayResultDTO implements \JsonSerializable {
     /**
      * @param stdClass $extension
      */
-    public function setExtension(?stdClass $extension): void
+    public function setExtension(stdClass $extension): void
     {
         $this->extension = $extension;
     }
@@ -44,7 +44,7 @@ class GoPayResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCashDeskUrl(): ?string
+    public function getCashDeskUrl(): string
     {
         return $this->cashDeskUrl;
     }
@@ -52,7 +52,7 @@ class GoPayResultDTO implements \JsonSerializable {
     /**
      * @param string $cashDeskUrl
      */
-    public function setCashDeskUrl(?string $cashDeskUrl): void
+    public function setCashDeskUrl(string $cashDeskUrl): void
     {
         $this->cashDeskUrl = $cashDeskUrl;
     }

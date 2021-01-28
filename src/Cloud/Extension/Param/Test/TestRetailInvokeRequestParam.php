@@ -28,7 +28,7 @@ class TestRetailInvokeRequestParam implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -36,7 +36,7 @@ class TestRetailInvokeRequestParam implements \JsonSerializable {
     /**
      * @param string $name
      */
-    public function setName(?string $name): void
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
@@ -44,7 +44,7 @@ class TestRetailInvokeRequestParam implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -52,7 +52,7 @@ class TestRetailInvokeRequestParam implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }

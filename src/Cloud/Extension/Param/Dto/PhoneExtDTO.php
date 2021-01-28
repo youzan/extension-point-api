@@ -1,27 +1,27 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Scrm;
+namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
 
 
 /**
- * 联系地址
+ * 号码信息
  * @author Baymax
- * @create 2018-09-29 21:39:22.0
+ * @create 2021-01-28 10:03:40.0
  */
-class ContactAddressModifyDTO implements \JsonSerializable {
+class PhoneExtDTO implements \JsonSerializable {
 
     /**
-     * 地域编码
+     * 区号
      * @var string
      */
     private $areaCode;
 
     /**
-     * 详细地址
+     * 电话或者手机号
      * @var string
      */
-    private $address;
+    private $localNumber;
 
 
 
@@ -44,17 +44,17 @@ class ContactAddressModifyDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAddress(): string
+    public function getLocalNumber(): string
     {
-        return $this->address;
+        return $this->localNumber;
     }
 
     /**
-     * @param string $address
+     * @param string $localNumber
      */
-    public function setAddress(string $address): void
+    public function setLocalNumber(string $localNumber): void
     {
-        $this->address = $address;
+        $this->localNumber = $localNumber;
     }
 
     public function jsonSerialize() {

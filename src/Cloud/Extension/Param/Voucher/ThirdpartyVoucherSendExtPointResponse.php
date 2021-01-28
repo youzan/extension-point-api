@@ -64,7 +64,7 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -72,7 +72,7 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
     /**
      * @param int $id
      */
-    public function setId(?int $id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
@@ -80,7 +80,7 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getVerifyCode(): ?string
+    public function getVerifyCode(): string
     {
         return $this->verifyCode;
     }
@@ -88,7 +88,7 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
     /**
      * @param string $verifyCode
      */
-    public function setVerifyCode(?string $verifyCode): void
+    public function setVerifyCode(string $verifyCode): void
     {
         $this->verifyCode = $verifyCode;
     }
@@ -96,7 +96,7 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getSuccess(): ?bool
+    public function getSuccess(): bool
     {
         return $this->success;
     }
@@ -104,7 +104,7 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
     /**
      * @param bool $success
      */
-    public function setSuccess(?bool $success): void
+    public function setSuccess(bool $success): void
     {
         $this->success = $success;
     }
@@ -112,7 +112,7 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getErrorMsg(): ?string
+    public function getErrorMsg(): string
     {
         return $this->errorMsg;
     }
@@ -120,7 +120,7 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
     /**
      * @param string $errorMsg
      */
-    public function setErrorMsg(?string $errorMsg): void
+    public function setErrorMsg(string $errorMsg): void
     {
         $this->errorMsg = $errorMsg;
     }
@@ -128,7 +128,7 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getIdempotentSuccess(): ?bool
+    public function getIdempotentSuccess(): bool
     {
         return $this->idempotentSuccess;
     }
@@ -136,7 +136,7 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
     /**
      * @param bool $idempotentSuccess
      */
-    public function setIdempotentSuccess(?bool $idempotentSuccess): void
+    public function setIdempotentSuccess(bool $idempotentSuccess): void
     {
         $this->idempotentSuccess = $idempotentSuccess;
     }
@@ -144,7 +144,7 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersionNo(): ?int
+    public function getVersionNo(): int
     {
         return $this->versionNo;
     }
@@ -152,7 +152,7 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
     /**
      * @param int $versionNo
      */
-    public function setVersionNo(?int $versionNo): void
+    public function setVersionNo(int $versionNo): void
     {
         $this->versionNo = $versionNo;
     }
@@ -160,7 +160,7 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): ?stdClass
+    public function getExtMap(): stdClass
     {
         return $this->extMap;
     }
@@ -168,7 +168,7 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
     /**
      * @param stdClass $extMap
      */
-    public function setExtMap(?stdClass $extMap): void
+    public function setExtMap(stdClass $extMap): void
     {
         $this->extMap = $extMap;
     }
@@ -176,7 +176,7 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getValue(): ?int
+    public function getValue(): int
     {
         return $this->value;
     }
@@ -184,7 +184,7 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
     /**
      * @param int $value
      */
-    public function setValue(?int $value): void
+    public function setValue(int $value): void
     {
         $this->value = $value;
     }

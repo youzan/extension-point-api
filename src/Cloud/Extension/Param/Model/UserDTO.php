@@ -28,7 +28,7 @@ class UserDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): ?string
+    public function getYzOpenId(): string
     {
         return $this->yzOpenId;
     }
@@ -36,7 +36,7 @@ class UserDTO implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(?string $yzOpenId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -44,7 +44,7 @@ class UserDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMobile(): ?string
+    public function getMobile(): string
     {
         return $this->mobile;
     }
@@ -52,7 +52,7 @@ class UserDTO implements \JsonSerializable {
     /**
      * @param string $mobile
      */
-    public function setMobile(?string $mobile): void
+    public function setMobile(string $mobile): void
     {
         $this->mobile = $mobile;
     }
