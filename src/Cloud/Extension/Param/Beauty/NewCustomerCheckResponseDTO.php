@@ -40,7 +40,7 @@ class NewCustomerCheckResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -48,7 +48,7 @@ class NewCustomerCheckResponseDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -56,7 +56,7 @@ class NewCustomerCheckResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDeptId(): ?int
+    public function getDeptId(): int
     {
         return $this->deptId;
     }
@@ -64,7 +64,7 @@ class NewCustomerCheckResponseDTO implements \JsonSerializable {
     /**
      * @param int $deptId
      */
-    public function setDeptId(?int $deptId): void
+    public function setDeptId(int $deptId): void
     {
         $this->deptId = $deptId;
     }
@@ -72,7 +72,7 @@ class NewCustomerCheckResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): ?string
+    public function getYzOpenId(): string
     {
         return $this->yzOpenId;
     }
@@ -80,7 +80,7 @@ class NewCustomerCheckResponseDTO implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(?string $yzOpenId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -88,7 +88,7 @@ class NewCustomerCheckResponseDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getIsNewCustomer(): ?bool
+    public function getIsNewCustomer(): bool
     {
         return $this->isNewCustomer;
     }
@@ -96,7 +96,7 @@ class NewCustomerCheckResponseDTO implements \JsonSerializable {
     /**
      * @param bool $isNewCustomer
      */
-    public function setIsNewCustomer(?bool $isNewCustomer): void
+    public function setIsNewCustomer(bool $isNewCustomer): void
     {
         $this->isNewCustomer = $isNewCustomer;
     }

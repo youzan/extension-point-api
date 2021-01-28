@@ -34,7 +34,7 @@ class ExtMemberCodeDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBarCode(): ?string
+    public function getBarCode(): string
     {
         return $this->barCode;
     }
@@ -42,7 +42,7 @@ class ExtMemberCodeDTO implements \JsonSerializable {
     /**
      * @param string $barCode
      */
-    public function setBarCode(?string $barCode): void
+    public function setBarCode(string $barCode): void
     {
         $this->barCode = $barCode;
     }
@@ -50,7 +50,7 @@ class ExtMemberCodeDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getQrCode(): ?string
+    public function getQrCode(): string
     {
         return $this->qrCode;
     }
@@ -58,7 +58,7 @@ class ExtMemberCodeDTO implements \JsonSerializable {
     /**
      * @param string $qrCode
      */
-    public function setQrCode(?string $qrCode): void
+    public function setQrCode(string $qrCode): void
     {
         $this->qrCode = $qrCode;
     }
@@ -66,7 +66,7 @@ class ExtMemberCodeDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getEncodeCode(): ?string
+    public function getEncodeCode(): string
     {
         return $this->encodeCode;
     }
@@ -74,7 +74,7 @@ class ExtMemberCodeDTO implements \JsonSerializable {
     /**
      * @param string $encodeCode
      */
-    public function setEncodeCode(?string $encodeCode): void
+    public function setEncodeCode(string $encodeCode): void
     {
         $this->encodeCode = $encodeCode;
     }

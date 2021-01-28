@@ -34,7 +34,7 @@ class PluginHistoryOrderResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBizBillNo(): ?string
+    public function getBizBillNo(): string
     {
         return $this->bizBillNo;
     }
@@ -42,7 +42,7 @@ class PluginHistoryOrderResultDTO implements \JsonSerializable {
     /**
      * @param string $bizBillNo
      */
-    public function setBizBillNo(?string $bizBillNo): void
+    public function setBizBillNo(string $bizBillNo): void
     {
         $this->bizBillNo = $bizBillNo;
     }
@@ -50,7 +50,7 @@ class PluginHistoryOrderResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSourceOrderNo(): ?string
+    public function getSourceOrderNo(): string
     {
         return $this->sourceOrderNo;
     }
@@ -58,7 +58,7 @@ class PluginHistoryOrderResultDTO implements \JsonSerializable {
     /**
      * @param string $sourceOrderNo
      */
-    public function setSourceOrderNo(?string $sourceOrderNo): void
+    public function setSourceOrderNo(string $sourceOrderNo): void
     {
         $this->sourceOrderNo = $sourceOrderNo;
     }
@@ -66,7 +66,7 @@ class PluginHistoryOrderResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOuterNo(): ?string
+    public function getOuterNo(): string
     {
         return $this->outerNo;
     }
@@ -74,7 +74,7 @@ class PluginHistoryOrderResultDTO implements \JsonSerializable {
     /**
      * @param string $outerNo
      */
-    public function setOuterNo(?string $outerNo): void
+    public function setOuterNo(string $outerNo): void
     {
         $this->outerNo = $outerNo;
     }

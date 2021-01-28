@@ -82,7 +82,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUserPhone(): ?string
+    public function getUserPhone(): string
     {
         return $this->userPhone;
     }
@@ -90,7 +90,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @param string $userPhone
      */
-    public function setUserPhone(?string $userPhone): void
+    public function setUserPhone(string $userPhone): void
     {
         $this->userPhone = $userPhone;
     }
@@ -98,7 +98,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardNo(): ?string
+    public function getCardNo(): string
     {
         return $this->cardNo;
     }
@@ -106,7 +106,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @param string $cardNo
      */
-    public function setCardNo(?string $cardNo): void
+    public function setCardNo(string $cardNo): void
     {
         $this->cardNo = $cardNo;
     }
@@ -114,7 +114,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBizType(): ?string
+    public function getBizType(): string
     {
         return $this->bizType;
     }
@@ -122,7 +122,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @param string $bizType
      */
-    public function setBizType(?string $bizType): void
+    public function setBizType(string $bizType): void
     {
         $this->bizType = $bizType;
     }
@@ -130,7 +130,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -138,7 +138,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -146,7 +146,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBeginTradeTime(): ?int
+    public function getBeginTradeTime(): int
     {
         return $this->beginTradeTime;
     }
@@ -154,7 +154,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @param int $beginTradeTime
      */
-    public function setBeginTradeTime(?int $beginTradeTime): void
+    public function setBeginTradeTime(int $beginTradeTime): void
     {
         $this->beginTradeTime = $beginTradeTime;
     }
@@ -162,7 +162,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getEndTradeTime(): ?int
+    public function getEndTradeTime(): int
     {
         return $this->endTradeTime;
     }
@@ -170,7 +170,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @param int $endTradeTime
      */
-    public function setEndTradeTime(?int $endTradeTime): void
+    public function setEndTradeTime(int $endTradeTime): void
     {
         $this->endTradeTime = $endTradeTime;
     }
@@ -178,7 +178,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPage(): ?int
+    public function getPage(): int
     {
         return $this->page;
     }
@@ -186,7 +186,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @param int $page
      */
-    public function setPage(?int $page): void
+    public function setPage(int $page): void
     {
         $this->page = $page;
     }
@@ -194,7 +194,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPageSize(): ?int
+    public function getPageSize(): int
     {
         return $this->pageSize;
     }
@@ -202,7 +202,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @param int $pageSize
      */
-    public function setPageSize(?int $pageSize): void
+    public function setPageSize(int $pageSize): void
     {
         $this->pageSize = $pageSize;
     }
@@ -210,7 +210,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -218,7 +218,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -226,7 +226,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): ?string
+    public function getYzOpenId(): string
     {
         return $this->yzOpenId;
     }
@@ -234,7 +234,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(?string $yzOpenId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -242,7 +242,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRootKdtId(): ?int
+    public function getRootKdtId(): int
     {
         return $this->rootKdtId;
     }
@@ -250,7 +250,7 @@ class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
     /**
      * @param int $rootKdtId
      */
-    public function setRootKdtId(?int $rootKdtId): void
+    public function setRootKdtId(int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
     }

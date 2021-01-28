@@ -34,7 +34,7 @@ class CouponTakeBackRequestExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCouponGroupId(): ?int
+    public function getCouponGroupId(): int
     {
         return $this->couponGroupId;
     }
@@ -42,7 +42,7 @@ class CouponTakeBackRequestExtDTO implements \JsonSerializable {
     /**
      * @param int $couponGroupId
      */
-    public function setCouponGroupId(?int $couponGroupId): void
+    public function setCouponGroupId(int $couponGroupId): void
     {
         $this->couponGroupId = $couponGroupId;
     }
@@ -50,7 +50,7 @@ class CouponTakeBackRequestExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCouponId(): ?int
+    public function getCouponId(): int
     {
         return $this->couponId;
     }
@@ -58,7 +58,7 @@ class CouponTakeBackRequestExtDTO implements \JsonSerializable {
     /**
      * @param int $couponId
      */
-    public function setCouponId(?int $couponId): void
+    public function setCouponId(int $couponId): void
     {
         $this->couponId = $couponId;
     }
@@ -66,7 +66,7 @@ class CouponTakeBackRequestExtDTO implements \JsonSerializable {
     /**
      * @return CustomerIdentityDTO
      */
-    public function getCustomerIdentityDTO(): ?CustomerIdentityDTO
+    public function getCustomerIdentityDTO(): CustomerIdentityDTO
     {
         return $this->customerIdentityDTO;
     }
@@ -74,7 +74,7 @@ class CouponTakeBackRequestExtDTO implements \JsonSerializable {
     /**
      * @param CustomerIdentityDTO $customerIdentityDTO
      */
-    public function setCustomerIdentityDTO(?CustomerIdentityDTO $customerIdentityDTO): void
+    public function setCustomerIdentityDTO(CustomerIdentityDTO $customerIdentityDTO): void
     {
         $this->customerIdentityDTO = $customerIdentityDTO;
     }

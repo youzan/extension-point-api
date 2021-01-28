@@ -46,7 +46,7 @@ class ValueCardExtProductBuyDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProductSkuNo(): ?string
+    public function getProductSkuNo(): string
     {
         return $this->productSkuNo;
     }
@@ -54,7 +54,7 @@ class ValueCardExtProductBuyDTO implements \JsonSerializable {
     /**
      * @param string $productSkuNo
      */
-    public function setProductSkuNo(?string $productSkuNo): void
+    public function setProductSkuNo(string $productSkuNo): void
     {
         $this->productSkuNo = $productSkuNo;
     }
@@ -62,7 +62,7 @@ class ValueCardExtProductBuyDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOriginalPrice(): ?int
+    public function getOriginalPrice(): int
     {
         return $this->originalPrice;
     }
@@ -70,7 +70,7 @@ class ValueCardExtProductBuyDTO implements \JsonSerializable {
     /**
      * @param int $originalPrice
      */
-    public function setOriginalPrice(?int $originalPrice): void
+    public function setOriginalPrice(int $originalPrice): void
     {
         $this->originalPrice = $originalPrice;
     }
@@ -78,7 +78,7 @@ class ValueCardExtProductBuyDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSalePrice(): ?int
+    public function getSalePrice(): int
     {
         return $this->salePrice;
     }
@@ -86,7 +86,7 @@ class ValueCardExtProductBuyDTO implements \JsonSerializable {
     /**
      * @param int $salePrice
      */
-    public function setSalePrice(?int $salePrice): void
+    public function setSalePrice(int $salePrice): void
     {
         $this->salePrice = $salePrice;
     }
@@ -94,7 +94,7 @@ class ValueCardExtProductBuyDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStock(): ?int
+    public function getStock(): int
     {
         return $this->stock;
     }
@@ -102,7 +102,7 @@ class ValueCardExtProductBuyDTO implements \JsonSerializable {
     /**
      * @param int $stock
      */
-    public function setStock(?int $stock): void
+    public function setStock(int $stock): void
     {
         $this->stock = $stock;
     }
@@ -110,7 +110,7 @@ class ValueCardExtProductBuyDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getGiftPacks(): ?array
+    public function getGiftPacks(): array
     {
         return $this->giftPacks;
     }
@@ -118,7 +118,7 @@ class ValueCardExtProductBuyDTO implements \JsonSerializable {
     /**
      * @param array $giftPacks
      */
-    public function setGiftPacks(?array $giftPacks): void
+    public function setGiftPacks(array $giftPacks): void
     {
         $this->giftPacks = $giftPacks;
     }

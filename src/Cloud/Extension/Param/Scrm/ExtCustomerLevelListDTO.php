@@ -22,7 +22,7 @@ class ExtCustomerLevelListDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getExtCustomerLevelDTOList(): ?array
+    public function getExtCustomerLevelDTOList(): array
     {
         return $this->extCustomerLevelDTOList;
     }
@@ -30,7 +30,7 @@ class ExtCustomerLevelListDTO implements \JsonSerializable {
     /**
      * @param array $extCustomerLevelDTOList
      */
-    public function setExtCustomerLevelDTOList(?array $extCustomerLevelDTOList): void
+    public function setExtCustomerLevelDTOList(array $extCustomerLevelDTOList): void
     {
         $this->extCustomerLevelDTOList = $extCustomerLevelDTOList;
     }

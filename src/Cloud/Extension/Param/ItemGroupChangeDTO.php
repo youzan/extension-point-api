@@ -40,7 +40,7 @@ class ItemGroupChangeDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -48,7 +48,7 @@ class ItemGroupChangeDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -56,7 +56,7 @@ class ItemGroupChangeDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAfter(): ?string
+    public function getAfter(): string
     {
         return $this->after;
     }
@@ -64,7 +64,7 @@ class ItemGroupChangeDTO implements \JsonSerializable {
     /**
      * @param string $after
      */
-    public function setAfter(?string $after): void
+    public function setAfter(string $after): void
     {
         $this->after = $after;
     }
@@ -72,7 +72,7 @@ class ItemGroupChangeDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBefore(): ?string
+    public function getBefore(): string
     {
         return $this->before;
     }
@@ -80,7 +80,7 @@ class ItemGroupChangeDTO implements \JsonSerializable {
     /**
      * @param string $before
      */
-    public function setBefore(?string $before): void
+    public function setBefore(string $before): void
     {
         $this->before = $before;
     }
@@ -88,7 +88,7 @@ class ItemGroupChangeDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getEventTypeEnum(): ?string
+    public function getEventTypeEnum(): string
     {
         return $this->eventTypeEnum;
     }
@@ -96,7 +96,7 @@ class ItemGroupChangeDTO implements \JsonSerializable {
     /**
      * @param string $eventTypeEnum
      */
-    public function setEventTypeEnum(?string $eventTypeEnum): void
+    public function setEventTypeEnum(string $eventTypeEnum): void
     {
         $this->eventTypeEnum = $eventTypeEnum;
     }

@@ -83,7 +83,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -91,7 +91,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @param int $id
      */
-    public function setId(?int $id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
@@ -99,7 +99,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getActivityId(): ?int
+    public function getActivityId(): int
     {
         return $this->activityId;
     }
@@ -107,7 +107,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @param int $activityId
      */
-    public function setActivityId(?int $activityId): void
+    public function setActivityId(int $activityId): void
     {
         $this->activityId = $activityId;
     }
@@ -115,7 +115,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getValue(): ?int
+    public function getValue(): int
     {
         return $this->value;
     }
@@ -123,7 +123,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @param int $value
      */
-    public function setValue(?int $value): void
+    public function setValue(int $value): void
     {
         $this->value = $value;
     }
@@ -131,7 +131,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCurrency(): ?string
+    public function getCurrency(): string
     {
         return $this->currency;
     }
@@ -139,7 +139,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @param string $currency
      */
-    public function setCurrency(?string $currency): void
+    public function setCurrency(string $currency): void
     {
         $this->currency = $currency;
     }
@@ -147,7 +147,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPreferentialMode(): ?int
+    public function getPreferentialMode(): int
     {
         return $this->preferentialMode;
     }
@@ -155,7 +155,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @param int $preferentialMode
      */
-    public function setPreferentialMode(?int $preferentialMode): void
+    public function setPreferentialMode(int $preferentialMode): void
     {
         $this->preferentialMode = $preferentialMode;
     }
@@ -163,7 +163,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): ?string
+    public function getYzOpenId(): string
     {
         return $this->yzOpenId;
     }
@@ -171,7 +171,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(?string $yzOpenId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -179,7 +179,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStatus(): ?int
+    public function getStatus(): int
     {
         return $this->status;
     }
@@ -187,7 +187,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @param int $status
      */
-    public function setStatus(?int $status): void
+    public function setStatus(int $status): void
     {
         $this->status = $status;
     }
@@ -195,7 +195,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getValidStartTime(): ?int
+    public function getValidStartTime(): int
     {
         return $this->validStartTime;
     }
@@ -203,7 +203,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @param int $validStartTime
      */
-    public function setValidStartTime(?int $validStartTime): void
+    public function setValidStartTime(int $validStartTime): void
     {
         $this->validStartTime = $validStartTime;
     }
@@ -211,7 +211,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getValidEndTime(): ?int
+    public function getValidEndTime(): int
     {
         return $this->validEndTime;
     }
@@ -219,7 +219,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @param int $validEndTime
      */
-    public function setValidEndTime(?int $validEndTime): void
+    public function setValidEndTime(int $validEndTime): void
     {
         $this->validEndTime = $validEndTime;
     }
@@ -227,7 +227,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getVerifyCode(): ?string
+    public function getVerifyCode(): string
     {
         return $this->verifyCode;
     }
@@ -235,7 +235,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @param string $verifyCode
      */
-    public function setVerifyCode(?string $verifyCode): void
+    public function setVerifyCode(string $verifyCode): void
     {
         $this->verifyCode = $verifyCode;
     }
@@ -243,7 +243,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): ?stdClass
+    public function getExtMap(): stdClass
     {
         return $this->extMap;
     }
@@ -251,7 +251,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     /**
      * @param stdClass $extMap
      */
-    public function setExtMap(?stdClass $extMap): void
+    public function setExtMap(stdClass $extMap): void
     {
         $this->extMap = $extMap;
     }

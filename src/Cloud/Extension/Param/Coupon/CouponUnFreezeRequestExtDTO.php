@@ -22,7 +22,7 @@ class CouponUnFreezeRequestExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCouponId(): ?int
+    public function getCouponId(): int
     {
         return $this->couponId;
     }
@@ -30,7 +30,7 @@ class CouponUnFreezeRequestExtDTO implements \JsonSerializable {
     /**
      * @param int $couponId
      */
-    public function setCouponId(?int $couponId): void
+    public function setCouponId(int $couponId): void
     {
         $this->couponId = $couponId;
     }

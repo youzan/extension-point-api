@@ -70,7 +70,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCurrentPrice(): ?int
+    public function getCurrentPrice(): int
     {
         return $this->currentPrice;
     }
@@ -78,7 +78,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @param int $currentPrice
      */
-    public function setCurrentPrice(?int $currentPrice): void
+    public function setCurrentPrice(int $currentPrice): void
     {
         $this->currentPrice = $currentPrice;
     }
@@ -86,7 +86,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOriginPrice(): ?int
+    public function getOriginPrice(): int
     {
         return $this->originPrice;
     }
@@ -94,7 +94,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @param int $originPrice
      */
-    public function setOriginPrice(?int $originPrice): void
+    public function setOriginPrice(int $originPrice): void
     {
         $this->originPrice = $originPrice;
     }
@@ -102,7 +102,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getOutside(): ?bool
+    public function getOutside(): bool
     {
         return $this->outside;
     }
@@ -110,7 +110,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @param bool $outside
      */
-    public function setOutside(?bool $outside): void
+    public function setOutside(bool $outside): void
     {
         $this->outside = $outside;
     }
@@ -118,7 +118,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -126,7 +126,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @param string $type
      */
-    public function setType(?string $type): void
+    public function setType(string $type): void
     {
         $this->type = $type;
     }
@@ -134,7 +134,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuMap(): ?string
+    public function getSkuMap(): string
     {
         return $this->skuMap;
     }
@@ -142,7 +142,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @param string $skuMap
      */
-    public function setSkuMap(?string $skuMap): void
+    public function setSkuMap(string $skuMap): void
     {
         $this->skuMap = $skuMap;
     }
@@ -150,7 +150,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuCode(): ?string
+    public function getSkuCode(): string
     {
         return $this->skuCode;
     }
@@ -158,7 +158,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @param string $skuCode
      */
-    public function setSkuCode(?string $skuCode): void
+    public function setSkuCode(string $skuCode): void
     {
         $this->skuCode = $skuCode;
     }
@@ -166,7 +166,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getImageUrl(): ?string
+    public function getImageUrl(): string
     {
         return $this->imageUrl;
     }
@@ -174,7 +174,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @param string $imageUrl
      */
-    public function setImageUrl(?string $imageUrl): void
+    public function setImageUrl(string $imageUrl): void
     {
         $this->imageUrl = $imageUrl;
     }
@@ -182,7 +182,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -190,7 +190,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @param string $name
      */
-    public function setName(?string $name): void
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
@@ -198,7 +198,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @return SkuCompositeId
      */
-    public function getSkuCompositeId(): ?SkuCompositeId
+    public function getSkuCompositeId(): SkuCompositeId
     {
         return $this->skuCompositeId;
     }
@@ -206,7 +206,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @param SkuCompositeId $skuCompositeId
      */
-    public function setSkuCompositeId(?SkuCompositeId $skuCompositeId): void
+    public function setSkuCompositeId(SkuCompositeId $skuCompositeId): void
     {
         $this->skuCompositeId = $skuCompositeId;
     }

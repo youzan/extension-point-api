@@ -40,7 +40,7 @@ class BizTestRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRequestId(): ?int
+    public function getRequestId(): int
     {
         return $this->requestId;
     }
@@ -48,7 +48,7 @@ class BizTestRequestDTO implements \JsonSerializable {
     /**
      * @param int $requestId
      */
-    public function setRequestId(?int $requestId): void
+    public function setRequestId(int $requestId): void
     {
         $this->requestId = $requestId;
     }
@@ -56,7 +56,7 @@ class BizTestRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
@@ -64,7 +64,7 @@ class BizTestRequestDTO implements \JsonSerializable {
     /**
      * @param string $content
      */
-    public function setContent(?string $content): void
+    public function setContent(string $content): void
     {
         $this->content = $content;
     }
@@ -72,7 +72,7 @@ class BizTestRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMessage(): ?string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -80,7 +80,7 @@ class BizTestRequestDTO implements \JsonSerializable {
     /**
      * @param string $message
      */
-    public function setMessage(?string $message): void
+    public function setMessage(string $message): void
     {
         $this->message = $message;
     }
@@ -88,7 +88,7 @@ class BizTestRequestDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): ?stdClass
+    public function getExtMap(): stdClass
     {
         return $this->extMap;
     }
@@ -96,7 +96,7 @@ class BizTestRequestDTO implements \JsonSerializable {
     /**
      * @param stdClass $extMap
      */
-    public function setExtMap(?stdClass $extMap): void
+    public function setExtMap(stdClass $extMap): void
     {
         $this->extMap = $extMap;
     }

@@ -34,7 +34,7 @@ class RefundableAmountCalcResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -42,7 +42,7 @@ class RefundableAmountCalcResponseDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -50,7 +50,7 @@ class RefundableAmountCalcResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRefundableAmt(): ?int
+    public function getRefundableAmt(): int
     {
         return $this->refundableAmt;
     }
@@ -58,7 +58,7 @@ class RefundableAmountCalcResponseDTO implements \JsonSerializable {
     /**
      * @param int $refundableAmt
      */
-    public function setRefundableAmt(?int $refundableAmt): void
+    public function setRefundableAmt(int $refundableAmt): void
     {
         $this->refundableAmt = $refundableAmt;
     }
@@ -66,7 +66,7 @@ class RefundableAmountCalcResponseDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getRefundableItemList(): ?array
+    public function getRefundableItemList(): array
     {
         return $this->refundableItemList;
     }
@@ -74,7 +74,7 @@ class RefundableAmountCalcResponseDTO implements \JsonSerializable {
     /**
      * @param array $refundableItemList
      */
-    public function setRefundableItemList(?array $refundableItemList): void
+    public function setRefundableItemList(array $refundableItemList): void
     {
         $this->refundableItemList = $refundableItemList;
     }

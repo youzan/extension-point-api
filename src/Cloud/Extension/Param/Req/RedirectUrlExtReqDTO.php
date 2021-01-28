@@ -40,7 +40,7 @@ class RedirectUrlExtReqDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -48,7 +48,7 @@ class RedirectUrlExtReqDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -56,7 +56,7 @@ class RedirectUrlExtReqDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -64,7 +64,7 @@ class RedirectUrlExtReqDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -72,7 +72,7 @@ class RedirectUrlExtReqDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderType(): ?int
+    public function getOrderType(): int
     {
         return $this->orderType;
     }
@@ -80,7 +80,7 @@ class RedirectUrlExtReqDTO implements \JsonSerializable {
     /**
      * @param int $orderType
      */
-    public function setOrderType(?int $orderType): void
+    public function setOrderType(int $orderType): void
     {
         $this->orderType = $orderType;
     }
@@ -88,7 +88,7 @@ class RedirectUrlExtReqDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPayWay(): ?int
+    public function getPayWay(): int
     {
         return $this->payWay;
     }
@@ -96,7 +96,7 @@ class RedirectUrlExtReqDTO implements \JsonSerializable {
     /**
      * @param int $payWay
      */
-    public function setPayWay(?int $payWay): void
+    public function setPayWay(int $payWay): void
     {
         $this->payWay = $payWay;
     }

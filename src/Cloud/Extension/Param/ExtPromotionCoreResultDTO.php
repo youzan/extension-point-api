@@ -34,7 +34,7 @@ class ExtPromotionCoreResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getReason(): ?string
+    public function getReason(): string
     {
         return $this->reason;
     }
@@ -42,7 +42,7 @@ class ExtPromotionCoreResultDTO implements \JsonSerializable {
     /**
      * @param string $reason
      */
-    public function setReason(?string $reason): void
+    public function setReason(string $reason): void
     {
         $this->reason = $reason;
     }
@@ -50,7 +50,7 @@ class ExtPromotionCoreResultDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDecrease(): ?int
+    public function getDecrease(): int
     {
         return $this->decrease;
     }
@@ -58,7 +58,7 @@ class ExtPromotionCoreResultDTO implements \JsonSerializable {
     /**
      * @param int $decrease
      */
-    public function setDecrease(?int $decrease): void
+    public function setDecrease(int $decrease): void
     {
         $this->decrease = $decrease;
     }
@@ -66,7 +66,7 @@ class ExtPromotionCoreResultDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtension(): ?stdClass
+    public function getExtension(): stdClass
     {
         return $this->extension;
     }
@@ -74,7 +74,7 @@ class ExtPromotionCoreResultDTO implements \JsonSerializable {
     /**
      * @param stdClass $extension
      */
-    public function setExtension(?stdClass $extension): void
+    public function setExtension(stdClass $extension): void
     {
         $this->extension = $extension;
     }

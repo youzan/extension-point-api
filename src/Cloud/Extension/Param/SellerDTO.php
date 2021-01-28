@@ -52,7 +52,7 @@ class SellerDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTeamType(): ?string
+    public function getTeamType(): string
     {
         return $this->teamType;
     }
@@ -60,7 +60,7 @@ class SellerDTO implements \JsonSerializable {
     /**
      * @param string $teamType
      */
-    public function setTeamType(?string $teamType): void
+    public function setTeamType(string $teamType): void
     {
         $this->teamType = $teamType;
     }
@@ -68,7 +68,7 @@ class SellerDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getShopType(): ?string
+    public function getShopType(): string
     {
         return $this->shopType;
     }
@@ -76,7 +76,7 @@ class SellerDTO implements \JsonSerializable {
     /**
      * @param string $shopType
      */
-    public function setShopType(?string $shopType): void
+    public function setShopType(string $shopType): void
     {
         $this->shopType = $shopType;
     }
@@ -84,7 +84,7 @@ class SellerDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getShopName(): ?string
+    public function getShopName(): string
     {
         return $this->shopName;
     }
@@ -92,7 +92,7 @@ class SellerDTO implements \JsonSerializable {
     /**
      * @param string $shopName
      */
-    public function setShopName(?string $shopName): void
+    public function setShopName(string $shopName): void
     {
         $this->shopName = $shopName;
     }
@@ -100,7 +100,7 @@ class SellerDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getShopTel(): ?string
+    public function getShopTel(): string
     {
         return $this->shopTel;
     }
@@ -108,7 +108,7 @@ class SellerDTO implements \JsonSerializable {
     /**
      * @param string $shopTel
      */
-    public function setShopTel(?string $shopTel): void
+    public function setShopTel(string $shopTel): void
     {
         $this->shopTel = $shopTel;
     }
@@ -116,7 +116,7 @@ class SellerDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getShopId(): ?int
+    public function getShopId(): int
     {
         return $this->shopId;
     }
@@ -124,7 +124,7 @@ class SellerDTO implements \JsonSerializable {
     /**
      * @param int $shopId
      */
-    public function setShopId(?int $shopId): void
+    public function setShopId(int $shopId): void
     {
         $this->shopId = $shopId;
     }
@@ -132,7 +132,7 @@ class SellerDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -140,7 +140,7 @@ class SellerDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

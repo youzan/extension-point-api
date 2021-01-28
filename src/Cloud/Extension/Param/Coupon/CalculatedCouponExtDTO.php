@@ -35,7 +35,7 @@ class CalculatedCouponExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -43,7 +43,7 @@ class CalculatedCouponExtDTO implements \JsonSerializable {
     /**
      * @param int $id
      */
-    public function setId(?int $id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
@@ -51,7 +51,7 @@ class CalculatedCouponExtDTO implements \JsonSerializable {
     /**
      * @return CouponGroupExtDTO
      */
-    public function getCouponGroupExtDTO(): ?CouponGroupExtDTO
+    public function getCouponGroupExtDTO(): CouponGroupExtDTO
     {
         return $this->couponGroupExtDTO;
     }
@@ -59,7 +59,7 @@ class CalculatedCouponExtDTO implements \JsonSerializable {
     /**
      * @param CouponGroupExtDTO $couponGroupExtDTO
      */
-    public function setCouponGroupExtDTO(?CouponGroupExtDTO $couponGroupExtDTO): void
+    public function setCouponGroupExtDTO(CouponGroupExtDTO $couponGroupExtDTO): void
     {
         $this->couponGroupExtDTO = $couponGroupExtDTO;
     }
@@ -67,7 +67,7 @@ class CalculatedCouponExtDTO implements \JsonSerializable {
     /**
      * @return CouponCalculatedExtDTO
      */
-    public function getCalculatedExtDTO(): ?CouponCalculatedExtDTO
+    public function getCalculatedExtDTO(): CouponCalculatedExtDTO
     {
         return $this->calculatedExtDTO;
     }
@@ -75,7 +75,7 @@ class CalculatedCouponExtDTO implements \JsonSerializable {
     /**
      * @param CouponCalculatedExtDTO $calculatedExtDTO
      */
-    public function setCalculatedExtDTO(?CouponCalculatedExtDTO $calculatedExtDTO): void
+    public function setCalculatedExtDTO(CouponCalculatedExtDTO $calculatedExtDTO): void
     {
         $this->calculatedExtDTO = $calculatedExtDTO;
     }

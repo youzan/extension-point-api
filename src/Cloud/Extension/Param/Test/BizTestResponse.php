@@ -28,7 +28,7 @@ class BizTestResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
@@ -36,7 +36,7 @@ class BizTestResponse implements \JsonSerializable {
     /**
      * @param string $content
      */
-    public function setContent(?string $content): void
+    public function setContent(string $content): void
     {
         $this->content = $content;
     }
@@ -44,7 +44,7 @@ class BizTestResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRequestId(): ?int
+    public function getRequestId(): int
     {
         return $this->requestId;
     }
@@ -52,7 +52,7 @@ class BizTestResponse implements \JsonSerializable {
     /**
      * @param int $requestId
      */
-    public function setRequestId(?int $requestId): void
+    public function setRequestId(int $requestId): void
     {
         $this->requestId = $requestId;
     }

@@ -34,7 +34,7 @@ class TicketSkuDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSkuId(): ?int
+    public function getSkuId(): int
     {
         return $this->skuId;
     }
@@ -42,7 +42,7 @@ class TicketSkuDTO implements \JsonSerializable {
     /**
      * @param int $skuId
      */
-    public function setSkuId(?int $skuId): void
+    public function setSkuId(int $skuId): void
     {
         $this->skuId = $skuId;
     }
@@ -50,7 +50,7 @@ class TicketSkuDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGoodsId(): ?int
+    public function getGoodsId(): int
     {
         return $this->goodsId;
     }
@@ -58,7 +58,7 @@ class TicketSkuDTO implements \JsonSerializable {
     /**
      * @param int $goodsId
      */
-    public function setGoodsId(?int $goodsId): void
+    public function setGoodsId(int $goodsId): void
     {
         $this->goodsId = $goodsId;
     }
@@ -66,7 +66,7 @@ class TicketSkuDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuCode(): ?string
+    public function getSkuCode(): string
     {
         return $this->skuCode;
     }
@@ -74,7 +74,7 @@ class TicketSkuDTO implements \JsonSerializable {
     /**
      * @param string $skuCode
      */
-    public function setSkuCode(?string $skuCode): void
+    public function setSkuCode(string $skuCode): void
     {
         $this->skuCode = $skuCode;
     }

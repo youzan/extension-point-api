@@ -22,7 +22,7 @@ class TradeGroupDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getTradeItemDTOGroup(): ?array
+    public function getTradeItemDTOGroup(): array
     {
         return $this->tradeItemDTOGroup;
     }
@@ -30,7 +30,7 @@ class TradeGroupDTO implements \JsonSerializable {
     /**
      * @param array $tradeItemDTOGroup
      */
-    public function setTradeItemDTOGroup(?array $tradeItemDTOGroup): void
+    public function setTradeItemDTOGroup(array $tradeItemDTOGroup): void
     {
         $this->tradeItemDTOGroup = $tradeItemDTOGroup;
     }

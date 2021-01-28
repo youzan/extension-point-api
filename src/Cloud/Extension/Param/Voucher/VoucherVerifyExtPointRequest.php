@@ -64,7 +64,7 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -72,7 +72,7 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     /**
      * @param int $id
      */
-    public function setId(?int $id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
@@ -80,7 +80,7 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): ?string
+    public function getYzOpenId(): string
     {
         return $this->yzOpenId;
     }
@@ -88,7 +88,7 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(?string $yzOpenId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -96,7 +96,7 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -104,7 +104,7 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -112,7 +112,7 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderSource(): ?string
+    public function getOrderSource(): string
     {
         return $this->orderSource;
     }
@@ -120,7 +120,7 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     /**
      * @param string $orderSource
      */
-    public function setOrderSource(?string $orderSource): void
+    public function setOrderSource(string $orderSource): void
     {
         $this->orderSource = $orderSource;
     }
@@ -128,7 +128,7 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersionNo(): ?int
+    public function getVersionNo(): int
     {
         return $this->versionNo;
     }
@@ -136,7 +136,7 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     /**
      * @param int $versionNo
      */
-    public function setVersionNo(?int $versionNo): void
+    public function setVersionNo(int $versionNo): void
     {
         $this->versionNo = $versionNo;
     }
@@ -144,7 +144,7 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): ?stdClass
+    public function getExtMap(): stdClass
     {
         return $this->extMap;
     }
@@ -152,7 +152,7 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     /**
      * @param stdClass $extMap
      */
-    public function setExtMap(?stdClass $extMap): void
+    public function setExtMap(stdClass $extMap): void
     {
         $this->extMap = $extMap;
     }
@@ -160,7 +160,7 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -168,7 +168,7 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -176,7 +176,7 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRootKdtId(): ?int
+    public function getRootKdtId(): int
     {
         return $this->rootKdtId;
     }
@@ -184,7 +184,7 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     /**
      * @param int $rootKdtId
      */
-    public function setRootKdtId(?int $rootKdtId): void
+    public function setRootKdtId(int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
     }

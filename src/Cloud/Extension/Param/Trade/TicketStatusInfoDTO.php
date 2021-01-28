@@ -28,7 +28,7 @@ class TicketStatusInfoDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTicketNo(): ?string
+    public function getTicketNo(): string
     {
         return $this->ticketNo;
     }
@@ -36,7 +36,7 @@ class TicketStatusInfoDTO implements \JsonSerializable {
     /**
      * @param string $ticketNo
      */
-    public function setTicketNo(?string $ticketNo): void
+    public function setTicketNo(string $ticketNo): void
     {
         $this->ticketNo = $ticketNo;
     }
@@ -44,7 +44,7 @@ class TicketStatusInfoDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVerifyState(): ?int
+    public function getVerifyState(): int
     {
         return $this->verifyState;
     }
@@ -52,7 +52,7 @@ class TicketStatusInfoDTO implements \JsonSerializable {
     /**
      * @param int $verifyState
      */
-    public function setVerifyState(?int $verifyState): void
+    public function setVerifyState(int $verifyState): void
     {
         $this->verifyState = $verifyState;
     }

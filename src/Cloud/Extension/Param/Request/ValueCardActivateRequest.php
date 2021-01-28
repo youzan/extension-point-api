@@ -40,7 +40,7 @@ class ValueCardActivateRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): ?string
+    public function getYzOpenId(): string
     {
         return $this->yzOpenId;
     }
@@ -48,7 +48,7 @@ class ValueCardActivateRequest implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(?string $yzOpenId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -56,7 +56,7 @@ class ValueCardActivateRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardNo(): ?string
+    public function getCardNo(): string
     {
         return $this->cardNo;
     }
@@ -64,7 +64,7 @@ class ValueCardActivateRequest implements \JsonSerializable {
     /**
      * @param string $cardNo
      */
-    public function setCardNo(?string $cardNo): void
+    public function setCardNo(string $cardNo): void
     {
         $this->cardNo = $cardNo;
     }
@@ -72,7 +72,7 @@ class ValueCardActivateRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -80,7 +80,7 @@ class ValueCardActivateRequest implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -88,7 +88,7 @@ class ValueCardActivateRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRootKdtId(): ?int
+    public function getRootKdtId(): int
     {
         return $this->rootKdtId;
     }
@@ -96,7 +96,7 @@ class ValueCardActivateRequest implements \JsonSerializable {
     /**
      * @param int $rootKdtId
      */
-    public function setRootKdtId(?int $rootKdtId): void
+    public function setRootKdtId(int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
     }

@@ -52,7 +52,7 @@ class SelfVerifyValidateRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -60,7 +60,7 @@ class SelfVerifyValidateRequestDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -68,7 +68,7 @@ class SelfVerifyValidateRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -76,7 +76,7 @@ class SelfVerifyValidateRequestDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -84,7 +84,7 @@ class SelfVerifyValidateRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNodeId(): ?int
+    public function getNodeId(): int
     {
         return $this->nodeId;
     }
@@ -92,7 +92,7 @@ class SelfVerifyValidateRequestDTO implements \JsonSerializable {
     /**
      * @param int $nodeId
      */
-    public function setNodeId(?int $nodeId): void
+    public function setNodeId(int $nodeId): void
     {
         $this->nodeId = $nodeId;
     }
@@ -100,7 +100,7 @@ class SelfVerifyValidateRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOperatorId(): ?int
+    public function getOperatorId(): int
     {
         return $this->operatorId;
     }
@@ -108,7 +108,7 @@ class SelfVerifyValidateRequestDTO implements \JsonSerializable {
     /**
      * @param int $operatorId
      */
-    public function setOperatorId(?int $operatorId): void
+    public function setOperatorId(int $operatorId): void
     {
         $this->operatorId = $operatorId;
     }
@@ -116,7 +116,7 @@ class SelfVerifyValidateRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSelfFetchCode(): ?string
+    public function getSelfFetchCode(): string
     {
         return $this->selfFetchCode;
     }
@@ -124,7 +124,7 @@ class SelfVerifyValidateRequestDTO implements \JsonSerializable {
     /**
      * @param string $selfFetchCode
      */
-    public function setSelfFetchCode(?string $selfFetchCode): void
+    public function setSelfFetchCode(string $selfFetchCode): void
     {
         $this->selfFetchCode = $selfFetchCode;
     }
@@ -132,7 +132,7 @@ class SelfVerifyValidateRequestDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtension(): ?stdClass
+    public function getExtension(): stdClass
     {
         return $this->extension;
     }
@@ -140,7 +140,7 @@ class SelfVerifyValidateRequestDTO implements \JsonSerializable {
     /**
      * @param stdClass $extension
      */
-    public function setExtension(?stdClass $extension): void
+    public function setExtension(stdClass $extension): void
     {
         $this->extension = $extension;
     }

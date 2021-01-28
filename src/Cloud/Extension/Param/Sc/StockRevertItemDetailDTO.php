@@ -58,7 +58,7 @@ class StockRevertItemDetailDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSubOrderId(): ?int
+    public function getSubOrderId(): int
     {
         return $this->subOrderId;
     }
@@ -66,7 +66,7 @@ class StockRevertItemDetailDTO implements \JsonSerializable {
     /**
      * @param int $subOrderId
      */
-    public function setSubOrderId(?int $subOrderId): void
+    public function setSubOrderId(int $subOrderId): void
     {
         $this->subOrderId = $subOrderId;
     }
@@ -74,7 +74,7 @@ class StockRevertItemDetailDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemId(): ?int
+    public function getItemId(): int
     {
         return $this->itemId;
     }
@@ -82,7 +82,7 @@ class StockRevertItemDetailDTO implements \JsonSerializable {
     /**
      * @param int $itemId
      */
-    public function setItemId(?int $itemId): void
+    public function setItemId(int $itemId): void
     {
         $this->itemId = $itemId;
     }
@@ -90,7 +90,7 @@ class StockRevertItemDetailDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSkuId(): ?int
+    public function getSkuId(): int
     {
         return $this->skuId;
     }
@@ -98,7 +98,7 @@ class StockRevertItemDetailDTO implements \JsonSerializable {
     /**
      * @param int $skuId
      */
-    public function setSkuId(?int $skuId): void
+    public function setSkuId(int $skuId): void
     {
         $this->skuId = $skuId;
     }
@@ -106,7 +106,7 @@ class StockRevertItemDetailDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuCode(): ?string
+    public function getSkuCode(): string
     {
         return $this->skuCode;
     }
@@ -114,7 +114,7 @@ class StockRevertItemDetailDTO implements \JsonSerializable {
     /**
      * @param string $skuCode
      */
-    public function setSkuCode(?string $skuCode): void
+    public function setSkuCode(string $skuCode): void
     {
         $this->skuCode = $skuCode;
     }
@@ -122,7 +122,7 @@ class StockRevertItemDetailDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNum(): ?int
+    public function getNum(): int
     {
         return $this->num;
     }
@@ -130,7 +130,7 @@ class StockRevertItemDetailDTO implements \JsonSerializable {
     /**
      * @param int $num
      */
-    public function setNum(?int $num): void
+    public function setNum(int $num): void
     {
         $this->num = $num;
     }
@@ -138,7 +138,7 @@ class StockRevertItemDetailDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDeductType(): ?int
+    public function getDeductType(): int
     {
         return $this->deductType;
     }
@@ -146,7 +146,7 @@ class StockRevertItemDetailDTO implements \JsonSerializable {
     /**
      * @param int $deductType
      */
-    public function setDeductType(?int $deductType): void
+    public function setDeductType(int $deductType): void
     {
         $this->deductType = $deductType;
     }
@@ -154,7 +154,7 @@ class StockRevertItemDetailDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDeductScene(): ?int
+    public function getDeductScene(): int
     {
         return $this->deductScene;
     }
@@ -162,7 +162,7 @@ class StockRevertItemDetailDTO implements \JsonSerializable {
     /**
      * @param int $deductScene
      */
-    public function setDeductScene(?int $deductScene): void
+    public function setDeductScene(int $deductScene): void
     {
         $this->deductScene = $deductScene;
     }

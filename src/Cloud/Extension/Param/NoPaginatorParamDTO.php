@@ -22,7 +22,7 @@ class NoPaginatorParamDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getAuthMap(): ?stdClass
+    public function getAuthMap(): stdClass
     {
         return $this->authMap;
     }
@@ -30,7 +30,7 @@ class NoPaginatorParamDTO implements \JsonSerializable {
     /**
      * @param stdClass $authMap
      */
-    public function setAuthMap(?stdClass $authMap): void
+    public function setAuthMap(stdClass $authMap): void
     {
         $this->authMap = $authMap;
     }

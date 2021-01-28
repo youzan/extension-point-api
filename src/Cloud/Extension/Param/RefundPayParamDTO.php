@@ -64,7 +64,7 @@ class RefundPayParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundNo(): ?string
+    public function getRefundNo(): string
     {
         return $this->refundNo;
     }
@@ -72,7 +72,7 @@ class RefundPayParamDTO implements \JsonSerializable {
     /**
      * @param string $refundNo
      */
-    public function setRefundNo(?string $refundNo): void
+    public function setRefundNo(string $refundNo): void
     {
         $this->refundNo = $refundNo;
     }
@@ -80,7 +80,7 @@ class RefundPayParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getNotifyUrl(): ?string
+    public function getNotifyUrl(): string
     {
         return $this->notifyUrl;
     }
@@ -88,7 +88,7 @@ class RefundPayParamDTO implements \JsonSerializable {
     /**
      * @param string $notifyUrl
      */
-    public function setNotifyUrl(?string $notifyUrl): void
+    public function setNotifyUrl(string $notifyUrl): void
     {
         $this->notifyUrl = $notifyUrl;
     }
@@ -96,7 +96,7 @@ class RefundPayParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundReason(): ?string
+    public function getRefundReason(): string
     {
         return $this->refundReason;
     }
@@ -104,7 +104,7 @@ class RefundPayParamDTO implements \JsonSerializable {
     /**
      * @param string $refundReason
      */
-    public function setRefundReason(?string $refundReason): void
+    public function setRefundReason(string $refundReason): void
     {
         $this->refundReason = $refundReason;
     }
@@ -112,7 +112,7 @@ class RefundPayParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRefundAmount(): ?int
+    public function getRefundAmount(): int
     {
         return $this->refundAmount;
     }
@@ -120,7 +120,7 @@ class RefundPayParamDTO implements \JsonSerializable {
     /**
      * @param int $refundAmount
      */
-    public function setRefundAmount(?int $refundAmount): void
+    public function setRefundAmount(int $refundAmount): void
     {
         $this->refundAmount = $refundAmount;
     }
@@ -128,7 +128,7 @@ class RefundPayParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPayId(): ?string
+    public function getPayId(): string
     {
         return $this->payId;
     }
@@ -136,7 +136,7 @@ class RefundPayParamDTO implements \JsonSerializable {
     /**
      * @param string $payId
      */
-    public function setPayId(?string $payId): void
+    public function setPayId(string $payId): void
     {
         $this->payId = $payId;
     }
@@ -144,7 +144,7 @@ class RefundPayParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -152,7 +152,7 @@ class RefundPayParamDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -160,7 +160,7 @@ class RefundPayParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -168,7 +168,7 @@ class RefundPayParamDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -176,7 +176,7 @@ class RefundPayParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundId(): ?string
+    public function getRefundId(): string
     {
         return $this->refundId;
     }
@@ -184,7 +184,7 @@ class RefundPayParamDTO implements \JsonSerializable {
     /**
      * @param string $refundId
      */
-    public function setRefundId(?string $refundId): void
+    public function setRefundId(string $refundId): void
     {
         $this->refundId = $refundId;
     }

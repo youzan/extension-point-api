@@ -34,7 +34,7 @@ class CouponCalculatedExtDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getIsAvailable(): ?bool
+    public function getIsAvailable(): bool
     {
         return $this->isAvailable;
     }
@@ -42,7 +42,7 @@ class CouponCalculatedExtDTO implements \JsonSerializable {
     /**
      * @param bool $isAvailable
      */
-    public function setIsAvailable(?bool $isAvailable): void
+    public function setIsAvailable(bool $isAvailable): void
     {
         $this->isAvailable = $isAvailable;
     }
@@ -50,7 +50,7 @@ class CouponCalculatedExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDiscountAmount(): ?int
+    public function getDiscountAmount(): int
     {
         return $this->discountAmount;
     }
@@ -58,7 +58,7 @@ class CouponCalculatedExtDTO implements \JsonSerializable {
     /**
      * @param int $discountAmount
      */
-    public function setDiscountAmount(?int $discountAmount): void
+    public function setDiscountAmount(int $discountAmount): void
     {
         $this->discountAmount = $discountAmount;
     }
@@ -66,7 +66,7 @@ class CouponCalculatedExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUnavailableReason(): ?string
+    public function getUnavailableReason(): string
     {
         return $this->unavailableReason;
     }
@@ -74,7 +74,7 @@ class CouponCalculatedExtDTO implements \JsonSerializable {
     /**
      * @param string $unavailableReason
      */
-    public function setUnavailableReason(?string $unavailableReason): void
+    public function setUnavailableReason(string $unavailableReason): void
     {
         $this->unavailableReason = $unavailableReason;
     }

@@ -53,7 +53,7 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -61,7 +61,7 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
     /**
      * @param string $name
      */
-    public function setName(?string $name): void
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
@@ -69,7 +69,7 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGender(): ?int
+    public function getGender(): int
     {
         return $this->gender;
     }
@@ -77,7 +77,7 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
     /**
      * @param int $gender
      */
-    public function setGender(?int $gender): void
+    public function setGender(int $gender): void
     {
         $this->gender = $gender;
     }
@@ -85,7 +85,7 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBirthday(): ?string
+    public function getBirthday(): string
     {
         return $this->birthday;
     }
@@ -93,7 +93,7 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
     /**
      * @param string $birthday
      */
-    public function setBirthday(?string $birthday): void
+    public function setBirthday(string $birthday): void
     {
         $this->birthday = $birthday;
     }
@@ -101,7 +101,7 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
     /**
      * @return ContactAddressModifyDTO
      */
-    public function getContactAddressModifyDTO(): ?ContactAddressModifyDTO
+    public function getContactAddressModifyDTO(): ContactAddressModifyDTO
     {
         return $this->contactAddressModifyDTO;
     }
@@ -109,7 +109,7 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
     /**
      * @param ContactAddressModifyDTO $contactAddressModifyDTO
      */
-    public function setContactAddressModifyDTO(?ContactAddressModifyDTO $contactAddressModifyDTO): void
+    public function setContactAddressModifyDTO(ContactAddressModifyDTO $contactAddressModifyDTO): void
     {
         $this->contactAddressModifyDTO = $contactAddressModifyDTO;
     }
@@ -117,7 +117,7 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getEmail(): ?string
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -125,7 +125,7 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
     /**
      * @param string $email
      */
-    public function setEmail(?string $email): void
+    public function setEmail(string $email): void
     {
         $this->email = $email;
     }
@@ -133,7 +133,7 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getAttributeList(): ?array
+    public function getAttributeList(): array
     {
         return $this->attributeList;
     }
@@ -141,7 +141,7 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
     /**
      * @param array $attributeList
      */
-    public function setAttributeList(?array $attributeList): void
+    public function setAttributeList(array $attributeList): void
     {
         $this->attributeList = $attributeList;
     }

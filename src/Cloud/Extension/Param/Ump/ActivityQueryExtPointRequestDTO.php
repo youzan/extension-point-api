@@ -34,7 +34,7 @@ class ActivityQueryExtPointRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getActivityId(): ?int
+    public function getActivityId(): int
     {
         return $this->activityId;
     }
@@ -42,7 +42,7 @@ class ActivityQueryExtPointRequestDTO implements \JsonSerializable {
     /**
      * @param int $activityId
      */
-    public function setActivityId(?int $activityId): void
+    public function setActivityId(int $activityId): void
     {
         $this->activityId = $activityId;
     }
@@ -50,7 +50,7 @@ class ActivityQueryExtPointRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersionNo(): ?int
+    public function getVersionNo(): int
     {
         return $this->versionNo;
     }
@@ -58,7 +58,7 @@ class ActivityQueryExtPointRequestDTO implements \JsonSerializable {
     /**
      * @param int $versionNo
      */
-    public function setVersionNo(?int $versionNo): void
+    public function setVersionNo(int $versionNo): void
     {
         $this->versionNo = $versionNo;
     }
@@ -66,7 +66,7 @@ class ActivityQueryExtPointRequestDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): ?stdClass
+    public function getExtMap(): stdClass
     {
         return $this->extMap;
     }
@@ -74,7 +74,7 @@ class ActivityQueryExtPointRequestDTO implements \JsonSerializable {
     /**
      * @param stdClass $extMap
      */
-    public function setExtMap(?stdClass $extMap): void
+    public function setExtMap(stdClass $extMap): void
     {
         $this->extMap = $extMap;
     }

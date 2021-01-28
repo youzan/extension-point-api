@@ -100,7 +100,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderOriginalId(): ?string
+    public function getOrderOriginalId(): string
     {
         return $this->orderOriginalId;
     }
@@ -108,7 +108,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @param string $orderOriginalId
      */
-    public function setOrderOriginalId(?string $orderOriginalId): void
+    public function setOrderOriginalId(string $orderOriginalId): void
     {
         $this->orderOriginalId = $orderOriginalId;
     }
@@ -116,7 +116,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderStatus(): ?int
+    public function getOrderStatus(): int
     {
         return $this->orderStatus;
     }
@@ -124,7 +124,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @param int $orderStatus
      */
-    public function setOrderStatus(?int $orderStatus): void
+    public function setOrderStatus(int $orderStatus): void
     {
         $this->orderStatus = $orderStatus;
     }
@@ -132,7 +132,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTimeStatusUpdate(): ?int
+    public function getTimeStatusUpdate(): int
     {
         return $this->timeStatusUpdate;
     }
@@ -140,7 +140,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @param int $timeStatusUpdate
      */
-    public function setTimeStatusUpdate(?int $timeStatusUpdate): void
+    public function setTimeStatusUpdate(int $timeStatusUpdate): void
     {
         $this->timeStatusUpdate = $timeStatusUpdate;
     }
@@ -148,7 +148,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAbnormalReason(): ?string
+    public function getAbnormalReason(): string
     {
         return $this->abnormalReason;
     }
@@ -156,7 +156,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @param string $abnormalReason
      */
-    public function setAbnormalReason(?string $abnormalReason): void
+    public function setAbnormalReason(string $abnormalReason): void
     {
         $this->abnormalReason = $abnormalReason;
     }
@@ -164,7 +164,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRiderCode(): ?string
+    public function getRiderCode(): string
     {
         return $this->riderCode;
     }
@@ -172,7 +172,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @param string $riderCode
      */
-    public function setRiderCode(?string $riderCode): void
+    public function setRiderCode(string $riderCode): void
     {
         $this->riderCode = $riderCode;
     }
@@ -180,7 +180,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRiderName(): ?string
+    public function getRiderName(): string
     {
         return $this->riderName;
     }
@@ -188,7 +188,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @param string $riderName
      */
-    public function setRiderName(?string $riderName): void
+    public function setRiderName(string $riderName): void
     {
         $this->riderName = $riderName;
     }
@@ -196,7 +196,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRiderPhone(): ?string
+    public function getRiderPhone(): string
     {
         return $this->riderPhone;
     }
@@ -204,7 +204,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @param string $riderPhone
      */
-    public function setRiderPhone(?string $riderPhone): void
+    public function setRiderPhone(string $riderPhone): void
     {
         $this->riderPhone = $riderPhone;
     }
@@ -212,7 +212,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRiderLng(): ?string
+    public function getRiderLng(): string
     {
         return $this->riderLng;
     }
@@ -220,7 +220,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @param string $riderLng
      */
-    public function setRiderLng(?string $riderLng): void
+    public function setRiderLng(string $riderLng): void
     {
         $this->riderLng = $riderLng;
     }
@@ -228,7 +228,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRiderLat(): ?string
+    public function getRiderLat(): string
     {
         return $this->riderLat;
     }
@@ -236,7 +236,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @param string $riderLat
      */
-    public function setRiderLat(?string $riderLat): void
+    public function setRiderLat(string $riderLat): void
     {
         $this->riderLat = $riderLat;
     }
@@ -244,7 +244,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getLogisticInfo(): ?array
+    public function getLogisticInfo(): array
     {
         return $this->logisticInfo;
     }
@@ -252,7 +252,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @param array $logisticInfo
      */
-    public function setLogisticInfo(?array $logisticInfo): void
+    public function setLogisticInfo(array $logisticInfo): void
     {
         $this->logisticInfo = $logisticInfo;
     }
@@ -260,7 +260,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTipFee(): ?int
+    public function getTipFee(): int
     {
         return $this->tipFee;
     }
@@ -268,7 +268,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @param int $tipFee
      */
-    public function setTipFee(?int $tipFee): void
+    public function setTipFee(int $tipFee): void
     {
         $this->tipFee = $tipFee;
     }
@@ -276,7 +276,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDeliveryFee(): ?int
+    public function getDeliveryFee(): int
     {
         return $this->deliveryFee;
     }
@@ -284,7 +284,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @param int $deliveryFee
      */
-    public function setDeliveryFee(?int $deliveryFee): void
+    public function setDeliveryFee(int $deliveryFee): void
     {
         $this->deliveryFee = $deliveryFee;
     }
@@ -292,7 +292,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDistance(): ?int
+    public function getDistance(): int
     {
         return $this->distance;
     }
@@ -300,7 +300,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @param int $distance
      */
-    public function setDistance(?int $distance): void
+    public function setDistance(int $distance): void
     {
         $this->distance = $distance;
     }
@@ -308,7 +308,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDeductFee(): ?int
+    public function getDeductFee(): int
     {
         return $this->deductFee;
     }
@@ -316,7 +316,7 @@ class LocalDeliveryLocusDetailDTO implements \JsonSerializable {
     /**
      * @param int $deductFee
      */
-    public function setDeductFee(?int $deductFee): void
+    public function setDeductFee(int $deductFee): void
     {
         $this->deductFee = $deductFee;
     }

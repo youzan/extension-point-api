@@ -53,7 +53,7 @@ class CalculatedCouponsRequestExtDTO implements \JsonSerializable {
     /**
      * @return CustomerIdentityDTO
      */
-    public function getCustomerIdentityDTO(): ?CustomerIdentityDTO
+    public function getCustomerIdentityDTO(): CustomerIdentityDTO
     {
         return $this->customerIdentityDTO;
     }
@@ -61,7 +61,7 @@ class CalculatedCouponsRequestExtDTO implements \JsonSerializable {
     /**
      * @param CustomerIdentityDTO $customerIdentityDTO
      */
-    public function setCustomerIdentityDTO(?CustomerIdentityDTO $customerIdentityDTO): void
+    public function setCustomerIdentityDTO(CustomerIdentityDTO $customerIdentityDTO): void
     {
         $this->customerIdentityDTO = $customerIdentityDTO;
     }
@@ -69,7 +69,7 @@ class CalculatedCouponsRequestExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPostage(): ?int
+    public function getPostage(): int
     {
         return $this->postage;
     }
@@ -77,7 +77,7 @@ class CalculatedCouponsRequestExtDTO implements \JsonSerializable {
     /**
      * @param int $postage
      */
-    public function setPostage(?int $postage): void
+    public function setPostage(int $postage): void
     {
         $this->postage = $postage;
     }
@@ -85,7 +85,7 @@ class CalculatedCouponsRequestExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPay(): ?int
+    public function getPay(): int
     {
         return $this->pay;
     }
@@ -93,7 +93,7 @@ class CalculatedCouponsRequestExtDTO implements \JsonSerializable {
     /**
      * @param int $pay
      */
-    public function setPay(?int $pay): void
+    public function setPay(int $pay): void
     {
         $this->pay = $pay;
     }
@@ -101,7 +101,7 @@ class CalculatedCouponsRequestExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getChannelType(): ?string
+    public function getChannelType(): string
     {
         return $this->channelType;
     }
@@ -109,7 +109,7 @@ class CalculatedCouponsRequestExtDTO implements \JsonSerializable {
     /**
      * @param string $channelType
      */
-    public function setChannelType(?string $channelType): void
+    public function setChannelType(string $channelType): void
     {
         $this->channelType = $channelType;
     }
@@ -117,7 +117,7 @@ class CalculatedCouponsRequestExtDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getOverlayAssets(): ?bool
+    public function getOverlayAssets(): bool
     {
         return $this->overlayAssets;
     }
@@ -125,7 +125,7 @@ class CalculatedCouponsRequestExtDTO implements \JsonSerializable {
     /**
      * @param bool $overlayAssets
      */
-    public function setOverlayAssets(?bool $overlayAssets): void
+    public function setOverlayAssets(bool $overlayAssets): void
     {
         $this->overlayAssets = $overlayAssets;
     }
@@ -133,7 +133,7 @@ class CalculatedCouponsRequestExtDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getGoods(): ?array
+    public function getGoods(): array
     {
         return $this->goods;
     }
@@ -141,7 +141,7 @@ class CalculatedCouponsRequestExtDTO implements \JsonSerializable {
     /**
      * @param array $goods
      */
-    public function setGoods(?array $goods): void
+    public function setGoods(array $goods): void
     {
         $this->goods = $goods;
     }

@@ -22,7 +22,7 @@ class Result implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getData(): ?bool
+    public function getData(): bool
     {
         return $this->data;
     }
@@ -30,7 +30,7 @@ class Result implements \JsonSerializable {
     /**
      * @param bool $data
      */
-    public function setData(?bool $data): void
+    public function setData(bool $data): void
     {
         $this->data = $data;
     }

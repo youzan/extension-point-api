@@ -40,7 +40,7 @@ class StockRevertExtMsg implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -48,7 +48,7 @@ class StockRevertExtMsg implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -56,7 +56,7 @@ class StockRevertExtMsg implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOfflineId(): ?int
+    public function getOfflineId(): int
     {
         return $this->offlineId;
     }
@@ -64,7 +64,7 @@ class StockRevertExtMsg implements \JsonSerializable {
     /**
      * @param int $offlineId
      */
-    public function setOfflineId(?int $offlineId): void
+    public function setOfflineId(int $offlineId): void
     {
         $this->offlineId = $offlineId;
     }
@@ -72,7 +72,7 @@ class StockRevertExtMsg implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -80,7 +80,7 @@ class StockRevertExtMsg implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -88,7 +88,7 @@ class StockRevertExtMsg implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getDetailParamList(): ?array
+    public function getDetailParamList(): array
     {
         return $this->detailParamList;
     }
@@ -96,7 +96,7 @@ class StockRevertExtMsg implements \JsonSerializable {
     /**
      * @param array $detailParamList
      */
-    public function setDetailParamList(?array $detailParamList): void
+    public function setDetailParamList(array $detailParamList): void
     {
         $this->detailParamList = $detailParamList;
     }

@@ -28,7 +28,7 @@ class AuditRecordRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOriginalShopId(): ?string
+    public function getOriginalShopId(): string
     {
         return $this->originalShopId;
     }
@@ -36,7 +36,7 @@ class AuditRecordRequestDTO implements \JsonSerializable {
     /**
      * @param string $originalShopId
      */
-    public function setOriginalShopId(?string $originalShopId): void
+    public function setOriginalShopId(string $originalShopId): void
     {
         $this->originalShopId = $originalShopId;
     }
@@ -44,7 +44,7 @@ class AuditRecordRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -52,7 +52,7 @@ class AuditRecordRequestDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

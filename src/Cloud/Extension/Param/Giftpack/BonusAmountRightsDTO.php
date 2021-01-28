@@ -22,7 +22,7 @@ class BonusAmountRightsDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBonusAmount(): ?int
+    public function getBonusAmount(): int
     {
         return $this->bonusAmount;
     }
@@ -30,7 +30,7 @@ class BonusAmountRightsDTO implements \JsonSerializable {
     /**
      * @param int $bonusAmount
      */
-    public function setBonusAmount(?int $bonusAmount): void
+    public function setBonusAmount(int $bonusAmount): void
     {
         $this->bonusAmount = $bonusAmount;
     }

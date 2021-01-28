@@ -47,7 +47,7 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtraFeeDetail(): ?stdClass
+    public function getExtraFeeDetail(): stdClass
     {
         return $this->extraFeeDetail;
     }
@@ -55,7 +55,7 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     /**
      * @param stdClass $extraFeeDetail
      */
-    public function setExtraFeeDetail(?stdClass $extraFeeDetail): void
+    public function setExtraFeeDetail(stdClass $extraFeeDetail): void
     {
         $this->extraFeeDetail = $extraFeeDetail;
     }
@@ -63,7 +63,7 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalExtraFeeAmount(): ?int
+    public function getTotalExtraFeeAmount(): int
     {
         return $this->totalExtraFeeAmount;
     }
@@ -71,7 +71,7 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     /**
      * @param int $totalExtraFeeAmount
      */
-    public function setTotalExtraFeeAmount(?int $totalExtraFeeAmount): void
+    public function setTotalExtraFeeAmount(int $totalExtraFeeAmount): void
     {
         $this->totalExtraFeeAmount = $totalExtraFeeAmount;
     }
@@ -79,7 +79,7 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -87,7 +87,7 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -95,7 +95,7 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getExtraFeeDesc(): ?string
+    public function getExtraFeeDesc(): string
     {
         return $this->extraFeeDesc;
     }
@@ -103,7 +103,7 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     /**
      * @param string $extraFeeDesc
      */
-    public function setExtraFeeDesc(?string $extraFeeDesc): void
+    public function setExtraFeeDesc(string $extraFeeDesc): void
     {
         $this->extraFeeDesc = $extraFeeDesc;
     }
@@ -111,7 +111,7 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getOrderExtraPrice(): ?array
+    public function getOrderExtraPrice(): array
     {
         return $this->orderExtraPrice;
     }
@@ -119,7 +119,7 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     /**
      * @param array $orderExtraPrice
      */
-    public function setOrderExtraPrice(?array $orderExtraPrice): void
+    public function setOrderExtraPrice(array $orderExtraPrice): void
     {
         $this->orderExtraPrice = $orderExtraPrice;
     }
