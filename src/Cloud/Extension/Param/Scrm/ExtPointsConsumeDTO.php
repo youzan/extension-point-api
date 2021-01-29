@@ -31,7 +31,7 @@ class ExtPointsConsumeDTO implements \JsonSerializable {
     private $description;
 
     /**
-     * 积分消耗来源，300：积分商城；301：积分抵扣
+     * 积分消耗来源，300：积分商城；301：积分抵扣 401, &quot;退款&quot;；402,&quot;营销逆向退积分&quot;
      * @var int
      */
     private $consumeSource;

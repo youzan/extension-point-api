@@ -29,6 +29,12 @@ class ExtCalculateTariffRequestDTO implements \JsonSerializable {
      */
     private $itemList;
 
+    /**
+     * 运费，单位是分
+     * @var array
+     */
+    private $postage;
+
 
 
     /**
@@ -77,6 +83,22 @@ class ExtCalculateTariffRequestDTO implements \JsonSerializable {
     public function setItemList(array $itemList): void
     {
         $this->itemList = $itemList;
+    }
+
+    /**
+     * @return array
+     */
+    public function getPostage(): array
+    {
+        return $this->postage;
+    }
+
+    /**
+     * @param array $postage
+     */
+    public function setPostage(array $postage): void
+    {
+        $this->postage = $postage;
     }
 
     public function jsonSerialize() {

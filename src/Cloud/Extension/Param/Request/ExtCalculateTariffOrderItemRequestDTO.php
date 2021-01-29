@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Request;
 
-
+use Com\Youzan\Cloud\Extension\Param\Request\ExtPointPromotionDTO;
 
 /**
  * 商品列表
@@ -46,6 +46,12 @@ class ExtCalculateTariffOrderItemRequestDTO implements \JsonSerializable {
      * @var string
      */
     private $crossBorderTradeMode;
+
+    /**
+     * 商品优惠
+     * @var array
+     */
+    private $promotions;
 
 
 
@@ -143,6 +149,22 @@ class ExtCalculateTariffOrderItemRequestDTO implements \JsonSerializable {
     public function setCrossBorderTradeMode(string $crossBorderTradeMode): void
     {
         $this->crossBorderTradeMode = $crossBorderTradeMode;
+    }
+
+    /**
+     * @return array
+     */
+    public function getPromotions(): array
+    {
+        return $this->promotions;
+    }
+
+    /**
+     * @param array $promotions
+     */
+    public function setPromotions(array $promotions): void
+    {
+        $this->promotions = $promotions;
     }
 
     public function jsonSerialize() {
