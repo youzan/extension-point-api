@@ -28,7 +28,7 @@ class BizTestRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRequestId(): int
+    public function getRequestId(): ?int
     {
         return $this->requestId;
     }
@@ -36,7 +36,7 @@ class BizTestRequestDTO implements \JsonSerializable {
     /**
      * @param int $requestId
      */
-    public function setRequestId(int $requestId): void
+    public function setRequestId(?int $requestId): void
     {
         $this->requestId = $requestId;
     }
@@ -44,7 +44,7 @@ class BizTestRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getContent(): string
+    public function getContent(): ?string
     {
         return $this->content;
     }
@@ -52,7 +52,7 @@ class BizTestRequestDTO implements \JsonSerializable {
     /**
      * @param string $content
      */
-    public function setContent(string $content): void
+    public function setContent(?string $content): void
     {
         $this->content = $content;
     }

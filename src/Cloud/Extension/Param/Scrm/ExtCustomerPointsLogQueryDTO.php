@@ -64,7 +64,7 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     /**
      * @return ExtCustomerInfoDTO
      */
-    public function getExtCustomerInfoDTO(): ExtCustomerInfoDTO
+    public function getExtCustomerInfoDTO(): ?ExtCustomerInfoDTO
     {
         return $this->extCustomerInfoDTO;
     }
@@ -72,7 +72,7 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     /**
      * @param ExtCustomerInfoDTO $extCustomerInfoDTO
      */
-    public function setExtCustomerInfoDTO(ExtCustomerInfoDTO $extCustomerInfoDTO): void
+    public function setExtCustomerInfoDTO(?ExtCustomerInfoDTO $extCustomerInfoDTO): void
     {
         $this->extCustomerInfoDTO = $extCustomerInfoDTO;
     }
@@ -80,7 +80,7 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPage(): int
+    public function getPage(): ?int
     {
         return $this->page;
     }
@@ -88,7 +88,7 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     /**
      * @param int $page
      */
-    public function setPage(int $page): void
+    public function setPage(?int $page): void
     {
         $this->page = $page;
     }
@@ -96,7 +96,7 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPageSize(): int
+    public function getPageSize(): ?int
     {
         return $this->pageSize;
     }
@@ -104,7 +104,7 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     /**
      * @param int $pageSize
      */
-    public function setPageSize(int $pageSize): void
+    public function setPageSize(?int $pageSize): void
     {
         $this->pageSize = $pageSize;
     }
@@ -112,7 +112,7 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getType(): int
+    public function getType(): ?int
     {
         return $this->type;
     }
@@ -120,7 +120,7 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     /**
      * @param int $type
      */
-    public function setType(int $type): void
+    public function setType(?int $type): void
     {
         $this->type = $type;
     }
@@ -128,7 +128,7 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBeginTime(): int
+    public function getBeginTime(): ?int
     {
         return $this->beginTime;
     }
@@ -136,7 +136,7 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     /**
      * @param int $beginTime
      */
-    public function setBeginTime(int $beginTime): void
+    public function setBeginTime(?int $beginTime): void
     {
         $this->beginTime = $beginTime;
     }
@@ -144,7 +144,7 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getEndTime(): int
+    public function getEndTime(): ?int
     {
         return $this->endTime;
     }
@@ -152,7 +152,7 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     /**
      * @param int $endTime
      */
-    public function setEndTime(int $endTime): void
+    public function setEndTime(?int $endTime): void
     {
         $this->endTime = $endTime;
     }
@@ -160,7 +160,7 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -168,7 +168,7 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -176,7 +176,7 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNodeId(): int
+    public function getNodeId(): ?int
     {
         return $this->nodeId;
     }
@@ -184,7 +184,7 @@ class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
     /**
      * @param int $nodeId
      */
-    public function setNodeId(int $nodeId): void
+    public function setNodeId(?int $nodeId): void
     {
         $this->nodeId = $nodeId;
     }

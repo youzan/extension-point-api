@@ -108,7 +108,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStoreId(): int
+    public function getStoreId(): ?int
     {
         return $this->storeId;
     }
@@ -116,7 +116,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param int $storeId
      */
-    public function setStoreId(int $storeId): void
+    public function setStoreId(?int $storeId): void
     {
         $this->storeId = $storeId;
     }
@@ -124,7 +124,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -132,7 +132,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param string $name
      */
-    public function setName(string $name): void
+    public function setName(?string $name): void
     {
         $this->name = $name;
     }
@@ -140,7 +140,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDescription(): string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -148,7 +148,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param string $description
      */
-    public function setDescription(string $description): void
+    public function setDescription(?string $description): void
     {
         $this->description = $description;
     }
@@ -156,7 +156,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return AddressExtDTO
      */
-    public function getAddressInfo(): AddressExtDTO
+    public function getAddressInfo(): ?AddressExtDTO
     {
         return $this->addressInfo;
     }
@@ -164,7 +164,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param AddressExtDTO $addressInfo
      */
-    public function setAddressInfo(AddressExtDTO $addressInfo): void
+    public function setAddressInfo(?AddressExtDTO $addressInfo): void
     {
         $this->addressInfo = $addressInfo;
     }
@@ -172,7 +172,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return PhoneExtDTO
      */
-    public function getPhone(): PhoneExtDTO
+    public function getPhone(): ?PhoneExtDTO
     {
         return $this->phone;
     }
@@ -180,7 +180,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param PhoneExtDTO $phone
      */
-    public function setPhone(PhoneExtDTO $phone): void
+    public function setPhone(?PhoneExtDTO $phone): void
     {
         $this->phone = $phone;
     }
@@ -188,7 +188,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getSelfFetchTimeRequired(): bool
+    public function getSelfFetchTimeRequired(): ?bool
     {
         return $this->selfFetchTimeRequired;
     }
@@ -196,7 +196,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param bool $selfFetchTimeRequired
      */
-    public function setSelfFetchTimeRequired(bool $selfFetchTimeRequired): void
+    public function setSelfFetchTimeRequired(?bool $selfFetchTimeRequired): void
     {
         $this->selfFetchTimeRequired = $selfFetchTimeRequired;
     }
@@ -204,7 +204,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDistance(): string
+    public function getDistance(): ?string
     {
         return $this->distance;
     }
@@ -212,7 +212,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param string $distance
      */
-    public function setDistance(string $distance): void
+    public function setDistance(?string $distance): void
     {
         $this->distance = $distance;
     }
@@ -220,7 +220,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getSuperStore(): bool
+    public function getSuperStore(): ?bool
     {
         return $this->superStore;
     }
@@ -228,7 +228,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param bool $superStore
      */
-    public function setSuperStore(bool $superStore): void
+    public function setSuperStore(?bool $superStore): void
     {
         $this->superStore = $superStore;
     }
@@ -236,7 +236,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderSoldStatus(): int
+    public function getOrderSoldStatus(): ?int
     {
         return $this->orderSoldStatus;
     }
@@ -244,7 +244,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param int $orderSoldStatus
      */
-    public function setOrderSoldStatus(int $orderSoldStatus): void
+    public function setOrderSoldStatus(?int $orderSoldStatus): void
     {
         $this->orderSoldStatus = $orderSoldStatus;
     }
@@ -252,7 +252,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getImage(): string
+    public function getImage(): ?string
     {
         return $this->image;
     }
@@ -260,7 +260,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param string $image
      */
-    public function setImage(string $image): void
+    public function setImage(?string $image): void
     {
         $this->image = $image;
     }
@@ -268,7 +268,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCreatedAt(): int
+    public function getCreatedAt(): ?int
     {
         return $this->createdAt;
     }
@@ -276,7 +276,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param int $createdAt
      */
-    public function setCreatedAt(int $createdAt): void
+    public function setCreatedAt(?int $createdAt): void
     {
         $this->createdAt = $createdAt;
     }
@@ -284,7 +284,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getUpdatedAt(): int
+    public function getUpdatedAt(): ?int
     {
         return $this->updatedAt;
     }
@@ -292,7 +292,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param int $updatedAt
      */
-    public function setUpdatedAt(int $updatedAt): void
+    public function setUpdatedAt(?int $updatedAt): void
     {
         $this->updatedAt = $updatedAt;
     }
@@ -300,7 +300,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getRecentlyUsed(): bool
+    public function getRecentlyUsed(): ?bool
     {
         return $this->recentlyUsed;
     }
@@ -308,7 +308,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param bool $recentlyUsed
      */
-    public function setRecentlyUsed(bool $recentlyUsed): void
+    public function setRecentlyUsed(?bool $recentlyUsed): void
     {
         $this->recentlyUsed = $recentlyUsed;
     }
@@ -316,7 +316,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getIsStore(): bool
+    public function getIsStore(): ?bool
     {
         return $this->isStore;
     }
@@ -324,7 +324,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param bool $isStore
      */
-    public function setIsStore(bool $isStore): void
+    public function setIsStore(?bool $isStore): void
     {
         $this->isStore = $isStore;
     }
@@ -332,7 +332,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getIsOnline(): bool
+    public function getIsOnline(): ?bool
     {
         return $this->isOnline;
     }
@@ -340,7 +340,7 @@ class SelfFetchPointInfoExtDTO implements \JsonSerializable {
     /**
      * @param bool $isOnline
      */
-    public function setIsOnline(bool $isOnline): void
+    public function setIsOnline(?bool $isOnline): void
     {
         $this->isOnline = $isOnline;
     }

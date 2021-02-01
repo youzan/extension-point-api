@@ -28,7 +28,7 @@ class ExtAccountVerifyResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStatus(): int
+    public function getStatus(): ?int
     {
         return $this->status;
     }
@@ -36,7 +36,7 @@ class ExtAccountVerifyResponseDTO implements \JsonSerializable {
     /**
      * @param int $status
      */
-    public function setStatus(int $status): void
+    public function setStatus(?int $status): void
     {
         $this->status = $status;
     }
@@ -44,7 +44,7 @@ class ExtAccountVerifyResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRemark(): string
+    public function getRemark(): ?string
     {
         return $this->remark;
     }
@@ -52,7 +52,7 @@ class ExtAccountVerifyResponseDTO implements \JsonSerializable {
     /**
      * @param string $remark
      */
-    public function setRemark(string $remark): void
+    public function setRemark(?string $remark): void
     {
         $this->remark = $remark;
     }

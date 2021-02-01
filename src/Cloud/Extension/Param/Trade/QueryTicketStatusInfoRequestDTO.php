@@ -28,7 +28,7 @@ class QueryTicketStatusInfoRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -36,7 +36,7 @@ class QueryTicketStatusInfoRequestDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -44,7 +44,7 @@ class QueryTicketStatusInfoRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -52,7 +52,7 @@ class QueryTicketStatusInfoRequestDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

@@ -172,7 +172,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderOriginalId(): string
+    public function getOrderOriginalId(): ?string
     {
         return $this->orderOriginalId;
     }
@@ -180,7 +180,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $orderOriginalId
      */
-    public function setOrderOriginalId(string $orderOriginalId): void
+    public function setOrderOriginalId(?string $orderOriginalId): void
     {
         $this->orderOriginalId = $orderOriginalId;
     }
@@ -188,7 +188,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderWeight(): int
+    public function getOrderWeight(): ?int
     {
         return $this->orderWeight;
     }
@@ -196,7 +196,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param int $orderWeight
      */
-    public function setOrderWeight(int $orderWeight): void
+    public function setOrderWeight(?int $orderWeight): void
     {
         $this->orderWeight = $orderWeight;
     }
@@ -204,7 +204,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderRemark(): string
+    public function getOrderRemark(): ?string
     {
         return $this->orderRemark;
     }
@@ -212,7 +212,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $orderRemark
      */
-    public function setOrderRemark(string $orderRemark): void
+    public function setOrderRemark(?string $orderRemark): void
     {
         $this->orderRemark = $orderRemark;
     }
@@ -220,7 +220,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOriginalShopId(): string
+    public function getOriginalShopId(): ?string
     {
         return $this->originalShopId;
     }
@@ -228,7 +228,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $originalShopId
      */
-    public function setOriginalShopId(string $originalShopId): void
+    public function setOriginalShopId(?string $originalShopId): void
     {
         $this->originalShopId = $originalShopId;
     }
@@ -236,7 +236,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getShopName(): string
+    public function getShopName(): ?string
     {
         return $this->shopName;
     }
@@ -244,7 +244,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $shopName
      */
-    public function setShopName(string $shopName): void
+    public function setShopName(?string $shopName): void
     {
         $this->shopName = $shopName;
     }
@@ -252,7 +252,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBusiness(): int
+    public function getBusiness(): ?int
     {
         return $this->business;
     }
@@ -260,7 +260,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param int $business
      */
-    public function setBusiness(int $business): void
+    public function setBusiness(?int $business): void
     {
         $this->business = $business;
     }
@@ -268,7 +268,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProvinceName(): string
+    public function getProvinceName(): ?string
     {
         return $this->provinceName;
     }
@@ -276,7 +276,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $provinceName
      */
-    public function setProvinceName(string $provinceName): void
+    public function setProvinceName(?string $provinceName): void
     {
         $this->provinceName = $provinceName;
     }
@@ -284,7 +284,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCityName(): string
+    public function getCityName(): ?string
     {
         return $this->cityName;
     }
@@ -292,7 +292,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $cityName
      */
-    public function setCityName(string $cityName): void
+    public function setCityName(?string $cityName): void
     {
         $this->cityName = $cityName;
     }
@@ -300,7 +300,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCountyName(): string
+    public function getCountyName(): ?string
     {
         return $this->countyName;
     }
@@ -308,7 +308,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $countyName
      */
-    public function setCountyName(string $countyName): void
+    public function setCountyName(?string $countyName): void
     {
         $this->countyName = $countyName;
     }
@@ -316,7 +316,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCountyCode(): string
+    public function getCountyCode(): ?string
     {
         return $this->countyCode;
     }
@@ -324,7 +324,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $countyCode
      */
-    public function setCountyCode(string $countyCode): void
+    public function setCountyCode(?string $countyCode): void
     {
         $this->countyCode = $countyCode;
     }
@@ -332,7 +332,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getShopAddress(): string
+    public function getShopAddress(): ?string
     {
         return $this->shopAddress;
     }
@@ -340,7 +340,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $shopAddress
      */
-    public function setShopAddress(string $shopAddress): void
+    public function setShopAddress(?string $shopAddress): void
     {
         $this->shopAddress = $shopAddress;
     }
@@ -348,7 +348,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getShopLng(): string
+    public function getShopLng(): ?string
     {
         return $this->shopLng;
     }
@@ -356,7 +356,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $shopLng
      */
-    public function setShopLng(string $shopLng): void
+    public function setShopLng(?string $shopLng): void
     {
         $this->shopLng = $shopLng;
     }
@@ -364,7 +364,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getShopLat(): string
+    public function getShopLat(): ?string
     {
         return $this->shopLat;
     }
@@ -372,7 +372,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $shopLat
      */
-    public function setShopLat(string $shopLat): void
+    public function setShopLat(?string $shopLat): void
     {
         $this->shopLat = $shopLat;
     }
@@ -380,7 +380,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getShopPositionSource(): int
+    public function getShopPositionSource(): ?int
     {
         return $this->shopPositionSource;
     }
@@ -388,7 +388,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param int $shopPositionSource
      */
-    public function setShopPositionSource(int $shopPositionSource): void
+    public function setShopPositionSource(?int $shopPositionSource): void
     {
         $this->shopPositionSource = $shopPositionSource;
     }
@@ -396,7 +396,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getShopContactName(): string
+    public function getShopContactName(): ?string
     {
         return $this->shopContactName;
     }
@@ -404,7 +404,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $shopContactName
      */
-    public function setShopContactName(string $shopContactName): void
+    public function setShopContactName(?string $shopContactName): void
     {
         $this->shopContactName = $shopContactName;
     }
@@ -412,7 +412,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getShopContactPhone(): string
+    public function getShopContactPhone(): ?string
     {
         return $this->shopContactPhone;
     }
@@ -420,7 +420,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $shopContactPhone
      */
-    public function setShopContactPhone(string $shopContactPhone): void
+    public function setShopContactPhone(?string $shopContactPhone): void
     {
         $this->shopContactPhone = $shopContactPhone;
     }
@@ -428,7 +428,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getConsigneeAddress(): string
+    public function getConsigneeAddress(): ?string
     {
         return $this->consigneeAddress;
     }
@@ -436,7 +436,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $consigneeAddress
      */
-    public function setConsigneeAddress(string $consigneeAddress): void
+    public function setConsigneeAddress(?string $consigneeAddress): void
     {
         $this->consigneeAddress = $consigneeAddress;
     }
@@ -444,7 +444,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getConsigneeLng(): string
+    public function getConsigneeLng(): ?string
     {
         return $this->consigneeLng;
     }
@@ -452,7 +452,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $consigneeLng
      */
-    public function setConsigneeLng(string $consigneeLng): void
+    public function setConsigneeLng(?string $consigneeLng): void
     {
         $this->consigneeLng = $consigneeLng;
     }
@@ -460,7 +460,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getConsigneeLat(): string
+    public function getConsigneeLat(): ?string
     {
         return $this->consigneeLat;
     }
@@ -468,7 +468,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $consigneeLat
      */
-    public function setConsigneeLat(string $consigneeLat): void
+    public function setConsigneeLat(?string $consigneeLat): void
     {
         $this->consigneeLat = $consigneeLat;
     }
@@ -476,7 +476,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getConsigneePositionSource(): int
+    public function getConsigneePositionSource(): ?int
     {
         return $this->consigneePositionSource;
     }
@@ -484,7 +484,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param int $consigneePositionSource
      */
-    public function setConsigneePositionSource(int $consigneePositionSource): void
+    public function setConsigneePositionSource(?int $consigneePositionSource): void
     {
         $this->consigneePositionSource = $consigneePositionSource;
     }
@@ -492,7 +492,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getConsigneeName(): string
+    public function getConsigneeName(): ?string
     {
         return $this->consigneeName;
     }
@@ -500,7 +500,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $consigneeName
      */
-    public function setConsigneeName(string $consigneeName): void
+    public function setConsigneeName(?string $consigneeName): void
     {
         $this->consigneeName = $consigneeName;
     }
@@ -508,7 +508,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getConsigneePhone(): string
+    public function getConsigneePhone(): ?string
     {
         return $this->consigneePhone;
     }
@@ -516,7 +516,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $consigneePhone
      */
-    public function setConsigneePhone(string $consigneePhone): void
+    public function setConsigneePhone(?string $consigneePhone): void
     {
         $this->consigneePhone = $consigneePhone;
     }
@@ -524,7 +524,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getExpectFetchTime(): int
+    public function getExpectFetchTime(): ?int
     {
         return $this->expectFetchTime;
     }
@@ -532,7 +532,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param int $expectFetchTime
      */
-    public function setExpectFetchTime(int $expectFetchTime): void
+    public function setExpectFetchTime(?int $expectFetchTime): void
     {
         $this->expectFetchTime = $expectFetchTime;
     }
@@ -540,7 +540,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTips(): int
+    public function getTips(): ?int
     {
         return $this->tips;
     }
@@ -548,7 +548,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param int $tips
      */
-    public function setTips(int $tips): void
+    public function setTips(?int $tips): void
     {
         $this->tips = $tips;
     }
@@ -556,7 +556,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -564,7 +564,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -572,7 +572,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOutOrderNo(): string
+    public function getOutOrderNo(): ?string
     {
         return $this->outOrderNo;
     }
@@ -580,7 +580,7 @@ class LocalDeliveryOrderDTO implements \JsonSerializable {
     /**
      * @param string $outOrderNo
      */
-    public function setOutOrderNo(string $outOrderNo): void
+    public function setOutOrderNo(?string $outOrderNo): void
     {
         $this->outOrderNo = $outOrderNo;
     }

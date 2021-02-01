@@ -46,7 +46,7 @@ class Result implements \JsonSerializable {
     /**
      * @return PreTestResponseDTO
      */
-    public function getData(): PreTestResponseDTO
+    public function getData(): ?PreTestResponseDTO
     {
         return $this->data;
     }
@@ -54,7 +54,7 @@ class Result implements \JsonSerializable {
     /**
      * @param PreTestResponseDTO $data
      */
-    public function setData(PreTestResponseDTO $data): void
+    public function setData(?PreTestResponseDTO $data): void
     {
         $this->data = $data;
     }
@@ -62,7 +62,7 @@ class Result implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getSuccess(): bool
+    public function getSuccess(): ?bool
     {
         return $this->success;
     }
@@ -70,7 +70,7 @@ class Result implements \JsonSerializable {
     /**
      * @param bool $success
      */
-    public function setSuccess(bool $success): void
+    public function setSuccess(?bool $success): void
     {
         $this->success = $success;
     }
@@ -78,7 +78,7 @@ class Result implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCode(): int
+    public function getCode(): ?int
     {
         return $this->code;
     }
@@ -86,7 +86,7 @@ class Result implements \JsonSerializable {
     /**
      * @param int $code
      */
-    public function setCode(int $code): void
+    public function setCode(?int $code): void
     {
         $this->code = $code;
     }
@@ -94,7 +94,7 @@ class Result implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMessage(): string
+    public function getMessage(): ?string
     {
         return $this->message;
     }
@@ -102,7 +102,7 @@ class Result implements \JsonSerializable {
     /**
      * @param string $message
      */
-    public function setMessage(string $message): void
+    public function setMessage(?string $message): void
     {
         $this->message = $message;
     }
@@ -110,7 +110,7 @@ class Result implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRequestId(): string
+    public function getRequestId(): ?string
     {
         return $this->requestId;
     }
@@ -118,7 +118,7 @@ class Result implements \JsonSerializable {
     /**
      * @param string $requestId
      */
-    public function setRequestId(string $requestId): void
+    public function setRequestId(?string $requestId): void
     {
         $this->requestId = $requestId;
     }

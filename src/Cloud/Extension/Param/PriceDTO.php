@@ -46,7 +46,7 @@ class PriceDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPromotionAmount(): int
+    public function getPromotionAmount(): ?int
     {
         return $this->promotionAmount;
     }
@@ -54,7 +54,7 @@ class PriceDTO implements \JsonSerializable {
     /**
      * @param int $promotionAmount
      */
-    public function setPromotionAmount(int $promotionAmount): void
+    public function setPromotionAmount(?int $promotionAmount): void
     {
         $this->promotionAmount = $promotionAmount;
     }
@@ -62,7 +62,7 @@ class PriceDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalPrice(): int
+    public function getTotalPrice(): ?int
     {
         return $this->totalPrice;
     }
@@ -70,7 +70,7 @@ class PriceDTO implements \JsonSerializable {
     /**
      * @param int $totalPrice
      */
-    public function setTotalPrice(int $totalPrice): void
+    public function setTotalPrice(?int $totalPrice): void
     {
         $this->totalPrice = $totalPrice;
     }
@@ -78,7 +78,7 @@ class PriceDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPostage(): int
+    public function getPostage(): ?int
     {
         return $this->postage;
     }
@@ -86,7 +86,7 @@ class PriceDTO implements \JsonSerializable {
     /**
      * @param int $postage
      */
-    public function setPostage(int $postage): void
+    public function setPostage(?int $postage): void
     {
         $this->postage = $postage;
     }
@@ -94,7 +94,7 @@ class PriceDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCurrentPrice(): int
+    public function getCurrentPrice(): ?int
     {
         return $this->currentPrice;
     }
@@ -102,7 +102,7 @@ class PriceDTO implements \JsonSerializable {
     /**
      * @param int $currentPrice
      */
-    public function setCurrentPrice(int $currentPrice): void
+    public function setCurrentPrice(?int $currentPrice): void
     {
         $this->currentPrice = $currentPrice;
     }
@@ -110,7 +110,7 @@ class PriceDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOriginPrice(): int
+    public function getOriginPrice(): ?int
     {
         return $this->originPrice;
     }
@@ -118,7 +118,7 @@ class PriceDTO implements \JsonSerializable {
     /**
      * @param int $originPrice
      */
-    public function setOriginPrice(int $originPrice): void
+    public function setOriginPrice(?int $originPrice): void
     {
         $this->originPrice = $originPrice;
     }

@@ -58,7 +58,7 @@ class VoucherVerifyExtPointResponse implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getVerifySuccess(): bool
+    public function getVerifySuccess(): ?bool
     {
         return $this->verifySuccess;
     }
@@ -66,7 +66,7 @@ class VoucherVerifyExtPointResponse implements \JsonSerializable {
     /**
      * @param bool $verifySuccess
      */
-    public function setVerifySuccess(bool $verifySuccess): void
+    public function setVerifySuccess(?bool $verifySuccess): void
     {
         $this->verifySuccess = $verifySuccess;
     }
@@ -74,7 +74,7 @@ class VoucherVerifyExtPointResponse implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getIdempotentSuccess(): bool
+    public function getIdempotentSuccess(): ?bool
     {
         return $this->idempotentSuccess;
     }
@@ -82,7 +82,7 @@ class VoucherVerifyExtPointResponse implements \JsonSerializable {
     /**
      * @param bool $idempotentSuccess
      */
-    public function setIdempotentSuccess(bool $idempotentSuccess): void
+    public function setIdempotentSuccess(?bool $idempotentSuccess): void
     {
         $this->idempotentSuccess = $idempotentSuccess;
     }
@@ -90,7 +90,7 @@ class VoucherVerifyExtPointResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -98,7 +98,7 @@ class VoucherVerifyExtPointResponse implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -106,7 +106,7 @@ class VoucherVerifyExtPointResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderSource(): string
+    public function getOrderSource(): ?string
     {
         return $this->orderSource;
     }
@@ -114,7 +114,7 @@ class VoucherVerifyExtPointResponse implements \JsonSerializable {
     /**
      * @param string $orderSource
      */
-    public function setOrderSource(string $orderSource): void
+    public function setOrderSource(?string $orderSource): void
     {
         $this->orderSource = $orderSource;
     }
@@ -122,7 +122,7 @@ class VoucherVerifyExtPointResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getErrorMsg(): string
+    public function getErrorMsg(): ?string
     {
         return $this->errorMsg;
     }
@@ -130,7 +130,7 @@ class VoucherVerifyExtPointResponse implements \JsonSerializable {
     /**
      * @param string $errorMsg
      */
-    public function setErrorMsg(string $errorMsg): void
+    public function setErrorMsg(?string $errorMsg): void
     {
         $this->errorMsg = $errorMsg;
     }
@@ -138,7 +138,7 @@ class VoucherVerifyExtPointResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersionNo(): int
+    public function getVersionNo(): ?int
     {
         return $this->versionNo;
     }
@@ -146,7 +146,7 @@ class VoucherVerifyExtPointResponse implements \JsonSerializable {
     /**
      * @param int $versionNo
      */
-    public function setVersionNo(int $versionNo): void
+    public function setVersionNo(?int $versionNo): void
     {
         $this->versionNo = $versionNo;
     }
@@ -154,7 +154,7 @@ class VoucherVerifyExtPointResponse implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): stdClass
+    public function getExtMap(): ?stdClass
     {
         return $this->extMap;
     }
@@ -162,7 +162,7 @@ class VoucherVerifyExtPointResponse implements \JsonSerializable {
     /**
      * @param stdClass $extMap
      */
-    public function setExtMap(stdClass $extMap): void
+    public function setExtMap(?stdClass $extMap): void
     {
         $this->extMap = $extMap;
     }

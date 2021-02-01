@@ -89,7 +89,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzTradeNo(): string
+    public function getYzTradeNo(): ?string
     {
         return $this->yzTradeNo;
     }
@@ -97,7 +97,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @param string $yzTradeNo
      */
-    public function setYzTradeNo(string $yzTradeNo): void
+    public function setYzTradeNo(?string $yzTradeNo): void
     {
         $this->yzTradeNo = $yzTradeNo;
     }
@@ -105,7 +105,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTradeNo(): string
+    public function getTradeNo(): ?string
     {
         return $this->tradeNo;
     }
@@ -113,7 +113,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @param string $tradeNo
      */
-    public function setTradeNo(string $tradeNo): void
+    public function setTradeNo(?string $tradeNo): void
     {
         $this->tradeNo = $tradeNo;
     }
@@ -121,7 +121,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMchId(): string
+    public function getMchId(): ?string
     {
         return $this->mchId;
     }
@@ -129,7 +129,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @param string $mchId
      */
-    public function setMchId(string $mchId): void
+    public function setMchId(?string $mchId): void
     {
         $this->mchId = $mchId;
     }
@@ -137,7 +137,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTradeType(): string
+    public function getTradeType(): ?string
     {
         return $this->tradeType;
     }
@@ -145,7 +145,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @param string $tradeType
      */
-    public function setTradeType(string $tradeType): void
+    public function setTradeType(?string $tradeType): void
     {
         $this->tradeType = $tradeType;
     }
@@ -153,7 +153,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPayTime(): int
+    public function getPayTime(): ?int
     {
         return $this->payTime;
     }
@@ -161,7 +161,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @param int $payTime
      */
-    public function setPayTime(int $payTime): void
+    public function setPayTime(?int $payTime): void
     {
         $this->payTime = $payTime;
     }
@@ -169,7 +169,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTradeStatus(): string
+    public function getTradeStatus(): ?string
     {
         return $this->tradeStatus;
     }
@@ -177,7 +177,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @param string $tradeStatus
      */
-    public function setTradeStatus(string $tradeStatus): void
+    public function setTradeStatus(?string $tradeStatus): void
     {
         $this->tradeStatus = $tradeStatus;
     }
@@ -185,7 +185,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTradeStatusDesc(): string
+    public function getTradeStatusDesc(): ?string
     {
         return $this->tradeStatusDesc;
     }
@@ -193,7 +193,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @param string $tradeStatusDesc
      */
-    public function setTradeStatusDesc(string $tradeStatusDesc): void
+    public function setTradeStatusDesc(?string $tradeStatusDesc): void
     {
         $this->tradeStatusDesc = $tradeStatusDesc;
     }
@@ -201,7 +201,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPayChannel(): string
+    public function getPayChannel(): ?string
     {
         return $this->payChannel;
     }
@@ -209,7 +209,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @param string $payChannel
      */
-    public function setPayChannel(string $payChannel): void
+    public function setPayChannel(?string $payChannel): void
     {
         $this->payChannel = $payChannel;
     }
@@ -217,7 +217,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPayAmount(): int
+    public function getPayAmount(): ?int
     {
         return $this->payAmount;
     }
@@ -225,7 +225,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @param int $payAmount
      */
-    public function setPayAmount(int $payAmount): void
+    public function setPayAmount(?int $payAmount): void
     {
         $this->payAmount = $payAmount;
     }
@@ -233,7 +233,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPayCurrency(): string
+    public function getPayCurrency(): ?string
     {
         return $this->payCurrency;
     }
@@ -241,7 +241,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @param string $payCurrency
      */
-    public function setPayCurrency(string $payCurrency): void
+    public function setPayCurrency(?string $payCurrency): void
     {
         $this->payCurrency = $payCurrency;
     }
@@ -249,7 +249,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAttach(): string
+    public function getAttach(): ?string
     {
         return $this->attach;
     }
@@ -257,7 +257,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @param string $attach
      */
-    public function setAttach(string $attach): void
+    public function setAttach(?string $attach): void
     {
         $this->attach = $attach;
     }
@@ -265,7 +265,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtra(): stdClass
+    public function getExtra(): ?stdClass
     {
         return $this->extra;
     }
@@ -273,7 +273,7 @@ class PayResponseDTO implements \JsonSerializable {
     /**
      * @param stdClass $extra
      */
-    public function setExtra(stdClass $extra): void
+    public function setExtra(?stdClass $extra): void
     {
         $this->extra = $extra;
     }

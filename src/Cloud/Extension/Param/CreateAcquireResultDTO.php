@@ -22,7 +22,7 @@ class CreateAcquireResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAcquireNo(): string
+    public function getAcquireNo(): ?string
     {
         return $this->acquireNo;
     }
@@ -30,7 +30,7 @@ class CreateAcquireResultDTO implements \JsonSerializable {
     /**
      * @param string $acquireNo
      */
-    public function setAcquireNo(string $acquireNo): void
+    public function setAcquireNo(?string $acquireNo): void
     {
         $this->acquireNo = $acquireNo;
     }

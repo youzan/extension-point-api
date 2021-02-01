@@ -22,7 +22,7 @@ class ExtLevelListDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getExtLevelDTOList(): array
+    public function getExtLevelDTOList(): ?array
     {
         return $this->extLevelDTOList;
     }
@@ -30,7 +30,7 @@ class ExtLevelListDTO implements \JsonSerializable {
     /**
      * @param array $extLevelDTOList
      */
-    public function setExtLevelDTOList(array $extLevelDTOList): void
+    public function setExtLevelDTOList(?array $extLevelDTOList): void
     {
         $this->extLevelDTOList = $extLevelDTOList;
     }

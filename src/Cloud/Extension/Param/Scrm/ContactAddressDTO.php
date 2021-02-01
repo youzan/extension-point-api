@@ -28,7 +28,7 @@ class ContactAddressDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAreaCode(): string
+    public function getAreaCode(): ?string
     {
         return $this->areaCode;
     }
@@ -36,7 +36,7 @@ class ContactAddressDTO implements \JsonSerializable {
     /**
      * @param string $areaCode
      */
-    public function setAreaCode(string $areaCode): void
+    public function setAreaCode(?string $areaCode): void
     {
         $this->areaCode = $areaCode;
     }
@@ -44,7 +44,7 @@ class ContactAddressDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAddress(): string
+    public function getAddress(): ?string
     {
         return $this->address;
     }
@@ -52,7 +52,7 @@ class ContactAddressDTO implements \JsonSerializable {
     /**
      * @param string $address
      */
-    public function setAddress(string $address): void
+    public function setAddress(?string $address): void
     {
         $this->address = $address;
     }

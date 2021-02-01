@@ -22,7 +22,7 @@ class RedirectUrlExtResDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getWebPageRedirectUrl(): string
+    public function getWebPageRedirectUrl(): ?string
     {
         return $this->webPageRedirectUrl;
     }
@@ -30,7 +30,7 @@ class RedirectUrlExtResDTO implements \JsonSerializable {
     /**
      * @param string $webPageRedirectUrl
      */
-    public function setWebPageRedirectUrl(string $webPageRedirectUrl): void
+    public function setWebPageRedirectUrl(?string $webPageRedirectUrl): void
     {
         $this->webPageRedirectUrl = $webPageRedirectUrl;
     }

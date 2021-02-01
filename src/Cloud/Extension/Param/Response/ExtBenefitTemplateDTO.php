@@ -50,7 +50,7 @@ class ExtBenefitTemplateDTO implements \JsonSerializable {
     /**
      * @return ExtCarrierTplInfoDTO
      */
-    public function getExtCarrierTplInfoDTO(): ExtCarrierTplInfoDTO
+    public function getExtCarrierTplInfoDTO(): ?ExtCarrierTplInfoDTO
     {
         return $this->extCarrierTplInfoDTO;
     }
@@ -58,7 +58,7 @@ class ExtBenefitTemplateDTO implements \JsonSerializable {
     /**
      * @param ExtCarrierTplInfoDTO $extCarrierTplInfoDTO
      */
-    public function setExtCarrierTplInfoDTO(ExtCarrierTplInfoDTO $extCarrierTplInfoDTO): void
+    public function setExtCarrierTplInfoDTO(?ExtCarrierTplInfoDTO $extCarrierTplInfoDTO): void
     {
         $this->extCarrierTplInfoDTO = $extCarrierTplInfoDTO;
     }
@@ -66,7 +66,7 @@ class ExtBenefitTemplateDTO implements \JsonSerializable {
     /**
      * @return ExtTemplateCouponDTO
      */
-    public function getCoupon(): ExtTemplateCouponDTO
+    public function getCoupon(): ?ExtTemplateCouponDTO
     {
         return $this->coupon;
     }
@@ -74,7 +74,7 @@ class ExtBenefitTemplateDTO implements \JsonSerializable {
     /**
      * @param ExtTemplateCouponDTO $coupon
      */
-    public function setCoupon(ExtTemplateCouponDTO $coupon): void
+    public function setCoupon(?ExtTemplateCouponDTO $coupon): void
     {
         $this->coupon = $coupon;
     }
@@ -82,7 +82,7 @@ class ExtBenefitTemplateDTO implements \JsonSerializable {
     /**
      * @return ExtTemplateDiscountDTO
      */
-    public function getDiscount(): ExtTemplateDiscountDTO
+    public function getDiscount(): ?ExtTemplateDiscountDTO
     {
         return $this->discount;
     }
@@ -90,7 +90,7 @@ class ExtBenefitTemplateDTO implements \JsonSerializable {
     /**
      * @param ExtTemplateDiscountDTO $discount
      */
-    public function setDiscount(ExtTemplateDiscountDTO $discount): void
+    public function setDiscount(?ExtTemplateDiscountDTO $discount): void
     {
         $this->discount = $discount;
     }
@@ -98,7 +98,7 @@ class ExtBenefitTemplateDTO implements \JsonSerializable {
     /**
      * @return ExtTemplatePostageDTO
      */
-    public function getPostage(): ExtTemplatePostageDTO
+    public function getPostage(): ?ExtTemplatePostageDTO
     {
         return $this->postage;
     }
@@ -106,7 +106,7 @@ class ExtBenefitTemplateDTO implements \JsonSerializable {
     /**
      * @param ExtTemplatePostageDTO $postage
      */
-    public function setPostage(ExtTemplatePostageDTO $postage): void
+    public function setPostage(?ExtTemplatePostageDTO $postage): void
     {
         $this->postage = $postage;
     }
@@ -114,7 +114,7 @@ class ExtBenefitTemplateDTO implements \JsonSerializable {
     /**
      * @return ExtTemplatePointsDTO
      */
-    public function getPoints(): ExtTemplatePointsDTO
+    public function getPoints(): ?ExtTemplatePointsDTO
     {
         return $this->points;
     }
@@ -122,7 +122,7 @@ class ExtBenefitTemplateDTO implements \JsonSerializable {
     /**
      * @param ExtTemplatePointsDTO $points
      */
-    public function setPoints(ExtTemplatePointsDTO $points): void
+    public function setPoints(?ExtTemplatePointsDTO $points): void
     {
         $this->points = $points;
     }

@@ -22,7 +22,7 @@ class YYYDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getData3(): string
+    public function getData3(): ?string
     {
         return $this->data3;
     }
@@ -30,7 +30,7 @@ class YYYDTO implements \JsonSerializable {
     /**
      * @param string $data3
      */
-    public function setData3(string $data3): void
+    public function setData3(?string $data3): void
     {
         $this->data3 = $data3;
     }

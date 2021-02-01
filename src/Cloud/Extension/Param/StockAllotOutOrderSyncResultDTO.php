@@ -84,7 +84,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -92,7 +92,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -100,7 +100,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getApplyOrderNo(): string
+    public function getApplyOrderNo(): ?string
     {
         return $this->applyOrderNo;
     }
@@ -108,7 +108,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @param string $applyOrderNo
      */
-    public function setApplyOrderNo(string $applyOrderNo): void
+    public function setApplyOrderNo(?string $applyOrderNo): void
     {
         $this->applyOrderNo = $applyOrderNo;
     }
@@ -116,7 +116,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBizBillNo(): string
+    public function getBizBillNo(): ?string
     {
         return $this->bizBillNo;
     }
@@ -124,7 +124,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @param string $bizBillNo
      */
-    public function setBizBillNo(string $bizBillNo): void
+    public function setBizBillNo(?string $bizBillNo): void
     {
         $this->bizBillNo = $bizBillNo;
     }
@@ -132,7 +132,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSourceOrderNo(): string
+    public function getSourceOrderNo(): ?string
     {
         return $this->sourceOrderNo;
     }
@@ -140,7 +140,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @param string $sourceOrderNo
      */
-    public function setSourceOrderNo(string $sourceOrderNo): void
+    public function setSourceOrderNo(?string $sourceOrderNo): void
     {
         $this->sourceOrderNo = $sourceOrderNo;
     }
@@ -148,7 +148,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOuterNo(): string
+    public function getOuterNo(): ?string
     {
         return $this->outerNo;
     }
@@ -156,7 +156,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @param string $outerNo
      */
-    public function setOuterNo(string $outerNo): void
+    public function setOuterNo(?string $outerNo): void
     {
         $this->outerNo = $outerNo;
     }
@@ -164,7 +164,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getFromWarehouseCode(): string
+    public function getFromWarehouseCode(): ?string
     {
         return $this->fromWarehouseCode;
     }
@@ -172,7 +172,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @param string $fromWarehouseCode
      */
-    public function setFromWarehouseCode(string $fromWarehouseCode): void
+    public function setFromWarehouseCode(?string $fromWarehouseCode): void
     {
         $this->fromWarehouseCode = $fromWarehouseCode;
     }
@@ -180,7 +180,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCreateTime(): int
+    public function getCreateTime(): ?int
     {
         return $this->createTime;
     }
@@ -188,7 +188,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @param int $createTime
      */
-    public function setCreateTime(int $createTime): void
+    public function setCreateTime(?int $createTime): void
     {
         $this->createTime = $createTime;
     }
@@ -196,7 +196,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRemark(): string
+    public function getRemark(): ?string
     {
         return $this->remark;
     }
@@ -204,7 +204,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @param string $remark
      */
-    public function setRemark(string $remark): void
+    public function setRemark(?string $remark): void
     {
         $this->remark = $remark;
     }
@@ -212,7 +212,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getItems(): array
+    public function getItems(): ?array
     {
         return $this->items;
     }
@@ -220,7 +220,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @param array $items
      */
-    public function setItems(array $items): void
+    public function setItems(?array $items): void
     {
         $this->items = $items;
     }
@@ -228,7 +228,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getDisOrders(): array
+    public function getDisOrders(): ?array
     {
         return $this->disOrders;
     }
@@ -236,7 +236,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @param array $disOrders
      */
-    public function setDisOrders(array $disOrders): void
+    public function setDisOrders(?array $disOrders): void
     {
         $this->disOrders = $disOrders;
     }
@@ -244,7 +244,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @return PluginHistoryOrderResultDTO
      */
-    public function getPluginHistoryOrder(): PluginHistoryOrderResultDTO
+    public function getPluginHistoryOrder(): ?PluginHistoryOrderResultDTO
     {
         return $this->pluginHistoryOrder;
     }
@@ -252,7 +252,7 @@ class StockAllotOutOrderSyncResultDTO implements \JsonSerializable {
     /**
      * @param PluginHistoryOrderResultDTO $pluginHistoryOrder
      */
-    public function setPluginHistoryOrder(PluginHistoryOrderResultDTO $pluginHistoryOrder): void
+    public function setPluginHistoryOrder(?PluginHistoryOrderResultDTO $pluginHistoryOrder): void
     {
         $this->pluginHistoryOrder = $pluginHistoryOrder;
     }

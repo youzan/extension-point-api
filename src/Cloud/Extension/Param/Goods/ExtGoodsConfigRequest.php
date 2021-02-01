@@ -46,7 +46,7 @@ class ExtGoodsConfigRequest implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getGoodsIdList(): array
+    public function getGoodsIdList(): ?array
     {
         return $this->goodsIdList;
     }
@@ -54,7 +54,7 @@ class ExtGoodsConfigRequest implements \JsonSerializable {
     /**
      * @param array $goodsIdList
      */
-    public function setGoodsIdList(array $goodsIdList): void
+    public function setGoodsIdList(?array $goodsIdList): void
     {
         $this->goodsIdList = $goodsIdList;
     }
@@ -62,7 +62,7 @@ class ExtGoodsConfigRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -70,7 +70,7 @@ class ExtGoodsConfigRequest implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -78,7 +78,7 @@ class ExtGoodsConfigRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDsOpenId(): string
+    public function getDsOpenId(): ?string
     {
         return $this->dsOpenId;
     }
@@ -86,7 +86,7 @@ class ExtGoodsConfigRequest implements \JsonSerializable {
     /**
      * @param string $dsOpenId
      */
-    public function setDsOpenId(string $dsOpenId): void
+    public function setDsOpenId(?string $dsOpenId): void
     {
         $this->dsOpenId = $dsOpenId;
     }
@@ -94,7 +94,7 @@ class ExtGoodsConfigRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDeLevel(): int
+    public function getDeLevel(): ?int
     {
         return $this->deLevel;
     }
@@ -102,7 +102,7 @@ class ExtGoodsConfigRequest implements \JsonSerializable {
     /**
      * @param int $deLevel
      */
-    public function setDeLevel(int $deLevel): void
+    public function setDeLevel(?int $deLevel): void
     {
         $this->deLevel = $deLevel;
     }
@@ -110,7 +110,7 @@ class ExtGoodsConfigRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDsMobile(): string
+    public function getDsMobile(): ?string
     {
         return $this->dsMobile;
     }
@@ -118,7 +118,7 @@ class ExtGoodsConfigRequest implements \JsonSerializable {
     /**
      * @param string $dsMobile
      */
-    public function setDsMobile(string $dsMobile): void
+    public function setDsMobile(?string $dsMobile): void
     {
         $this->dsMobile = $dsMobile;
     }

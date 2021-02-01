@@ -70,7 +70,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -78,7 +78,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -86,7 +86,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): string
+    public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
     }
@@ -94,7 +94,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(string $yzOpenId): void
+    public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -102,7 +102,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getActivityIds(): array
+    public function getActivityIds(): ?array
     {
         return $this->activityIds;
     }
@@ -110,7 +110,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @param array $activityIds
      */
-    public function setActivityIds(array $activityIds): void
+    public function setActivityIds(?array $activityIds): void
     {
         $this->activityIds = $activityIds;
     }
@@ -118,7 +118,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSearchStatus(): int
+    public function getSearchStatus(): ?int
     {
         return $this->searchStatus;
     }
@@ -126,7 +126,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @param int $searchStatus
      */
-    public function setSearchStatus(int $searchStatus): void
+    public function setSearchStatus(?int $searchStatus): void
     {
         $this->searchStatus = $searchStatus;
     }
@@ -134,7 +134,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPageNum(): int
+    public function getPageNum(): ?int
     {
         return $this->pageNum;
     }
@@ -142,7 +142,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @param int $pageNum
      */
-    public function setPageNum(int $pageNum): void
+    public function setPageNum(?int $pageNum): void
     {
         $this->pageNum = $pageNum;
     }
@@ -150,7 +150,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPageSize(): int
+    public function getPageSize(): ?int
     {
         return $this->pageSize;
     }
@@ -158,7 +158,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @param int $pageSize
      */
-    public function setPageSize(int $pageSize): void
+    public function setPageSize(?int $pageSize): void
     {
         $this->pageSize = $pageSize;
     }
@@ -166,7 +166,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersionNo(): int
+    public function getVersionNo(): ?int
     {
         return $this->versionNo;
     }
@@ -174,7 +174,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @param int $versionNo
      */
-    public function setVersionNo(int $versionNo): void
+    public function setVersionNo(?int $versionNo): void
     {
         $this->versionNo = $versionNo;
     }
@@ -182,7 +182,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): stdClass
+    public function getExtMap(): ?stdClass
     {
         return $this->extMap;
     }
@@ -190,7 +190,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @param stdClass $extMap
      */
-    public function setExtMap(stdClass $extMap): void
+    public function setExtMap(?stdClass $extMap): void
     {
         $this->extMap = $extMap;
     }
@@ -198,7 +198,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRootKdtId(): int
+    public function getRootKdtId(): ?int
     {
         return $this->rootKdtId;
     }
@@ -206,7 +206,7 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     /**
      * @param int $rootKdtId
      */
-    public function setRootKdtId(int $rootKdtId): void
+    public function setRootKdtId(?int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
     }

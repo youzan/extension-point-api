@@ -28,7 +28,7 @@ class ExtCarrierTplInfoDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCarrierTplAlias(): string
+    public function getCarrierTplAlias(): ?string
     {
         return $this->carrierTplAlias;
     }
@@ -36,7 +36,7 @@ class ExtCarrierTplInfoDTO implements \JsonSerializable {
     /**
      * @param string $carrierTplAlias
      */
-    public function setCarrierTplAlias(string $carrierTplAlias): void
+    public function setCarrierTplAlias(?string $carrierTplAlias): void
     {
         $this->carrierTplAlias = $carrierTplAlias;
     }
@@ -44,7 +44,7 @@ class ExtCarrierTplInfoDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCarrierType(): int
+    public function getCarrierType(): ?int
     {
         return $this->carrierType;
     }
@@ -52,7 +52,7 @@ class ExtCarrierTplInfoDTO implements \JsonSerializable {
     /**
      * @param int $carrierType
      */
-    public function setCarrierType(int $carrierType): void
+    public function setCarrierType(?int $carrierType): void
     {
         $this->carrierType = $carrierType;
     }

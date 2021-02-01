@@ -94,7 +94,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuCode(): string
+    public function getSkuCode(): ?string
     {
         return $this->skuCode;
     }
@@ -102,7 +102,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @param string $skuCode
      */
-    public function setSkuCode(string $skuCode): void
+    public function setSkuCode(?string $skuCode): void
     {
         $this->skuCode = $skuCode;
     }
@@ -110,7 +110,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuNo(): string
+    public function getSkuNo(): ?string
     {
         return $this->skuNo;
     }
@@ -118,7 +118,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @param string $skuNo
      */
-    public function setSkuNo(string $skuNo): void
+    public function setSkuNo(?string $skuNo): void
     {
         $this->skuNo = $skuNo;
     }
@@ -126,7 +126,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProductName(): string
+    public function getProductName(): ?string
     {
         return $this->productName;
     }
@@ -134,7 +134,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @param string $productName
      */
-    public function setProductName(string $productName): void
+    public function setProductName(?string $productName): void
     {
         $this->productName = $productName;
     }
@@ -142,7 +142,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUnit(): string
+    public function getUnit(): ?string
     {
         return $this->unit;
     }
@@ -150,7 +150,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @param string $unit
      */
-    public function setUnit(string $unit): void
+    public function setUnit(?string $unit): void
     {
         $this->unit = $unit;
     }
@@ -158,7 +158,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getQuantity(): string
+    public function getQuantity(): ?string
     {
         return $this->quantity;
     }
@@ -166,7 +166,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @param string $quantity
      */
-    public function setQuantity(string $quantity): void
+    public function setQuantity(?string $quantity): void
     {
         $this->quantity = $quantity;
     }
@@ -174,7 +174,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getWithTaxCost(): string
+    public function getWithTaxCost(): ?string
     {
         return $this->withTaxCost;
     }
@@ -182,7 +182,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @param string $withTaxCost
      */
-    public function setWithTaxCost(string $withTaxCost): void
+    public function setWithTaxCost(?string $withTaxCost): void
     {
         $this->withTaxCost = $withTaxCost;
     }
@@ -190,7 +190,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getWithTaxAmount(): string
+    public function getWithTaxAmount(): ?string
     {
         return $this->withTaxAmount;
     }
@@ -198,7 +198,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @param string $withTaxAmount
      */
-    public function setWithTaxAmount(string $withTaxAmount): void
+    public function setWithTaxAmount(?string $withTaxAmount): void
     {
         $this->withTaxAmount = $withTaxAmount;
     }
@@ -206,7 +206,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getWithoutTaxCost(): string
+    public function getWithoutTaxCost(): ?string
     {
         return $this->withoutTaxCost;
     }
@@ -214,7 +214,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @param string $withoutTaxCost
      */
-    public function setWithoutTaxCost(string $withoutTaxCost): void
+    public function setWithoutTaxCost(?string $withoutTaxCost): void
     {
         $this->withoutTaxCost = $withoutTaxCost;
     }
@@ -222,7 +222,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getWithoutTaxAmount(): string
+    public function getWithoutTaxAmount(): ?string
     {
         return $this->withoutTaxAmount;
     }
@@ -230,7 +230,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @param string $withoutTaxAmount
      */
-    public function setWithoutTaxAmount(string $withoutTaxAmount): void
+    public function setWithoutTaxAmount(?string $withoutTaxAmount): void
     {
         $this->withoutTaxAmount = $withoutTaxAmount;
     }
@@ -238,7 +238,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOutputTaxRate(): string
+    public function getOutputTaxRate(): ?string
     {
         return $this->outputTaxRate;
     }
@@ -246,7 +246,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @param string $outputTaxRate
      */
-    public function setOutputTaxRate(string $outputTaxRate): void
+    public function setOutputTaxRate(?string $outputTaxRate): void
     {
         $this->outputTaxRate = $outputTaxRate;
     }
@@ -254,7 +254,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getInputTaxRate(): string
+    public function getInputTaxRate(): ?string
     {
         return $this->inputTaxRate;
     }
@@ -262,7 +262,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @param string $inputTaxRate
      */
-    public function setInputTaxRate(string $inputTaxRate): void
+    public function setInputTaxRate(?string $inputTaxRate): void
     {
         $this->inputTaxRate = $inputTaxRate;
     }
@@ -270,7 +270,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRealSalesPrice(): string
+    public function getRealSalesPrice(): ?string
     {
         return $this->realSalesPrice;
     }
@@ -278,7 +278,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @param string $realSalesPrice
      */
-    public function setRealSalesPrice(string $realSalesPrice): void
+    public function setRealSalesPrice(?string $realSalesPrice): void
     {
         $this->realSalesPrice = $realSalesPrice;
     }
@@ -286,7 +286,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getWithTaxIncome(): string
+    public function getWithTaxIncome(): ?string
     {
         return $this->withTaxIncome;
     }
@@ -294,7 +294,7 @@ class StockOrderItemResultDTO implements \JsonSerializable {
     /**
      * @param string $withTaxIncome
      */
-    public function setWithTaxIncome(string $withTaxIncome): void
+    public function setWithTaxIncome(?string $withTaxIncome): void
     {
         $this->withTaxIncome = $withTaxIncome;
     }

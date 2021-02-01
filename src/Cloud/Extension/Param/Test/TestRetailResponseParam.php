@@ -34,7 +34,7 @@ class TestRetailResponseParam implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMsg(): string
+    public function getMsg(): ?string
     {
         return $this->msg;
     }
@@ -42,7 +42,7 @@ class TestRetailResponseParam implements \JsonSerializable {
     /**
      * @param string $msg
      */
-    public function setMsg(string $msg): void
+    public function setMsg(?string $msg): void
     {
         $this->msg = $msg;
     }
@@ -50,7 +50,7 @@ class TestRetailResponseParam implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getSuccess(): bool
+    public function getSuccess(): ?bool
     {
         return $this->success;
     }
@@ -58,7 +58,7 @@ class TestRetailResponseParam implements \JsonSerializable {
     /**
      * @param bool $success
      */
-    public function setSuccess(bool $success): void
+    public function setSuccess(?bool $success): void
     {
         $this->success = $success;
     }
@@ -66,7 +66,7 @@ class TestRetailResponseParam implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -74,7 +74,7 @@ class TestRetailResponseParam implements \JsonSerializable {
     /**
      * @param string $code
      */
-    public function setCode(string $code): void
+    public function setCode(?string $code): void
     {
         $this->code = $code;
     }

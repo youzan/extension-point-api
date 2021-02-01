@@ -22,7 +22,7 @@ class ExtCustomerRelationBindResponseDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getAllowBind(): bool
+    public function getAllowBind(): ?bool
     {
         return $this->allowBind;
     }
@@ -30,7 +30,7 @@ class ExtCustomerRelationBindResponseDTO implements \JsonSerializable {
     /**
      * @param bool $allowBind
      */
-    public function setAllowBind(bool $allowBind): void
+    public function setAllowBind(?bool $allowBind): void
     {
         $this->allowBind = $allowBind;
     }

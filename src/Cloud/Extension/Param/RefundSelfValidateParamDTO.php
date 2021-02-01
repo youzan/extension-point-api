@@ -52,7 +52,7 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUserId(): string
+    public function getUserId(): ?string
     {
         return $this->userId;
     }
@@ -60,7 +60,7 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @param string $userId
      */
-    public function setUserId(string $userId): void
+    public function setUserId(?string $userId): void
     {
         $this->userId = $userId;
     }
@@ -68,7 +68,7 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -76,7 +76,7 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -84,7 +84,7 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getReason(): int
+    public function getReason(): ?int
     {
         return $this->reason;
     }
@@ -92,7 +92,7 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @param int $reason
      */
-    public function setReason(int $reason): void
+    public function setReason(?int $reason): void
     {
         $this->reason = $reason;
     }
@@ -100,7 +100,7 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -108,7 +108,7 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -116,7 +116,7 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDisputeFlowType(): string
+    public function getDisputeFlowType(): ?string
     {
         return $this->disputeFlowType;
     }
@@ -124,7 +124,7 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @param string $disputeFlowType
      */
-    public function setDisputeFlowType(string $disputeFlowType): void
+    public function setDisputeFlowType(?string $disputeFlowType): void
     {
         $this->disputeFlowType = $disputeFlowType;
     }
@@ -132,7 +132,7 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getRefundOrderItems(): array
+    public function getRefundOrderItems(): ?array
     {
         return $this->refundOrderItems;
     }
@@ -140,7 +140,7 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     /**
      * @param array $refundOrderItems
      */
-    public function setRefundOrderItems(array $refundOrderItems): void
+    public function setRefundOrderItems(?array $refundOrderItems): void
     {
         $this->refundOrderItems = $refundOrderItems;
     }
