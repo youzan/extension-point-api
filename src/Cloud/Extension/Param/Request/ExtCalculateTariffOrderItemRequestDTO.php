@@ -53,6 +53,24 @@ class ExtCalculateTariffOrderItemRequestDTO implements \JsonSerializable {
      */
     private $promotions;
 
+    /**
+     * 商品数量
+     * @var int
+     */
+    private $num;
+
+    /**
+     * 商品税率
+     * @var string
+     */
+    private $tariffRate;
+
+    /**
+     * 原商品单价
+     * @var int
+     */
+    private $originUnitPrice;
+
 
 
     /**
@@ -165,6 +183,54 @@ class ExtCalculateTariffOrderItemRequestDTO implements \JsonSerializable {
     public function setPromotions(array $promotions): void
     {
         $this->promotions = $promotions;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNum(): int
+    {
+        return $this->num;
+    }
+
+    /**
+     * @param int $num
+     */
+    public function setNum(int $num): void
+    {
+        $this->num = $num;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTariffRate(): string
+    {
+        return $this->tariffRate;
+    }
+
+    /**
+     * @param string $tariffRate
+     */
+    public function setTariffRate(string $tariffRate): void
+    {
+        $this->tariffRate = $tariffRate;
+    }
+
+    /**
+     * @return int
+     */
+    public function getOriginUnitPrice(): int
+    {
+        return $this->originUnitPrice;
+    }
+
+    /**
+     * @param int $originUnitPrice
+     */
+    public function setOriginUnitPrice(int $originUnitPrice): void
+    {
+        $this->originUnitPrice = $originUnitPrice;
     }
 
     public function jsonSerialize() {
