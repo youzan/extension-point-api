@@ -28,7 +28,7 @@ class PointRightsDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPoint(): int
+    public function getPoint(): ?int
     {
         return $this->point;
     }
@@ -36,7 +36,7 @@ class PointRightsDTO implements \JsonSerializable {
     /**
      * @param int $point
      */
-    public function setPoint(int $point): void
+    public function setPoint(?int $point): void
     {
         $this->point = $point;
     }
@@ -44,7 +44,7 @@ class PointRightsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCustomPointName(): string
+    public function getCustomPointName(): ?string
     {
         return $this->customPointName;
     }
@@ -52,7 +52,7 @@ class PointRightsDTO implements \JsonSerializable {
     /**
      * @param string $customPointName
      */
-    public function setCustomPointName(string $customPointName): void
+    public function setCustomPointName(?string $customPointName): void
     {
         $this->customPointName = $customPointName;
     }

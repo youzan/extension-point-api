@@ -90,7 +90,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getAuthMap(): stdClass
+    public function getAuthMap(): ?stdClass
     {
         return $this->authMap;
     }
@@ -98,7 +98,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param stdClass $authMap
      */
-    public function setAuthMap(stdClass $authMap): void
+    public function setAuthMap(?stdClass $authMap): void
     {
         $this->authMap = $authMap;
     }
@@ -106,7 +106,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundNo(): string
+    public function getRefundNo(): ?string
     {
         return $this->refundNo;
     }
@@ -114,7 +114,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $refundNo
      */
-    public function setRefundNo(string $refundNo): void
+    public function setRefundNo(?string $refundNo): void
     {
         $this->refundNo = $refundNo;
     }
@@ -122,7 +122,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSaleWay(): string
+    public function getSaleWay(): ?string
     {
         return $this->saleWay;
     }
@@ -130,7 +130,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $saleWay
      */
-    public function setSaleWay(string $saleWay): void
+    public function setSaleWay(?string $saleWay): void
     {
         $this->saleWay = $saleWay;
     }
@@ -138,7 +138,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCreateTime(): int
+    public function getCreateTime(): ?int
     {
         return $this->createTime;
     }
@@ -146,7 +146,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param int $createTime
      */
-    public function setCreateTime(int $createTime): void
+    public function setCreateTime(?int $createTime): void
     {
         $this->createTime = $createTime;
     }
@@ -154,7 +154,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundType(): string
+    public function getRefundType(): ?string
     {
         return $this->refundType;
     }
@@ -162,7 +162,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $refundType
      */
-    public function setRefundType(string $refundType): void
+    public function setRefundType(?string $refundType): void
     {
         $this->refundType = $refundType;
     }
@@ -170,7 +170,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundDemand(): string
+    public function getRefundDemand(): ?string
     {
         return $this->refundDemand;
     }
@@ -178,7 +178,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $refundDemand
      */
-    public function setRefundDemand(string $refundDemand): void
+    public function setRefundDemand(?string $refundDemand): void
     {
         $this->refundDemand = $refundDemand;
     }
@@ -186,7 +186,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundFee(): string
+    public function getRefundFee(): ?string
     {
         return $this->refundFee;
     }
@@ -194,7 +194,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $refundFee
      */
-    public function setRefundFee(string $refundFee): void
+    public function setRefundFee(?string $refundFee): void
     {
         $this->refundFee = $refundFee;
     }
@@ -202,7 +202,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundStatus(): string
+    public function getRefundStatus(): ?string
     {
         return $this->refundStatus;
     }
@@ -210,7 +210,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $refundStatus
      */
-    public function setRefundStatus(string $refundStatus): void
+    public function setRefundStatus(?string $refundStatus): void
     {
         $this->refundStatus = $refundStatus;
     }
@@ -218,7 +218,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersion(): int
+    public function getVersion(): ?int
     {
         return $this->version;
     }
@@ -226,7 +226,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param int $version
      */
-    public function setVersion(int $version): void
+    public function setVersion(?int $version): void
     {
         $this->version = $version;
     }
@@ -234,7 +234,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getReasonDesc(): string
+    public function getReasonDesc(): ?string
     {
         return $this->reasonDesc;
     }
@@ -242,7 +242,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $reasonDesc
      */
-    public function setReasonDesc(string $reasonDesc): void
+    public function setReasonDesc(?string $reasonDesc): void
     {
         $this->reasonDesc = $reasonDesc;
     }
@@ -250,7 +250,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBuyerName(): string
+    public function getBuyerName(): ?string
     {
         return $this->buyerName;
     }
@@ -258,7 +258,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $buyerName
      */
-    public function setBuyerName(string $buyerName): void
+    public function setBuyerName(?string $buyerName): void
     {
         $this->buyerName = $buyerName;
     }
@@ -266,7 +266,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getRefundItems(): array
+    public function getRefundItems(): ?array
     {
         return $this->refundItems;
     }
@@ -274,7 +274,7 @@ class RefundOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param array $refundItems
      */
-    public function setRefundItems(array $refundItems): void
+    public function setRefundItems(?array $refundItems): void
     {
         $this->refundItems = $refundItems;
     }

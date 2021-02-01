@@ -34,7 +34,7 @@ class BillingDiscount implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getGoodsList(): array
+    public function getGoodsList(): ?array
     {
         return $this->goodsList;
     }
@@ -42,7 +42,7 @@ class BillingDiscount implements \JsonSerializable {
     /**
      * @param array $goodsList
      */
-    public function setGoodsList(array $goodsList): void
+    public function setGoodsList(?array $goodsList): void
     {
         $this->goodsList = $goodsList;
     }
@@ -50,7 +50,7 @@ class BillingDiscount implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDecrease(): int
+    public function getDecrease(): ?int
     {
         return $this->decrease;
     }
@@ -58,7 +58,7 @@ class BillingDiscount implements \JsonSerializable {
     /**
      * @param int $decrease
      */
-    public function setDecrease(int $decrease): void
+    public function setDecrease(?int $decrease): void
     {
         $this->decrease = $decrease;
     }
@@ -66,7 +66,7 @@ class BillingDiscount implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPay(): int
+    public function getPay(): ?int
     {
         return $this->pay;
     }
@@ -74,7 +74,7 @@ class BillingDiscount implements \JsonSerializable {
     /**
      * @param int $pay
      */
-    public function setPay(int $pay): void
+    public function setPay(?int $pay): void
     {
         $this->pay = $pay;
     }

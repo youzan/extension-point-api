@@ -22,7 +22,7 @@ class ActivityInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getAppCode(): int
+    public function getAppCode(): ?int
     {
         return $this->appCode;
     }
@@ -30,7 +30,7 @@ class ActivityInfo implements \JsonSerializable {
     /**
      * @param int $appCode
      */
-    public function setAppCode(int $appCode): void
+    public function setAppCode(?int $appCode): void
     {
         $this->appCode = $appCode;
     }

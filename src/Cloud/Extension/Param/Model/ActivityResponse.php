@@ -46,7 +46,7 @@ class ActivityResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getActivityId(): int
+    public function getActivityId(): ?int
     {
         return $this->activityId;
     }
@@ -54,7 +54,7 @@ class ActivityResponse implements \JsonSerializable {
     /**
      * @param int $activityId
      */
-    public function setActivityId(int $activityId): void
+    public function setActivityId(?int $activityId): void
     {
         $this->activityId = $activityId;
     }
@@ -62,7 +62,7 @@ class ActivityResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getActivityName(): string
+    public function getActivityName(): ?string
     {
         return $this->activityName;
     }
@@ -70,7 +70,7 @@ class ActivityResponse implements \JsonSerializable {
     /**
      * @param string $activityName
      */
-    public function setActivityName(string $activityName): void
+    public function setActivityName(?string $activityName): void
     {
         $this->activityName = $activityName;
     }
@@ -78,7 +78,7 @@ class ActivityResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPromotionLevel(): string
+    public function getPromotionLevel(): ?string
     {
         return $this->promotionLevel;
     }
@@ -86,7 +86,7 @@ class ActivityResponse implements \JsonSerializable {
     /**
      * @param string $promotionLevel
      */
-    public function setPromotionLevel(string $promotionLevel): void
+    public function setPromotionLevel(?string $promotionLevel): void
     {
         $this->promotionLevel = $promotionLevel;
     }
@@ -94,7 +94,7 @@ class ActivityResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDecrease(): int
+    public function getDecrease(): ?int
     {
         return $this->decrease;
     }
@@ -102,7 +102,7 @@ class ActivityResponse implements \JsonSerializable {
     /**
      * @param int $decrease
      */
-    public function setDecrease(int $decrease): void
+    public function setDecrease(?int $decrease): void
     {
         $this->decrease = $decrease;
     }
@@ -110,7 +110,7 @@ class ActivityResponse implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getGoodsResponseList(): array
+    public function getGoodsResponseList(): ?array
     {
         return $this->goodsResponseList;
     }
@@ -118,7 +118,7 @@ class ActivityResponse implements \JsonSerializable {
     /**
      * @param array $goodsResponseList
      */
-    public function setGoodsResponseList(array $goodsResponseList): void
+    public function setGoodsResponseList(?array $goodsResponseList): void
     {
         $this->goodsResponseList = $goodsResponseList;
     }

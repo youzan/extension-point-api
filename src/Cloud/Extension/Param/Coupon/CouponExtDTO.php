@@ -61,7 +61,7 @@ class CouponExtDTO implements \JsonSerializable {
     /**
      * @return CouponGroupExtDTO
      */
-    public function getCouponGroupExtDTO(): CouponGroupExtDTO
+    public function getCouponGroupExtDTO(): ?CouponGroupExtDTO
     {
         return $this->couponGroupExtDTO;
     }
@@ -69,7 +69,7 @@ class CouponExtDTO implements \JsonSerializable {
     /**
      * @param CouponGroupExtDTO $couponGroupExtDTO
      */
-    public function setCouponGroupExtDTO(CouponGroupExtDTO $couponGroupExtDTO): void
+    public function setCouponGroupExtDTO(?CouponGroupExtDTO $couponGroupExtDTO): void
     {
         $this->couponGroupExtDTO = $couponGroupExtDTO;
     }
@@ -77,7 +77,7 @@ class CouponExtDTO implements \JsonSerializable {
     /**
      * @return CouponUsedInfoExtDTO
      */
-    public function getCouponUsedInfoExtDTO(): CouponUsedInfoExtDTO
+    public function getCouponUsedInfoExtDTO(): ?CouponUsedInfoExtDTO
     {
         return $this->couponUsedInfoExtDTO;
     }
@@ -85,7 +85,7 @@ class CouponExtDTO implements \JsonSerializable {
     /**
      * @param CouponUsedInfoExtDTO $couponUsedInfoExtDTO
      */
-    public function setCouponUsedInfoExtDTO(CouponUsedInfoExtDTO $couponUsedInfoExtDTO): void
+    public function setCouponUsedInfoExtDTO(?CouponUsedInfoExtDTO $couponUsedInfoExtDTO): void
     {
         $this->couponUsedInfoExtDTO = $couponUsedInfoExtDTO;
     }
@@ -93,7 +93,7 @@ class CouponExtDTO implements \JsonSerializable {
     /**
      * @return CustomerIdentityDTO
      */
-    public function getCustomerIdentityDTO(): CustomerIdentityDTO
+    public function getCustomerIdentityDTO(): ?CustomerIdentityDTO
     {
         return $this->customerIdentityDTO;
     }
@@ -101,7 +101,7 @@ class CouponExtDTO implements \JsonSerializable {
     /**
      * @param CustomerIdentityDTO $customerIdentityDTO
      */
-    public function setCustomerIdentityDTO(CustomerIdentityDTO $customerIdentityDTO): void
+    public function setCustomerIdentityDTO(?CustomerIdentityDTO $customerIdentityDTO): void
     {
         $this->customerIdentityDTO = $customerIdentityDTO;
     }
@@ -109,7 +109,7 @@ class CouponExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
@@ -117,7 +117,7 @@ class CouponExtDTO implements \JsonSerializable {
     /**
      * @param int $id
      */
-    public function setId(int $id): void
+    public function setId(?int $id): void
     {
         $this->id = $id;
     }
@@ -125,7 +125,7 @@ class CouponExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVerifyCode(): int
+    public function getVerifyCode(): ?int
     {
         return $this->verifyCode;
     }
@@ -133,7 +133,7 @@ class CouponExtDTO implements \JsonSerializable {
     /**
      * @param int $verifyCode
      */
-    public function setVerifyCode(int $verifyCode): void
+    public function setVerifyCode(?int $verifyCode): void
     {
         $this->verifyCode = $verifyCode;
     }
@@ -141,7 +141,7 @@ class CouponExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStatus(): int
+    public function getStatus(): ?int
     {
         return $this->status;
     }
@@ -149,7 +149,7 @@ class CouponExtDTO implements \JsonSerializable {
     /**
      * @param int $status
      */
-    public function setStatus(int $status): void
+    public function setStatus(?int $status): void
     {
         $this->status = $status;
     }
@@ -157,7 +157,7 @@ class CouponExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTakeAt(): int
+    public function getTakeAt(): ?int
     {
         return $this->takeAt;
     }
@@ -165,7 +165,7 @@ class CouponExtDTO implements \JsonSerializable {
     /**
      * @param int $takeAt
      */
-    public function setTakeAt(int $takeAt): void
+    public function setTakeAt(?int $takeAt): void
     {
         $this->takeAt = $takeAt;
     }

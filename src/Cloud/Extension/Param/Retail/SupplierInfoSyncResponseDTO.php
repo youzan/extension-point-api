@@ -28,7 +28,7 @@ class SupplierInfoSyncResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalCount(): int
+    public function getTotalCount(): ?int
     {
         return $this->totalCount;
     }
@@ -36,7 +36,7 @@ class SupplierInfoSyncResponseDTO implements \JsonSerializable {
     /**
      * @param int $totalCount
      */
-    public function setTotalCount(int $totalCount): void
+    public function setTotalCount(?int $totalCount): void
     {
         $this->totalCount = $totalCount;
     }
@@ -44,7 +44,7 @@ class SupplierInfoSyncResponseDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getSupplierOrderSyncDTOList(): array
+    public function getSupplierOrderSyncDTOList(): ?array
     {
         return $this->supplierOrderSyncDTOList;
     }
@@ -52,7 +52,7 @@ class SupplierInfoSyncResponseDTO implements \JsonSerializable {
     /**
      * @param array $supplierOrderSyncDTOList
      */
-    public function setSupplierOrderSyncDTOList(array $supplierOrderSyncDTOList): void
+    public function setSupplierOrderSyncDTOList(?array $supplierOrderSyncDTOList): void
     {
         $this->supplierOrderSyncDTOList = $supplierOrderSyncDTOList;
     }

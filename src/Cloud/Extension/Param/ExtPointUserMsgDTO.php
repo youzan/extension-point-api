@@ -58,7 +58,7 @@ class ExtPointUserMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBuyerId(): int
+    public function getBuyerId(): ?int
     {
         return $this->buyerId;
     }
@@ -66,7 +66,7 @@ class ExtPointUserMsgDTO implements \JsonSerializable {
     /**
      * @param int $buyerId
      */
-    public function setBuyerId(int $buyerId): void
+    public function setBuyerId(?int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
@@ -74,7 +74,7 @@ class ExtPointUserMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getFansType(): int
+    public function getFansType(): ?int
     {
         return $this->fansType;
     }
@@ -82,7 +82,7 @@ class ExtPointUserMsgDTO implements \JsonSerializable {
     /**
      * @param int $fansType
      */
-    public function setFansType(int $fansType): void
+    public function setFansType(?int $fansType): void
     {
         $this->fansType = $fansType;
     }
@@ -90,7 +90,7 @@ class ExtPointUserMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getFansId(): int
+    public function getFansId(): ?int
     {
         return $this->fansId;
     }
@@ -98,7 +98,7 @@ class ExtPointUserMsgDTO implements \JsonSerializable {
     /**
      * @param int $fansId
      */
-    public function setFansId(int $fansId): void
+    public function setFansId(?int $fansId): void
     {
         $this->fansId = $fansId;
     }
@@ -106,7 +106,7 @@ class ExtPointUserMsgDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getClientIp(): string
+    public function getClientIp(): ?string
     {
         return $this->clientIp;
     }
@@ -114,7 +114,7 @@ class ExtPointUserMsgDTO implements \JsonSerializable {
     /**
      * @param string $clientIp
      */
-    public function setClientIp(string $clientIp): void
+    public function setClientIp(?string $clientIp): void
     {
         $this->clientIp = $clientIp;
     }
@@ -122,7 +122,7 @@ class ExtPointUserMsgDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOutUserId(): string
+    public function getOutUserId(): ?string
     {
         return $this->outUserId;
     }
@@ -130,7 +130,7 @@ class ExtPointUserMsgDTO implements \JsonSerializable {
     /**
      * @param string $outUserId
      */
-    public function setOutUserId(string $outUserId): void
+    public function setOutUserId(?string $outUserId): void
     {
         $this->outUserId = $outUserId;
     }
@@ -138,7 +138,7 @@ class ExtPointUserMsgDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPhoneNo(): string
+    public function getPhoneNo(): ?string
     {
         return $this->phoneNo;
     }
@@ -146,7 +146,7 @@ class ExtPointUserMsgDTO implements \JsonSerializable {
     /**
      * @param string $phoneNo
      */
-    public function setPhoneNo(string $phoneNo): void
+    public function setPhoneNo(?string $phoneNo): void
     {
         $this->phoneNo = $phoneNo;
     }
@@ -154,7 +154,7 @@ class ExtPointUserMsgDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): string
+    public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
     }
@@ -162,7 +162,7 @@ class ExtPointUserMsgDTO implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(string $yzOpenId): void
+    public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }

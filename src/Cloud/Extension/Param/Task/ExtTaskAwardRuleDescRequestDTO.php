@@ -46,7 +46,7 @@ class ExtTaskAwardRuleDescRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRootKdtId(): int
+    public function getRootKdtId(): ?int
     {
         return $this->rootKdtId;
     }
@@ -54,7 +54,7 @@ class ExtTaskAwardRuleDescRequestDTO implements \JsonSerializable {
     /**
      * @param int $rootKdtId
      */
-    public function setRootKdtId(int $rootKdtId): void
+    public function setRootKdtId(?int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
     }
@@ -62,7 +62,7 @@ class ExtTaskAwardRuleDescRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTaskId(): int
+    public function getTaskId(): ?int
     {
         return $this->taskId;
     }
@@ -70,7 +70,7 @@ class ExtTaskAwardRuleDescRequestDTO implements \JsonSerializable {
     /**
      * @param int $taskId
      */
-    public function setTaskId(int $taskId): void
+    public function setTaskId(?int $taskId): void
     {
         $this->taskId = $taskId;
     }
@@ -78,7 +78,7 @@ class ExtTaskAwardRuleDescRequestDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getAwardGradeList(): array
+    public function getAwardGradeList(): ?array
     {
         return $this->awardGradeList;
     }
@@ -86,7 +86,7 @@ class ExtTaskAwardRuleDescRequestDTO implements \JsonSerializable {
     /**
      * @param array $awardGradeList
      */
-    public function setAwardGradeList(array $awardGradeList): void
+    public function setAwardGradeList(?array $awardGradeList): void
     {
         $this->awardGradeList = $awardGradeList;
     }
@@ -94,7 +94,7 @@ class ExtTaskAwardRuleDescRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTaskDemandType(): int
+    public function getTaskDemandType(): ?int
     {
         return $this->taskDemandType;
     }
@@ -102,7 +102,7 @@ class ExtTaskAwardRuleDescRequestDTO implements \JsonSerializable {
     /**
      * @param int $taskDemandType
      */
-    public function setTaskDemandType(int $taskDemandType): void
+    public function setTaskDemandType(?int $taskDemandType): void
     {
         $this->taskDemandType = $taskDemandType;
     }
@@ -110,7 +110,7 @@ class ExtTaskAwardRuleDescRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -118,7 +118,7 @@ class ExtTaskAwardRuleDescRequestDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

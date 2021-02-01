@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 /**
  * 联系地址
  * @author Baymax
- * @create Sat Sep 29 21:13:57 CST 2018
+ * @create 2018-09-29 21:13:57.0
  */
 class ContactAddressCreateDTO implements \JsonSerializable {
 
@@ -28,7 +28,7 @@ class ContactAddressCreateDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAreaCode(): string
+    public function getAreaCode(): ?string
     {
         return $this->areaCode;
     }
@@ -36,7 +36,7 @@ class ContactAddressCreateDTO implements \JsonSerializable {
     /**
      * @param string $areaCode
      */
-    public function setAreaCode(string $areaCode): void
+    public function setAreaCode(?string $areaCode): void
     {
         $this->areaCode = $areaCode;
     }
@@ -44,7 +44,7 @@ class ContactAddressCreateDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAddress(): string
+    public function getAddress(): ?string
     {
         return $this->address;
     }
@@ -52,7 +52,7 @@ class ContactAddressCreateDTO implements \JsonSerializable {
     /**
      * @param string $address
      */
-    public function setAddress(string $address): void
+    public function setAddress(?string $address): void
     {
         $this->address = $address;
     }

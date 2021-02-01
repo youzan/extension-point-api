@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 /**
  * 
  * @author Baymax
- * @create Sat Sep 29 21:13:57 CST 2018
+ * @create 2018-09-29 21:13:57.0
  */
 class Result implements \JsonSerializable {
 
@@ -22,7 +22,7 @@ class Result implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getData(): bool
+    public function getData(): ?bool
     {
         return $this->data;
     }
@@ -30,7 +30,7 @@ class Result implements \JsonSerializable {
     /**
      * @param bool $data
      */
-    public function setData(bool $data): void
+    public function setData(?bool $data): void
     {
         $this->data = $data;
     }

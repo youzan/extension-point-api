@@ -46,7 +46,7 @@ class VisitedSubShopPageQueryResult implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getLastVisitedKdtId(): int
+    public function getLastVisitedKdtId(): ?int
     {
         return $this->lastVisitedKdtId;
     }
@@ -54,7 +54,7 @@ class VisitedSubShopPageQueryResult implements \JsonSerializable {
     /**
      * @param int $lastVisitedKdtId
      */
-    public function setLastVisitedKdtId(int $lastVisitedKdtId): void
+    public function setLastVisitedKdtId(?int $lastVisitedKdtId): void
     {
         $this->lastVisitedKdtId = $lastVisitedKdtId;
     }
@@ -62,7 +62,7 @@ class VisitedSubShopPageQueryResult implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotal(): int
+    public function getTotal(): ?int
     {
         return $this->total;
     }
@@ -70,7 +70,7 @@ class VisitedSubShopPageQueryResult implements \JsonSerializable {
     /**
      * @param int $total
      */
-    public function setTotal(int $total): void
+    public function setTotal(?int $total): void
     {
         $this->total = $total;
     }
@@ -78,7 +78,7 @@ class VisitedSubShopPageQueryResult implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPageNum(): int
+    public function getPageNum(): ?int
     {
         return $this->pageNum;
     }
@@ -86,7 +86,7 @@ class VisitedSubShopPageQueryResult implements \JsonSerializable {
     /**
      * @param int $pageNum
      */
-    public function setPageNum(int $pageNum): void
+    public function setPageNum(?int $pageNum): void
     {
         $this->pageNum = $pageNum;
     }
@@ -94,7 +94,7 @@ class VisitedSubShopPageQueryResult implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPageSize(): int
+    public function getPageSize(): ?int
     {
         return $this->pageSize;
     }
@@ -102,7 +102,7 @@ class VisitedSubShopPageQueryResult implements \JsonSerializable {
     /**
      * @param int $pageSize
      */
-    public function setPageSize(int $pageSize): void
+    public function setPageSize(?int $pageSize): void
     {
         $this->pageSize = $pageSize;
     }
@@ -110,7 +110,7 @@ class VisitedSubShopPageQueryResult implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getData(): array
+    public function getData(): ?array
     {
         return $this->data;
     }
@@ -118,7 +118,7 @@ class VisitedSubShopPageQueryResult implements \JsonSerializable {
     /**
      * @param array $data
      */
-    public function setData(array $data): void
+    public function setData(?array $data): void
     {
         $this->data = $data;
     }

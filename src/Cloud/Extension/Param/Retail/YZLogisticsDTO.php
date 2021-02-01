@@ -88,7 +88,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLogisticsNo(): string
+    public function getLogisticsNo(): ?string
     {
         return $this->logisticsNo;
     }
@@ -96,7 +96,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @param string $logisticsNo
      */
-    public function setLogisticsNo(string $logisticsNo): void
+    public function setLogisticsNo(?string $logisticsNo): void
     {
         $this->logisticsNo = $logisticsNo;
     }
@@ -104,7 +104,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCompanyCode(): string
+    public function getCompanyCode(): ?string
     {
         return $this->companyCode;
     }
@@ -112,7 +112,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @param string $companyCode
      */
-    public function setCompanyCode(string $companyCode): void
+    public function setCompanyCode(?string $companyCode): void
     {
         $this->companyCode = $companyCode;
     }
@@ -120,7 +120,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getReceiver(): string
+    public function getReceiver(): ?string
     {
         return $this->receiver;
     }
@@ -128,7 +128,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @param string $receiver
      */
-    public function setReceiver(string $receiver): void
+    public function setReceiver(?string $receiver): void
     {
         $this->receiver = $receiver;
     }
@@ -136,7 +136,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMobile(): string
+    public function getMobile(): ?string
     {
         return $this->mobile;
     }
@@ -144,7 +144,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @param string $mobile
      */
-    public function setMobile(string $mobile): void
+    public function setMobile(?string $mobile): void
     {
         $this->mobile = $mobile;
     }
@@ -152,7 +152,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAreaCode(): string
+    public function getAreaCode(): ?string
     {
         return $this->areaCode;
     }
@@ -160,7 +160,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @param string $areaCode
      */
-    public function setAreaCode(string $areaCode): void
+    public function setAreaCode(?string $areaCode): void
     {
         $this->areaCode = $areaCode;
     }
@@ -168,7 +168,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTelephone(): string
+    public function getTelephone(): ?string
     {
         return $this->telephone;
     }
@@ -176,7 +176,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @param string $telephone
      */
-    public function setTelephone(string $telephone): void
+    public function setTelephone(?string $telephone): void
     {
         $this->telephone = $telephone;
     }
@@ -184,7 +184,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getExtensionNumber(): string
+    public function getExtensionNumber(): ?string
     {
         return $this->extensionNumber;
     }
@@ -192,7 +192,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @param string $extensionNumber
      */
-    public function setExtensionNumber(string $extensionNumber): void
+    public function setExtensionNumber(?string $extensionNumber): void
     {
         $this->extensionNumber = $extensionNumber;
     }
@@ -200,7 +200,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAddress(): string
+    public function getAddress(): ?string
     {
         return $this->address;
     }
@@ -208,7 +208,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @param string $address
      */
-    public function setAddress(string $address): void
+    public function setAddress(?string $address): void
     {
         $this->address = $address;
     }
@@ -216,7 +216,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPostcode(): int
+    public function getPostcode(): ?int
     {
         return $this->postcode;
     }
@@ -224,7 +224,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @param int $postcode
      */
-    public function setPostcode(int $postcode): void
+    public function setPostcode(?int $postcode): void
     {
         $this->postcode = $postcode;
     }
@@ -232,7 +232,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProvince(): string
+    public function getProvince(): ?string
     {
         return $this->province;
     }
@@ -240,7 +240,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @param string $province
      */
-    public function setProvince(string $province): void
+    public function setProvince(?string $province): void
     {
         $this->province = $province;
     }
@@ -248,7 +248,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCity(): string
+    public function getCity(): ?string
     {
         return $this->city;
     }
@@ -256,7 +256,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @param string $city
      */
-    public function setCity(string $city): void
+    public function setCity(?string $city): void
     {
         $this->city = $city;
     }
@@ -264,7 +264,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRegion(): string
+    public function getRegion(): ?string
     {
         return $this->region;
     }
@@ -272,7 +272,7 @@ class YZLogisticsDTO implements \JsonSerializable {
     /**
      * @param string $region
      */
-    public function setRegion(string $region): void
+    public function setRegion(?string $region): void
     {
         $this->region = $region;
     }

@@ -172,7 +172,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCanNotUsePromotionAmount(): int
+    public function getCanNotUsePromotionAmount(): ?int
     {
         return $this->canNotUsePromotionAmount;
     }
@@ -180,7 +180,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param int $canNotUsePromotionAmount
      */
-    public function setCanNotUsePromotionAmount(int $canNotUsePromotionAmount): void
+    public function setCanNotUsePromotionAmount(?int $canNotUsePromotionAmount): void
     {
         $this->canNotUsePromotionAmount = $canNotUsePromotionAmount;
     }
@@ -188,7 +188,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getJoinedGoodsId(): array
+    public function getJoinedGoodsId(): ?array
     {
         return $this->joinedGoodsId;
     }
@@ -196,7 +196,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param array $joinedGoodsId
      */
-    public function setJoinedGoodsId(array $joinedGoodsId): void
+    public function setJoinedGoodsId(?array $joinedGoodsId): void
     {
         $this->joinedGoodsId = $joinedGoodsId;
     }
@@ -204,7 +204,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPromotionName(): string
+    public function getPromotionName(): ?string
     {
         return $this->promotionName;
     }
@@ -212,7 +212,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param string $promotionName
      */
-    public function setPromotionName(string $promotionName): void
+    public function setPromotionName(?string $promotionName): void
     {
         $this->promotionName = $promotionName;
     }
@@ -220,7 +220,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCouponType(): int
+    public function getCouponType(): ?int
     {
         return $this->couponType;
     }
@@ -228,7 +228,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param int $couponType
      */
-    public function setCouponType(int $couponType): void
+    public function setCouponType(?int $couponType): void
     {
         $this->couponType = $couponType;
     }
@@ -236,7 +236,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOuterCoupon(): int
+    public function getOuterCoupon(): ?int
     {
         return $this->outerCoupon;
     }
@@ -244,7 +244,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param int $outerCoupon
      */
-    public function setOuterCoupon(int $outerCoupon): void
+    public function setOuterCoupon(?int $outerCoupon): void
     {
         $this->outerCoupon = $outerCoupon;
     }
@@ -252,7 +252,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPromotionAlias(): string
+    public function getPromotionAlias(): ?string
     {
         return $this->promotionAlias;
     }
@@ -260,7 +260,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param string $promotionAlias
      */
-    public function setPromotionAlias(string $promotionAlias): void
+    public function setPromotionAlias(?string $promotionAlias): void
     {
         $this->promotionAlias = $promotionAlias;
     }
@@ -268,7 +268,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPromotionTypeId(): int
+    public function getPromotionTypeId(): ?int
     {
         return $this->promotionTypeId;
     }
@@ -276,7 +276,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param int $promotionTypeId
      */
-    public function setPromotionTypeId(int $promotionTypeId): void
+    public function setPromotionTypeId(?int $promotionTypeId): void
     {
         $this->promotionTypeId = $promotionTypeId;
     }
@@ -284,7 +284,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPromotionTypeName(): string
+    public function getPromotionTypeName(): ?string
     {
         return $this->promotionTypeName;
     }
@@ -292,7 +292,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param string $promotionTypeName
      */
-    public function setPromotionTypeName(string $promotionTypeName): void
+    public function setPromotionTypeName(?string $promotionTypeName): void
     {
         $this->promotionTypeName = $promotionTypeName;
     }
@@ -300,7 +300,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPromotionType(): string
+    public function getPromotionType(): ?string
     {
         return $this->promotionType;
     }
@@ -308,7 +308,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param string $promotionType
      */
-    public function setPromotionType(string $promotionType): void
+    public function setPromotionType(?string $promotionType): void
     {
         $this->promotionType = $promotionType;
     }
@@ -316,7 +316,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPromotionId(): int
+    public function getPromotionId(): ?int
     {
         return $this->promotionId;
     }
@@ -324,7 +324,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param int $promotionId
      */
-    public function setPromotionId(int $promotionId): void
+    public function setPromotionId(?int $promotionId): void
     {
         $this->promotionId = $promotionId;
     }
@@ -332,7 +332,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getChangeType(): string
+    public function getChangeType(): ?string
     {
         return $this->changeType;
     }
@@ -340,7 +340,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param string $changeType
      */
-    public function setChangeType(string $changeType): void
+    public function setChangeType(?string $changeType): void
     {
         $this->changeType = $changeType;
     }
@@ -348,7 +348,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNewValue(): int
+    public function getNewValue(): ?int
     {
         return $this->newValue;
     }
@@ -356,7 +356,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param int $newValue
      */
-    public function setNewValue(int $newValue): void
+    public function setNewValue(?int $newValue): void
     {
         $this->newValue = $newValue;
     }
@@ -364,7 +364,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOldValue(): int
+    public function getOldValue(): ?int
     {
         return $this->oldValue;
     }
@@ -372,7 +372,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param int $oldValue
      */
-    public function setOldValue(int $oldValue): void
+    public function setOldValue(?int $oldValue): void
     {
         $this->oldValue = $oldValue;
     }
@@ -380,7 +380,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getReason(): string
+    public function getReason(): ?string
     {
         return $this->reason;
     }
@@ -388,7 +388,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param string $reason
      */
-    public function setReason(string $reason): void
+    public function setReason(?string $reason): void
     {
         $this->reason = $reason;
     }
@@ -396,7 +396,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getEndAt(): string
+    public function getEndAt(): ?string
     {
         return $this->endAt;
     }
@@ -404,7 +404,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param string $endAt
      */
-    public function setEndAt(string $endAt): void
+    public function setEndAt(?string $endAt): void
     {
         $this->endAt = $endAt;
     }
@@ -412,7 +412,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getStartAt(): string
+    public function getStartAt(): ?string
     {
         return $this->startAt;
     }
@@ -420,7 +420,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param string $startAt
      */
-    public function setStartAt(string $startAt): void
+    public function setStartAt(?string $startAt): void
     {
         $this->startAt = $startAt;
     }
@@ -428,7 +428,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getValue(): int
+    public function getValue(): ?int
     {
         return $this->value;
     }
@@ -436,7 +436,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param int $value
      */
-    public function setValue(int $value): void
+    public function setValue(?int $value): void
     {
         $this->value = $value;
     }
@@ -444,7 +444,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCondition(): string
+    public function getCondition(): ?string
     {
         return $this->condition;
     }
@@ -452,7 +452,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param string $condition
      */
-    public function setCondition(string $condition): void
+    public function setCondition(?string $condition): void
     {
         $this->condition = $condition;
     }
@@ -460,7 +460,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOriginCondition(): string
+    public function getOriginCondition(): ?string
     {
         return $this->originCondition;
     }
@@ -468,7 +468,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param string $originCondition
      */
-    public function setOriginCondition(string $originCondition): void
+    public function setOriginCondition(?string $originCondition): void
     {
         $this->originCondition = $originCondition;
     }
@@ -476,7 +476,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDenominations(): int
+    public function getDenominations(): ?int
     {
         return $this->denominations;
     }
@@ -484,7 +484,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param int $denominations
      */
-    public function setDenominations(int $denominations): void
+    public function setDenominations(?int $denominations): void
     {
         $this->denominations = $denominations;
     }
@@ -492,7 +492,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDiscount(): int
+    public function getDiscount(): ?int
     {
         return $this->discount;
     }
@@ -500,7 +500,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param int $discount
      */
-    public function setDiscount(int $discount): void
+    public function setDiscount(?int $discount): void
     {
         $this->discount = $discount;
     }
@@ -508,7 +508,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getIsAvailable(): bool
+    public function getIsAvailable(): ?bool
     {
         return $this->isAvailable;
     }
@@ -516,7 +516,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param bool $isAvailable
      */
-    public function setIsAvailable(bool $isAvailable): void
+    public function setIsAvailable(?bool $isAvailable): void
     {
         $this->isAvailable = $isAvailable;
     }
@@ -524,7 +524,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getActivityAlias(): string
+    public function getActivityAlias(): ?string
     {
         return $this->activityAlias;
     }
@@ -532,7 +532,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param string $activityAlias
      */
-    public function setActivityAlias(string $activityAlias): void
+    public function setActivityAlias(?string $activityAlias): void
     {
         $this->activityAlias = $activityAlias;
     }
@@ -540,7 +540,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getActivityId(): int
+    public function getActivityId(): ?int
     {
         return $this->activityId;
     }
@@ -548,7 +548,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param int $activityId
      */
-    public function setActivityId(int $activityId): void
+    public function setActivityId(?int $activityId): void
     {
         $this->activityId = $activityId;
     }
@@ -556,7 +556,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getActivityType(): string
+    public function getActivityType(): ?string
     {
         return $this->activityType;
     }
@@ -564,7 +564,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param string $activityType
      */
-    public function setActivityType(string $activityType): void
+    public function setActivityType(?string $activityType): void
     {
         $this->activityType = $activityType;
     }
@@ -572,7 +572,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -580,7 +580,7 @@ class PromotionDTO implements \JsonSerializable {
     /**
      * @param string $code
      */
-    public function setCode(string $code): void
+    public function setCode(?string $code): void
     {
         $this->code = $code;
     }

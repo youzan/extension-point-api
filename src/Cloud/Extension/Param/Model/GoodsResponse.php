@@ -40,7 +40,7 @@ class GoodsResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemId(): int
+    public function getItemId(): ?int
     {
         return $this->itemId;
     }
@@ -48,7 +48,7 @@ class GoodsResponse implements \JsonSerializable {
     /**
      * @param int $itemId
      */
-    public function setItemId(int $itemId): void
+    public function setItemId(?int $itemId): void
     {
         $this->itemId = $itemId;
     }
@@ -56,7 +56,7 @@ class GoodsResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSkuId(): int
+    public function getSkuId(): ?int
     {
         return $this->skuId;
     }
@@ -64,7 +64,7 @@ class GoodsResponse implements \JsonSerializable {
     /**
      * @param int $skuId
      */
-    public function setSkuId(int $skuId): void
+    public function setSkuId(?int $skuId): void
     {
         $this->skuId = $skuId;
     }
@@ -72,7 +72,7 @@ class GoodsResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderItemId(): int
+    public function getOrderItemId(): ?int
     {
         return $this->orderItemId;
     }
@@ -80,7 +80,7 @@ class GoodsResponse implements \JsonSerializable {
     /**
      * @param int $orderItemId
      */
-    public function setOrderItemId(int $orderItemId): void
+    public function setOrderItemId(?int $orderItemId): void
     {
         $this->orderItemId = $orderItemId;
     }
@@ -88,7 +88,7 @@ class GoodsResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDecrease(): int
+    public function getDecrease(): ?int
     {
         return $this->decrease;
     }
@@ -96,7 +96,7 @@ class GoodsResponse implements \JsonSerializable {
     /**
      * @param int $decrease
      */
-    public function setDecrease(int $decrease): void
+    public function setDecrease(?int $decrease): void
     {
         $this->decrease = $decrease;
     }

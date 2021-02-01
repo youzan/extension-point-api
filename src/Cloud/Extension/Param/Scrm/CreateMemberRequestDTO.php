@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\MemberProfileCreateDTO;
 /**
  * 
  * @author Baymax
- * @create Sat Sep 29 21:29:50 CST 2018
+ * @create 2018-09-29 21:29:50.0
  */
 class CreateMemberRequestDTO implements \JsonSerializable {
 
@@ -29,7 +29,7 @@ class CreateMemberRequestDTO implements \JsonSerializable {
     /**
      * @return CustomerIdentifyDTO
      */
-    public function getCustomerIdentifyDTO(): CustomerIdentifyDTO
+    public function getCustomerIdentifyDTO(): ?CustomerIdentifyDTO
     {
         return $this->customerIdentifyDTO;
     }
@@ -37,7 +37,7 @@ class CreateMemberRequestDTO implements \JsonSerializable {
     /**
      * @param CustomerIdentifyDTO $customerIdentifyDTO
      */
-    public function setCustomerIdentifyDTO(CustomerIdentifyDTO $customerIdentifyDTO): void
+    public function setCustomerIdentifyDTO(?CustomerIdentifyDTO $customerIdentifyDTO): void
     {
         $this->customerIdentifyDTO = $customerIdentifyDTO;
     }
@@ -45,7 +45,7 @@ class CreateMemberRequestDTO implements \JsonSerializable {
     /**
      * @return MemberProfileCreateDTO
      */
-    public function getMemberProfileCreateDTO(): MemberProfileCreateDTO
+    public function getMemberProfileCreateDTO(): ?MemberProfileCreateDTO
     {
         return $this->memberProfileCreateDTO;
     }
@@ -53,7 +53,7 @@ class CreateMemberRequestDTO implements \JsonSerializable {
     /**
      * @param MemberProfileCreateDTO $memberProfileCreateDTO
      */
-    public function setMemberProfileCreateDTO(MemberProfileCreateDTO $memberProfileCreateDTO): void
+    public function setMemberProfileCreateDTO(?MemberProfileCreateDTO $memberProfileCreateDTO): void
     {
         $this->memberProfileCreateDTO = $memberProfileCreateDTO;
     }

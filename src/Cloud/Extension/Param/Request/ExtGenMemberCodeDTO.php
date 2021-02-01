@@ -28,7 +28,7 @@ class ExtGenMemberCodeDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -36,7 +36,7 @@ class ExtGenMemberCodeDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -44,7 +44,7 @@ class ExtGenMemberCodeDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): string
+    public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
     }
@@ -52,7 +52,7 @@ class ExtGenMemberCodeDTO implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(string $yzOpenId): void
+    public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }

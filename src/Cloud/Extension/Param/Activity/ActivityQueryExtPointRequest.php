@@ -46,7 +46,7 @@ class ActivityQueryExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getActivityId(): int
+    public function getActivityId(): ?int
     {
         return $this->activityId;
     }
@@ -54,7 +54,7 @@ class ActivityQueryExtPointRequest implements \JsonSerializable {
     /**
      * @param int $activityId
      */
-    public function setActivityId(int $activityId): void
+    public function setActivityId(?int $activityId): void
     {
         $this->activityId = $activityId;
     }
@@ -62,7 +62,7 @@ class ActivityQueryExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersionNo(): int
+    public function getVersionNo(): ?int
     {
         return $this->versionNo;
     }
@@ -70,7 +70,7 @@ class ActivityQueryExtPointRequest implements \JsonSerializable {
     /**
      * @param int $versionNo
      */
-    public function setVersionNo(int $versionNo): void
+    public function setVersionNo(?int $versionNo): void
     {
         $this->versionNo = $versionNo;
     }
@@ -78,7 +78,7 @@ class ActivityQueryExtPointRequest implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): stdClass
+    public function getExtMap(): ?stdClass
     {
         return $this->extMap;
     }
@@ -86,7 +86,7 @@ class ActivityQueryExtPointRequest implements \JsonSerializable {
     /**
      * @param stdClass $extMap
      */
-    public function setExtMap(stdClass $extMap): void
+    public function setExtMap(?stdClass $extMap): void
     {
         $this->extMap = $extMap;
     }
@@ -94,7 +94,7 @@ class ActivityQueryExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -102,7 +102,7 @@ class ActivityQueryExtPointRequest implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -110,7 +110,7 @@ class ActivityQueryExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRootKdtId(): int
+    public function getRootKdtId(): ?int
     {
         return $this->rootKdtId;
     }
@@ -118,7 +118,7 @@ class ActivityQueryExtPointRequest implements \JsonSerializable {
     /**
      * @param int $rootKdtId
      */
-    public function setRootKdtId(int $rootKdtId): void
+    public function setRootKdtId(?int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
     }

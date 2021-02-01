@@ -34,7 +34,7 @@ class CustomizeAttributeDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -42,7 +42,7 @@ class CustomizeAttributeDTO implements \JsonSerializable {
     /**
      * @param string $name
      */
-    public function setName(string $name): void
+    public function setName(?string $name): void
     {
         $this->name = $name;
     }
@@ -50,7 +50,7 @@ class CustomizeAttributeDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDataType(): int
+    public function getDataType(): ?int
     {
         return $this->dataType;
     }
@@ -58,7 +58,7 @@ class CustomizeAttributeDTO implements \JsonSerializable {
     /**
      * @param int $dataType
      */
-    public function setDataType(int $dataType): void
+    public function setDataType(?int $dataType): void
     {
         $this->dataType = $dataType;
     }
@@ -66,7 +66,7 @@ class CustomizeAttributeDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getValue(): string
+    public function getValue(): ?string
     {
         return $this->value;
     }
@@ -74,7 +74,7 @@ class CustomizeAttributeDTO implements \JsonSerializable {
     /**
      * @param string $value
      */
-    public function setValue(string $value): void
+    public function setValue(?string $value): void
     {
         $this->value = $value;
     }

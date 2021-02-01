@@ -94,7 +94,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getUnitPrice(): int
+    public function getUnitPrice(): ?int
     {
         return $this->unitPrice;
     }
@@ -102,7 +102,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @param int $unitPrice
      */
-    public function setUnitPrice(int $unitPrice): void
+    public function setUnitPrice(?int $unitPrice): void
     {
         $this->unitPrice = $unitPrice;
     }
@@ -110,7 +110,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalPrice(): int
+    public function getTotalPrice(): ?int
     {
         return $this->totalPrice;
     }
@@ -118,7 +118,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @param int $totalPrice
      */
-    public function setTotalPrice(int $totalPrice): void
+    public function setTotalPrice(?int $totalPrice): void
     {
         $this->totalPrice = $totalPrice;
     }
@@ -126,7 +126,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOriginUnitPrice(): int
+    public function getOriginUnitPrice(): ?int
     {
         return $this->originUnitPrice;
     }
@@ -134,7 +134,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @param int $originUnitPrice
      */
-    public function setOriginUnitPrice(int $originUnitPrice): void
+    public function setOriginUnitPrice(?int $originUnitPrice): void
     {
         $this->originUnitPrice = $originUnitPrice;
     }
@@ -142,7 +142,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNum(): int
+    public function getNum(): ?int
     {
         return $this->num;
     }
@@ -150,7 +150,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @param int $num
      */
-    public function setNum(int $num): void
+    public function setNum(?int $num): void
     {
         $this->num = $num;
     }
@@ -158,7 +158,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -166,7 +166,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -174,7 +174,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemId(): int
+    public function getItemId(): ?int
     {
         return $this->itemId;
     }
@@ -182,7 +182,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @param int $itemId
      */
-    public function setItemId(int $itemId): void
+    public function setItemId(?int $itemId): void
     {
         $this->itemId = $itemId;
     }
@@ -190,7 +190,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPresent(): int
+    public function getPresent(): ?int
     {
         return $this->present;
     }
@@ -198,7 +198,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @param int $present
      */
-    public function setPresent(int $present): void
+    public function setPresent(?int $present): void
     {
         $this->present = $present;
     }
@@ -206,7 +206,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGoodsId(): int
+    public function getGoodsId(): ?int
     {
         return $this->goodsId;
     }
@@ -214,7 +214,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @param int $goodsId
      */
-    public function setGoodsId(int $goodsId): void
+    public function setGoodsId(?int $goodsId): void
     {
         $this->goodsId = $goodsId;
     }
@@ -222,7 +222,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -230,7 +230,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -238,7 +238,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getShopId(): int
+    public function getShopId(): ?int
     {
         return $this->shopId;
     }
@@ -246,7 +246,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @param int $shopId
      */
-    public function setShopId(int $shopId): void
+    public function setShopId(?int $shopId): void
     {
         $this->shopId = $shopId;
     }
@@ -254,7 +254,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSkuId(): int
+    public function getSkuId(): ?int
     {
         return $this->skuId;
     }
@@ -262,7 +262,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @param int $skuId
      */
-    public function setSkuId(int $skuId): void
+    public function setSkuId(?int $skuId): void
     {
         $this->skuId = $skuId;
     }
@@ -270,7 +270,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getExtra(): string
+    public function getExtra(): ?string
     {
         return $this->extra;
     }
@@ -278,7 +278,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @param string $extra
      */
-    public function setExtra(string $extra): void
+    public function setExtra(?string $extra): void
     {
         $this->extra = $extra;
     }
@@ -286,7 +286,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTags(): int
+    public function getTags(): ?int
     {
         return $this->tags;
     }
@@ -294,7 +294,7 @@ class ExtOrderItemPrice implements \JsonSerializable {
     /**
      * @param int $tags
      */
-    public function setTags(int $tags): void
+    public function setTags(?int $tags): void
     {
         $this->tags = $tags;
     }

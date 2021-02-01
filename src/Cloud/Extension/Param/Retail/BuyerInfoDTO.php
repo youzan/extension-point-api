@@ -52,7 +52,7 @@ class BuyerInfoDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBuyerId(): int
+    public function getBuyerId(): ?int
     {
         return $this->buyerId;
     }
@@ -60,7 +60,7 @@ class BuyerInfoDTO implements \JsonSerializable {
     /**
      * @param int $buyerId
      */
-    public function setBuyerId(int $buyerId): void
+    public function setBuyerId(?int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
@@ -68,7 +68,7 @@ class BuyerInfoDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBuyerName(): string
+    public function getBuyerName(): ?string
     {
         return $this->buyerName;
     }
@@ -76,7 +76,7 @@ class BuyerInfoDTO implements \JsonSerializable {
     /**
      * @param string $buyerName
      */
-    public function setBuyerName(string $buyerName): void
+    public function setBuyerName(?string $buyerName): void
     {
         $this->buyerName = $buyerName;
     }
@@ -84,7 +84,7 @@ class BuyerInfoDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBuyerPhone(): string
+    public function getBuyerPhone(): ?string
     {
         return $this->buyerPhone;
     }
@@ -92,7 +92,7 @@ class BuyerInfoDTO implements \JsonSerializable {
     /**
      * @param string $buyerPhone
      */
-    public function setBuyerPhone(string $buyerPhone): void
+    public function setBuyerPhone(?string $buyerPhone): void
     {
         $this->buyerPhone = $buyerPhone;
     }
@@ -100,7 +100,7 @@ class BuyerInfoDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getFansNickname(): string
+    public function getFansNickname(): ?string
     {
         return $this->fansNickname;
     }
@@ -108,7 +108,7 @@ class BuyerInfoDTO implements \JsonSerializable {
     /**
      * @param string $fansNickname
      */
-    public function setFansNickname(string $fansNickname): void
+    public function setFansNickname(?string $fansNickname): void
     {
         $this->fansNickname = $fansNickname;
     }
@@ -116,7 +116,7 @@ class BuyerInfoDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBuyerRemark(): string
+    public function getBuyerRemark(): ?string
     {
         return $this->buyerRemark;
     }
@@ -124,7 +124,7 @@ class BuyerInfoDTO implements \JsonSerializable {
     /**
      * @param string $buyerRemark
      */
-    public function setBuyerRemark(string $buyerRemark): void
+    public function setBuyerRemark(?string $buyerRemark): void
     {
         $this->buyerRemark = $buyerRemark;
     }
@@ -132,7 +132,7 @@ class BuyerInfoDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getIsMember(): bool
+    public function getIsMember(): ?bool
     {
         return $this->isMember;
     }
@@ -140,7 +140,7 @@ class BuyerInfoDTO implements \JsonSerializable {
     /**
      * @param bool $isMember
      */
-    public function setIsMember(bool $isMember): void
+    public function setIsMember(?bool $isMember): void
     {
         $this->isMember = $isMember;
     }

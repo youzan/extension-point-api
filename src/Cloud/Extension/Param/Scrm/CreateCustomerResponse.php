@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 /**
  * 
  * @author Baymax
- * @create Sat Sep 29 21:15:37 CST 2018
+ * @create 2018-09-29 21:15:37.0
  */
 class CreateCustomerResponse implements \JsonSerializable {
 
@@ -22,7 +22,7 @@ class CreateCustomerResponse implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getSuccess(): bool
+    public function getSuccess(): ?bool
     {
         return $this->success;
     }
@@ -30,7 +30,7 @@ class CreateCustomerResponse implements \JsonSerializable {
     /**
      * @param bool $success
      */
-    public function setSuccess(bool $success): void
+    public function setSuccess(?bool $success): void
     {
         $this->success = $success;
     }

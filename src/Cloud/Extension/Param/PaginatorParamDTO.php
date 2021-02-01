@@ -41,7 +41,7 @@ class PaginatorParamDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getAuthMap(): stdClass
+    public function getAuthMap(): ?stdClass
     {
         return $this->authMap;
     }
@@ -49,7 +49,7 @@ class PaginatorParamDTO implements \JsonSerializable {
     /**
      * @param stdClass $authMap
      */
-    public function setAuthMap(stdClass $authMap): void
+    public function setAuthMap(?stdClass $authMap): void
     {
         $this->authMap = $authMap;
     }
@@ -57,7 +57,7 @@ class PaginatorParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPageSize(): int
+    public function getPageSize(): ?int
     {
         return $this->pageSize;
     }
@@ -65,7 +65,7 @@ class PaginatorParamDTO implements \JsonSerializable {
     /**
      * @param int $pageSize
      */
-    public function setPageSize(int $pageSize): void
+    public function setPageSize(?int $pageSize): void
     {
         $this->pageSize = $pageSize;
     }
@@ -73,7 +73,7 @@ class PaginatorParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPageNo(): int
+    public function getPageNo(): ?int
     {
         return $this->pageNo;
     }
@@ -81,7 +81,7 @@ class PaginatorParamDTO implements \JsonSerializable {
     /**
      * @param int $pageNo
      */
-    public function setPageNo(int $pageNo): void
+    public function setPageNo(?int $pageNo): void
     {
         $this->pageNo = $pageNo;
     }
@@ -89,7 +89,7 @@ class PaginatorParamDTO implements \JsonSerializable {
     /**
      * @return QueryTimeConditionParamDTO
      */
-    public function getQueryCondition(): QueryTimeConditionParamDTO
+    public function getQueryCondition(): ?QueryTimeConditionParamDTO
     {
         return $this->queryCondition;
     }
@@ -97,7 +97,7 @@ class PaginatorParamDTO implements \JsonSerializable {
     /**
      * @param QueryTimeConditionParamDTO $queryCondition
      */
-    public function setQueryCondition(QueryTimeConditionParamDTO $queryCondition): void
+    public function setQueryCondition(?QueryTimeConditionParamDTO $queryCondition): void
     {
         $this->queryCondition = $queryCondition;
     }

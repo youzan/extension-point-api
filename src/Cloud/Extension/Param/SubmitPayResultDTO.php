@@ -28,7 +28,7 @@ class SubmitPayResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -36,7 +36,7 @@ class SubmitPayResultDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -44,7 +44,7 @@ class SubmitPayResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAcquireNo(): string
+    public function getAcquireNo(): ?string
     {
         return $this->acquireNo;
     }
@@ -52,7 +52,7 @@ class SubmitPayResultDTO implements \JsonSerializable {
     /**
      * @param string $acquireNo
      */
-    public function setAcquireNo(string $acquireNo): void
+    public function setAcquireNo(?string $acquireNo): void
     {
         $this->acquireNo = $acquireNo;
     }

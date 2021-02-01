@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\CustomizeAttributeDTO;
 /**
  * 
  * @author Baymax
- * @create Sat Sep 29 21:29:50 CST 2018
+ * @create 2018-09-29 21:29:50.0
  */
 class MemberProfileCreateDTO implements \JsonSerializable {
 
@@ -60,12 +60,18 @@ class MemberProfileCreateDTO implements \JsonSerializable {
      */
     private $memberSourceKdtId;
 
+    /**
+     * 归属分店
+     * @var int
+     */
+    private $ascriptionKdtId;
+
 
 
     /**
      * @return string
      */
-    public function getRegisterMobile(): string
+    public function getRegisterMobile(): ?string
     {
         return $this->registerMobile;
     }
@@ -73,7 +79,7 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     /**
      * @param string $registerMobile
      */
-    public function setRegisterMobile(string $registerMobile): void
+    public function setRegisterMobile(?string $registerMobile): void
     {
         $this->registerMobile = $registerMobile;
     }
@@ -81,7 +87,7 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -89,7 +95,7 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     /**
      * @param string $name
      */
-    public function setName(string $name): void
+    public function setName(?string $name): void
     {
         $this->name = $name;
     }
@@ -97,7 +103,7 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGender(): int
+    public function getGender(): ?int
     {
         return $this->gender;
     }
@@ -105,7 +111,7 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     /**
      * @param int $gender
      */
-    public function setGender(int $gender): void
+    public function setGender(?int $gender): void
     {
         $this->gender = $gender;
     }
@@ -113,7 +119,7 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBirthday(): string
+    public function getBirthday(): ?string
     {
         return $this->birthday;
     }
@@ -121,7 +127,7 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     /**
      * @param string $birthday
      */
-    public function setBirthday(string $birthday): void
+    public function setBirthday(?string $birthday): void
     {
         $this->birthday = $birthday;
     }
@@ -129,7 +135,7 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     /**
      * @return ContactAddressCreateDTO
      */
-    public function getContactAddressCreateDTO(): ContactAddressCreateDTO
+    public function getContactAddressCreateDTO(): ?ContactAddressCreateDTO
     {
         return $this->contactAddressCreateDTO;
     }
@@ -137,7 +143,7 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     /**
      * @param ContactAddressCreateDTO $contactAddressCreateDTO
      */
-    public function setContactAddressCreateDTO(ContactAddressCreateDTO $contactAddressCreateDTO): void
+    public function setContactAddressCreateDTO(?ContactAddressCreateDTO $contactAddressCreateDTO): void
     {
         $this->contactAddressCreateDTO = $contactAddressCreateDTO;
     }
@@ -145,7 +151,7 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getEmail(): string
+    public function getEmail(): ?string
     {
         return $this->email;
     }
@@ -153,7 +159,7 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     /**
      * @param string $email
      */
-    public function setEmail(string $email): void
+    public function setEmail(?string $email): void
     {
         $this->email = $email;
     }
@@ -161,7 +167,7 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getAttributeList(): array
+    public function getAttributeList(): ?array
     {
         return $this->attributeList;
     }
@@ -169,7 +175,7 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     /**
      * @param array $attributeList
      */
-    public function setAttributeList(array $attributeList): void
+    public function setAttributeList(?array $attributeList): void
     {
         $this->attributeList = $attributeList;
     }
@@ -177,7 +183,7 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getMemberSourceKdtId(): int
+    public function getMemberSourceKdtId(): ?int
     {
         return $this->memberSourceKdtId;
     }
@@ -185,9 +191,25 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     /**
      * @param int $memberSourceKdtId
      */
-    public function setMemberSourceKdtId(int $memberSourceKdtId): void
+    public function setMemberSourceKdtId(?int $memberSourceKdtId): void
     {
         $this->memberSourceKdtId = $memberSourceKdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getAscriptionKdtId(): ?int
+    {
+        return $this->ascriptionKdtId;
+    }
+
+    /**
+     * @param int $ascriptionKdtId
+     */
+    public function setAscriptionKdtId(?int $ascriptionKdtId): void
+    {
+        $this->ascriptionKdtId = $ascriptionKdtId;
     }
 
     public function jsonSerialize() {

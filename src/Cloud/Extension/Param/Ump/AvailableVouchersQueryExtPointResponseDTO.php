@@ -35,7 +35,7 @@ class AvailableVouchersQueryExtPointResponseDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getThirdpartyVouchers(): array
+    public function getThirdpartyVouchers(): ?array
     {
         return $this->thirdpartyVouchers;
     }
@@ -43,7 +43,7 @@ class AvailableVouchersQueryExtPointResponseDTO implements \JsonSerializable {
     /**
      * @param array $thirdpartyVouchers
      */
-    public function setThirdpartyVouchers(array $thirdpartyVouchers): void
+    public function setThirdpartyVouchers(?array $thirdpartyVouchers): void
     {
         $this->thirdpartyVouchers = $thirdpartyVouchers;
     }
@@ -51,7 +51,7 @@ class AvailableVouchersQueryExtPointResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersionNo(): int
+    public function getVersionNo(): ?int
     {
         return $this->versionNo;
     }
@@ -59,7 +59,7 @@ class AvailableVouchersQueryExtPointResponseDTO implements \JsonSerializable {
     /**
      * @param int $versionNo
      */
-    public function setVersionNo(int $versionNo): void
+    public function setVersionNo(?int $versionNo): void
     {
         $this->versionNo = $versionNo;
     }
@@ -67,7 +67,7 @@ class AvailableVouchersQueryExtPointResponseDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): stdClass
+    public function getExtMap(): ?stdClass
     {
         return $this->extMap;
     }
@@ -75,7 +75,7 @@ class AvailableVouchersQueryExtPointResponseDTO implements \JsonSerializable {
     /**
      * @param stdClass $extMap
      */
-    public function setExtMap(stdClass $extMap): void
+    public function setExtMap(?stdClass $extMap): void
     {
         $this->extMap = $extMap;
     }
