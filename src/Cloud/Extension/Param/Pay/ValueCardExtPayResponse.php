@@ -46,7 +46,7 @@ class ValueCardExtPayResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPayDetailNo(): ?string
+    public function getPayDetailNo(): string
     {
         return $this->payDetailNo;
     }
@@ -54,7 +54,7 @@ class ValueCardExtPayResponse implements \JsonSerializable {
     /**
      * @param string $payDetailNo
      */
-    public function setPayDetailNo(?string $payDetailNo): void
+    public function setPayDetailNo(string $payDetailNo): void
     {
         $this->payDetailNo = $payDetailNo;
     }
@@ -62,7 +62,7 @@ class ValueCardExtPayResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPayChannelNo(): ?string
+    public function getPayChannelNo(): string
     {
         return $this->payChannelNo;
     }
@@ -70,7 +70,7 @@ class ValueCardExtPayResponse implements \JsonSerializable {
     /**
      * @param string $payChannelNo
      */
-    public function setPayChannelNo(?string $payChannelNo): void
+    public function setPayChannelNo(string $payChannelNo): void
     {
         $this->payChannelNo = $payChannelNo;
     }
@@ -78,7 +78,7 @@ class ValueCardExtPayResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPaymentDt(): ?int
+    public function getPaymentDt(): int
     {
         return $this->paymentDt;
     }
@@ -86,7 +86,7 @@ class ValueCardExtPayResponse implements \JsonSerializable {
     /**
      * @param int $paymentDt
      */
-    public function setPaymentDt(?int $paymentDt): void
+    public function setPaymentDt(int $paymentDt): void
     {
         $this->paymentDt = $paymentDt;
     }
@@ -94,7 +94,7 @@ class ValueCardExtPayResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPayAmount(): ?int
+    public function getPayAmount(): int
     {
         return $this->payAmount;
     }
@@ -102,7 +102,7 @@ class ValueCardExtPayResponse implements \JsonSerializable {
     /**
      * @param int $payAmount
      */
-    public function setPayAmount(?int $payAmount): void
+    public function setPayAmount(int $payAmount): void
     {
         $this->payAmount = $payAmount;
     }
@@ -110,7 +110,7 @@ class ValueCardExtPayResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPayStatus(): ?string
+    public function getPayStatus(): string
     {
         return $this->payStatus;
     }
@@ -118,7 +118,7 @@ class ValueCardExtPayResponse implements \JsonSerializable {
     /**
      * @param string $payStatus
      */
-    public function setPayStatus(?string $payStatus): void
+    public function setPayStatus(string $payStatus): void
     {
         $this->payStatus = $payStatus;
     }

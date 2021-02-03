@@ -28,7 +28,7 @@ class ItemParam implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemId(): ?int
+    public function getItemId(): int
     {
         return $this->itemId;
     }
@@ -36,7 +36,7 @@ class ItemParam implements \JsonSerializable {
     /**
      * @param int $itemId
      */
-    public function setItemId(?int $itemId): void
+    public function setItemId(int $itemId): void
     {
         $this->itemId = $itemId;
     }
@@ -44,7 +44,7 @@ class ItemParam implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -52,7 +52,7 @@ class ItemParam implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

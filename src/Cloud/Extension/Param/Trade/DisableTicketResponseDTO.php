@@ -22,7 +22,7 @@ class DisableTicketResponseDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getSuccess(): ?bool
+    public function getSuccess(): bool
     {
         return $this->success;
     }
@@ -30,7 +30,7 @@ class DisableTicketResponseDTO implements \JsonSerializable {
     /**
      * @param bool $success
      */
-    public function setSuccess(?bool $success): void
+    public function setSuccess(bool $success): void
     {
         $this->success = $success;
     }

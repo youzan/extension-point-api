@@ -54,7 +54,7 @@ class ApplyReturnOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getAuthMap(): ?stdClass
+    public function getAuthMap(): stdClass
     {
         return $this->authMap;
     }
@@ -62,7 +62,7 @@ class ApplyReturnOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param stdClass $authMap
      */
-    public function setAuthMap(?stdClass $authMap): void
+    public function setAuthMap(stdClass $authMap): void
     {
         $this->authMap = $authMap;
     }
@@ -70,7 +70,7 @@ class ApplyReturnOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBizBillNo(): ?string
+    public function getBizBillNo(): string
     {
         return $this->bizBillNo;
     }
@@ -78,7 +78,7 @@ class ApplyReturnOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $bizBillNo
      */
-    public function setBizBillNo(?string $bizBillNo): void
+    public function setBizBillNo(string $bizBillNo): void
     {
         $this->bizBillNo = $bizBillNo;
     }
@@ -86,7 +86,7 @@ class ApplyReturnOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getWarehouseCode(): ?string
+    public function getWarehouseCode(): string
     {
         return $this->warehouseCode;
     }
@@ -94,7 +94,7 @@ class ApplyReturnOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $warehouseCode
      */
-    public function setWarehouseCode(?string $warehouseCode): void
+    public function setWarehouseCode(string $warehouseCode): void
     {
         $this->warehouseCode = $warehouseCode;
     }
@@ -102,7 +102,7 @@ class ApplyReturnOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderType(): ?string
+    public function getOrderType(): string
     {
         return $this->orderType;
     }
@@ -110,7 +110,7 @@ class ApplyReturnOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $orderType
      */
-    public function setOrderType(?string $orderType): void
+    public function setOrderType(string $orderType): void
     {
         $this->orderType = $orderType;
     }
@@ -118,7 +118,7 @@ class ApplyReturnOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderCreateTime(): ?int
+    public function getOrderCreateTime(): int
     {
         return $this->orderCreateTime;
     }
@@ -126,7 +126,7 @@ class ApplyReturnOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param int $orderCreateTime
      */
-    public function setOrderCreateTime(?int $orderCreateTime): void
+    public function setOrderCreateTime(int $orderCreateTime): void
     {
         $this->orderCreateTime = $orderCreateTime;
     }
@@ -134,7 +134,7 @@ class ApplyReturnOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getYzApplyOrderReturnItemDTOs(): ?array
+    public function getYzApplyOrderReturnItemDTOs(): array
     {
         return $this->yzApplyOrderReturnItemDTOs;
     }
@@ -142,7 +142,7 @@ class ApplyReturnOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param array $yzApplyOrderReturnItemDTOs
      */
-    public function setYzApplyOrderReturnItemDTOs(?array $yzApplyOrderReturnItemDTOs): void
+    public function setYzApplyOrderReturnItemDTOs(array $yzApplyOrderReturnItemDTOs): void
     {
         $this->yzApplyOrderReturnItemDTOs = $yzApplyOrderReturnItemDTOs;
     }

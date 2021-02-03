@@ -52,7 +52,7 @@ class ValueCardExtRechargeRulesRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardNo(): ?string
+    public function getCardNo(): string
     {
         return $this->cardNo;
     }
@@ -60,7 +60,7 @@ class ValueCardExtRechargeRulesRequest implements \JsonSerializable {
     /**
      * @param string $cardNo
      */
-    public function setCardNo(?string $cardNo): void
+    public function setCardNo(string $cardNo): void
     {
         $this->cardNo = $cardNo;
     }
@@ -68,7 +68,7 @@ class ValueCardExtRechargeRulesRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBuyerId(): ?int
+    public function getBuyerId(): int
     {
         return $this->buyerId;
     }
@@ -76,7 +76,7 @@ class ValueCardExtRechargeRulesRequest implements \JsonSerializable {
     /**
      * @param int $buyerId
      */
-    public function setBuyerId(?int $buyerId): void
+    public function setBuyerId(int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
@@ -84,7 +84,7 @@ class ValueCardExtRechargeRulesRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUserPhone(): ?string
+    public function getUserPhone(): string
     {
         return $this->userPhone;
     }
@@ -92,7 +92,7 @@ class ValueCardExtRechargeRulesRequest implements \JsonSerializable {
     /**
      * @param string $userPhone
      */
-    public function setUserPhone(?string $userPhone): void
+    public function setUserPhone(string $userPhone): void
     {
         $this->userPhone = $userPhone;
     }
@@ -100,7 +100,7 @@ class ValueCardExtRechargeRulesRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -108,7 +108,7 @@ class ValueCardExtRechargeRulesRequest implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -116,7 +116,7 @@ class ValueCardExtRechargeRulesRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): ?string
+    public function getYzOpenId(): string
     {
         return $this->yzOpenId;
     }
@@ -124,7 +124,7 @@ class ValueCardExtRechargeRulesRequest implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(?string $yzOpenId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -132,7 +132,7 @@ class ValueCardExtRechargeRulesRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRootKdtId(): ?int
+    public function getRootKdtId(): int
     {
         return $this->rootKdtId;
     }
@@ -140,7 +140,7 @@ class ValueCardExtRechargeRulesRequest implements \JsonSerializable {
     /**
      * @param int $rootKdtId
      */
-    public function setRootKdtId(?int $rootKdtId): void
+    public function setRootKdtId(int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
     }

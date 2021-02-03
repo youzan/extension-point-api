@@ -64,7 +64,7 @@ class AddressVO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCountry(): ?string
+    public function getCountry(): string
     {
         return $this->country;
     }
@@ -72,7 +72,7 @@ class AddressVO implements \JsonSerializable {
     /**
      * @param string $country
      */
-    public function setCountry(?string $country): void
+    public function setCountry(string $country): void
     {
         $this->country = $country;
     }
@@ -80,7 +80,7 @@ class AddressVO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProvince(): ?string
+    public function getProvince(): string
     {
         return $this->province;
     }
@@ -88,7 +88,7 @@ class AddressVO implements \JsonSerializable {
     /**
      * @param string $province
      */
-    public function setProvince(?string $province): void
+    public function setProvince(string $province): void
     {
         $this->province = $province;
     }
@@ -96,7 +96,7 @@ class AddressVO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCity(): ?string
+    public function getCity(): string
     {
         return $this->city;
     }
@@ -104,7 +104,7 @@ class AddressVO implements \JsonSerializable {
     /**
      * @param string $city
      */
-    public function setCity(?string $city): void
+    public function setCity(string $city): void
     {
         $this->city = $city;
     }
@@ -112,7 +112,7 @@ class AddressVO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCounty(): ?string
+    public function getCounty(): string
     {
         return $this->county;
     }
@@ -120,7 +120,7 @@ class AddressVO implements \JsonSerializable {
     /**
      * @param string $county
      */
-    public function setCounty(?string $county): void
+    public function setCounty(string $county): void
     {
         $this->county = $county;
     }
@@ -128,7 +128,7 @@ class AddressVO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCountyId(): ?int
+    public function getCountyId(): int
     {
         return $this->countyId;
     }
@@ -136,7 +136,7 @@ class AddressVO implements \JsonSerializable {
     /**
      * @param int $countyId
      */
-    public function setCountyId(?int $countyId): void
+    public function setCountyId(int $countyId): void
     {
         $this->countyId = $countyId;
     }
@@ -144,7 +144,7 @@ class AddressVO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAddress(): ?string
+    public function getAddress(): string
     {
         return $this->address;
     }
@@ -152,7 +152,7 @@ class AddressVO implements \JsonSerializable {
     /**
      * @param string $address
      */
-    public function setAddress(?string $address): void
+    public function setAddress(string $address): void
     {
         $this->address = $address;
     }
@@ -160,7 +160,7 @@ class AddressVO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLng(): ?string
+    public function getLng(): string
     {
         return $this->lng;
     }
@@ -168,7 +168,7 @@ class AddressVO implements \JsonSerializable {
     /**
      * @param string $lng
      */
-    public function setLng(?string $lng): void
+    public function setLng(string $lng): void
     {
         $this->lng = $lng;
     }
@@ -176,7 +176,7 @@ class AddressVO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLat(): ?string
+    public function getLat(): string
     {
         return $this->lat;
     }
@@ -184,7 +184,7 @@ class AddressVO implements \JsonSerializable {
     /**
      * @param string $lat
      */
-    public function setLat(?string $lat): void
+    public function setLat(string $lat): void
     {
         $this->lat = $lat;
     }

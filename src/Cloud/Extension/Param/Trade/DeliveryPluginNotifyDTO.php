@@ -22,7 +22,7 @@ class DeliveryPluginNotifyDTO implements \JsonSerializable {
     /**
      * @return OrderMsgDTO
      */
-    public function getOrder(): ?OrderMsgDTO
+    public function getOrder(): OrderMsgDTO
     {
         return $this->order;
     }
@@ -30,7 +30,7 @@ class DeliveryPluginNotifyDTO implements \JsonSerializable {
     /**
      * @param OrderMsgDTO $order
      */
-    public function setOrder(?OrderMsgDTO $order): void
+    public function setOrder(OrderMsgDTO $order): void
     {
         $this->order = $order;
     }

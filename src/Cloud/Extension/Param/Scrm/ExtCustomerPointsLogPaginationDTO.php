@@ -28,7 +28,7 @@ class ExtCustomerPointsLogPaginationDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getLogDTOList(): ?array
+    public function getLogDTOList(): array
     {
         return $this->logDTOList;
     }
@@ -36,7 +36,7 @@ class ExtCustomerPointsLogPaginationDTO implements \JsonSerializable {
     /**
      * @param array $logDTOList
      */
-    public function setLogDTOList(?array $logDTOList): void
+    public function setLogDTOList(array $logDTOList): void
     {
         $this->logDTOList = $logDTOList;
     }
@@ -44,7 +44,7 @@ class ExtCustomerPointsLogPaginationDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotal(): ?int
+    public function getTotal(): int
     {
         return $this->total;
     }
@@ -52,7 +52,7 @@ class ExtCustomerPointsLogPaginationDTO implements \JsonSerializable {
     /**
      * @param int $total
      */
-    public function setTotal(?int $total): void
+    public function setTotal(int $total): void
     {
         $this->total = $total;
     }

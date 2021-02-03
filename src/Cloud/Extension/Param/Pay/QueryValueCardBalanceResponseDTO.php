@@ -22,7 +22,7 @@ class QueryValueCardBalanceResponseDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getValueCardBalanceList(): ?array
+    public function getValueCardBalanceList(): array
     {
         return $this->valueCardBalanceList;
     }
@@ -30,7 +30,7 @@ class QueryValueCardBalanceResponseDTO implements \JsonSerializable {
     /**
      * @param array $valueCardBalanceList
      */
-    public function setValueCardBalanceList(?array $valueCardBalanceList): void
+    public function setValueCardBalanceList(array $valueCardBalanceList): void
     {
         $this->valueCardBalanceList = $valueCardBalanceList;
     }

@@ -28,7 +28,7 @@ class ExtCustomerPointsStatusDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCurrentPoints(): ?int
+    public function getCurrentPoints(): int
     {
         return $this->currentPoints;
     }
@@ -36,7 +36,7 @@ class ExtCustomerPointsStatusDTO implements \JsonSerializable {
     /**
      * @param int $currentPoints
      */
-    public function setCurrentPoints(?int $currentPoints): void
+    public function setCurrentPoints(int $currentPoints): void
     {
         $this->currentPoints = $currentPoints;
     }
@@ -44,7 +44,7 @@ class ExtCustomerPointsStatusDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalPoints(): ?int
+    public function getTotalPoints(): int
     {
         return $this->totalPoints;
     }
@@ -52,7 +52,7 @@ class ExtCustomerPointsStatusDTO implements \JsonSerializable {
     /**
      * @param int $totalPoints
      */
-    public function setTotalPoints(?int $totalPoints): void
+    public function setTotalPoints(int $totalPoints): void
     {
         $this->totalPoints = $totalPoints;
     }

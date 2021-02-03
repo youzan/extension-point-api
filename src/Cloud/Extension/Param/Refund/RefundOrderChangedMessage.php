@@ -155,7 +155,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDisputeId(): ?int
+    public function getDisputeId(): int
     {
         return $this->disputeId;
     }
@@ -163,7 +163,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param int $disputeId
      */
-    public function setDisputeId(?int $disputeId): void
+    public function setDisputeId(int $disputeId): void
     {
         $this->disputeId = $disputeId;
     }
@@ -171,7 +171,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundId(): ?string
+    public function getRefundId(): string
     {
         return $this->refundId;
     }
@@ -179,7 +179,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param string $refundId
      */
-    public function setRefundId(?string $refundId): void
+    public function setRefundId(string $refundId): void
     {
         $this->refundId = $refundId;
     }
@@ -187,7 +187,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -195,7 +195,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -203,7 +203,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -211,7 +211,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -219,7 +219,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRefundFee(): ?int
+    public function getRefundFee(): int
     {
         return $this->refundFee;
     }
@@ -227,7 +227,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param int $refundFee
      */
-    public function setRefundFee(?int $refundFee): void
+    public function setRefundFee(int $refundFee): void
     {
         $this->refundFee = $refundFee;
     }
@@ -235,7 +235,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPostage(): ?int
+    public function getPostage(): int
     {
         return $this->postage;
     }
@@ -243,7 +243,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param int $postage
      */
-    public function setPostage(?int $postage): void
+    public function setPostage(int $postage): void
     {
         $this->postage = $postage;
     }
@@ -251,7 +251,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPhase(): ?int
+    public function getPhase(): int
     {
         return $this->phase;
     }
@@ -259,7 +259,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param int $phase
      */
-    public function setPhase(?int $phase): void
+    public function setPhase(int $phase): void
     {
         $this->phase = $phase;
     }
@@ -267,7 +267,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getType(): ?int
+    public function getType(): int
     {
         return $this->type;
     }
@@ -275,7 +275,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param int $type
      */
-    public function setType(?int $type): void
+    public function setType(int $type): void
     {
         $this->type = $type;
     }
@@ -283,7 +283,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStatus(): ?int
+    public function getStatus(): int
     {
         return $this->status;
     }
@@ -291,7 +291,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param int $status
      */
-    public function setStatus(?int $status): void
+    public function setStatus(int $status): void
     {
         $this->status = $status;
     }
@@ -299,7 +299,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPayType(): ?int
+    public function getPayType(): int
     {
         return $this->payType;
     }
@@ -307,7 +307,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param int $payType
      */
-    public function setPayType(?int $payType): void
+    public function setPayType(int $payType): void
     {
         $this->payType = $payType;
     }
@@ -315,7 +315,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPayWay(): ?int
+    public function getPayWay(): int
     {
         return $this->payWay;
     }
@@ -323,7 +323,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param int $payWay
      */
-    public function setPayWay(?int $payWay): void
+    public function setPayWay(int $payWay): void
     {
         $this->payWay = $payWay;
     }
@@ -331,7 +331,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPayId(): ?string
+    public function getPayId(): string
     {
         return $this->payId;
     }
@@ -339,7 +339,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param string $payId
      */
-    public function setPayId(?string $payId): void
+    public function setPayId(string $payId): void
     {
         $this->payId = $payId;
     }
@@ -347,7 +347,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDemand(): ?int
+    public function getDemand(): int
     {
         return $this->demand;
     }
@@ -355,7 +355,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param int $demand
      */
-    public function setDemand(?int $demand): void
+    public function setDemand(int $demand): void
     {
         $this->demand = $demand;
     }
@@ -363,7 +363,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getReason(): ?int
+    public function getReason(): int
     {
         return $this->reason;
     }
@@ -371,7 +371,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param int $reason
      */
-    public function setReason(?int $reason): void
+    public function setReason(int $reason): void
     {
         $this->reason = $reason;
     }
@@ -379,7 +379,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCsStatus(): ?int
+    public function getCsStatus(): int
     {
         return $this->csStatus;
     }
@@ -387,7 +387,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param int $csStatus
      */
-    public function setCsStatus(?int $csStatus): void
+    public function setCsStatus(int $csStatus): void
     {
         $this->csStatus = $csStatus;
     }
@@ -395,7 +395,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBuyerId(): ?int
+    public function getBuyerId(): int
     {
         return $this->buyerId;
     }
@@ -403,7 +403,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param int $buyerId
      */
-    public function setBuyerId(?int $buyerId): void
+    public function setBuyerId(int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
@@ -411,7 +411,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBuyerPhone(): ?string
+    public function getBuyerPhone(): string
     {
         return $this->buyerPhone;
     }
@@ -419,7 +419,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param string $buyerPhone
      */
-    public function setBuyerPhone(?string $buyerPhone): void
+    public function setBuyerPhone(string $buyerPhone): void
     {
         $this->buyerPhone = $buyerPhone;
     }
@@ -427,7 +427,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRemark(): ?string
+    public function getRemark(): string
     {
         return $this->remark;
     }
@@ -435,7 +435,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param string $remark
      */
-    public function setRemark(?string $remark): void
+    public function setRemark(string $remark): void
     {
         $this->remark = $remark;
     }
@@ -443,7 +443,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getExtension(): ?string
+    public function getExtension(): string
     {
         return $this->extension;
     }
@@ -451,7 +451,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param string $extension
      */
-    public function setExtension(?string $extension): void
+    public function setExtension(string $extension): void
     {
         $this->extension = $extension;
     }
@@ -459,7 +459,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCreateTime(): ?int
+    public function getCreateTime(): int
     {
         return $this->createTime;
     }
@@ -467,7 +467,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param int $createTime
      */
-    public function setCreateTime(?int $createTime): void
+    public function setCreateTime(int $createTime): void
     {
         $this->createTime = $createTime;
     }
@@ -475,7 +475,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getUpdateTime(): ?int
+    public function getUpdateTime(): int
     {
         return $this->updateTime;
     }
@@ -483,7 +483,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param int $updateTime
      */
-    public function setUpdateTime(?int $updateTime): void
+    public function setUpdateTime(int $updateTime): void
     {
         $this->updateTime = $updateTime;
     }
@@ -491,7 +491,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getInvalid(): ?bool
+    public function getInvalid(): bool
     {
         return $this->invalid;
     }
@@ -499,7 +499,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param bool $invalid
      */
-    public function setInvalid(?bool $invalid): void
+    public function setInvalid(bool $invalid): void
     {
         $this->invalid = $invalid;
     }
@@ -507,7 +507,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getRefundOrderItems(): ?array
+    public function getRefundOrderItems(): array
     {
         return $this->refundOrderItems;
     }
@@ -515,7 +515,7 @@ class RefundOrderChangedMessage implements \JsonSerializable {
     /**
      * @param array $refundOrderItems
      */
-    public function setRefundOrderItems(?array $refundOrderItems): void
+    public function setRefundOrderItems(array $refundOrderItems): void
     {
         $this->refundOrderItems = $refundOrderItems;
     }

@@ -64,7 +64,7 @@ class ExtLevelDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLevelAlias(): ?string
+    public function getLevelAlias(): string
     {
         return $this->levelAlias;
     }
@@ -72,7 +72,7 @@ class ExtLevelDTO implements \JsonSerializable {
     /**
      * @param string $levelAlias
      */
-    public function setLevelAlias(?string $levelAlias): void
+    public function setLevelAlias(string $levelAlias): void
     {
         $this->levelAlias = $levelAlias;
     }
@@ -80,7 +80,7 @@ class ExtLevelDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getLevelValue(): ?int
+    public function getLevelValue(): int
     {
         return $this->levelValue;
     }
@@ -88,7 +88,7 @@ class ExtLevelDTO implements \JsonSerializable {
     /**
      * @param int $levelValue
      */
-    public function setLevelValue(?int $levelValue): void
+    public function setLevelValue(int $levelValue): void
     {
         $this->levelValue = $levelValue;
     }
@@ -96,7 +96,7 @@ class ExtLevelDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -104,7 +104,7 @@ class ExtLevelDTO implements \JsonSerializable {
     /**
      * @param string $name
      */
-    public function setName(?string $name): void
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
@@ -112,7 +112,7 @@ class ExtLevelDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDescription(): ?string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -120,7 +120,7 @@ class ExtLevelDTO implements \JsonSerializable {
     /**
      * @param string $description
      */
-    public function setDescription(?string $description): void
+    public function setDescription(string $description): void
     {
         $this->description = $description;
     }
@@ -128,7 +128,7 @@ class ExtLevelDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getIsEnabled(): ?bool
+    public function getIsEnabled(): bool
     {
         return $this->isEnabled;
     }
@@ -136,7 +136,7 @@ class ExtLevelDTO implements \JsonSerializable {
     /**
      * @param bool $isEnabled
      */
-    public function setIsEnabled(?bool $isEnabled): void
+    public function setIsEnabled(bool $isEnabled): void
     {
         $this->isEnabled = $isEnabled;
     }
@@ -144,7 +144,7 @@ class ExtLevelDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getColorCode(): ?string
+    public function getColorCode(): string
     {
         return $this->colorCode;
     }
@@ -152,7 +152,7 @@ class ExtLevelDTO implements \JsonSerializable {
     /**
      * @param string $colorCode
      */
-    public function setColorCode(?string $colorCode): void
+    public function setColorCode(string $colorCode): void
     {
         $this->colorCode = $colorCode;
     }
@@ -160,7 +160,7 @@ class ExtLevelDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGrowthValue(): ?int
+    public function getGrowthValue(): int
     {
         return $this->growthValue;
     }
@@ -168,7 +168,7 @@ class ExtLevelDTO implements \JsonSerializable {
     /**
      * @param int $growthValue
      */
-    public function setGrowthValue(?int $growthValue): void
+    public function setGrowthValue(int $growthValue): void
     {
         $this->growthValue = $growthValue;
     }
@@ -176,7 +176,7 @@ class ExtLevelDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getLevelId(): ?int
+    public function getLevelId(): int
     {
         return $this->levelId;
     }
@@ -184,7 +184,7 @@ class ExtLevelDTO implements \JsonSerializable {
     /**
      * @param int $levelId
      */
-    public function setLevelId(?int $levelId): void
+    public function setLevelId(int $levelId): void
     {
         $this->levelId = $levelId;
     }

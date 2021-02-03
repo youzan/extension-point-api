@@ -40,7 +40,7 @@ class FulfillTimeRequestListDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getWareHouseCode(): ?string
+    public function getWareHouseCode(): string
     {
         return $this->wareHouseCode;
     }
@@ -48,7 +48,7 @@ class FulfillTimeRequestListDTO implements \JsonSerializable {
     /**
      * @param string $wareHouseCode
      */
-    public function setWareHouseCode(?string $wareHouseCode): void
+    public function setWareHouseCode(string $wareHouseCode): void
     {
         $this->wareHouseCode = $wareHouseCode;
     }
@@ -56,7 +56,7 @@ class FulfillTimeRequestListDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuNo(): ?string
+    public function getSkuNo(): string
     {
         return $this->skuNo;
     }
@@ -64,7 +64,7 @@ class FulfillTimeRequestListDTO implements \JsonSerializable {
     /**
      * @param string $skuNo
      */
-    public function setSkuNo(?string $skuNo): void
+    public function setSkuNo(string $skuNo): void
     {
         $this->skuNo = $skuNo;
     }
@@ -72,7 +72,7 @@ class FulfillTimeRequestListDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNum(): ?int
+    public function getNum(): int
     {
         return $this->num;
     }
@@ -80,7 +80,7 @@ class FulfillTimeRequestListDTO implements \JsonSerializable {
     /**
      * @param int $num
      */
-    public function setNum(?int $num): void
+    public function setNum(int $num): void
     {
         $this->num = $num;
     }
@@ -88,7 +88,7 @@ class FulfillTimeRequestListDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDistance(): ?string
+    public function getDistance(): string
     {
         return $this->distance;
     }
@@ -96,7 +96,7 @@ class FulfillTimeRequestListDTO implements \JsonSerializable {
     /**
      * @param string $distance
      */
-    public function setDistance(?string $distance): void
+    public function setDistance(string $distance): void
     {
         $this->distance = $distance;
     }

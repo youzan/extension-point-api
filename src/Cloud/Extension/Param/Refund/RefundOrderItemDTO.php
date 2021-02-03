@@ -94,7 +94,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDisputeId(): ?int
+    public function getDisputeId(): int
     {
         return $this->disputeId;
     }
@@ -102,7 +102,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $disputeId
      */
-    public function setDisputeId(?int $disputeId): void
+    public function setDisputeId(int $disputeId): void
     {
         $this->disputeId = $disputeId;
     }
@@ -110,7 +110,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -118,7 +118,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $id
      */
-    public function setId(?int $id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
@@ -126,7 +126,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundId(): ?string
+    public function getRefundId(): string
     {
         return $this->refundId;
     }
@@ -134,7 +134,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $refundId
      */
-    public function setRefundId(?string $refundId): void
+    public function setRefundId(string $refundId): void
     {
         $this->refundId = $refundId;
     }
@@ -142,7 +142,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -150,7 +150,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -158,7 +158,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -166,7 +166,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -174,7 +174,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemId(): ?int
+    public function getItemId(): int
     {
         return $this->itemId;
     }
@@ -182,7 +182,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $itemId
      */
-    public function setItemId(?int $itemId): void
+    public function setItemId(int $itemId): void
     {
         $this->itemId = $itemId;
     }
@@ -190,7 +190,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRefundFee(): ?int
+    public function getRefundFee(): int
     {
         return $this->refundFee;
     }
@@ -198,7 +198,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $refundFee
      */
-    public function setRefundFee(?int $refundFee): void
+    public function setRefundFee(int $refundFee): void
     {
         $this->refundFee = $refundFee;
     }
@@ -206,7 +206,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPostage(): ?int
+    public function getPostage(): int
     {
         return $this->postage;
     }
@@ -214,7 +214,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $postage
      */
-    public function setPostage(?int $postage): void
+    public function setPostage(int $postage): void
     {
         $this->postage = $postage;
     }
@@ -222,7 +222,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNum(): ?int
+    public function getNum(): int
     {
         return $this->num;
     }
@@ -230,7 +230,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $num
      */
-    public function setNum(?int $num): void
+    public function setNum(int $num): void
     {
         $this->num = $num;
     }
@@ -238,7 +238,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getWeight(): ?int
+    public function getWeight(): int
     {
         return $this->weight;
     }
@@ -246,7 +246,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $weight
      */
-    public function setWeight(?int $weight): void
+    public function setWeight(int $weight): void
     {
         $this->weight = $weight;
     }
@@ -254,7 +254,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTags(): ?int
+    public function getTags(): int
     {
         return $this->tags;
     }
@@ -262,7 +262,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $tags
      */
-    public function setTags(?int $tags): void
+    public function setTags(int $tags): void
     {
         $this->tags = $tags;
     }
@@ -270,7 +270,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCreateTime(): ?int
+    public function getCreateTime(): int
     {
         return $this->createTime;
     }
@@ -278,7 +278,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $createTime
      */
-    public function setCreateTime(?int $createTime): void
+    public function setCreateTime(int $createTime): void
     {
         $this->createTime = $createTime;
     }
@@ -286,7 +286,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getUpdateTime(): ?int
+    public function getUpdateTime(): int
     {
         return $this->updateTime;
     }
@@ -294,7 +294,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $updateTime
      */
-    public function setUpdateTime(?int $updateTime): void
+    public function setUpdateTime(int $updateTime): void
     {
         $this->updateTime = $updateTime;
     }

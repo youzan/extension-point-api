@@ -34,7 +34,7 @@ class ExtTaskAwardSendRule implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -42,7 +42,7 @@ class ExtTaskAwardSendRule implements \JsonSerializable {
     /**
      * @param string $type
      */
-    public function setType(?string $type): void
+    public function setType(string $type): void
     {
         $this->type = $type;
     }
@@ -50,7 +50,7 @@ class ExtTaskAwardSendRule implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getIdent(): ?string
+    public function getIdent(): string
     {
         return $this->ident;
     }
@@ -58,7 +58,7 @@ class ExtTaskAwardSendRule implements \JsonSerializable {
     /**
      * @param string $ident
      */
-    public function setIdent(?string $ident): void
+    public function setIdent(string $ident): void
     {
         $this->ident = $ident;
     }
@@ -66,7 +66,7 @@ class ExtTaskAwardSendRule implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getValue(): ?int
+    public function getValue(): int
     {
         return $this->value;
     }
@@ -74,7 +74,7 @@ class ExtTaskAwardSendRule implements \JsonSerializable {
     /**
      * @param int $value
      */
-    public function setValue(?int $value): void
+    public function setValue(int $value): void
     {
         $this->value = $value;
     }

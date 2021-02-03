@@ -102,7 +102,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getAuthMap(): ?stdClass
+    public function getAuthMap(): stdClass
     {
         return $this->authMap;
     }
@@ -110,7 +110,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param stdClass $authMap
      */
-    public function setAuthMap(?stdClass $authMap): void
+    public function setAuthMap(stdClass $authMap): void
     {
         $this->authMap = $authMap;
     }
@@ -118,7 +118,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBizBillNo(): ?string
+    public function getBizBillNo(): string
     {
         return $this->bizBillNo;
     }
@@ -126,7 +126,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $bizBillNo
      */
-    public function setBizBillNo(?string $bizBillNo): void
+    public function setBizBillNo(string $bizBillNo): void
     {
         $this->bizBillNo = $bizBillNo;
     }
@@ -134,7 +134,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getFromWarehouseCode(): ?string
+    public function getFromWarehouseCode(): string
     {
         return $this->fromWarehouseCode;
     }
@@ -142,7 +142,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $fromWarehouseCode
      */
-    public function setFromWarehouseCode(?string $fromWarehouseCode): void
+    public function setFromWarehouseCode(string $fromWarehouseCode): void
     {
         $this->fromWarehouseCode = $fromWarehouseCode;
     }
@@ -150,7 +150,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getToWarehouseCode(): ?string
+    public function getToWarehouseCode(): string
     {
         return $this->toWarehouseCode;
     }
@@ -158,7 +158,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $toWarehouseCode
      */
-    public function setToWarehouseCode(?string $toWarehouseCode): void
+    public function setToWarehouseCode(string $toWarehouseCode): void
     {
         $this->toWarehouseCode = $toWarehouseCode;
     }
@@ -166,7 +166,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getFromWarehouseName(): ?string
+    public function getFromWarehouseName(): string
     {
         return $this->fromWarehouseName;
     }
@@ -174,7 +174,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $fromWarehouseName
      */
-    public function setFromWarehouseName(?string $fromWarehouseName): void
+    public function setFromWarehouseName(string $fromWarehouseName): void
     {
         $this->fromWarehouseName = $fromWarehouseName;
     }
@@ -182,7 +182,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getToWarehouseName(): ?string
+    public function getToWarehouseName(): string
     {
         return $this->toWarehouseName;
     }
@@ -190,7 +190,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $toWarehouseName
      */
-    public function setToWarehouseName(?string $toWarehouseName): void
+    public function setToWarehouseName(string $toWarehouseName): void
     {
         $this->toWarehouseName = $toWarehouseName;
     }
@@ -198,7 +198,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getStatus(): ?string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -206,7 +206,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $status
      */
-    public function setStatus(?string $status): void
+    public function setStatus(string $status): void
     {
         $this->status = $status;
     }
@@ -214,7 +214,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCreator(): ?string
+    public function getCreator(): string
     {
         return $this->creator;
     }
@@ -222,7 +222,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $creator
      */
-    public function setCreator(?string $creator): void
+    public function setCreator(string $creator): void
     {
         $this->creator = $creator;
     }
@@ -230,7 +230,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRemark(): ?string
+    public function getRemark(): string
     {
         return $this->remark;
     }
@@ -238,7 +238,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $remark
      */
-    public function setRemark(?string $remark): void
+    public function setRemark(string $remark): void
     {
         $this->remark = $remark;
     }
@@ -246,7 +246,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefusedReason(): ?string
+    public function getRefusedReason(): string
     {
         return $this->refusedReason;
     }
@@ -254,7 +254,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $refusedReason
      */
-    public function setRefusedReason(?string $refusedReason): void
+    public function setRefusedReason(string $refusedReason): void
     {
         $this->refusedReason = $refusedReason;
     }
@@ -262,7 +262,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getBusinessOrderItems(): ?array
+    public function getBusinessOrderItems(): array
     {
         return $this->businessOrderItems;
     }
@@ -270,7 +270,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param array $businessOrderItems
      */
-    public function setBusinessOrderItems(?array $businessOrderItems): void
+    public function setBusinessOrderItems(array $businessOrderItems): void
     {
         $this->businessOrderItems = $businessOrderItems;
     }
@@ -278,7 +278,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOutBizBillNo(): ?string
+    public function getOutBizBillNo(): string
     {
         return $this->outBizBillNo;
     }
@@ -286,7 +286,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $outBizBillNo
      */
-    public function setOutBizBillNo(?string $outBizBillNo): void
+    public function setOutBizBillNo(string $outBizBillNo): void
     {
         $this->outBizBillNo = $outBizBillNo;
     }
@@ -294,7 +294,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getInBizBillNo(): ?string
+    public function getInBizBillNo(): string
     {
         return $this->inBizBillNo;
     }
@@ -302,7 +302,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param string $inBizBillNo
      */
-    public function setInBizBillNo(?string $inBizBillNo): void
+    public function setInBizBillNo(string $inBizBillNo): void
     {
         $this->inBizBillNo = $inBizBillNo;
     }
@@ -310,7 +310,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDistributedOutTime(): ?int
+    public function getDistributedOutTime(): int
     {
         return $this->distributedOutTime;
     }
@@ -318,7 +318,7 @@ class DistributionOrderSyncRequestDTO implements \JsonSerializable {
     /**
      * @param int $distributedOutTime
      */
-    public function setDistributedOutTime(?int $distributedOutTime): void
+    public function setDistributedOutTime(int $distributedOutTime): void
     {
         $this->distributedOutTime = $distributedOutTime;
     }

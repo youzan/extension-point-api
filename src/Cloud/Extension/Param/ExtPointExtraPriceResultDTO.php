@@ -40,7 +40,7 @@ class ExtPointExtraPriceResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -48,7 +48,7 @@ class ExtPointExtraPriceResultDTO implements \JsonSerializable {
     /**
      * @param string $name
      */
-    public function setName(?string $name): void
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
@@ -56,7 +56,7 @@ class ExtPointExtraPriceResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDesc(): ?string
+    public function getDesc(): string
     {
         return $this->desc;
     }
@@ -64,7 +64,7 @@ class ExtPointExtraPriceResultDTO implements \JsonSerializable {
     /**
      * @param string $desc
      */
-    public function setDesc(?string $desc): void
+    public function setDesc(string $desc): void
     {
         $this->desc = $desc;
     }
@@ -72,7 +72,7 @@ class ExtPointExtraPriceResultDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPrice(): ?int
+    public function getPrice(): int
     {
         return $this->price;
     }
@@ -80,7 +80,7 @@ class ExtPointExtraPriceResultDTO implements \JsonSerializable {
     /**
      * @param int $price
      */
-    public function setPrice(?int $price): void
+    public function setPrice(int $price): void
     {
         $this->price = $price;
     }
@@ -88,7 +88,7 @@ class ExtPointExtraPriceResultDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getRefundable(): ?bool
+    public function getRefundable(): bool
     {
         return $this->refundable;
     }
@@ -96,7 +96,7 @@ class ExtPointExtraPriceResultDTO implements \JsonSerializable {
     /**
      * @param bool $refundable
      */
-    public function setRefundable(?bool $refundable): void
+    public function setRefundable(bool $refundable): void
     {
         $this->refundable = $refundable;
     }

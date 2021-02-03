@@ -28,7 +28,7 @@ class ThirdPartyRefundNsqMessageHeadersDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProduced_at(): ?string
+    public function getProduced_at(): string
     {
         return $this->produced_at;
     }
@@ -36,7 +36,7 @@ class ThirdPartyRefundNsqMessageHeadersDTO implements \JsonSerializable {
     /**
      * @param string $produced_at
      */
-    public function setProduced_at(?string $produced_at): void
+    public function setProduced_at(string $produced_at): void
     {
         $this->produced_at = $produced_at;
     }
@@ -44,7 +44,7 @@ class ThirdPartyRefundNsqMessageHeadersDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getFrom(): ?string
+    public function getFrom(): string
     {
         return $this->from;
     }
@@ -52,7 +52,7 @@ class ThirdPartyRefundNsqMessageHeadersDTO implements \JsonSerializable {
     /**
      * @param string $from
      */
-    public function setFrom(?string $from): void
+    public function setFrom(string $from): void
     {
         $this->from = $from;
     }

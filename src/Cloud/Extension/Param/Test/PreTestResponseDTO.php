@@ -28,7 +28,7 @@ class PreTestResponseDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getSuccess(): ?bool
+    public function getSuccess(): bool
     {
         return $this->success;
     }
@@ -36,7 +36,7 @@ class PreTestResponseDTO implements \JsonSerializable {
     /**
      * @param bool $success
      */
-    public function setSuccess(?bool $success): void
+    public function setSuccess(bool $success): void
     {
         $this->success = $success;
     }
@@ -44,7 +44,7 @@ class PreTestResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMessage(): ?string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -52,7 +52,7 @@ class PreTestResponseDTO implements \JsonSerializable {
     /**
      * @param string $message
      */
-    public function setMessage(?string $message): void
+    public function setMessage(string $message): void
     {
         $this->message = $message;
     }

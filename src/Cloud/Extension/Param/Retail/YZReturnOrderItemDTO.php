@@ -82,7 +82,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDeliveryOrderNo(): ?string
+    public function getDeliveryOrderNo(): string
     {
         return $this->deliveryOrderNo;
     }
@@ -90,7 +90,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $deliveryOrderNo
      */
-    public function setDeliveryOrderNo(?string $deliveryOrderNo): void
+    public function setDeliveryOrderNo(string $deliveryOrderNo): void
     {
         $this->deliveryOrderNo = $deliveryOrderNo;
     }
@@ -98,7 +98,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderItemNo(): ?string
+    public function getOrderItemNo(): string
     {
         return $this->orderItemNo;
     }
@@ -106,7 +106,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $orderItemNo
      */
-    public function setOrderItemNo(?string $orderItemNo): void
+    public function setOrderItemNo(string $orderItemNo): void
     {
         $this->orderItemNo = $orderItemNo;
     }
@@ -114,7 +114,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuCode(): ?string
+    public function getSkuCode(): string
     {
         return $this->skuCode;
     }
@@ -122,7 +122,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $skuCode
      */
-    public function setSkuCode(?string $skuCode): void
+    public function setSkuCode(string $skuCode): void
     {
         $this->skuCode = $skuCode;
     }
@@ -130,7 +130,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProductName(): ?string
+    public function getProductName(): string
     {
         return $this->productName;
     }
@@ -138,7 +138,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $productName
      */
-    public function setProductName(?string $productName): void
+    public function setProductName(string $productName): void
     {
         $this->productName = $productName;
     }
@@ -146,7 +146,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemType(): ?int
+    public function getItemType(): int
     {
         return $this->itemType;
     }
@@ -154,7 +154,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $itemType
      */
-    public function setItemType(?int $itemType): void
+    public function setItemType(int $itemType): void
     {
         $this->itemType = $itemType;
     }
@@ -162,7 +162,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuNo(): ?string
+    public function getSkuNo(): string
     {
         return $this->skuNo;
     }
@@ -170,7 +170,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $skuNo
      */
-    public function setSkuNo(?string $skuNo): void
+    public function setSkuNo(string $skuNo): void
     {
         $this->skuNo = $skuNo;
     }
@@ -178,7 +178,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUnit(): ?string
+    public function getUnit(): string
     {
         return $this->unit;
     }
@@ -186,7 +186,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $unit
      */
-    public function setUnit(?string $unit): void
+    public function setUnit(string $unit): void
     {
         $this->unit = $unit;
     }
@@ -194,7 +194,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getQuantity(): ?string
+    public function getQuantity(): string
     {
         return $this->quantity;
     }
@@ -202,7 +202,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $quantity
      */
-    public function setQuantity(?string $quantity): void
+    public function setQuantity(string $quantity): void
     {
         $this->quantity = $quantity;
     }
@@ -210,7 +210,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOutputTaxRate(): ?string
+    public function getOutputTaxRate(): string
     {
         return $this->outputTaxRate;
     }
@@ -218,7 +218,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $outputTaxRate
      */
-    public function setOutputTaxRate(?string $outputTaxRate): void
+    public function setOutputTaxRate(string $outputTaxRate): void
     {
         $this->outputTaxRate = $outputTaxRate;
     }
@@ -226,7 +226,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSalesPrice(): ?string
+    public function getSalesPrice(): string
     {
         return $this->salesPrice;
     }
@@ -234,7 +234,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $salesPrice
      */
-    public function setSalesPrice(?string $salesPrice): void
+    public function setSalesPrice(string $salesPrice): void
     {
         $this->salesPrice = $salesPrice;
     }
@@ -242,7 +242,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRealSalesPrice(): ?string
+    public function getRealSalesPrice(): string
     {
         return $this->realSalesPrice;
     }
@@ -250,7 +250,7 @@ class YZReturnOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $realSalesPrice
      */
-    public function setRealSalesPrice(?string $realSalesPrice): void
+    public function setRealSalesPrice(string $realSalesPrice): void
     {
         $this->realSalesPrice = $realSalesPrice;
     }

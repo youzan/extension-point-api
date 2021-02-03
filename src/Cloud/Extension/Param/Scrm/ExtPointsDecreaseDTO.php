@@ -77,7 +77,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @return ExtCustomerInfoDTO
      */
-    public function getExtCustomerInfoDTO(): ?ExtCustomerInfoDTO
+    public function getExtCustomerInfoDTO(): ExtCustomerInfoDTO
     {
         return $this->extCustomerInfoDTO;
     }
@@ -85,7 +85,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @param ExtCustomerInfoDTO $extCustomerInfoDTO
      */
-    public function setExtCustomerInfoDTO(?ExtCustomerInfoDTO $extCustomerInfoDTO): void
+    public function setExtCustomerInfoDTO(ExtCustomerInfoDTO $extCustomerInfoDTO): void
     {
         $this->extCustomerInfoDTO = $extCustomerInfoDTO;
     }
@@ -93,7 +93,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getAmount(): ?int
+    public function getAmount(): int
     {
         return $this->amount;
     }
@@ -101,7 +101,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @param int $amount
      */
-    public function setAmount(?int $amount): void
+    public function setAmount(int $amount): void
     {
         $this->amount = $amount;
     }
@@ -109,7 +109,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDescription(): ?string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -117,7 +117,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @param string $description
      */
-    public function setDescription(?string $description): void
+    public function setDescription(string $description): void
     {
         $this->description = $description;
     }
@@ -125,7 +125,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getEventType(): ?int
+    public function getEventType(): int
     {
         return $this->eventType;
     }
@@ -133,7 +133,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @param int $eventType
      */
-    public function setEventType(?int $eventType): void
+    public function setEventType(int $eventType): void
     {
         $this->eventType = $eventType;
     }
@@ -141,7 +141,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBizValue(): ?string
+    public function getBizValue(): string
     {
         return $this->bizValue;
     }
@@ -149,7 +149,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @param string $bizValue
      */
-    public function setBizValue(?string $bizValue): void
+    public function setBizValue(string $bizValue): void
     {
         $this->bizValue = $bizValue;
     }
@@ -157,7 +157,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtraInfo(): ?stdClass
+    public function getExtraInfo(): stdClass
     {
         return $this->extraInfo;
     }
@@ -165,7 +165,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @param stdClass $extraInfo
      */
-    public function setExtraInfo(?stdClass $extraInfo): void
+    public function setExtraInfo(stdClass $extraInfo): void
     {
         $this->extraInfo = $extraInfo;
     }
@@ -173,7 +173,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOperatorName(): ?string
+    public function getOperatorName(): string
     {
         return $this->operatorName;
     }
@@ -181,7 +181,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @param string $operatorName
      */
-    public function setOperatorName(?string $operatorName): void
+    public function setOperatorName(string $operatorName): void
     {
         $this->operatorName = $operatorName;
     }
@@ -189,7 +189,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -197,7 +197,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -205,7 +205,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNodeId(): ?int
+    public function getNodeId(): int
     {
         return $this->nodeId;
     }
@@ -213,7 +213,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @param int $nodeId
      */
-    public function setNodeId(?int $nodeId): void
+    public function setNodeId(int $nodeId): void
     {
         $this->nodeId = $nodeId;
     }
@@ -221,7 +221,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBizToken(): ?string
+    public function getBizToken(): string
     {
         return $this->bizToken;
     }
@@ -229,7 +229,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     /**
      * @param string $bizToken
      */
-    public function setBizToken(?string $bizToken): void
+    public function setBizToken(string $bizToken): void
     {
         $this->bizToken = $bizToken;
     }

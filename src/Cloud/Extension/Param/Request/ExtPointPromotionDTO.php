@@ -76,7 +76,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPromotionType(): ?string
+    public function getPromotionType(): string
     {
         return $this->promotionType;
     }
@@ -84,7 +84,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @param string $promotionType
      */
-    public function setPromotionType(?string $promotionType): void
+    public function setPromotionType(string $promotionType): void
     {
         $this->promotionType = $promotionType;
     }
@@ -92,7 +92,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPromotionTypeId(): ?int
+    public function getPromotionTypeId(): int
     {
         return $this->promotionTypeId;
     }
@@ -100,7 +100,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @param int $promotionTypeId
      */
-    public function setPromotionTypeId(?int $promotionTypeId): void
+    public function setPromotionTypeId(int $promotionTypeId): void
     {
         $this->promotionTypeId = $promotionTypeId;
     }
@@ -108,7 +108,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPromotionTypeName(): ?string
+    public function getPromotionTypeName(): string
     {
         return $this->promotionTypeName;
     }
@@ -116,7 +116,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @param string $promotionTypeName
      */
-    public function setPromotionTypeName(?string $promotionTypeName): void
+    public function setPromotionTypeName(string $promotionTypeName): void
     {
         $this->promotionTypeName = $promotionTypeName;
     }
@@ -124,7 +124,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPromotionId(): ?int
+    public function getPromotionId(): int
     {
         return $this->promotionId;
     }
@@ -132,7 +132,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @param int $promotionId
      */
-    public function setPromotionId(?int $promotionId): void
+    public function setPromotionId(int $promotionId): void
     {
         $this->promotionId = $promotionId;
     }
@@ -140,7 +140,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPromotionAlias(): ?string
+    public function getPromotionAlias(): string
     {
         return $this->promotionAlias;
     }
@@ -148,7 +148,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @param string $promotionAlias
      */
-    public function setPromotionAlias(?string $promotionAlias): void
+    public function setPromotionAlias(string $promotionAlias): void
     {
         $this->promotionAlias = $promotionAlias;
     }
@@ -156,7 +156,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPromotionTitle(): ?string
+    public function getPromotionTitle(): string
     {
         return $this->promotionTitle;
     }
@@ -164,7 +164,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @param string $promotionTitle
      */
-    public function setPromotionTitle(?string $promotionTitle): void
+    public function setPromotionTitle(string $promotionTitle): void
     {
         $this->promotionTitle = $promotionTitle;
     }
@@ -172,7 +172,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPromotionLevel(): ?string
+    public function getPromotionLevel(): string
     {
         return $this->promotionLevel;
     }
@@ -180,7 +180,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @param string $promotionLevel
      */
-    public function setPromotionLevel(?string $promotionLevel): void
+    public function setPromotionLevel(string $promotionLevel): void
     {
         $this->promotionLevel = $promotionLevel;
     }
@@ -188,7 +188,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getPromotionDesc(): ?array
+    public function getPromotionDesc(): array
     {
         return $this->promotionDesc;
     }
@@ -196,7 +196,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @param array $promotionDesc
      */
-    public function setPromotionDesc(?array $promotionDesc): void
+    public function setPromotionDesc(array $promotionDesc): void
     {
         $this->promotionDesc = $promotionDesc;
     }
@@ -204,7 +204,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getDecrease(): ?array
+    public function getDecrease(): array
     {
         return $this->decrease;
     }
@@ -212,7 +212,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @param array $decrease
      */
-    public function setDecrease(?array $decrease): void
+    public function setDecrease(array $decrease): void
     {
         $this->decrease = $decrease;
     }
@@ -220,7 +220,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getExtra(): ?array
+    public function getExtra(): array
     {
         return $this->extra;
     }
@@ -228,7 +228,7 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     /**
      * @param array $extra
      */
-    public function setExtra(?array $extra): void
+    public function setExtra(array $extra): void
     {
         $this->extra = $extra;
     }

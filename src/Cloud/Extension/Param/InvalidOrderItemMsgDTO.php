@@ -40,7 +40,7 @@ class InvalidOrderItemMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGoodsType(): ?int
+    public function getGoodsType(): int
     {
         return $this->goodsType;
     }
@@ -48,7 +48,7 @@ class InvalidOrderItemMsgDTO implements \JsonSerializable {
     /**
      * @param int $goodsType
      */
-    public function setGoodsType(?int $goodsType): void
+    public function setGoodsType(int $goodsType): void
     {
         $this->goodsType = $goodsType;
     }
@@ -56,7 +56,7 @@ class InvalidOrderItemMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNum(): ?int
+    public function getNum(): int
     {
         return $this->num;
     }
@@ -64,7 +64,7 @@ class InvalidOrderItemMsgDTO implements \JsonSerializable {
     /**
      * @param int $num
      */
-    public function setNum(?int $num): void
+    public function setNum(int $num): void
     {
         $this->num = $num;
     }
@@ -72,7 +72,7 @@ class InvalidOrderItemMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderItemId(): ?int
+    public function getOrderItemId(): int
     {
         return $this->orderItemId;
     }
@@ -80,7 +80,7 @@ class InvalidOrderItemMsgDTO implements \JsonSerializable {
     /**
      * @param int $orderItemId
      */
-    public function setOrderItemId(?int $orderItemId): void
+    public function setOrderItemId(int $orderItemId): void
     {
         $this->orderItemId = $orderItemId;
     }
@@ -88,7 +88,7 @@ class InvalidOrderItemMsgDTO implements \JsonSerializable {
     /**
      * @return SkuCompositeId
      */
-    public function getSkuCompositeId(): ?SkuCompositeId
+    public function getSkuCompositeId(): SkuCompositeId
     {
         return $this->skuCompositeId;
     }
@@ -96,7 +96,7 @@ class InvalidOrderItemMsgDTO implements \JsonSerializable {
     /**
      * @param SkuCompositeId $skuCompositeId
      */
-    public function setSkuCompositeId(?SkuCompositeId $skuCompositeId): void
+    public function setSkuCompositeId(SkuCompositeId $skuCompositeId): void
     {
         $this->skuCompositeId = $skuCompositeId;
     }

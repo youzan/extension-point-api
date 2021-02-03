@@ -52,7 +52,7 @@ class AddressExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLat(): ?string
+    public function getLat(): string
     {
         return $this->lat;
     }
@@ -60,7 +60,7 @@ class AddressExtDTO implements \JsonSerializable {
     /**
      * @param string $lat
      */
-    public function setLat(?string $lat): void
+    public function setLat(string $lat): void
     {
         $this->lat = $lat;
     }
@@ -68,7 +68,7 @@ class AddressExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLng(): ?string
+    public function getLng(): string
     {
         return $this->lng;
     }
@@ -76,7 +76,7 @@ class AddressExtDTO implements \JsonSerializable {
     /**
      * @param string $lng
      */
-    public function setLng(?string $lng): void
+    public function setLng(string $lng): void
     {
         $this->lng = $lng;
     }
@@ -84,7 +84,7 @@ class AddressExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAddress(): ?string
+    public function getAddress(): string
     {
         return $this->address;
     }
@@ -92,7 +92,7 @@ class AddressExtDTO implements \JsonSerializable {
     /**
      * @param string $address
      */
-    public function setAddress(?string $address): void
+    public function setAddress(string $address): void
     {
         $this->address = $address;
     }
@@ -100,7 +100,7 @@ class AddressExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCountyName(): ?string
+    public function getCountyName(): string
     {
         return $this->countyName;
     }
@@ -108,7 +108,7 @@ class AddressExtDTO implements \JsonSerializable {
     /**
      * @param string $countyName
      */
-    public function setCountyName(?string $countyName): void
+    public function setCountyName(string $countyName): void
     {
         $this->countyName = $countyName;
     }
@@ -116,7 +116,7 @@ class AddressExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProvinceName(): ?string
+    public function getProvinceName(): string
     {
         return $this->provinceName;
     }
@@ -124,7 +124,7 @@ class AddressExtDTO implements \JsonSerializable {
     /**
      * @param string $provinceName
      */
-    public function setProvinceName(?string $provinceName): void
+    public function setProvinceName(string $provinceName): void
     {
         $this->provinceName = $provinceName;
     }
@@ -132,7 +132,7 @@ class AddressExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCityName(): ?string
+    public function getCityName(): string
     {
         return $this->cityName;
     }
@@ -140,7 +140,7 @@ class AddressExtDTO implements \JsonSerializable {
     /**
      * @param string $cityName
      */
-    public function setCityName(?string $cityName): void
+    public function setCityName(string $cityName): void
     {
         $this->cityName = $cityName;
     }

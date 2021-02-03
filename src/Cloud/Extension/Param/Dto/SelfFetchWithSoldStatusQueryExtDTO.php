@@ -18,18 +18,6 @@ class SelfFetchWithSoldStatusQueryExtDTO implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * 用户ID
-     * @var string
-     */
-    private $yzOpenId;
-
-    /**
-     * 分销员ID
-     * @var string
-     */
-    private $salesmanYzOpenId;
-
-    /**
      * 微商城连锁总店店铺ID
      * @var int
      */
@@ -41,12 +29,18 @@ class SelfFetchWithSoldStatusQueryExtDTO implements \JsonSerializable {
      */
     private $nodeKdtId;
 
+    /**
+     * 用户ID
+     * @var int
+     */
+    private $yzOpenId;
+
 
 
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -54,47 +48,15 @@ class SelfFetchWithSoldStatusQueryExtDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
 
     /**
-     * @return string
-     */
-    public function getYzOpenId(): ?string
-    {
-        return $this->yzOpenId;
-    }
-
-    /**
-     * @param string $yzOpenId
-     */
-    public function setYzOpenId(?string $yzOpenId): void
-    {
-        $this->yzOpenId = $yzOpenId;
-    }
-
-    /**
-     * @return string
-     */
-    public function getSalesmanYzOpenId(): ?string
-    {
-        return $this->salesmanYzOpenId;
-    }
-
-    /**
-     * @param string $salesmanYzOpenId
-     */
-    public function setSalesmanYzOpenId(?string $salesmanYzOpenId): void
-    {
-        $this->salesmanYzOpenId = $salesmanYzOpenId;
-    }
-
-    /**
      * @return int
      */
-    public function getRootKdtId(): ?int
+    public function getRootKdtId(): int
     {
         return $this->rootKdtId;
     }
@@ -102,7 +64,7 @@ class SelfFetchWithSoldStatusQueryExtDTO implements \JsonSerializable {
     /**
      * @param int $rootKdtId
      */
-    public function setRootKdtId(?int $rootKdtId): void
+    public function setRootKdtId(int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
     }
@@ -110,7 +72,7 @@ class SelfFetchWithSoldStatusQueryExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNodeKdtId(): ?int
+    public function getNodeKdtId(): int
     {
         return $this->nodeKdtId;
     }
@@ -118,9 +80,25 @@ class SelfFetchWithSoldStatusQueryExtDTO implements \JsonSerializable {
     /**
      * @param int $nodeKdtId
      */
-    public function setNodeKdtId(?int $nodeKdtId): void
+    public function setNodeKdtId(int $nodeKdtId): void
     {
         $this->nodeKdtId = $nodeKdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getYzOpenId(): int
+    {
+        return $this->yzOpenId;
+    }
+
+    /**
+     * @param int $yzOpenId
+     */
+    public function setYzOpenId(int $yzOpenId): void
+    {
+        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {

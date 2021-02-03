@@ -28,7 +28,7 @@ class PurchaseOrderResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalCount(): ?int
+    public function getTotalCount(): int
     {
         return $this->totalCount;
     }
@@ -36,7 +36,7 @@ class PurchaseOrderResponseDTO implements \JsonSerializable {
     /**
      * @param int $totalCount
      */
-    public function setTotalCount(?int $totalCount): void
+    public function setTotalCount(int $totalCount): void
     {
         $this->totalCount = $totalCount;
     }
@@ -44,7 +44,7 @@ class PurchaseOrderResponseDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getPurchaseOrderSyncDTOS(): ?array
+    public function getPurchaseOrderSyncDTOS(): array
     {
         return $this->purchaseOrderSyncDTOS;
     }
@@ -52,7 +52,7 @@ class PurchaseOrderResponseDTO implements \JsonSerializable {
     /**
      * @param array $purchaseOrderSyncDTOS
      */
-    public function setPurchaseOrderSyncDTOS(?array $purchaseOrderSyncDTOS): void
+    public function setPurchaseOrderSyncDTOS(array $purchaseOrderSyncDTOS): void
     {
         $this->purchaseOrderSyncDTOS = $purchaseOrderSyncDTOS;
     }

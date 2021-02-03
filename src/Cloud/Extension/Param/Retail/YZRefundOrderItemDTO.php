@@ -76,7 +76,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDeliveryOrderNo(): ?string
+    public function getDeliveryOrderNo(): string
     {
         return $this->deliveryOrderNo;
     }
@@ -84,7 +84,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $deliveryOrderNo
      */
-    public function setDeliveryOrderNo(?string $deliveryOrderNo): void
+    public function setDeliveryOrderNo(string $deliveryOrderNo): void
     {
         $this->deliveryOrderNo = $deliveryOrderNo;
     }
@@ -92,7 +92,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderItemNo(): ?string
+    public function getOrderItemNo(): string
     {
         return $this->orderItemNo;
     }
@@ -100,7 +100,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $orderItemNo
      */
-    public function setOrderItemNo(?string $orderItemNo): void
+    public function setOrderItemNo(string $orderItemNo): void
     {
         $this->orderItemNo = $orderItemNo;
     }
@@ -108,7 +108,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuCode(): ?string
+    public function getSkuCode(): string
     {
         return $this->skuCode;
     }
@@ -116,7 +116,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $skuCode
      */
-    public function setSkuCode(?string $skuCode): void
+    public function setSkuCode(string $skuCode): void
     {
         $this->skuCode = $skuCode;
     }
@@ -124,7 +124,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProductName(): ?string
+    public function getProductName(): string
     {
         return $this->productName;
     }
@@ -132,7 +132,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $productName
      */
-    public function setProductName(?string $productName): void
+    public function setProductName(string $productName): void
     {
         $this->productName = $productName;
     }
@@ -140,7 +140,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemType(): ?int
+    public function getItemType(): int
     {
         return $this->itemType;
     }
@@ -148,7 +148,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $itemType
      */
-    public function setItemType(?int $itemType): void
+    public function setItemType(int $itemType): void
     {
         $this->itemType = $itemType;
     }
@@ -156,7 +156,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuNo(): ?string
+    public function getSkuNo(): string
     {
         return $this->skuNo;
     }
@@ -164,7 +164,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $skuNo
      */
-    public function setSkuNo(?string $skuNo): void
+    public function setSkuNo(string $skuNo): void
     {
         $this->skuNo = $skuNo;
     }
@@ -172,7 +172,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUnit(): ?string
+    public function getUnit(): string
     {
         return $this->unit;
     }
@@ -180,7 +180,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $unit
      */
-    public function setUnit(?string $unit): void
+    public function setUnit(string $unit): void
     {
         $this->unit = $unit;
     }
@@ -188,7 +188,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getQuantity(): ?string
+    public function getQuantity(): string
     {
         return $this->quantity;
     }
@@ -196,7 +196,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $quantity
      */
-    public function setQuantity(?string $quantity): void
+    public function setQuantity(string $quantity): void
     {
         $this->quantity = $quantity;
     }
@@ -204,7 +204,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRealSalesPrice(): ?string
+    public function getRealSalesPrice(): string
     {
         return $this->realSalesPrice;
     }
@@ -212,7 +212,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $realSalesPrice
      */
-    public function setRealSalesPrice(?string $realSalesPrice): void
+    public function setRealSalesPrice(string $realSalesPrice): void
     {
         $this->realSalesPrice = $realSalesPrice;
     }
@@ -220,7 +220,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundFee(): ?string
+    public function getRefundFee(): string
     {
         return $this->refundFee;
     }
@@ -228,7 +228,7 @@ class YZRefundOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $refundFee
      */
-    public function setRefundFee(?string $refundFee): void
+    public function setRefundFee(string $refundFee): void
     {
         $this->refundFee = $refundFee;
     }

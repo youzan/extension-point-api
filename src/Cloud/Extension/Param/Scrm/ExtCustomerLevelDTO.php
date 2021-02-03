@@ -40,7 +40,7 @@ class ExtCustomerLevelDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLevelAlias(): ?string
+    public function getLevelAlias(): string
     {
         return $this->levelAlias;
     }
@@ -48,7 +48,7 @@ class ExtCustomerLevelDTO implements \JsonSerializable {
     /**
      * @param string $levelAlias
      */
-    public function setLevelAlias(?string $levelAlias): void
+    public function setLevelAlias(string $levelAlias): void
     {
         $this->levelAlias = $levelAlias;
     }
@@ -56,7 +56,7 @@ class ExtCustomerLevelDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getIdentityNo(): ?string
+    public function getIdentityNo(): string
     {
         return $this->identityNo;
     }
@@ -64,7 +64,7 @@ class ExtCustomerLevelDTO implements \JsonSerializable {
     /**
      * @param string $identityNo
      */
-    public function setIdentityNo(?string $identityNo): void
+    public function setIdentityNo(string $identityNo): void
     {
         $this->identityNo = $identityNo;
     }
@@ -72,7 +72,7 @@ class ExtCustomerLevelDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTermBeginAt(): ?int
+    public function getTermBeginAt(): int
     {
         return $this->termBeginAt;
     }
@@ -80,7 +80,7 @@ class ExtCustomerLevelDTO implements \JsonSerializable {
     /**
      * @param int $termBeginAt
      */
-    public function setTermBeginAt(?int $termBeginAt): void
+    public function setTermBeginAt(int $termBeginAt): void
     {
         $this->termBeginAt = $termBeginAt;
     }
@@ -88,7 +88,7 @@ class ExtCustomerLevelDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTermEndAt(): ?int
+    public function getTermEndAt(): int
     {
         return $this->termEndAt;
     }
@@ -96,7 +96,7 @@ class ExtCustomerLevelDTO implements \JsonSerializable {
     /**
      * @param int $termEndAt
      */
-    public function setTermEndAt(?int $termEndAt): void
+    public function setTermEndAt(int $termEndAt): void
     {
         $this->termEndAt = $termEndAt;
     }

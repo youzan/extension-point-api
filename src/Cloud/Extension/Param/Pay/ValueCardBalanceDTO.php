@@ -34,7 +34,7 @@ class ValueCardBalanceDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardName(): ?string
+    public function getCardName(): string
     {
         return $this->cardName;
     }
@@ -42,7 +42,7 @@ class ValueCardBalanceDTO implements \JsonSerializable {
     /**
      * @param string $cardName
      */
-    public function setCardName(?string $cardName): void
+    public function setCardName(string $cardName): void
     {
         $this->cardName = $cardName;
     }
@@ -50,7 +50,7 @@ class ValueCardBalanceDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardNo(): ?string
+    public function getCardNo(): string
     {
         return $this->cardNo;
     }
@@ -58,7 +58,7 @@ class ValueCardBalanceDTO implements \JsonSerializable {
     /**
      * @param string $cardNo
      */
-    public function setCardNo(?string $cardNo): void
+    public function setCardNo(string $cardNo): void
     {
         $this->cardNo = $cardNo;
     }
@@ -66,7 +66,7 @@ class ValueCardBalanceDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBalance(): ?int
+    public function getBalance(): int
     {
         return $this->balance;
     }
@@ -74,7 +74,7 @@ class ValueCardBalanceDTO implements \JsonSerializable {
     /**
      * @param int $balance
      */
-    public function setBalance(?int $balance): void
+    public function setBalance(int $balance): void
     {
         $this->balance = $balance;
     }

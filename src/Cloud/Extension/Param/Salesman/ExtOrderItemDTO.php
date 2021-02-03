@@ -70,7 +70,7 @@ class ExtOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -78,7 +78,7 @@ class ExtOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -86,7 +86,7 @@ class ExtOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemId(): ?int
+    public function getItemId(): int
     {
         return $this->itemId;
     }
@@ -94,7 +94,7 @@ class ExtOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $itemId
      */
-    public function setItemId(?int $itemId): void
+    public function setItemId(int $itemId): void
     {
         $this->itemId = $itemId;
     }
@@ -102,7 +102,7 @@ class ExtOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSkuId(): ?int
+    public function getSkuId(): int
     {
         return $this->skuId;
     }
@@ -110,7 +110,7 @@ class ExtOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $skuId
      */
-    public function setSkuId(?int $skuId): void
+    public function setSkuId(int $skuId): void
     {
         $this->skuId = $skuId;
     }
@@ -118,7 +118,7 @@ class ExtOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSku(): ?string
+    public function getSku(): string
     {
         return $this->sku;
     }
@@ -126,7 +126,7 @@ class ExtOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $sku
      */
-    public function setSku(?string $sku): void
+    public function setSku(string $sku): void
     {
         $this->sku = $sku;
     }
@@ -134,7 +134,7 @@ class ExtOrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getGoodsName(): ?string
+    public function getGoodsName(): string
     {
         return $this->goodsName;
     }
@@ -142,7 +142,7 @@ class ExtOrderItemDTO implements \JsonSerializable {
     /**
      * @param string $goodsName
      */
-    public function setGoodsName(?string $goodsName): void
+    public function setGoodsName(string $goodsName): void
     {
         $this->goodsName = $goodsName;
     }
@@ -150,7 +150,7 @@ class ExtOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNum(): ?int
+    public function getNum(): int
     {
         return $this->num;
     }
@@ -158,7 +158,7 @@ class ExtOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $num
      */
-    public function setNum(?int $num): void
+    public function setNum(int $num): void
     {
         $this->num = $num;
     }
@@ -166,7 +166,7 @@ class ExtOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOriginUnitPrice(): ?int
+    public function getOriginUnitPrice(): int
     {
         return $this->originUnitPrice;
     }
@@ -174,7 +174,7 @@ class ExtOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $originUnitPrice
      */
-    public function setOriginUnitPrice(?int $originUnitPrice): void
+    public function setOriginUnitPrice(int $originUnitPrice): void
     {
         $this->originUnitPrice = $originUnitPrice;
     }
@@ -182,7 +182,7 @@ class ExtOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getUnitPrice(): ?int
+    public function getUnitPrice(): int
     {
         return $this->unitPrice;
     }
@@ -190,7 +190,7 @@ class ExtOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $unitPrice
      */
-    public function setUnitPrice(?int $unitPrice): void
+    public function setUnitPrice(int $unitPrice): void
     {
         $this->unitPrice = $unitPrice;
     }
@@ -198,7 +198,7 @@ class ExtOrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRealPay(): ?int
+    public function getRealPay(): int
     {
         return $this->realPay;
     }
@@ -206,7 +206,7 @@ class ExtOrderItemDTO implements \JsonSerializable {
     /**
      * @param int $realPay
      */
-    public function setRealPay(?int $realPay): void
+    public function setRealPay(int $realPay): void
     {
         $this->realPay = $realPay;
     }

@@ -100,7 +100,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -108,7 +108,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -116,7 +116,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getShopName(): ?string
+    public function getShopName(): string
     {
         return $this->shopName;
     }
@@ -124,7 +124,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @param string $shopName
      */
-    public function setShopName(?string $shopName): void
+    public function setShopName(string $shopName): void
     {
         $this->shopName = $shopName;
     }
@@ -132,7 +132,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getLockStatus(): ?int
+    public function getLockStatus(): int
     {
         return $this->lockStatus;
     }
@@ -140,7 +140,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @param int $lockStatus
      */
-    public function setLockStatus(?int $lockStatus): void
+    public function setLockStatus(int $lockStatus): void
     {
         $this->lockStatus = $lockStatus;
     }
@@ -148,7 +148,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getShopType(): ?int
+    public function getShopType(): int
     {
         return $this->shopType;
     }
@@ -156,7 +156,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @param int $shopType
      */
-    public function setShopType(?int $shopType): void
+    public function setShopType(int $shopType): void
     {
         $this->shopType = $shopType;
     }
@@ -164,7 +164,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getShopRole(): ?int
+    public function getShopRole(): int
     {
         return $this->shopRole;
     }
@@ -172,7 +172,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @param int $shopRole
      */
-    public function setShopRole(?int $shopRole): void
+    public function setShopRole(int $shopRole): void
     {
         $this->shopRole = $shopRole;
     }
@@ -180,7 +180,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getParentKdtId(): ?int
+    public function getParentKdtId(): int
     {
         return $this->parentKdtId;
     }
@@ -188,7 +188,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @param int $parentKdtId
      */
-    public function setParentKdtId(?int $parentKdtId): void
+    public function setParentKdtId(int $parentKdtId): void
     {
         $this->parentKdtId = $parentKdtId;
     }
@@ -196,7 +196,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRootKdtId(): ?int
+    public function getRootKdtId(): int
     {
         return $this->rootKdtId;
     }
@@ -204,7 +204,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @param int $rootKdtId
      */
-    public function setRootKdtId(?int $rootKdtId): void
+    public function setRootKdtId(int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
     }
@@ -212,7 +212,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getChainOnlineShopMode(): ?int
+    public function getChainOnlineShopMode(): int
     {
         return $this->chainOnlineShopMode;
     }
@@ -220,7 +220,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @param int $chainOnlineShopMode
      */
-    public function setChainOnlineShopMode(?int $chainOnlineShopMode): void
+    public function setChainOnlineShopMode(int $chainOnlineShopMode): void
     {
         $this->chainOnlineShopMode = $chainOnlineShopMode;
     }
@@ -228,7 +228,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getOnlineShopOpen(): ?bool
+    public function getOnlineShopOpen(): bool
     {
         return $this->onlineShopOpen;
     }
@@ -236,7 +236,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @param bool $onlineShopOpen
      */
-    public function setOnlineShopOpen(?bool $onlineShopOpen): void
+    public function setOnlineShopOpen(bool $onlineShopOpen): void
     {
         $this->onlineShopOpen = $onlineShopOpen;
     }
@@ -244,7 +244,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getShopTopic(): ?int
+    public function getShopTopic(): int
     {
         return $this->shopTopic;
     }
@@ -252,7 +252,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @param int $shopTopic
      */
-    public function setShopTopic(?int $shopTopic): void
+    public function setShopTopic(int $shopTopic): void
     {
         $this->shopTopic = $shopTopic;
     }
@@ -260,7 +260,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getOfflineShopOpen(): ?bool
+    public function getOfflineShopOpen(): bool
     {
         return $this->offlineShopOpen;
     }
@@ -268,7 +268,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @param bool $offlineShopOpen
      */
-    public function setOfflineShopOpen(?bool $offlineShopOpen): void
+    public function setOfflineShopOpen(bool $offlineShopOpen): void
     {
         $this->offlineShopOpen = $offlineShopOpen;
     }
@@ -276,7 +276,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSaasSolution(): ?int
+    public function getSaasSolution(): int
     {
         return $this->saasSolution;
     }
@@ -284,7 +284,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @param int $saasSolution
      */
-    public function setSaasSolution(?int $saasSolution): void
+    public function setSaasSolution(int $saasSolution): void
     {
         $this->saasSolution = $saasSolution;
     }
@@ -292,7 +292,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getJoinType(): ?int
+    public function getJoinType(): int
     {
         return $this->joinType;
     }
@@ -300,7 +300,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @param int $joinType
      */
-    public function setJoinType(?int $joinType): void
+    public function setJoinType(int $joinType): void
     {
         $this->joinType = $joinType;
     }
@@ -308,7 +308,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSubSolution(): ?int
+    public function getSubSolution(): int
     {
         return $this->subSolution;
     }
@@ -316,7 +316,7 @@ class ShopMetaInfo implements \JsonSerializable {
     /**
      * @param int $subSolution
      */
-    public function setSubSolution(?int $subSolution): void
+    public function setSubSolution(int $subSolution): void
     {
         $this->subSolution = $subSolution;
     }

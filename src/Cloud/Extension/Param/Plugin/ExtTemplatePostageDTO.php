@@ -22,7 +22,7 @@ class ExtTemplatePostageDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getIsFree(): ?bool
+    public function getIsFree(): bool
     {
         return $this->isFree;
     }
@@ -30,7 +30,7 @@ class ExtTemplatePostageDTO implements \JsonSerializable {
     /**
      * @param bool $isFree
      */
-    public function setIsFree(?bool $isFree): void
+    public function setIsFree(bool $isFree): void
     {
         $this->isFree = $isFree;
     }

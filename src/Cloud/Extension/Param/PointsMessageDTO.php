@@ -28,7 +28,7 @@ class PointsMessageDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getJob_data(): ?string
+    public function getJob_data(): string
     {
         return $this->job_data;
     }
@@ -36,7 +36,7 @@ class PointsMessageDTO implements \JsonSerializable {
     /**
      * @param string $job_data
      */
-    public function setJob_data(?string $job_data): void
+    public function setJob_data(string $job_data): void
     {
         $this->job_data = $job_data;
     }
@@ -44,7 +44,7 @@ class PointsMessageDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getJob_time(): ?int
+    public function getJob_time(): int
     {
         return $this->job_time;
     }
@@ -52,7 +52,7 @@ class PointsMessageDTO implements \JsonSerializable {
     /**
      * @param int $job_time
      */
-    public function setJob_time(?int $job_time): void
+    public function setJob_time(int $job_time): void
     {
         $this->job_time = $job_time;
     }

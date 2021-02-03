@@ -40,7 +40,7 @@ class DistributionOutOrderItemResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuCode(): ?string
+    public function getSkuCode(): string
     {
         return $this->skuCode;
     }
@@ -48,7 +48,7 @@ class DistributionOutOrderItemResultDTO implements \JsonSerializable {
     /**
      * @param string $skuCode
      */
-    public function setSkuCode(?string $skuCode): void
+    public function setSkuCode(string $skuCode): void
     {
         $this->skuCode = $skuCode;
     }
@@ -56,7 +56,7 @@ class DistributionOutOrderItemResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getQuantity(): ?string
+    public function getQuantity(): string
     {
         return $this->quantity;
     }
@@ -64,7 +64,7 @@ class DistributionOutOrderItemResultDTO implements \JsonSerializable {
     /**
      * @param string $quantity
      */
-    public function setQuantity(?string $quantity): void
+    public function setQuantity(string $quantity): void
     {
         $this->quantity = $quantity;
     }
@@ -72,7 +72,7 @@ class DistributionOutOrderItemResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getWithTaxCost(): ?string
+    public function getWithTaxCost(): string
     {
         return $this->withTaxCost;
     }
@@ -80,7 +80,7 @@ class DistributionOutOrderItemResultDTO implements \JsonSerializable {
     /**
      * @param string $withTaxCost
      */
-    public function setWithTaxCost(?string $withTaxCost): void
+    public function setWithTaxCost(string $withTaxCost): void
     {
         $this->withTaxCost = $withTaxCost;
     }
@@ -88,7 +88,7 @@ class DistributionOutOrderItemResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getWithTaxAmount(): ?string
+    public function getWithTaxAmount(): string
     {
         return $this->withTaxAmount;
     }
@@ -96,7 +96,7 @@ class DistributionOutOrderItemResultDTO implements \JsonSerializable {
     /**
      * @param string $withTaxAmount
      */
-    public function setWithTaxAmount(?string $withTaxAmount): void
+    public function setWithTaxAmount(string $withTaxAmount): void
     {
         $this->withTaxAmount = $withTaxAmount;
     }

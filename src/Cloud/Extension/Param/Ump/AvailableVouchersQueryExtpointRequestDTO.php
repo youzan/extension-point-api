@@ -40,7 +40,7 @@ class AvailableVouchersQueryExtpointRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOwnerId(): ?string
+    public function getOwnerId(): string
     {
         return $this->ownerId;
     }
@@ -48,7 +48,7 @@ class AvailableVouchersQueryExtpointRequestDTO implements \JsonSerializable {
     /**
      * @param string $ownerId
      */
-    public function setOwnerId(?string $ownerId): void
+    public function setOwnerId(string $ownerId): void
     {
         $this->ownerId = $ownerId;
     }
@@ -56,7 +56,7 @@ class AvailableVouchersQueryExtpointRequestDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getActivityIds(): ?array
+    public function getActivityIds(): array
     {
         return $this->activityIds;
     }
@@ -64,7 +64,7 @@ class AvailableVouchersQueryExtpointRequestDTO implements \JsonSerializable {
     /**
      * @param array $activityIds
      */
-    public function setActivityIds(?array $activityIds): void
+    public function setActivityIds(array $activityIds): void
     {
         $this->activityIds = $activityIds;
     }
@@ -72,7 +72,7 @@ class AvailableVouchersQueryExtpointRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersionNo(): ?int
+    public function getVersionNo(): int
     {
         return $this->versionNo;
     }
@@ -80,7 +80,7 @@ class AvailableVouchersQueryExtpointRequestDTO implements \JsonSerializable {
     /**
      * @param int $versionNo
      */
-    public function setVersionNo(?int $versionNo): void
+    public function setVersionNo(int $versionNo): void
     {
         $this->versionNo = $versionNo;
     }
@@ -88,7 +88,7 @@ class AvailableVouchersQueryExtpointRequestDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): ?stdClass
+    public function getExtMap(): stdClass
     {
         return $this->extMap;
     }
@@ -96,7 +96,7 @@ class AvailableVouchersQueryExtpointRequestDTO implements \JsonSerializable {
     /**
      * @param stdClass $extMap
      */
-    public function setExtMap(?stdClass $extMap): void
+    public function setExtMap(stdClass $extMap): void
     {
         $this->extMap = $extMap;
     }

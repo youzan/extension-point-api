@@ -46,7 +46,7 @@ class ExtGoodsConfigDetail implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -54,7 +54,7 @@ class ExtGoodsConfigDetail implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -62,7 +62,7 @@ class ExtGoodsConfigDetail implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGoodsId(): ?int
+    public function getGoodsId(): int
     {
         return $this->goodsId;
     }
@@ -70,7 +70,7 @@ class ExtGoodsConfigDetail implements \JsonSerializable {
     /**
      * @param int $goodsId
      */
-    public function setGoodsId(?int $goodsId): void
+    public function setGoodsId(int $goodsId): void
     {
         $this->goodsId = $goodsId;
     }
@@ -78,7 +78,7 @@ class ExtGoodsConfigDetail implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getLevel(): ?int
+    public function getLevel(): int
     {
         return $this->level;
     }
@@ -86,7 +86,7 @@ class ExtGoodsConfigDetail implements \JsonSerializable {
     /**
      * @param int $level
      */
-    public function setLevel(?int $level): void
+    public function setLevel(int $level): void
     {
         $this->level = $level;
     }
@@ -94,7 +94,7 @@ class ExtGoodsConfigDetail implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getIRate(): ?int
+    public function getIRate(): int
     {
         return $this->iRate;
     }
@@ -102,7 +102,7 @@ class ExtGoodsConfigDetail implements \JsonSerializable {
     /**
      * @param int $iRate
      */
-    public function setIRate(?int $iRate): void
+    public function setIRate(int $iRate): void
     {
         $this->iRate = $iRate;
     }
@@ -110,7 +110,7 @@ class ExtGoodsConfigDetail implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getIiRate(): ?int
+    public function getIiRate(): int
     {
         return $this->iiRate;
     }
@@ -118,7 +118,7 @@ class ExtGoodsConfigDetail implements \JsonSerializable {
     /**
      * @param int $iiRate
      */
-    public function setIiRate(?int $iiRate): void
+    public function setIiRate(int $iiRate): void
     {
         $this->iiRate = $iiRate;
     }

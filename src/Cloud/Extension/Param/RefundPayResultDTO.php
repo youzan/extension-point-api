@@ -28,7 +28,7 @@ class RefundPayResultDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtension(): ?stdClass
+    public function getExtension(): stdClass
     {
         return $this->extension;
     }
@@ -36,7 +36,7 @@ class RefundPayResultDTO implements \JsonSerializable {
     /**
      * @param stdClass $extension
      */
-    public function setExtension(?stdClass $extension): void
+    public function setExtension(stdClass $extension): void
     {
         $this->extension = $extension;
     }
@@ -44,7 +44,7 @@ class RefundPayResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundStatus(): ?string
+    public function getRefundStatus(): string
     {
         return $this->refundStatus;
     }
@@ -52,7 +52,7 @@ class RefundPayResultDTO implements \JsonSerializable {
     /**
      * @param string $refundStatus
      */
-    public function setRefundStatus(?string $refundStatus): void
+    public function setRefundStatus(string $refundStatus): void
     {
         $this->refundStatus = $refundStatus;
     }

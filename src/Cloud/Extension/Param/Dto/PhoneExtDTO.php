@@ -28,7 +28,7 @@ class PhoneExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAreaCode(): ?string
+    public function getAreaCode(): string
     {
         return $this->areaCode;
     }
@@ -36,7 +36,7 @@ class PhoneExtDTO implements \JsonSerializable {
     /**
      * @param string $areaCode
      */
-    public function setAreaCode(?string $areaCode): void
+    public function setAreaCode(string $areaCode): void
     {
         $this->areaCode = $areaCode;
     }
@@ -44,7 +44,7 @@ class PhoneExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLocalNumber(): ?string
+    public function getLocalNumber(): string
     {
         return $this->localNumber;
     }
@@ -52,7 +52,7 @@ class PhoneExtDTO implements \JsonSerializable {
     /**
      * @param string $localNumber
      */
-    public function setLocalNumber(?string $localNumber): void
+    public function setLocalNumber(string $localNumber): void
     {
         $this->localNumber = $localNumber;
     }

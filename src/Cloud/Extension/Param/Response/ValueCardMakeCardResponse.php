@@ -34,7 +34,7 @@ class ValueCardMakeCardResponse implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getCardNos(): ?array
+    public function getCardNos(): array
     {
         return $this->cardNos;
     }
@@ -42,7 +42,7 @@ class ValueCardMakeCardResponse implements \JsonSerializable {
     /**
      * @param array $cardNos
      */
-    public function setCardNos(?array $cardNos): void
+    public function setCardNos(array $cardNos): void
     {
         $this->cardNos = $cardNos;
     }
@@ -50,7 +50,7 @@ class ValueCardMakeCardResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getExtOrderNo(): ?string
+    public function getExtOrderNo(): string
     {
         return $this->extOrderNo;
     }
@@ -58,7 +58,7 @@ class ValueCardMakeCardResponse implements \JsonSerializable {
     /**
      * @param string $extOrderNo
      */
-    public function setExtOrderNo(?string $extOrderNo): void
+    public function setExtOrderNo(string $extOrderNo): void
     {
         $this->extOrderNo = $extOrderNo;
     }
@@ -66,7 +66,7 @@ class ValueCardMakeCardResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMakeSuccess(): ?string
+    public function getMakeSuccess(): string
     {
         return $this->makeSuccess;
     }
@@ -74,7 +74,7 @@ class ValueCardMakeCardResponse implements \JsonSerializable {
     /**
      * @param string $makeSuccess
      */
-    public function setMakeSuccess(?string $makeSuccess): void
+    public function setMakeSuccess(string $makeSuccess): void
     {
         $this->makeSuccess = $makeSuccess;
     }

@@ -40,7 +40,7 @@ class PresentRightsDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPresentId(): ?int
+    public function getPresentId(): int
     {
         return $this->presentId;
     }
@@ -48,7 +48,7 @@ class PresentRightsDTO implements \JsonSerializable {
     /**
      * @param int $presentId
      */
-    public function setPresentId(?int $presentId): void
+    public function setPresentId(int $presentId): void
     {
         $this->presentId = $presentId;
     }
@@ -56,7 +56,7 @@ class PresentRightsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPresentName(): ?string
+    public function getPresentName(): string
     {
         return $this->presentName;
     }
@@ -64,7 +64,7 @@ class PresentRightsDTO implements \JsonSerializable {
     /**
      * @param string $presentName
      */
-    public function setPresentName(?string $presentName): void
+    public function setPresentName(string $presentName): void
     {
         $this->presentName = $presentName;
     }
@@ -72,7 +72,7 @@ class PresentRightsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPicUrl(): ?string
+    public function getPicUrl(): string
     {
         return $this->picUrl;
     }
@@ -80,7 +80,7 @@ class PresentRightsDTO implements \JsonSerializable {
     /**
      * @param string $picUrl
      */
-    public function setPicUrl(?string $picUrl): void
+    public function setPicUrl(string $picUrl): void
     {
         $this->picUrl = $picUrl;
     }
@@ -88,7 +88,7 @@ class PresentRightsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPresentStatus(): ?string
+    public function getPresentStatus(): string
     {
         return $this->presentStatus;
     }
@@ -96,7 +96,7 @@ class PresentRightsDTO implements \JsonSerializable {
     /**
      * @param string $presentStatus
      */
-    public function setPresentStatus(?string $presentStatus): void
+    public function setPresentStatus(string $presentStatus): void
     {
         $this->presentStatus = $presentStatus;
     }

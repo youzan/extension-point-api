@@ -28,7 +28,7 @@ class ExtTaskAwardRulesDesc implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getAwardLevel(): ?int
+    public function getAwardLevel(): int
     {
         return $this->awardLevel;
     }
@@ -36,7 +36,7 @@ class ExtTaskAwardRulesDesc implements \JsonSerializable {
     /**
      * @param int $awardLevel
      */
-    public function setAwardLevel(?int $awardLevel): void
+    public function setAwardLevel(int $awardLevel): void
     {
         $this->awardLevel = $awardLevel;
     }
@@ -44,7 +44,7 @@ class ExtTaskAwardRulesDesc implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDesc(): ?string
+    public function getDesc(): string
     {
         return $this->desc;
     }
@@ -52,7 +52,7 @@ class ExtTaskAwardRulesDesc implements \JsonSerializable {
     /**
      * @param string $desc
      */
-    public function setDesc(?string $desc): void
+    public function setDesc(string $desc): void
     {
         $this->desc = $desc;
     }

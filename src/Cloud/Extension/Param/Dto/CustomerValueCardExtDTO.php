@@ -100,7 +100,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUseSpecification(): ?string
+    public function getUseSpecification(): string
     {
         return $this->useSpecification;
     }
@@ -108,7 +108,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @param string $useSpecification
      */
-    public function setUseSpecification(?string $useSpecification): void
+    public function setUseSpecification(string $useSpecification): void
     {
         $this->useSpecification = $useSpecification;
     }
@@ -116,7 +116,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getUsable(): ?bool
+    public function getUsable(): bool
     {
         return $this->usable;
     }
@@ -124,7 +124,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @param bool $usable
      */
-    public function setUsable(?bool $usable): void
+    public function setUsable(bool $usable): void
     {
         $this->usable = $usable;
     }
@@ -132,7 +132,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUnusableReason(): ?string
+    public function getUnusableReason(): string
     {
         return $this->unusableReason;
     }
@@ -140,7 +140,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @param string $unusableReason
      */
-    public function setUnusableReason(?string $unusableReason): void
+    public function setUnusableReason(string $unusableReason): void
     {
         $this->unusableReason = $unusableReason;
     }
@@ -148,7 +148,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getExpireDate(): ?int
+    public function getExpireDate(): int
     {
         return $this->expireDate;
     }
@@ -156,7 +156,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @param int $expireDate
      */
-    public function setExpireDate(?int $expireDate): void
+    public function setExpireDate(int $expireDate): void
     {
         $this->expireDate = $expireDate;
     }
@@ -164,7 +164,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardName(): ?string
+    public function getCardName(): string
     {
         return $this->cardName;
     }
@@ -172,7 +172,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @param string $cardName
      */
-    public function setCardName(?string $cardName): void
+    public function setCardName(string $cardName): void
     {
         $this->cardName = $cardName;
     }
@@ -180,7 +180,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardNo(): ?string
+    public function getCardNo(): string
     {
         return $this->cardNo;
     }
@@ -188,7 +188,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @param string $cardNo
      */
-    public function setCardNo(?string $cardNo): void
+    public function setCardNo(string $cardNo): void
     {
         $this->cardNo = $cardNo;
     }
@@ -196,7 +196,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBackgroundImage(): ?string
+    public function getBackgroundImage(): string
     {
         return $this->backgroundImage;
     }
@@ -204,7 +204,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @param string $backgroundImage
      */
-    public function setBackgroundImage(?string $backgroundImage): void
+    public function setBackgroundImage(string $backgroundImage): void
     {
         $this->backgroundImage = $backgroundImage;
     }
@@ -212,7 +212,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardStatus(): ?string
+    public function getCardStatus(): string
     {
         return $this->cardStatus;
     }
@@ -220,7 +220,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @param string $cardStatus
      */
-    public function setCardStatus(?string $cardStatus): void
+    public function setCardStatus(string $cardStatus): void
     {
         $this->cardStatus = $cardStatus;
     }
@@ -228,7 +228,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardType(): ?string
+    public function getCardType(): string
     {
         return $this->cardType;
     }
@@ -236,7 +236,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @param string $cardType
      */
-    public function setCardType(?string $cardType): void
+    public function setCardType(string $cardType): void
     {
         $this->cardType = $cardType;
     }
@@ -244,7 +244,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBalance(): ?int
+    public function getBalance(): int
     {
         return $this->balance;
     }
@@ -252,7 +252,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @param int $balance
      */
-    public function setBalance(?int $balance): void
+    public function setBalance(int $balance): void
     {
         $this->balance = $balance;
     }
@@ -260,7 +260,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPrincipalDnom(): ?int
+    public function getPrincipalDnom(): int
     {
         return $this->principalDnom;
     }
@@ -268,7 +268,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @param int $principalDnom
      */
-    public function setPrincipalDnom(?int $principalDnom): void
+    public function setPrincipalDnom(int $principalDnom): void
     {
         $this->principalDnom = $principalDnom;
     }
@@ -276,7 +276,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSumBonusDnom(): ?int
+    public function getSumBonusDnom(): int
     {
         return $this->sumBonusDnom;
     }
@@ -284,7 +284,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @param int $sumBonusDnom
      */
-    public function setSumBonusDnom(?int $sumBonusDnom): void
+    public function setSumBonusDnom(int $sumBonusDnom): void
     {
         $this->sumBonusDnom = $sumBonusDnom;
     }
@@ -292,7 +292,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStrategyType(): ?int
+    public function getStrategyType(): int
     {
         return $this->strategyType;
     }
@@ -300,7 +300,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @param int $strategyType
      */
-    public function setStrategyType(?int $strategyType): void
+    public function setStrategyType(int $strategyType): void
     {
         $this->strategyType = $strategyType;
     }
@@ -308,7 +308,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getNeedRecharge(): ?bool
+    public function getNeedRecharge(): bool
     {
         return $this->needRecharge;
     }
@@ -316,7 +316,7 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     /**
      * @param bool $needRecharge
      */
-    public function setNeedRecharge(?bool $needRecharge): void
+    public function setNeedRecharge(bool $needRecharge): void
     {
         $this->needRecharge = $needRecharge;
     }

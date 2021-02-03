@@ -88,7 +88,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -96,7 +96,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @param string $name
      */
-    public function setName(?string $name): void
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
@@ -104,7 +104,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCategoryId(): ?int
+    public function getCategoryId(): int
     {
         return $this->categoryId;
     }
@@ -112,7 +112,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @param int $categoryId
      */
-    public function setCategoryId(?int $categoryId): void
+    public function setCategoryId(int $categoryId): void
     {
         $this->categoryId = $categoryId;
     }
@@ -120,7 +120,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCategoryName(): ?string
+    public function getCategoryName(): string
     {
         return $this->categoryName;
     }
@@ -128,7 +128,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @param string $categoryName
      */
-    public function setCategoryName(?string $categoryName): void
+    public function setCategoryName(string $categoryName): void
     {
         $this->categoryName = $categoryName;
     }
@@ -136,7 +136,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUnit(): ?string
+    public function getUnit(): string
     {
         return $this->unit;
     }
@@ -144,7 +144,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @param string $unit
      */
-    public function setUnit(?string $unit): void
+    public function setUnit(string $unit): void
     {
         $this->unit = $unit;
     }
@@ -152,7 +152,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSpuNo(): ?string
+    public function getSpuNo(): string
     {
         return $this->spuNo;
     }
@@ -160,7 +160,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @param string $spuNo
      */
-    public function setSpuNo(?string $spuNo): void
+    public function setSpuNo(string $spuNo): void
     {
         $this->spuNo = $spuNo;
     }
@@ -168,7 +168,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getBarCodes(): ?array
+    public function getBarCodes(): array
     {
         return $this->barCodes;
     }
@@ -176,7 +176,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @param array $barCodes
      */
-    public function setBarCodes(?array $barCodes): void
+    public function setBarCodes(array $barCodes): void
     {
         $this->barCodes = $barCodes;
     }
@@ -184,7 +184,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSpuCode(): ?string
+    public function getSpuCode(): string
     {
         return $this->spuCode;
     }
@@ -192,7 +192,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @param string $spuCode
      */
-    public function setSpuCode(?string $spuCode): void
+    public function setSpuCode(string $spuCode): void
     {
         $this->spuCode = $spuCode;
     }
@@ -200,7 +200,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRetailPrice(): ?string
+    public function getRetailPrice(): string
     {
         return $this->retailPrice;
     }
@@ -208,7 +208,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @param string $retailPrice
      */
-    public function setRetailPrice(?string $retailPrice): void
+    public function setRetailPrice(string $retailPrice): void
     {
         $this->retailPrice = $retailPrice;
     }
@@ -216,7 +216,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOutputTaxRate(): ?string
+    public function getOutputTaxRate(): string
     {
         return $this->outputTaxRate;
     }
@@ -224,7 +224,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @param string $outputTaxRate
      */
-    public function setOutputTaxRate(?string $outputTaxRate): void
+    public function setOutputTaxRate(string $outputTaxRate): void
     {
         $this->outputTaxRate = $outputTaxRate;
     }
@@ -232,7 +232,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getInputTaxRate(): ?string
+    public function getInputTaxRate(): string
     {
         return $this->inputTaxRate;
     }
@@ -240,7 +240,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @param string $inputTaxRate
      */
-    public function setInputTaxRate(?string $inputTaxRate): void
+    public function setInputTaxRate(string $inputTaxRate): void
     {
         $this->inputTaxRate = $inputTaxRate;
     }
@@ -248,7 +248,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getSkus(): ?array
+    public function getSkus(): array
     {
         return $this->skus;
     }
@@ -256,7 +256,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @param array $skus
      */
-    public function setSkus(?array $skus): void
+    public function setSkus(array $skus): void
     {
         $this->skus = $skus;
     }
@@ -264,7 +264,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPhotoUrl(): ?string
+    public function getPhotoUrl(): string
     {
         return $this->photoUrl;
     }
@@ -272,7 +272,7 @@ class ProductSyncDTO implements \JsonSerializable {
     /**
      * @param string $photoUrl
      */
-    public function setPhotoUrl(?string $photoUrl): void
+    public function setPhotoUrl(string $photoUrl): void
     {
         $this->photoUrl = $photoUrl;
     }

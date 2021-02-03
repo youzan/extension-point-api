@@ -100,7 +100,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundId(): ?string
+    public function getRefundId(): string
     {
         return $this->refundId;
     }
@@ -108,7 +108,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @param string $refundId
      */
-    public function setRefundId(?string $refundId): void
+    public function setRefundId(string $refundId): void
     {
         $this->refundId = $refundId;
     }
@@ -116,7 +116,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundNo(): ?string
+    public function getRefundNo(): string
     {
         return $this->refundNo;
     }
@@ -124,7 +124,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @param string $refundNo
      */
-    public function setRefundNo(?string $refundNo): void
+    public function setRefundNo(string $refundNo): void
     {
         $this->refundNo = $refundNo;
     }
@@ -132,7 +132,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getItems(): ?array
+    public function getItems(): array
     {
         return $this->items;
     }
@@ -140,7 +140,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @param array $items
      */
-    public function setItems(?array $items): void
+    public function setItems(array $items): void
     {
         $this->items = $items;
     }
@@ -148,7 +148,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRefundFee(): ?int
+    public function getRefundFee(): int
     {
         return $this->refundFee;
     }
@@ -156,7 +156,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @param int $refundFee
      */
-    public function setRefundFee(?int $refundFee): void
+    public function setRefundFee(int $refundFee): void
     {
         $this->refundFee = $refundFee;
     }
@@ -164,7 +164,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPayWay(): ?int
+    public function getPayWay(): int
     {
         return $this->payWay;
     }
@@ -172,7 +172,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @param int $payWay
      */
-    public function setPayWay(?int $payWay): void
+    public function setPayWay(int $payWay): void
     {
         $this->payWay = $payWay;
     }
@@ -180,7 +180,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStatus(): ?int
+    public function getStatus(): int
     {
         return $this->status;
     }
@@ -188,7 +188,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @param int $status
      */
-    public function setStatus(?int $status): void
+    public function setStatus(int $status): void
     {
         $this->status = $status;
     }
@@ -196,7 +196,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getErrorCode(): ?string
+    public function getErrorCode(): string
     {
         return $this->errorCode;
     }
@@ -204,7 +204,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @param string $errorCode
      */
-    public function setErrorCode(?string $errorCode): void
+    public function setErrorCode(string $errorCode): void
     {
         $this->errorCode = $errorCode;
     }
@@ -212,7 +212,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getErrorMsg(): ?string
+    public function getErrorMsg(): string
     {
         return $this->errorMsg;
     }
@@ -220,7 +220,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @param string $errorMsg
      */
-    public function setErrorMsg(?string $errorMsg): void
+    public function setErrorMsg(string $errorMsg): void
     {
         $this->errorMsg = $errorMsg;
     }
@@ -228,7 +228,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCreateTime(): ?int
+    public function getCreateTime(): int
     {
         return $this->createTime;
     }
@@ -236,7 +236,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @param int $createTime
      */
-    public function setCreateTime(?int $createTime): void
+    public function setCreateTime(int $createTime): void
     {
         $this->createTime = $createTime;
     }
@@ -244,7 +244,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getUpdateTime(): ?int
+    public function getUpdateTime(): int
     {
         return $this->updateTime;
     }
@@ -252,7 +252,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @param int $updateTime
      */
-    public function setUpdateTime(?int $updateTime): void
+    public function setUpdateTime(int $updateTime): void
     {
         $this->updateTime = $updateTime;
     }
@@ -260,7 +260,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getType(): ?int
+    public function getType(): int
     {
         return $this->type;
     }
@@ -268,7 +268,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @param int $type
      */
-    public function setType(?int $type): void
+    public function setType(int $type): void
     {
         $this->type = $type;
     }
@@ -276,7 +276,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPayNo(): ?string
+    public function getPayNo(): string
     {
         return $this->payNo;
     }
@@ -284,7 +284,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @param string $payNo
      */
-    public function setPayNo(?string $payNo): void
+    public function setPayNo(string $payNo): void
     {
         $this->payNo = $payNo;
     }
@@ -292,7 +292,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPhaseId(): ?int
+    public function getPhaseId(): int
     {
         return $this->phaseId;
     }
@@ -300,7 +300,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @param int $phaseId
      */
-    public function setPhaseId(?int $phaseId): void
+    public function setPhaseId(int $phaseId): void
     {
         $this->phaseId = $phaseId;
     }
@@ -308,7 +308,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBuyerId(): ?int
+    public function getBuyerId(): int
     {
         return $this->buyerId;
     }
@@ -316,7 +316,7 @@ class RefundFundChangedMessageDTO implements \JsonSerializable {
     /**
      * @param int $buyerId
      */
-    public function setBuyerId(?int $buyerId): void
+    public function setBuyerId(int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }

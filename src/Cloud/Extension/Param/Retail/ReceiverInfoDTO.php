@@ -58,7 +58,7 @@ class ReceiverInfoDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProvince(): ?string
+    public function getProvince(): string
     {
         return $this->province;
     }
@@ -66,7 +66,7 @@ class ReceiverInfoDTO implements \JsonSerializable {
     /**
      * @param string $province
      */
-    public function setProvince(?string $province): void
+    public function setProvince(string $province): void
     {
         $this->province = $province;
     }
@@ -74,7 +74,7 @@ class ReceiverInfoDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCity(): ?string
+    public function getCity(): string
     {
         return $this->city;
     }
@@ -82,7 +82,7 @@ class ReceiverInfoDTO implements \JsonSerializable {
     /**
      * @param string $city
      */
-    public function setCity(?string $city): void
+    public function setCity(string $city): void
     {
         $this->city = $city;
     }
@@ -90,7 +90,7 @@ class ReceiverInfoDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getArea(): ?string
+    public function getArea(): string
     {
         return $this->area;
     }
@@ -98,7 +98,7 @@ class ReceiverInfoDTO implements \JsonSerializable {
     /**
      * @param string $area
      */
-    public function setArea(?string $area): void
+    public function setArea(string $area): void
     {
         $this->area = $area;
     }
@@ -106,7 +106,7 @@ class ReceiverInfoDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDetailAddress(): ?string
+    public function getDetailAddress(): string
     {
         return $this->detailAddress;
     }
@@ -114,7 +114,7 @@ class ReceiverInfoDTO implements \JsonSerializable {
     /**
      * @param string $detailAddress
      */
-    public function setDetailAddress(?string $detailAddress): void
+    public function setDetailAddress(string $detailAddress): void
     {
         $this->detailAddress = $detailAddress;
     }
@@ -122,7 +122,7 @@ class ReceiverInfoDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMobile(): ?string
+    public function getMobile(): string
     {
         return $this->mobile;
     }
@@ -130,7 +130,7 @@ class ReceiverInfoDTO implements \JsonSerializable {
     /**
      * @param string $mobile
      */
-    public function setMobile(?string $mobile): void
+    public function setMobile(string $mobile): void
     {
         $this->mobile = $mobile;
     }
@@ -138,7 +138,7 @@ class ReceiverInfoDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTel(): ?string
+    public function getTel(): string
     {
         return $this->tel;
     }
@@ -146,7 +146,7 @@ class ReceiverInfoDTO implements \JsonSerializable {
     /**
      * @param string $tel
      */
-    public function setTel(?string $tel): void
+    public function setTel(string $tel): void
     {
         $this->tel = $tel;
     }
@@ -154,7 +154,7 @@ class ReceiverInfoDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -162,7 +162,7 @@ class ReceiverInfoDTO implements \JsonSerializable {
     /**
      * @param string $name
      */
-    public function setName(?string $name): void
+    public function setName(string $name): void
     {
         $this->name = $name;
     }

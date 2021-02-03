@@ -89,7 +89,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getShopName(): ?string
+    public function getShopName(): string
     {
         return $this->shopName;
     }
@@ -97,7 +97,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @param string $shopName
      */
-    public function setShopName(?string $shopName): void
+    public function setShopName(string $shopName): void
     {
         $this->shopName = $shopName;
     }
@@ -105,7 +105,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDsOpenId(): ?string
+    public function getDsOpenId(): string
     {
         return $this->dsOpenId;
     }
@@ -113,7 +113,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @param string $dsOpenId
      */
-    public function setDsOpenId(?string $dsOpenId): void
+    public function setDsOpenId(string $dsOpenId): void
     {
         $this->dsOpenId = $dsOpenId;
     }
@@ -121,7 +121,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getFromDsOpenId(): ?string
+    public function getFromDsOpenId(): string
     {
         return $this->fromDsOpenId;
     }
@@ -129,7 +129,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @param string $fromDsOpenId
      */
-    public function setFromDsOpenId(?string $fromDsOpenId): void
+    public function setFromDsOpenId(string $fromDsOpenId): void
     {
         $this->fromDsOpenId = $fromDsOpenId;
     }
@@ -137,7 +137,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCtOpenId(): ?string
+    public function getCtOpenId(): string
     {
         return $this->ctOpenId;
     }
@@ -145,7 +145,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @param string $ctOpenId
      */
-    public function setCtOpenId(?string $ctOpenId): void
+    public function setCtOpenId(string $ctOpenId): void
     {
         $this->ctOpenId = $ctOpenId;
     }
@@ -153,7 +153,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -161,7 +161,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -169,7 +169,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPay(): ?int
+    public function getPay(): int
     {
         return $this->pay;
     }
@@ -177,7 +177,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @param int $pay
      */
-    public function setPay(?int $pay): void
+    public function setPay(int $pay): void
     {
         $this->pay = $pay;
     }
@@ -185,7 +185,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRealPay(): ?int
+    public function getRealPay(): int
     {
         return $this->realPay;
     }
@@ -193,7 +193,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @param int $realPay
      */
-    public function setRealPay(?int $realPay): void
+    public function setRealPay(int $realPay): void
     {
         $this->realPay = $realPay;
     }
@@ -201,7 +201,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPostage(): ?int
+    public function getPostage(): int
     {
         return $this->postage;
     }
@@ -209,7 +209,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @param int $postage
      */
-    public function setPostage(?int $postage): void
+    public function setPostage(int $postage): void
     {
         $this->postage = $postage;
     }
@@ -217,7 +217,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getIsFreePostage(): ?int
+    public function getIsFreePostage(): int
     {
         return $this->isFreePostage;
     }
@@ -225,7 +225,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @param int $isFreePostage
      */
-    public function setIsFreePostage(?int $isFreePostage): void
+    public function setIsFreePostage(int $isFreePostage): void
     {
         $this->isFreePostage = $isFreePostage;
     }
@@ -233,7 +233,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getItems(): ?array
+    public function getItems(): array
     {
         return $this->items;
     }
@@ -241,7 +241,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @param array $items
      */
-    public function setItems(?array $items): void
+    public function setItems(array $items): void
     {
         $this->items = $items;
     }
@@ -249,7 +249,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @return ExtPromotionDTO
      */
-    public function getPromotion(): ?ExtPromotionDTO
+    public function getPromotion(): ExtPromotionDTO
     {
         return $this->promotion;
     }
@@ -257,7 +257,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @param ExtPromotionDTO $promotion
      */
-    public function setPromotion(?ExtPromotionDTO $promotion): void
+    public function setPromotion(ExtPromotionDTO $promotion): void
     {
         $this->promotion = $promotion;
     }
@@ -265,7 +265,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -273,7 +273,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

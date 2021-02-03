@@ -28,7 +28,7 @@ class VoucherQueryExtPointResponse implements \JsonSerializable {
     /**
      * @return ThirdpartyVouchersDTO
      */
-    public function getThirdpartyVoucher(): ?ThirdpartyVouchersDTO
+    public function getThirdpartyVoucher(): ThirdpartyVouchersDTO
     {
         return $this->thirdpartyVoucher;
     }
@@ -36,7 +36,7 @@ class VoucherQueryExtPointResponse implements \JsonSerializable {
     /**
      * @param ThirdpartyVouchersDTO $thirdpartyVoucher
      */
-    public function setThirdpartyVoucher(?ThirdpartyVouchersDTO $thirdpartyVoucher): void
+    public function setThirdpartyVoucher(ThirdpartyVouchersDTO $thirdpartyVoucher): void
     {
         $this->thirdpartyVoucher = $thirdpartyVoucher;
     }
@@ -44,7 +44,7 @@ class VoucherQueryExtPointResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersionNo(): ?int
+    public function getVersionNo(): int
     {
         return $this->versionNo;
     }
@@ -52,7 +52,7 @@ class VoucherQueryExtPointResponse implements \JsonSerializable {
     /**
      * @param int $versionNo
      */
-    public function setVersionNo(?int $versionNo): void
+    public function setVersionNo(int $versionNo): void
     {
         $this->versionNo = $versionNo;
     }

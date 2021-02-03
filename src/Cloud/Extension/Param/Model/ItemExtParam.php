@@ -22,7 +22,7 @@ class ItemExtParam implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getItemParamList(): ?array
+    public function getItemParamList(): array
     {
         return $this->itemParamList;
     }
@@ -30,7 +30,7 @@ class ItemExtParam implements \JsonSerializable {
     /**
      * @param array $itemParamList
      */
-    public function setItemParamList(?array $itemParamList): void
+    public function setItemParamList(array $itemParamList): void
     {
         $this->itemParamList = $itemParamList;
     }

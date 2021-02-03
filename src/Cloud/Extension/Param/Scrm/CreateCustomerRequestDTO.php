@@ -29,7 +29,7 @@ class CreateCustomerRequestDTO implements \JsonSerializable {
     /**
      * @return CustomerIdentifyDTO
      */
-    public function getCustomerIdentifyDTO(): ?CustomerIdentifyDTO
+    public function getCustomerIdentifyDTO(): CustomerIdentifyDTO
     {
         return $this->customerIdentifyDTO;
     }
@@ -37,7 +37,7 @@ class CreateCustomerRequestDTO implements \JsonSerializable {
     /**
      * @param CustomerIdentifyDTO $customerIdentifyDTO
      */
-    public function setCustomerIdentifyDTO(?CustomerIdentifyDTO $customerIdentifyDTO): void
+    public function setCustomerIdentifyDTO(CustomerIdentifyDTO $customerIdentifyDTO): void
     {
         $this->customerIdentifyDTO = $customerIdentifyDTO;
     }
@@ -45,7 +45,7 @@ class CreateCustomerRequestDTO implements \JsonSerializable {
     /**
      * @return CustomerProfileCreateDTO
      */
-    public function getCustomerProfileCreateDTO(): ?CustomerProfileCreateDTO
+    public function getCustomerProfileCreateDTO(): CustomerProfileCreateDTO
     {
         return $this->customerProfileCreateDTO;
     }
@@ -53,7 +53,7 @@ class CreateCustomerRequestDTO implements \JsonSerializable {
     /**
      * @param CustomerProfileCreateDTO $customerProfileCreateDTO
      */
-    public function setCustomerProfileCreateDTO(?CustomerProfileCreateDTO $customerProfileCreateDTO): void
+    public function setCustomerProfileCreateDTO(CustomerProfileCreateDTO $customerProfileCreateDTO): void
     {
         $this->customerProfileCreateDTO = $customerProfileCreateDTO;
     }
