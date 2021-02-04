@@ -34,7 +34,7 @@ class BizTestResponseDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getSuccess(): bool
+    public function getSuccess(): ?bool
     {
         return $this->success;
     }
@@ -42,7 +42,7 @@ class BizTestResponseDTO implements \JsonSerializable {
     /**
      * @param bool $success
      */
-    public function setSuccess(bool $success): void
+    public function setSuccess(?bool $success): void
     {
         $this->success = $success;
     }
@@ -50,7 +50,7 @@ class BizTestResponseDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getMessage(): array
+    public function getMessage(): ?array
     {
         return $this->message;
     }
@@ -58,7 +58,7 @@ class BizTestResponseDTO implements \JsonSerializable {
     /**
      * @param array $message
      */
-    public function setMessage(array $message): void
+    public function setMessage(?array $message): void
     {
         $this->message = $message;
     }
@@ -66,7 +66,7 @@ class BizTestResponseDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getErrorData(): array
+    public function getErrorData(): ?array
     {
         return $this->errorData;
     }
@@ -74,7 +74,7 @@ class BizTestResponseDTO implements \JsonSerializable {
     /**
      * @param array $errorData
      */
-    public function setErrorData(array $errorData): void
+    public function setErrorData(?array $errorData): void
     {
         $this->errorData = $errorData;
     }

@@ -40,7 +40,7 @@ class ValueCardBuyCenterRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPage(): int
+    public function getPage(): ?int
     {
         return $this->page;
     }
@@ -48,7 +48,7 @@ class ValueCardBuyCenterRequest implements \JsonSerializable {
     /**
      * @param int $page
      */
-    public function setPage(int $page): void
+    public function setPage(?int $page): void
     {
         $this->page = $page;
     }
@@ -56,7 +56,7 @@ class ValueCardBuyCenterRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPageSize(): int
+    public function getPageSize(): ?int
     {
         return $this->pageSize;
     }
@@ -64,7 +64,7 @@ class ValueCardBuyCenterRequest implements \JsonSerializable {
     /**
      * @param int $pageSize
      */
-    public function setPageSize(int $pageSize): void
+    public function setPageSize(?int $pageSize): void
     {
         $this->pageSize = $pageSize;
     }
@@ -72,7 +72,7 @@ class ValueCardBuyCenterRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -80,7 +80,7 @@ class ValueCardBuyCenterRequest implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -88,7 +88,7 @@ class ValueCardBuyCenterRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRootKdtId(): int
+    public function getRootKdtId(): ?int
     {
         return $this->rootKdtId;
     }
@@ -96,7 +96,7 @@ class ValueCardBuyCenterRequest implements \JsonSerializable {
     /**
      * @param int $rootKdtId
      */
-    public function setRootKdtId(int $rootKdtId): void
+    public function setRootKdtId(?int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
     }

@@ -28,7 +28,7 @@ class CustomerIdentityDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAccountType(): string
+    public function getAccountType(): ?string
     {
         return $this->accountType;
     }
@@ -36,7 +36,7 @@ class CustomerIdentityDTO implements \JsonSerializable {
     /**
      * @param string $accountType
      */
-    public function setAccountType(string $accountType): void
+    public function setAccountType(?string $accountType): void
     {
         $this->accountType = $accountType;
     }
@@ -44,7 +44,7 @@ class CustomerIdentityDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAccountId(): string
+    public function getAccountId(): ?string
     {
         return $this->accountId;
     }
@@ -52,7 +52,7 @@ class CustomerIdentityDTO implements \JsonSerializable {
     /**
      * @param string $accountId
      */
-    public function setAccountId(string $accountId): void
+    public function setAccountId(?string $accountId): void
     {
         $this->accountId = $accountId;
     }

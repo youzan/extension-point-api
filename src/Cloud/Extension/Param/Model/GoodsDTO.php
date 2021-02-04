@@ -40,7 +40,7 @@ class GoodsDTO implements \JsonSerializable {
     /**
      * @return GoodsIdentityDTO
      */
-    public function getGoodsIdentity(): GoodsIdentityDTO
+    public function getGoodsIdentity(): ?GoodsIdentityDTO
     {
         return $this->goodsIdentity;
     }
@@ -48,7 +48,7 @@ class GoodsDTO implements \JsonSerializable {
     /**
      * @param GoodsIdentityDTO $goodsIdentity
      */
-    public function setGoodsIdentity(GoodsIdentityDTO $goodsIdentity): void
+    public function setGoodsIdentity(?GoodsIdentityDTO $goodsIdentity): void
     {
         $this->goodsIdentity = $goodsIdentity;
     }
@@ -56,7 +56,7 @@ class GoodsDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPrice(): int
+    public function getPrice(): ?int
     {
         return $this->price;
     }
@@ -64,7 +64,7 @@ class GoodsDTO implements \JsonSerializable {
     /**
      * @param int $price
      */
-    public function setPrice(int $price): void
+    public function setPrice(?int $price): void
     {
         $this->price = $price;
     }
@@ -72,7 +72,7 @@ class GoodsDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPay(): int
+    public function getPay(): ?int
     {
         return $this->pay;
     }
@@ -80,7 +80,7 @@ class GoodsDTO implements \JsonSerializable {
     /**
      * @param int $pay
      */
-    public function setPay(int $pay): void
+    public function setPay(?int $pay): void
     {
         $this->pay = $pay;
     }
@@ -88,7 +88,7 @@ class GoodsDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNum(): int
+    public function getNum(): ?int
     {
         return $this->num;
     }
@@ -96,7 +96,7 @@ class GoodsDTO implements \JsonSerializable {
     /**
      * @param int $num
      */
-    public function setNum(int $num): void
+    public function setNum(?int $num): void
     {
         $this->num = $num;
     }

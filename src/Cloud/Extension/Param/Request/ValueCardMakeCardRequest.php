@@ -88,7 +88,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -96,7 +96,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -104,7 +104,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBuyNum(): int
+    public function getBuyNum(): ?int
     {
         return $this->buyNum;
     }
@@ -112,7 +112,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @param int $buyNum
      */
-    public function setBuyNum(int $buyNum): void
+    public function setBuyNum(?int $buyNum): void
     {
         $this->buyNum = $buyNum;
     }
@@ -120,7 +120,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProductSkuNo(): string
+    public function getProductSkuNo(): ?string
     {
         return $this->productSkuNo;
     }
@@ -128,7 +128,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @param string $productSkuNo
      */
-    public function setProductSkuNo(string $productSkuNo): void
+    public function setProductSkuNo(?string $productSkuNo): void
     {
         $this->productSkuNo = $productSkuNo;
     }
@@ -136,7 +136,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPayPrice(): int
+    public function getPayPrice(): ?int
     {
         return $this->payPrice;
     }
@@ -144,7 +144,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @param int $payPrice
      */
-    public function setPayPrice(int $payPrice): void
+    public function setPayPrice(?int $payPrice): void
     {
         $this->payPrice = $payPrice;
     }
@@ -152,7 +152,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPayMethod(): string
+    public function getPayMethod(): ?string
     {
         return $this->payMethod;
     }
@@ -160,7 +160,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @param string $payMethod
      */
-    public function setPayMethod(string $payMethod): void
+    public function setPayMethod(?string $payMethod): void
     {
         $this->payMethod = $payMethod;
     }
@@ -168,7 +168,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPayTime(): int
+    public function getPayTime(): ?int
     {
         return $this->payTime;
     }
@@ -176,7 +176,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @param int $payTime
      */
-    public function setPayTime(int $payTime): void
+    public function setPayTime(?int $payTime): void
     {
         $this->payTime = $payTime;
     }
@@ -184,7 +184,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderTime(): int
+    public function getOrderTime(): ?int
     {
         return $this->orderTime;
     }
@@ -192,7 +192,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @param int $orderTime
      */
-    public function setOrderTime(int $orderTime): void
+    public function setOrderTime(?int $orderTime): void
     {
         $this->orderTime = $orderTime;
     }
@@ -200,7 +200,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getGiftPackId(): string
+    public function getGiftPackId(): ?string
     {
         return $this->giftPackId;
     }
@@ -208,7 +208,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @param string $giftPackId
      */
-    public function setGiftPackId(string $giftPackId): void
+    public function setGiftPackId(?string $giftPackId): void
     {
         $this->giftPackId = $giftPackId;
     }
@@ -216,7 +216,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getGiftPackVersion(): string
+    public function getGiftPackVersion(): ?string
     {
         return $this->giftPackVersion;
     }
@@ -224,7 +224,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @param string $giftPackVersion
      */
-    public function setGiftPackVersion(string $giftPackVersion): void
+    public function setGiftPackVersion(?string $giftPackVersion): void
     {
         $this->giftPackVersion = $giftPackVersion;
     }
@@ -232,7 +232,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): string
+    public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
     }
@@ -240,7 +240,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(string $yzOpenId): void
+    public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -248,7 +248,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -256,7 +256,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -264,7 +264,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRootKdtId(): int
+    public function getRootKdtId(): ?int
     {
         return $this->rootKdtId;
     }
@@ -272,7 +272,7 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     /**
      * @param int $rootKdtId
      */
-    public function setRootKdtId(int $rootKdtId): void
+    public function setRootKdtId(?int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
     }

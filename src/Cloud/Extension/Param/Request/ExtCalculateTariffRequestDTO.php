@@ -34,7 +34,7 @@ class ExtCalculateTariffRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -42,7 +42,7 @@ class ExtCalculateTariffRequestDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -50,7 +50,7 @@ class ExtCalculateTariffRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -58,7 +58,7 @@ class ExtCalculateTariffRequestDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -66,7 +66,7 @@ class ExtCalculateTariffRequestDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getItemList(): array
+    public function getItemList(): ?array
     {
         return $this->itemList;
     }
@@ -74,7 +74,7 @@ class ExtCalculateTariffRequestDTO implements \JsonSerializable {
     /**
      * @param array $itemList
      */
-    public function setItemList(array $itemList): void
+    public function setItemList(?array $itemList): void
     {
         $this->itemList = $itemList;
     }

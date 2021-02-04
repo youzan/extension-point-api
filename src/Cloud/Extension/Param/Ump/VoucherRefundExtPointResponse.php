@@ -64,7 +64,7 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getSuccess(): bool
+    public function getSuccess(): ?bool
     {
         return $this->success;
     }
@@ -72,7 +72,7 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     /**
      * @param bool $success
      */
-    public function setSuccess(bool $success): void
+    public function setSuccess(?bool $success): void
     {
         $this->success = $success;
     }
@@ -80,7 +80,7 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getErrorMsg(): string
+    public function getErrorMsg(): ?string
     {
         return $this->errorMsg;
     }
@@ -88,7 +88,7 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     /**
      * @param string $errorMsg
      */
-    public function setErrorMsg(string $errorMsg): void
+    public function setErrorMsg(?string $errorMsg): void
     {
         $this->errorMsg = $errorMsg;
     }
@@ -96,7 +96,7 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getIdempotentSuccess(): bool
+    public function getIdempotentSuccess(): ?bool
     {
         return $this->idempotentSuccess;
     }
@@ -104,7 +104,7 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     /**
      * @param bool $idempotentSuccess
      */
-    public function setIdempotentSuccess(bool $idempotentSuccess): void
+    public function setIdempotentSuccess(?bool $idempotentSuccess): void
     {
         $this->idempotentSuccess = $idempotentSuccess;
     }
@@ -112,7 +112,7 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getIsSystemError(): bool
+    public function getIsSystemError(): ?bool
     {
         return $this->isSystemError;
     }
@@ -120,7 +120,7 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     /**
      * @param bool $isSystemError
      */
-    public function setIsSystemError(bool $isSystemError): void
+    public function setIsSystemError(?bool $isSystemError): void
     {
         $this->isSystemError = $isSystemError;
     }
@@ -128,7 +128,7 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -136,7 +136,7 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -144,7 +144,7 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNoSource(): string
+    public function getOrderNoSource(): ?string
     {
         return $this->orderNoSource;
     }
@@ -152,7 +152,7 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     /**
      * @param string $orderNoSource
      */
-    public function setOrderNoSource(string $orderNoSource): void
+    public function setOrderNoSource(?string $orderNoSource): void
     {
         $this->orderNoSource = $orderNoSource;
     }
@@ -160,7 +160,7 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): stdClass
+    public function getExtMap(): ?stdClass
     {
         return $this->extMap;
     }
@@ -168,7 +168,7 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     /**
      * @param stdClass $extMap
      */
-    public function setExtMap(stdClass $extMap): void
+    public function setExtMap(?stdClass $extMap): void
     {
         $this->extMap = $extMap;
     }
@@ -176,7 +176,7 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersionNo(): int
+    public function getVersionNo(): ?int
     {
         return $this->versionNo;
     }
@@ -184,7 +184,7 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     /**
      * @param int $versionNo
      */
-    public function setVersionNo(int $versionNo): void
+    public function setVersionNo(?int $versionNo): void
     {
         $this->versionNo = $versionNo;
     }

@@ -28,7 +28,7 @@ class ValueCardGiveResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardNo(): string
+    public function getCardNo(): ?string
     {
         return $this->cardNo;
     }
@@ -36,7 +36,7 @@ class ValueCardGiveResponse implements \JsonSerializable {
     /**
      * @param string $cardNo
      */
-    public function setCardNo(string $cardNo): void
+    public function setCardNo(?string $cardNo): void
     {
         $this->cardNo = $cardNo;
     }
@@ -44,7 +44,7 @@ class ValueCardGiveResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getGiveId(): string
+    public function getGiveId(): ?string
     {
         return $this->giveId;
     }
@@ -52,7 +52,7 @@ class ValueCardGiveResponse implements \JsonSerializable {
     /**
      * @param string $giveId
      */
-    public function setGiveId(string $giveId): void
+    public function setGiveId(?string $giveId): void
     {
         $this->giveId = $giveId;
     }

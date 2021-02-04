@@ -40,7 +40,7 @@ class MemberCardRightsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardId(): string
+    public function getCardId(): ?string
     {
         return $this->cardId;
     }
@@ -48,7 +48,7 @@ class MemberCardRightsDTO implements \JsonSerializable {
     /**
      * @param string $cardId
      */
-    public function setCardId(string $cardId): void
+    public function setCardId(?string $cardId): void
     {
         $this->cardId = $cardId;
     }
@@ -56,7 +56,7 @@ class MemberCardRightsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardName(): string
+    public function getCardName(): ?string
     {
         return $this->cardName;
     }
@@ -64,7 +64,7 @@ class MemberCardRightsDTO implements \JsonSerializable {
     /**
      * @param string $cardName
      */
-    public function setCardName(string $cardName): void
+    public function setCardName(?string $cardName): void
     {
         $this->cardName = $cardName;
     }
@@ -72,7 +72,7 @@ class MemberCardRightsDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getNonmemberOnly(): bool
+    public function getNonmemberOnly(): ?bool
     {
         return $this->nonmemberOnly;
     }
@@ -80,7 +80,7 @@ class MemberCardRightsDTO implements \JsonSerializable {
     /**
      * @param bool $nonmemberOnly
      */
-    public function setNonmemberOnly(bool $nonmemberOnly): void
+    public function setNonmemberOnly(?bool $nonmemberOnly): void
     {
         $this->nonmemberOnly = $nonmemberOnly;
     }
@@ -88,7 +88,7 @@ class MemberCardRightsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardStatus(): string
+    public function getCardStatus(): ?string
     {
         return $this->cardStatus;
     }
@@ -96,7 +96,7 @@ class MemberCardRightsDTO implements \JsonSerializable {
     /**
      * @param string $cardStatus
      */
-    public function setCardStatus(string $cardStatus): void
+    public function setCardStatus(?string $cardStatus): void
     {
         $this->cardStatus = $cardStatus;
     }

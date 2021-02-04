@@ -40,7 +40,7 @@ class ValueCardTradeFreezeResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getFreezeStatus(): string
+    public function getFreezeStatus(): ?string
     {
         return $this->freezeStatus;
     }
@@ -48,7 +48,7 @@ class ValueCardTradeFreezeResponse implements \JsonSerializable {
     /**
      * @param string $freezeStatus
      */
-    public function setFreezeStatus(string $freezeStatus): void
+    public function setFreezeStatus(?string $freezeStatus): void
     {
         $this->freezeStatus = $freezeStatus;
     }
@@ -56,7 +56,7 @@ class ValueCardTradeFreezeResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getFreezeChannelNo(): string
+    public function getFreezeChannelNo(): ?string
     {
         return $this->freezeChannelNo;
     }
@@ -64,7 +64,7 @@ class ValueCardTradeFreezeResponse implements \JsonSerializable {
     /**
      * @param string $freezeChannelNo
      */
-    public function setFreezeChannelNo(string $freezeChannelNo): void
+    public function setFreezeChannelNo(?string $freezeChannelNo): void
     {
         $this->freezeChannelNo = $freezeChannelNo;
     }
@@ -72,7 +72,7 @@ class ValueCardTradeFreezeResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -80,7 +80,7 @@ class ValueCardTradeFreezeResponse implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -88,7 +88,7 @@ class ValueCardTradeFreezeResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getFreezeAmount(): int
+    public function getFreezeAmount(): ?int
     {
         return $this->freezeAmount;
     }
@@ -96,7 +96,7 @@ class ValueCardTradeFreezeResponse implements \JsonSerializable {
     /**
      * @param int $freezeAmount
      */
-    public function setFreezeAmount(int $freezeAmount): void
+    public function setFreezeAmount(?int $freezeAmount): void
     {
         $this->freezeAmount = $freezeAmount;
     }

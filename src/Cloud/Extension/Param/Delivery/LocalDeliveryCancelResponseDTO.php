@@ -22,7 +22,7 @@ class LocalDeliveryCancelResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDeductFee(): int
+    public function getDeductFee(): ?int
     {
         return $this->deductFee;
     }
@@ -30,7 +30,7 @@ class LocalDeliveryCancelResponseDTO implements \JsonSerializable {
     /**
      * @param int $deductFee
      */
-    public function setDeductFee(int $deductFee): void
+    public function setDeductFee(?int $deductFee): void
     {
         $this->deductFee = $deductFee;
     }

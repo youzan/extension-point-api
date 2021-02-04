@@ -22,7 +22,7 @@ class SellerAuthConfigDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getAuthKeys(): array
+    public function getAuthKeys(): ?array
     {
         return $this->authKeys;
     }
@@ -30,7 +30,7 @@ class SellerAuthConfigDTO implements \JsonSerializable {
     /**
      * @param array $authKeys
      */
-    public function setAuthKeys(array $authKeys): void
+    public function setAuthKeys(?array $authKeys): void
     {
         $this->authKeys = $authKeys;
     }

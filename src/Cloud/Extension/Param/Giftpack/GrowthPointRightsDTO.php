@@ -22,7 +22,7 @@ class GrowthPointRightsDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGrowthPoint(): int
+    public function getGrowthPoint(): ?int
     {
         return $this->growthPoint;
     }
@@ -30,7 +30,7 @@ class GrowthPointRightsDTO implements \JsonSerializable {
     /**
      * @param int $growthPoint
      */
-    public function setGrowthPoint(int $growthPoint): void
+    public function setGrowthPoint(?int $growthPoint): void
     {
         $this->growthPoint = $growthPoint;
     }

@@ -46,7 +46,7 @@ class GroupOpenCheckResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -54,7 +54,7 @@ class GroupOpenCheckResponseDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -62,7 +62,7 @@ class GroupOpenCheckResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDeptId(): int
+    public function getDeptId(): ?int
     {
         return $this->deptId;
     }
@@ -70,7 +70,7 @@ class GroupOpenCheckResponseDTO implements \JsonSerializable {
     /**
      * @param int $deptId
      */
-    public function setDeptId(int $deptId): void
+    public function setDeptId(?int $deptId): void
     {
         $this->deptId = $deptId;
     }
@@ -78,7 +78,7 @@ class GroupOpenCheckResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): string
+    public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
     }
@@ -86,7 +86,7 @@ class GroupOpenCheckResponseDTO implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(string $yzOpenId): void
+    public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -94,7 +94,7 @@ class GroupOpenCheckResponseDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getIsAllowOpenGroup(): bool
+    public function getIsAllowOpenGroup(): ?bool
     {
         return $this->isAllowOpenGroup;
     }
@@ -102,7 +102,7 @@ class GroupOpenCheckResponseDTO implements \JsonSerializable {
     /**
      * @param bool $isAllowOpenGroup
      */
-    public function setIsAllowOpenGroup(bool $isAllowOpenGroup): void
+    public function setIsAllowOpenGroup(?bool $isAllowOpenGroup): void
     {
         $this->isAllowOpenGroup = $isAllowOpenGroup;
     }
@@ -110,7 +110,7 @@ class GroupOpenCheckResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getReasonDescribe(): string
+    public function getReasonDescribe(): ?string
     {
         return $this->reasonDescribe;
     }
@@ -118,7 +118,7 @@ class GroupOpenCheckResponseDTO implements \JsonSerializable {
     /**
      * @param string $reasonDescribe
      */
-    public function setReasonDescribe(string $reasonDescribe): void
+    public function setReasonDescribe(?string $reasonDescribe): void
     {
         $this->reasonDescribe = $reasonDescribe;
     }

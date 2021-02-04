@@ -28,7 +28,7 @@ class OrderItemDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getQuantity(): int
+    public function getQuantity(): ?int
     {
         return $this->quantity;
     }
@@ -36,7 +36,7 @@ class OrderItemDTO implements \JsonSerializable {
     /**
      * @param int $quantity
      */
-    public function setQuantity(int $quantity): void
+    public function setQuantity(?int $quantity): void
     {
         $this->quantity = $quantity;
     }
@@ -44,7 +44,7 @@ class OrderItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProductName(): string
+    public function getProductName(): ?string
     {
         return $this->productName;
     }
@@ -52,7 +52,7 @@ class OrderItemDTO implements \JsonSerializable {
     /**
      * @param string $productName
      */
-    public function setProductName(string $productName): void
+    public function setProductName(?string $productName): void
     {
         $this->productName = $productName;
     }

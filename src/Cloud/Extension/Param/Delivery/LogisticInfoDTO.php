@@ -28,7 +28,7 @@ class LogisticInfoDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderStatus(): int
+    public function getOrderStatus(): ?int
     {
         return $this->orderStatus;
     }
@@ -36,7 +36,7 @@ class LogisticInfoDTO implements \JsonSerializable {
     /**
      * @param int $orderStatus
      */
-    public function setOrderStatus(int $orderStatus): void
+    public function setOrderStatus(?int $orderStatus): void
     {
         $this->orderStatus = $orderStatus;
     }
@@ -44,7 +44,7 @@ class LogisticInfoDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTimeStatusUpdate(): int
+    public function getTimeStatusUpdate(): ?int
     {
         return $this->timeStatusUpdate;
     }
@@ -52,7 +52,7 @@ class LogisticInfoDTO implements \JsonSerializable {
     /**
      * @param int $timeStatusUpdate
      */
-    public function setTimeStatusUpdate(int $timeStatusUpdate): void
+    public function setTimeStatusUpdate(?int $timeStatusUpdate): void
     {
         $this->timeStatusUpdate = $timeStatusUpdate;
     }

@@ -29,7 +29,7 @@ class UmpCalculateRequest implements \JsonSerializable {
     /**
      * @return BillingBaseInfo
      */
-    public function getBillingBaseInfo(): BillingBaseInfo
+    public function getBillingBaseInfo(): ?BillingBaseInfo
     {
         return $this->billingBaseInfo;
     }
@@ -37,7 +37,7 @@ class UmpCalculateRequest implements \JsonSerializable {
     /**
      * @param BillingBaseInfo $billingBaseInfo
      */
-    public function setBillingBaseInfo(BillingBaseInfo $billingBaseInfo): void
+    public function setBillingBaseInfo(?BillingBaseInfo $billingBaseInfo): void
     {
         $this->billingBaseInfo = $billingBaseInfo;
     }
@@ -45,7 +45,7 @@ class UmpCalculateRequest implements \JsonSerializable {
     /**
      * @return BillingDiscount
      */
-    public function getBillingDiscount(): BillingDiscount
+    public function getBillingDiscount(): ?BillingDiscount
     {
         return $this->billingDiscount;
     }
@@ -53,7 +53,7 @@ class UmpCalculateRequest implements \JsonSerializable {
     /**
      * @param BillingDiscount $billingDiscount
      */
-    public function setBillingDiscount(BillingDiscount $billingDiscount): void
+    public function setBillingDiscount(?BillingDiscount $billingDiscount): void
     {
         $this->billingDiscount = $billingDiscount;
     }

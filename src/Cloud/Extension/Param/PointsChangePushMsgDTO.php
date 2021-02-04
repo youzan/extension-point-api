@@ -46,7 +46,7 @@ class PointsChangePushMsgDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -54,7 +54,7 @@ class PointsChangePushMsgDTO implements \JsonSerializable {
     /**
      * @param string $id
      */
-    public function setId(string $id): void
+    public function setId(?string $id): void
     {
         $this->id = $id;
     }
@@ -62,7 +62,7 @@ class PointsChangePushMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -70,7 +70,7 @@ class PointsChangePushMsgDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -78,7 +78,7 @@ class PointsChangePushMsgDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersion(): int
+    public function getVersion(): ?int
     {
         return $this->version;
     }
@@ -86,7 +86,7 @@ class PointsChangePushMsgDTO implements \JsonSerializable {
     /**
      * @param int $version
      */
-    public function setVersion(int $version): void
+    public function setVersion(?int $version): void
     {
         $this->version = $version;
     }
@@ -94,7 +94,7 @@ class PointsChangePushMsgDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMsg(): string
+    public function getMsg(): ?string
     {
         return $this->msg;
     }
@@ -102,7 +102,7 @@ class PointsChangePushMsgDTO implements \JsonSerializable {
     /**
      * @param string $msg
      */
-    public function setMsg(string $msg): void
+    public function setMsg(?string $msg): void
     {
         $this->msg = $msg;
     }
@@ -110,7 +110,7 @@ class PointsChangePushMsgDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getKdtName(): string
+    public function getKdtName(): ?string
     {
         return $this->kdtName;
     }
@@ -118,7 +118,7 @@ class PointsChangePushMsgDTO implements \JsonSerializable {
     /**
      * @param string $kdtName
      */
-    public function setKdtName(string $kdtName): void
+    public function setKdtName(?string $kdtName): void
     {
         $this->kdtName = $kdtName;
     }

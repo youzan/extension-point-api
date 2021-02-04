@@ -70,7 +70,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAcquireNo(): string
+    public function getAcquireNo(): ?string
     {
         return $this->acquireNo;
     }
@@ -78,7 +78,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     /**
      * @param string $acquireNo
      */
-    public function setAcquireNo(string $acquireNo): void
+    public function setAcquireNo(?string $acquireNo): void
     {
         $this->acquireNo = $acquireNo;
     }
@@ -86,7 +86,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -94,7 +94,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -102,7 +102,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPayDetailNo(): string
+    public function getPayDetailNo(): ?string
     {
         return $this->payDetailNo;
     }
@@ -110,7 +110,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     /**
      * @param string $payDetailNo
      */
-    public function setPayDetailNo(string $payDetailNo): void
+    public function setPayDetailNo(?string $payDetailNo): void
     {
         $this->payDetailNo = $payDetailNo;
     }
@@ -118,7 +118,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundDetailNo(): string
+    public function getRefundDetailNo(): ?string
     {
         return $this->refundDetailNo;
     }
@@ -126,7 +126,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     /**
      * @param string $refundDetailNo
      */
-    public function setRefundDetailNo(string $refundDetailNo): void
+    public function setRefundDetailNo(?string $refundDetailNo): void
     {
         $this->refundDetailNo = $refundDetailNo;
     }
@@ -134,7 +134,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalAmount(): int
+    public function getTotalAmount(): ?int
     {
         return $this->totalAmount;
     }
@@ -142,7 +142,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     /**
      * @param int $totalAmount
      */
-    public function setTotalAmount(int $totalAmount): void
+    public function setTotalAmount(?int $totalAmount): void
     {
         $this->totalAmount = $totalAmount;
     }
@@ -150,7 +150,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRefundAmount(): int
+    public function getRefundAmount(): ?int
     {
         return $this->refundAmount;
     }
@@ -158,7 +158,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     /**
      * @param int $refundAmount
      */
-    public function setRefundAmount(int $refundAmount): void
+    public function setRefundAmount(?int $refundAmount): void
     {
         $this->refundAmount = $refundAmount;
     }
@@ -166,7 +166,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTradeTime(): int
+    public function getTradeTime(): ?int
     {
         return $this->tradeTime;
     }
@@ -174,7 +174,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     /**
      * @param int $tradeTime
      */
-    public function setTradeTime(int $tradeTime): void
+    public function setTradeTime(?int $tradeTime): void
     {
         $this->tradeTime = $tradeTime;
     }
@@ -182,7 +182,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -190,7 +190,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -198,7 +198,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRootKdtId(): int
+    public function getRootKdtId(): ?int
     {
         return $this->rootKdtId;
     }
@@ -206,7 +206,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     /**
      * @param int $rootKdtId
      */
-    public function setRootKdtId(int $rootKdtId): void
+    public function setRootKdtId(?int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
     }

@@ -22,7 +22,7 @@ class LocalDeliveryGetDeductFeeResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getClaimant(): int
+    public function getClaimant(): ?int
     {
         return $this->claimant;
     }
@@ -30,7 +30,7 @@ class LocalDeliveryGetDeductFeeResponseDTO implements \JsonSerializable {
     /**
      * @param int $claimant
      */
-    public function setClaimant(int $claimant): void
+    public function setClaimant(?int $claimant): void
     {
         $this->claimant = $claimant;
     }

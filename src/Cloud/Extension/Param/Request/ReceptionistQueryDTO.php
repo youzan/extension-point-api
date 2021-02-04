@@ -28,7 +28,7 @@ class ReceptionistQueryDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getKdtId(): string
+    public function getKdtId(): ?string
     {
         return $this->kdtId;
     }
@@ -36,7 +36,7 @@ class ReceptionistQueryDTO implements \JsonSerializable {
     /**
      * @param string $kdtId
      */
-    public function setKdtId(string $kdtId): void
+    public function setKdtId(?string $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -44,7 +44,7 @@ class ReceptionistQueryDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getAdminId(): int
+    public function getAdminId(): ?int
     {
         return $this->adminId;
     }
@@ -52,7 +52,7 @@ class ReceptionistQueryDTO implements \JsonSerializable {
     /**
      * @param int $adminId
      */
-    public function setAdminId(int $adminId): void
+    public function setAdminId(?int $adminId): void
     {
         $this->adminId = $adminId;
     }

@@ -70,7 +70,7 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -78,7 +78,7 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -86,7 +86,7 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemId(): int
+    public function getItemId(): ?int
     {
         return $this->itemId;
     }
@@ -94,7 +94,7 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     /**
      * @param int $itemId
      */
-    public function setItemId(int $itemId): void
+    public function setItemId(?int $itemId): void
     {
         $this->itemId = $itemId;
     }
@@ -102,7 +102,7 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getFieldName(): string
+    public function getFieldName(): ?string
     {
         return $this->fieldName;
     }
@@ -110,7 +110,7 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     /**
      * @param string $fieldName
      */
-    public function setFieldName(string $fieldName): void
+    public function setFieldName(?string $fieldName): void
     {
         $this->fieldName = $fieldName;
     }
@@ -118,7 +118,7 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getChangeType(): string
+    public function getChangeType(): ?string
     {
         return $this->changeType;
     }
@@ -126,7 +126,7 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     /**
      * @param string $changeType
      */
-    public function setChangeType(string $changeType): void
+    public function setChangeType(?string $changeType): void
     {
         $this->changeType = $changeType;
     }
@@ -134,7 +134,7 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOldValue(): int
+    public function getOldValue(): ?int
     {
         return $this->oldValue;
     }
@@ -142,7 +142,7 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     /**
      * @param int $oldValue
      */
-    public function setOldValue(int $oldValue): void
+    public function setOldValue(?int $oldValue): void
     {
         $this->oldValue = $oldValue;
     }
@@ -150,7 +150,7 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNewValue(): int
+    public function getNewValue(): ?int
     {
         return $this->newValue;
     }
@@ -158,7 +158,7 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     /**
      * @param int $newValue
      */
-    public function setNewValue(int $newValue): void
+    public function setNewValue(?int $newValue): void
     {
         $this->newValue = $newValue;
     }
@@ -166,7 +166,7 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTag(): int
+    public function getTag(): ?int
     {
         return $this->tag;
     }
@@ -174,7 +174,7 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     /**
      * @param int $tag
      */
-    public function setTag(int $tag): void
+    public function setTag(?int $tag): void
     {
         $this->tag = $tag;
     }
@@ -182,7 +182,7 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDetail(): string
+    public function getDetail(): ?string
     {
         return $this->detail;
     }
@@ -190,7 +190,7 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     /**
      * @param string $detail
      */
-    public function setDetail(string $detail): void
+    public function setDetail(?string $detail): void
     {
         $this->detail = $detail;
     }
@@ -198,7 +198,7 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getExtra(): string
+    public function getExtra(): ?string
     {
         return $this->extra;
     }
@@ -206,7 +206,7 @@ class ExtOrderItemPriceChangeLog implements \JsonSerializable {
     /**
      * @param string $extra
      */
-    public function setExtra(string $extra): void
+    public function setExtra(?string $extra): void
     {
         $this->extra = $extra;
     }

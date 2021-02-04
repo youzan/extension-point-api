@@ -34,7 +34,7 @@ class FindCouponGroupRequestExt implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStatus(): int
+    public function getStatus(): ?int
     {
         return $this->status;
     }
@@ -42,7 +42,7 @@ class FindCouponGroupRequestExt implements \JsonSerializable {
     /**
      * @param int $status
      */
-    public function setStatus(int $status): void
+    public function setStatus(?int $status): void
     {
         $this->status = $status;
     }
@@ -50,7 +50,7 @@ class FindCouponGroupRequestExt implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPageNo(): int
+    public function getPageNo(): ?int
     {
         return $this->pageNo;
     }
@@ -58,7 +58,7 @@ class FindCouponGroupRequestExt implements \JsonSerializable {
     /**
      * @param int $pageNo
      */
-    public function setPageNo(int $pageNo): void
+    public function setPageNo(?int $pageNo): void
     {
         $this->pageNo = $pageNo;
     }
@@ -66,7 +66,7 @@ class FindCouponGroupRequestExt implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPageSize(): int
+    public function getPageSize(): ?int
     {
         return $this->pageSize;
     }
@@ -74,7 +74,7 @@ class FindCouponGroupRequestExt implements \JsonSerializable {
     /**
      * @param int $pageSize
      */
-    public function setPageSize(int $pageSize): void
+    public function setPageSize(?int $pageSize): void
     {
         $this->pageSize = $pageSize;
     }

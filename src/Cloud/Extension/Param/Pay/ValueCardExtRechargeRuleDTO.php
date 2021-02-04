@@ -28,7 +28,7 @@ class ValueCardExtRechargeRuleDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getAmount(): int
+    public function getAmount(): ?int
     {
         return $this->amount;
     }
@@ -36,7 +36,7 @@ class ValueCardExtRechargeRuleDTO implements \JsonSerializable {
     /**
      * @param int $amount
      */
-    public function setAmount(int $amount): void
+    public function setAmount(?int $amount): void
     {
         $this->amount = $amount;
     }
@@ -44,7 +44,7 @@ class ValueCardExtRechargeRuleDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getGiftPacks(): array
+    public function getGiftPacks(): ?array
     {
         return $this->giftPacks;
     }
@@ -52,7 +52,7 @@ class ValueCardExtRechargeRuleDTO implements \JsonSerializable {
     /**
      * @param array $giftPacks
      */
-    public function setGiftPacks(array $giftPacks): void
+    public function setGiftPacks(?array $giftPacks): void
     {
         $this->giftPacks = $giftPacks;
     }
