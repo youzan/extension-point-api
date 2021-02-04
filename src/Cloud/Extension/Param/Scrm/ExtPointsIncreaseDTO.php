@@ -72,6 +72,12 @@ class ExtPointsIncreaseDTO implements \JsonSerializable {
      */
     private $bizToken;
 
+    /**
+     * 积分操作来源 (101, &quot;交易奖励积分&quot;), (301, &quot;管理员操作积分&quot;), (102,&quot;签到奖励积分&quot;)
+     * @var int
+     */
+    private $operationType;
+
 
 
     /**
@@ -232,6 +238,22 @@ class ExtPointsIncreaseDTO implements \JsonSerializable {
     public function setBizToken(?string $bizToken): void
     {
         $this->bizToken = $bizToken;
+    }
+
+    /**
+     * @return int
+     */
+    public function getOperationType(): ?int
+    {
+        return $this->operationType;
+    }
+
+    /**
+     * @param int $operationType
+     */
+    public function setOperationType(?int $operationType): void
+    {
+        $this->operationType = $operationType;
     }
 
     public function jsonSerialize() {

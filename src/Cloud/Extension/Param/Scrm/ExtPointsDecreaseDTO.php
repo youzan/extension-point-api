@@ -72,6 +72,12 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
      */
     private $bizToken;
 
+    /**
+     * 积分消耗来源  (201, &quot;交易退款扣减积分&quot;),(301, &quot;管理员操作积分&quot;)
+     * @var int
+     */
+    private $operationType;
+
 
 
     /**
@@ -232,6 +238,22 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     public function setBizToken(?string $bizToken): void
     {
         $this->bizToken = $bizToken;
+    }
+
+    /**
+     * @return int
+     */
+    public function getOperationType(): ?int
+    {
+        return $this->operationType;
+    }
+
+    /**
+     * @param int $operationType
+     */
+    public function setOperationType(?int $operationType): void
+    {
+        $this->operationType = $operationType;
     }
 
     public function jsonSerialize() {
