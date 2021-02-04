@@ -108,7 +108,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getAuthMap(): stdClass
+    public function getAuthMap(): ?stdClass
     {
         return $this->authMap;
     }
@@ -116,7 +116,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @param stdClass $authMap
      */
-    public function setAuthMap(stdClass $authMap): void
+    public function setAuthMap(?stdClass $authMap): void
     {
         $this->authMap = $authMap;
     }
@@ -124,7 +124,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getApplyBizNo(): string
+    public function getApplyBizNo(): ?string
     {
         return $this->applyBizNo;
     }
@@ -132,7 +132,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @param string $applyBizNo
      */
-    public function setApplyBizNo(string $applyBizNo): void
+    public function setApplyBizNo(?string $applyBizNo): void
     {
         $this->applyBizNo = $applyBizNo;
     }
@@ -140,7 +140,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getFromWarehouseCode(): string
+    public function getFromWarehouseCode(): ?string
     {
         return $this->fromWarehouseCode;
     }
@@ -148,7 +148,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @param string $fromWarehouseCode
      */
-    public function setFromWarehouseCode(string $fromWarehouseCode): void
+    public function setFromWarehouseCode(?string $fromWarehouseCode): void
     {
         $this->fromWarehouseCode = $fromWarehouseCode;
     }
@@ -156,7 +156,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getToWarehouseCode(): string
+    public function getToWarehouseCode(): ?string
     {
         return $this->toWarehouseCode;
     }
@@ -164,7 +164,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @param string $toWarehouseCode
      */
-    public function setToWarehouseCode(string $toWarehouseCode): void
+    public function setToWarehouseCode(?string $toWarehouseCode): void
     {
         $this->toWarehouseCode = $toWarehouseCode;
     }
@@ -172,7 +172,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getFromWarehouseName(): string
+    public function getFromWarehouseName(): ?string
     {
         return $this->fromWarehouseName;
     }
@@ -180,7 +180,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @param string $fromWarehouseName
      */
-    public function setFromWarehouseName(string $fromWarehouseName): void
+    public function setFromWarehouseName(?string $fromWarehouseName): void
     {
         $this->fromWarehouseName = $fromWarehouseName;
     }
@@ -188,7 +188,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getToWarehouseName(): string
+    public function getToWarehouseName(): ?string
     {
         return $this->toWarehouseName;
     }
@@ -196,7 +196,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @param string $toWarehouseName
      */
-    public function setToWarehouseName(string $toWarehouseName): void
+    public function setToWarehouseName(?string $toWarehouseName): void
     {
         $this->toWarehouseName = $toWarehouseName;
     }
@@ -204,7 +204,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStatus(): int
+    public function getStatus(): ?int
     {
         return $this->status;
     }
@@ -212,7 +212,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @param int $status
      */
-    public function setStatus(int $status): void
+    public function setStatus(?int $status): void
     {
         $this->status = $status;
     }
@@ -220,7 +220,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefusedReason(): string
+    public function getRefusedReason(): ?string
     {
         return $this->refusedReason;
     }
@@ -228,7 +228,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @param string $refusedReason
      */
-    public function setRefusedReason(string $refusedReason): void
+    public function setRefusedReason(?string $refusedReason): void
     {
         $this->refusedReason = $refusedReason;
     }
@@ -236,7 +236,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOutBizNo(): string
+    public function getOutBizNo(): ?string
     {
         return $this->outBizNo;
     }
@@ -244,7 +244,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @param string $outBizNo
      */
-    public function setOutBizNo(string $outBizNo): void
+    public function setOutBizNo(?string $outBizNo): void
     {
         $this->outBizNo = $outBizNo;
     }
@@ -252,7 +252,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getInBizNo(): string
+    public function getInBizNo(): ?string
     {
         return $this->inBizNo;
     }
@@ -260,7 +260,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @param string $inBizNo
      */
-    public function setInBizNo(string $inBizNo): void
+    public function setInBizNo(?string $inBizNo): void
     {
         $this->inBizNo = $inBizNo;
     }
@@ -268,7 +268,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRemark(): string
+    public function getRemark(): ?string
     {
         return $this->remark;
     }
@@ -276,7 +276,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @param string $remark
      */
-    public function setRemark(string $remark): void
+    public function setRemark(?string $remark): void
     {
         $this->remark = $remark;
     }
@@ -284,7 +284,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCreator(): string
+    public function getCreator(): ?string
     {
         return $this->creator;
     }
@@ -292,7 +292,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @param string $creator
      */
-    public function setCreator(string $creator): void
+    public function setCreator(?string $creator): void
     {
         $this->creator = $creator;
     }
@@ -300,7 +300,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCreatedTime(): int
+    public function getCreatedTime(): ?int
     {
         return $this->createdTime;
     }
@@ -308,7 +308,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @param int $createdTime
      */
-    public function setCreatedTime(int $createdTime): void
+    public function setCreatedTime(?int $createdTime): void
     {
         $this->createdTime = $createdTime;
     }
@@ -316,7 +316,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getDisOrders(): array
+    public function getDisOrders(): ?array
     {
         return $this->disOrders;
     }
@@ -324,7 +324,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @param array $disOrders
      */
-    public function setDisOrders(array $disOrders): void
+    public function setDisOrders(?array $disOrders): void
     {
         $this->disOrders = $disOrders;
     }
@@ -332,7 +332,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getOrderItems(): array
+    public function getOrderItems(): ?array
     {
         return $this->orderItems;
     }
@@ -340,7 +340,7 @@ class GoodsApplyOrderParamDTO implements \JsonSerializable {
     /**
      * @param array $orderItems
      */
-    public function setOrderItems(array $orderItems): void
+    public function setOrderItems(?array $orderItems): void
     {
         $this->orderItems = $orderItems;
     }

@@ -54,7 +54,7 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getSelfDefineData(): stdClass
+    public function getSelfDefineData(): ?stdClass
     {
         return $this->selfDefineData;
     }
@@ -62,7 +62,7 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
     /**
      * @param stdClass $selfDefineData
      */
-    public function setSelfDefineData(stdClass $selfDefineData): void
+    public function setSelfDefineData(?stdClass $selfDefineData): void
     {
         $this->selfDefineData = $selfDefineData;
     }
@@ -70,7 +70,7 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getItemCalcDTOs(): array
+    public function getItemCalcDTOs(): ?array
     {
         return $this->itemCalcDTOs;
     }
@@ -78,7 +78,7 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
     /**
      * @param array $itemCalcDTOs
      */
-    public function setItemCalcDTOs(array $itemCalcDTOs): void
+    public function setItemCalcDTOs(?array $itemCalcDTOs): void
     {
         $this->itemCalcDTOs = $itemCalcDTOs;
     }
@@ -86,7 +86,7 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -94,7 +94,7 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -102,7 +102,7 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -110,7 +110,7 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -118,7 +118,7 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
     /**
      * @return ExtPointUserMsgDTO
      */
-    public function getExtPointUserDTO(): ExtPointUserMsgDTO
+    public function getExtPointUserDTO(): ?ExtPointUserMsgDTO
     {
         return $this->extPointUserDTO;
     }
@@ -126,7 +126,7 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
     /**
      * @param ExtPointUserMsgDTO $extPointUserDTO
      */
-    public function setExtPointUserDTO(ExtPointUserMsgDTO $extPointUserDTO): void
+    public function setExtPointUserDTO(?ExtPointUserMsgDTO $extPointUserDTO): void
     {
         $this->extPointUserDTO = $extPointUserDTO;
     }
@@ -134,7 +134,7 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getLogisticsType(): int
+    public function getLogisticsType(): ?int
     {
         return $this->logisticsType;
     }
@@ -142,7 +142,7 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
     /**
      * @param int $logisticsType
      */
-    public function setLogisticsType(int $logisticsType): void
+    public function setLogisticsType(?int $logisticsType): void
     {
         $this->logisticsType = $logisticsType;
     }

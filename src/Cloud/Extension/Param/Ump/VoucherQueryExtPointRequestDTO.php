@@ -34,7 +34,7 @@ class VoucherQueryExtPointRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
@@ -42,7 +42,7 @@ class VoucherQueryExtPointRequestDTO implements \JsonSerializable {
     /**
      * @param int $id
      */
-    public function setId(int $id): void
+    public function setId(?int $id): void
     {
         $this->id = $id;
     }
@@ -50,7 +50,7 @@ class VoucherQueryExtPointRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersionNo(): int
+    public function getVersionNo(): ?int
     {
         return $this->versionNo;
     }
@@ -58,7 +58,7 @@ class VoucherQueryExtPointRequestDTO implements \JsonSerializable {
     /**
      * @param int $versionNo
      */
-    public function setVersionNo(int $versionNo): void
+    public function setVersionNo(?int $versionNo): void
     {
         $this->versionNo = $versionNo;
     }
@@ -66,7 +66,7 @@ class VoucherQueryExtPointRequestDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): stdClass
+    public function getExtMap(): ?stdClass
     {
         return $this->extMap;
     }
@@ -74,7 +74,7 @@ class VoucherQueryExtPointRequestDTO implements \JsonSerializable {
     /**
      * @param stdClass $extMap
      */
-    public function setExtMap(stdClass $extMap): void
+    public function setExtMap(?stdClass $extMap): void
     {
         $this->extMap = $extMap;
     }

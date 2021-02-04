@@ -94,7 +94,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -102,7 +102,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -110,7 +110,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSessionId(): string
+    public function getSessionId(): ?string
     {
         return $this->sessionId;
     }
@@ -118,7 +118,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @param string $sessionId
      */
-    public function setSessionId(string $sessionId): void
+    public function setSessionId(?string $sessionId): void
     {
         $this->sessionId = $sessionId;
     }
@@ -126,7 +126,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): string
+    public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
     }
@@ -134,7 +134,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(string $yzOpenId): void
+    public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -142,7 +142,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSourceType(): string
+    public function getSourceType(): ?string
     {
         return $this->sourceType;
     }
@@ -150,7 +150,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @param string $sourceType
      */
-    public function setSourceType(string $sourceType): void
+    public function setSourceType(?string $sourceType): void
     {
         $this->sourceType = $sourceType;
     }
@@ -158,7 +158,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUrl(): string
+    public function getUrl(): ?string
     {
         return $this->url;
     }
@@ -166,7 +166,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @param string $url
      */
-    public function setUrl(string $url): void
+    public function setUrl(?string $url): void
     {
         $this->url = $url;
     }
@@ -174,7 +174,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLat(): string
+    public function getLat(): ?string
     {
         return $this->lat;
     }
@@ -182,7 +182,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @param string $lat
      */
-    public function setLat(string $lat): void
+    public function setLat(?string $lat): void
     {
         $this->lat = $lat;
     }
@@ -190,7 +190,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLng(): string
+    public function getLng(): ?string
     {
         return $this->lng;
     }
@@ -198,7 +198,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @param string $lng
      */
-    public function setLng(string $lng): void
+    public function setLng(?string $lng): void
     {
         $this->lng = $lng;
     }
@@ -206,7 +206,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCountryName(): string
+    public function getCountryName(): ?string
     {
         return $this->countryName;
     }
@@ -214,7 +214,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @param string $countryName
      */
-    public function setCountryName(string $countryName): void
+    public function setCountryName(?string $countryName): void
     {
         $this->countryName = $countryName;
     }
@@ -222,7 +222,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProvinceName(): string
+    public function getProvinceName(): ?string
     {
         return $this->provinceName;
     }
@@ -230,7 +230,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @param string $provinceName
      */
-    public function setProvinceName(string $provinceName): void
+    public function setProvinceName(?string $provinceName): void
     {
         $this->provinceName = $provinceName;
     }
@@ -238,7 +238,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCityName(): string
+    public function getCityName(): ?string
     {
         return $this->cityName;
     }
@@ -246,7 +246,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @param string $cityName
      */
-    public function setCityName(string $cityName): void
+    public function setCityName(?string $cityName): void
     {
         $this->cityName = $cityName;
     }
@@ -254,7 +254,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCountyName(): string
+    public function getCountyName(): ?string
     {
         return $this->countyName;
     }
@@ -262,7 +262,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @param string $countyName
      */
-    public function setCountyName(string $countyName): void
+    public function setCountyName(?string $countyName): void
     {
         $this->countyName = $countyName;
     }
@@ -270,7 +270,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPositionBehaviorSign(): int
+    public function getPositionBehaviorSign(): ?int
     {
         return $this->positionBehaviorSign;
     }
@@ -278,7 +278,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @param int $positionBehaviorSign
      */
-    public function setPositionBehaviorSign(int $positionBehaviorSign): void
+    public function setPositionBehaviorSign(?int $positionBehaviorSign): void
     {
         $this->positionBehaviorSign = $positionBehaviorSign;
     }
@@ -286,7 +286,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDirectEnterSign(): int
+    public function getDirectEnterSign(): ?int
     {
         return $this->directEnterSign;
     }
@@ -294,7 +294,7 @@ class ShopEnterRequest implements \JsonSerializable {
     /**
      * @param int $directEnterSign
      */
-    public function setDirectEnterSign(int $directEnterSign): void
+    public function setDirectEnterSign(?int $directEnterSign): void
     {
         $this->directEnterSign = $directEnterSign;
     }

@@ -22,7 +22,7 @@ class ExtTemplateCouponDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getCouponList(): array
+    public function getCouponList(): ?array
     {
         return $this->couponList;
     }
@@ -30,7 +30,7 @@ class ExtTemplateCouponDTO implements \JsonSerializable {
     /**
      * @param array $couponList
      */
-    public function setCouponList(array $couponList): void
+    public function setCouponList(?array $couponList): void
     {
         $this->couponList = $couponList;
     }

@@ -46,7 +46,7 @@ class ExtCustomerPointsLogDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getAmount(): int
+    public function getAmount(): ?int
     {
         return $this->amount;
     }
@@ -54,7 +54,7 @@ class ExtCustomerPointsLogDTO implements \JsonSerializable {
     /**
      * @param int $amount
      */
-    public function setAmount(int $amount): void
+    public function setAmount(?int $amount): void
     {
         $this->amount = $amount;
     }
@@ -62,7 +62,7 @@ class ExtCustomerPointsLogDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -70,7 +70,7 @@ class ExtCustomerPointsLogDTO implements \JsonSerializable {
     /**
      * @param string $type
      */
-    public function setType(string $type): void
+    public function setType(?string $type): void
     {
         $this->type = $type;
     }
@@ -78,7 +78,7 @@ class ExtCustomerPointsLogDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDescription(): string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -86,7 +86,7 @@ class ExtCustomerPointsLogDTO implements \JsonSerializable {
     /**
      * @param string $description
      */
-    public function setDescription(string $description): void
+    public function setDescription(?string $description): void
     {
         $this->description = $description;
     }
@@ -94,7 +94,7 @@ class ExtCustomerPointsLogDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCreatedAt(): int
+    public function getCreatedAt(): ?int
     {
         return $this->createdAt;
     }
@@ -102,7 +102,7 @@ class ExtCustomerPointsLogDTO implements \JsonSerializable {
     /**
      * @param int $createdAt
      */
-    public function setCreatedAt(int $createdAt): void
+    public function setCreatedAt(?int $createdAt): void
     {
         $this->createdAt = $createdAt;
     }
@@ -110,7 +110,7 @@ class ExtCustomerPointsLogDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOperatorName(): string
+    public function getOperatorName(): ?string
     {
         return $this->operatorName;
     }
@@ -118,7 +118,7 @@ class ExtCustomerPointsLogDTO implements \JsonSerializable {
     /**
      * @param string $operatorName
      */
-    public function setOperatorName(string $operatorName): void
+    public function setOperatorName(?string $operatorName): void
     {
         $this->operatorName = $operatorName;
     }

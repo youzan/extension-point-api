@@ -34,7 +34,7 @@ class OrderCreateSelfValidateResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMessage(): string
+    public function getMessage(): ?string
     {
         return $this->message;
     }
@@ -42,7 +42,7 @@ class OrderCreateSelfValidateResultDTO implements \JsonSerializable {
     /**
      * @param string $message
      */
-    public function setMessage(string $message): void
+    public function setMessage(?string $message): void
     {
         $this->message = $message;
     }
@@ -50,7 +50,7 @@ class OrderCreateSelfValidateResultDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getValidateResult(): bool
+    public function getValidateResult(): ?bool
     {
         return $this->validateResult;
     }
@@ -58,7 +58,7 @@ class OrderCreateSelfValidateResultDTO implements \JsonSerializable {
     /**
      * @param bool $validateResult
      */
-    public function setValidateResult(bool $validateResult): void
+    public function setValidateResult(?bool $validateResult): void
     {
         $this->validateResult = $validateResult;
     }
@@ -66,7 +66,7 @@ class OrderCreateSelfValidateResultDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getUnavailableItemList(): array
+    public function getUnavailableItemList(): ?array
     {
         return $this->unavailableItemList;
     }
@@ -74,7 +74,7 @@ class OrderCreateSelfValidateResultDTO implements \JsonSerializable {
     /**
      * @param array $unavailableItemList
      */
-    public function setUnavailableItemList(array $unavailableItemList): void
+    public function setUnavailableItemList(?array $unavailableItemList): void
     {
         $this->unavailableItemList = $unavailableItemList;
     }

@@ -34,7 +34,7 @@ class ItemTradeCloudExtModel implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemId(): int
+    public function getItemId(): ?int
     {
         return $this->itemId;
     }
@@ -42,7 +42,7 @@ class ItemTradeCloudExtModel implements \JsonSerializable {
     /**
      * @param int $itemId
      */
-    public function setItemId(int $itemId): void
+    public function setItemId(?int $itemId): void
     {
         $this->itemId = $itemId;
     }
@@ -50,7 +50,7 @@ class ItemTradeCloudExtModel implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -58,7 +58,7 @@ class ItemTradeCloudExtModel implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -66,7 +66,7 @@ class ItemTradeCloudExtModel implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtraInfo(): stdClass
+    public function getExtraInfo(): ?stdClass
     {
         return $this->extraInfo;
     }
@@ -74,7 +74,7 @@ class ItemTradeCloudExtModel implements \JsonSerializable {
     /**
      * @param stdClass $extraInfo
      */
-    public function setExtraInfo(stdClass $extraInfo): void
+    public function setExtraInfo(?stdClass $extraInfo): void
     {
         $this->extraInfo = $extraInfo;
     }

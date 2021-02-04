@@ -148,7 +148,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUmpAlias(): string
+    public function getUmpAlias(): ?string
     {
         return $this->umpAlias;
     }
@@ -156,7 +156,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param string $umpAlias
      */
-    public function setUmpAlias(string $umpAlias): void
+    public function setUmpAlias(?string $umpAlias): void
     {
         $this->umpAlias = $umpAlias;
     }
@@ -164,7 +164,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUmpType(): string
+    public function getUmpType(): ?string
     {
         return $this->umpType;
     }
@@ -172,7 +172,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param string $umpType
      */
-    public function setUmpType(string $umpType): void
+    public function setUmpType(?string $umpType): void
     {
         $this->umpType = $umpType;
     }
@@ -180,7 +180,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getHqKdtId(): int
+    public function getHqKdtId(): ?int
     {
         return $this->hqKdtId;
     }
@@ -188,7 +188,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param int $hqKdtId
      */
-    public function setHqKdtId(int $hqKdtId): void
+    public function setHqKdtId(?int $hqKdtId): void
     {
         $this->hqKdtId = $hqKdtId;
     }
@@ -196,7 +196,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getShopName(): string
+    public function getShopName(): ?string
     {
         return $this->shopName;
     }
@@ -204,7 +204,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param string $shopName
      */
-    public function setShopName(string $shopName): void
+    public function setShopName(?string $shopName): void
     {
         $this->shopName = $shopName;
     }
@@ -212,7 +212,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): string
+    public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
     }
@@ -220,7 +220,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(string $yzOpenId): void
+    public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -228,7 +228,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getJoinTypes(): array
+    public function getJoinTypes(): ?array
     {
         return $this->joinTypes;
     }
@@ -236,7 +236,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param array $joinTypes
      */
-    public function setJoinTypes(array $joinTypes): void
+    public function setJoinTypes(?array $joinTypes): void
     {
         $this->joinTypes = $joinTypes;
     }
@@ -244,7 +244,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getShopLifecycleStatuses(): array
+    public function getShopLifecycleStatuses(): ?array
     {
         return $this->shopLifecycleStatuses;
     }
@@ -252,7 +252,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param array $shopLifecycleStatuses
      */
-    public function setShopLifecycleStatuses(array $shopLifecycleStatuses): void
+    public function setShopLifecycleStatuses(?array $shopLifecycleStatuses): void
     {
         $this->shopLifecycleStatuses = $shopLifecycleStatuses;
     }
@@ -260,7 +260,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSortType(): int
+    public function getSortType(): ?int
     {
         return $this->sortType;
     }
@@ -268,7 +268,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param int $sortType
      */
-    public function setSortType(int $sortType): void
+    public function setSortType(?int $sortType): void
     {
         $this->sortType = $sortType;
     }
@@ -276,7 +276,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getShopRoleList(): array
+    public function getShopRoleList(): ?array
     {
         return $this->shopRoleList;
     }
@@ -284,7 +284,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param array $shopRoleList
      */
-    public function setShopRoleList(array $shopRoleList): void
+    public function setShopRoleList(?array $shopRoleList): void
     {
         $this->shopRoleList = $shopRoleList;
     }
@@ -292,7 +292,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProvince(): string
+    public function getProvince(): ?string
     {
         return $this->province;
     }
@@ -300,7 +300,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param string $province
      */
-    public function setProvince(string $province): void
+    public function setProvince(?string $province): void
     {
         $this->province = $province;
     }
@@ -308,7 +308,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCity(): string
+    public function getCity(): ?string
     {
         return $this->city;
     }
@@ -316,7 +316,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param string $city
      */
-    public function setCity(string $city): void
+    public function setCity(?string $city): void
     {
         $this->city = $city;
     }
@@ -324,7 +324,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLng(): string
+    public function getLng(): ?string
     {
         return $this->lng;
     }
@@ -332,7 +332,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param string $lng
      */
-    public function setLng(string $lng): void
+    public function setLng(?string $lng): void
     {
         $this->lng = $lng;
     }
@@ -340,7 +340,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLat(): string
+    public function getLat(): ?string
     {
         return $this->lat;
     }
@@ -348,7 +348,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param string $lat
      */
-    public function setLat(string $lat): void
+    public function setLat(?string $lat): void
     {
         $this->lat = $lat;
     }
@@ -356,7 +356,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getOnlineOpen(): bool
+    public function getOnlineOpen(): ?bool
     {
         return $this->onlineOpen;
     }
@@ -364,7 +364,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param bool $onlineOpen
      */
-    public function setOnlineOpen(bool $onlineOpen): void
+    public function setOnlineOpen(?bool $onlineOpen): void
     {
         $this->onlineOpen = $onlineOpen;
     }
@@ -372,7 +372,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getOfflineOpen(): bool
+    public function getOfflineOpen(): ?bool
     {
         return $this->offlineOpen;
     }
@@ -380,7 +380,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param bool $offlineOpen
      */
-    public function setOfflineOpen(bool $offlineOpen): void
+    public function setOfflineOpen(?bool $offlineOpen): void
     {
         $this->offlineOpen = $offlineOpen;
     }
@@ -388,7 +388,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getAppendShopMetaInfo(): bool
+    public function getAppendShopMetaInfo(): ?bool
     {
         return $this->appendShopMetaInfo;
     }
@@ -396,7 +396,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param bool $appendShopMetaInfo
      */
-    public function setAppendShopMetaInfo(bool $appendShopMetaInfo): void
+    public function setAppendShopMetaInfo(?bool $appendShopMetaInfo): void
     {
         $this->appendShopMetaInfo = $appendShopMetaInfo;
     }
@@ -404,7 +404,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getExcludeKdtIds(): array
+    public function getExcludeKdtIds(): ?array
     {
         return $this->excludeKdtIds;
     }
@@ -412,7 +412,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param array $excludeKdtIds
      */
-    public function setExcludeKdtIds(array $excludeKdtIds): void
+    public function setExcludeKdtIds(?array $excludeKdtIds): void
     {
         $this->excludeKdtIds = $excludeKdtIds;
     }
@@ -420,7 +420,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPageNum(): int
+    public function getPageNum(): ?int
     {
         return $this->pageNum;
     }
@@ -428,7 +428,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param int $pageNum
      */
-    public function setPageNum(int $pageNum): void
+    public function setPageNum(?int $pageNum): void
     {
         $this->pageNum = $pageNum;
     }
@@ -436,7 +436,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPageSize(): int
+    public function getPageSize(): ?int
     {
         return $this->pageSize;
     }
@@ -444,7 +444,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param int $pageSize
      */
-    public function setPageSize(int $pageSize): void
+    public function setPageSize(?int $pageSize): void
     {
         $this->pageSize = $pageSize;
     }
@@ -452,7 +452,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getKdtIds(): array
+    public function getKdtIds(): ?array
     {
         return $this->kdtIds;
     }
@@ -460,7 +460,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param array $kdtIds
      */
-    public function setKdtIds(array $kdtIds): void
+    public function setKdtIds(?array $kdtIds): void
     {
         $this->kdtIds = $kdtIds;
     }
@@ -468,7 +468,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getIsShowOnlineShopSwitch(): bool
+    public function getIsShowOnlineShopSwitch(): ?bool
     {
         return $this->isShowOnlineShopSwitch;
     }
@@ -476,7 +476,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param bool $isShowOnlineShopSwitch
      */
-    public function setIsShowOnlineShopSwitch(bool $isShowOnlineShopSwitch): void
+    public function setIsShowOnlineShopSwitch(?bool $isShowOnlineShopSwitch): void
     {
         $this->isShowOnlineShopSwitch = $isShowOnlineShopSwitch;
     }
@@ -484,7 +484,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSuitableBizJsonToString(): string
+    public function getSuitableBizJsonToString(): ?string
     {
         return $this->suitableBizJsonToString;
     }
@@ -492,7 +492,7 @@ class ShopSearchForVisitRequest implements \JsonSerializable {
     /**
      * @param string $suitableBizJsonToString
      */
-    public function setSuitableBizJsonToString(string $suitableBizJsonToString): void
+    public function setSuitableBizJsonToString(?string $suitableBizJsonToString): void
     {
         $this->suitableBizJsonToString = $suitableBizJsonToString;
     }

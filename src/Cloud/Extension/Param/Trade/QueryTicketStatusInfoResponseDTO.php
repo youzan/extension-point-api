@@ -40,7 +40,7 @@ class QueryTicketStatusInfoResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -48,7 +48,7 @@ class QueryTicketStatusInfoResponseDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -56,7 +56,7 @@ class QueryTicketStatusInfoResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -64,7 +64,7 @@ class QueryTicketStatusInfoResponseDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -72,7 +72,7 @@ class QueryTicketStatusInfoResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getEffectiveEndTime(): int
+    public function getEffectiveEndTime(): ?int
     {
         return $this->effectiveEndTime;
     }
@@ -80,7 +80,7 @@ class QueryTicketStatusInfoResponseDTO implements \JsonSerializable {
     /**
      * @param int $effectiveEndTime
      */
-    public function setEffectiveEndTime(int $effectiveEndTime): void
+    public function setEffectiveEndTime(?int $effectiveEndTime): void
     {
         $this->effectiveEndTime = $effectiveEndTime;
     }
@@ -88,7 +88,7 @@ class QueryTicketStatusInfoResponseDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getTicketItemList(): array
+    public function getTicketItemList(): ?array
     {
         return $this->ticketItemList;
     }
@@ -96,7 +96,7 @@ class QueryTicketStatusInfoResponseDTO implements \JsonSerializable {
     /**
      * @param array $ticketItemList
      */
-    public function setTicketItemList(array $ticketItemList): void
+    public function setTicketItemList(?array $ticketItemList): void
     {
         $this->ticketItemList = $ticketItemList;
     }

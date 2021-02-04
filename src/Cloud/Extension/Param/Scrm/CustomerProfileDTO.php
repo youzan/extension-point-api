@@ -64,7 +64,7 @@ class CustomerProfileDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -72,7 +72,7 @@ class CustomerProfileDTO implements \JsonSerializable {
     /**
      * @param string $name
      */
-    public function setName(string $name): void
+    public function setName(?string $name): void
     {
         $this->name = $name;
     }
@@ -80,7 +80,7 @@ class CustomerProfileDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGender(): int
+    public function getGender(): ?int
     {
         return $this->gender;
     }
@@ -88,7 +88,7 @@ class CustomerProfileDTO implements \JsonSerializable {
     /**
      * @param int $gender
      */
-    public function setGender(int $gender): void
+    public function setGender(?int $gender): void
     {
         $this->gender = $gender;
     }
@@ -96,7 +96,7 @@ class CustomerProfileDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBirthday(): string
+    public function getBirthday(): ?string
     {
         return $this->birthday;
     }
@@ -104,7 +104,7 @@ class CustomerProfileDTO implements \JsonSerializable {
     /**
      * @param string $birthday
      */
-    public function setBirthday(string $birthday): void
+    public function setBirthday(?string $birthday): void
     {
         $this->birthday = $birthday;
     }
@@ -112,7 +112,7 @@ class CustomerProfileDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getIsMember(): bool
+    public function getIsMember(): ?bool
     {
         return $this->isMember;
     }
@@ -120,7 +120,7 @@ class CustomerProfileDTO implements \JsonSerializable {
     /**
      * @param bool $isMember
      */
-    public function setIsMember(bool $isMember): void
+    public function setIsMember(?bool $isMember): void
     {
         $this->isMember = $isMember;
     }
@@ -128,7 +128,7 @@ class CustomerProfileDTO implements \JsonSerializable {
     /**
      * @return ContactAddressDTO
      */
-    public function getContactAddressDTO(): ContactAddressDTO
+    public function getContactAddressDTO(): ?ContactAddressDTO
     {
         return $this->contactAddressDTO;
     }
@@ -136,7 +136,7 @@ class CustomerProfileDTO implements \JsonSerializable {
     /**
      * @param ContactAddressDTO $contactAddressDTO
      */
-    public function setContactAddressDTO(ContactAddressDTO $contactAddressDTO): void
+    public function setContactAddressDTO(?ContactAddressDTO $contactAddressDTO): void
     {
         $this->contactAddressDTO = $contactAddressDTO;
     }
@@ -144,7 +144,7 @@ class CustomerProfileDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getEmail(): string
+    public function getEmail(): ?string
     {
         return $this->email;
     }
@@ -152,7 +152,7 @@ class CustomerProfileDTO implements \JsonSerializable {
     /**
      * @param string $email
      */
-    public function setEmail(string $email): void
+    public function setEmail(?string $email): void
     {
         $this->email = $email;
     }
@@ -160,7 +160,7 @@ class CustomerProfileDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLatestNickName(): string
+    public function getLatestNickName(): ?string
     {
         return $this->latestNickName;
     }
@@ -168,7 +168,7 @@ class CustomerProfileDTO implements \JsonSerializable {
     /**
      * @param string $latestNickName
      */
-    public function setLatestNickName(string $latestNickName): void
+    public function setLatestNickName(?string $latestNickName): void
     {
         $this->latestNickName = $latestNickName;
     }
@@ -176,7 +176,7 @@ class CustomerProfileDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLatestAvatar(): string
+    public function getLatestAvatar(): ?string
     {
         return $this->latestAvatar;
     }
@@ -184,7 +184,7 @@ class CustomerProfileDTO implements \JsonSerializable {
     /**
      * @param string $latestAvatar
      */
-    public function setLatestAvatar(string $latestAvatar): void
+    public function setLatestAvatar(?string $latestAvatar): void
     {
         $this->latestAvatar = $latestAvatar;
     }

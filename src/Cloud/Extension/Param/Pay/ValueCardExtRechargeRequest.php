@@ -118,7 +118,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRechargeNo(): string
+    public function getRechargeNo(): ?string
     {
         return $this->rechargeNo;
     }
@@ -126,7 +126,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @param string $rechargeNo
      */
-    public function setRechargeNo(string $rechargeNo): void
+    public function setRechargeNo(?string $rechargeNo): void
     {
         $this->rechargeNo = $rechargeNo;
     }
@@ -134,7 +134,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAcquireNo(): string
+    public function getAcquireNo(): ?string
     {
         return $this->acquireNo;
     }
@@ -142,7 +142,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @param string $acquireNo
      */
-    public function setAcquireNo(string $acquireNo): void
+    public function setAcquireNo(?string $acquireNo): void
     {
         $this->acquireNo = $acquireNo;
     }
@@ -150,7 +150,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardNo(): string
+    public function getCardNo(): ?string
     {
         return $this->cardNo;
     }
@@ -158,7 +158,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @param string $cardNo
      */
-    public function setCardNo(string $cardNo): void
+    public function setCardNo(?string $cardNo): void
     {
         $this->cardNo = $cardNo;
     }
@@ -166,7 +166,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getFactDnom(): int
+    public function getFactDnom(): ?int
     {
         return $this->factDnom;
     }
@@ -174,7 +174,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @param int $factDnom
      */
-    public function setFactDnom(int $factDnom): void
+    public function setFactDnom(?int $factDnom): void
     {
         $this->factDnom = $factDnom;
     }
@@ -182,7 +182,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPrincipalDnom(): int
+    public function getPrincipalDnom(): ?int
     {
         return $this->principalDnom;
     }
@@ -190,7 +190,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @param int $principalDnom
      */
-    public function setPrincipalDnom(int $principalDnom): void
+    public function setPrincipalDnom(?int $principalDnom): void
     {
         $this->principalDnom = $principalDnom;
     }
@@ -198,7 +198,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSumBonusDnom(): int
+    public function getSumBonusDnom(): ?int
     {
         return $this->sumBonusDnom;
     }
@@ -206,7 +206,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @param int $sumBonusDnom
      */
-    public function setSumBonusDnom(int $sumBonusDnom): void
+    public function setSumBonusDnom(?int $sumBonusDnom): void
     {
         $this->sumBonusDnom = $sumBonusDnom;
     }
@@ -214,7 +214,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBuyerId(): int
+    public function getBuyerId(): ?int
     {
         return $this->buyerId;
     }
@@ -222,7 +222,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @param int $buyerId
      */
-    public function setBuyerId(int $buyerId): void
+    public function setBuyerId(?int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
@@ -230,7 +230,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUserPhone(): string
+    public function getUserPhone(): ?string
     {
         return $this->userPhone;
     }
@@ -238,7 +238,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @param string $userPhone
      */
-    public function setUserPhone(string $userPhone): void
+    public function setUserPhone(?string $userPhone): void
     {
         $this->userPhone = $userPhone;
     }
@@ -246,7 +246,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPayMethod(): string
+    public function getPayMethod(): ?string
     {
         return $this->payMethod;
     }
@@ -254,7 +254,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @param string $payMethod
      */
-    public function setPayMethod(string $payMethod): void
+    public function setPayMethod(?string $payMethod): void
     {
         $this->payMethod = $payMethod;
     }
@@ -262,7 +262,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getGiftPackId(): string
+    public function getGiftPackId(): ?string
     {
         return $this->giftPackId;
     }
@@ -270,7 +270,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @param string $giftPackId
      */
-    public function setGiftPackId(string $giftPackId): void
+    public function setGiftPackId(?string $giftPackId): void
     {
         $this->giftPackId = $giftPackId;
     }
@@ -278,7 +278,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getGiftPackVersion(): string
+    public function getGiftPackVersion(): ?string
     {
         return $this->giftPackVersion;
     }
@@ -286,7 +286,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @param string $giftPackVersion
      */
-    public function setGiftPackVersion(string $giftPackVersion): void
+    public function setGiftPackVersion(?string $giftPackVersion): void
     {
         $this->giftPackVersion = $giftPackVersion;
     }
@@ -294,7 +294,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRemark(): string
+    public function getRemark(): ?string
     {
         return $this->remark;
     }
@@ -302,7 +302,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @param string $remark
      */
-    public function setRemark(string $remark): void
+    public function setRemark(?string $remark): void
     {
         $this->remark = $remark;
     }
@@ -310,7 +310,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -318,7 +318,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -326,7 +326,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPayChannel(): int
+    public function getPayChannel(): ?int
     {
         return $this->payChannel;
     }
@@ -334,7 +334,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @param int $payChannel
      */
-    public function setPayChannel(int $payChannel): void
+    public function setPayChannel(?int $payChannel): void
     {
         $this->payChannel = $payChannel;
     }
@@ -342,7 +342,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMarkPayMethod(): string
+    public function getMarkPayMethod(): ?string
     {
         return $this->markPayMethod;
     }
@@ -350,7 +350,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @param string $markPayMethod
      */
-    public function setMarkPayMethod(string $markPayMethod): void
+    public function setMarkPayMethod(?string $markPayMethod): void
     {
         $this->markPayMethod = $markPayMethod;
     }
@@ -358,7 +358,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): string
+    public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
     }
@@ -366,7 +366,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(string $yzOpenId): void
+    public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -374,7 +374,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRootKdtId(): int
+    public function getRootKdtId(): ?int
     {
         return $this->rootKdtId;
     }
@@ -382,7 +382,7 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     /**
      * @param int $rootKdtId
      */
-    public function setRootKdtId(int $rootKdtId): void
+    public function setRootKdtId(?int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
     }

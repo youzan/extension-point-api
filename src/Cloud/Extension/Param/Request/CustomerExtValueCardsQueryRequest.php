@@ -76,7 +76,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBuyerId(): string
+    public function getBuyerId(): ?string
     {
         return $this->buyerId;
     }
@@ -84,7 +84,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @param string $buyerId
      */
-    public function setBuyerId(string $buyerId): void
+    public function setBuyerId(?string $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
@@ -92,7 +92,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUserPhone(): string
+    public function getUserPhone(): ?string
     {
         return $this->userPhone;
     }
@@ -100,7 +100,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @param string $userPhone
      */
-    public function setUserPhone(string $userPhone): void
+    public function setUserPhone(?string $userPhone): void
     {
         $this->userPhone = $userPhone;
     }
@@ -108,7 +108,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardType(): string
+    public function getCardType(): ?string
     {
         return $this->cardType;
     }
@@ -116,7 +116,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @param string $cardType
      */
-    public function setCardType(string $cardType): void
+    public function setCardType(?string $cardType): void
     {
         $this->cardType = $cardType;
     }
@@ -124,7 +124,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardStatus(): string
+    public function getCardStatus(): ?string
     {
         return $this->cardStatus;
     }
@@ -132,7 +132,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @param string $cardStatus
      */
-    public function setCardStatus(string $cardStatus): void
+    public function setCardStatus(?string $cardStatus): void
     {
         $this->cardStatus = $cardStatus;
     }
@@ -140,7 +140,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getCardNoList(): array
+    public function getCardNoList(): ?array
     {
         return $this->cardNoList;
     }
@@ -148,7 +148,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @param array $cardNoList
      */
-    public function setCardNoList(array $cardNoList): void
+    public function setCardNoList(?array $cardNoList): void
     {
         $this->cardNoList = $cardNoList;
     }
@@ -156,7 +156,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPage(): int
+    public function getPage(): ?int
     {
         return $this->page;
     }
@@ -164,7 +164,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @param int $page
      */
-    public function setPage(int $page): void
+    public function setPage(?int $page): void
     {
         $this->page = $page;
     }
@@ -172,7 +172,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPageSize(): int
+    public function getPageSize(): ?int
     {
         return $this->pageSize;
     }
@@ -180,7 +180,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @param int $pageSize
      */
-    public function setPageSize(int $pageSize): void
+    public function setPageSize(?int $pageSize): void
     {
         $this->pageSize = $pageSize;
     }
@@ -188,7 +188,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): string
+    public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
     }
@@ -196,7 +196,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(string $yzOpenId): void
+    public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -204,7 +204,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRootKdtId(): int
+    public function getRootKdtId(): ?int
     {
         return $this->rootKdtId;
     }
@@ -212,7 +212,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @param int $rootKdtId
      */
-    public function setRootKdtId(int $rootKdtId): void
+    public function setRootKdtId(?int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
     }
@@ -220,7 +220,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -228,7 +228,7 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }

@@ -52,7 +52,7 @@ class ValueCardTradeFreezeRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpneId(): string
+    public function getYzOpneId(): ?string
     {
         return $this->yzOpneId;
     }
@@ -60,7 +60,7 @@ class ValueCardTradeFreezeRequest implements \JsonSerializable {
     /**
      * @param string $yzOpneId
      */
-    public function setYzOpneId(string $yzOpneId): void
+    public function setYzOpneId(?string $yzOpneId): void
     {
         $this->yzOpneId = $yzOpneId;
     }
@@ -68,7 +68,7 @@ class ValueCardTradeFreezeRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): string
+    public function getOrderNo(): ?string
     {
         return $this->orderNo;
     }
@@ -76,7 +76,7 @@ class ValueCardTradeFreezeRequest implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(string $orderNo): void
+    public function setOrderNo(?string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -84,7 +84,7 @@ class ValueCardTradeFreezeRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getFreezeAmount(): int
+    public function getFreezeAmount(): ?int
     {
         return $this->freezeAmount;
     }
@@ -92,7 +92,7 @@ class ValueCardTradeFreezeRequest implements \JsonSerializable {
     /**
      * @param int $freezeAmount
      */
-    public function setFreezeAmount(int $freezeAmount): void
+    public function setFreezeAmount(?int $freezeAmount): void
     {
         $this->freezeAmount = $freezeAmount;
     }
@@ -100,7 +100,7 @@ class ValueCardTradeFreezeRequest implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getCardNoList(): array
+    public function getCardNoList(): ?array
     {
         return $this->cardNoList;
     }
@@ -108,7 +108,7 @@ class ValueCardTradeFreezeRequest implements \JsonSerializable {
     /**
      * @param array $cardNoList
      */
-    public function setCardNoList(array $cardNoList): void
+    public function setCardNoList(?array $cardNoList): void
     {
         $this->cardNoList = $cardNoList;
     }
@@ -116,7 +116,7 @@ class ValueCardTradeFreezeRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -124,7 +124,7 @@ class ValueCardTradeFreezeRequest implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -132,7 +132,7 @@ class ValueCardTradeFreezeRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRootKdtId(): int
+    public function getRootKdtId(): ?int
     {
         return $this->rootKdtId;
     }
@@ -140,7 +140,7 @@ class ValueCardTradeFreezeRequest implements \JsonSerializable {
     /**
      * @param int $rootKdtId
      */
-    public function setRootKdtId(int $rootKdtId): void
+    public function setRootKdtId(?int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
     }

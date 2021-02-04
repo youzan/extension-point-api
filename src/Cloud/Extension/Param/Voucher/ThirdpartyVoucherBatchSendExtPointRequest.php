@@ -64,7 +64,7 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -72,7 +72,7 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -80,7 +80,7 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRootKdtId(): int
+    public function getRootKdtId(): ?int
     {
         return $this->rootKdtId;
     }
@@ -88,7 +88,7 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
     /**
      * @param int $rootKdtId
      */
-    public function setRootKdtId(int $rootKdtId): void
+    public function setRootKdtId(?int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
     }
@@ -96,7 +96,7 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getThirdpartyActivityId(): int
+    public function getThirdpartyActivityId(): ?int
     {
         return $this->thirdpartyActivityId;
     }
@@ -104,7 +104,7 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
     /**
      * @param int $thirdpartyActivityId
      */
-    public function setThirdpartyActivityId(int $thirdpartyActivityId): void
+    public function setThirdpartyActivityId(?int $thirdpartyActivityId): void
     {
         $this->thirdpartyActivityId = $thirdpartyActivityId;
     }
@@ -112,7 +112,7 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSendNum(): int
+    public function getSendNum(): ?int
     {
         return $this->sendNum;
     }
@@ -120,7 +120,7 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
     /**
      * @param int $sendNum
      */
-    public function setSendNum(int $sendNum): void
+    public function setSendNum(?int $sendNum): void
     {
         $this->sendNum = $sendNum;
     }
@@ -128,7 +128,7 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): string
+    public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
     }
@@ -136,7 +136,7 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(string $yzOpenId): void
+    public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -144,7 +144,7 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRequestId(): string
+    public function getRequestId(): ?string
     {
         return $this->requestId;
     }
@@ -152,7 +152,7 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
     /**
      * @param string $requestId
      */
-    public function setRequestId(string $requestId): void
+    public function setRequestId(?string $requestId): void
     {
         $this->requestId = $requestId;
     }
@@ -160,7 +160,7 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersionNo(): int
+    public function getVersionNo(): ?int
     {
         return $this->versionNo;
     }
@@ -168,7 +168,7 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
     /**
      * @param int $versionNo
      */
-    public function setVersionNo(int $versionNo): void
+    public function setVersionNo(?int $versionNo): void
     {
         $this->versionNo = $versionNo;
     }
@@ -176,7 +176,7 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): stdClass
+    public function getExtMap(): ?stdClass
     {
         return $this->extMap;
     }
@@ -184,7 +184,7 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
     /**
      * @param stdClass $extMap
      */
-    public function setExtMap(stdClass $extMap): void
+    public function setExtMap(?stdClass $extMap): void
     {
         $this->extMap = $extMap;
     }

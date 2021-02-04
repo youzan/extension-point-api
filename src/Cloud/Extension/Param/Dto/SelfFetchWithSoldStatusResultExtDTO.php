@@ -22,7 +22,7 @@ class SelfFetchWithSoldStatusResultExtDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getAllSelfFetchPointInfo(): array
+    public function getAllSelfFetchPointInfo(): ?array
     {
         return $this->allSelfFetchPointInfo;
     }
@@ -30,7 +30,7 @@ class SelfFetchWithSoldStatusResultExtDTO implements \JsonSerializable {
     /**
      * @param array $allSelfFetchPointInfo
      */
-    public function setAllSelfFetchPointInfo(array $allSelfFetchPointInfo): void
+    public function setAllSelfFetchPointInfo(?array $allSelfFetchPointInfo): void
     {
         $this->allSelfFetchPointInfo = $allSelfFetchPointInfo;
     }

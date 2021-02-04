@@ -34,7 +34,7 @@ class ReceptionistInfoDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getNickName(): string
+    public function getNickName(): ?string
     {
         return $this->nickName;
     }
@@ -42,7 +42,7 @@ class ReceptionistInfoDTO implements \JsonSerializable {
     /**
      * @param string $nickName
      */
-    public function setNickName(string $nickName): void
+    public function setNickName(?string $nickName): void
     {
         $this->nickName = $nickName;
     }
@@ -50,7 +50,7 @@ class ReceptionistInfoDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMobile(): string
+    public function getMobile(): ?string
     {
         return $this->mobile;
     }
@@ -58,7 +58,7 @@ class ReceptionistInfoDTO implements \JsonSerializable {
     /**
      * @param string $mobile
      */
-    public function setMobile(string $mobile): void
+    public function setMobile(?string $mobile): void
     {
         $this->mobile = $mobile;
     }
@@ -66,7 +66,7 @@ class ReceptionistInfoDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAvatar(): string
+    public function getAvatar(): ?string
     {
         return $this->avatar;
     }
@@ -74,7 +74,7 @@ class ReceptionistInfoDTO implements \JsonSerializable {
     /**
      * @param string $avatar
      */
-    public function setAvatar(string $avatar): void
+    public function setAvatar(?string $avatar): void
     {
         $this->avatar = $avatar;
     }

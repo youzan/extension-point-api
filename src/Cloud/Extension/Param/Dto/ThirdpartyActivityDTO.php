@@ -70,7 +70,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
@@ -78,7 +78,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     /**
      * @param int $id
      */
-    public function setId(int $id): void
+    public function setId(?int $id): void
     {
         $this->id = $id;
     }
@@ -86,7 +86,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTitle(): string
+    public function getTitle(): ?string
     {
         return $this->title;
     }
@@ -94,7 +94,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     /**
      * @param string $title
      */
-    public function setTitle(string $title): void
+    public function setTitle(?string $title): void
     {
         $this->title = $title;
     }
@@ -102,7 +102,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPreferentialMode(): int
+    public function getPreferentialMode(): ?int
     {
         return $this->preferentialMode;
     }
@@ -110,7 +110,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     /**
      * @param int $preferentialMode
      */
-    public function setPreferentialMode(int $preferentialMode): void
+    public function setPreferentialMode(?int $preferentialMode): void
     {
         $this->preferentialMode = $preferentialMode;
     }
@@ -118,7 +118,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getValue(): int
+    public function getValue(): ?int
     {
         return $this->value;
     }
@@ -126,7 +126,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     /**
      * @param int $value
      */
-    public function setValue(int $value): void
+    public function setValue(?int $value): void
     {
         $this->value = $value;
     }
@@ -134,7 +134,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStatus(): int
+    public function getStatus(): ?int
     {
         return $this->status;
     }
@@ -142,7 +142,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     /**
      * @param int $status
      */
-    public function setStatus(int $status): void
+    public function setStatus(?int $status): void
     {
         $this->status = $status;
     }
@@ -150,7 +150,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): stdClass
+    public function getExtMap(): ?stdClass
     {
         return $this->extMap;
     }
@@ -158,7 +158,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     /**
      * @param stdClass $extMap
      */
-    public function setExtMap(stdClass $extMap): void
+    public function setExtMap(?stdClass $extMap): void
     {
         $this->extMap = $extMap;
     }
@@ -166,7 +166,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVoucherValueGenerateType(): int
+    public function getVoucherValueGenerateType(): ?int
     {
         return $this->voucherValueGenerateType;
     }
@@ -174,7 +174,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     /**
      * @param int $voucherValueGenerateType
      */
-    public function setVoucherValueGenerateType(int $voucherValueGenerateType): void
+    public function setVoucherValueGenerateType(?int $voucherValueGenerateType): void
     {
         $this->voucherValueGenerateType = $voucherValueGenerateType;
     }
@@ -182,7 +182,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getMinValue(): int
+    public function getMinValue(): ?int
     {
         return $this->minValue;
     }
@@ -190,7 +190,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     /**
      * @param int $minValue
      */
-    public function setMinValue(int $minValue): void
+    public function setMinValue(?int $minValue): void
     {
         $this->minValue = $minValue;
     }
@@ -198,7 +198,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getMaxValue(): int
+    public function getMaxValue(): ?int
     {
         return $this->maxValue;
     }
@@ -206,7 +206,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     /**
      * @param int $maxValue
      */
-    public function setMaxValue(int $maxValue): void
+    public function setMaxValue(?int $maxValue): void
     {
         $this->maxValue = $maxValue;
     }

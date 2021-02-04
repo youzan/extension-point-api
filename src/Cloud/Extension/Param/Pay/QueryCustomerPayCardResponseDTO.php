@@ -22,7 +22,7 @@ class QueryCustomerPayCardResponseDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getCardList(): array
+    public function getCardList(): ?array
     {
         return $this->cardList;
     }
@@ -30,7 +30,7 @@ class QueryCustomerPayCardResponseDTO implements \JsonSerializable {
     /**
      * @param array $cardList
      */
-    public function setCardList(array $cardList): void
+    public function setCardList(?array $cardList): void
     {
         $this->cardList = $cardList;
     }

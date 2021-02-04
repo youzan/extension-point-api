@@ -28,7 +28,7 @@ class RefundSelfValidateResultDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMessage(): string
+    public function getMessage(): ?string
     {
         return $this->message;
     }
@@ -36,7 +36,7 @@ class RefundSelfValidateResultDTO implements \JsonSerializable {
     /**
      * @param string $message
      */
-    public function setMessage(string $message): void
+    public function setMessage(?string $message): void
     {
         $this->message = $message;
     }
@@ -44,7 +44,7 @@ class RefundSelfValidateResultDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getValidateResult(): bool
+    public function getValidateResult(): ?bool
     {
         return $this->validateResult;
     }
@@ -52,7 +52,7 @@ class RefundSelfValidateResultDTO implements \JsonSerializable {
     /**
      * @param bool $validateResult
      */
-    public function setValidateResult(bool $validateResult): void
+    public function setValidateResult(?bool $validateResult): void
     {
         $this->validateResult = $validateResult;
     }

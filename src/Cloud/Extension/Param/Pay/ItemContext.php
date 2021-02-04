@@ -28,7 +28,7 @@ class ItemContext implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemId(): int
+    public function getItemId(): ?int
     {
         return $this->itemId;
     }
@@ -36,7 +36,7 @@ class ItemContext implements \JsonSerializable {
     /**
      * @param int $itemId
      */
-    public function setItemId(int $itemId): void
+    public function setItemId(?int $itemId): void
     {
         $this->itemId = $itemId;
     }
@@ -44,7 +44,7 @@ class ItemContext implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getOutside(): bool
+    public function getOutside(): ?bool
     {
         return $this->outside;
     }
@@ -52,7 +52,7 @@ class ItemContext implements \JsonSerializable {
     /**
      * @param bool $outside
      */
-    public function setOutside(bool $outside): void
+    public function setOutside(?bool $outside): void
     {
         $this->outside = $outside;
     }

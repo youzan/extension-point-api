@@ -36,7 +36,7 @@ class ExtPromotionDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getExtOrderItemPrice(): array
+    public function getExtOrderItemPrice(): ?array
     {
         return $this->extOrderItemPrice;
     }
@@ -44,7 +44,7 @@ class ExtPromotionDTO implements \JsonSerializable {
     /**
      * @param array $extOrderItemPrice
      */
-    public function setExtOrderItemPrice(array $extOrderItemPrice): void
+    public function setExtOrderItemPrice(?array $extOrderItemPrice): void
     {
         $this->extOrderItemPrice = $extOrderItemPrice;
     }
@@ -52,7 +52,7 @@ class ExtPromotionDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getExtOrderPriceChangeLog(): array
+    public function getExtOrderPriceChangeLog(): ?array
     {
         return $this->extOrderPriceChangeLog;
     }
@@ -60,7 +60,7 @@ class ExtPromotionDTO implements \JsonSerializable {
     /**
      * @param array $extOrderPriceChangeLog
      */
-    public function setExtOrderPriceChangeLog(array $extOrderPriceChangeLog): void
+    public function setExtOrderPriceChangeLog(?array $extOrderPriceChangeLog): void
     {
         $this->extOrderPriceChangeLog = $extOrderPriceChangeLog;
     }
@@ -68,7 +68,7 @@ class ExtPromotionDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getExtOrderItemPriceChangeLog(): array
+    public function getExtOrderItemPriceChangeLog(): ?array
     {
         return $this->extOrderItemPriceChangeLog;
     }
@@ -76,7 +76,7 @@ class ExtPromotionDTO implements \JsonSerializable {
     /**
      * @param array $extOrderItemPriceChangeLog
      */
-    public function setExtOrderItemPriceChangeLog(array $extOrderItemPriceChangeLog): void
+    public function setExtOrderItemPriceChangeLog(?array $extOrderItemPriceChangeLog): void
     {
         $this->extOrderItemPriceChangeLog = $extOrderItemPriceChangeLog;
     }

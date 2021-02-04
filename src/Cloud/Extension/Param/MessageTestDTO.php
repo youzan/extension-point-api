@@ -34,7 +34,7 @@ class MessageTestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): int
+    public function getKdtId(): ?int
     {
         return $this->kdtId;
     }
@@ -42,7 +42,7 @@ class MessageTestDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(int $kdtId): void
+    public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -50,7 +50,7 @@ class MessageTestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMessageInfo(): string
+    public function getMessageInfo(): ?string
     {
         return $this->messageInfo;
     }
@@ -58,7 +58,7 @@ class MessageTestDTO implements \JsonSerializable {
     /**
      * @param string $messageInfo
      */
-    public function setMessageInfo(string $messageInfo): void
+    public function setMessageInfo(?string $messageInfo): void
     {
         $this->messageInfo = $messageInfo;
     }
@@ -66,7 +66,7 @@ class MessageTestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDataTime(): string
+    public function getDataTime(): ?string
     {
         return $this->dataTime;
     }
@@ -74,7 +74,7 @@ class MessageTestDTO implements \JsonSerializable {
     /**
      * @param string $dataTime
      */
-    public function setDataTime(string $dataTime): void
+    public function setDataTime(?string $dataTime): void
     {
         $this->dataTime = $dataTime;
     }

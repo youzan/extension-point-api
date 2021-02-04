@@ -34,7 +34,7 @@ class LocalDeliveryCommitAuditResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getAuditResult(): int
+    public function getAuditResult(): ?int
     {
         return $this->auditResult;
     }
@@ -42,7 +42,7 @@ class LocalDeliveryCommitAuditResponseDTO implements \JsonSerializable {
     /**
      * @param int $auditResult
      */
-    public function setAuditResult(int $auditResult): void
+    public function setAuditResult(?int $auditResult): void
     {
         $this->auditResult = $auditResult;
     }
@@ -50,7 +50,7 @@ class LocalDeliveryCommitAuditResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCode(): int
+    public function getCode(): ?int
     {
         return $this->code;
     }
@@ -58,7 +58,7 @@ class LocalDeliveryCommitAuditResponseDTO implements \JsonSerializable {
     /**
      * @param int $code
      */
-    public function setCode(int $code): void
+    public function setCode(?int $code): void
     {
         $this->code = $code;
     }
@@ -66,7 +66,7 @@ class LocalDeliveryCommitAuditResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getFailReason(): string
+    public function getFailReason(): ?string
     {
         return $this->failReason;
     }
@@ -74,7 +74,7 @@ class LocalDeliveryCommitAuditResponseDTO implements \JsonSerializable {
     /**
      * @param string $failReason
      */
-    public function setFailReason(string $failReason): void
+    public function setFailReason(?string $failReason): void
     {
         $this->failReason = $failReason;
     }

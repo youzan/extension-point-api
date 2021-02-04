@@ -100,7 +100,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getApplyNum(): string
+    public function getApplyNum(): ?string
     {
         return $this->applyNum;
     }
@@ -108,7 +108,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $applyNum
      */
-    public function setApplyNum(string $applyNum): void
+    public function setApplyNum(?string $applyNum): void
     {
         $this->applyNum = $applyNum;
     }
@@ -116,7 +116,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPreOutNum(): string
+    public function getPreOutNum(): ?string
     {
         return $this->preOutNum;
     }
@@ -124,7 +124,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $preOutNum
      */
-    public function setPreOutNum(string $preOutNum): void
+    public function setPreOutNum(?string $preOutNum): void
     {
         $this->preOutNum = $preOutNum;
     }
@@ -132,7 +132,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getActualOutNum(): string
+    public function getActualOutNum(): ?string
     {
         return $this->actualOutNum;
     }
@@ -140,7 +140,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $actualOutNum
      */
-    public function setActualOutNum(string $actualOutNum): void
+    public function setActualOutNum(?string $actualOutNum): void
     {
         $this->actualOutNum = $actualOutNum;
     }
@@ -148,7 +148,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getActualInNum(): string
+    public function getActualInNum(): ?string
     {
         return $this->actualInNum;
     }
@@ -156,7 +156,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $actualInNum
      */
-    public function setActualInNum(string $actualInNum): void
+    public function setActualInNum(?string $actualInNum): void
     {
         $this->actualInNum = $actualInNum;
     }
@@ -164,7 +164,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDeliveryCost(): string
+    public function getDeliveryCost(): ?string
     {
         return $this->deliveryCost;
     }
@@ -172,7 +172,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $deliveryCost
      */
-    public function setDeliveryCost(string $deliveryCost): void
+    public function setDeliveryCost(?string $deliveryCost): void
     {
         $this->deliveryCost = $deliveryCost;
     }
@@ -180,7 +180,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCheckedDeliveryCost(): string
+    public function getCheckedDeliveryCost(): ?string
     {
         return $this->checkedDeliveryCost;
     }
@@ -188,7 +188,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $checkedDeliveryCost
      */
-    public function setCheckedDeliveryCost(string $checkedDeliveryCost): void
+    public function setCheckedDeliveryCost(?string $checkedDeliveryCost): void
     {
         $this->checkedDeliveryCost = $checkedDeliveryCost;
     }
@@ -196,7 +196,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuCode(): string
+    public function getSkuCode(): ?string
     {
         return $this->skuCode;
     }
@@ -204,7 +204,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $skuCode
      */
-    public function setSkuCode(string $skuCode): void
+    public function setSkuCode(?string $skuCode): void
     {
         $this->skuCode = $skuCode;
     }
@@ -212,7 +212,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProductName(): string
+    public function getProductName(): ?string
     {
         return $this->productName;
     }
@@ -220,7 +220,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $productName
      */
-    public function setProductName(string $productName): void
+    public function setProductName(?string $productName): void
     {
         $this->productName = $productName;
     }
@@ -228,7 +228,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuNo(): string
+    public function getSkuNo(): ?string
     {
         return $this->skuNo;
     }
@@ -236,7 +236,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $skuNo
      */
-    public function setSkuNo(string $skuNo): void
+    public function setSkuNo(?string $skuNo): void
     {
         $this->skuNo = $skuNo;
     }
@@ -244,7 +244,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUnit(): string
+    public function getUnit(): ?string
     {
         return $this->unit;
     }
@@ -252,7 +252,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $unit
      */
-    public function setUnit(string $unit): void
+    public function setUnit(?string $unit): void
     {
         $this->unit = $unit;
     }
@@ -260,7 +260,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getWithTaxCost(): string
+    public function getWithTaxCost(): ?string
     {
         return $this->withTaxCost;
     }
@@ -268,7 +268,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $withTaxCost
      */
-    public function setWithTaxCost(string $withTaxCost): void
+    public function setWithTaxCost(?string $withTaxCost): void
     {
         $this->withTaxCost = $withTaxCost;
     }
@@ -276,7 +276,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getWithoutTaxCost(): string
+    public function getWithoutTaxCost(): ?string
     {
         return $this->withoutTaxCost;
     }
@@ -284,7 +284,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $withoutTaxCost
      */
-    public function setWithoutTaxCost(string $withoutTaxCost): void
+    public function setWithoutTaxCost(?string $withoutTaxCost): void
     {
         $this->withoutTaxCost = $withoutTaxCost;
     }
@@ -292,7 +292,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getWithoutTaxAmount(): string
+    public function getWithoutTaxAmount(): ?string
     {
         return $this->withoutTaxAmount;
     }
@@ -300,7 +300,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $withoutTaxAmount
      */
-    public function setWithoutTaxAmount(string $withoutTaxAmount): void
+    public function setWithoutTaxAmount(?string $withoutTaxAmount): void
     {
         $this->withoutTaxAmount = $withoutTaxAmount;
     }
@@ -308,7 +308,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getWithTaxAmount(): string
+    public function getWithTaxAmount(): ?string
     {
         return $this->withTaxAmount;
     }
@@ -316,7 +316,7 @@ class GoodsApplyOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $withTaxAmount
      */
-    public function setWithTaxAmount(string $withTaxAmount): void
+    public function setWithTaxAmount(?string $withTaxAmount): void
     {
         $this->withTaxAmount = $withTaxAmount;
     }
