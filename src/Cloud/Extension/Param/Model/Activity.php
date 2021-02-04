@@ -46,7 +46,7 @@ class Activity implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getAppType(): ?int
+    public function getAppType(): int
     {
         return $this->appType;
     }
@@ -54,7 +54,7 @@ class Activity implements \JsonSerializable {
     /**
      * @param int $appType
      */
-    public function setAppType(?int $appType): void
+    public function setAppType(int $appType): void
     {
         $this->appType = $appType;
     }
@@ -62,7 +62,7 @@ class Activity implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getActivityId(): ?int
+    public function getActivityId(): int
     {
         return $this->activityId;
     }
@@ -70,7 +70,7 @@ class Activity implements \JsonSerializable {
     /**
      * @param int $activityId
      */
-    public function setActivityId(?int $activityId): void
+    public function setActivityId(int $activityId): void
     {
         $this->activityId = $activityId;
     }
@@ -78,7 +78,7 @@ class Activity implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPromotionLevel(): ?string
+    public function getPromotionLevel(): string
     {
         return $this->promotionLevel;
     }
@@ -86,7 +86,7 @@ class Activity implements \JsonSerializable {
     /**
      * @param string $promotionLevel
      */
-    public function setPromotionLevel(?string $promotionLevel): void
+    public function setPromotionLevel(string $promotionLevel): void
     {
         $this->promotionLevel = $promotionLevel;
     }
@@ -94,7 +94,7 @@ class Activity implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDecrease(): ?int
+    public function getDecrease(): int
     {
         return $this->decrease;
     }
@@ -102,7 +102,7 @@ class Activity implements \JsonSerializable {
     /**
      * @param int $decrease
      */
-    public function setDecrease(?int $decrease): void
+    public function setDecrease(int $decrease): void
     {
         $this->decrease = $decrease;
     }
@@ -110,7 +110,7 @@ class Activity implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getExtra(): ?string
+    public function getExtra(): string
     {
         return $this->extra;
     }
@@ -118,7 +118,7 @@ class Activity implements \JsonSerializable {
     /**
      * @param string $extra
      */
-    public function setExtra(?string $extra): void
+    public function setExtra(string $extra): void
     {
         $this->extra = $extra;
     }

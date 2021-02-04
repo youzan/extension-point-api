@@ -28,7 +28,7 @@ class ApplyOrderReturnItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuCode(): ?string
+    public function getSkuCode(): string
     {
         return $this->skuCode;
     }
@@ -36,7 +36,7 @@ class ApplyOrderReturnItemDTO implements \JsonSerializable {
     /**
      * @param string $skuCode
      */
-    public function setSkuCode(?string $skuCode): void
+    public function setSkuCode(string $skuCode): void
     {
         $this->skuCode = $skuCode;
     }
@@ -44,7 +44,7 @@ class ApplyOrderReturnItemDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPlanQty(): ?string
+    public function getPlanQty(): string
     {
         return $this->planQty;
     }
@@ -52,7 +52,7 @@ class ApplyOrderReturnItemDTO implements \JsonSerializable {
     /**
      * @param string $planQty
      */
-    public function setPlanQty(?string $planQty): void
+    public function setPlanQty(string $planQty): void
     {
         $this->planQty = $planQty;
     }

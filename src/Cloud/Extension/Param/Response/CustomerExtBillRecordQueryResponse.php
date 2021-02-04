@@ -28,7 +28,7 @@ class CustomerExtBillRecordQueryResponse implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getValueCardBillRecords(): ?array
+    public function getValueCardBillRecords(): array
     {
         return $this->valueCardBillRecords;
     }
@@ -36,7 +36,7 @@ class CustomerExtBillRecordQueryResponse implements \JsonSerializable {
     /**
      * @param array $valueCardBillRecords
      */
-    public function setValueCardBillRecords(?array $valueCardBillRecords): void
+    public function setValueCardBillRecords(array $valueCardBillRecords): void
     {
         $this->valueCardBillRecords = $valueCardBillRecords;
     }
@@ -44,7 +44,7 @@ class CustomerExtBillRecordQueryResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalNum(): ?int
+    public function getTotalNum(): int
     {
         return $this->totalNum;
     }
@@ -52,7 +52,7 @@ class CustomerExtBillRecordQueryResponse implements \JsonSerializable {
     /**
      * @param int $totalNum
      */
-    public function setTotalNum(?int $totalNum): void
+    public function setTotalNum(int $totalNum): void
     {
         $this->totalNum = $totalNum;
     }

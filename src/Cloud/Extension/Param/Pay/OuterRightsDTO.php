@@ -28,7 +28,7 @@ class OuterRightsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRightsName(): ?string
+    public function getRightsName(): string
     {
         return $this->rightsName;
     }
@@ -36,7 +36,7 @@ class OuterRightsDTO implements \JsonSerializable {
     /**
      * @param string $rightsName
      */
-    public function setRightsName(?string $rightsName): void
+    public function setRightsName(string $rightsName): void
     {
         $this->rightsName = $rightsName;
     }
@@ -44,7 +44,7 @@ class OuterRightsDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCount(): ?int
+    public function getCount(): int
     {
         return $this->count;
     }
@@ -52,7 +52,7 @@ class OuterRightsDTO implements \JsonSerializable {
     /**
      * @param int $count
      */
-    public function setCount(?int $count): void
+    public function setCount(int $count): void
     {
         $this->count = $count;
     }

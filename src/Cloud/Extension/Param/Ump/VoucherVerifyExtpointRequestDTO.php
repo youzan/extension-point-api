@@ -52,7 +52,7 @@ class VoucherVerifyExtpointRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -60,7 +60,7 @@ class VoucherVerifyExtpointRequestDTO implements \JsonSerializable {
     /**
      * @param int $id
      */
-    public function setId(?int $id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
@@ -68,7 +68,7 @@ class VoucherVerifyExtpointRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): ?string
+    public function getYzOpenId(): string
     {
         return $this->yzOpenId;
     }
@@ -76,7 +76,7 @@ class VoucherVerifyExtpointRequestDTO implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(?string $yzOpenId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -84,7 +84,7 @@ class VoucherVerifyExtpointRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrder(): ?string
+    public function getOrder(): string
     {
         return $this->order;
     }
@@ -92,7 +92,7 @@ class VoucherVerifyExtpointRequestDTO implements \JsonSerializable {
     /**
      * @param string $order
      */
-    public function setOrder(?string $order): void
+    public function setOrder(string $order): void
     {
         $this->order = $order;
     }
@@ -100,7 +100,7 @@ class VoucherVerifyExtpointRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderSource(): ?string
+    public function getOrderSource(): string
     {
         return $this->orderSource;
     }
@@ -108,7 +108,7 @@ class VoucherVerifyExtpointRequestDTO implements \JsonSerializable {
     /**
      * @param string $orderSource
      */
-    public function setOrderSource(?string $orderSource): void
+    public function setOrderSource(string $orderSource): void
     {
         $this->orderSource = $orderSource;
     }
@@ -116,7 +116,7 @@ class VoucherVerifyExtpointRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getVersionNo(): ?int
+    public function getVersionNo(): int
     {
         return $this->versionNo;
     }
@@ -124,7 +124,7 @@ class VoucherVerifyExtpointRequestDTO implements \JsonSerializable {
     /**
      * @param int $versionNo
      */
-    public function setVersionNo(?int $versionNo): void
+    public function setVersionNo(int $versionNo): void
     {
         $this->versionNo = $versionNo;
     }
@@ -132,7 +132,7 @@ class VoucherVerifyExtpointRequestDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtMap(): ?stdClass
+    public function getExtMap(): stdClass
     {
         return $this->extMap;
     }
@@ -140,7 +140,7 @@ class VoucherVerifyExtpointRequestDTO implements \JsonSerializable {
     /**
      * @param stdClass $extMap
      */
-    public function setExtMap(?stdClass $extMap): void
+    public function setExtMap(stdClass $extMap): void
     {
         $this->extMap = $extMap;
     }

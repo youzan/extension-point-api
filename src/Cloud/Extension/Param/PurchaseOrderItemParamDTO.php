@@ -70,7 +70,7 @@ class PurchaseOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getWithTaxUnitCost(): ?string
+    public function getWithTaxUnitCost(): string
     {
         return $this->withTaxUnitCost;
     }
@@ -78,7 +78,7 @@ class PurchaseOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $withTaxUnitCost
      */
-    public function setWithTaxUnitCost(?string $withTaxUnitCost): void
+    public function setWithTaxUnitCost(string $withTaxUnitCost): void
     {
         $this->withTaxUnitCost = $withTaxUnitCost;
     }
@@ -86,7 +86,7 @@ class PurchaseOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getWithoutTaxUnitCost(): ?string
+    public function getWithoutTaxUnitCost(): string
     {
         return $this->withoutTaxUnitCost;
     }
@@ -94,7 +94,7 @@ class PurchaseOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $withoutTaxUnitCost
      */
-    public function setWithoutTaxUnitCost(?string $withoutTaxUnitCost): void
+    public function setWithoutTaxUnitCost(string $withoutTaxUnitCost): void
     {
         $this->withoutTaxUnitCost = $withoutTaxUnitCost;
     }
@@ -102,7 +102,7 @@ class PurchaseOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOutputTaxRate(): ?string
+    public function getOutputTaxRate(): string
     {
         return $this->outputTaxRate;
     }
@@ -110,7 +110,7 @@ class PurchaseOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $outputTaxRate
      */
-    public function setOutputTaxRate(?string $outputTaxRate): void
+    public function setOutputTaxRate(string $outputTaxRate): void
     {
         $this->outputTaxRate = $outputTaxRate;
     }
@@ -118,7 +118,7 @@ class PurchaseOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getInputTaxRate(): ?string
+    public function getInputTaxRate(): string
     {
         return $this->inputTaxRate;
     }
@@ -126,7 +126,7 @@ class PurchaseOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $inputTaxRate
      */
-    public function setInputTaxRate(?string $inputTaxRate): void
+    public function setInputTaxRate(string $inputTaxRate): void
     {
         $this->inputTaxRate = $inputTaxRate;
     }
@@ -134,7 +134,7 @@ class PurchaseOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuCode(): ?string
+    public function getSkuCode(): string
     {
         return $this->skuCode;
     }
@@ -142,7 +142,7 @@ class PurchaseOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $skuCode
      */
-    public function setSkuCode(?string $skuCode): void
+    public function setSkuCode(string $skuCode): void
     {
         $this->skuCode = $skuCode;
     }
@@ -150,7 +150,7 @@ class PurchaseOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuNo(): ?string
+    public function getSkuNo(): string
     {
         return $this->skuNo;
     }
@@ -158,7 +158,7 @@ class PurchaseOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $skuNo
      */
-    public function setSkuNo(?string $skuNo): void
+    public function setSkuNo(string $skuNo): void
     {
         $this->skuNo = $skuNo;
     }
@@ -166,7 +166,7 @@ class PurchaseOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProductName(): ?string
+    public function getProductName(): string
     {
         return $this->productName;
     }
@@ -174,7 +174,7 @@ class PurchaseOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $productName
      */
-    public function setProductName(?string $productName): void
+    public function setProductName(string $productName): void
     {
         $this->productName = $productName;
     }
@@ -182,7 +182,7 @@ class PurchaseOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUnit(): ?string
+    public function getUnit(): string
     {
         return $this->unit;
     }
@@ -190,7 +190,7 @@ class PurchaseOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $unit
      */
-    public function setUnit(?string $unit): void
+    public function setUnit(string $unit): void
     {
         $this->unit = $unit;
     }
@@ -198,7 +198,7 @@ class PurchaseOrderItemParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getApplyNum(): ?string
+    public function getApplyNum(): string
     {
         return $this->applyNum;
     }
@@ -206,7 +206,7 @@ class PurchaseOrderItemParamDTO implements \JsonSerializable {
     /**
      * @param string $applyNum
      */
-    public function setApplyNum(?string $applyNum): void
+    public function setApplyNum(string $applyNum): void
     {
         $this->applyNum = $applyNum;
     }

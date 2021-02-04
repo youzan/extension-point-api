@@ -40,7 +40,7 @@ class CouponRightsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCouponId(): ?string
+    public function getCouponId(): string
     {
         return $this->couponId;
     }
@@ -48,7 +48,7 @@ class CouponRightsDTO implements \JsonSerializable {
     /**
      * @param string $couponId
      */
-    public function setCouponId(?string $couponId): void
+    public function setCouponId(string $couponId): void
     {
         $this->couponId = $couponId;
     }
@@ -56,7 +56,7 @@ class CouponRightsDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCouponName(): ?string
+    public function getCouponName(): string
     {
         return $this->couponName;
     }
@@ -64,7 +64,7 @@ class CouponRightsDTO implements \JsonSerializable {
     /**
      * @param string $couponName
      */
-    public function setCouponName(?string $couponName): void
+    public function setCouponName(string $couponName): void
     {
         $this->couponName = $couponName;
     }
@@ -72,7 +72,7 @@ class CouponRightsDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCount(): ?int
+    public function getCount(): int
     {
         return $this->count;
     }
@@ -80,7 +80,7 @@ class CouponRightsDTO implements \JsonSerializable {
     /**
      * @param int $count
      */
-    public function setCount(?int $count): void
+    public function setCount(int $count): void
     {
         $this->count = $count;
     }
@@ -88,7 +88,7 @@ class CouponRightsDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStatus(): ?int
+    public function getStatus(): int
     {
         return $this->status;
     }
@@ -96,7 +96,7 @@ class CouponRightsDTO implements \JsonSerializable {
     /**
      * @param int $status
      */
-    public function setStatus(?int $status): void
+    public function setStatus(int $status): void
     {
         $this->status = $status;
     }

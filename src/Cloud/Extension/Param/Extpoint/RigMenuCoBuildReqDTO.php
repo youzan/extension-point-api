@@ -34,7 +34,7 @@ class RigMenuCoBuildReqDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getKdtId(): ?string
+    public function getKdtId(): string
     {
         return $this->kdtId;
     }
@@ -42,7 +42,7 @@ class RigMenuCoBuildReqDTO implements \JsonSerializable {
     /**
      * @param string $kdtId
      */
-    public function setKdtId(?string $kdtId): void
+    public function setKdtId(string $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -50,7 +50,7 @@ class RigMenuCoBuildReqDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBizCode(): ?string
+    public function getBizCode(): string
     {
         return $this->bizCode;
     }
@@ -58,7 +58,7 @@ class RigMenuCoBuildReqDTO implements \JsonSerializable {
     /**
      * @param string $bizCode
      */
-    public function setBizCode(?string $bizCode): void
+    public function setBizCode(string $bizCode): void
     {
         $this->bizCode = $bizCode;
     }
@@ -66,7 +66,7 @@ class RigMenuCoBuildReqDTO implements \JsonSerializable {
     /**
      * @return RigExtStaffEntity
      */
-    public function getStaffInfo(): ?RigExtStaffEntity
+    public function getStaffInfo(): RigExtStaffEntity
     {
         return $this->staffInfo;
     }
@@ -74,7 +74,7 @@ class RigMenuCoBuildReqDTO implements \JsonSerializable {
     /**
      * @param RigExtStaffEntity $staffInfo
      */
-    public function setStaffInfo(?RigExtStaffEntity $staffInfo): void
+    public function setStaffInfo(RigExtStaffEntity $staffInfo): void
     {
         $this->staffInfo = $staffInfo;
     }

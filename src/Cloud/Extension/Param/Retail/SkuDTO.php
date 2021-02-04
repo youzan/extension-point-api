@@ -46,7 +46,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRetailPrice(): ?string
+    public function getRetailPrice(): string
     {
         return $this->retailPrice;
     }
@@ -54,7 +54,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @param string $retailPrice
      */
-    public function setRetailPrice(?string $retailPrice): void
+    public function setRetailPrice(string $retailPrice): void
     {
         $this->retailPrice = $retailPrice;
     }
@@ -62,7 +62,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuCode(): ?string
+    public function getSkuCode(): string
     {
         return $this->skuCode;
     }
@@ -70,7 +70,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @param string $skuCode
      */
-    public function setSkuCode(?string $skuCode): void
+    public function setSkuCode(string $skuCode): void
     {
         $this->skuCode = $skuCode;
     }
@@ -78,7 +78,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSkuNo(): ?string
+    public function getSkuNo(): string
     {
         return $this->skuNo;
     }
@@ -86,7 +86,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @param string $skuNo
      */
-    public function setSkuNo(?string $skuNo): void
+    public function setSkuNo(string $skuNo): void
     {
         $this->skuNo = $skuNo;
     }
@@ -94,7 +94,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getBarCodes(): ?array
+    public function getBarCodes(): array
     {
         return $this->barCodes;
     }
@@ -102,7 +102,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @param array $barCodes
      */
-    public function setBarCodes(?array $barCodes): void
+    public function setBarCodes(array $barCodes): void
     {
         $this->barCodes = $barCodes;
     }
@@ -110,7 +110,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getSpecs(): ?array
+    public function getSpecs(): array
     {
         return $this->specs;
     }
@@ -118,7 +118,7 @@ class SkuDTO implements \JsonSerializable {
     /**
      * @param array $specs
      */
-    public function setSpecs(?array $specs): void
+    public function setSpecs(array $specs): void
     {
         $this->specs = $specs;
     }

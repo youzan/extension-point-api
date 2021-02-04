@@ -76,7 +76,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @return ThirdPartyRefundNsqMessageHeadersDTO
      */
-    public function getHeaders(): ?ThirdPartyRefundNsqMessageHeadersDTO
+    public function getHeaders(): ThirdPartyRefundNsqMessageHeadersDTO
     {
         return $this->headers;
     }
@@ -84,7 +84,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @param ThirdPartyRefundNsqMessageHeadersDTO $headers
      */
-    public function setHeaders(?ThirdPartyRefundNsqMessageHeadersDTO $headers): void
+    public function setHeaders(ThirdPartyRefundNsqMessageHeadersDTO $headers): void
     {
         $this->headers = $headers;
     }
@@ -92,7 +92,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -100,7 +100,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -108,7 +108,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -116,7 +116,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -124,7 +124,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOutBizNo(): ?string
+    public function getOutBizNo(): string
     {
         return $this->outBizNo;
     }
@@ -132,7 +132,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @param string $outBizNo
      */
-    public function setOutBizNo(?string $outBizNo): void
+    public function setOutBizNo(string $outBizNo): void
     {
         $this->outBizNo = $outBizNo;
     }
@@ -140,7 +140,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundId(): ?string
+    public function getRefundId(): string
     {
         return $this->refundId;
     }
@@ -148,7 +148,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @param string $refundId
      */
-    public function setRefundId(?string $refundId): void
+    public function setRefundId(string $refundId): void
     {
         $this->refundId = $refundId;
     }
@@ -156,7 +156,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPayId(): ?string
+    public function getPayId(): string
     {
         return $this->payId;
     }
@@ -164,7 +164,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @param string $payId
      */
-    public function setPayId(?string $payId): void
+    public function setPayId(string $payId): void
     {
         $this->payId = $payId;
     }
@@ -172,7 +172,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRefundResultCode(): ?int
+    public function getRefundResultCode(): int
     {
         return $this->refundResultCode;
     }
@@ -180,7 +180,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @param int $refundResultCode
      */
-    public function setRefundResultCode(?int $refundResultCode): void
+    public function setRefundResultCode(int $refundResultCode): void
     {
         $this->refundResultCode = $refundResultCode;
     }
@@ -188,7 +188,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getFailDesc(): ?string
+    public function getFailDesc(): string
     {
         return $this->failDesc;
     }
@@ -196,7 +196,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @param string $failDesc
      */
-    public function setFailDesc(?string $failDesc): void
+    public function setFailDesc(string $failDesc): void
     {
         $this->failDesc = $failDesc;
     }
@@ -204,7 +204,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRefundFee(): ?int
+    public function getRefundFee(): int
     {
         return $this->refundFee;
     }
@@ -212,7 +212,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @param int $refundFee
      */
-    public function setRefundFee(?int $refundFee): void
+    public function setRefundFee(int $refundFee): void
     {
         $this->refundFee = $refundFee;
     }
@@ -220,7 +220,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getExtensionInfo(): ?string
+    public function getExtensionInfo(): string
     {
         return $this->extensionInfo;
     }
@@ -228,7 +228,7 @@ class ThirdPartyRefundNsqMessageDTO implements \JsonSerializable {
     /**
      * @param string $extensionInfo
      */
-    public function setExtensionInfo(?string $extensionInfo): void
+    public function setExtensionInfo(string $extensionInfo): void
     {
         $this->extensionInfo = $extensionInfo;
     }

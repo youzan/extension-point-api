@@ -94,7 +94,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -102,7 +102,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @param int $id
      */
-    public function setId(?int $id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
@@ -110,7 +110,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTitle(): ?string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -118,7 +118,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @param string $title
      */
-    public function setTitle(?string $title): void
+    public function setTitle(string $title): void
     {
         $this->title = $title;
     }
@@ -126,7 +126,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getDescription(): ?string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -134,7 +134,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @param string $description
      */
-    public function setDescription(?string $description): void
+    public function setDescription(string $description): void
     {
         $this->description = $description;
     }
@@ -142,7 +142,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPriceCondition(): ?int
+    public function getPriceCondition(): int
     {
         return $this->priceCondition;
     }
@@ -150,7 +150,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @param int $priceCondition
      */
-    public function setPriceCondition(?int $priceCondition): void
+    public function setPriceCondition(int $priceCondition): void
     {
         $this->priceCondition = $priceCondition;
     }
@@ -158,7 +158,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPreferentialType(): ?int
+    public function getPreferentialType(): int
     {
         return $this->preferentialType;
     }
@@ -166,7 +166,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @param int $preferentialType
      */
-    public function setPreferentialType(?int $preferentialType): void
+    public function setPreferentialType(int $preferentialType): void
     {
         $this->preferentialType = $preferentialType;
     }
@@ -174,7 +174,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPreferentialValue(): ?int
+    public function getPreferentialValue(): int
     {
         return $this->preferentialValue;
     }
@@ -182,7 +182,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @param int $preferentialValue
      */
-    public function setPreferentialValue(?int $preferentialValue): void
+    public function setPreferentialValue(int $preferentialValue): void
     {
         $this->preferentialValue = $preferentialValue;
     }
@@ -190,7 +190,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBeginAt(): ?int
+    public function getBeginAt(): int
     {
         return $this->beginAt;
     }
@@ -198,7 +198,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @param int $beginAt
      */
-    public function setBeginAt(?int $beginAt): void
+    public function setBeginAt(int $beginAt): void
     {
         $this->beginAt = $beginAt;
     }
@@ -206,7 +206,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getEndAt(): ?int
+    public function getEndAt(): int
     {
         return $this->endAt;
     }
@@ -214,7 +214,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @param int $endAt
      */
-    public function setEndAt(?int $endAt): void
+    public function setEndAt(int $endAt): void
     {
         $this->endAt = $endAt;
     }
@@ -222,7 +222,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getParticipateGoodsType(): ?int
+    public function getParticipateGoodsType(): int
     {
         return $this->participateGoodsType;
     }
@@ -230,7 +230,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @param int $participateGoodsType
      */
-    public function setParticipateGoodsType(?int $participateGoodsType): void
+    public function setParticipateGoodsType(int $participateGoodsType): void
     {
         $this->participateGoodsType = $participateGoodsType;
     }
@@ -238,7 +238,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSize(): ?int
+    public function getSize(): int
     {
         return $this->size;
     }
@@ -246,7 +246,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @param int $size
      */
-    public function setSize(?int $size): void
+    public function setSize(int $size): void
     {
         $this->size = $size;
     }
@@ -254,7 +254,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStockSize(): ?int
+    public function getStockSize(): int
     {
         return $this->stockSize;
     }
@@ -262,7 +262,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @param int $stockSize
      */
-    public function setStockSize(?int $stockSize): void
+    public function setStockSize(int $stockSize): void
     {
         $this->stockSize = $stockSize;
     }
@@ -270,7 +270,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getStatus(): ?int
+    public function getStatus(): int
     {
         return $this->status;
     }
@@ -278,7 +278,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @param int $status
      */
-    public function setStatus(?int $status): void
+    public function setStatus(int $status): void
     {
         $this->status = $status;
     }
@@ -286,7 +286,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCreatedAt(): ?int
+    public function getCreatedAt(): int
     {
         return $this->createdAt;
     }
@@ -294,7 +294,7 @@ class CouponGroupBaseExt implements \JsonSerializable {
     /**
      * @param int $createdAt
      */
-    public function setCreatedAt(?int $createdAt): void
+    public function setCreatedAt(int $createdAt): void
     {
         $this->createdAt = $createdAt;
     }

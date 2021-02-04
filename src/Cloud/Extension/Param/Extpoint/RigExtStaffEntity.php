@@ -34,7 +34,7 @@ class RigExtStaffEntity implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getStaffId(): ?string
+    public function getStaffId(): string
     {
         return $this->staffId;
     }
@@ -42,7 +42,7 @@ class RigExtStaffEntity implements \JsonSerializable {
     /**
      * @param string $staffId
      */
-    public function setStaffId(?string $staffId): void
+    public function setStaffId(string $staffId): void
     {
         $this->staffId = $staffId;
     }
@@ -50,7 +50,7 @@ class RigExtStaffEntity implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMobile(): ?string
+    public function getMobile(): string
     {
         return $this->mobile;
     }
@@ -58,7 +58,7 @@ class RigExtStaffEntity implements \JsonSerializable {
     /**
      * @param string $mobile
      */
-    public function setMobile(?string $mobile): void
+    public function setMobile(string $mobile): void
     {
         $this->mobile = $mobile;
     }
@@ -66,7 +66,7 @@ class RigExtStaffEntity implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getRoles(): ?array
+    public function getRoles(): array
     {
         return $this->roles;
     }
@@ -74,7 +74,7 @@ class RigExtStaffEntity implements \JsonSerializable {
     /**
      * @param array $roles
      */
-    public function setRoles(?array $roles): void
+    public function setRoles(array $roles): void
     {
         $this->roles = $roles;
     }

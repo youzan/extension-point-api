@@ -100,7 +100,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOriginalShopId(): ?string
+    public function getOriginalShopId(): string
     {
         return $this->originalShopId;
     }
@@ -108,7 +108,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @param string $originalShopId
      */
-    public function setOriginalShopId(?string $originalShopId): void
+    public function setOriginalShopId(string $originalShopId): void
     {
         $this->originalShopId = $originalShopId;
     }
@@ -116,7 +116,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getShopName(): ?string
+    public function getShopName(): string
     {
         return $this->shopName;
     }
@@ -124,7 +124,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @param string $shopName
      */
-    public function setShopName(?string $shopName): void
+    public function setShopName(string $shopName): void
     {
         $this->shopName = $shopName;
     }
@@ -132,7 +132,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBusiness(): ?int
+    public function getBusiness(): int
     {
         return $this->business;
     }
@@ -140,7 +140,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @param int $business
      */
-    public function setBusiness(?int $business): void
+    public function setBusiness(int $business): void
     {
         $this->business = $business;
     }
@@ -148,7 +148,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProvinceName(): ?string
+    public function getProvinceName(): string
     {
         return $this->provinceName;
     }
@@ -156,7 +156,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @param string $provinceName
      */
-    public function setProvinceName(?string $provinceName): void
+    public function setProvinceName(string $provinceName): void
     {
         $this->provinceName = $provinceName;
     }
@@ -164,7 +164,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCityName(): ?string
+    public function getCityName(): string
     {
         return $this->cityName;
     }
@@ -172,7 +172,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @param string $cityName
      */
-    public function setCityName(?string $cityName): void
+    public function setCityName(string $cityName): void
     {
         $this->cityName = $cityName;
     }
@@ -180,7 +180,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCountyName(): ?string
+    public function getCountyName(): string
     {
         return $this->countyName;
     }
@@ -188,7 +188,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @param string $countyName
      */
-    public function setCountyName(?string $countyName): void
+    public function setCountyName(string $countyName): void
     {
         $this->countyName = $countyName;
     }
@@ -196,7 +196,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCountyCode(): ?string
+    public function getCountyCode(): string
     {
         return $this->countyCode;
     }
@@ -204,7 +204,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @param string $countyCode
      */
-    public function setCountyCode(?string $countyCode): void
+    public function setCountyCode(string $countyCode): void
     {
         $this->countyCode = $countyCode;
     }
@@ -212,7 +212,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getShopAddress(): ?string
+    public function getShopAddress(): string
     {
         return $this->shopAddress;
     }
@@ -220,7 +220,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @param string $shopAddress
      */
-    public function setShopAddress(?string $shopAddress): void
+    public function setShopAddress(string $shopAddress): void
     {
         $this->shopAddress = $shopAddress;
     }
@@ -228,7 +228,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPositionSource(): ?int
+    public function getPositionSource(): int
     {
         return $this->positionSource;
     }
@@ -236,7 +236,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @param int $positionSource
      */
-    public function setPositionSource(?int $positionSource): void
+    public function setPositionSource(int $positionSource): void
     {
         $this->positionSource = $positionSource;
     }
@@ -244,7 +244,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getContactName(): ?string
+    public function getContactName(): string
     {
         return $this->contactName;
     }
@@ -252,7 +252,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @param string $contactName
      */
-    public function setContactName(?string $contactName): void
+    public function setContactName(string $contactName): void
     {
         $this->contactName = $contactName;
     }
@@ -260,7 +260,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getContactPhone(): ?string
+    public function getContactPhone(): string
     {
         return $this->contactPhone;
     }
@@ -268,7 +268,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @param string $contactPhone
      */
-    public function setContactPhone(?string $contactPhone): void
+    public function setContactPhone(string $contactPhone): void
     {
         $this->contactPhone = $contactPhone;
     }
@@ -276,7 +276,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -284,7 +284,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -292,7 +292,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLng(): ?string
+    public function getLng(): string
     {
         return $this->lng;
     }
@@ -300,7 +300,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @param string $lng
      */
-    public function setLng(?string $lng): void
+    public function setLng(string $lng): void
     {
         $this->lng = $lng;
     }
@@ -308,7 +308,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLat(): ?string
+    public function getLat(): string
     {
         return $this->lat;
     }
@@ -316,7 +316,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     /**
      * @param string $lat
      */
-    public function setLat(?string $lat): void
+    public function setLat(string $lat): void
     {
         $this->lat = $lat;
     }

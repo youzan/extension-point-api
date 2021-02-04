@@ -46,7 +46,7 @@ class ValueCardBuyDetailDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getProductSpuNo(): ?string
+    public function getProductSpuNo(): string
     {
         return $this->productSpuNo;
     }
@@ -54,7 +54,7 @@ class ValueCardBuyDetailDTO implements \JsonSerializable {
     /**
      * @param string $productSpuNo
      */
-    public function setProductSpuNo(?string $productSpuNo): void
+    public function setProductSpuNo(string $productSpuNo): void
     {
         $this->productSpuNo = $productSpuNo;
     }
@@ -62,7 +62,7 @@ class ValueCardBuyDetailDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTemplateName(): ?string
+    public function getTemplateName(): string
     {
         return $this->templateName;
     }
@@ -70,7 +70,7 @@ class ValueCardBuyDetailDTO implements \JsonSerializable {
     /**
      * @param string $templateName
      */
-    public function setTemplateName(?string $templateName): void
+    public function setTemplateName(string $templateName): void
     {
         $this->templateName = $templateName;
     }
@@ -78,7 +78,7 @@ class ValueCardBuyDetailDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTemplateImg(): ?string
+    public function getTemplateImg(): string
     {
         return $this->templateImg;
     }
@@ -86,7 +86,7 @@ class ValueCardBuyDetailDTO implements \JsonSerializable {
     /**
      * @param string $templateImg
      */
-    public function setTemplateImg(?string $templateImg): void
+    public function setTemplateImg(string $templateImg): void
     {
         $this->templateImg = $templateImg;
     }
@@ -94,7 +94,7 @@ class ValueCardBuyDetailDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getInstructions(): ?string
+    public function getInstructions(): string
     {
         return $this->instructions;
     }
@@ -102,7 +102,7 @@ class ValueCardBuyDetailDTO implements \JsonSerializable {
     /**
      * @param string $instructions
      */
-    public function setInstructions(?string $instructions): void
+    public function setInstructions(string $instructions): void
     {
         $this->instructions = $instructions;
     }
@@ -110,7 +110,7 @@ class ValueCardBuyDetailDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getProductInfos(): ?array
+    public function getProductInfos(): array
     {
         return $this->productInfos;
     }
@@ -118,7 +118,7 @@ class ValueCardBuyDetailDTO implements \JsonSerializable {
     /**
      * @param array $productInfos
      */
-    public function setProductInfos(?array $productInfos): void
+    public function setProductInfos(array $productInfos): void
     {
         $this->productInfos = $productInfos;
     }

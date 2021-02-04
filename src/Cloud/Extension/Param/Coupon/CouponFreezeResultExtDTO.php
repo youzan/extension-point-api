@@ -22,7 +22,7 @@ class CouponFreezeResultExtDTO implements \JsonSerializable {
     /**
      * @return CalculatedCouponExtDTO
      */
-    public function getCouponExtDTO(): ?CalculatedCouponExtDTO
+    public function getCouponExtDTO(): CalculatedCouponExtDTO
     {
         return $this->couponExtDTO;
     }
@@ -30,7 +30,7 @@ class CouponFreezeResultExtDTO implements \JsonSerializable {
     /**
      * @param CalculatedCouponExtDTO $couponExtDTO
      */
-    public function setCouponExtDTO(?CalculatedCouponExtDTO $couponExtDTO): void
+    public function setCouponExtDTO(CalculatedCouponExtDTO $couponExtDTO): void
     {
         $this->couponExtDTO = $couponExtDTO;
     }

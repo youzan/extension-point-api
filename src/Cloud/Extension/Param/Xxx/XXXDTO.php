@@ -28,7 +28,7 @@ class XXXDTO implements \JsonSerializable {
     /**
      * @return YYYDTO
      */
-    public function getData1(): ?YYYDTO
+    public function getData1(): YYYDTO
     {
         return $this->data1;
     }
@@ -36,7 +36,7 @@ class XXXDTO implements \JsonSerializable {
     /**
      * @param YYYDTO $data1
      */
-    public function setData1(?YYYDTO $data1): void
+    public function setData1(YYYDTO $data1): void
     {
         $this->data1 = $data1;
     }
@@ -44,7 +44,7 @@ class XXXDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getData2(): ?string
+    public function getData2(): string
     {
         return $this->data2;
     }
@@ -52,7 +52,7 @@ class XXXDTO implements \JsonSerializable {
     /**
      * @param string $data2
      */
-    public function setData2(?string $data2): void
+    public function setData2(string $data2): void
     {
         $this->data2 = $data2;
     }

@@ -34,7 +34,7 @@ class ValueCardExtRefundQueryRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundDetailNo(): ?string
+    public function getRefundDetailNo(): string
     {
         return $this->refundDetailNo;
     }
@@ -42,7 +42,7 @@ class ValueCardExtRefundQueryRequest implements \JsonSerializable {
     /**
      * @param string $refundDetailNo
      */
-    public function setRefundDetailNo(?string $refundDetailNo): void
+    public function setRefundDetailNo(string $refundDetailNo): void
     {
         $this->refundDetailNo = $refundDetailNo;
     }
@@ -50,7 +50,7 @@ class ValueCardExtRefundQueryRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -58,7 +58,7 @@ class ValueCardExtRefundQueryRequest implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -66,7 +66,7 @@ class ValueCardExtRefundQueryRequest implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRootKdtId(): ?int
+    public function getRootKdtId(): int
     {
         return $this->rootKdtId;
     }
@@ -74,7 +74,7 @@ class ValueCardExtRefundQueryRequest implements \JsonSerializable {
     /**
      * @param int $rootKdtId
      */
-    public function setRootKdtId(?int $rootKdtId): void
+    public function setRootKdtId(int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
     }

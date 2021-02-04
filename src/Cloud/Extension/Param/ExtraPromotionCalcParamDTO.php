@@ -66,7 +66,7 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getSelfDefinePromotionData(): ?stdClass
+    public function getSelfDefinePromotionData(): stdClass
     {
         return $this->selfDefinePromotionData;
     }
@@ -74,7 +74,7 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     /**
      * @param stdClass $selfDefinePromotionData
      */
-    public function setSelfDefinePromotionData(?stdClass $selfDefinePromotionData): void
+    public function setSelfDefinePromotionData(stdClass $selfDefinePromotionData): void
     {
         $this->selfDefinePromotionData = $selfDefinePromotionData;
     }
@@ -82,7 +82,7 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getItemCalcDTOs(): ?array
+    public function getItemCalcDTOs(): array
     {
         return $this->itemCalcDTOs;
     }
@@ -90,7 +90,7 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     /**
      * @param array $itemCalcDTOs
      */
-    public function setItemCalcDTOs(?array $itemCalcDTOs): void
+    public function setItemCalcDTOs(array $itemCalcDTOs): void
     {
         $this->itemCalcDTOs = $itemCalcDTOs;
     }
@@ -98,7 +98,7 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -106,7 +106,7 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -114,7 +114,7 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -122,7 +122,7 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -130,7 +130,7 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getItemsPrice(): ?int
+    public function getItemsPrice(): int
     {
         return $this->itemsPrice;
     }
@@ -138,7 +138,7 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     /**
      * @param int $itemsPrice
      */
-    public function setItemsPrice(?int $itemsPrice): void
+    public function setItemsPrice(int $itemsPrice): void
     {
         $this->itemsPrice = $itemsPrice;
     }
@@ -146,7 +146,7 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPostage(): ?int
+    public function getPostage(): int
     {
         return $this->postage;
     }
@@ -154,7 +154,7 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     /**
      * @param int $postage
      */
-    public function setPostage(?int $postage): void
+    public function setPostage(int $postage): void
     {
         $this->postage = $postage;
     }
@@ -162,7 +162,7 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalPrice(): ?int
+    public function getTotalPrice(): int
     {
         return $this->totalPrice;
     }
@@ -170,7 +170,7 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     /**
      * @param int $totalPrice
      */
-    public function setTotalPrice(?int $totalPrice): void
+    public function setTotalPrice(int $totalPrice): void
     {
         $this->totalPrice = $totalPrice;
     }
@@ -178,7 +178,7 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     /**
      * @return ExtPointUserMsgDTO
      */
-    public function getBuyerInfo(): ?ExtPointUserMsgDTO
+    public function getBuyerInfo(): ExtPointUserMsgDTO
     {
         return $this->buyerInfo;
     }
@@ -186,7 +186,7 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     /**
      * @param ExtPointUserMsgDTO $buyerInfo
      */
-    public function setBuyerInfo(?ExtPointUserMsgDTO $buyerInfo): void
+    public function setBuyerInfo(ExtPointUserMsgDTO $buyerInfo): void
     {
         $this->buyerInfo = $buyerInfo;
     }

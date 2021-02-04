@@ -28,7 +28,7 @@ class DeliveryOrderConfirmResponseDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalCount(): ?int
+    public function getTotalCount(): int
     {
         return $this->totalCount;
     }
@@ -36,7 +36,7 @@ class DeliveryOrderConfirmResponseDTO implements \JsonSerializable {
     /**
      * @param int $totalCount
      */
-    public function setTotalCount(?int $totalCount): void
+    public function setTotalCount(int $totalCount): void
     {
         $this->totalCount = $totalCount;
     }
@@ -44,7 +44,7 @@ class DeliveryOrderConfirmResponseDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getDeliveryOrderConfirmSyncDTOList(): ?array
+    public function getDeliveryOrderConfirmSyncDTOList(): array
     {
         return $this->deliveryOrderConfirmSyncDTOList;
     }
@@ -52,7 +52,7 @@ class DeliveryOrderConfirmResponseDTO implements \JsonSerializable {
     /**
      * @param array $deliveryOrderConfirmSyncDTOList
      */
-    public function setDeliveryOrderConfirmSyncDTOList(?array $deliveryOrderConfirmSyncDTOList): void
+    public function setDeliveryOrderConfirmSyncDTOList(array $deliveryOrderConfirmSyncDTOList): void
     {
         $this->deliveryOrderConfirmSyncDTOList = $deliveryOrderConfirmSyncDTOList;
     }

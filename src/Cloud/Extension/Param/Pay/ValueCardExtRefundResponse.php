@@ -40,7 +40,7 @@ class ValueCardExtRefundResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRefundStatus(): ?int
+    public function getRefundStatus(): int
     {
         return $this->refundStatus;
     }
@@ -48,7 +48,7 @@ class ValueCardExtRefundResponse implements \JsonSerializable {
     /**
      * @param int $refundStatus
      */
-    public function setRefundStatus(?int $refundStatus): void
+    public function setRefundStatus(int $refundStatus): void
     {
         $this->refundStatus = $refundStatus;
     }
@@ -56,7 +56,7 @@ class ValueCardExtRefundResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundDetailNo(): ?string
+    public function getRefundDetailNo(): string
     {
         return $this->refundDetailNo;
     }
@@ -64,7 +64,7 @@ class ValueCardExtRefundResponse implements \JsonSerializable {
     /**
      * @param string $refundDetailNo
      */
-    public function setRefundDetailNo(?string $refundDetailNo): void
+    public function setRefundDetailNo(string $refundDetailNo): void
     {
         $this->refundDetailNo = $refundDetailNo;
     }
@@ -72,7 +72,7 @@ class ValueCardExtRefundResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getRefundChannelNo(): ?string
+    public function getRefundChannelNo(): string
     {
         return $this->refundChannelNo;
     }
@@ -80,7 +80,7 @@ class ValueCardExtRefundResponse implements \JsonSerializable {
     /**
      * @param string $refundChannelNo
      */
-    public function setRefundChannelNo(?string $refundChannelNo): void
+    public function setRefundChannelNo(string $refundChannelNo): void
     {
         $this->refundChannelNo = $refundChannelNo;
     }
@@ -88,7 +88,7 @@ class ValueCardExtRefundResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRefundDt(): ?int
+    public function getRefundDt(): int
     {
         return $this->refundDt;
     }
@@ -96,7 +96,7 @@ class ValueCardExtRefundResponse implements \JsonSerializable {
     /**
      * @param int $refundDt
      */
-    public function setRefundDt(?int $refundDt): void
+    public function setRefundDt(int $refundDt): void
     {
         $this->refundDt = $refundDt;
     }

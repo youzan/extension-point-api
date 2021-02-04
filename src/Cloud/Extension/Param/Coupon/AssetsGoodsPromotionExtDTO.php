@@ -58,7 +58,7 @@ class AssetsGoodsPromotionExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGoodsId(): ?int
+    public function getGoodsId(): int
     {
         return $this->goodsId;
     }
@@ -66,7 +66,7 @@ class AssetsGoodsPromotionExtDTO implements \JsonSerializable {
     /**
      * @param int $goodsId
      */
-    public function setGoodsId(?int $goodsId): void
+    public function setGoodsId(int $goodsId): void
     {
         $this->goodsId = $goodsId;
     }
@@ -74,7 +74,7 @@ class AssetsGoodsPromotionExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSkuId(): ?int
+    public function getSkuId(): int
     {
         return $this->skuId;
     }
@@ -82,7 +82,7 @@ class AssetsGoodsPromotionExtDTO implements \JsonSerializable {
     /**
      * @param int $skuId
      */
-    public function setSkuId(?int $skuId): void
+    public function setSkuId(int $skuId): void
     {
         $this->skuId = $skuId;
     }
@@ -90,7 +90,7 @@ class AssetsGoodsPromotionExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPrice(): ?int
+    public function getPrice(): int
     {
         return $this->price;
     }
@@ -98,7 +98,7 @@ class AssetsGoodsPromotionExtDTO implements \JsonSerializable {
     /**
      * @param int $price
      */
-    public function setPrice(?int $price): void
+    public function setPrice(int $price): void
     {
         $this->price = $price;
     }
@@ -106,7 +106,7 @@ class AssetsGoodsPromotionExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRealPay(): ?int
+    public function getRealPay(): int
     {
         return $this->realPay;
     }
@@ -114,7 +114,7 @@ class AssetsGoodsPromotionExtDTO implements \JsonSerializable {
     /**
      * @param int $realPay
      */
-    public function setRealPay(?int $realPay): void
+    public function setRealPay(int $realPay): void
     {
         $this->realPay = $realPay;
     }
@@ -122,7 +122,7 @@ class AssetsGoodsPromotionExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getNum(): ?int
+    public function getNum(): int
     {
         return $this->num;
     }
@@ -130,7 +130,7 @@ class AssetsGoodsPromotionExtDTO implements \JsonSerializable {
     /**
      * @param int $num
      */
-    public function setNum(?int $num): void
+    public function setNum(int $num): void
     {
         $this->num = $num;
     }
@@ -138,7 +138,7 @@ class AssetsGoodsPromotionExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getType(): ?int
+    public function getType(): int
     {
         return $this->type;
     }
@@ -146,7 +146,7 @@ class AssetsGoodsPromotionExtDTO implements \JsonSerializable {
     /**
      * @param int $type
      */
-    public function setType(?int $type): void
+    public function setType(int $type): void
     {
         $this->type = $type;
     }
@@ -154,7 +154,7 @@ class AssetsGoodsPromotionExtDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getApplyPromotions(): ?array
+    public function getApplyPromotions(): array
     {
         return $this->applyPromotions;
     }
@@ -162,7 +162,7 @@ class AssetsGoodsPromotionExtDTO implements \JsonSerializable {
     /**
      * @param array $applyPromotions
      */
-    public function setApplyPromotions(?array $applyPromotions): void
+    public function setApplyPromotions(array $applyPromotions): void
     {
         $this->applyPromotions = $applyPromotions;
     }

@@ -64,7 +64,7 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCouponId(): ?int
+    public function getCouponId(): int
     {
         return $this->couponId;
     }
@@ -72,7 +72,7 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     /**
      * @param int $couponId
      */
-    public function setCouponId(?int $couponId): void
+    public function setCouponId(int $couponId): void
     {
         $this->couponId = $couponId;
     }
@@ -80,7 +80,7 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCouponType(): ?int
+    public function getCouponType(): int
     {
         return $this->couponType;
     }
@@ -88,7 +88,7 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     /**
      * @param int $couponType
      */
-    public function setCouponType(?int $couponType): void
+    public function setCouponType(int $couponType): void
     {
         $this->couponType = $couponType;
     }
@@ -96,7 +96,7 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getActivityId(): ?int
+    public function getActivityId(): int
     {
         return $this->activityId;
     }
@@ -104,7 +104,7 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     /**
      * @param int $activityId
      */
-    public function setActivityId(?int $activityId): void
+    public function setActivityId(int $activityId): void
     {
         $this->activityId = $activityId;
     }
@@ -112,7 +112,7 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzOpenId(): ?string
+    public function getYzOpenId(): string
     {
         return $this->yzOpenId;
     }
@@ -120,7 +120,7 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     /**
      * @param string $yzOpenId
      */
-    public function setYzOpenId(?string $yzOpenId): void
+    public function setYzOpenId(string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
@@ -128,7 +128,7 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getValidStartTime(): ?int
+    public function getValidStartTime(): int
     {
         return $this->validStartTime;
     }
@@ -136,7 +136,7 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     /**
      * @param int $validStartTime
      */
-    public function setValidStartTime(?int $validStartTime): void
+    public function setValidStartTime(int $validStartTime): void
     {
         $this->validStartTime = $validStartTime;
     }
@@ -144,7 +144,7 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getValidEndTime(): ?int
+    public function getValidEndTime(): int
     {
         return $this->validEndTime;
     }
@@ -152,7 +152,7 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     /**
      * @param int $validEndTime
      */
-    public function setValidEndTime(?int $validEndTime): void
+    public function setValidEndTime(int $validEndTime): void
     {
         $this->validEndTime = $validEndTime;
     }
@@ -160,7 +160,7 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getAvailable(): ?bool
+    public function getAvailable(): bool
     {
         return $this->available;
     }
@@ -168,7 +168,7 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     /**
      * @param bool $available
      */
-    public function setAvailable(?bool $available): void
+    public function setAvailable(bool $available): void
     {
         $this->available = $available;
     }
@@ -176,7 +176,7 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getReason(): ?string
+    public function getReason(): string
     {
         return $this->reason;
     }
@@ -184,7 +184,7 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     /**
      * @param string $reason
      */
-    public function setReason(?string $reason): void
+    public function setReason(string $reason): void
     {
         $this->reason = $reason;
     }

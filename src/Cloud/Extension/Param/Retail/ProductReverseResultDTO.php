@@ -28,7 +28,7 @@ class ProductReverseResultDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotalCount(): ?int
+    public function getTotalCount(): int
     {
         return $this->totalCount;
     }
@@ -36,7 +36,7 @@ class ProductReverseResultDTO implements \JsonSerializable {
     /**
      * @param int $totalCount
      */
-    public function setTotalCount(?int $totalCount): void
+    public function setTotalCount(int $totalCount): void
     {
         $this->totalCount = $totalCount;
     }
@@ -44,7 +44,7 @@ class ProductReverseResultDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getProductSyncDTOS(): ?array
+    public function getProductSyncDTOS(): array
     {
         return $this->productSyncDTOS;
     }
@@ -52,7 +52,7 @@ class ProductReverseResultDTO implements \JsonSerializable {
     /**
      * @param array $productSyncDTOS
      */
-    public function setProductSyncDTOS(?array $productSyncDTOS): void
+    public function setProductSyncDTOS(array $productSyncDTOS): void
     {
         $this->productSyncDTOS = $productSyncDTOS;
     }

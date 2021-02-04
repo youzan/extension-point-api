@@ -40,7 +40,7 @@ class AppstoreNotifyMessage implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getType(): ?string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -48,7 +48,7 @@ class AppstoreNotifyMessage implements \JsonSerializable {
     /**
      * @param string $type
      */
-    public function setType(?string $type): void
+    public function setType(string $type): void
     {
         $this->type = $type;
     }
@@ -56,7 +56,7 @@ class AppstoreNotifyMessage implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAppName(): ?string
+    public function getAppName(): string
     {
         return $this->appName;
     }
@@ -64,7 +64,7 @@ class AppstoreNotifyMessage implements \JsonSerializable {
     /**
      * @param string $appName
      */
-    public function setAppName(?string $appName): void
+    public function setAppName(string $appName): void
     {
         $this->appName = $appName;
     }
@@ -72,7 +72,7 @@ class AppstoreNotifyMessage implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getEnv(): ?string
+    public function getEnv(): string
     {
         return $this->env;
     }
@@ -80,7 +80,7 @@ class AppstoreNotifyMessage implements \JsonSerializable {
     /**
      * @param string $env
      */
-    public function setEnv(?string $env): void
+    public function setEnv(string $env): void
     {
         $this->env = $env;
     }
@@ -88,7 +88,7 @@ class AppstoreNotifyMessage implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getData(): ?string
+    public function getData(): string
     {
         return $this->data;
     }
@@ -96,7 +96,7 @@ class AppstoreNotifyMessage implements \JsonSerializable {
     /**
      * @param string $data
      */
-    public function setData(?string $data): void
+    public function setData(string $data): void
     {
         $this->data = $data;
     }

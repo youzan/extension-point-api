@@ -64,7 +64,7 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -72,7 +72,7 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -80,7 +80,7 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -88,7 +88,7 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -96,7 +96,7 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRealPay(): ?int
+    public function getRealPay(): int
     {
         return $this->realPay;
     }
@@ -104,7 +104,7 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     /**
      * @param int $realPay
      */
-    public function setRealPay(?int $realPay): void
+    public function setRealPay(int $realPay): void
     {
         $this->realPay = $realPay;
     }
@@ -112,7 +112,7 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getIRate(): ?int
+    public function getIRate(): int
     {
         return $this->iRate;
     }
@@ -120,7 +120,7 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     /**
      * @param int $iRate
      */
-    public function setIRate(?int $iRate): void
+    public function setIRate(int $iRate): void
     {
         $this->iRate = $iRate;
     }
@@ -128,7 +128,7 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCpsMoney(): ?int
+    public function getCpsMoney(): int
     {
         return $this->cpsMoney;
     }
@@ -136,7 +136,7 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     /**
      * @param int $cpsMoney
      */
-    public function setCpsMoney(?int $cpsMoney): void
+    public function setCpsMoney(int $cpsMoney): void
     {
         $this->cpsMoney = $cpsMoney;
     }
@@ -144,7 +144,7 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getIiRate(): ?int
+    public function getIiRate(): int
     {
         return $this->iiRate;
     }
@@ -152,7 +152,7 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     /**
      * @param int $iiRate
      */
-    public function setIiRate(?int $iiRate): void
+    public function setIiRate(int $iiRate): void
     {
         $this->iiRate = $iiRate;
     }
@@ -160,7 +160,7 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBonusMoney(): ?int
+    public function getBonusMoney(): int
     {
         return $this->bonusMoney;
     }
@@ -168,7 +168,7 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     /**
      * @param int $bonusMoney
      */
-    public function setBonusMoney(?int $bonusMoney): void
+    public function setBonusMoney(int $bonusMoney): void
     {
         $this->bonusMoney = $bonusMoney;
     }
@@ -176,7 +176,7 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getItems(): ?array
+    public function getItems(): array
     {
         return $this->items;
     }
@@ -184,7 +184,7 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     /**
      * @param array $items
      */
-    public function setItems(?array $items): void
+    public function setItems(array $items): void
     {
         $this->items = $items;
     }

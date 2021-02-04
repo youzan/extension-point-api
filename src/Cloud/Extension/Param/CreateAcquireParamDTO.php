@@ -40,7 +40,7 @@ class CreateAcquireParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -48,7 +48,7 @@ class CreateAcquireParamDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -56,7 +56,7 @@ class CreateAcquireParamDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getAmount(): ?int
+    public function getAmount(): int
     {
         return $this->amount;
     }
@@ -64,7 +64,7 @@ class CreateAcquireParamDTO implements \JsonSerializable {
     /**
      * @param int $amount
      */
-    public function setAmount(?int $amount): void
+    public function setAmount(int $amount): void
     {
         $this->amount = $amount;
     }
@@ -72,7 +72,7 @@ class CreateAcquireParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getGoodsName(): ?string
+    public function getGoodsName(): string
     {
         return $this->goodsName;
     }
@@ -80,7 +80,7 @@ class CreateAcquireParamDTO implements \JsonSerializable {
     /**
      * @param string $goodsName
      */
-    public function setGoodsName(?string $goodsName): void
+    public function setGoodsName(string $goodsName): void
     {
         $this->goodsName = $goodsName;
     }
@@ -88,7 +88,7 @@ class CreateAcquireParamDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getPayType(): ?string
+    public function getPayType(): string
     {
         return $this->payType;
     }
@@ -96,7 +96,7 @@ class CreateAcquireParamDTO implements \JsonSerializable {
     /**
      * @param string $payType
      */
-    public function setPayType(?string $payType): void
+    public function setPayType(string $payType): void
     {
         $this->payType = $payType;
     }

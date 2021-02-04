@@ -47,7 +47,7 @@ class CouponUsedInfoExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -55,7 +55,7 @@ class CouponUsedInfoExtDTO implements \JsonSerializable {
     /**
      * @param int $id
      */
-    public function setId(?int $id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
@@ -63,7 +63,7 @@ class CouponUsedInfoExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getUsedAt(): ?int
+    public function getUsedAt(): int
     {
         return $this->usedAt;
     }
@@ -71,7 +71,7 @@ class CouponUsedInfoExtDTO implements \JsonSerializable {
     /**
      * @param int $usedAt
      */
-    public function setUsedAt(?int $usedAt): void
+    public function setUsedAt(int $usedAt): void
     {
         $this->usedAt = $usedAt;
     }
@@ -79,7 +79,7 @@ class CouponUsedInfoExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getRealPreferentialValue(): ?int
+    public function getRealPreferentialValue(): int
     {
         return $this->realPreferentialValue;
     }
@@ -87,7 +87,7 @@ class CouponUsedInfoExtDTO implements \JsonSerializable {
     /**
      * @param int $realPreferentialValue
      */
-    public function setRealPreferentialValue(?int $realPreferentialValue): void
+    public function setRealPreferentialValue(int $realPreferentialValue): void
     {
         $this->realPreferentialValue = $realPreferentialValue;
     }
@@ -95,7 +95,7 @@ class CouponUsedInfoExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -103,7 +103,7 @@ class CouponUsedInfoExtDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -111,7 +111,7 @@ class CouponUsedInfoExtDTO implements \JsonSerializable {
     /**
      * @return CustomerIdentityDTO
      */
-    public function getCustomerIdentityDTO(): ?CustomerIdentityDTO
+    public function getCustomerIdentityDTO(): CustomerIdentityDTO
     {
         return $this->customerIdentityDTO;
     }
@@ -119,7 +119,7 @@ class CouponUsedInfoExtDTO implements \JsonSerializable {
     /**
      * @param CustomerIdentityDTO $customerIdentityDTO
      */
-    public function setCustomerIdentityDTO(?CustomerIdentityDTO $customerIdentityDTO): void
+    public function setCustomerIdentityDTO(CustomerIdentityDTO $customerIdentityDTO): void
     {
         $this->customerIdentityDTO = $customerIdentityDTO;
     }

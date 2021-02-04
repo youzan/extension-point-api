@@ -28,7 +28,7 @@ class ExtCalculateTariffResponseDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -36,7 +36,7 @@ class ExtCalculateTariffResponseDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -44,7 +44,7 @@ class ExtCalculateTariffResponseDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getGoodsPreferences(): ?array
+    public function getGoodsPreferences(): array
     {
         return $this->goodsPreferences;
     }
@@ -52,7 +52,7 @@ class ExtCalculateTariffResponseDTO implements \JsonSerializable {
     /**
      * @param array $goodsPreferences
      */
-    public function setGoodsPreferences(?array $goodsPreferences): void
+    public function setGoodsPreferences(array $goodsPreferences): void
     {
         $this->goodsPreferences = $goodsPreferences;
     }

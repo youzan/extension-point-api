@@ -28,7 +28,7 @@ class CurrentDeliveryRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDeliveryType(): ?int
+    public function getDeliveryType(): int
     {
         return $this->deliveryType;
     }
@@ -36,7 +36,7 @@ class CurrentDeliveryRequestDTO implements \JsonSerializable {
     /**
      * @param int $deliveryType
      */
-    public function setDeliveryType(?int $deliveryType): void
+    public function setDeliveryType(int $deliveryType): void
     {
         $this->deliveryType = $deliveryType;
     }
@@ -44,7 +44,7 @@ class CurrentDeliveryRequestDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getDeliveryItems(): ?array
+    public function getDeliveryItems(): array
     {
         return $this->deliveryItems;
     }
@@ -52,7 +52,7 @@ class CurrentDeliveryRequestDTO implements \JsonSerializable {
     /**
      * @param array $deliveryItems
      */
-    public function setDeliveryItems(?array $deliveryItems): void
+    public function setDeliveryItems(array $deliveryItems): void
     {
         $this->deliveryItems = $deliveryItems;
     }

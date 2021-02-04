@@ -22,7 +22,7 @@ class ExtGoodsConfigResponse implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getGoodsConfigList(): ?array
+    public function getGoodsConfigList(): array
     {
         return $this->goodsConfigList;
     }
@@ -30,7 +30,7 @@ class ExtGoodsConfigResponse implements \JsonSerializable {
     /**
      * @param array $goodsConfigList
      */
-    public function setGoodsConfigList(?array $goodsConfigList): void
+    public function setGoodsConfigList(array $goodsConfigList): void
     {
         $this->goodsConfigList = $goodsConfigList;
     }

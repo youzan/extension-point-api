@@ -28,7 +28,7 @@ class CouponGroupListResultExtDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getCouponGroupExtDTOList(): ?array
+    public function getCouponGroupExtDTOList(): array
     {
         return $this->couponGroupExtDTOList;
     }
@@ -36,7 +36,7 @@ class CouponGroupListResultExtDTO implements \JsonSerializable {
     /**
      * @param array $couponGroupExtDTOList
      */
-    public function setCouponGroupExtDTOList(?array $couponGroupExtDTOList): void
+    public function setCouponGroupExtDTOList(array $couponGroupExtDTOList): void
     {
         $this->couponGroupExtDTOList = $couponGroupExtDTOList;
     }
@@ -44,7 +44,7 @@ class CouponGroupListResultExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getTotal(): ?int
+    public function getTotal(): int
     {
         return $this->total;
     }
@@ -52,7 +52,7 @@ class CouponGroupListResultExtDTO implements \JsonSerializable {
     /**
      * @param int $total
      */
-    public function setTotal(?int $total): void
+    public function setTotal(int $total): void
     {
         $this->total = $total;
     }

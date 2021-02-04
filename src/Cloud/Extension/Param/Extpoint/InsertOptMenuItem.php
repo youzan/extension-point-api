@@ -70,7 +70,7 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getParentPath(): ?string
+    public function getParentPath(): string
     {
         return $this->parentPath;
     }
@@ -78,7 +78,7 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @param string $parentPath
      */
-    public function setParentPath(?string $parentPath): void
+    public function setParentPath(string $parentPath): void
     {
         $this->parentPath = $parentPath;
     }
@@ -86,7 +86,7 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -94,7 +94,7 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @param string $name
      */
-    public function setName(?string $name): void
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
@@ -102,7 +102,7 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUrl(): ?string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -110,7 +110,7 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @param string $url
      */
-    public function setUrl(?string $url): void
+    public function setUrl(string $url): void
     {
         $this->url = $url;
     }
@@ -118,7 +118,7 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMenuAfter(): ?string
+    public function getMenuAfter(): string
     {
         return $this->menuAfter;
     }
@@ -126,7 +126,7 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @param string $menuAfter
      */
-    public function setMenuAfter(?string $menuAfter): void
+    public function setMenuAfter(string $menuAfter): void
     {
         $this->menuAfter = $menuAfter;
     }
@@ -134,7 +134,7 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getMenuSort(): ?int
+    public function getMenuSort(): int
     {
         return $this->menuSort;
     }
@@ -142,7 +142,7 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @param int $menuSort
      */
-    public function setMenuSort(?int $menuSort): void
+    public function setMenuSort(int $menuSort): void
     {
         $this->menuSort = $menuSort;
     }
@@ -150,7 +150,7 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCategoryAfter(): ?string
+    public function getCategoryAfter(): string
     {
         return $this->categoryAfter;
     }
@@ -158,7 +158,7 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @param string $categoryAfter
      */
-    public function setCategoryAfter(?string $categoryAfter): void
+    public function setCategoryAfter(string $categoryAfter): void
     {
         $this->categoryAfter = $categoryAfter;
     }
@@ -166,7 +166,7 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCategorySort(): ?int
+    public function getCategorySort(): int
     {
         return $this->categorySort;
     }
@@ -174,7 +174,7 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @param int $categorySort
      */
-    public function setCategorySort(?int $categorySort): void
+    public function setCategorySort(int $categorySort): void
     {
         $this->categorySort = $categorySort;
     }
@@ -182,7 +182,7 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getMenuItemType(): ?int
+    public function getMenuItemType(): int
     {
         return $this->menuItemType;
     }
@@ -190,7 +190,7 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @param int $menuItemType
      */
-    public function setMenuItemType(?int $menuItemType): void
+    public function setMenuItemType(int $menuItemType): void
     {
         $this->menuItemType = $menuItemType;
     }
@@ -198,7 +198,7 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCategory(): ?string
+    public function getCategory(): string
     {
         return $this->category;
     }
@@ -206,7 +206,7 @@ class InsertOptMenuItem implements \JsonSerializable {
     /**
      * @param string $category
      */
-    public function setCategory(?string $category): void
+    public function setCategory(string $category): void
     {
         $this->category = $category;
     }

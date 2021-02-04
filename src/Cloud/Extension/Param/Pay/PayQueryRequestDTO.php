@@ -34,7 +34,7 @@ class PayQueryRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getTradeNo(): ?string
+    public function getTradeNo(): string
     {
         return $this->tradeNo;
     }
@@ -42,7 +42,7 @@ class PayQueryRequestDTO implements \JsonSerializable {
     /**
      * @param string $tradeNo
      */
-    public function setTradeNo(?string $tradeNo): void
+    public function setTradeNo(string $tradeNo): void
     {
         $this->tradeNo = $tradeNo;
     }
@@ -50,7 +50,7 @@ class PayQueryRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getYzTradeNo(): ?string
+    public function getYzTradeNo(): string
     {
         return $this->yzTradeNo;
     }
@@ -58,7 +58,7 @@ class PayQueryRequestDTO implements \JsonSerializable {
     /**
      * @param string $yzTradeNo
      */
-    public function setYzTradeNo(?string $yzTradeNo): void
+    public function setYzTradeNo(string $yzTradeNo): void
     {
         $this->yzTradeNo = $yzTradeNo;
     }
@@ -66,7 +66,7 @@ class PayQueryRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getMchId(): ?string
+    public function getMchId(): string
     {
         return $this->mchId;
     }
@@ -74,7 +74,7 @@ class PayQueryRequestDTO implements \JsonSerializable {
     /**
      * @param string $mchId
      */
-    public function setMchId(?string $mchId): void
+    public function setMchId(string $mchId): void
     {
         $this->mchId = $mchId;
     }

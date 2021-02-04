@@ -103,7 +103,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBizCategory(): ?string
+    public function getBizCategory(): string
     {
         return $this->bizCategory;
     }
@@ -111,7 +111,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @param string $bizCategory
      */
-    public function setBizCategory(?string $bizCategory): void
+    public function setBizCategory(string $bizCategory): void
     {
         $this->bizCategory = $bizCategory;
     }
@@ -119,7 +119,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBuyerId(): ?int
+    public function getBuyerId(): int
     {
         return $this->buyerId;
     }
@@ -127,7 +127,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @param int $buyerId
      */
-    public function setBuyerId(?int $buyerId): void
+    public function setBuyerId(int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
@@ -135,7 +135,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getChannel(): ?int
+    public function getChannel(): int
     {
         return $this->channel;
     }
@@ -143,7 +143,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @param int $channel
      */
-    public function setChannel(?int $channel): void
+    public function setChannel(int $channel): void
     {
         $this->channel = $channel;
     }
@@ -151,7 +151,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getCreateTime(): ?int
+    public function getCreateTime(): int
     {
         return $this->createTime;
     }
@@ -159,7 +159,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @param int $createTime
      */
-    public function setCreateTime(?int $createTime): void
+    public function setCreateTime(int $createTime): void
     {
         $this->createTime = $createTime;
     }
@@ -167,7 +167,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @return stdClass
      */
-    public function getExtra(): ?stdClass
+    public function getExtra(): stdClass
     {
         return $this->extra;
     }
@@ -175,7 +175,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @param stdClass $extra
      */
-    public function setExtra(?stdClass $extra): void
+    public function setExtra(stdClass $extra): void
     {
         $this->extra = $extra;
     }
@@ -183,7 +183,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getKdtId(): ?int
+    public function getKdtId(): int
     {
         return $this->kdtId;
     }
@@ -191,7 +191,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @param int $kdtId
      */
-    public function setKdtId(?int $kdtId): void
+    public function setKdtId(int $kdtId): void
     {
         $this->kdtId = $kdtId;
     }
@@ -199,7 +199,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getNotifyConsumerGroup(): ?array
+    public function getNotifyConsumerGroup(): array
     {
         return $this->notifyConsumerGroup;
     }
@@ -207,7 +207,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @param array $notifyConsumerGroup
      */
-    public function setNotifyConsumerGroup(?array $notifyConsumerGroup): void
+    public function setNotifyConsumerGroup(array $notifyConsumerGroup): void
     {
         $this->notifyConsumerGroup = $notifyConsumerGroup;
     }
@@ -215,7 +215,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderId(): ?int
+    public function getOrderId(): int
     {
         return $this->orderId;
     }
@@ -223,7 +223,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @param int $orderId
      */
-    public function setOrderId(?int $orderId): void
+    public function setOrderId(int $orderId): void
     {
         $this->orderId = $orderId;
     }
@@ -231,7 +231,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getOrderNo(): string
     {
         return $this->orderNo;
     }
@@ -239,7 +239,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @param string $orderNo
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderNo(string $orderNo): void
     {
         $this->orderNo = $orderNo;
     }
@@ -247,7 +247,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderType(): ?string
+    public function getOrderType(): string
     {
         return $this->orderType;
     }
@@ -255,7 +255,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @param string $orderType
      */
-    public function setOrderType(?string $orderType): void
+    public function setOrderType(string $orderType): void
     {
         $this->orderType = $orderType;
     }
@@ -263,7 +263,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getShopId(): ?int
+    public function getShopId(): int
     {
         return $this->shopId;
     }
@@ -271,7 +271,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @param int $shopId
      */
-    public function setShopId(?int $shopId): void
+    public function setShopId(int $shopId): void
     {
         $this->shopId = $shopId;
     }
@@ -279,7 +279,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getSource(): ?string
+    public function getSource(): string
     {
         return $this->source;
     }
@@ -287,7 +287,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @param string $source
      */
-    public function setSource(?string $source): void
+    public function setSource(string $source): void
     {
         $this->source = $source;
     }
@@ -295,7 +295,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @return OrderItemMsgDTO
      */
-    public function getTags(): ?OrderItemMsgDTO
+    public function getTags(): OrderItemMsgDTO
     {
         return $this->tags;
     }
@@ -303,7 +303,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @param OrderItemMsgDTO $tags
      */
-    public function setTags(?OrderItemMsgDTO $tags): void
+    public function setTags(OrderItemMsgDTO $tags): void
     {
         $this->tags = $tags;
     }
@@ -311,7 +311,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getInvalidOrderItemMsgGroup(): ?array
+    public function getInvalidOrderItemMsgGroup(): array
     {
         return $this->invalidOrderItemMsgGroup;
     }
@@ -319,7 +319,7 @@ class OrderInvalidDTO implements \JsonSerializable {
     /**
      * @param array $invalidOrderItemMsgGroup
      */
-    public function setInvalidOrderItemMsgGroup(?array $invalidOrderItemMsgGroup): void
+    public function setInvalidOrderItemMsgGroup(array $invalidOrderItemMsgGroup): void
     {
         $this->invalidOrderItemMsgGroup = $invalidOrderItemMsgGroup;
     }
