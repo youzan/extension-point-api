@@ -86,7 +86,7 @@ class QueryCustomerPayCardResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return QueryCustomerPayCardResponseDTO
      */
-    public function getData(): QueryCustomerPayCardResponseDTO
+    public function getData(): ?QueryCustomerPayCardResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class QueryCustomerPayCardResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param QueryCustomerPayCardResponseDTO $data
      */
-    public function setData(QueryCustomerPayCardResponseDTO $data): void
+    public function setData(?QueryCustomerPayCardResponseDTO $data): void
     {
         $this->data = $data;
     }

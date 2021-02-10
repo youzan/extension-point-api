@@ -86,7 +86,7 @@ class DeliveryParamValidatorResponseOutParam implements \JsonSerializable {
     /**
      * @return DeliveryParamValidatorResponse
      */
-    public function getData(): DeliveryParamValidatorResponse
+    public function getData(): ?DeliveryParamValidatorResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class DeliveryParamValidatorResponseOutParam implements \JsonSerializable {
     /**
      * @param DeliveryParamValidatorResponse $data
      */
-    public function setData(DeliveryParamValidatorResponse $data): void
+    public function setData(?DeliveryParamValidatorResponse $data): void
     {
         $this->data = $data;
     }

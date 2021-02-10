@@ -86,7 +86,7 @@ class NewCustomerCheckResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return NewCustomerCheckResponseDTO
      */
-    public function getData(): NewCustomerCheckResponseDTO
+    public function getData(): ?NewCustomerCheckResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class NewCustomerCheckResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param NewCustomerCheckResponseDTO $data
      */
-    public function setData(NewCustomerCheckResponseDTO $data): void
+    public function setData(?NewCustomerCheckResponseDTO $data): void
     {
         $this->data = $data;
     }

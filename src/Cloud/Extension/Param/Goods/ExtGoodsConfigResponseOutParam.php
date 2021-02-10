@@ -86,7 +86,7 @@ class ExtGoodsConfigResponseOutParam implements \JsonSerializable {
     /**
      * @return ExtGoodsConfigResponse
      */
-    public function getData(): ExtGoodsConfigResponse
+    public function getData(): ?ExtGoodsConfigResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ExtGoodsConfigResponseOutParam implements \JsonSerializable {
     /**
      * @param ExtGoodsConfigResponse $data
      */
-    public function setData(ExtGoodsConfigResponse $data): void
+    public function setData(?ExtGoodsConfigResponse $data): void
     {
         $this->data = $data;
     }

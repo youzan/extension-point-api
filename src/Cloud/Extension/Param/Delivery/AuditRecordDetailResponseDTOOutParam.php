@@ -86,7 +86,7 @@ class AuditRecordDetailResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return AuditRecordDetailResponseDTO
      */
-    public function getData(): AuditRecordDetailResponseDTO
+    public function getData(): ?AuditRecordDetailResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class AuditRecordDetailResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param AuditRecordDetailResponseDTO $data
      */
-    public function setData(AuditRecordDetailResponseDTO $data): void
+    public function setData(?AuditRecordDetailResponseDTO $data): void
     {
         $this->data = $data;
     }

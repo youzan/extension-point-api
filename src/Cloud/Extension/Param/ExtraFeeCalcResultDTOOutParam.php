@@ -86,7 +86,7 @@ class ExtraFeeCalcResultDTOOutParam implements \JsonSerializable {
     /**
      * @return ExtraFeeCalcResultDTO
      */
-    public function getData(): ExtraFeeCalcResultDTO
+    public function getData(): ?ExtraFeeCalcResultDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ExtraFeeCalcResultDTOOutParam implements \JsonSerializable {
     /**
      * @param ExtraFeeCalcResultDTO $data
      */
-    public function setData(ExtraFeeCalcResultDTO $data): void
+    public function setData(?ExtraFeeCalcResultDTO $data): void
     {
         $this->data = $data;
     }

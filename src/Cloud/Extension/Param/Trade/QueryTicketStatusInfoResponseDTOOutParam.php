@@ -86,7 +86,7 @@ class QueryTicketStatusInfoResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return QueryTicketStatusInfoResponseDTO
      */
-    public function getData(): QueryTicketStatusInfoResponseDTO
+    public function getData(): ?QueryTicketStatusInfoResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class QueryTicketStatusInfoResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param QueryTicketStatusInfoResponseDTO $data
      */
-    public function setData(QueryTicketStatusInfoResponseDTO $data): void
+    public function setData(?QueryTicketStatusInfoResponseDTO $data): void
     {
         $this->data = $data;
     }

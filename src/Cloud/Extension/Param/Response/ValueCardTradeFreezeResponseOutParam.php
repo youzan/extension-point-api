@@ -86,7 +86,7 @@ class ValueCardTradeFreezeResponseOutParam implements \JsonSerializable {
     /**
      * @return ValueCardTradeFreezeResponse
      */
-    public function getData(): ValueCardTradeFreezeResponse
+    public function getData(): ?ValueCardTradeFreezeResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ValueCardTradeFreezeResponseOutParam implements \JsonSerializable {
     /**
      * @param ValueCardTradeFreezeResponse $data
      */
-    public function setData(ValueCardTradeFreezeResponse $data): void
+    public function setData(?ValueCardTradeFreezeResponse $data): void
     {
         $this->data = $data;
     }

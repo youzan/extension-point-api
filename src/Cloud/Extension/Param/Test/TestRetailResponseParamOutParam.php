@@ -86,7 +86,7 @@ class TestRetailResponseParamOutParam implements \JsonSerializable {
     /**
      * @return TestRetailResponseParam
      */
-    public function getData(): TestRetailResponseParam
+    public function getData(): ?TestRetailResponseParam
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class TestRetailResponseParamOutParam implements \JsonSerializable {
     /**
      * @param TestRetailResponseParam $data
      */
-    public function setData(TestRetailResponseParam $data): void
+    public function setData(?TestRetailResponseParam $data): void
     {
         $this->data = $data;
     }

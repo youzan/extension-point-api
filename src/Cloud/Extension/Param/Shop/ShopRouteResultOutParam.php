@@ -86,7 +86,7 @@ class ShopRouteResultOutParam implements \JsonSerializable {
     /**
      * @return ShopRouteResult
      */
-    public function getData(): ShopRouteResult
+    public function getData(): ?ShopRouteResult
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ShopRouteResultOutParam implements \JsonSerializable {
     /**
      * @param ShopRouteResult $data
      */
-    public function setData(ShopRouteResult $data): void
+    public function setData(?ShopRouteResult $data): void
     {
         $this->data = $data;
     }

@@ -86,7 +86,7 @@ class PayResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return PayResponseDTO
      */
-    public function getData(): PayResponseDTO
+    public function getData(): ?PayResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class PayResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param PayResponseDTO $data
      */
-    public function setData(PayResponseDTO $data): void
+    public function setData(?PayResponseDTO $data): void
     {
         $this->data = $data;
     }
