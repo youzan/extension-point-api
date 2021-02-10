@@ -86,7 +86,7 @@ class RedirectUrlExtResDTOOutParam implements \JsonSerializable {
     /**
      * @return RedirectUrlExtResDTO
      */
-    public function getData(): RedirectUrlExtResDTO
+    public function getData(): ?RedirectUrlExtResDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class RedirectUrlExtResDTOOutParam implements \JsonSerializable {
     /**
      * @param RedirectUrlExtResDTO $data
      */
-    public function setData(RedirectUrlExtResDTO $data): void
+    public function setData(?RedirectUrlExtResDTO $data): void
     {
         $this->data = $data;
     }

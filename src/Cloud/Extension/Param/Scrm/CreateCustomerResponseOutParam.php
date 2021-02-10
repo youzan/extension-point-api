@@ -86,7 +86,7 @@ class CreateCustomerResponseOutParam implements \JsonSerializable {
     /**
      * @return CreateCustomerResponse
      */
-    public function getData(): CreateCustomerResponse
+    public function getData(): ?CreateCustomerResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class CreateCustomerResponseOutParam implements \JsonSerializable {
     /**
      * @param CreateCustomerResponse $data
      */
-    public function setData(CreateCustomerResponse $data): void
+    public function setData(?CreateCustomerResponse $data): void
     {
         $this->data = $data;
     }

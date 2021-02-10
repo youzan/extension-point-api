@@ -86,7 +86,7 @@ class CreateMemberResponseOutParam implements \JsonSerializable {
     /**
      * @return CreateMemberResponse
      */
-    public function getData(): CreateMemberResponse
+    public function getData(): ?CreateMemberResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class CreateMemberResponseOutParam implements \JsonSerializable {
     /**
      * @param CreateMemberResponse $data
      */
-    public function setData(CreateMemberResponse $data): void
+    public function setData(?CreateMemberResponse $data): void
     {
         $this->data = $data;
     }

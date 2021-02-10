@@ -86,7 +86,7 @@ class LocalDeliveryLocusDetailDTOOutParam implements \JsonSerializable {
     /**
      * @return LocalDeliveryLocusDetailDTO
      */
-    public function getData(): LocalDeliveryLocusDetailDTO
+    public function getData(): ?LocalDeliveryLocusDetailDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class LocalDeliveryLocusDetailDTOOutParam implements \JsonSerializable {
     /**
      * @param LocalDeliveryLocusDetailDTO $data
      */
-    public function setData(LocalDeliveryLocusDetailDTO $data): void
+    public function setData(?LocalDeliveryLocusDetailDTO $data): void
     {
         $this->data = $data;
     }

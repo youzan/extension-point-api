@@ -86,7 +86,7 @@ class ExtMemberCodeDTOOutParam implements \JsonSerializable {
     /**
      * @return ExtMemberCodeDTO
      */
-    public function getData(): ExtMemberCodeDTO
+    public function getData(): ?ExtMemberCodeDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ExtMemberCodeDTOOutParam implements \JsonSerializable {
     /**
      * @param ExtMemberCodeDTO $data
      */
-    public function setData(ExtMemberCodeDTO $data): void
+    public function setData(?ExtMemberCodeDTO $data): void
     {
         $this->data = $data;
     }

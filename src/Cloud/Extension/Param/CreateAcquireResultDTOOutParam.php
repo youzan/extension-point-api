@@ -86,7 +86,7 @@ class CreateAcquireResultDTOOutParam implements \JsonSerializable {
     /**
      * @return CreateAcquireResultDTO
      */
-    public function getData(): CreateAcquireResultDTO
+    public function getData(): ?CreateAcquireResultDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class CreateAcquireResultDTOOutParam implements \JsonSerializable {
     /**
      * @param CreateAcquireResultDTO $data
      */
-    public function setData(CreateAcquireResultDTO $data): void
+    public function setData(?CreateAcquireResultDTO $data): void
     {
         $this->data = $data;
     }

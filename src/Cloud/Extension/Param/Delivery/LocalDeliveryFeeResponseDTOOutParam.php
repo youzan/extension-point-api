@@ -86,7 +86,7 @@ class LocalDeliveryFeeResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return LocalDeliveryFeeResponseDTO
      */
-    public function getData(): LocalDeliveryFeeResponseDTO
+    public function getData(): ?LocalDeliveryFeeResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class LocalDeliveryFeeResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param LocalDeliveryFeeResponseDTO $data
      */
-    public function setData(LocalDeliveryFeeResponseDTO $data): void
+    public function setData(?LocalDeliveryFeeResponseDTO $data): void
     {
         $this->data = $data;
     }

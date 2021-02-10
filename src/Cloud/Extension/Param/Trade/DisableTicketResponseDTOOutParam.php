@@ -86,7 +86,7 @@ class DisableTicketResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return DisableTicketResponseDTO
      */
-    public function getData(): DisableTicketResponseDTO
+    public function getData(): ?DisableTicketResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class DisableTicketResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param DisableTicketResponseDTO $data
      */
-    public function setData(DisableTicketResponseDTO $data): void
+    public function setData(?DisableTicketResponseDTO $data): void
     {
         $this->data = $data;
     }

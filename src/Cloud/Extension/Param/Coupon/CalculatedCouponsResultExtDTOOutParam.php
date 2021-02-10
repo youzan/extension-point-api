@@ -86,7 +86,7 @@ class CalculatedCouponsResultExtDTOOutParam implements \JsonSerializable {
     /**
      * @return CalculatedCouponsResultExtDTO
      */
-    public function getData(): CalculatedCouponsResultExtDTO
+    public function getData(): ?CalculatedCouponsResultExtDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class CalculatedCouponsResultExtDTOOutParam implements \JsonSerializable {
     /**
      * @param CalculatedCouponsResultExtDTO $data
      */
-    public function setData(CalculatedCouponsResultExtDTO $data): void
+    public function setData(?CalculatedCouponsResultExtDTO $data): void
     {
         $this->data = $data;
     }

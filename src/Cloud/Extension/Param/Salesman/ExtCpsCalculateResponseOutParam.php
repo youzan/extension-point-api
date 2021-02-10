@@ -86,7 +86,7 @@ class ExtCpsCalculateResponseOutParam implements \JsonSerializable {
     /**
      * @return ExtCpsCalculateResponse
      */
-    public function getData(): ExtCpsCalculateResponse
+    public function getData(): ?ExtCpsCalculateResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ExtCpsCalculateResponseOutParam implements \JsonSerializable {
     /**
      * @param ExtCpsCalculateResponse $data
      */
-    public function setData(ExtCpsCalculateResponse $data): void
+    public function setData(?ExtCpsCalculateResponse $data): void
     {
         $this->data = $data;
     }

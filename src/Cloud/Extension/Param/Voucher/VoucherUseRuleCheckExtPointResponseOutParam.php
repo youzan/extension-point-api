@@ -86,7 +86,7 @@ class VoucherUseRuleCheckExtPointResponseOutParam implements \JsonSerializable {
     /**
      * @return VoucherUseRuleCheckExtPointResponse
      */
-    public function getData(): VoucherUseRuleCheckExtPointResponse
+    public function getData(): ?VoucherUseRuleCheckExtPointResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class VoucherUseRuleCheckExtPointResponseOutParam implements \JsonSerializable {
     /**
      * @param VoucherUseRuleCheckExtPointResponse $data
      */
-    public function setData(VoucherUseRuleCheckExtPointResponse $data): void
+    public function setData(?VoucherUseRuleCheckExtPointResponse $data): void
     {
         $this->data = $data;
     }

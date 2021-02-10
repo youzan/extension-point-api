@@ -86,7 +86,7 @@ class FindCouponGroupResponseExtOutParam implements \JsonSerializable {
     /**
      * @return FindCouponGroupResponseExt
      */
-    public function getData(): FindCouponGroupResponseExt
+    public function getData(): ?FindCouponGroupResponseExt
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class FindCouponGroupResponseExtOutParam implements \JsonSerializable {
     /**
      * @param FindCouponGroupResponseExt $data
      */
-    public function setData(FindCouponGroupResponseExt $data): void
+    public function setData(?FindCouponGroupResponseExt $data): void
     {
         $this->data = $data;
     }

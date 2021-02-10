@@ -86,7 +86,7 @@ class AvailableVouchersQueryExtPointResponseDTOOutParam implements \JsonSerializ
     /**
      * @return AvailableVouchersQueryExtPointResponseDTO
      */
-    public function getData(): AvailableVouchersQueryExtPointResponseDTO
+    public function getData(): ?AvailableVouchersQueryExtPointResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class AvailableVouchersQueryExtPointResponseDTOOutParam implements \JsonSerializ
     /**
      * @param AvailableVouchersQueryExtPointResponseDTO $data
      */
-    public function setData(AvailableVouchersQueryExtPointResponseDTO $data): void
+    public function setData(?AvailableVouchersQueryExtPointResponseDTO $data): void
     {
         $this->data = $data;
     }

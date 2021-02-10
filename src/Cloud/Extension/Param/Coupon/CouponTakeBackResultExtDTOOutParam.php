@@ -86,7 +86,7 @@ class CouponTakeBackResultExtDTOOutParam implements \JsonSerializable {
     /**
      * @return CouponTakeBackResultExtDTO
      */
-    public function getData(): CouponTakeBackResultExtDTO
+    public function getData(): ?CouponTakeBackResultExtDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class CouponTakeBackResultExtDTOOutParam implements \JsonSerializable {
     /**
      * @param CouponTakeBackResultExtDTO $data
      */
-    public function setData(CouponTakeBackResultExtDTO $data): void
+    public function setData(?CouponTakeBackResultExtDTO $data): void
     {
         $this->data = $data;
     }
