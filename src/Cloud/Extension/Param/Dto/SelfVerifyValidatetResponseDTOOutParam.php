@@ -86,7 +86,7 @@ class SelfVerifyValidatetResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return SelfVerifyValidatetResponseDTO
      */
-    public function getData(): ?SelfVerifyValidatetResponseDTO
+    public function getData(): SelfVerifyValidatetResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class SelfVerifyValidatetResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param SelfVerifyValidatetResponseDTO $data
      */
-    public function setData(?SelfVerifyValidatetResponseDTO $data): void
+    public function setData(SelfVerifyValidatetResponseDTO $data): void
     {
         $this->data = $data;
     }

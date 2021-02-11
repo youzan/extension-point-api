@@ -86,7 +86,7 @@ class ExtLevelChangeResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return ExtLevelChangeResponseDTO
      */
-    public function getData(): ?ExtLevelChangeResponseDTO
+    public function getData(): ExtLevelChangeResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ExtLevelChangeResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param ExtLevelChangeResponseDTO $data
      */
-    public function setData(?ExtLevelChangeResponseDTO $data): void
+    public function setData(ExtLevelChangeResponseDTO $data): void
     {
         $this->data = $data;
     }

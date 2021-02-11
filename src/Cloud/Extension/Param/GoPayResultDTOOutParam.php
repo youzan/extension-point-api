@@ -86,7 +86,7 @@ class GoPayResultDTOOutParam implements \JsonSerializable {
     /**
      * @return GoPayResultDTO
      */
-    public function getData(): ?GoPayResultDTO
+    public function getData(): GoPayResultDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class GoPayResultDTOOutParam implements \JsonSerializable {
     /**
      * @param GoPayResultDTO $data
      */
-    public function setData(?GoPayResultDTO $data): void
+    public function setData(GoPayResultDTO $data): void
     {
         $this->data = $data;
     }

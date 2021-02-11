@@ -86,7 +86,7 @@ class RespDTOOutParam implements \JsonSerializable {
     /**
      * @return RespDTO
      */
-    public function getData(): ?RespDTO
+    public function getData(): RespDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class RespDTOOutParam implements \JsonSerializable {
     /**
      * @param RespDTO $data
      */
-    public function setData(?RespDTO $data): void
+    public function setData(RespDTO $data): void
     {
         $this->data = $data;
     }

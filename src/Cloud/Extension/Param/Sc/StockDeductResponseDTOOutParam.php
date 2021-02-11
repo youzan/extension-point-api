@@ -86,7 +86,7 @@ class StockDeductResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return StockDeductResponseDTO
      */
-    public function getData(): ?StockDeductResponseDTO
+    public function getData(): StockDeductResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class StockDeductResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param StockDeductResponseDTO $data
      */
-    public function setData(?StockDeductResponseDTO $data): void
+    public function setData(StockDeductResponseDTO $data): void
     {
         $this->data = $data;
     }

@@ -86,7 +86,7 @@ class ItemTradeCloudExtResponseOutParam implements \JsonSerializable {
     /**
      * @return ItemTradeCloudExtResponse
      */
-    public function getData(): ?ItemTradeCloudExtResponse
+    public function getData(): ItemTradeCloudExtResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ItemTradeCloudExtResponseOutParam implements \JsonSerializable {
     /**
      * @param ItemTradeCloudExtResponse $data
      */
-    public function setData(?ItemTradeCloudExtResponse $data): void
+    public function setData(ItemTradeCloudExtResponse $data): void
     {
         $this->data = $data;
     }

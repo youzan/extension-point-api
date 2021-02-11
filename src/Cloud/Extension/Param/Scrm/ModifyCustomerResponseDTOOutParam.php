@@ -86,7 +86,7 @@ class ModifyCustomerResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return ModifyCustomerResponseDTO
      */
-    public function getData(): ?ModifyCustomerResponseDTO
+    public function getData(): ModifyCustomerResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ModifyCustomerResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param ModifyCustomerResponseDTO $data
      */
-    public function setData(?ModifyCustomerResponseDTO $data): void
+    public function setData(ModifyCustomerResponseDTO $data): void
     {
         $this->data = $data;
     }

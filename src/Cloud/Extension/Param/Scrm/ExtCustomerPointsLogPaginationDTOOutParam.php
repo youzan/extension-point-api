@@ -86,7 +86,7 @@ class ExtCustomerPointsLogPaginationDTOOutParam implements \JsonSerializable {
     /**
      * @return ExtCustomerPointsLogPaginationDTO
      */
-    public function getData(): ?ExtCustomerPointsLogPaginationDTO
+    public function getData(): ExtCustomerPointsLogPaginationDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ExtCustomerPointsLogPaginationDTOOutParam implements \JsonSerializable {
     /**
      * @param ExtCustomerPointsLogPaginationDTO $data
      */
-    public function setData(?ExtCustomerPointsLogPaginationDTO $data): void
+    public function setData(ExtCustomerPointsLogPaginationDTO $data): void
     {
         $this->data = $data;
     }

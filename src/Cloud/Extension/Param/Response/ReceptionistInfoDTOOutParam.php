@@ -86,7 +86,7 @@ class ReceptionistInfoDTOOutParam implements \JsonSerializable {
     /**
      * @return ReceptionistInfoDTO
      */
-    public function getData(): ?ReceptionistInfoDTO
+    public function getData(): ReceptionistInfoDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ReceptionistInfoDTOOutParam implements \JsonSerializable {
     /**
      * @param ReceptionistInfoDTO $data
      */
-    public function setData(?ReceptionistInfoDTO $data): void
+    public function setData(ReceptionistInfoDTO $data): void
     {
         $this->data = $data;
     }

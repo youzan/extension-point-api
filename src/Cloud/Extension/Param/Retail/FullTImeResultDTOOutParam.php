@@ -86,7 +86,7 @@ class FullTImeResultDTOOutParam implements \JsonSerializable {
     /**
      * @return FullTImeResultDTO
      */
-    public function getData(): ?FullTImeResultDTO
+    public function getData(): FullTImeResultDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class FullTImeResultDTOOutParam implements \JsonSerializable {
     /**
      * @param FullTImeResultDTO $data
      */
-    public function setData(?FullTImeResultDTO $data): void
+    public function setData(FullTImeResultDTO $data): void
     {
         $this->data = $data;
     }

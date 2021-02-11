@@ -86,7 +86,7 @@ class ResultOutParam implements \JsonSerializable {
     /**
      * @return Result
      */
-    public function getData(): ?Result
+    public function getData(): Result
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ResultOutParam implements \JsonSerializable {
     /**
      * @param Result $data
      */
-    public function setData(?Result $data): void
+    public function setData(Result $data): void
     {
         $this->data = $data;
     }

@@ -86,7 +86,7 @@ class RobotMsgResponseOutParam implements \JsonSerializable {
     /**
      * @return RobotMsgResponse
      */
-    public function getData(): ?RobotMsgResponse
+    public function getData(): RobotMsgResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class RobotMsgResponseOutParam implements \JsonSerializable {
     /**
      * @param RobotMsgResponse $data
      */
-    public function setData(?RobotMsgResponse $data): void
+    public function setData(RobotMsgResponse $data): void
     {
         $this->data = $data;
     }

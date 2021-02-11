@@ -86,7 +86,7 @@ class ThirdpartyVoucherBatchSendExtPointResponseOutParam implements \JsonSeriali
     /**
      * @return ThirdpartyVoucherBatchSendExtPointResponse
      */
-    public function getData(): ?ThirdpartyVoucherBatchSendExtPointResponse
+    public function getData(): ThirdpartyVoucherBatchSendExtPointResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ThirdpartyVoucherBatchSendExtPointResponseOutParam implements \JsonSeriali
     /**
      * @param ThirdpartyVoucherBatchSendExtPointResponse $data
      */
-    public function setData(?ThirdpartyVoucherBatchSendExtPointResponse $data): void
+    public function setData(ThirdpartyVoucherBatchSendExtPointResponse $data): void
     {
         $this->data = $data;
     }

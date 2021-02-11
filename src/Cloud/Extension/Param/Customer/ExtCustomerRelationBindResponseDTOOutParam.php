@@ -86,7 +86,7 @@ class ExtCustomerRelationBindResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return ExtCustomerRelationBindResponseDTO
      */
-    public function getData(): ?ExtCustomerRelationBindResponseDTO
+    public function getData(): ExtCustomerRelationBindResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ExtCustomerRelationBindResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param ExtCustomerRelationBindResponseDTO $data
      */
-    public function setData(?ExtCustomerRelationBindResponseDTO $data): void
+    public function setData(ExtCustomerRelationBindResponseDTO $data): void
     {
         $this->data = $data;
     }

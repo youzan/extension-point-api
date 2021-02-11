@@ -86,7 +86,7 @@ class ThirdpartyVoucherSendExtPointResponseOutParam implements \JsonSerializable
     /**
      * @return ThirdpartyVoucherSendExtPointResponse
      */
-    public function getData(): ?ThirdpartyVoucherSendExtPointResponse
+    public function getData(): ThirdpartyVoucherSendExtPointResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ThirdpartyVoucherSendExtPointResponseOutParam implements \JsonSerializable
     /**
      * @param ThirdpartyVoucherSendExtPointResponse $data
      */
-    public function setData(?ThirdpartyVoucherSendExtPointResponse $data): void
+    public function setData(ThirdpartyVoucherSendExtPointResponse $data): void
     {
         $this->data = $data;
     }

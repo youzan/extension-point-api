@@ -86,7 +86,7 @@ class UmpCalculateResponseOutParam implements \JsonSerializable {
     /**
      * @return UmpCalculateResponse
      */
-    public function getData(): ?UmpCalculateResponse
+    public function getData(): UmpCalculateResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class UmpCalculateResponseOutParam implements \JsonSerializable {
     /**
      * @param UmpCalculateResponse $data
      */
-    public function setData(?UmpCalculateResponse $data): void
+    public function setData(UmpCalculateResponse $data): void
     {
         $this->data = $data;
     }

@@ -86,7 +86,7 @@ class ValueCardActivateResponseOutParam implements \JsonSerializable {
     /**
      * @return ValueCardActivateResponse
      */
-    public function getData(): ?ValueCardActivateResponse
+    public function getData(): ValueCardActivateResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ValueCardActivateResponseOutParam implements \JsonSerializable {
     /**
      * @param ValueCardActivateResponse $data
      */
-    public function setData(?ValueCardActivateResponse $data): void
+    public function setData(ValueCardActivateResponse $data): void
     {
         $this->data = $data;
     }

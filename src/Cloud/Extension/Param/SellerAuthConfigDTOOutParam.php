@@ -86,7 +86,7 @@ class SellerAuthConfigDTOOutParam implements \JsonSerializable {
     /**
      * @return SellerAuthConfigDTO
      */
-    public function getData(): ?SellerAuthConfigDTO
+    public function getData(): SellerAuthConfigDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class SellerAuthConfigDTOOutParam implements \JsonSerializable {
     /**
      * @param SellerAuthConfigDTO $data
      */
-    public function setData(?SellerAuthConfigDTO $data): void
+    public function setData(SellerAuthConfigDTO $data): void
     {
         $this->data = $data;
     }

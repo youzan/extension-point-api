@@ -86,7 +86,7 @@ class FrozenTicketResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return FrozenTicketResponseDTO
      */
-    public function getData(): ?FrozenTicketResponseDTO
+    public function getData(): FrozenTicketResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class FrozenTicketResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param FrozenTicketResponseDTO $data
      */
-    public function setData(?FrozenTicketResponseDTO $data): void
+    public function setData(FrozenTicketResponseDTO $data): void
     {
         $this->data = $data;
     }

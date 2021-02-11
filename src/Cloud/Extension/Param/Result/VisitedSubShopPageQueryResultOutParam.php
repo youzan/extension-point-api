@@ -86,7 +86,7 @@ class VisitedSubShopPageQueryResultOutParam implements \JsonSerializable {
     /**
      * @return VisitedSubShopPageQueryResult
      */
-    public function getData(): ?VisitedSubShopPageQueryResult
+    public function getData(): VisitedSubShopPageQueryResult
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class VisitedSubShopPageQueryResultOutParam implements \JsonSerializable {
     /**
      * @param VisitedSubShopPageQueryResult $data
      */
-    public function setData(?VisitedSubShopPageQueryResult $data): void
+    public function setData(VisitedSubShopPageQueryResult $data): void
     {
         $this->data = $data;
     }

@@ -86,7 +86,7 @@ class ShipOrderSelfValidateResultDTOOutParam implements \JsonSerializable {
     /**
      * @return ShipOrderSelfValidateResultDTO
      */
-    public function getData(): ?ShipOrderSelfValidateResultDTO
+    public function getData(): ShipOrderSelfValidateResultDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ShipOrderSelfValidateResultDTOOutParam implements \JsonSerializable {
     /**
      * @param ShipOrderSelfValidateResultDTO $data
      */
-    public function setData(?ShipOrderSelfValidateResultDTO $data): void
+    public function setData(ShipOrderSelfValidateResultDTO $data): void
     {
         $this->data = $data;
     }

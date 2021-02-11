@@ -86,7 +86,7 @@ class LocalDeliveryGetDeductFeeResponseDTOOutParam implements \JsonSerializable 
     /**
      * @return LocalDeliveryGetDeductFeeResponseDTO
      */
-    public function getData(): ?LocalDeliveryGetDeductFeeResponseDTO
+    public function getData(): LocalDeliveryGetDeductFeeResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class LocalDeliveryGetDeductFeeResponseDTOOutParam implements \JsonSerializable 
     /**
      * @param LocalDeliveryGetDeductFeeResponseDTO $data
      */
-    public function setData(?LocalDeliveryGetDeductFeeResponseDTO $data): void
+    public function setData(LocalDeliveryGetDeductFeeResponseDTO $data): void
     {
         $this->data = $data;
     }

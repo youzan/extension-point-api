@@ -86,7 +86,7 @@ class FreezePointsResponseOutParam implements \JsonSerializable {
     /**
      * @return FreezePointsResponse
      */
-    public function getData(): ?FreezePointsResponse
+    public function getData(): FreezePointsResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class FreezePointsResponseOutParam implements \JsonSerializable {
     /**
      * @param FreezePointsResponse $data
      */
-    public function setData(?FreezePointsResponse $data): void
+    public function setData(FreezePointsResponse $data): void
     {
         $this->data = $data;
     }

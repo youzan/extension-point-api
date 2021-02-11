@@ -86,7 +86,7 @@ class ThirdpartyBuyerVoucherPQExtPointResponseOutParam implements \JsonSerializa
     /**
      * @return ThirdpartyBuyerVoucherPQExtPointResponse
      */
-    public function getData(): ?ThirdpartyBuyerVoucherPQExtPointResponse
+    public function getData(): ThirdpartyBuyerVoucherPQExtPointResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ThirdpartyBuyerVoucherPQExtPointResponseOutParam implements \JsonSerializa
     /**
      * @param ThirdpartyBuyerVoucherPQExtPointResponse $data
      */
-    public function setData(?ThirdpartyBuyerVoucherPQExtPointResponse $data): void
+    public function setData(ThirdpartyBuyerVoucherPQExtPointResponse $data): void
     {
         $this->data = $data;
     }

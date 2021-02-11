@@ -86,7 +86,7 @@ class PurchaseOrderResultDTOOutParam implements \JsonSerializable {
     /**
      * @return PurchaseOrderResultDTO
      */
-    public function getData(): ?PurchaseOrderResultDTO
+    public function getData(): PurchaseOrderResultDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class PurchaseOrderResultDTOOutParam implements \JsonSerializable {
     /**
      * @param PurchaseOrderResultDTO $data
      */
-    public function setData(?PurchaseOrderResultDTO $data): void
+    public function setData(PurchaseOrderResultDTO $data): void
     {
         $this->data = $data;
     }

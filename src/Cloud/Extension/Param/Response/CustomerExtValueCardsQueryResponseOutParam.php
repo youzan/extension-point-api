@@ -86,7 +86,7 @@ class CustomerExtValueCardsQueryResponseOutParam implements \JsonSerializable {
     /**
      * @return CustomerExtValueCardsQueryResponse
      */
-    public function getData(): ?CustomerExtValueCardsQueryResponse
+    public function getData(): CustomerExtValueCardsQueryResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class CustomerExtValueCardsQueryResponseOutParam implements \JsonSerializable {
     /**
      * @param CustomerExtValueCardsQueryResponse $data
      */
-    public function setData(?CustomerExtValueCardsQueryResponse $data): void
+    public function setData(CustomerExtValueCardsQueryResponse $data): void
     {
         $this->data = $data;
     }

@@ -86,7 +86,7 @@ class ExtAccountVerifyResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return ExtAccountVerifyResponseDTO
      */
-    public function getData(): ?ExtAccountVerifyResponseDTO
+    public function getData(): ExtAccountVerifyResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ExtAccountVerifyResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param ExtAccountVerifyResponseDTO $data
      */
-    public function setData(?ExtAccountVerifyResponseDTO $data): void
+    public function setData(ExtAccountVerifyResponseDTO $data): void
     {
         $this->data = $data;
     }

@@ -86,7 +86,7 @@ class LocalDeliveryCommitAuditResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return LocalDeliveryCommitAuditResponseDTO
      */
-    public function getData(): ?LocalDeliveryCommitAuditResponseDTO
+    public function getData(): LocalDeliveryCommitAuditResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class LocalDeliveryCommitAuditResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param LocalDeliveryCommitAuditResponseDTO $data
      */
-    public function setData(?LocalDeliveryCommitAuditResponseDTO $data): void
+    public function setData(LocalDeliveryCommitAuditResponseDTO $data): void
     {
         $this->data = $data;
     }

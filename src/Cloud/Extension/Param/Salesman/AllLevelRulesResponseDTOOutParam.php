@@ -86,7 +86,7 @@ class AllLevelRulesResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return AllLevelRulesResponseDTO
      */
-    public function getData(): ?AllLevelRulesResponseDTO
+    public function getData(): AllLevelRulesResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class AllLevelRulesResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param AllLevelRulesResponseDTO $data
      */
-    public function setData(?AllLevelRulesResponseDTO $data): void
+    public function setData(AllLevelRulesResponseDTO $data): void
     {
         $this->data = $data;
     }

@@ -86,7 +86,7 @@ class ExtCustomerPointsStatusDTOOutParam implements \JsonSerializable {
     /**
      * @return ExtCustomerPointsStatusDTO
      */
-    public function getData(): ?ExtCustomerPointsStatusDTO
+    public function getData(): ExtCustomerPointsStatusDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ExtCustomerPointsStatusDTOOutParam implements \JsonSerializable {
     /**
      * @param ExtCustomerPointsStatusDTO $data
      */
-    public function setData(?ExtCustomerPointsStatusDTO $data): void
+    public function setData(ExtCustomerPointsStatusDTO $data): void
     {
         $this->data = $data;
     }

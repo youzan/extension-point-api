@@ -86,7 +86,7 @@ class DeliveryOrderConfirmResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return DeliveryOrderConfirmResponseDTO
      */
-    public function getData(): ?DeliveryOrderConfirmResponseDTO
+    public function getData(): DeliveryOrderConfirmResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class DeliveryOrderConfirmResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param DeliveryOrderConfirmResponseDTO $data
      */
-    public function setData(?DeliveryOrderConfirmResponseDTO $data): void
+    public function setData(DeliveryOrderConfirmResponseDTO $data): void
     {
         $this->data = $data;
     }

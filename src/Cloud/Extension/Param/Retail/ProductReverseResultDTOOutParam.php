@@ -86,7 +86,7 @@ class ProductReverseResultDTOOutParam implements \JsonSerializable {
     /**
      * @return ProductReverseResultDTO
      */
-    public function getData(): ?ProductReverseResultDTO
+    public function getData(): ProductReverseResultDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ProductReverseResultDTOOutParam implements \JsonSerializable {
     /**
      * @param ProductReverseResultDTO $data
      */
-    public function setData(?ProductReverseResultDTO $data): void
+    public function setData(ProductReverseResultDTO $data): void
     {
         $this->data = $data;
     }

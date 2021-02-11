@@ -86,7 +86,7 @@ class PluginNotifyResultDTOOutParam implements \JsonSerializable {
     /**
      * @return PluginNotifyResultDTO
      */
-    public function getData(): ?PluginNotifyResultDTO
+    public function getData(): PluginNotifyResultDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class PluginNotifyResultDTOOutParam implements \JsonSerializable {
     /**
      * @param PluginNotifyResultDTO $data
      */
-    public function setData(?PluginNotifyResultDTO $data): void
+    public function setData(PluginNotifyResultDTO $data): void
     {
         $this->data = $data;
     }

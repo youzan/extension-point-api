@@ -86,7 +86,7 @@ class CustomerExtValueCardDetailQueryResponseOutParam implements \JsonSerializab
     /**
      * @return CustomerExtValueCardDetailQueryResponse
      */
-    public function getData(): ?CustomerExtValueCardDetailQueryResponse
+    public function getData(): CustomerExtValueCardDetailQueryResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class CustomerExtValueCardDetailQueryResponseOutParam implements \JsonSerializab
     /**
      * @param CustomerExtValueCardDetailQueryResponse $data
      */
-    public function setData(?CustomerExtValueCardDetailQueryResponse $data): void
+    public function setData(CustomerExtValueCardDetailQueryResponse $data): void
     {
         $this->data = $data;
     }

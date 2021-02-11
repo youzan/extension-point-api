@@ -86,7 +86,7 @@ class RigMenuCoBuildResDTOOutParam implements \JsonSerializable {
     /**
      * @return RigMenuCoBuildResDTO
      */
-    public function getData(): ?RigMenuCoBuildResDTO
+    public function getData(): RigMenuCoBuildResDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class RigMenuCoBuildResDTOOutParam implements \JsonSerializable {
     /**
      * @param RigMenuCoBuildResDTO $data
      */
-    public function setData(?RigMenuCoBuildResDTO $data): void
+    public function setData(RigMenuCoBuildResDTO $data): void
     {
         $this->data = $data;
     }

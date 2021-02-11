@@ -86,7 +86,7 @@ class ExtCustomerLevelListDTOOutParam implements \JsonSerializable {
     /**
      * @return ExtCustomerLevelListDTO
      */
-    public function getData(): ?ExtCustomerLevelListDTO
+    public function getData(): ExtCustomerLevelListDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ExtCustomerLevelListDTOOutParam implements \JsonSerializable {
     /**
      * @param ExtCustomerLevelListDTO $data
      */
-    public function setData(?ExtCustomerLevelListDTO $data): void
+    public function setData(ExtCustomerLevelListDTO $data): void
     {
         $this->data = $data;
     }

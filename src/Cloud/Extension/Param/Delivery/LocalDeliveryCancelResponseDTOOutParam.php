@@ -86,7 +86,7 @@ class LocalDeliveryCancelResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return LocalDeliveryCancelResponseDTO
      */
-    public function getData(): ?LocalDeliveryCancelResponseDTO
+    public function getData(): LocalDeliveryCancelResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class LocalDeliveryCancelResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param LocalDeliveryCancelResponseDTO $data
      */
-    public function setData(?LocalDeliveryCancelResponseDTO $data): void
+    public function setData(LocalDeliveryCancelResponseDTO $data): void
     {
         $this->data = $data;
     }

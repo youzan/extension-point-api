@@ -86,7 +86,7 @@ class QueryValueCardBalanceResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return QueryValueCardBalanceResponseDTO
      */
-    public function getData(): ?QueryValueCardBalanceResponseDTO
+    public function getData(): QueryValueCardBalanceResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class QueryValueCardBalanceResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param QueryValueCardBalanceResponseDTO $data
      */
-    public function setData(?QueryValueCardBalanceResponseDTO $data): void
+    public function setData(QueryValueCardBalanceResponseDTO $data): void
     {
         $this->data = $data;
     }

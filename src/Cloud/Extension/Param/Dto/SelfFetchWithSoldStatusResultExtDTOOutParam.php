@@ -86,7 +86,7 @@ class SelfFetchWithSoldStatusResultExtDTOOutParam implements \JsonSerializable {
     /**
      * @return SelfFetchWithSoldStatusResultExtDTO
      */
-    public function getData(): ?SelfFetchWithSoldStatusResultExtDTO
+    public function getData(): SelfFetchWithSoldStatusResultExtDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class SelfFetchWithSoldStatusResultExtDTOOutParam implements \JsonSerializable {
     /**
      * @param SelfFetchWithSoldStatusResultExtDTO $data
      */
-    public function setData(?SelfFetchWithSoldStatusResultExtDTO $data): void
+    public function setData(SelfFetchWithSoldStatusResultExtDTO $data): void
     {
         $this->data = $data;
     }

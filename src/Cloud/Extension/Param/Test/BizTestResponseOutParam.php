@@ -86,7 +86,7 @@ class BizTestResponseOutParam implements \JsonSerializable {
     /**
      * @return BizTestResponse
      */
-    public function getData(): ?BizTestResponse
+    public function getData(): BizTestResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class BizTestResponseOutParam implements \JsonSerializable {
     /**
      * @param BizTestResponse $data
      */
-    public function setData(?BizTestResponse $data): void
+    public function setData(BizTestResponse $data): void
     {
         $this->data = $data;
     }

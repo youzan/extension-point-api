@@ -86,7 +86,7 @@ class PointDeductionPromotionResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return PointDeductionPromotionResponseDTO
      */
-    public function getData(): ?PointDeductionPromotionResponseDTO
+    public function getData(): PointDeductionPromotionResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class PointDeductionPromotionResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param PointDeductionPromotionResponseDTO $data
      */
-    public function setData(?PointDeductionPromotionResponseDTO $data): void
+    public function setData(PointDeductionPromotionResponseDTO $data): void
     {
         $this->data = $data;
     }

@@ -86,7 +86,7 @@ class ExtCalculateTariffResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return ExtCalculateTariffResponseDTO
      */
-    public function getData(): ?ExtCalculateTariffResponseDTO
+    public function getData(): ExtCalculateTariffResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ExtCalculateTariffResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param ExtCalculateTariffResponseDTO $data
      */
-    public function setData(?ExtCalculateTariffResponseDTO $data): void
+    public function setData(ExtCalculateTariffResponseDTO $data): void
     {
         $this->data = $data;
     }

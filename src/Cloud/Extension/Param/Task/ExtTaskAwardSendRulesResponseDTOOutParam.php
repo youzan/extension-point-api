@@ -86,7 +86,7 @@ class ExtTaskAwardSendRulesResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return ExtTaskAwardSendRulesResponseDTO
      */
-    public function getData(): ?ExtTaskAwardSendRulesResponseDTO
+    public function getData(): ExtTaskAwardSendRulesResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ExtTaskAwardSendRulesResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param ExtTaskAwardSendRulesResponseDTO $data
      */
-    public function setData(?ExtTaskAwardSendRulesResponseDTO $data): void
+    public function setData(ExtTaskAwardSendRulesResponseDTO $data): void
     {
         $this->data = $data;
     }

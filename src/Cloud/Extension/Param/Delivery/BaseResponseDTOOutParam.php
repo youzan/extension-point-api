@@ -86,7 +86,7 @@ class BaseResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return BaseResponseDTO
      */
-    public function getData(): ?BaseResponseDTO
+    public function getData(): BaseResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class BaseResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param BaseResponseDTO $data
      */
-    public function setData(?BaseResponseDTO $data): void
+    public function setData(BaseResponseDTO $data): void
     {
         $this->data = $data;
     }

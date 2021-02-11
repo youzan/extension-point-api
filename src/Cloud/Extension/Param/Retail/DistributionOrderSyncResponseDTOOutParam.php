@@ -86,7 +86,7 @@ class DistributionOrderSyncResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return DistributionOrderSyncResponseDTO
      */
-    public function getData(): ?DistributionOrderSyncResponseDTO
+    public function getData(): DistributionOrderSyncResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class DistributionOrderSyncResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param DistributionOrderSyncResponseDTO $data
      */
-    public function setData(?DistributionOrderSyncResponseDTO $data): void
+    public function setData(DistributionOrderSyncResponseDTO $data): void
     {
         $this->data = $data;
     }

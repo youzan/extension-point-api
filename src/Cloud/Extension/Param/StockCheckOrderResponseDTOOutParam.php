@@ -86,7 +86,7 @@ class StockCheckOrderResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return StockCheckOrderResponseDTO
      */
-    public function getData(): ?StockCheckOrderResponseDTO
+    public function getData(): StockCheckOrderResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class StockCheckOrderResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param StockCheckOrderResponseDTO $data
      */
-    public function setData(?StockCheckOrderResponseDTO $data): void
+    public function setData(StockCheckOrderResponseDTO $data): void
     {
         $this->data = $data;
     }
