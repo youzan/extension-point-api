@@ -86,7 +86,7 @@ class ExtLevelListDTOOutParam implements \JsonSerializable {
     /**
      * @return ExtLevelListDTO
      */
-    public function getData(): ExtLevelListDTO
+    public function getData(): ?ExtLevelListDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ExtLevelListDTOOutParam implements \JsonSerializable {
     /**
      * @param ExtLevelListDTO $data
      */
-    public function setData(ExtLevelListDTO $data): void
+    public function setData(?ExtLevelListDTO $data): void
     {
         $this->data = $data;
     }

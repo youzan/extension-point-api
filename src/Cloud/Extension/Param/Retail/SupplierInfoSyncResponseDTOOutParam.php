@@ -86,7 +86,7 @@ class SupplierInfoSyncResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return SupplierInfoSyncResponseDTO
      */
-    public function getData(): SupplierInfoSyncResponseDTO
+    public function getData(): ?SupplierInfoSyncResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class SupplierInfoSyncResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param SupplierInfoSyncResponseDTO $data
      */
-    public function setData(SupplierInfoSyncResponseDTO $data): void
+    public function setData(?SupplierInfoSyncResponseDTO $data): void
     {
         $this->data = $data;
     }

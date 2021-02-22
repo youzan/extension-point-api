@@ -86,7 +86,7 @@ class GroupOpenCheckResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return GroupOpenCheckResponseDTO
      */
-    public function getData(): GroupOpenCheckResponseDTO
+    public function getData(): ?GroupOpenCheckResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class GroupOpenCheckResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param GroupOpenCheckResponseDTO $data
      */
-    public function setData(GroupOpenCheckResponseDTO $data): void
+    public function setData(?GroupOpenCheckResponseDTO $data): void
     {
         $this->data = $data;
     }

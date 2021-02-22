@@ -24,7 +24,7 @@ class ExtCustomerInfoDTO implements \JsonSerializable {
     private $accountType;
 
     /**
-     * 有赞OpenId
+     * 有赞open id
      * @var string
      */
     private $yzOpenId;

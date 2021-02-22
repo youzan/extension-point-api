@@ -86,7 +86,7 @@ class CustomerExtBillRecordQueryResponseOutParam implements \JsonSerializable {
     /**
      * @return CustomerExtBillRecordQueryResponse
      */
-    public function getData(): CustomerExtBillRecordQueryResponse
+    public function getData(): ?CustomerExtBillRecordQueryResponse
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class CustomerExtBillRecordQueryResponseOutParam implements \JsonSerializable {
     /**
      * @param CustomerExtBillRecordQueryResponse $data
      */
-    public function setData(CustomerExtBillRecordQueryResponse $data): void
+    public function setData(?CustomerExtBillRecordQueryResponse $data): void
     {
         $this->data = $data;
     }

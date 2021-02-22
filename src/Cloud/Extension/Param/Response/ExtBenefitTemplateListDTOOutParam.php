@@ -86,7 +86,7 @@ class ExtBenefitTemplateListDTOOutParam implements \JsonSerializable {
     /**
      * @return ExtBenefitTemplateListDTO
      */
-    public function getData(): ExtBenefitTemplateListDTO
+    public function getData(): ?ExtBenefitTemplateListDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ExtBenefitTemplateListDTOOutParam implements \JsonSerializable {
     /**
      * @param ExtBenefitTemplateListDTO $data
      */
-    public function setData(ExtBenefitTemplateListDTO $data): void
+    public function setData(?ExtBenefitTemplateListDTO $data): void
     {
         $this->data = $data;
     }

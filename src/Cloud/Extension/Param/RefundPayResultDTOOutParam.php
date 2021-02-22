@@ -86,7 +86,7 @@ class RefundPayResultDTOOutParam implements \JsonSerializable {
     /**
      * @return RefundPayResultDTO
      */
-    public function getData(): RefundPayResultDTO
+    public function getData(): ?RefundPayResultDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class RefundPayResultDTOOutParam implements \JsonSerializable {
     /**
      * @param RefundPayResultDTO $data
      */
-    public function setData(RefundPayResultDTO $data): void
+    public function setData(?RefundPayResultDTO $data): void
     {
         $this->data = $data;
     }

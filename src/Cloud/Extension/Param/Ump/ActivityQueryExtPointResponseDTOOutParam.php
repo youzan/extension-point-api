@@ -86,7 +86,7 @@ class ActivityQueryExtPointResponseDTOOutParam implements \JsonSerializable {
     /**
      * @return ActivityQueryExtPointResponseDTO
      */
-    public function getData(): ActivityQueryExtPointResponseDTO
+    public function getData(): ?ActivityQueryExtPointResponseDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ActivityQueryExtPointResponseDTOOutParam implements \JsonSerializable {
     /**
      * @param ActivityQueryExtPointResponseDTO $data
      */
-    public function setData(ActivityQueryExtPointResponseDTO $data): void
+    public function setData(?ActivityQueryExtPointResponseDTO $data): void
     {
         $this->data = $data;
     }

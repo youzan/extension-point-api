@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 use DateTime;
 
 /**
- * 
+ * 返回参数
  * @author Baymax
  * @create 2019-11-22 15:16:12.0
  */

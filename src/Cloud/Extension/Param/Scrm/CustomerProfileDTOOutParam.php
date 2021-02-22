@@ -86,7 +86,7 @@ class CustomerProfileDTOOutParam implements \JsonSerializable {
     /**
      * @return CustomerProfileDTO
      */
-    public function getData(): CustomerProfileDTO
+    public function getData(): ?CustomerProfileDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class CustomerProfileDTOOutParam implements \JsonSerializable {
     /**
      * @param CustomerProfileDTO $data
      */
-    public function setData(CustomerProfileDTO $data): void
+    public function setData(?CustomerProfileDTO $data): void
     {
         $this->data = $data;
     }

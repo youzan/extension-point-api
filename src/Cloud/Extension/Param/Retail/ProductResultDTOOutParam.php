@@ -86,7 +86,7 @@ class ProductResultDTOOutParam implements \JsonSerializable {
     /**
      * @return ProductResultDTO
      */
-    public function getData(): ProductResultDTO
+    public function getData(): ?ProductResultDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class ProductResultDTOOutParam implements \JsonSerializable {
     /**
      * @param ProductResultDTO $data
      */
-    public function setData(ProductResultDTO $data): void
+    public function setData(?ProductResultDTO $data): void
     {
         $this->data = $data;
     }

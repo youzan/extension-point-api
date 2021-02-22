@@ -86,7 +86,7 @@ class RefundSelfValidateResultDTOOutParam implements \JsonSerializable {
     /**
      * @return RefundSelfValidateResultDTO
      */
-    public function getData(): RefundSelfValidateResultDTO
+    public function getData(): ?RefundSelfValidateResultDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class RefundSelfValidateResultDTOOutParam implements \JsonSerializable {
     /**
      * @param RefundSelfValidateResultDTO $data
      */
-    public function setData(RefundSelfValidateResultDTO $data): void
+    public function setData(?RefundSelfValidateResultDTO $data): void
     {
         $this->data = $data;
     }

@@ -86,7 +86,7 @@ class FansUnionidCreateDTOOutParam implements \JsonSerializable {
     /**
      * @return FansUnionidCreateDTO
      */
-    public function getData(): FansUnionidCreateDTO
+    public function getData(): ?FansUnionidCreateDTO
     {
         return $this->data;
     }
@@ -94,7 +94,7 @@ class FansUnionidCreateDTOOutParam implements \JsonSerializable {
     /**
      * @param FansUnionidCreateDTO $data
      */
-    public function setData(FansUnionidCreateDTO $data): void
+    public function setData(?FansUnionidCreateDTO $data): void
     {
         $this->data = $data;
     }
