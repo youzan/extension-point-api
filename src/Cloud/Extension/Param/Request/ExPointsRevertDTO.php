@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 请求参数
  * @author Baymax
- * @create Tue Dec 15 20:43:56 CST 2020
+ * @create 2020-12-15 20:43:56.0
  */
 class ExPointsRevertDTO implements \JsonSerializable {
 
