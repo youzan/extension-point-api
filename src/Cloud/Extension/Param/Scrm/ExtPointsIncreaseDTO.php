@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 请求参数
  * @author Baymax
- * @create Sun Sep 30 14:34:50 CST 2018
+ * @create 2018-09-30 14:34:50.0
  */
 class ExtPointsIncreaseDTO implements \JsonSerializable {
 
@@ -65,6 +65,18 @@ class ExtPointsIncreaseDTO implements \JsonSerializable {
      * @var int
      */
     private $nodeId;
+
+    /**
+     * 业务标识
+     * @var string
+     */
+    private $bizToken;
+
+    /**
+     * 积分操作来源 (101, &quot;交易奖励积分&quot;), (301, &quot;管理员操作积分&quot;), (102,&quot;签到奖励积分&quot;)
+     * @var int
+     */
+    private $operationType;
 
 
 
@@ -210,6 +222,38 @@ class ExtPointsIncreaseDTO implements \JsonSerializable {
     public function setNodeId(?int $nodeId): void
     {
         $this->nodeId = $nodeId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBizToken(): ?string
+    {
+        return $this->bizToken;
+    }
+
+    /**
+     * @param string $bizToken
+     */
+    public function setBizToken(?string $bizToken): void
+    {
+        $this->bizToken = $bizToken;
+    }
+
+    /**
+     * @return int
+     */
+    public function getOperationType(): ?int
+    {
+        return $this->operationType;
+    }
+
+    /**
+     * @param int $operationType
+     */
+    public function setOperationType(?int $operationType): void
+    {
+        $this->operationType = $operationType;
     }
 
     public function jsonSerialize() {

@@ -5,26 +5,26 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 use Com\Youzan\Cloud\Extension\Param\Xxx\XXXDTO;
 
 /**
- * 
+ * asdsad
  * @author Baymax
- * @create Thu Jan 16 19:48:24 CST 2020
+ * @create 2020-01-16 19:48:24.0
  */
 class BizTestResponseDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 12
      * @var bool
      */
     private $success;
 
     /**
-     * 
+     * 433
      * @var array
      */
     private $message;
 
     /**
-     * 
+     * 2321
      * @var array
      */
     private $errorData;

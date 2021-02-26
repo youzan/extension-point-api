@@ -5,34 +5,34 @@ namespace Com\Youzan\Cloud\Extension\Param\Yyy;
 
 
 /**
- * 
+ * 123
  * @author Baymax
- * @create Wed Mar 18 14:32:14 CST 2020
+ * @create 2020-03-18 14:32:14.0
  */
 class YYYDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 232
      * @var string
      */
-    private $data3;
+    private $data345;
 
 
 
     /**
      * @return string
      */
-    public function getData3(): ?string
+    public function getData345(): ?string
     {
-        return $this->data3;
+        return $this->data345;
     }
 
     /**
-     * @param string $data3
+     * @param string $data345
      */
-    public function setData3(?string $data3): void
+    public function setData345(?string $data345): void
     {
-        $this->data3 = $data3;
+        $this->data345 = $data345;
     }
 
     public function jsonSerialize() {
