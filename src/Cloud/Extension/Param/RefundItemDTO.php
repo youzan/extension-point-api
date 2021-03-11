@@ -18,7 +18,7 @@ class RefundItemDTO implements \JsonSerializable {
     private $refundGoodsNum;
 
     /**
-     * 订单明细id
+     * 订单明细id，即子订单号
      * @var int
      */
     private $oid;

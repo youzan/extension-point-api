@@ -12,7 +12,7 @@ use StdClass;
 class ItemCalcDTO implements \JsonSerializable {
 
     /**
-     * 自定义带入数据
+     * 扩展字段，自定义带入数据
      * @var stdClass
      */
     private $selfDefineData;

@@ -12,13 +12,13 @@ use Com\Youzan\Cloud\Extension\Param\Trade\TicketOrderItem;
 class CreateTicketRequestDTO implements \JsonSerializable {
 
     /**
-     * 订单号
+     * 有赞订单号，E开头+年月日时分秒+随机数，长度24位字母和数字组合
      * @var string
      */
     private $orderNo;
 
     /**
-     * 买家标识
+     * 客户Id（有赞用户ID，在有赞平台账号平台下唯一。）
      * @var int
      */
     private $buyerId;
@@ -36,7 +36,7 @@ class CreateTicketRequestDTO implements \JsonSerializable {
     private $buyerName;
 
     /**
-     * 店铺
+     * 店铺在有赞的id标识，有赞平台生成，在有赞平台唯一，用于判断信息属于哪一个店铺
      * @var int
      */
     private $kdtId;

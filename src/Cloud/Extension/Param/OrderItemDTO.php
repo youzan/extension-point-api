@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 class OrderItemDTO implements \JsonSerializable {
 
     /**
-     * 数量
+     * 商品数量
      * @var int
      */
     private $quantity;

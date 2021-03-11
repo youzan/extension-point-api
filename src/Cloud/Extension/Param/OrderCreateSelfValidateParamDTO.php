@@ -12,13 +12,13 @@ use Com\Youzan\Cloud\Extension\Param\TradeGroupDTO;
 class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
 
     /**
-     * 买家标识
+     * 客户Id（有赞用户ID，在有赞平台账号平台下唯一）
      * @var string
      */
     private $userId;
 
     /**
-     * 商户店铺ID
+     * 店铺在有赞的id标识，有赞平台生成，在有赞平台唯一，用于判断信息属于哪一个店铺
      * @var int
      */
     private $kdtId;
@@ -42,13 +42,13 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     private $tradeGroupDTOS;
 
     /**
-     * 用户标识
+     * 有赞用户id，用户在有赞的唯一id
      * @var string
      */
     private $yzOpenId;
 
     /**
-     * 多网点ID
+     * shopId，店铺在有赞的id标识，有赞平台生成，在有赞平台唯一，用于判断信息属于哪一个店铺
      * @var int
      */
     private $nodeKdtid;

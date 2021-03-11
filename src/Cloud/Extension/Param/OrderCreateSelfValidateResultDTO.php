@@ -24,7 +24,7 @@ class OrderCreateSelfValidateResultDTO implements \JsonSerializable {
     private $validateResult;
 
     /**
-     * 不可购买商品
+     * 不可购买商品列表
      * @var array
      */
     private $unavailableItemList;

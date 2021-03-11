@@ -5,20 +5,20 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 use Com\Youzan\Cloud\Extension\Param\Request\ExtCalculateTariffOrderItemRequestDTO;
 
 /**
- * 入参
+ * 税费计算扩展点入参
  * @author Baymax
  * @create 2020-12-24 11:30:20.0
  */
 class ExtCalculateTariffRequestDTO implements \JsonSerializable {
 
     /**
-     * 店铺id
+     * 店铺在有赞的id标识，有赞平台生成，在有赞平台唯一，用于判断信息属于哪一个店铺
      * @var int
      */
     private $kdtId;
 
     /**
-     * 订单no
+     * 有赞订单号，E开头+年月日时分秒+随机数，长度24位字母和数字组合
      * @var string
      */
     private $orderNo;

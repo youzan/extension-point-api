@@ -18,13 +18,13 @@ class DisabledTicketRequestDTO implements \JsonSerializable {
     private $ticketNoList;
 
     /**
-     * 电子卡券归属的订单号
+     * 电子卡券归属的订单号，有赞订单号，E开头+年月日时分秒+随机数，长度24位字母和数字组合。
      * @var string
      */
     private $orderNo;
 
     /**
-     * 门店id
+     * 店铺在有赞的id标识，有赞平台生成，在有赞平台唯一，用于判断信息属于哪一个店铺
      * @var int
      */
     private $kdtId;

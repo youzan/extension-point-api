@@ -24,7 +24,7 @@ class ExtPromotionCoreResultDTO implements \JsonSerializable {
     private $decrease;
 
     /**
-     * 
+     * 扩展信息
      * @var stdClass
      */
     private $extension;

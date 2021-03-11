@@ -18,25 +18,25 @@ class TradeItemDTO implements \JsonSerializable {
     private $skuCompositeId;
 
     /**
-     * 数量
+     * 商品数量
      * @var int
      */
     private $num;
 
     /**
-     * 商品类型
+     * 商品类型，0:普通类型商品；1:拍卖商品；5:餐饮商品；10:分销商品；20:会员卡商品；21:礼品卡商品；23:有赞会议商品；24:周期购；30:收银台商品；31:知识付费商品；35:酒店商品；40:普通服务类商品；71:卡项商品；182:普通虚拟商品；183:电子卡券商品；184:混合类型；201:外部会员卡商品；202:外部直接收款商品；203:外部普通商品；204:外部服务商品；206:小程序二维码；207:积分充值商品；208:付费优惠券商品
      * @var int
      */
     private $goodsType;
 
     /**
-     * 商品留言
+     * 买家填写的商品留言
      * @var string
      */
     private $memo;
 
     /**
-     * 价格日历中的游玩日期
+     * 价格日历中选择的日期
      * @var string
      */
     private $ticketCalendarEffectiveTime;

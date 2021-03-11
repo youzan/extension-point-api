@@ -12,7 +12,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\ExtCalculateTariffItemResponseDTO;
 class ExtCalculateTariffResponseDTO implements \JsonSerializable {
 
     /**
-     * 订单no
+     * 有赞订单号，E开头+年月日时分秒+随机数，长度24位字母和数字组合
      * @var string
      */
     private $orderNo;

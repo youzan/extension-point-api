@@ -18,13 +18,13 @@ class ExtCalculateTariffOrderItemRequestDTO implements \JsonSerializable {
     private $orderItemId;
 
     /**
-     * goodsId
+     * 商品Id，有赞生成的店铺下商品唯一id，平台唯一
      * @var int
      */
     private $goodsId;
 
     /**
-     * skuId
+     * 商品规格Id，微商城店铺商品规格标识（同一商品Id下，规格id唯一）
      * @var int
      */
     private $skuId;
@@ -42,7 +42,7 @@ class ExtCalculateTariffOrderItemRequestDTO implements \JsonSerializable {
     private $postageTariff;
 
     /**
-     * 海淘商品贸易模式
+     * 海淘商品贸易模式，目前有三种：9610：直邮模式；1210：保税模式；1000：个人代购
      * @var string
      */
     private $crossBorderTradeMode;
@@ -66,7 +66,7 @@ class ExtCalculateTariffOrderItemRequestDTO implements \JsonSerializable {
     private $tariffRate;
 
     /**
-     * 原商品单价
+     * 原商品单价，单位是分
      * @var int
      */
     private $originUnitPrice;

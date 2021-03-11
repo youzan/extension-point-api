@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 class UnfrozenTicketResponseDTO implements \JsonSerializable {
 
     /**
-     * 是否成功
+     * 电子卡券解冻是否成功
      * @var bool
      */
     private $success;
