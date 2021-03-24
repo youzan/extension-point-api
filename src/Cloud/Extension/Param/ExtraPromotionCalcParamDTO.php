@@ -9,12 +9,12 @@ use Com\Youzan\Cloud\Extension\Param\ExtPointUserMsgDTO;
 /**
  * 
  * @author Baymax
- * @create Mon Oct 08 20:26:05 CST 2018
+ * @create 2018-10-08 20:26:05.0
  */
 class ExtraPromotionCalcParamDTO implements \JsonSerializable {
 
     /**
-     * 自定义优惠相关带入数据
+     * 扩展字段，自定义优惠相关带入数据
      * @var stdClass
      */
     private $selfDefinePromotionData;
@@ -26,13 +26,13 @@ class ExtraPromotionCalcParamDTO implements \JsonSerializable {
     private $itemCalcDTOs;
 
     /**
-     * 订单号
+     * 有赞订单号，E开头+年月日时分秒+随机数，长度24位字母和数字组合
      * @var string
      */
     private $orderNo;
 
     /**
-     * 商户店铺ID
+     * 店铺在有赞的id标识，有赞平台生成，在有赞平台唯一，用于判断信息属于哪一个店铺
      * @var int
      */
     private $kdtId;

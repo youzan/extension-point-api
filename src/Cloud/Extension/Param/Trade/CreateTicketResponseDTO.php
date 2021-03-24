@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 class CreateTicketResponseDTO implements \JsonSerializable {
 
     /**
-     * 是否成功
+     * 创建卡券是否成功
      * @var bool
      */
     private $success;

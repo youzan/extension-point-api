@@ -2,12 +2,12 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Request;
 
-
+use Com\Youzan\Cloud\Extension\Param\CustomerExtValueCardsQueryRequest\ItemContext;
 
 /**
  * 
  * @author Baymax
- * @create Mon Jan 06 12:52:32 CST 2020
+ * @create 2020-01-06 12:52:32.0
  */
 class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
 
@@ -70,6 +70,12 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
      * @var int
      */
     private $kdtId;
+
+    /**
+     * 商品信息列表
+     * @var array
+     */
+    private $itemList;
 
 
 
@@ -231,6 +237,22 @@ class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
     public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return array
+     */
+    public function getItemList(): ?array
+    {
+        return $this->itemList;
+    }
+
+    /**
+     * @param array $itemList
+     */
+    public function setItemList(?array $itemList): void
+    {
+        $this->itemList = $itemList;
     }
 
     public function jsonSerialize() {

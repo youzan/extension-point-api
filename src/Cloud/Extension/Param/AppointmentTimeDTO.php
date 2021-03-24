@@ -5,20 +5,20 @@ namespace Com\Youzan\Cloud\Extension\Param;
 use DateTime;
 
 /**
- * 预约时间
+ * 物流预约发货时间
  * @author Baymax
  * @create 2018-10-22 20:30:57.0
  */
 class AppointmentTimeDTO implements \JsonSerializable {
 
     /**
-     * 结束时间
+     * 物流配送结束时间
      * @var int
      */
     private $endTime;
 
     /**
-     * 开始时间
+     * 物流配送开始时间
      * @var int
      */
     private $startTime;

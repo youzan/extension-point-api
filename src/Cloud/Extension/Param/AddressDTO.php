@@ -12,13 +12,13 @@ namespace Com\Youzan\Cloud\Extension\Param;
 class AddressDTO implements \JsonSerializable {
 
     /**
-     * 纬度
+     * 配送纬度
      * @var string
      */
     private $lat;
 
     /**
-     * 经度
+     * 配送经度
      * @var string
      */
     private $lon;
@@ -42,7 +42,7 @@ class AddressDTO implements \JsonSerializable {
     private $detail;
 
     /**
-     * 街道
+     * 街道乡镇
      * @var string
      */
     private $street;

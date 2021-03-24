@@ -31,7 +31,7 @@ class TicketOrderItem implements \JsonSerializable {
     private $num;
 
     /**
-     * 商品备注
+     * 用户填写的商品留言
      * @var string
      */
     private $memo;

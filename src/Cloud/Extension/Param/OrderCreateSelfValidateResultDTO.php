@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\UnavailableItemMsgDTO;
 /**
  * 
  * @author Baymax
- * @create Sun Sep 30 17:35:52 CST 2018
+ * @create 2018-09-30 17:35:52.0
  */
 class OrderCreateSelfValidateResultDTO implements \JsonSerializable {
 
@@ -24,7 +24,7 @@ class OrderCreateSelfValidateResultDTO implements \JsonSerializable {
     private $validateResult;
 
     /**
-     * 不可购买商品
+     * 不可购买商品列表
      * @var array
      */
     private $unavailableItemList;

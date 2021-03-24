@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\CustomerValueCardExtDTO;
 /**
  * 
  * @author Baymax
- * @create Mon Jan 06 12:52:32 CST 2020
+ * @create 2020-01-06 12:52:32.0
  */
 class CustomerExtValueCardsQueryResponse implements \JsonSerializable {
 

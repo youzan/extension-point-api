@@ -5,32 +5,32 @@ namespace Com\Youzan\Cloud\Extension\Param;
 
 
 /**
- * 不可购买商品
+ * 不可购买商品列表
  * @author Baymax
- * @create Wed Mar 27 19:28:21 CST 2019
+ * @create 2019-03-27 19:28:21.0
  */
 class UnavailableItemMsgDTO implements \JsonSerializable {
 
     /**
-     * 商户店铺ID
+     * 店铺在有赞的id标识，有赞平台生成，在有赞平台唯一，用于判断信息属于哪一个店铺
      * @var int
      */
     private $kdtId;
 
     /**
-     * 商户店铺编号
+     * shop_id  店铺在有赞的id标识，有赞平台生成，在有赞平台唯一，用于判断信息属于哪一个店铺  66666
      * @var int
      */
     private $shopId;
 
     /**
-     * 商品ID
+     * 商品Id，有赞生成的店铺下商品唯一id，平台唯一
      * @var int
      */
     private $goodsId;
 
     /**
-     * 商品skuID
+     * 商品规格Id，微商城店铺商品规格标识（同一商品Id下，规格id唯一）
      * @var int
      */
     private $skuId;

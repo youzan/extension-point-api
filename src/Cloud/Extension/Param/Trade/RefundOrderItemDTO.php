@@ -12,19 +12,19 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 class RefundOrderItemDTO implements \JsonSerializable {
 
     /**
-     * 退款的商品项标识
+     * 退款的商品项标识,商品Id，有赞生成的店铺下商品唯一id，平台唯一。
      * @var int
      */
     private $itemId;
 
     /**
-     * 退款金额
+     * 退款金额，单位是分
      * @var int
      */
     private $refundFee;
 
     /**
-     * 邮费
+     * 邮费，单位是分
      * @var int
      */
     private $postage;
@@ -36,7 +36,7 @@ class RefundOrderItemDTO implements \JsonSerializable {
     private $num;
 
     /**
-     * 商品退还的重量
+     * 商品退还的重量，单位是g
      * @var int
      */
     private $weight;

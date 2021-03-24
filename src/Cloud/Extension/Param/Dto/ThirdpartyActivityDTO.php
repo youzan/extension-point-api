@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 活动信息
  * @author Baymax
- * @create Wed Feb 12 16:36:21 CST 2020
+ * @create 2020-02-12 16:36:21.0
  */
 class ThirdpartyActivityDTO implements \JsonSerializable {
 
@@ -48,19 +48,19 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     private $extMap;
 
     /**
-     * 面额生成规则类型  1:固定值(满减券，折扣券) &#x3D;&#x3D;&gt;   value字段 （默认值）  3:范围随机(随机金额券) &#x3D;&#x3D;&gt; 随机范围为minValue ~ maxValue之间
+     * 面额生成规则类型  1:固定值(满减券，折扣券) &#x3D;&#x3D;&amp;gt;   value字段 （默认值）  3:范围随机(随机金额券) &#x3D;&#x3D;&amp;gt; 随机范围为minValue ~ maxValue之间
      * @var int
      */
     private $voucherValueGenerateType;
 
     /**
-     * 随机券面额范围下限（单位：分）,随机金额券-&gt;此参数为必填
+     * 随机券面额范围下限（单位：分）,随机金额券-&amp;gt;此参数为必填
      * @var int
      */
     private $minValue;
 
     /**
-     * 随机券面额范围上限（单位：分）,随机金额券-&gt;此参数为必填
+     * 随机券面额范围上限（单位：分）,随机金额券-&amp;gt;此参数为必填
      * @var int
      */
     private $maxValue;

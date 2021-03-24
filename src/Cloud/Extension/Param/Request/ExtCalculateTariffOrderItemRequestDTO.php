@@ -2,12 +2,12 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Request;
 
-
+use Com\Youzan\Cloud\Extension\Param\Request\ExtPointPromotionDTO;
 
 /**
  * 商品列表
  * @author Baymax
- * @create Thu Dec 24 11:30:20 CST 2020
+ * @create 2020-12-24 11:30:20.0
  */
 class ExtCalculateTariffOrderItemRequestDTO implements \JsonSerializable {
 
@@ -18,13 +18,13 @@ class ExtCalculateTariffOrderItemRequestDTO implements \JsonSerializable {
     private $orderItemId;
 
     /**
-     * goodsId
+     * 商品Id，有赞生成的店铺下商品唯一id，平台唯一
      * @var int
      */
     private $goodsId;
 
     /**
-     * skuId
+     * 商品规格Id，微商城店铺商品规格标识（同一商品Id下，规格id唯一）
      * @var int
      */
     private $skuId;
@@ -42,10 +42,34 @@ class ExtCalculateTariffOrderItemRequestDTO implements \JsonSerializable {
     private $postageTariff;
 
     /**
-     * 海淘商品贸易模式
+     * 海淘商品贸易模式，目前有三种：9610：直邮模式；1210：保税模式；1000：个人代购
      * @var string
      */
     private $crossBorderTradeMode;
+
+    /**
+     * 商品优惠
+     * @var array
+     */
+    private $promotions;
+
+    /**
+     * 商品数量
+     * @var int
+     */
+    private $num;
+
+    /**
+     * 商品税率
+     * @var string
+     */
+    private $tariffRate;
+
+    /**
+     * 原商品单价，单位是分
+     * @var int
+     */
+    private $originUnitPrice;
 
 
 
@@ -143,6 +167,70 @@ class ExtCalculateTariffOrderItemRequestDTO implements \JsonSerializable {
     public function setCrossBorderTradeMode(?string $crossBorderTradeMode): void
     {
         $this->crossBorderTradeMode = $crossBorderTradeMode;
+    }
+
+    /**
+     * @return array
+     */
+    public function getPromotions(): ?array
+    {
+        return $this->promotions;
+    }
+
+    /**
+     * @param array $promotions
+     */
+    public function setPromotions(?array $promotions): void
+    {
+        $this->promotions = $promotions;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNum(): ?int
+    {
+        return $this->num;
+    }
+
+    /**
+     * @param int $num
+     */
+    public function setNum(?int $num): void
+    {
+        $this->num = $num;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTariffRate(): ?string
+    {
+        return $this->tariffRate;
+    }
+
+    /**
+     * @param string $tariffRate
+     */
+    public function setTariffRate(?string $tariffRate): void
+    {
+        $this->tariffRate = $tariffRate;
+    }
+
+    /**
+     * @return int
+     */
+    public function getOriginUnitPrice(): ?int
+    {
+        return $this->originUnitPrice;
+    }
+
+    /**
+     * @param int $originUnitPrice
+     */
+    public function setOriginUnitPrice(?int $originUnitPrice): void
+    {
+        $this->originUnitPrice = $originUnitPrice;
     }
 
     public function jsonSerialize() {

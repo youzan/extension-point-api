@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\ExtraFeeCalcResultDTO;
 /**
  * 返回类
  * @author Baymax
- * @create Mon Oct 08 11:32:37 CST 2018
+ * @create 2018-10-08 11:32:37.0
  */
 class ExtraFeeCalcResultDTOOutParam implements \JsonSerializable {
 

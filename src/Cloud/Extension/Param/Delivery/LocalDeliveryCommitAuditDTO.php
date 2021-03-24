@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Delivery;
 /**
  * 
  * @author Baymax
- * @create Thu Sep 19 19:08:53 CST 2019
+ * @create 2019-09-19 19:08:53.0
  */
 class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
 
@@ -60,7 +60,7 @@ class LocalDeliveryCommitAuditDTO implements \JsonSerializable {
     private $shopAddress;
 
     /**
-     *  店铺经纬度来源，1:腾讯地图, 2:百度地图, 3:高德地图
+     * 店铺经纬度来源，1:腾讯地图, 2:百度地图, 3:高德地图
      * @var int
      */
     private $positionSource;

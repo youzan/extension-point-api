@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 class RefundPayParamDTO implements \JsonSerializable {
 
     /**
-     * 退款单号
+     * 退款资金流水
      * @var string
      */
     private $refundNo;
@@ -42,13 +42,13 @@ class RefundPayParamDTO implements \JsonSerializable {
     private $payId;
 
     /**
-     * 订单号
+     * 有赞订单号，E开头+年月日时分秒+随机数，长度24位字母和数字组合 
      * @var string
      */
     private $orderNo;
 
     /**
-     * 商户店铺ID
+     * 店铺在有赞的id标识，有赞平台生成，在有赞平台唯一，用于判断信息属于哪一个店铺
      * @var int
      */
     private $kdtId;

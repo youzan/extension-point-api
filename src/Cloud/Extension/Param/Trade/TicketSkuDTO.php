@@ -12,13 +12,13 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 class TicketSkuDTO implements \JsonSerializable {
 
     /**
-     * skuId
+     * 商品规格Id，微商城店铺商品规格标识（同一商品Id下，规格id唯一）
      * @var int
      */
     private $skuId;
 
     /**
-     * goodsId
+     * 商品Id，有赞生成的店铺下商品唯一id，平台唯一
      * @var int
      */
     private $goodsId;

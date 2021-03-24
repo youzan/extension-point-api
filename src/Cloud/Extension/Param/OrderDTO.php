@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\OrderItemDTO;
 /**
  * 订单数据
  * @author Baymax
- * @create Tue Sep 25 17:50:17 CST 2018
+ * @create 2018-09-25 17:50:17.0
  */
 class OrderDTO implements \JsonSerializable {
 
@@ -18,31 +18,31 @@ class OrderDTO implements \JsonSerializable {
     private $items;
 
     /**
-     * 超期时间（时间戳）
+     * 订单超时时间（时间戳）
      * @var int
      */
     private $expireTime;
 
     /**
-     * 订单付款金额
+     * 订单实付金额
      * @var int
      */
     private $orderPayAmount;
 
     /**
-     * 币种
+     * 交易币种，默认是人民币
      * @var string
      */
     private $currencyCode;
 
     /**
-     * 交易描述
+     * 交易描述，商品名称的累加，超长取前20个字符
      * @var string
      */
     private $tradeDesc;
 
     /**
-     * 订单号
+     * 有赞订单号，E开头+年月日时分秒+随机数，长度24位字母和数字组合
      * @var string
      */
     private $orderNO;

@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\GoPayResultDTO;
 /**
  * 去支付出参返回类
  * @author Baymax
- * @create Tue Sep 25 17:50:17 CST 2018
+ * @create 2018-09-25 17:50:17.0
  */
 class GoPayResultDTOOutParam implements \JsonSerializable {
 

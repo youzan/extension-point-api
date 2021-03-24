@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Voucher\ThirdpartyVoucherBatchSendExtPointR
 /**
  * 返回类
  * @author Baymax
- * @create Mon Aug 24 10:33:40 CST 2020
+ * @create 2020-08-24 10:33:40.0
  */
 class ThirdpartyVoucherBatchSendExtPointResponseOutParam implements \JsonSerializable {
 

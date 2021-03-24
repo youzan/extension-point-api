@@ -2,23 +2,23 @@
 
 namespace Com\Youzan\Cloud\Extension\Param;
 
-
+use Com\Youzan\Cloud\Extension\Param\RefundItemDTO;
 
 /**
  * 
  * @author Baymax
- * @create Mon Oct 08 16:18:50 CST 2018
+ * @create 2018-10-08 16:18:50.0
  */
 class RefundSelfValidateParamDTO implements \JsonSerializable {
 
     /**
-     * 买家标识
+     * 客户Id（有赞用户ID，在有赞平台账号平台下唯一。)
      * @var string
      */
     private $userId;
 
     /**
-     * 商户店铺ID
+     * 店铺在有赞的id标识，有赞平台生成，在有赞平台唯一，用于判断信息属于哪一个店铺
      * @var int
      */
     private $kdtId;
@@ -30,16 +30,22 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     private $reason;
 
     /**
-     * 订单号
+     * 有赞订单号，E开头+年月日时分秒+随机数，长度24位字母和数字组合
      * @var string
      */
     private $orderNo;
 
     /**
-     * 用户退款类型
+     * 用户纠纷处理的流程类型+纠纷诉求， 用户纠纷处理的流程类型DisputeFlowTypeEnum的枚举有： BUYER_REFUND_FLOW:退款 - 申请退款/退货流程；SELLER_REFUND_FLOW:退款 - 主动退款流程；ONE_KEY_REFUND_FLOW:退款 - 一键退款流程；RETAIL_STORE_EXCHANGE_GOODS_FLOW:换货 - 零售门店换货；EXCHANGE_GOODS_FLOW:换货-网店换货。 纠纷诉求disputeDemandEnum的枚举有： REFUND_ONLY:仅退款；REFUND_RETURN_GOODS:退货退款；EXCHANGE_GOODS:换货
      * @var string
      */
     private $disputeFlowType;
+
+    /**
+     * 退款商品信息
+     * @var array
+     */
+    private $refundOrderItems;
 
 
 
@@ -121,6 +127,22 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     public function setDisputeFlowType(?string $disputeFlowType): void
     {
         $this->disputeFlowType = $disputeFlowType;
+    }
+
+    /**
+     * @return array
+     */
+    public function getRefundOrderItems(): ?array
+    {
+        return $this->refundOrderItems;
+    }
+
+    /**
+     * @param array $refundOrderItems
+     */
+    public function setRefundOrderItems(?array $refundOrderItems): void
+    {
+        $this->refundOrderItems = $refundOrderItems;
     }
 
     public function jsonSerialize() {

@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 class DisableTicketResponseDTO implements \JsonSerializable {
 
     /**
-     * 是否成功
+     * 电子卡券作废是否成功
      * @var bool
      */
     private $success;

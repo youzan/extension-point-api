@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\CustomizeAttributeDTO;
 /**
  * 
  * @author Baymax
- * @create Wed Oct 10 13:15:37 CST 2018
+ * @create 2018-10-10 13:15:37.0
  */
 class CustomerProfileModifyDTO implements \JsonSerializable {
 
@@ -47,6 +47,12 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
      * @var array
      */
     private $attributeList;
+
+    /**
+     * 归属分店
+     * @var int
+     */
+    private $ascriptionKdtId;
 
 
 
@@ -144,6 +150,22 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
     public function setAttributeList(?array $attributeList): void
     {
         $this->attributeList = $attributeList;
+    }
+
+    /**
+     * @return int
+     */
+    public function getAscriptionKdtId(): ?int
+    {
+        return $this->ascriptionKdtId;
+    }
+
+    /**
+     * @param int $ascriptionKdtId
+     */
+    public function setAscriptionKdtId(?int $ascriptionKdtId): void
+    {
+        $this->ascriptionKdtId = $ascriptionKdtId;
     }
 
     public function jsonSerialize() {

@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 class PromotionDTO implements \JsonSerializable {
 
     /**
-     * 不参与优惠金额
+     * 不参与优惠的金额
      * @var int
      */
     private $canNotUsePromotionAmount;
@@ -42,19 +42,19 @@ class PromotionDTO implements \JsonSerializable {
     private $outerCoupon;
 
     /**
-     * 
+     * 优惠活动别名
      * @var string
      */
     private $promotionAlias;
 
     /**
-     * 
+     * ump优惠类型id
      * @var int
      */
     private $promotionTypeId;
 
     /**
-     * 
+     * ump优惠类型名称
      * @var string
      */
     private $promotionTypeName;

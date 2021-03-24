@@ -7,12 +7,12 @@ use StdClass;
 /**
  * 商品信息
  * @author Baymax
- * @create Mon Oct 08 11:32:37 CST 2018
+ * @create 2018-10-08 11:32:37.0
  */
 class ItemCalcDTO implements \JsonSerializable {
 
     /**
-     * 自定义带入数据
+     * 扩展字段，自定义带入数据
      * @var stdClass
      */
     private $selfDefineData;

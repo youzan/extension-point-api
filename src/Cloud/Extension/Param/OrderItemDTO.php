@@ -7,12 +7,12 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 订单条目
  * @author Baymax
- * @create Tue Sep 25 17:50:17 CST 2018
+ * @create 2018-09-25 17:50:17.0
  */
 class OrderItemDTO implements \JsonSerializable {
 
     /**
-     * 数量
+     * 商品数量
      * @var int
      */
     private $quantity;
