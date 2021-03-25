@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Scrm;
+namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
-use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerPointsStatusDTO;
+use Com\Youzan\Cloud\Extension\Param\Dto\ImktValidateResult;
 
 /**
- * dto返回类
+ * 校验结果返回类
  * @author Baymax
- * @create 2018-10-11 17:21:06.0
+ * @create 2021-03-15 14:39:48.0
  */
-class ExtCustomerPointsStatusDTOOutParam implements \JsonSerializable {
+class ImktValidateResultOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ExtCustomerPointsStatusDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var ExtCustomerPointsStatusDTO
+     * @var ImktValidateResult
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ExtCustomerPointsStatusDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return ExtCustomerPointsStatusDTO
+     * @return ImktValidateResult
      */
-    public function getData(): ?ExtCustomerPointsStatusDTO
+    public function getData(): ?ImktValidateResult
     {
         return $this->data;
     }
 
     /**
-     * @param ExtCustomerPointsStatusDTO $data
+     * @param ImktValidateResult $data
      */
-    public function setData(?ExtCustomerPointsStatusDTO $data): void
+    public function setData(?ImktValidateResult $data): void
     {
         $this->data = $data;
     }

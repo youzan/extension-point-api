@@ -55,7 +55,7 @@ class OrderMsgDTO implements \JsonSerializable {
     private $closeReason;
 
     /**
-     * 关闭类型
+     * 关闭类型，枚举有：0:未关闭；1:过期关闭；2:标记退款；3:订单取消；4:买家取消；5:卖家取消；6:部分退款；10:无法联系上买家；11:买家误拍或重拍了；12:买家无诚意完成交易；13:已通过银行线下汇款；14:已通过同城见面交易；15:已通过货到付款交易；16:已通过网上银行直接汇款；17:已经缺货无法交易；18:扣款失败；19:0元关单；20:社区团购活动结束未付款；21:0元抽奖订单未中一等奖；22:拒单退款；23:主播寄样申请被拒绝
      * @var string
      */
     private $closeType;
@@ -109,7 +109,7 @@ class OrderMsgDTO implements \JsonSerializable {
     private $shipTime;
 
     /**
-     * 支付方式
+     * 支付方式，枚举值太多，列举部分：0:默认值,未支付；1:微信自有支付；2:支付宝wap；3:支付宝wap；4:；5:财付通；6:；7:代付；8:联动优势；9:货到付款；10:大账号代销；11:受理模式；12:百付宝；13:sdk支付；14:合并付货款；15:领取赠品；16:优惠兑换；17:自动付货款；18:爱学贷；19:微信wap；20:微信红包支付；21:返利；22:ump红包；23:；24:易宝支付；25:储值卡；26:；27:qq支付；28:有赞E卡支付；29:微信条码；30:支付宝条码；33:礼品卡支付；35:会员余额；36:信用卡银联支付；37:储蓄卡银联支付；40:分期支付；72:微信扫码二维码支付；80:待结算&amp;余额支付；90:礼品卡支付；
      * @var string
      */
     private $payWay;
@@ -157,7 +157,7 @@ class OrderMsgDTO implements \JsonSerializable {
     private $priceDTO;
 
     /**
-     * 组件状态
+     * 消费状态
      * @var string
      */
     private $consumeStatus;
@@ -169,37 +169,37 @@ class OrderMsgDTO implements \JsonSerializable {
     private $salesModelType;
 
     /**
-     * 活动类型
+     * 活动类型，枚举为：1:没有活动；2:团购返现；3:降价拍；4:拼团；5:积分兑换；6:秒杀；7:优惠套餐；8:赠品；9:商品扫码；10:会员折扣；11:限时折扣；12:众筹；13:周期购；14:送礼；15:随机点餐；16:扫码优惠；19:享立减；20:F码；21:助力砍价；22:推荐有奖；23:抽奖拼团；24:加价购；63:送礼社区版；101:满减送；102:订单返现；103:供货商满包邮；114:定金膨胀；115:第二件半价；256:积分抵现；62:精选老带新拼团；116:助力定金膨胀；26:阶梯拼团；205:内购；258:集点卡兑换；259:学费抵扣；202:会员等级商品优惠；204:0元抽奖码；401:盲盒获取；402:盲盒核销；508:社群接龙；509:限时到店优惠
      * @var int
      */
     private $activityType;
 
     /**
-     * 支付类型
+     * 支付类型，枚举值为：0:老的方式,支付方式与支付渠道组合在一起；1:无需支付；2:现付；3:部分支付；4:货到付款；5:线下收银；6:单次支付；7:阶段支付；8:外部支付
      * @var int
      */
     private $payType;
 
     /**
-     * 商品类型
+     * 商品类型，枚举值为：0:普通类型商品；1:拍卖商品；5:餐饮商品；10:分销商品；20:会员卡商品；21:礼品卡商品；23:有赞会议商品；24:周期购；30:收银台商品；31:知识付费商品；35:酒店商品；40:普通服务类商品；71:卡项商品；182:普通虚拟商品；183:电子卡券商品；184:混合类型；201:外部会员卡商品；202:外部直接收款商品；203:外部普通商品；204:外部服务商品；205:mock不存在商品；206:小程序二维码；207:积分充值商品；208:付费优惠券商品
      * @var int
      */
     private $goodsType;
 
     /**
-     * 订单状态
+     * 订单状态，枚举值为：CREATED:已下单；WAIT_PAY:待支付；PAID:已支付；WAIT_CONFIRM:待接单；CONFIRMED:已接单；WAIT_SHIPPED:待发货；SHIPPED:已发货；WAIT_RECEIVED:待收货；RECEIVED:已收货；UNVISIBLE:不可见；CLOSED:已关闭；SUCCESS:已完成
      * @var string
      */
     private $orderStatus;
 
     /**
-     * 订单交易类型
+     * 订单交易类型，枚举为：NORMAL:普通订单；PEERPAY:代付；GIFT:送礼订单；FX_CAIGOUDAN:分销采购单；PRESENT:赠品；WISH:心愿单；QRCODE:二维码订单；QRCODE_3RD:线下收银台订单；FX_MERGED:合并付货款；VERIFIED:1分钱实名认证；PINJIAN:品鉴；REBATE:返利；FX_QUANYUANDIAN:全员开店；FX_DEPOSIT:保证金；PF:批发；GROUP:拼团；HOTEL:酒店；TAKE_AWAY:外卖；CATERING_OFFLINE:堂食点餐；CATERING_QRCODE:外卖买单；BEAUTY_APPOINTMENT:美业预约单；BEAUTY_SERVICE:美业服务单；KNOWLEDGE_PAY:知识付费；GIFT_CARD:礼品卡；LIVE_SUPPLIER:直播带货订单；SAMPLE:样品订单
      * @var string
      */
     private $orderType;
 
     /**
-     * 垂直行业大类
+     * 垂直行业大类，枚举为：COMMON:普通担保交易；HOTEL:酒店；BEAUTY:美业；OFFLINE_CATERING:餐饮；TAKEOUT:外卖；RETAIL:门店零售；EXTERNAL:第三方；YZ_CLOUD:有赞电商云；LIVE_SAMPLE:直播寄样；TEST:测试场景
      * @var string
      */
     private $bizCategory;
@@ -229,7 +229,7 @@ class OrderMsgDTO implements \JsonSerializable {
     private $contractId;
 
     /**
-     * 订单渠道来源
+     * 订单渠道来源，YOUZAN:有赞内部系统；ELEME_FOOD:饿了么餐饮系统；MEITUAN_FOOD:美团餐饮系统；CANDAO:餐道；GUANYI:管易；CWJ:宠物家
      * @var string
      */
     private $channelType;
@@ -241,7 +241,7 @@ class OrderMsgDTO implements \JsonSerializable {
     private $outBizNo;
 
     /**
-     * 订单号
+     * 有赞订单号，E开头+年月日时分秒+随机数，长度24位字母和数字组合
      * @var string
      */
     private $orderNo;

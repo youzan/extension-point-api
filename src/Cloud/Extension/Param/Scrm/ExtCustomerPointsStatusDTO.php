@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
 
 /**
- * 
+ * dto
  * @author Baymax
  * @create 2018-10-11 17:21:06.0
  */

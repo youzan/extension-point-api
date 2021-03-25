@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerInfoDTO;
 
 /**
- * 
+ * dto
  * @author Baymax
  * @create 2018-10-11 17:21:06.0
  */
 class ExtCustomerPointsQueryDTO implements \JsonSerializable {
 
     /**
-     * 
+     * dto
      * @var ExtCustomerInfoDTO
      */
     private $extCustomerInfoDTO;

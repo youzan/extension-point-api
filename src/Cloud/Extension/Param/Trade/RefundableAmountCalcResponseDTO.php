@@ -12,13 +12,13 @@ use Com\Youzan\Cloud\Extension\Param\Trade\RefundableItemDTO;
 class RefundableAmountCalcResponseDTO implements \JsonSerializable {
 
     /**
-     * 订单号
+     * 有赞订单号，E开头+年月日时分秒+随机数，长度24位字母和数字组合 
      * @var string
      */
     private $orderNo;
 
     /**
-     * 订单可退款金额
+     * 订单可退款金额，单位是分
      * @var int
      */
     private $refundableAmt;

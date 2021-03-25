@@ -14,7 +14,7 @@ use Com\Youzan\Cloud\Extension\Param\Trade\RefundableFeeDTO;
 class RefundableAmountCalcRequestDTO implements \JsonSerializable {
 
     /**
-     * 订单号
+     * 有赞订单号，E开头+年月日时分秒+随机数，长度24位字母和数字组合
      * @var string
      */
     private $orderNo;

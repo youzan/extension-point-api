@@ -13,13 +13,13 @@ use Com\Youzan\Cloud\Extension\Param\AddressDTO;
 class LogisticsDTO implements \JsonSerializable {
 
     /**
-     * 预约时间
+     * 物流预约发货时间
      * @var AppointmentTimeDTO
      */
     private $appointmentTime;
 
     /**
-     * 物流方式
+     * 物流方式，枚举有：9:无需物流快递；0:快递；1:到店自提；2:同城配送
      * @var string
      */
     private $logisticsType;

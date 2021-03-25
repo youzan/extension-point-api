@@ -12,13 +12,13 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 class RefundableItemDTO implements \JsonSerializable {
 
     /**
-     * 商品项标识
+     * 子订单标识
      * @var string
      */
     private $itemId;
 
     /**
-     * 商品可退金额
+     * 商品可退金额，单位为分
      * @var int
      */
     private $refundableAmt;

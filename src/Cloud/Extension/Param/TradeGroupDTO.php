@@ -17,6 +17,12 @@ class TradeGroupDTO implements \JsonSerializable {
      */
     private $tradeItemDTOGroup;
 
+    /**
+     * 自提码id
+     * @var string
+     */
+    private $selfFetchId;
+
 
 
     /**
@@ -33,6 +39,22 @@ class TradeGroupDTO implements \JsonSerializable {
     public function setTradeItemDTOGroup(?array $tradeItemDTOGroup): void
     {
         $this->tradeItemDTOGroup = $tradeItemDTOGroup;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSelfFetchId(): ?string
+    {
+        return $this->selfFetchId;
+    }
+
+    /**
+     * @param string $selfFetchId
+     */
+    public function setSelfFetchId(?string $selfFetchId): void
+    {
+        $this->selfFetchId = $selfFetchId;
     }
 
     public function jsonSerialize() {

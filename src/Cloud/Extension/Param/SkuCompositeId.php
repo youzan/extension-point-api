@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param;
 use StdClass;
 
 /**
- *  复合id
+ * 复合id
  * @author Baymax
  * @create 2018-10-22 20:30:57.0
  */
 class SkuCompositeId implements \JsonSerializable {
 
     /**
-     * 商品Id，有赞生成的店铺下商品唯一id，平台唯一
+     * 商品Id，有赞生成的店铺下商品唯一id，平台唯一。
      * @var int
      */
     private $goodsId;

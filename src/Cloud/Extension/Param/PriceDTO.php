@@ -18,7 +18,7 @@ class PriceDTO implements \JsonSerializable {
     private $promotionAmount;
 
     /**
-     * 总价
+     * 实付总价
      * @var int
      */
     private $totalPrice;
