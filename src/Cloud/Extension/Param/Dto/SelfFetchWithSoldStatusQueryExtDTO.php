@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
-
+use Com\Youzan\Cloud\Extension\Param\Dto\SelfFetchPointGoodsInfo;
 
 /**
  * 接口入参对象
@@ -34,6 +34,12 @@ class SelfFetchWithSoldStatusQueryExtDTO implements \JsonSerializable {
      * @var string
      */
     private $yzOpenId;
+
+    /**
+     * 自提点下单页商品详情信息
+     * @var array
+     */
+    private $items;
 
 
 
@@ -99,6 +105,22 @@ class SelfFetchWithSoldStatusQueryExtDTO implements \JsonSerializable {
     public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
+    }
+
+    /**
+     * @return array
+     */
+    public function getItems(): ?array
+    {
+        return $this->items;
+    }
+
+    /**
+     * @param array $items
+     */
+    public function setItems(?array $items): void
+    {
+        $this->items = $items;
     }
 
     public function jsonSerialize() {
