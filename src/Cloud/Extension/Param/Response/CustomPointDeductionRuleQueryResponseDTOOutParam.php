@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param;
+namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Com\Youzan\Cloud\Extension\Param\RefundPayResultDTO;
+use Com\Youzan\Cloud\Extension\Param\Response\CustomPointDeductionRuleQueryResponseDTO;
 
 /**
  * 返回类
  * @author Baymax
- * @create Tue Sep 25 17:57:08 CST 2018
+ * @create 2021-03-25 19:55:06.0
  */
-class RefundPayResultDTOOutParam implements \JsonSerializable {
+class CustomPointDeductionRuleQueryResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class RefundPayResultDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var RefundPayResultDTO
+     * @var CustomPointDeductionRuleQueryResponseDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class RefundPayResultDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return RefundPayResultDTO
+     * @return CustomPointDeductionRuleQueryResponseDTO
      */
-    public function getData(): ?RefundPayResultDTO
+    public function getData(): ?CustomPointDeductionRuleQueryResponseDTO
     {
         return $this->data;
     }
 
     /**
-     * @param RefundPayResultDTO $data
+     * @param CustomPointDeductionRuleQueryResponseDTO $data
      */
-    public function setData(?RefundPayResultDTO $data): void
+    public function setData(?CustomPointDeductionRuleQueryResponseDTO $data): void
     {
         $this->data = $data;
     }

@@ -55,19 +55,19 @@ class ExtPointPromotionDTO implements \JsonSerializable {
 
     /**
      * 活动自定义描述
-     * @var array
+     * @var string
      */
     private $promotionDesc;
 
     /**
      * 优惠价格
-     * @var array
+     * @var int
      */
     private $decrease;
 
     /**
      * 额外信息
-     * @var array
+     * @var string
      */
     private $extra;
 
@@ -186,49 +186,49 @@ class ExtPointPromotionDTO implements \JsonSerializable {
     }
 
     /**
-     * @return array
+     * @return string
      */
-    public function getPromotionDesc(): ?array
+    public function getPromotionDesc(): ?string
     {
         return $this->promotionDesc;
     }
 
     /**
-     * @param array $promotionDesc
+     * @param string $promotionDesc
      */
-    public function setPromotionDesc(?array $promotionDesc): void
+    public function setPromotionDesc(?string $promotionDesc): void
     {
         $this->promotionDesc = $promotionDesc;
     }
 
     /**
-     * @return array
+     * @return int
      */
-    public function getDecrease(): ?array
+    public function getDecrease(): ?int
     {
         return $this->decrease;
     }
 
     /**
-     * @param array $decrease
+     * @param int $decrease
      */
-    public function setDecrease(?array $decrease): void
+    public function setDecrease(?int $decrease): void
     {
         $this->decrease = $decrease;
     }
 
     /**
-     * @return array
+     * @return string
      */
-    public function getExtra(): ?array
+    public function getExtra(): ?string
     {
         return $this->extra;
     }
 
     /**
-     * @param array $extra
+     * @param string $extra
      */
-    public function setExtra(?array $extra): void
+    public function setExtra(?string $extra): void
     {
         $this->extra = $extra;
     }

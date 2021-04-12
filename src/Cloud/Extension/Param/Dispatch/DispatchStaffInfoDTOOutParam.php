@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param;
+namespace Com\Youzan\Cloud\Extension\Param\Dispatch;
 
-use Com\Youzan\Cloud\Extension\Param\RefundPayResultDTO;
+use Com\Youzan\Cloud\Extension\Param\Dispatch\DispatchStaffInfoDTO;
 
 /**
  * 返回类
  * @author Baymax
- * @create Tue Sep 25 17:57:08 CST 2018
+ * @create 2020-07-27 15:59:04.0
  */
-class RefundPayResultDTOOutParam implements \JsonSerializable {
+class DispatchStaffInfoDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class RefundPayResultDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var RefundPayResultDTO
+     * @var DispatchStaffInfoDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class RefundPayResultDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return RefundPayResultDTO
+     * @return DispatchStaffInfoDTO
      */
-    public function getData(): ?RefundPayResultDTO
+    public function getData(): ?DispatchStaffInfoDTO
     {
         return $this->data;
     }
 
     /**
-     * @param RefundPayResultDTO $data
+     * @param DispatchStaffInfoDTO $data
      */
-    public function setData(?RefundPayResultDTO $data): void
+    public function setData(?DispatchStaffInfoDTO $data): void
     {
         $this->data = $data;
     }

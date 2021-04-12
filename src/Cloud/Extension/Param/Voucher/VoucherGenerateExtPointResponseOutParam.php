@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param;
+namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 
-use Com\Youzan\Cloud\Extension\Param\RefundPayResultDTO;
+use Com\Youzan\Cloud\Extension\Param\Voucher\VoucherGenerateExtPointResponse;
 
 /**
  * 返回类
  * @author Baymax
- * @create Tue Sep 25 17:57:08 CST 2018
+ * @create 2020-07-29 14:46:53.0
  */
-class RefundPayResultDTOOutParam implements \JsonSerializable {
+class VoucherGenerateExtPointResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class RefundPayResultDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var RefundPayResultDTO
+     * @var VoucherGenerateExtPointResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class RefundPayResultDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return RefundPayResultDTO
+     * @return VoucherGenerateExtPointResponse
      */
-    public function getData(): ?RefundPayResultDTO
+    public function getData(): ?VoucherGenerateExtPointResponse
     {
         return $this->data;
     }
 
     /**
-     * @param RefundPayResultDTO $data
+     * @param VoucherGenerateExtPointResponse $data
      */
-    public function setData(?RefundPayResultDTO $data): void
+    public function setData(?VoucherGenerateExtPointResponse $data): void
     {
         $this->data = $data;
     }
