@@ -41,6 +41,18 @@ class TradeItemDTO implements \JsonSerializable {
      */
     private $ticketCalendarEffectiveTime;
 
+    /**
+     * 商品编码
+     * @var string
+     */
+    private $itemNo;
+
+    /**
+     * 规格编码
+     * @var string
+     */
+    private $skuNo;
+
 
 
     /**
@@ -121,6 +133,38 @@ class TradeItemDTO implements \JsonSerializable {
     public function setTicketCalendarEffectiveTime(?string $ticketCalendarEffectiveTime): void
     {
         $this->ticketCalendarEffectiveTime = $ticketCalendarEffectiveTime;
+    }
+
+    /**
+     * @return string
+     */
+    public function getItemNo(): ?string
+    {
+        return $this->itemNo;
+    }
+
+    /**
+     * @param string $itemNo
+     */
+    public function setItemNo(?string $itemNo): void
+    {
+        $this->itemNo = $itemNo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSkuNo(): ?string
+    {
+        return $this->skuNo;
+    }
+
+    /**
+     * @param string $skuNo
+     */
+    public function setSkuNo(?string $skuNo): void
+    {
+        $this->skuNo = $skuNo;
     }
 
     public function jsonSerialize() {

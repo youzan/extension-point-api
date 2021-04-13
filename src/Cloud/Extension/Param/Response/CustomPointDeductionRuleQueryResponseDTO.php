@@ -12,13 +12,13 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 class CustomPointDeductionRuleQueryResponseDTO implements \JsonSerializable {
 
     /**
-     * 积分使用下限类型(0:不限制, 1000:用户全部积分)
+     * 积分使用下限类型(999:不限制, 1000:用户全部积分)，类型1000（用户全部积分）说明：目前有赞积分抵现的金额必须是整数元，所以这里「用户全部积分」指的是可以该用户可以抵现整数元的最大积分数。举个例子：积分使用下限类型为1000，积分兑换比例是10个积分抵1元时，用户拥有21个积分，此时该用户下单必须使用20个积分
      * @var int
      */
     private $useAmountLowerLimitType;
 
     /**
-     * 抵现上限类型(0:不限制, 1000:订单金额百分比) 。        若该值为有效值（值为0或1000），表示配置了上限规则，有赞后台的上限规则将不生效 。       否则表示未配置上限规则，会取有赞后台的上限规则。
+     * 抵现金额上限。                       抵现上限类型为1000时，deductAmountLimitVal代表百分比（有效值1~100，0表示无限制）。最终抵现金额使用这个百分比计算，结果精确到分向下取整。
      * @var int
      */
     private $deductAmountLimitType;

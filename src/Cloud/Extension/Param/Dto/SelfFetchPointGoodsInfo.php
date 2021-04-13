@@ -35,6 +35,12 @@ class SelfFetchPointGoodsInfo implements \JsonSerializable {
      */
     private $sku_infos;
 
+    /**
+     * 商品编码，商家自定义参数，支持英文和数字组合
+     * @var string
+     */
+    private $item_no;
+
 
 
     /**
@@ -99,6 +105,22 @@ class SelfFetchPointGoodsInfo implements \JsonSerializable {
     public function setSku_infos(?array $sku_infos): void
     {
         $this->sku_infos = $sku_infos;
+    }
+
+    /**
+     * @return string
+     */
+    public function getItem_no(): ?string
+    {
+        return $this->item_no;
+    }
+
+    /**
+     * @param string $item_no
+     */
+    public function setItem_no(?string $item_no): void
+    {
+        $this->item_no = $item_no;
     }
 
     public function jsonSerialize() {
