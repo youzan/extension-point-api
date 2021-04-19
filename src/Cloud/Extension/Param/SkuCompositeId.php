@@ -12,7 +12,7 @@ use StdClass;
 class SkuCompositeId implements \JsonSerializable {
 
     /**
-     * 商品Id，有赞生成的店铺下商品唯一id，平台唯一。
+     * 商品Id，有赞生成的店铺下商品唯一id，平台唯一
      * @var int
      */
     private $goodsId;

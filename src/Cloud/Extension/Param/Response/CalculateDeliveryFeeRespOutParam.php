@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param;
+namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Com\Youzan\Cloud\Extension\Param\OrderCreateSelfValidateResultDTO;
+use Com\Youzan\Cloud\Extension\Param\Response\CalculateDeliveryFeeResp;
 
 /**
  * 返回类
  * @author Baymax
- * @create Sun Sep 30 17:35:52 CST 2018
+ * @create 2021-04-13 14:59:42.0
  */
-class OrderCreateSelfValidateResultDTOOutParam implements \JsonSerializable {
+class CalculateDeliveryFeeRespOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class OrderCreateSelfValidateResultDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var OrderCreateSelfValidateResultDTO
+     * @var CalculateDeliveryFeeResp
      */
     private $data;
 
@@ -84,17 +84,17 @@ class OrderCreateSelfValidateResultDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return OrderCreateSelfValidateResultDTO
+     * @return CalculateDeliveryFeeResp
      */
-    public function getData(): ?OrderCreateSelfValidateResultDTO
+    public function getData(): ?CalculateDeliveryFeeResp
     {
         return $this->data;
     }
 
     /**
-     * @param OrderCreateSelfValidateResultDTO $data
+     * @param CalculateDeliveryFeeResp $data
      */
-    public function setData(?OrderCreateSelfValidateResultDTO $data): void
+    public function setData(?CalculateDeliveryFeeResp $data): void
     {
         $this->data = $data;
     }
