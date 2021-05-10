@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Salesman;
 /**
  * 
  * @author Baymax
- * @create Thu Dec 12 09:29:19 CST 2019
+ * @create 2019-12-12 09:29:19.0
  */
 class ExtOrderItemDTO implements \JsonSerializable {
 
