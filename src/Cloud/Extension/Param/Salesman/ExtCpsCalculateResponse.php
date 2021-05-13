@@ -59,6 +59,12 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
      */
     private $items;
 
+    /**
+     * 是否扩展点自定义佣金
+     * @var bool
+     */
+    private $customCpsMoney;
+
 
 
     /**
@@ -187,6 +193,22 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     public function setItems(?array $items): void
     {
         $this->items = $items;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getCustomCpsMoney(): ?bool
+    {
+        return $this->customCpsMoney;
+    }
+
+    /**
+     * @param bool $customCpsMoney
+     */
+    public function setCustomCpsMoney(?bool $customCpsMoney): void
+    {
+        $this->customCpsMoney = $customCpsMoney;
     }
 
     public function jsonSerialize() {

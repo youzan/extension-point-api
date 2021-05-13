@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 class CalculateDeliveryFeeResp implements \JsonSerializable {
 
     /**
-     * 
+     * 运费,分
      * @var int
      */
     private $deliveryFee;

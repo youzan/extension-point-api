@@ -53,6 +53,12 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
      */
     private $nodeKdtid;
 
+    /**
+     * 一次下单的唯一标识
+     * @var string
+     */
+    private $bookKey;
+
 
 
     /**
@@ -165,6 +171,22 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     public function setNodeKdtid(?int $nodeKdtid): void
     {
         $this->nodeKdtid = $nodeKdtid;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBookKey(): ?string
+    {
+        return $this->bookKey;
+    }
+
+    /**
+     * @param string $bookKey
+     */
+    public function setBookKey(?string $bookKey): void
+    {
+        $this->bookKey = $bookKey;
     }
 
     public function jsonSerialize() {

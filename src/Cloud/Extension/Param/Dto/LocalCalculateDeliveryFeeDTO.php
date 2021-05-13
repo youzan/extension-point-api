@@ -12,19 +12,19 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 class LocalCalculateDeliveryFeeDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 重量,克
      * @var int
      */
     private $weight;
 
     /**
-     * 
+     * 距离,米
      * @var int
      */
     private $distance;
 
     /**
-     * 
+     * 店铺id
      * @var int
      */
     private $kdtId;

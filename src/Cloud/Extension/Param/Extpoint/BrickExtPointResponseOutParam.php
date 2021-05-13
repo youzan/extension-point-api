@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Scrm;
+namespace Com\Youzan\Cloud\Extension\Param\Extpoint;
 
-use Com\Youzan\Cloud\Extension\Param\Scrm\Result;
+use Com\Youzan\Cloud\Extension\Param\Extpoint\BrickExtPointResponse;
 
 /**
- * 结构体返回类
+ * 返回类
  * @author Baymax
- * @create 2018-09-29 21:13:57.0
+ * @create 2021-05-06 20:06:45.0
  */
-class ResultOutParam implements \JsonSerializable {
+class BrickExtPointResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ResultOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var Result
+     * @var BrickExtPointResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ResultOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return Result
+     * @return BrickExtPointResponse
      */
-    public function getData(): ?Result
+    public function getData(): ?BrickExtPointResponse
     {
         return $this->data;
     }
 
     /**
-     * @param Result $data
+     * @param BrickExtPointResponse $data
      */
-    public function setData(?Result $data): void
+    public function setData(?BrickExtPointResponse $data): void
     {
         $this->data = $data;
     }
