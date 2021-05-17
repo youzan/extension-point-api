@@ -3,11 +3,12 @@
 namespace Com\Youzan\Cloud\Extension\Param;
 
 use Com\Youzan\Cloud\Extension\Param\TradeItemDTO;
+use Com\Youzan\Cloud\Extension\Param\UsedPro;
 
 /**
  * 交易分组信息
  * @author Baymax
- * @create Tue Mar 26 13:18:47 CST 2019
+ * @create 2019-03-26 13:18:47.0
  */
 class TradeGroupDTO implements \JsonSerializable {
 
@@ -22,6 +23,12 @@ class TradeGroupDTO implements \JsonSerializable {
      * @var string
      */
     private $selfFetchId;
+
+    /**
+     * 使用的优惠券
+     * @var UsedPro
+     */
+    private $usedPro;
 
 
 
@@ -55,6 +62,22 @@ class TradeGroupDTO implements \JsonSerializable {
     public function setSelfFetchId(?string $selfFetchId): void
     {
         $this->selfFetchId = $selfFetchId;
+    }
+
+    /**
+     * @return UsedPro
+     */
+    public function getUsedPro(): ?UsedPro
+    {
+        return $this->usedPro;
+    }
+
+    /**
+     * @param UsedPro $usedPro
+     */
+    public function setUsedPro(?UsedPro $usedPro): void
+    {
+        $this->usedPro = $usedPro;
     }
 
     public function jsonSerialize() {
