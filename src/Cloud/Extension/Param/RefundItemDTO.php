@@ -29,6 +29,12 @@ class RefundItemDTO implements \JsonSerializable {
      */
     private $orderGoodsNum;
 
+    /**
+     * 退款金额
+     * @var int
+     */
+    private $refundFee;
+
 
 
     /**
@@ -77,6 +83,22 @@ class RefundItemDTO implements \JsonSerializable {
     public function setOrderGoodsNum(?int $orderGoodsNum): void
     {
         $this->orderGoodsNum = $orderGoodsNum;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRefundFee(): ?int
+    {
+        return $this->refundFee;
+    }
+
+    /**
+     * @param int $refundFee
+     */
+    public function setRefundFee(?int $refundFee): void
+    {
+        $this->refundFee = $refundFee;
     }
 
     public function jsonSerialize() {

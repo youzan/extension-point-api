@@ -3,6 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param;
 
 use Com\Youzan\Cloud\Extension\Param\RefundItemDTO;
+use Com\Youzan\Cloud\Extension\Param\OrderItemDTO;
 
 /**
  * 
@@ -46,6 +47,18 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
      * @var array
      */
     private $refundOrderItems;
+
+    /**
+     * 支付方式
+     * @var int
+     */
+    private $payType;
+
+    /**
+     * 
+     * @var array
+     */
+    private $orderItems;
 
 
 
@@ -143,6 +156,38 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     public function setRefundOrderItems(?array $refundOrderItems): void
     {
         $this->refundOrderItems = $refundOrderItems;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPayType(): ?int
+    {
+        return $this->payType;
+    }
+
+    /**
+     * @param int $payType
+     */
+    public function setPayType(?int $payType): void
+    {
+        $this->payType = $payType;
+    }
+
+    /**
+     * @return array
+     */
+    public function getOrderItems(): ?array
+    {
+        return $this->orderItems;
+    }
+
+    /**
+     * @param array $orderItems
+     */
+    public function setOrderItems(?array $orderItems): void
+    {
+        $this->orderItems = $orderItems;
     }
 
     public function jsonSerialize() {
