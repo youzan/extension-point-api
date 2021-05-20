@@ -49,16 +49,16 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     private $refundOrderItems;
 
     /**
-     * 支付方式
-     * @var int
-     */
-    private $payType;
-
-    /**
      * 
      * @var array
      */
     private $orderItems;
+
+    /**
+     * 支付方式
+     * @var int
+     */
+    private $payWay;
 
 
 
@@ -159,22 +159,6 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     }
 
     /**
-     * @return int
-     */
-    public function getPayType(): ?int
-    {
-        return $this->payType;
-    }
-
-    /**
-     * @param int $payType
-     */
-    public function setPayType(?int $payType): void
-    {
-        $this->payType = $payType;
-    }
-
-    /**
      * @return array
      */
     public function getOrderItems(): ?array
@@ -188,6 +172,22 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     public function setOrderItems(?array $orderItems): void
     {
         $this->orderItems = $orderItems;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPayWay(): ?int
+    {
+        return $this->payWay;
+    }
+
+    /**
+     * @param int $payWay
+     */
+    public function setPayWay(?int $payWay): void
+    {
+        $this->payWay = $payWay;
     }
 
     public function jsonSerialize() {
