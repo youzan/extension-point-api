@@ -30,7 +30,7 @@ class RefundItemDTO implements \JsonSerializable {
     private $orderGoodsNum;
 
     /**
-     * 退款金额
+     * 退款金额，单位：分
      * @var int
      */
     private $refundFee;
