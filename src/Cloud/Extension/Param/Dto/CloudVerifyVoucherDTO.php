@@ -59,6 +59,12 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
      */
     private $reason;
 
+    /**
+     * 发券来源，divide_coupon：瓜分券，wap_fetch：普通领取
+     * @var string
+     */
+    private $sendSource;
+
 
 
     /**
@@ -187,6 +193,22 @@ class CloudVerifyVoucherDTO implements \JsonSerializable {
     public function setReason(?string $reason): void
     {
         $this->reason = $reason;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSendSource(): ?string
+    {
+        return $this->sendSource;
+    }
+
+    /**
+     * @param string $sendSource
+     */
+    public function setSendSource(?string $sendSource): void
+    {
+        $this->sendSource = $sendSource;
     }
 
     public function jsonSerialize() {
