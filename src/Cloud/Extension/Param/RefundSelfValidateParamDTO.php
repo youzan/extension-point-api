@@ -60,12 +60,6 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
      */
     private $payWay;
 
-    /**
-     * 实际支付的金额，单位：分
-     * @var int
-     */
-    private $realPrice;
-
 
 
     /**
@@ -194,22 +188,6 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     public function setPayWay(?string $payWay): void
     {
         $this->payWay = $payWay;
-    }
-
-    /**
-     * @return int
-     */
-    public function getRealPrice(): ?int
-    {
-        return $this->realPrice;
-    }
-
-    /**
-     * @param int $realPrice
-     */
-    public function setRealPrice(?int $realPrice): void
-    {
-        $this->realPrice = $realPrice;
     }
 
     public function jsonSerialize() {
