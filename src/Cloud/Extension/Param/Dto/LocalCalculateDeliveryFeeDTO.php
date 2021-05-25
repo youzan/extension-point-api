@@ -29,6 +29,24 @@ class LocalCalculateDeliveryFeeDTO implements \JsonSerializable {
      */
     private $kdtId;
 
+    /**
+     * 买家收货地址
+     * @var array
+     */
+    private $buyerAddress;
+
+    /**
+     * 买家经度
+     * @var array
+     */
+    private $buyerLng;
+
+    /**
+     * 买家纬度
+     * @var array
+     */
+    private $buyerLat;
+
 
 
     /**
@@ -77,6 +95,54 @@ class LocalCalculateDeliveryFeeDTO implements \JsonSerializable {
     public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return array
+     */
+    public function getBuyerAddress(): ?array
+    {
+        return $this->buyerAddress;
+    }
+
+    /**
+     * @param array $buyerAddress
+     */
+    public function setBuyerAddress(?array $buyerAddress): void
+    {
+        $this->buyerAddress = $buyerAddress;
+    }
+
+    /**
+     * @return array
+     */
+    public function getBuyerLng(): ?array
+    {
+        return $this->buyerLng;
+    }
+
+    /**
+     * @param array $buyerLng
+     */
+    public function setBuyerLng(?array $buyerLng): void
+    {
+        $this->buyerLng = $buyerLng;
+    }
+
+    /**
+     * @return array
+     */
+    public function getBuyerLat(): ?array
+    {
+        return $this->buyerLat;
+    }
+
+    /**
+     * @param array $buyerLat
+     */
+    public function setBuyerLat(?array $buyerLat): void
+    {
+        $this->buyerLat = $buyerLat;
     }
 
     public function jsonSerialize() {

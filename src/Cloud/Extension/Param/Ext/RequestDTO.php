@@ -17,6 +17,12 @@ class RequestDTO implements \JsonSerializable {
      */
     private $kdtId;
 
+    /**
+     * 
+     * @var array
+     */
+    private $testId;
+
 
 
     /**
@@ -33,6 +39,22 @@ class RequestDTO implements \JsonSerializable {
     public function setKdtId(?string $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return array
+     */
+    public function getTestId(): ?array
+    {
+        return $this->testId;
+    }
+
+    /**
+     * @param array $testId
+     */
+    public function setTestId(?array $testId): void
+    {
+        $this->testId = $testId;
     }
 
     public function jsonSerialize() {
