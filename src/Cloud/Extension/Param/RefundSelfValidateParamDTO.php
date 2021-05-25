@@ -60,6 +60,12 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
      */
     private $payWay;
 
+    /**
+     * 1
+     * @var string
+     */
+    private $isRefundAll;
+
 
 
     /**
@@ -188,6 +194,22 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     public function setPayWay(?string $payWay): void
     {
         $this->payWay = $payWay;
+    }
+
+    /**
+     * @return string
+     */
+    public function getIsRefundAll(): ?string
+    {
+        return $this->isRefundAll;
+    }
+
+    /**
+     * @param string $isRefundAll
+     */
+    public function setIsRefundAll(?string $isRefundAll): void
+    {
+        $this->isRefundAll = $isRefundAll;
     }
 
     public function jsonSerialize() {
