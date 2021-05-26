@@ -31,19 +31,19 @@ class LocalCalculateDeliveryFeeDTO implements \JsonSerializable {
 
     /**
      * 买家收货地址
-     * @var array
+     * @var string
      */
     private $buyerAddress;
 
     /**
      * 买家经度
-     * @var array
+     * @var string
      */
     private $buyerLng;
 
     /**
      * 买家纬度
-     * @var array
+     * @var string
      */
     private $buyerLat;
 
@@ -98,49 +98,49 @@ class LocalCalculateDeliveryFeeDTO implements \JsonSerializable {
     }
 
     /**
-     * @return array
+     * @return string
      */
-    public function getBuyerAddress(): ?array
+    public function getBuyerAddress(): ?string
     {
         return $this->buyerAddress;
     }
 
     /**
-     * @param array $buyerAddress
+     * @param string $buyerAddress
      */
-    public function setBuyerAddress(?array $buyerAddress): void
+    public function setBuyerAddress(?string $buyerAddress): void
     {
         $this->buyerAddress = $buyerAddress;
     }
 
     /**
-     * @return array
+     * @return string
      */
-    public function getBuyerLng(): ?array
+    public function getBuyerLng(): ?string
     {
         return $this->buyerLng;
     }
 
     /**
-     * @param array $buyerLng
+     * @param string $buyerLng
      */
-    public function setBuyerLng(?array $buyerLng): void
+    public function setBuyerLng(?string $buyerLng): void
     {
         $this->buyerLng = $buyerLng;
     }
 
     /**
-     * @return array
+     * @return string
      */
-    public function getBuyerLat(): ?array
+    public function getBuyerLat(): ?string
     {
         return $this->buyerLat;
     }
 
     /**
-     * @param array $buyerLat
+     * @param string $buyerLat
      */
-    public function setBuyerLat(?array $buyerLat): void
+    public function setBuyerLat(?string $buyerLat): void
     {
         $this->buyerLat = $buyerLat;
     }
