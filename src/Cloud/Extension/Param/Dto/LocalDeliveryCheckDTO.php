@@ -36,7 +36,7 @@ class LocalDeliveryCheckDTO implements \JsonSerializable {
     private $buyerLat;
 
     /**
-     * 商家id列表
+     * 商品id列表
      * @var array
      */
     private $itemIds;
