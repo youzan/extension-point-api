@@ -3,11 +3,12 @@
 namespace Com\Youzan\Cloud\Extension\Param;
 
 use Com\Youzan\Cloud\Extension\Param\RefundItemDTO;
+use Com\Youzan\Cloud\Extension\Param\OrderItemDTO;
 
 /**
  * 
  * @author Baymax
- * @create Mon Oct 08 16:18:50 CST 2018
+ * @create 2018-10-08 16:18:50.0
  */
 class RefundSelfValidateParamDTO implements \JsonSerializable {
 
@@ -46,6 +47,24 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
      * @var array
      */
     private $refundOrderItems;
+
+    /**
+     * 下单商品信息
+     * @var array
+     */
+    private $orderItems;
+
+    /**
+     * WXPAY:微信自有支付,ALIWAP:支付宝wap,ALIPAY:支付宝wap,TENPAY:财付通,PEERPAY:代付,UMPAY:联动优势,CODPAY:货到付款,WXPAY_DAIXIAO:大账号代销,WXPAY_SHOULI:受理模式,BAIDUWAP:百付宝,WX_APPPAY:sdk支付,FX_MERGED:合并付货款,UMP_PRESENT:领取赠品,UMP_COUPON:优惠兑换,FX_SPLITTING:自动付货款,AIXUEDAI:爱学贷,WX_WAPPAY:微信wap,WX_HB:微信红包支付,UMP_REBATE:返利,UMP_HB:ump红包,YZPAY:易宝支付,PREPAID_CARD:储值卡,QQPAY:qq支付,ECARD:有赞E卡支付,BARCODE_WX:微信条码,BARCODE_ALIPAY:支付宝条码,GIFT_CARD:礼品卡支付,UNIFIED_PREPAID_CARD:会员余额,CREDIT_CARD_UNIONPAY:信用卡银联支付,DEBIT_CARD_UNIONPAY:储蓄卡银联支付,INSTALMENT:分期支付,PRIOR_USE:先用后付,WX_NATIVE:微信扫码二维码支付,UN_SETTLED_AMOUNT_PAY:待结算&amp;余额支付,ENCHASHMENT_GIFT_CARD:礼品卡支付,OF_ONLINE_ACCOUNT:代收账户,OF_ONLINE_PREPAID_ACCOUNT:储值账户,OF_ONLINE_DEPOSIT_ACCOUNT:保证金账户,OF_YOUZAN_QR:收款码,OF_WEIXIN:微信,OF_ALIPAY:支付宝,OF_POS:刷卡,OF_TABLE_CARD:二维码台卡,OF_PREPAID_CARD:储值卡,OF_E_CARD:有赞E卡,MARK_PAY_WXPAY:标记收款-自有微信支付,MARK_PAY_ALIPAY:标记收款-自有支付宝,MARK_PAY_POS:标记收款-自有POS刷卡,ALLIN_SWIPECARD:通联刷卡支付,MARK_PAY_DIY:标记收款-自定义,CHANGE_PAY:有赞零钱支付,UMP_PAY:优惠全额抵扣,SUNMI_WX:商米支付,SUNMI_ALIPAY:商米支付-支付宝,SUNMI_SWIPECARD:商米pos,OF_OFFLINE_ACCOUNT:记账账户,OF_CASH:现金,MIXED_PAYMENT:组合支付,OUTSIDE_PAYMENT:外部支付,TRANSFER_VOUCHER:汇款支付,MARK_PAY_CREDIT_PAY:标记收款-挂账支付,TRANSFER_TO_PUBLIC:对公转账,ABC_EPAY:农行商E付,ALIPAY_FLOWER:花呗支付,ALIPAY_AGREEMENT:支付宝免密支付,ALIPAY_APPLET:支付宝-用户付,ELECTRONIC_BANK_PAY:银联网银支付
+     * @var string
+     */
+    private $payWay;
+
+    /**
+     * 是否整单退款，0：整单，1：非整单。注意事项，仅退款：校验下单商品是否整单退款（不包含赠品）；退货退款/换货：校验下单商品数量/重量是否整单退款（不包含赠品）
+     * @var string
+     */
+    private $isNumAllRefund;
 
 
 
@@ -143,6 +162,54 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     public function setRefundOrderItems(?array $refundOrderItems): void
     {
         $this->refundOrderItems = $refundOrderItems;
+    }
+
+    /**
+     * @return array
+     */
+    public function getOrderItems(): ?array
+    {
+        return $this->orderItems;
+    }
+
+    /**
+     * @param array $orderItems
+     */
+    public function setOrderItems(?array $orderItems): void
+    {
+        $this->orderItems = $orderItems;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPayWay(): ?string
+    {
+        return $this->payWay;
+    }
+
+    /**
+     * @param string $payWay
+     */
+    public function setPayWay(?string $payWay): void
+    {
+        $this->payWay = $payWay;
+    }
+
+    /**
+     * @return string
+     */
+    public function getIsNumAllRefund(): ?string
+    {
+        return $this->isNumAllRefund;
+    }
+
+    /**
+     * @param string $isNumAllRefund
+     */
+    public function setIsNumAllRefund(?string $isNumAllRefund): void
+    {
+        $this->isNumAllRefund = $isNumAllRefund;
     }
 
     public function jsonSerialize() {

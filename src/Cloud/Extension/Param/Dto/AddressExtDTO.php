@@ -12,73 +12,111 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 class AddressExtDTO implements \JsonSerializable {
 
     /**
-     * 纬度仅支持百度坐标系
+     * 
      * @var string
      */
-    private $lat;
+    private $province;
 
     /**
-     * 经度仅支持百度坐标系
+     * 
      * @var string
      */
-    private $lng;
+    private $city;
 
     /**
-     * 详细地址
+     * 
+     * @var string
+     */
+    private $district;
+
+    /**
+     * 
+     * @var string
+     */
+    private $regionId;
+
+    /**
+     * 
      * @var string
      */
     private $address;
 
     /**
-     * 区名
+     * 
      * @var string
      */
-    private $countyName;
+    private $lng;
 
     /**
-     * 省名
+     * 
      * @var string
      */
-    private $provinceName;
-
-    /**
-     * 城市名
-     * @var string
-     */
-    private $cityName;
+    private $lat;
 
 
 
     /**
      * @return string
      */
-    public function getLat(): ?string
+    public function getProvince(): ?string
     {
-        return $this->lat;
+        return $this->province;
     }
 
     /**
-     * @param string $lat
+     * @param string $province
      */
-    public function setLat(?string $lat): void
+    public function setProvince(?string $province): void
     {
-        $this->lat = $lat;
+        $this->province = $province;
     }
 
     /**
      * @return string
      */
-    public function getLng(): ?string
+    public function getCity(): ?string
     {
-        return $this->lng;
+        return $this->city;
     }
 
     /**
-     * @param string $lng
+     * @param string $city
      */
-    public function setLng(?string $lng): void
+    public function setCity(?string $city): void
     {
-        $this->lng = $lng;
+        $this->city = $city;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDistrict(): ?string
+    {
+        return $this->district;
+    }
+
+    /**
+     * @param string $district
+     */
+    public function setDistrict(?string $district): void
+    {
+        $this->district = $district;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRegionId(): ?string
+    {
+        return $this->regionId;
+    }
+
+    /**
+     * @param string $regionId
+     */
+    public function setRegionId(?string $regionId): void
+    {
+        $this->regionId = $regionId;
     }
 
     /**
@@ -100,49 +138,33 @@ class AddressExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCountyName(): ?string
+    public function getLng(): ?string
     {
-        return $this->countyName;
+        return $this->lng;
     }
 
     /**
-     * @param string $countyName
+     * @param string $lng
      */
-    public function setCountyName(?string $countyName): void
+    public function setLng(?string $lng): void
     {
-        $this->countyName = $countyName;
-    }
-
-    /**
-     * @return string
-     */
-    public function getProvinceName(): ?string
-    {
-        return $this->provinceName;
-    }
-
-    /**
-     * @param string $provinceName
-     */
-    public function setProvinceName(?string $provinceName): void
-    {
-        $this->provinceName = $provinceName;
+        $this->lng = $lng;
     }
 
     /**
      * @return string
      */
-    public function getCityName(): ?string
+    public function getLat(): ?string
     {
-        return $this->cityName;
+        return $this->lat;
     }
 
     /**
-     * @param string $cityName
+     * @param string $lat
      */
-    public function setCityName(?string $cityName): void
+    public function setLat(?string $lat): void
     {
-        $this->cityName = $cityName;
+        $this->lat = $lat;
     }
 
     public function jsonSerialize() {

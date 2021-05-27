@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 退款商品信息
  * @author Baymax
- * @create Tue Nov 10 15:22:48 CST 2020
+ * @create 2020-11-10 15:22:48.0
  */
 class RefundItemDTO implements \JsonSerializable {
 
@@ -28,6 +28,12 @@ class RefundItemDTO implements \JsonSerializable {
      * @var int
      */
     private $orderGoodsNum;
+
+    /**
+     * 退款金额，单位：分
+     * @var int
+     */
+    private $refundFee;
 
 
 
@@ -77,6 +83,22 @@ class RefundItemDTO implements \JsonSerializable {
     public function setOrderGoodsNum(?int $orderGoodsNum): void
     {
         $this->orderGoodsNum = $orderGoodsNum;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRefundFee(): ?int
+    {
+        return $this->refundFee;
+    }
+
+    /**
+     * @param int $refundFee
+     */
+    public function setRefundFee(?int $refundFee): void
+    {
+        $this->refundFee = $refundFee;
     }
 
     public function jsonSerialize() {

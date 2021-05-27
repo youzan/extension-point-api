@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 /**
  * 
  * @author Baymax
- * @create 2021-04-13 14:59:42.0
+ * @create Tue Apr 13 14:59:42 CST 2021
  */
 class LocalCalculateDeliveryFeeDTO implements \JsonSerializable {
 
