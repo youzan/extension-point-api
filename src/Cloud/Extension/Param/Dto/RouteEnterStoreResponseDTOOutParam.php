@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\RouteEnterStoreResponseDTO;
 /**
  * 返回类
  * @author Baymax
- * @create 2021-05-24 20:23:00.0
+ * @create Mon May 24 20:23:00 CST 2021
  */
 class RouteEnterStoreResponseDTOOutParam implements \JsonSerializable {
 
