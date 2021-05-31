@@ -2,14 +2,14 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Com\Youzan\Cloud\Extension\Param\Response\CalculateDeliveryFeeResp;
+use Com\Youzan\Cloud\Extension\Param\Response\LocalDeliveryCheckResp;
 
 /**
  * 返回类
  * @author Baymax
- * @create 2021-04-13 14:59:42.0
+ * @create 2021-05-25 10:09:40.0
  */
-class CalculateDeliveryFeeRespOutParam implements \JsonSerializable {
+class LocalDeliveryCheckRespOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class CalculateDeliveryFeeRespOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var CalculateDeliveryFeeResp
+     * @var LocalDeliveryCheckResp
      */
     private $data;
 
@@ -84,17 +84,17 @@ class CalculateDeliveryFeeRespOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return CalculateDeliveryFeeResp
+     * @return LocalDeliveryCheckResp
      */
-    public function getData(): ?CalculateDeliveryFeeResp
+    public function getData(): ?LocalDeliveryCheckResp
     {
         return $this->data;
     }
 
     /**
-     * @param CalculateDeliveryFeeResp $data
+     * @param LocalDeliveryCheckResp $data
      */
-    public function setData(?CalculateDeliveryFeeResp $data): void
+    public function setData(?LocalDeliveryCheckResp $data): void
     {
         $this->data = $data;
     }

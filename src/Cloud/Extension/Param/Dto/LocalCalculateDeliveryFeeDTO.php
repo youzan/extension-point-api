@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 /**
  * 
  * @author Baymax
- * @create Tue Apr 13 14:59:42 CST 2021
+ * @create 2021-04-13 14:59:42.0
  */
 class LocalCalculateDeliveryFeeDTO implements \JsonSerializable {
 
@@ -28,6 +28,24 @@ class LocalCalculateDeliveryFeeDTO implements \JsonSerializable {
      * @var int
      */
     private $kdtId;
+
+    /**
+     * 买家收货地址
+     * @var string
+     */
+    private $buyerAddress;
+
+    /**
+     * 买家经度(百度系)
+     * @var string
+     */
+    private $buyerLng;
+
+    /**
+     * 买家纬度(百度系)
+     * @var string
+     */
+    private $buyerLat;
 
 
 
@@ -77,6 +95,54 @@ class LocalCalculateDeliveryFeeDTO implements \JsonSerializable {
     public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBuyerAddress(): ?string
+    {
+        return $this->buyerAddress;
+    }
+
+    /**
+     * @param string $buyerAddress
+     */
+    public function setBuyerAddress(?string $buyerAddress): void
+    {
+        $this->buyerAddress = $buyerAddress;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBuyerLng(): ?string
+    {
+        return $this->buyerLng;
+    }
+
+    /**
+     * @param string $buyerLng
+     */
+    public function setBuyerLng(?string $buyerLng): void
+    {
+        $this->buyerLng = $buyerLng;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBuyerLat(): ?string
+    {
+        return $this->buyerLat;
+    }
+
+    /**
+     * @param string $buyerLat
+     */
+    public function setBuyerLat(?string $buyerLat): void
+    {
+        $this->buyerLat = $buyerLat;
     }
 
     public function jsonSerialize() {
