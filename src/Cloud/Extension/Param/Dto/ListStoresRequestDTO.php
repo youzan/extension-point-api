@@ -12,43 +12,43 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 class ListStoresRequestDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 店铺id
      * @var int
      */
     private $kdtId;
 
     /**
-     * 
+     * 买家id
      * @var int
      */
     private $buyerId;
 
     /**
-     * 
+     * 搜索关键词
      * @var string
      */
     private $keyword;
 
     /**
-     * 
+     * 经度
      * @var string
      */
     private $lng;
 
     /**
-     * 
+     * 纬度
      * @var string
      */
     private $lat;
 
     /**
-     * 
+     * 城市
      * @var string
      */
     private $city;
 
     /**
-     * 
+     * 地区id
      * @var string
      */
     private $regionId;

@@ -12,19 +12,19 @@ use Com\Youzan\Cloud\Extension\Param\Store\DayCrossTimeSectionDTO;
 class DayCrossBizTimeSettingDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 营业时间类型 1：一直营业，2：休息
      * @var int
      */
     private $type;
 
     /**
-     * 
+     * 只允许营业时间下单
      * @var bool
      */
     private $onlyBusinessTimeOpen;
 
     /**
-     * 
+     * 时间类型 0：老数据 1：全天，2：每天重复，3：每周重复
      * @var int
      */
     private $timeRangeType;

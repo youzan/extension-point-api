@@ -49,7 +49,7 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     private $refundOrderItems;
 
     /**
-     * 
+     * 下单商品信息
      * @var array
      */
     private $orderItems;
@@ -61,10 +61,16 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     private $payWay;
 
     /**
-     * 1
-     * @var string
+     * 下单实付邮费
+     * @var int
      */
-    private $isRefundAll;
+    private $postage;
+
+    /**
+     * 退款邮费
+     * @var int
+     */
+    private $refundPostage;
 
 
 
@@ -197,19 +203,35 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getIsRefundAll(): ?string
+    public function getPostage(): ?int
     {
-        return $this->isRefundAll;
+        return $this->postage;
     }
 
     /**
-     * @param string $isRefundAll
+     * @param int $postage
      */
-    public function setIsRefundAll(?string $isRefundAll): void
+    public function setPostage(?int $postage): void
     {
-        $this->isRefundAll = $isRefundAll;
+        $this->postage = $postage;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRefundPostage(): ?int
+    {
+        return $this->refundPostage;
+    }
+
+    /**
+     * @param int $refundPostage
+     */
+    public function setRefundPostage(?int $refundPostage): void
+    {
+        $this->refundPostage = $refundPostage;
     }
 
     public function jsonSerialize() {

@@ -17,31 +17,31 @@ use Com\Youzan\Cloud\Extension\Param\Store\OfflineBusinessSettingDTO;
 class MultiStoreExtDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 网点id
      * @var int
      */
     private $id;
 
     /**
-     * 
+     * 口袋通id
      * @var int
      */
     private $kdtId;
 
     /**
-     * 
+     * 网点名称
      * @var string
      */
     private $name;
 
     /**
-     * 
+     * 地址信息
      * @var AddressExtDTO
      */
     private $address;
 
     /**
-     * 
+     * 号码信息
      * @var PhoneDTO
      */
     private $phone;
@@ -65,133 +65,133 @@ class MultiStoreExtDTO implements \JsonSerializable {
     private $bizTimeSetting;
 
     /**
-     * 
+     * 是否是超级门店
      * @var bool
      */
     private $superStore;
 
     /**
-     * 
+     * 图片地址
      * @var array
      */
     private $images;
 
     /**
-     * 
+     * 是否是门店
      * @var bool
      */
     private $isStore;
 
     /**
-     * 
+     * 是否是总店
      * @var bool
      */
     private $mainStore;
 
     /**
-     * 
+     * 是否是自提点
      * @var bool
      */
     private $isSelfFetch;
 
     /**
-     * 
+     * 是否是线上网点
      * @var bool
      */
     private $isOnline;
 
     /**
-     * 
+     * 网点号码信息
      * @var PhoneDTO
      */
     private $phoneDTO;
 
     /**
-     * 
+     * 当前是否是营业
      * @var bool
      */
     private $opening;
 
     /**
-     * 
+     * 创建时间
      * @var int
      */
     private $createdAt;
 
     /**
-     * 
+     * 更新时间
      * @var int
      */
     private $updatedAt;
 
     /**
-     * 
+     * 距离（查询条件传经纬度的话，会返回该经纬度对应的位置到该网点的距离）
      * @var string
      */
     private $distance;
 
     /**
-     * 
+     * 网点是否开启的状态
      * @var int
      */
     private $status;
 
     /**
-     * 
+     * 网点所属的标签列表
      * @var array
      */
     private $tagIds;
 
     /**
-     * 
+     * 是否支持本地配送  0:不支持，1：支持
      * @var int
      */
     private $supportLocalDelivery;
 
     /**
-     * 
+     * 描述
      * @var string
      */
     private $description;
 
     /**
-     * 
+     * 是否有效
      * @var bool
      */
     private $isValid;
 
     /**
-     * 
+     * 是否开启第三方配送
      * @var bool
      */
     private $useThirdPartyDelivery;
 
     /**
-     * 
+     * 第三方配送类型
      * @var int
      */
     private $thirdPartyDeliveryBusiness;
 
     /**
-     * 
+     * 营业时间字符串
      * @var string
      */
     private $businessTimeSettingString;
 
     /**
-     * 
+     * 外部编码
      * @var string
      */
     private $outerId;
 
     /**
-     * 
+     * 营业时间设置，该字段已经交给物流维护
      * @var OfflineBusinessSettingDTO
      */
     private $offlineBusinessHours;
 
     /**
-     * 
+     * 前端营业时间展示文案
      * @var string
      */
     private $summary;

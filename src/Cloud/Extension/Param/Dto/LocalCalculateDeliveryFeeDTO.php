@@ -36,13 +36,13 @@ class LocalCalculateDeliveryFeeDTO implements \JsonSerializable {
     private $buyerAddress;
 
     /**
-     * 买家经度
+     * 买家经度(百度系)
      * @var string
      */
     private $buyerLng;
 
     /**
-     * 买家纬度
+     * 买家纬度(百度系)
      * @var string
      */
     private $buyerLat;

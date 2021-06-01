@@ -24,13 +24,13 @@ class LocalDeliveryCheckDTO implements \JsonSerializable {
     private $buyerAddress;
 
     /**
-     * 买家收货地址经度
+     * 买家收货地址经度(百度系)
      * @var string
      */
     private $buyerLng;
 
     /**
-     * 买家收货地址纬度
+     * 买家收货地址纬度(百度系)
      * @var string
      */
     private $buyerLat;

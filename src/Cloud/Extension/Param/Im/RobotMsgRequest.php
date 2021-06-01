@@ -30,7 +30,7 @@ class RobotMsgRequest implements \JsonSerializable {
     private $ext;
 
     /**
-     * 0:正常发消息; 1:无答案; 2:请求转人工
+     * 已废弃字段无需关注
      * @var int
      */
     private $status;

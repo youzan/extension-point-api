@@ -5,26 +5,26 @@ namespace Com\Youzan\Cloud\Extension\Param\Store;
 use Com\Youzan\Cloud\Extension\Param\Store\OpeningTimeSectionDTO;
 
 /**
- * 
+ * 营业时间设置，该字段已经交给物流维护
  * @author Baymax
  * @create 2021-05-25 19:58:33.0
  */
 class OfflineBusinessSettingDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 营业时间类型 1：一直营业，2：休息
      * @var int
      */
     private $type;
 
     /**
-     * 
+     * 只允许营业时间下单
      * @var bool
      */
     private $onlyBusinessTimeOpen;
 
     /**
-     * 
+     * 网点营业时间段
      * @var array
      */
     private $openingTimeSections;

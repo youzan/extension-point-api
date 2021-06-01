@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 class RouteEnterStoreResponseDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 路由到具体网点时则返回进店网点offline_id
      * @var int
      */
     private $offlineId;

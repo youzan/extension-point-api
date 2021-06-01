@@ -12,19 +12,19 @@ namespace Com\Youzan\Cloud\Extension\Param\Store;
 class TimeSectionDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 开始时间
      * @var string
      */
     private $openTime;
 
     /**
-     * 
+     * 结束时间
      * @var string
      */
     private $closeTime;
 
     /**
-     * 
+     * 是否跨天 0 否 1 是
      * @var int
      */
     private $dayCross;

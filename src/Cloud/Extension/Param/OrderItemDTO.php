@@ -23,6 +23,12 @@ class OrderItemDTO implements \JsonSerializable {
      */
     private $orderGoodsNum;
 
+    /**
+     * 实付金额
+     * @var int
+     */
+    private $realPay;
+
 
 
     /**
@@ -55,6 +61,22 @@ class OrderItemDTO implements \JsonSerializable {
     public function setOrderGoodsNum(?int $orderGoodsNum): void
     {
         $this->orderGoodsNum = $orderGoodsNum;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRealPay(): ?int
+    {
+        return $this->realPay;
+    }
+
+    /**
+     * @param int $realPay
+     */
+    public function setRealPay(?int $realPay): void
+    {
+        $this->realPay = $realPay;
     }
 
     public function jsonSerialize() {

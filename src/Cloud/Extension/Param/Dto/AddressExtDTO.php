@@ -12,43 +12,43 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 class AddressExtDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 省
      * @var string
      */
     private $province;
 
     /**
-     * 
+     * 市
      * @var string
      */
     private $city;
 
     /**
-     * 
+     * 区
      * @var string
      */
     private $district;
 
     /**
-     * 
+     * 地区id
      * @var string
      */
     private $regionId;
 
     /**
-     * 
+     * 详细地址
      * @var string
      */
     private $address;
 
     /**
-     * 
+     * 经度
      * @var string
      */
     private $lng;
 
     /**
-     * 
+     * 纬度
      * @var string
      */
     private $lat;

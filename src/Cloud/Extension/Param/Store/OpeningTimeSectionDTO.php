@@ -12,25 +12,25 @@ namespace Com\Youzan\Cloud\Extension\Param\Store;
 class OpeningTimeSectionDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 开始时间
      * @var string
      */
     private $openTime;
 
     /**
-     * 
+     * 结束时间
      * @var string
      */
     private $closeTime;
 
     /**
-     * 
+     * 星期
      * @var array
      */
     private $weekdays;
 
     /**
-     * 
+     * 是否跨天 0 否 1 是
      * @var int
      */
     private $dayCross;

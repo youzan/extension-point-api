@@ -12,7 +12,7 @@ use Com\Youzan\Cloud\Extension\Param\Store\TimeSectionDTO;
 class DayCrossTimeSectionDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 星期
      * @var array
      */
     private $weekdays;
