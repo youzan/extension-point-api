@@ -12,7 +12,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Param;
 class ImktJoinRunningData implements \JsonSerializable {
 
     /**
-     * 团凭证alias
+     * 团凭证别名
      * @var string
      */
     private $parentVoucherAlias;

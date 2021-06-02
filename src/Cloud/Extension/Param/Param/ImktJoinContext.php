@@ -12,16 +12,10 @@ namespace Com\Youzan\Cloud\Extension\Param\Param;
 class ImktJoinContext implements \JsonSerializable {
 
     /**
-     * 店铺id
-     * @var int
-     */
-    private $shopId;
-
-    /**
      * 活动别名
      * @var string
      */
-    private $alias;
+    private $activityAlias;
 
     /**
      * 凭证别名
@@ -44,35 +38,19 @@ class ImktJoinContext implements \JsonSerializable {
 
 
     /**
-     * @return int
-     */
-    public function getShopId(): ?int
-    {
-        return $this->shopId;
-    }
-
-    /**
-     * @param int $shopId
-     */
-    public function setShopId(?int $shopId): void
-    {
-        $this->shopId = $shopId;
-    }
-
-    /**
      * @return string
      */
-    public function getAlias(): ?string
+    public function getActivityAlias(): ?string
     {
-        return $this->alias;
+        return $this->activityAlias;
     }
 
     /**
-     * @param string $alias
+     * @param string $activityAlias
      */
-    public function setAlias(?string $alias): void
+    public function setActivityAlias(?string $activityAlias): void
     {
-        $this->alias = $alias;
+        $this->activityAlias = $activityAlias;
     }
 
     /**

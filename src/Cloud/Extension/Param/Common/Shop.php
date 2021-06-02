@@ -5,71 +5,47 @@ namespace Com\Youzan\Cloud\Extension\Param\Common;
 
 
 /**
- * 
+ * 店铺信息
  * @author Baymax
  * @create 2021-05-06 20:06:45.0
  */
 class Shop implements \JsonSerializable {
 
     /**
-     * 
+     * 店铺ID
      * @var int
      */
     private $shopId;
 
     /**
-     * 
-     * @var int
-     */
-    private $hqShopId;
-
-    /**
-     * 
+     * 总店店铺ID，若单店铺则为单店铺ID
      * @var int
      */
     private $rootShopId;
 
     /**
-     * 
+     * 包含当前下单店铺的上级所有店铺ID列表
      * @var array
      */
     private $inheritedShopIdsWithSelf;
 
     /**
-     * 
+     * 当前下单店铺名称
      * @var string
      */
     private $name;
 
     /**
-     * 
+     * 下单店铺类型，微商城（0），零售（7）等
      * @var int
      */
     private $type;
 
     /**
-     * 
+     * 下单店铺角色，单店（0），总店（1），分店（2）等
      * @var int
      */
     private $shopRole;
-
-    /**
-     * 
-     * @var bool
-     */
-    private $onlineShopOpen;
-
-    /**
-     * 
-     * @var int
-     */
-    private $lockStatus;
-
-    /**
-     * 
-     * @var bool
-     */
-    private $weChatServer;
 
 
 
@@ -87,22 +63,6 @@ class Shop implements \JsonSerializable {
     public function setShopId(?int $shopId): void
     {
         $this->shopId = $shopId;
-    }
-
-    /**
-     * @return int
-     */
-    public function getHqShopId(): ?int
-    {
-        return $this->hqShopId;
-    }
-
-    /**
-     * @param int $hqShopId
-     */
-    public function setHqShopId(?int $hqShopId): void
-    {
-        $this->hqShopId = $hqShopId;
     }
 
     /**
@@ -183,54 +143,6 @@ class Shop implements \JsonSerializable {
     public function setShopRole(?int $shopRole): void
     {
         $this->shopRole = $shopRole;
-    }
-
-    /**
-     * @return bool
-     */
-    public function getOnlineShopOpen(): ?bool
-    {
-        return $this->onlineShopOpen;
-    }
-
-    /**
-     * @param bool $onlineShopOpen
-     */
-    public function setOnlineShopOpen(?bool $onlineShopOpen): void
-    {
-        $this->onlineShopOpen = $onlineShopOpen;
-    }
-
-    /**
-     * @return int
-     */
-    public function getLockStatus(): ?int
-    {
-        return $this->lockStatus;
-    }
-
-    /**
-     * @param int $lockStatus
-     */
-    public function setLockStatus(?int $lockStatus): void
-    {
-        $this->lockStatus = $lockStatus;
-    }
-
-    /**
-     * @return bool
-     */
-    public function getWeChatServer(): ?bool
-    {
-        return $this->weChatServer;
-    }
-
-    /**
-     * @param bool $weChatServer
-     */
-    public function setWeChatServer(?bool $weChatServer): void
-    {
-        $this->weChatServer = $weChatServer;
     }
 
     public function jsonSerialize() {

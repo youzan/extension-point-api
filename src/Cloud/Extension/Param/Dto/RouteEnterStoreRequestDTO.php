@@ -12,19 +12,19 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 class RouteEnterStoreRequestDTO implements \JsonSerializable {
 
     /**
-     * 店铺id
+     * 
      * @var int
      */
     private $kdtId;
 
     /**
-     * 用户纬度
+     * 
      * @var string
      */
     private $lat;
 
     /**
-     * 用户经度
+     * 
      * @var string
      */
     private $lng;

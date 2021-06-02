@@ -47,6 +47,12 @@ class LocalCalculateDeliveryFeeDTO implements \JsonSerializable {
      */
     private $buyerLat;
 
+    /**
+     * 交易唯一标识
+     * @var string
+     */
+    private $bookKey;
+
 
 
     /**
@@ -143,6 +149,22 @@ class LocalCalculateDeliveryFeeDTO implements \JsonSerializable {
     public function setBuyerLat(?string $buyerLat): void
     {
         $this->buyerLat = $buyerLat;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBookKey(): ?string
+    {
+        return $this->bookKey;
+    }
+
+    /**
+     * @param string $bookKey
+     */
+    public function setBookKey(?string $bookKey): void
+    {
+        $this->bookKey = $bookKey;
     }
 
     public function jsonSerialize() {

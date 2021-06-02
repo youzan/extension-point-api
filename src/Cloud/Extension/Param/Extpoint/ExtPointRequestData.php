@@ -16,43 +16,43 @@ use StdClass;
 class ExtPointRequestData implements \JsonSerializable {
 
     /**
-     * 
+     * 活动信息
      * @var ExtPointActivityBaseInfo
      */
     private $activityInfo;
 
     /**
-     * 
+     * 活动商品信息列表
      * @var array
      */
     private $goodsInfoList;
 
     /**
-     * 
+     * 下单用户信息
      * @var Buyer
      */
     private $buyerInfo;
 
     /**
-     * 
+     * 店铺信息
      * @var Shop
      */
     private $shopInfo;
 
     /**
-     * 
+     * 订单号
      * @var string
      */
     private $orderNo;
 
     /**
-     * 
+     * 规则业务路由，由开发者定义
      * @var string
      */
     private $bizRouteKey;
 
     /**
-     * 
+     * 扩展信息，例如下单时透传给开发者的活动扩展信息
      * @var stdClass
      */
     private $extraInfo;

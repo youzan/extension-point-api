@@ -5,50 +5,50 @@ namespace Com\Youzan\Cloud\Extension\Param\Extpoint;
 
 
 /**
- * 
+ * 活动商品信息列表
  * @author Baymax
  * @create 2021-05-06 20:06:45.0
  */
 class ExtPointGoodsBaseInfo implements \JsonSerializable {
 
     /**
-     * 
+     * 商品ID
      * @var int
      */
     private $goodsId;
 
     /**
-     * 
+     * 商品规格ID
      * @var int
      */
     private $skuId;
 
     /**
-     * 
+     * 商品在交易下单时的ID，由交易在下单时生成的商品编号
      * @var int
      */
     private $orderItemId;
 
     /**
-     * 
+     * 商品原始价格
      * @var int
      */
     private $price;
 
     /**
-     * 
+     * 商品数量
      * @var int
      */
     private $num;
 
     /**
-     * 
+     * 商品优惠金额
      * @var int
      */
     private $decrease;
 
     /**
-     * 
+     * 商品在优惠均摊后，实付价格
      * @var int
      */
     private $realPay;

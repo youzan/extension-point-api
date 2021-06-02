@@ -13,13 +13,13 @@ use Com\Youzan\Cloud\Extension\Param\Dto\MultiStoreExtDTO;
 class ListStoresResponseDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 分页对象
      * @var Paginator
      */
     private $paginator;
 
     /**
-     * 
+     * 数据集
      * @var array
      */
     private $items;

@@ -13,37 +13,37 @@ use Com\Youzan\Cloud\Extension\Param\Extpoint\GoodsResponse;
 class BrickExtPointResponse implements \JsonSerializable {
 
     /**
-     * 
+     * 活动ID，对应请求中的活动
      * @var int
      */
     private $activityId;
 
     /**
-     * 
+     * 活动名称
      * @var string
      */
     private $activityName;
 
     /**
-     * 
+     * 活动插件级别，订单级（order），目前只支持订单级
      * @var string
      */
     private $promotionLevel;
 
     /**
-     * 
+     * 活动扩展信息，开发者需要透传给下单页面或者下单链路的扩展信息
      * @var stdClass
      */
     private $activityExtraInfo;
 
     /**
-     * 
+     * 活动优惠金额
      * @var int
      */
     private $decrease;
 
     /**
-     * 
+     * 活动商品列表
      * @var array
      */
     private $goodsResponseList;

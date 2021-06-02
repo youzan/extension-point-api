@@ -10,7 +10,7 @@ use DateTime;
 use Com\Youzan\Cloud\Extension\Param\Store\OfflineBusinessSettingDTO;
 
 /**
- * 
+ * 数据集
  * @author Baymax
  * @create 2021-05-25 19:58:33.0
  */

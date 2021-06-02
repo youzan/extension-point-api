@@ -5,32 +5,32 @@ namespace Com\Youzan\Cloud\Extension\Param\Extpoint;
 
 
 /**
- * 
+ * 活动商品列表
  * @author Baymax
  * @create 2021-05-06 20:06:45.0
  */
 class GoodsResponse implements \JsonSerializable {
 
     /**
-     * 
+     * 活动商品ID
      * @var int
      */
     private $goodsId;
 
     /**
-     * 
+     * 活动规格ID
      * @var int
      */
     private $skuId;
 
     /**
-     * 
+     * 活动下单商品ID
      * @var int
      */
     private $orderItemId;
 
     /**
-     * 
+     * 商品优惠金额
      * @var int
      */
     private $decrease;
