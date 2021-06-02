@@ -59,6 +59,12 @@ class LocalDeliveryCheckDTO implements \JsonSerializable {
      */
     private $skuCounts;
 
+    /**
+     * 交易唯一标识
+     * @var string
+     */
+    private $bookKey;
+
 
 
     /**
@@ -187,6 +193,22 @@ class LocalDeliveryCheckDTO implements \JsonSerializable {
     public function setSkuCounts(?array $skuCounts): void
     {
         $this->skuCounts = $skuCounts;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBookKey(): ?string
+    {
+        return $this->bookKey;
+    }
+
+    /**
+     * @param string $bookKey
+     */
+    public function setBookKey(?string $bookKey): void
+    {
+        $this->bookKey = $bookKey;
     }
 
     public function jsonSerialize() {
