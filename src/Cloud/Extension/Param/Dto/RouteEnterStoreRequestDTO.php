@@ -5,26 +5,26 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
 
 /**
- * 
+ * 请求体
  * @author Baymax
  * @create 2021-05-24 20:23:00.0
  */
 class RouteEnterStoreRequestDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 店铺id
      * @var int
      */
     private $kdtId;
 
     /**
-     * 
+     * 纬度（百度系）
      * @var string
      */
     private $lat;
 
     /**
-     * 
+     * 经度（百度系）
      * @var string
      */
     private $lng;

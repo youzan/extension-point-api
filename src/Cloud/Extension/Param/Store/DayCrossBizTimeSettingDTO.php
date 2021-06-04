@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Store;
 use Com\Youzan\Cloud\Extension\Param\Store\DayCrossTimeSectionDTO;
 
 /**
- * 
+ * 新版支持跨天的营业时间
  * @author Baymax
  * @create 2021-05-25 19:58:33.0
  */
 class DayCrossBizTimeSettingDTO implements \JsonSerializable {
 
     /**
-     * 营业时间类型 1：一直营业，2：休息
+     * 营业时间类型 1：一直营业，2：休息，3：特定时间段营业
      * @var int
      */
     private $type;
@@ -24,13 +24,13 @@ class DayCrossBizTimeSettingDTO implements \JsonSerializable {
     private $onlyBusinessTimeOpen;
 
     /**
-     * 时间类型 0：老数据 1：全天，2：每天重复，3：每周重复
+     * 时间类型：1 全天，2 每天重复， 3 每周重复
      * @var int
      */
     private $timeRangeType;
 
     /**
-     * 
+     * 网点营业时间
      * @var array
      */
     private $openingTimeSections;

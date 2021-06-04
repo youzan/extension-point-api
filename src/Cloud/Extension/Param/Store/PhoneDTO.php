@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Store;
 
 
 /**
- * 号码信息
+ * 
  * @author Baymax
  * @create 2021-05-25 19:58:33.0
  */
 class PhoneDTO implements \JsonSerializable {
 
     /**
-     * 区号
+     * 电话区号
      * @var string
      */
     private $areaCode;

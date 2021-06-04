@@ -36,7 +36,7 @@ class CustomerProfileDTO implements \JsonSerializable {
     private $isMember;
 
     /**
-     * 
+     * 地址信息
      * @var ContactAddressDTO
      */
     private $contactAddressDTO;

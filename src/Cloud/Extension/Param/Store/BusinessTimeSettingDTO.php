@@ -30,7 +30,7 @@ class BusinessTimeSettingDTO implements \JsonSerializable {
     private $timeRangeType;
 
     /**
-     * 
+     * 网点营业时间
      * @var array
      */
     private $openingTimeSections;

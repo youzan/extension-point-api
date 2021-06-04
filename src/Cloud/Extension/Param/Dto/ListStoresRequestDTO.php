@@ -18,25 +18,25 @@ class ListStoresRequestDTO implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * 买家id
+     * 有赞用户id，用户在有赞的唯一id。推荐使用 LnhGm4rh576452722916618240
      * @var int
      */
-    private $buyerId;
+    private $yz_open_id;
 
     /**
-     * 搜索关键词
+     * 搜索关键词（会和网点名称还有网点详细地址进行模糊匹配）
      * @var string
      */
     private $keyword;
 
     /**
-     * 经度
+     * 经度（百度系）
      * @var string
      */
     private $lng;
 
     /**
-     * 纬度
+     * 纬度（百度系）
      * @var string
      */
     private $lat;
@@ -48,7 +48,7 @@ class ListStoresRequestDTO implements \JsonSerializable {
     private $city;
 
     /**
-     * 地区id
+     * 地区id，详情可以使用该接口获取：https://doc.youzanyun.com/detail/API/0/187
      * @var string
      */
     private $regionId;
@@ -74,17 +74,17 @@ class ListStoresRequestDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBuyerId(): ?int
+    public function getYz_open_id(): ?int
     {
-        return $this->buyerId;
+        return $this->yz_open_id;
     }
 
     /**
-     * @param int $buyerId
+     * @param int $yz_open_id
      */
-    public function setBuyerId(?int $buyerId): void
+    public function setYz_open_id(?int $yz_open_id): void
     {
-        $this->buyerId = $buyerId;
+        $this->yz_open_id = $yz_open_id;
     }
 
     /**

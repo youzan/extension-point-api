@@ -10,29 +10,29 @@ use DateTime;
 use Com\Youzan\Cloud\Extension\Param\Store\OfflineBusinessSettingDTO;
 
 /**
- * 数据集
+ * 网点列表详情
  * @author Baymax
  * @create 2021-05-25 19:58:33.0
  */
 class MultiStoreExtDTO implements \JsonSerializable {
 
     /**
-     * 网点id
+     * 网店ID
      * @var int
      */
-    private $id;
+    private $offline_id;
 
     /**
-     * 口袋通id
+     * 店铺ID
      * @var int
      */
     private $kdtId;
 
     /**
-     * 网点名称
+     * 网店名称
      * @var string
      */
-    private $name;
+    private $offline_name;
 
     /**
      * 地址信息
@@ -41,13 +41,13 @@ class MultiStoreExtDTO implements \JsonSerializable {
     private $address;
 
     /**
-     * 号码信息
+     * 
      * @var PhoneDTO
      */
     private $phone;
 
     /**
-     * 
+     * 是否开启买家自选取时间
      * @var bool
      */
     private $selfFetchTimeRequired;
@@ -59,16 +59,10 @@ class MultiStoreExtDTO implements \JsonSerializable {
     private $businessTimeSetting;
 
     /**
-     * 
+     * 新版支持跨天的营业时间
      * @var DayCrossBizTimeSettingDTO
      */
     private $bizTimeSetting;
-
-    /**
-     * 是否是超级门店
-     * @var bool
-     */
-    private $superStore;
 
     /**
      * 图片地址
@@ -95,7 +89,7 @@ class MultiStoreExtDTO implements \JsonSerializable {
     private $isSelfFetch;
 
     /**
-     * 是否是线上网点
+     * 是否是线上网店
      * @var bool
      */
     private $isOnline;
@@ -113,19 +107,19 @@ class MultiStoreExtDTO implements \JsonSerializable {
     private $opening;
 
     /**
-     * 创建时间
+     * 创建时间，格式：
      * @var int
      */
     private $createdAt;
 
     /**
-     * 更新时间
+     * 更新时间，格式：
      * @var int
      */
     private $updatedAt;
 
     /**
-     * 距离（查询条件传经纬度的话，会返回该经纬度对应的位置到该网点的距离）
+     * 到网点的距离（查询传了合法的经纬度才会设值，单位米）
      * @var string
      */
     private $distance;
@@ -155,10 +149,10 @@ class MultiStoreExtDTO implements \JsonSerializable {
     private $description;
 
     /**
-     * 是否有效
+     * 网店是否有效（未被删除）
      * @var bool
      */
-    private $isValid;
+    private $offline_isValid;
 
     /**
      * 是否开启第三方配送
@@ -179,12 +173,6 @@ class MultiStoreExtDTO implements \JsonSerializable {
     private $businessTimeSettingString;
 
     /**
-     * 外部编码
-     * @var string
-     */
-    private $outerId;
-
-    /**
      * 营业时间设置，该字段已经交给物流维护
      * @var OfflineBusinessSettingDTO
      */
@@ -201,17 +189,17 @@ class MultiStoreExtDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getId(): ?int
+    public function getOffline_id(): ?int
     {
-        return $this->id;
+        return $this->offline_id;
     }
 
     /**
-     * @param int $id
+     * @param int $offline_id
      */
-    public function setId(?int $id): void
+    public function setOffline_id(?int $offline_id): void
     {
-        $this->id = $id;
+        $this->offline_id = $offline_id;
     }
 
     /**
@@ -233,17 +221,17 @@ class MultiStoreExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getName(): ?string
+    public function getOffline_name(): ?string
     {
-        return $this->name;
+        return $this->offline_name;
     }
 
     /**
-     * @param string $name
+     * @param string $offline_name
      */
-    public function setName(?string $name): void
+    public function setOffline_name(?string $offline_name): void
     {
-        $this->name = $name;
+        $this->offline_name = $offline_name;
     }
 
     /**
@@ -324,22 +312,6 @@ class MultiStoreExtDTO implements \JsonSerializable {
     public function setBizTimeSetting(?DayCrossBizTimeSettingDTO $bizTimeSetting): void
     {
         $this->bizTimeSetting = $bizTimeSetting;
-    }
-
-    /**
-     * @return bool
-     */
-    public function getSuperStore(): ?bool
-    {
-        return $this->superStore;
-    }
-
-    /**
-     * @param bool $superStore
-     */
-    public function setSuperStore(?bool $superStore): void
-    {
-        $this->superStore = $superStore;
     }
 
     /**
@@ -569,17 +541,17 @@ class MultiStoreExtDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getIsValid(): ?bool
+    public function getOffline_isValid(): ?bool
     {
-        return $this->isValid;
+        return $this->offline_isValid;
     }
 
     /**
-     * @param bool $isValid
+     * @param bool $offline_isValid
      */
-    public function setIsValid(?bool $isValid): void
+    public function setOffline_isValid(?bool $offline_isValid): void
     {
-        $this->isValid = $isValid;
+        $this->offline_isValid = $offline_isValid;
     }
 
     /**
@@ -628,22 +600,6 @@ class MultiStoreExtDTO implements \JsonSerializable {
     public function setBusinessTimeSettingString(?string $businessTimeSettingString): void
     {
         $this->businessTimeSettingString = $businessTimeSettingString;
-    }
-
-    /**
-     * @return string
-     */
-    public function getOuterId(): ?string
-    {
-        return $this->outerId;
-    }
-
-    /**
-     * @param string $outerId
-     */
-    public function setOuterId(?string $outerId): void
-    {
-        $this->outerId = $outerId;
     }
 
     /**

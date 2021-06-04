@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Store;
 use Com\Youzan\Cloud\Extension\Param\Store\TimeSectionDTO;
 
 /**
- * 
+ * 网点营业时间
  * @author Baymax
  * @create 2021-05-25 19:58:33.0
  */

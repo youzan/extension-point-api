@@ -30,7 +30,7 @@ class AddressExtDTO implements \JsonSerializable {
     private $district;
 
     /**
-     * 地区id
+     * 地区id，详情可以使用该接口获取：https://doc.youzanyun.com/detail/API/0/187
      * @var string
      */
     private $regionId;
@@ -42,13 +42,13 @@ class AddressExtDTO implements \JsonSerializable {
     private $address;
 
     /**
-     * 经度
+     * 经度（百度系）
      * @var string
      */
     private $lng;
 
     /**
-     * 纬度
+     * 纬度（百度系）
      * @var string
      */
     private $lat;

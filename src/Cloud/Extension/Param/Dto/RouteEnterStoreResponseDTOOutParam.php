@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 use Com\Youzan\Cloud\Extension\Param\Dto\RouteEnterStoreResponseDTO;
 
 /**
- * 返回类
+ * 响应体返回类
  * @author Baymax
  * @create 2021-05-24 20:23:00.0
  */

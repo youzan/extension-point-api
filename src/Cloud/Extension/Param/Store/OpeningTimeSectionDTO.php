@@ -5,20 +5,20 @@ namespace Com\Youzan\Cloud\Extension\Param\Store;
 
 
 /**
- * 
+ * 网点营业时间
  * @author Baymax
  * @create 2021-05-25 19:58:33.0
  */
 class OpeningTimeSectionDTO implements \JsonSerializable {
 
     /**
-     * 开始时间
+     * 开始时间，格式：HH:mm
      * @var string
      */
     private $openTime;
 
     /**
-     * 结束时间
+     * 结束时间，格式：HH:mm
      * @var string
      */
     private $closeTime;

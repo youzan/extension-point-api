@@ -13,16 +13,16 @@ use Com\Youzan\Cloud\Extension\Param\Dto\MultiStoreExtDTO;
 class ListStoresResponseDTO implements \JsonSerializable {
 
     /**
-     * 分页对象
+     * 分页
      * @var Paginator
      */
     private $paginator;
 
     /**
-     * 数据集
+     * 网点列表详情
      * @var array
      */
-    private $items;
+    private $offline_list;
 
 
 
@@ -45,17 +45,17 @@ class ListStoresResponseDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getItems(): ?array
+    public function getOffline_list(): ?array
     {
-        return $this->items;
+        return $this->offline_list;
     }
 
     /**
-     * @param array $items
+     * @param array $offline_list
      */
-    public function setItems(?array $items): void
+    public function setOffline_list(?array $offline_list): void
     {
-        $this->items = $items;
+        $this->offline_list = $offline_list;
     }
 
     public function jsonSerialize() {

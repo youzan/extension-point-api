@@ -12,13 +12,13 @@ namespace Com\Youzan\Cloud\Extension\Param\Store;
 class TimeSectionDTO implements \JsonSerializable {
 
     /**
-     * 开始时间
+     * 开始时间，格式：HH:mm
      * @var string
      */
     private $openTime;
 
     /**
-     * 结束时间
+     * 结束时间，格式：HH:mm
      * @var string
      */
     private $closeTime;
