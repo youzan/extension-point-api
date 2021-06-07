@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\OrderItemDTO;
 /**
  * 
  * @author Baymax
- * @create Mon Oct 08 16:18:50 CST 2018
+ * @create 2018-10-08 16:18:50.0
  */
 class RefundSelfValidateParamDTO implements \JsonSerializable {
 
@@ -61,10 +61,16 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     private $payWay;
 
     /**
-     * 是否整单退款，0：整单，1：非整单。注意事项，仅退款：校验下单商品是否整单退款（不包含赠品）；退货退款/换货：校验下单商品数量/重量是否整单退款（不包含赠品）
-     * @var string
+     * 下单实付邮费
+     * @var int
      */
-    private $isNumAllRefund;
+    private $postage;
+
+    /**
+     * 退款邮费
+     * @var int
+     */
+    private $refundPostage;
 
 
 
@@ -197,19 +203,35 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getIsNumAllRefund(): ?string
+    public function getPostage(): ?int
     {
-        return $this->isNumAllRefund;
+        return $this->postage;
     }
 
     /**
-     * @param string $isNumAllRefund
+     * @param int $postage
      */
-    public function setIsNumAllRefund(?string $isNumAllRefund): void
+    public function setPostage(?int $postage): void
     {
-        $this->isNumAllRefund = $isNumAllRefund;
+        $this->postage = $postage;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRefundPostage(): ?int
+    {
+        return $this->refundPostage;
+    }
+
+    /**
+     * @param int $refundPostage
+     */
+    public function setRefundPostage(?int $refundPostage): void
+    {
+        $this->refundPostage = $refundPostage;
     }
 
     public function jsonSerialize() {

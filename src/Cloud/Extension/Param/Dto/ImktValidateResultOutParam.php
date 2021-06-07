@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param;
+namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
-use Com\Youzan\Cloud\Extension\Param\RefundSelfValidateResultDTO;
+use Com\Youzan\Cloud\Extension\Param\Dto\ImktValidateResult;
 
 /**
- * 返回类
+ * 校验结果返回类
  * @author Baymax
- * @create 2018-10-08 16:18:50.0
+ * @create 2021-03-15 14:39:48.0
  */
-class RefundSelfValidateResultDTOOutParam implements \JsonSerializable {
+class ImktValidateResultOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class RefundSelfValidateResultDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var RefundSelfValidateResultDTO
+     * @var ImktValidateResult
      */
     private $data;
 
@@ -84,17 +84,17 @@ class RefundSelfValidateResultDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return RefundSelfValidateResultDTO
+     * @return ImktValidateResult
      */
-    public function getData(): ?RefundSelfValidateResultDTO
+    public function getData(): ?ImktValidateResult
     {
         return $this->data;
     }
 
     /**
-     * @param RefundSelfValidateResultDTO $data
+     * @param ImktValidateResult $data
      */
-    public function setData(?RefundSelfValidateResultDTO $data): void
+    public function setData(?ImktValidateResult $data): void
     {
         $this->data = $data;
     }

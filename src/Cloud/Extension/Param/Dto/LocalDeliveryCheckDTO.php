@@ -47,6 +47,24 @@ class LocalDeliveryCheckDTO implements \JsonSerializable {
      */
     private $kdtId;
 
+    /**
+     * skuid列表
+     * @var array
+     */
+    private $skuIds;
+
+    /**
+     * sku数量列表
+     * @var array
+     */
+    private $skuCounts;
+
+    /**
+     * 交易唯一标识
+     * @var string
+     */
+    private $bookKey;
+
 
 
     /**
@@ -143,6 +161,54 @@ class LocalDeliveryCheckDTO implements \JsonSerializable {
     public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return array
+     */
+    public function getSkuIds(): ?array
+    {
+        return $this->skuIds;
+    }
+
+    /**
+     * @param array $skuIds
+     */
+    public function setSkuIds(?array $skuIds): void
+    {
+        $this->skuIds = $skuIds;
+    }
+
+    /**
+     * @return array
+     */
+    public function getSkuCounts(): ?array
+    {
+        return $this->skuCounts;
+    }
+
+    /**
+     * @param array $skuCounts
+     */
+    public function setSkuCounts(?array $skuCounts): void
+    {
+        $this->skuCounts = $skuCounts;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBookKey(): ?string
+    {
+        return $this->bookKey;
+    }
+
+    /**
+     * @param string $bookKey
+     */
+    public function setBookKey(?string $bookKey): void
+    {
+        $this->bookKey = $bookKey;
     }
 
     public function jsonSerialize() {

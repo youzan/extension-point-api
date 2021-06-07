@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 退款商品信息
  * @author Baymax
- * @create Tue Nov 10 15:22:48 CST 2020
+ * @create 2020-11-10 15:22:48.0
  */
 class RefundItemDTO implements \JsonSerializable {
 
