@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
 
 /**
- * 
+ * 响应体
  * @author Baymax
- * @create Mon May 24 20:23:00 CST 2021
+ * @create 2021-05-24 20:23:00.0
  */
 class RouteEnterStoreResponseDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 网点offline_id
      * @var int
      */
     private $offlineId;

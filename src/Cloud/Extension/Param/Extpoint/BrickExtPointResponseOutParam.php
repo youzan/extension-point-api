@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Scrm;
+namespace Com\Youzan\Cloud\Extension\Param\Extpoint;
 
-use Com\Youzan\Cloud\Extension\Param\Scrm\ModifyCustomerResponseDTO;
+use Com\Youzan\Cloud\Extension\Param\Extpoint\BrickExtPointResponse;
 
 /**
- * 响应出参返回类
+ * 返回类
  * @author Baymax
- * @create 2018-10-10 13:15:37.0
+ * @create 2021-05-06 20:06:45.0
  */
-class ModifyCustomerResponseDTOOutParam implements \JsonSerializable {
+class BrickExtPointResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ModifyCustomerResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var ModifyCustomerResponseDTO
+     * @var BrickExtPointResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ModifyCustomerResponseDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return ModifyCustomerResponseDTO
+     * @return BrickExtPointResponse
      */
-    public function getData(): ?ModifyCustomerResponseDTO
+    public function getData(): ?BrickExtPointResponse
     {
         return $this->data;
     }
 
     /**
-     * @param ModifyCustomerResponseDTO $data
+     * @param BrickExtPointResponse $data
      */
-    public function setData(?ModifyCustomerResponseDTO $data): void
+    public function setData(?BrickExtPointResponse $data): void
     {
         $this->data = $data;
     }

@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Scrm;
+namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
-use Com\Youzan\Cloud\Extension\Param\Scrm\ModifyCustomerResponseDTO;
+use Com\Youzan\Cloud\Extension\Param\Dto\ListStoresResponseDTO;
 
 /**
- * 响应出参返回类
+ * 返回类
  * @author Baymax
- * @create 2018-10-10 13:15:37.0
+ * @create 2021-05-25 19:58:33.0
  */
-class ModifyCustomerResponseDTOOutParam implements \JsonSerializable {
+class ListStoresResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ModifyCustomerResponseDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var ModifyCustomerResponseDTO
+     * @var ListStoresResponseDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ModifyCustomerResponseDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return ModifyCustomerResponseDTO
+     * @return ListStoresResponseDTO
      */
-    public function getData(): ?ModifyCustomerResponseDTO
+    public function getData(): ?ListStoresResponseDTO
     {
         return $this->data;
     }
 
     /**
-     * @param ModifyCustomerResponseDTO $data
+     * @param ListStoresResponseDTO $data
      */
-    public function setData(?ModifyCustomerResponseDTO $data): void
+    public function setData(?ListStoresResponseDTO $data): void
     {
         $this->data = $data;
     }

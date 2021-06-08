@@ -6,7 +6,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ContactAddressModifyDTO;
 use Com\Youzan\Cloud\Extension\Param\CustomizeAttributeDTO;
 
 /**
- * 
+ * 客户详情信息
  * @author Baymax
  * @create 2018-10-10 13:15:37.0
  */
@@ -43,7 +43,7 @@ class CustomerProfileModifyDTO implements \JsonSerializable {
     private $email;
 
     /**
-     * 
+     * 客户自定义资料项信息
      * @var array
      */
     private $attributeList;
