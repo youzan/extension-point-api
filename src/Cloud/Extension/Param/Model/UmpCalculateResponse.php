@@ -3,16 +3,17 @@
 namespace Com\Youzan\Cloud\Extension\Param\Model;
 
 use Com\Youzan\Cloud\Extension\Param\Model\ActivityResponse;
+use Com\Youzan\Cloud\Extension\Param\Model\OuterPromotionConfig;
 
 /**
- * 响应参数
+ * 外部接口出参
  * @author Baymax
  * @create 2020-06-11 11:03:35.0
  */
 class UmpCalculateResponse implements \JsonSerializable {
 
     /**
-     * 优惠详情（如果多个活动，需要按照执行顺序排序）
+     * 外部优惠详情（如果多个活动，需要按照执行顺序排序）
      * @var array
      */
     private $activities;
@@ -22,6 +23,12 @@ class UmpCalculateResponse implements \JsonSerializable {
      * @var int
      */
     private $decrease;
+
+    /**
+     * 外部优惠配置
+     * @var OuterPromotionConfig
+     */
+    private $outerPromotionConfig;
 
 
 
@@ -55,6 +62,22 @@ class UmpCalculateResponse implements \JsonSerializable {
     public function setDecrease(?int $decrease): void
     {
         $this->decrease = $decrease;
+    }
+
+    /**
+     * @return OuterPromotionConfig
+     */
+    public function getOuterPromotionConfig(): ?OuterPromotionConfig
+    {
+        return $this->outerPromotionConfig;
+    }
+
+    /**
+     * @param OuterPromotionConfig $outerPromotionConfig
+     */
+    public function setOuterPromotionConfig(?OuterPromotionConfig $outerPromotionConfig): void
+    {
+        $this->outerPromotionConfig = $outerPromotionConfig;
     }
 
     public function jsonSerialize() {

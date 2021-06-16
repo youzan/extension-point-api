@@ -15,7 +15,7 @@ class ExtPointGoodsBaseInfo implements \JsonSerializable {
      * 商品ID
      * @var int
      */
-    private $goodsId;
+    private $itemId;
 
     /**
      * 商品规格ID
@@ -24,13 +24,13 @@ class ExtPointGoodsBaseInfo implements \JsonSerializable {
     private $skuId;
 
     /**
-     * 商品在交易下单时的ID，由交易在下单时生成的商品编号
+     * 交易下单时的订单条目ID，由交易在下单时生成的商品条目编号
      * @var int
      */
-    private $orderItemId;
+    private $oid;
 
     /**
-     * 商品原始价格
+     * 商品原始价格， 单位：分
      * @var int
      */
     private $price;
@@ -42,13 +42,13 @@ class ExtPointGoodsBaseInfo implements \JsonSerializable {
     private $num;
 
     /**
-     * 商品优惠金额
+     * 商品优惠金额， 单位： 分
      * @var int
      */
     private $decrease;
 
     /**
-     * 商品在优惠均摊后，实付价格
+     * 商品在优惠均摊后，实付价格。单位： 分
      * @var int
      */
     private $realPay;
@@ -58,17 +58,17 @@ class ExtPointGoodsBaseInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGoodsId(): ?int
+    public function getItemId(): ?int
     {
-        return $this->goodsId;
+        return $this->itemId;
     }
 
     /**
-     * @param int $goodsId
+     * @param int $itemId
      */
-    public function setGoodsId(?int $goodsId): void
+    public function setItemId(?int $itemId): void
     {
-        $this->goodsId = $goodsId;
+        $this->itemId = $itemId;
     }
 
     /**
@@ -90,17 +90,17 @@ class ExtPointGoodsBaseInfo implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderItemId(): ?int
+    public function getOid(): ?int
     {
-        return $this->orderItemId;
+        return $this->oid;
     }
 
     /**
-     * @param int $orderItemId
+     * @param int $oid
      */
-    public function setOrderItemId(?int $orderItemId): void
+    public function setOid(?int $oid): void
     {
-        $this->orderItemId = $orderItemId;
+        $this->oid = $oid;
     }
 
     /**

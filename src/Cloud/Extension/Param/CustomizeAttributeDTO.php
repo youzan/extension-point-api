@@ -12,19 +12,19 @@ namespace Com\Youzan\Cloud\Extension\Param;
 class CustomizeAttributeDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 名称
      * @var string
      */
     private $name;
 
     /**
-     * 
+     * 类型
      * @var int
      */
     private $dataType;
 
     /**
-     * 
+     * 值
      * @var string
      */
     private $value;

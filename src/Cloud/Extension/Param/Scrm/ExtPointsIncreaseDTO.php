@@ -73,7 +73,7 @@ class ExtPointsIncreaseDTO implements \JsonSerializable {
     private $bizToken;
 
     /**
-     * 积分操作来源 (101, &quot;交易奖励积分&quot;), (301, &quot;管理员操作积分&quot;), (102,&quot;签到奖励积分&quot;)
+     * 积分操作来源， 101-交易奖励积分；102-签到奖励积分；301-管理员操作积分；500-刮刮乐奖励积分； 502-幸运大抽奖增加积分；504-生肖翻翻看增加积；506-疯狂猜猜猜增加积分；508-摇一摇奖励积分；601-满减送；
      * @var int
      */
     private $operationType;

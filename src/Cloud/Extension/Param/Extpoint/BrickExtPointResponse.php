@@ -37,7 +37,7 @@ class BrickExtPointResponse implements \JsonSerializable {
     private $activityExtraInfo;
 
     /**
-     * 活动优惠金额
+     * 活动优惠金额， 单位： 分
      * @var int
      */
     private $decrease;
@@ -46,7 +46,7 @@ class BrickExtPointResponse implements \JsonSerializable {
      * 活动商品列表
      * @var array
      */
-    private $goodsResponseList;
+    private $itemResponseList;
 
 
 
@@ -133,17 +133,17 @@ class BrickExtPointResponse implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getGoodsResponseList(): ?array
+    public function getItemResponseList(): ?array
     {
-        return $this->goodsResponseList;
+        return $this->itemResponseList;
     }
 
     /**
-     * @param array $goodsResponseList
+     * @param array $itemResponseList
      */
-    public function setGoodsResponseList(?array $goodsResponseList): void
+    public function setItemResponseList(?array $itemResponseList): void
     {
-        $this->goodsResponseList = $goodsResponseList;
+        $this->itemResponseList = $itemResponseList;
     }
 
     public function jsonSerialize() {

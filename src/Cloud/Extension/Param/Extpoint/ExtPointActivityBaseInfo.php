@@ -37,13 +37,13 @@ class ExtPointActivityBaseInfo implements \JsonSerializable {
     private $status;
 
     /**
-     * 活动开始时间，格式：毫秒级时间戳
+     * 活动开始时间，格式：数字时间戳； 单位： 毫秒
      * @var int
      */
     private $startAt;
 
     /**
-     * 活动结束时间，格式：毫秒级时间戳
+     * 活动结束时间，格式：数字时间戳； 单位： 毫秒
      * @var int
      */
     private $endAt;

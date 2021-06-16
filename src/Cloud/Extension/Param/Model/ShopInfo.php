@@ -12,13 +12,13 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 class ShopInfo implements \JsonSerializable {
 
     /**
-     * 店铺ID
+     * 当前店铺id
      * @var int
      */
     private $kdtId;
 
     /**
-     * 总店ID，单点时同kdtId
+     * 总店id
      * @var int
      */
     private $rootKdtId;

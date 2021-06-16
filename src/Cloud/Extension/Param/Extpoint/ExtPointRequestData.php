@@ -25,7 +25,7 @@ class ExtPointRequestData implements \JsonSerializable {
      * 活动商品信息列表
      * @var array
      */
-    private $goodsInfoList;
+    private $itemInfoList;
 
     /**
      * 下单用户信息
@@ -43,7 +43,7 @@ class ExtPointRequestData implements \JsonSerializable {
      * 订单号
      * @var string
      */
-    private $orderNo;
+    private $tid;
 
     /**
      * 规则业务路由，由开发者定义
@@ -78,17 +78,17 @@ class ExtPointRequestData implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getGoodsInfoList(): ?array
+    public function getItemInfoList(): ?array
     {
-        return $this->goodsInfoList;
+        return $this->itemInfoList;
     }
 
     /**
-     * @param array $goodsInfoList
+     * @param array $itemInfoList
      */
-    public function setGoodsInfoList(?array $goodsInfoList): void
+    public function setItemInfoList(?array $itemInfoList): void
     {
-        $this->goodsInfoList = $goodsInfoList;
+        $this->itemInfoList = $itemInfoList;
     }
 
     /**
@@ -126,17 +126,17 @@ class ExtPointRequestData implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getTid(): ?string
     {
-        return $this->orderNo;
+        return $this->tid;
     }
 
     /**
-     * @param string $orderNo
+     * @param string $tid
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setTid(?string $tid): void
     {
-        $this->orderNo = $orderNo;
+        $this->tid = $tid;
     }
 
     /**

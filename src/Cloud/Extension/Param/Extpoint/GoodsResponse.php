@@ -15,7 +15,7 @@ class GoodsResponse implements \JsonSerializable {
      * 活动商品ID
      * @var int
      */
-    private $goodsId;
+    private $itemId;
 
     /**
      * 活动规格ID
@@ -30,7 +30,7 @@ class GoodsResponse implements \JsonSerializable {
     private $orderItemId;
 
     /**
-     * 商品优惠金额
+     * 商品优惠金额, 单位： 分
      * @var int
      */
     private $decrease;
@@ -40,17 +40,17 @@ class GoodsResponse implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getGoodsId(): ?int
+    public function getItemId(): ?int
     {
-        return $this->goodsId;
+        return $this->itemId;
     }
 
     /**
-     * @param int $goodsId
+     * @param int $itemId
      */
-    public function setGoodsId(?int $goodsId): void
+    public function setItemId(?int $itemId): void
     {
-        $this->goodsId = $goodsId;
+        $this->itemId = $itemId;
     }
 
     /**

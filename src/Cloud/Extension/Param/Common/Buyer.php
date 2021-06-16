@@ -15,7 +15,7 @@ class Buyer implements \JsonSerializable {
      * 下单用户ID
      * @var int
      */
-    private $buyerId;
+    private $yz_open_id;
 
     /**
      * 下单用户手机号
@@ -28,17 +28,17 @@ class Buyer implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getBuyerId(): ?int
+    public function getYz_open_id(): ?int
     {
-        return $this->buyerId;
+        return $this->yz_open_id;
     }
 
     /**
-     * @param int $buyerId
+     * @param int $yz_open_id
      */
-    public function setBuyerId(?int $buyerId): void
+    public function setYz_open_id(?int $yz_open_id): void
     {
-        $this->buyerId = $buyerId;
+        $this->yz_open_id = $yz_open_id;
     }
 
     /**

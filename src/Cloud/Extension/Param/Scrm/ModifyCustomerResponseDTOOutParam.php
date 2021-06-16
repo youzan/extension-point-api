@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 use Com\Youzan\Cloud\Extension\Param\Scrm\ModifyCustomerResponseDTO;
 
 /**
- * 返回类
+ * 响应出参返回类
  * @author Baymax
  * @create 2018-10-10 13:15:37.0
  */

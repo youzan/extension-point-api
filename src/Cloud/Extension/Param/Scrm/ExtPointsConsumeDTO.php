@@ -61,7 +61,7 @@ class ExtPointsConsumeDTO implements \JsonSerializable {
     private $bizToken;
 
     /**
-     * 积分数量
+     * 积分数量，1、触发amount有值场景：下单送积分退款 2、amount 没有值场景：积分抵现，积分兑换，满减送营销活动满X送积分退款
      * @var int
      */
     private $amount;

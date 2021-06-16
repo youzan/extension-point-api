@@ -15,34 +15,28 @@ class Shop implements \JsonSerializable {
      * 店铺ID
      * @var int
      */
-    private $shopId;
+    private $kdtId;
 
     /**
      * 总店店铺ID，若单店铺则为单店铺ID
      * @var int
      */
-    private $rootShopId;
-
-    /**
-     * 包含当前下单店铺的上级所有店铺ID列表
-     * @var array
-     */
-    private $inheritedShopIdsWithSelf;
+    private $rootKdtId;
 
     /**
      * 当前下单店铺名称
      * @var string
      */
-    private $name;
+    private $kdtName;
 
     /**
-     * 下单店铺类型，微商城（0），零售（7）等
+     * 下单店铺类型，微商城（0），零售（7）
      * @var int
      */
     private $type;
 
     /**
-     * 下单店铺角色，单店（0），总店（1），分店（2）等
+     * 下单店铺角色，单店（0），总店（1），分店（2）
      * @var int
      */
     private $shopRole;
@@ -52,65 +46,49 @@ class Shop implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getShopId(): ?int
+    public function getKdtId(): ?int
     {
-        return $this->shopId;
+        return $this->kdtId;
     }
 
     /**
-     * @param int $shopId
+     * @param int $kdtId
      */
-    public function setShopId(?int $shopId): void
+    public function setKdtId(?int $kdtId): void
     {
-        $this->shopId = $shopId;
+        $this->kdtId = $kdtId;
     }
 
     /**
      * @return int
      */
-    public function getRootShopId(): ?int
+    public function getRootKdtId(): ?int
     {
-        return $this->rootShopId;
+        return $this->rootKdtId;
     }
 
     /**
-     * @param int $rootShopId
+     * @param int $rootKdtId
      */
-    public function setRootShopId(?int $rootShopId): void
+    public function setRootKdtId(?int $rootKdtId): void
     {
-        $this->rootShopId = $rootShopId;
-    }
-
-    /**
-     * @return array
-     */
-    public function getInheritedShopIdsWithSelf(): ?array
-    {
-        return $this->inheritedShopIdsWithSelf;
-    }
-
-    /**
-     * @param array $inheritedShopIdsWithSelf
-     */
-    public function setInheritedShopIdsWithSelf(?array $inheritedShopIdsWithSelf): void
-    {
-        $this->inheritedShopIdsWithSelf = $inheritedShopIdsWithSelf;
+        $this->rootKdtId = $rootKdtId;
     }
 
     /**
      * @return string
      */
-    public function getName(): ?string
+    public function getKdtName(): ?string
     {
-        return $this->name;
+        return $this->kdtName;
     }
 
     /**
-     * @param string $name
+     * @param string $kdtName
      */
-    public function setName(?string $name): void
+    public function setKdtName(?string $kdtName): void
     {
-        $this->name = $name;
+        $this->kdtName = $kdtName;
     }
 
     /**

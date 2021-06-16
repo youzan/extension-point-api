@@ -6,20 +6,20 @@ use Com\Youzan\Cloud\Extension\Param\Model\BillingBaseInfo;
 use Com\Youzan\Cloud\Extension\Param\Model\BillingDiscount;
 
 /**
- * 请求参数
+ * 外部优惠入参
  * @author Baymax
  * @create 2020-06-11 11:03:35.0
  */
 class UmpCalculateRequest implements \JsonSerializable {
 
     /**
-     * 基本参数
+     * 订单基本信息：商品、用户、店铺、订单号
      * @var BillingBaseInfo
      */
     private $billingBaseInfo;
 
     /**
-     * 优惠信息
+     * 优惠详情
      * @var BillingDiscount
      */
     private $billingDiscount;
