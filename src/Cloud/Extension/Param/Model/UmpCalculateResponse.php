@@ -3,7 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param\Model;
 
 use Com\Youzan\Cloud\Extension\Param\Model\ActivityResponse;
-use Com\Youzan\Cloud\Extension\Param\Model\OuterPromotionConfig;
+use Com\Youzan\Cloud\Extension\Param\Model\OuterOrderPromotionConfig;
 
 /**
  * 外部接口出参
@@ -26,9 +26,9 @@ class UmpCalculateResponse implements \JsonSerializable {
 
     /**
      * 外部优惠配置
-     * @var OuterPromotionConfig
+     * @var OuterOrderPromotionConfig
      */
-    private $outerPromotionConfig;
+    private $outerOrderPromotionConfig;
 
 
 
@@ -65,19 +65,19 @@ class UmpCalculateResponse implements \JsonSerializable {
     }
 
     /**
-     * @return OuterPromotionConfig
+     * @return OuterOrderPromotionConfig
      */
-    public function getOuterPromotionConfig(): ?OuterPromotionConfig
+    public function getOuterOrderPromotionConfig(): ?OuterOrderPromotionConfig
     {
-        return $this->outerPromotionConfig;
+        return $this->outerOrderPromotionConfig;
     }
 
     /**
-     * @param OuterPromotionConfig $outerPromotionConfig
+     * @param OuterOrderPromotionConfig $outerOrderPromotionConfig
      */
-    public function setOuterPromotionConfig(?OuterPromotionConfig $outerPromotionConfig): void
+    public function setOuterOrderPromotionConfig(?OuterOrderPromotionConfig $outerOrderPromotionConfig): void
     {
-        $this->outerPromotionConfig = $outerPromotionConfig;
+        $this->outerOrderPromotionConfig = $outerOrderPromotionConfig;
     }
 
     public function jsonSerialize() {
