@@ -15,24 +15,24 @@ class OuterOrderPromotionConfig implements \JsonSerializable {
      * 是否支持优惠到0元,默认false不支持
      * @var bool
      */
-    private $isDiscountZero;
+    private $discountZero;
 
 
 
     /**
      * @return bool
      */
-    public function getIsDiscountZero(): ?bool
+    public function getDiscountZero(): ?bool
     {
-        return $this->isDiscountZero;
+        return $this->discountZero;
     }
 
     /**
-     * @param bool $isDiscountZero
+     * @param bool $discountZero
      */
-    public function setIsDiscountZero(?bool $isDiscountZero): void
+    public function setDiscountZero(?bool $discountZero): void
     {
-        $this->isDiscountZero = $isDiscountZero;
+        $this->discountZero = $discountZero;
     }
 
     public function jsonSerialize() {
