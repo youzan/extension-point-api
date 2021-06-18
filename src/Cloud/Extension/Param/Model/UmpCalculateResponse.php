@@ -29,12 +29,6 @@ class UmpCalculateResponse implements \JsonSerializable {
      */
     private $supportDiscountZero;
 
-    /**
-     * 
-     * @var int
-     */
-    private $test;
-
 
 
     /**
@@ -83,22 +77,6 @@ class UmpCalculateResponse implements \JsonSerializable {
     public function setSupportDiscountZero(?bool $supportDiscountZero): void
     {
         $this->supportDiscountZero = $supportDiscountZero;
-    }
-
-    /**
-     * @return int
-     */
-    public function getTest(): ?int
-    {
-        return $this->test;
-    }
-
-    /**
-     * @param int $test
-     */
-    public function setTest(?int $test): void
-    {
-        $this->test = $test;
     }
 
     public function jsonSerialize() {
