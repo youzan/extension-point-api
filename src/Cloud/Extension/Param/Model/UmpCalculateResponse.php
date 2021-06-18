@@ -3,7 +3,6 @@
 namespace Com\Youzan\Cloud\Extension\Param\Model;
 
 use Com\Youzan\Cloud\Extension\Param\Model\ActivityResponse;
-use Com\Youzan\Cloud\Extension\Param\Model\OuterOrderPromotionConfig;
 
 /**
  * 外部接口出参
@@ -25,16 +24,16 @@ class UmpCalculateResponse implements \JsonSerializable {
     private $decrease;
 
     /**
-     * 外部优惠配置
-     * @var OuterOrderPromotionConfig
-     */
-    private $outerOrderPromotionConfig;
-
-    /**
      * 
      * @var bool
      */
     private $supportDiscountZero;
+
+    /**
+     * 
+     * @var int
+     */
+    private $test;
 
 
 
@@ -71,22 +70,6 @@ class UmpCalculateResponse implements \JsonSerializable {
     }
 
     /**
-     * @return OuterOrderPromotionConfig
-     */
-    public function getOuterOrderPromotionConfig(): ?OuterOrderPromotionConfig
-    {
-        return $this->outerOrderPromotionConfig;
-    }
-
-    /**
-     * @param OuterOrderPromotionConfig $outerOrderPromotionConfig
-     */
-    public function setOuterOrderPromotionConfig(?OuterOrderPromotionConfig $outerOrderPromotionConfig): void
-    {
-        $this->outerOrderPromotionConfig = $outerOrderPromotionConfig;
-    }
-
-    /**
      * @return bool
      */
     public function getSupportDiscountZero(): ?bool
@@ -100,6 +83,22 @@ class UmpCalculateResponse implements \JsonSerializable {
     public function setSupportDiscountZero(?bool $supportDiscountZero): void
     {
         $this->supportDiscountZero = $supportDiscountZero;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTest(): ?int
+    {
+        return $this->test;
+    }
+
+    /**
+     * @param int $test
+     */
+    public function setTest(?int $test): void
+    {
+        $this->test = $test;
     }
 
     public function jsonSerialize() {
