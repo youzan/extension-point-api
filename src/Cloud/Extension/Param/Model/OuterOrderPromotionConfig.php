@@ -17,6 +17,12 @@ class OuterOrderPromotionConfig implements \JsonSerializable {
      */
     private $discountZero;
 
+    /**
+     * 
+     * @var int
+     */
+    private $test;
+
 
 
     /**
@@ -33,6 +39,22 @@ class OuterOrderPromotionConfig implements \JsonSerializable {
     public function setDiscountZero(?bool $discountZero): void
     {
         $this->discountZero = $discountZero;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTest(): ?int
+    {
+        return $this->test;
+    }
+
+    /**
+     * @param int $test
+     */
+    public function setTest(?int $test): void
+    {
+        $this->test = $test;
     }
 
     public function jsonSerialize() {

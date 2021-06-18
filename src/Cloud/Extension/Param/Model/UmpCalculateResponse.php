@@ -30,6 +30,12 @@ class UmpCalculateResponse implements \JsonSerializable {
      */
     private $outerOrderPromotionConfig;
 
+    /**
+     * 
+     * @var bool
+     */
+    private $supportDiscountZero;
+
 
 
     /**
@@ -78,6 +84,22 @@ class UmpCalculateResponse implements \JsonSerializable {
     public function setOuterOrderPromotionConfig(?OuterOrderPromotionConfig $outerOrderPromotionConfig): void
     {
         $this->outerOrderPromotionConfig = $outerOrderPromotionConfig;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getSupportDiscountZero(): ?bool
+    {
+        return $this->supportDiscountZero;
+    }
+
+    /**
+     * @param bool $supportDiscountZero
+     */
+    public function setSupportDiscountZero(?bool $supportDiscountZero): void
+    {
+        $this->supportDiscountZero = $supportDiscountZero;
     }
 
     public function jsonSerialize() {
