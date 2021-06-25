@@ -67,13 +67,13 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     private $nodeId;
 
     /**
-     * 
+     * 业务标识
      * @var string
      */
     private $bizToken;
 
     /**
-     * 积分消耗来源  (201, &quot;交易退款扣减积分&quot;),(301, &quot;管理员操作积分&quot;)
+     * 积分消耗来源  ，103-冻结扣减积分；201-交易退款扣减积分；301-管理员操作积分；501-刮刮乐扣减积分；503-幸运大抽奖扣减积分；505-生肖翻翻看扣减积分；509-摇一摇扣减积分；
      * @var int
      */
     private $operationType;
