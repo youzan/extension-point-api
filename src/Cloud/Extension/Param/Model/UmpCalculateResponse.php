@@ -23,6 +23,12 @@ class UmpCalculateResponse implements \JsonSerializable {
      */
     private $decrease;
 
+    /**
+     * 是否支持优惠到0元,默认false不支持
+     * @var bool
+     */
+    private $supportDiscountZero;
+
 
 
     /**
@@ -55,6 +61,22 @@ class UmpCalculateResponse implements \JsonSerializable {
     public function setDecrease(?int $decrease): void
     {
         $this->decrease = $decrease;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getSupportDiscountZero(): ?bool
+    {
+        return $this->supportDiscountZero;
+    }
+
+    /**
+     * @param bool $supportDiscountZero
+     */
+    public function setSupportDiscountZero(?bool $supportDiscountZero): void
+    {
+        $this->supportDiscountZero = $supportDiscountZero;
     }
 
     public function jsonSerialize() {
