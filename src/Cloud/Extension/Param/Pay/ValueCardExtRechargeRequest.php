@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 
 
 /**
- * 
+ * 请求参数
  * @author Baymax
  * @create 2019-11-22 11:54:57.0
  */
 class ValueCardExtRechargeRequest implements \JsonSerializable {
 
     /**
-     * 业务充值单号，以此做幂等
+     * 业务充值单号，以此做幂等和【youzan.cardvoucher.card.bill.query.3.0.1】接口中的water_no流水字段相同
      * @var string
      */
     private $rechargeNo;
@@ -36,13 +36,13 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     private $factDnom;
 
     /**
-     * 充值本金金额，单位（分）
+     * 本次充值本金的金额 ，单位（分，本金通常与实际支付金额相等）
      * @var int
      */
     private $principalDnom;
 
     /**
-     * 充值赠送金金额，单位（分）
+     * 本次充值赠送的金额，单位（分）
      * @var int
      */
     private $sumBonusDnom;
@@ -60,19 +60,19 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     private $userPhone;
 
     /**
-     * 充值的时候使用的 支付方式
+     * WXPAY(&quot;微信安全支付&quot;, 1, &quot;wxpay&quot;, Channel.PAY_WXPAY_SELF), ALIWAP(&quot;支付宝&quot;, 2, &quot;aliwap&quot;, Channel.PAY_ALIPAY), ALIPAY(&quot;支付宝&quot;, 3, &quot;alipay&quot;, Channel.PAY_NULL), UNIONPAY(&quot;银行卡付款&quot;, 4, &quot;unionpay&quot;, Channel.PAY_UNIONPAY), TENPAY(&quot;财付通&quot;, 5, &quot;tenpay&quot;, Channel.PAY_TENPAY), UNIONWAP(&quot;银行卡付款&quot;, 6, &quot;unionwap&quot;, Channel.PAY_UNIONPAY), PEERPAY(&quot;找人代付&quot;, 7, &quot;peerpay&quot;, Channel.PAY_NULL), UMPAY(&quot;联动U付&quot;, 8, &quot;umpay&quot;, Channel.PAY_UMPAY), CODPAY(&quot;货到付款&quot;, 9, &quot;codpay&quot;, Channel.PAY_NULL), WXPAY_BIGUNSIGN(&quot;微信安全支付&quot;, 10, &quot;wxpay_bigunsign&quot;, Channel.PAY_WXPAY), WXPAY_BIGSIGN(&quot;微信安全支付&quot;, 11, &quot;wxpay_bigsign&quot;, Channel.PAY_WXPAY), BDWAP(&quot;储蓄卡付款&quot;, 12, &quot;baiduwap&quot;, Channel.PAY_BDPAY), WXAPPPAY(&quot;储蓄卡付款&quot;, 13, &quot;wxapppay&quot;, Channel.PAY_WXPAY), MERGED_PAY(&quot;分销采购单合并付款&quot;, 14, &quot;merged_pay&quot;, Channel.PAY_NULL), PRESENTPAY(&quot;赠品0元付款&quot;, 15, &quot;presentpay&quot;, Channel.PAY_NULL), COUPONPAY(&quot;优惠全额兑换&quot;, 16, &quot;couponpay&quot;, Channel.PAY_NULL), FXPAY_SPLIT(&quot;分销商分账入款&quot;, 17, &quot;fx_pay_splitting&quot;, Channel.PAY_NULL), AIXUEDAI(&quot;爱学贷分期付款&quot;, 18, &quot;aixuedai&quot;, Channel.PAY_NULL), WXWAPPAY(&quot;微信支付&quot;, 19, &quot;wxwappay&quot;, Channel.PAY_NULL), WXHB(&quot;微信红包&quot;, 20, &quot;wxhb&quot;, Channel.PAY_WXHB), REBATE(&quot;补贴奖励&quot;, 21, &quot;rebeat&quot;, Channel.PAY_REBATE), UMP_RED_PAY(&quot;ump红包支付&quot;, 22, &quot;ump_read_pay&quot;, Channel.PAY_REDPAY), PAYZAY(&quot;PAYZA支付&quot;, 23, &quot;pay_za&quot;, Channel.PAY_PAYZA), YZPAY(&quot;YZPAY支付&quot;, 24, &quot;yzpay&quot;, Channel.PAY_YOUZAN), PREPAID_CARD(&quot;储值卡支付&quot;, 25, &quot;prepaid_card&quot;, Channel.PAY_PREPAID_CARD), PAYPAL(&quot;PAYPAL支付&quot;, 26, &quot;paypal&quot;, Channel.PAY_PAYPAL), QQPAY(&quot;QQPAY支付&quot;, 27, &quot;qqpay&quot;, Channel.PAY_QQPAY), ECARD(&quot;E卡通支付&quot;, 28, &quot;ecard&quot;, Channel.PAY_ECARD), BARCODE_WX(&quot;微信条码支付&quot;, 29, &quot;barcode_wx&quot;, Channel.PAY_BARCODE_WX), BARCODE_ALIPAY(&quot;支付宝条码支付&quot;, 30, &quot;barcode_alipay&quot;, Channel.PAY_BARCODE_ALIPAY), IBOXPAY(&quot;盒子支付&quot;, 31, &quot;iboxpay&quot;, Channel.PAY_IBOXPAY), YIMING_POS(&quot;一鸣POS&quot;, 32, &quot;yiming_pos&quot;, Channel.PAY_YIMING_POS), ALLIN_POS(&quot;通联POS&quot;, 34, &quot;allin_pos&quot;, Channel.PAY_ALLIN_POS), GIFT_CARD(&quot;礼品卡&quot;, 33, &quot;gift_card&quot;, Channel.PAY_GIFT_CARD), BALANCE_PAY(&quot;余额支付&quot;, 100, &quot;balance_pay&quot;, Channel.PAY_BALANCE), YEEPAY(&quot;易宝支付&quot;, 110, &quot;yeepay_pay&quot;, Channel.PAY_YEEPAY), WX_APPLET_PAY(&quot;微信小程序支付&quot;, 71, &quot;wx_applet_pay&quot;, Channel.PAY_WXPAY_SELF), WX_NATIVE(&quot;微信扫码支付&quot;, 72, &quot;wx_native&quot;, Channel.PAY_WXPAY), VALUE_CARD(&quot;储值卡&quot;, 35, &quot;value_card&quot;, Channel.VALUE_CARD), TRANSFER_VOUCHER(&quot;转账凭证&quot;, 73, &quot;transfer_voucher&quot;, Channel.TRANSFER_VOUCHER), WX_TRANSFER(&quot;微信企业付款&quot;, 75, &quot;wx_transfer&quot;, Channel.PAY_WXPAY), CASH_PAY(&quot;现金支付&quot;, 77, &quot;cash_pay&quot;, Channel.PAY_CASH), MARK_PAY(&quot;标记支付&quot;, 76, &quot;mark_pay&quot;, Channel.PAY_MARK), ALIPAY_NATIVE(&quot;支付宝扫码支付&quot;, 78, &quot;alipay_native&quot;, Channel.PAY_ALIPAY), UN_SETTLED_AMOUNT_PAY(&quot;待结算&amp;余额支付&quot;, 80, &quot;purchase_pay&quot;, Channel.UN_SETTLED_AMOUNT_PAY), DISCOUNT_DEDUCTION(&quot;优惠抵扣0元购&quot;, 79, &quot;discount_deduction&quot;, Channel.PAY_DISCOUNT_DEDUCTION), ENCHASHMENT_GIFT_CARD(&quot;新礼品卡&quot;, 90, &quot;enchashment_gift_card&quot;, Channel.ENCHASHMENT_GIFT_CARD), CREDIT_CARD_UNIONPAY(&quot;信用卡银联支付&quot;, 36, &quot;credit_card_unionpay&quot;, Channel.PAY_UNIONPAY), DEBIT_CARD_UNIONPAY(&quot;储蓄卡银联支付&quot;, 37, &quot;debit_card_unionpay&quot;, Channel.PAY_UNIONPAY);
      * @var string
      */
     private $payMethod;
 
     /**
-     * 礼包号
+     * 礼包ID（充值规则扩展点返回参数，如无可为空）
      * @var string
      */
     private $giftPackId;
 
     /**
-     * 礼包版本 默认：V 1.0
+     * 礼包版本（充值规则扩展点返回参数，如无可为空）
      * @var string
      */
     private $giftPackVersion;
@@ -90,13 +90,13 @@ class ValueCardExtRechargeRequest implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * 支付渠道
+     * 支付渠道（废弃参数，无需处理）
      * @var int
      */
     private $payChannel;
 
     /**
-     * 标记支付方式
+     * 标记支付方式（废弃参数，无需处理）
      * @var string
      */
     private $markPayMethod;

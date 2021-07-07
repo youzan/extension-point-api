@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Pay;
+namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
-use Com\Youzan\Cloud\Extension\Param\Pay\ValueCardExtRechargeResponse;
+use Com\Youzan\Cloud\Extension\Param\Dto\CheckinSelectPrizeDTO;
 
 /**
- * 返回参数返回类
+ * {}返回类
  * @author Baymax
- * @create 2019-11-22 11:54:57.0
+ * @create 2021-06-28 23:33:49.0
  */
-class ValueCardExtRechargeResponseOutParam implements \JsonSerializable {
+class CheckinSelectPrizeDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ValueCardExtRechargeResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var ValueCardExtRechargeResponse
+     * @var CheckinSelectPrizeDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ValueCardExtRechargeResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return ValueCardExtRechargeResponse
+     * @return CheckinSelectPrizeDTO
      */
-    public function getData(): ?ValueCardExtRechargeResponse
+    public function getData(): ?CheckinSelectPrizeDTO
     {
         return $this->data;
     }
 
     /**
-     * @param ValueCardExtRechargeResponse $data
+     * @param CheckinSelectPrizeDTO $data
      */
-    public function setData(?ValueCardExtRechargeResponse $data): void
+    public function setData(?CheckinSelectPrizeDTO $data): void
     {
         $this->data = $data;
     }

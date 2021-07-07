@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Pay;
+namespace Com\Youzan\Cloud\Extension\Param\Cloud;
 
-use Com\Youzan\Cloud\Extension\Param\Pay\ValueCardExtRechargeResponse;
+use Com\Youzan\Cloud\Extension\Param\Cloud\DeliveryToWechatProcessResponse;
 
 /**
- * 返回参数返回类
+ * 响应体返回类
  * @author Baymax
- * @create 2019-11-22 11:54:57.0
+ * @create 2021-07-05 20:45:27.0
  */
-class ValueCardExtRechargeResponseOutParam implements \JsonSerializable {
+class DeliveryToWechatProcessResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ValueCardExtRechargeResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var ValueCardExtRechargeResponse
+     * @var DeliveryToWechatProcessResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ValueCardExtRechargeResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return ValueCardExtRechargeResponse
+     * @return DeliveryToWechatProcessResponse
      */
-    public function getData(): ?ValueCardExtRechargeResponse
+    public function getData(): ?DeliveryToWechatProcessResponse
     {
         return $this->data;
     }
 
     /**
-     * @param ValueCardExtRechargeResponse $data
+     * @param DeliveryToWechatProcessResponse $data
      */
-    public function setData(?ValueCardExtRechargeResponse $data): void
+    public function setData(?DeliveryToWechatProcessResponse $data): void
     {
         $this->data = $data;
     }

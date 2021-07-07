@@ -12,13 +12,13 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 class CustomerIdentifyDTO implements \JsonSerializable {
 
     /**
-     * 帐号类型，目前有以下几种类型，WxOpenId：微信openId，WxUnionId：微信unionId，Mobile：手机号，YouZanAccount：有赞帐号
+     * 帐号类型，仅支持YouZanAccount：有赞帐号yzOpenId
      * @var string
      */
     private $accountType;
 
     /**
-     * 帐号ID
+     * 有赞帐号id
      * @var string
      */
     private $accountId;
@@ -30,13 +30,7 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * 手机号
-     * @var string
-     */
-    private $mobile;
-
-    /**
-     * yzOpenId
+     * yzOpenId是有赞对外开放的有赞用户唯一标识，建议开发者使用
      * @var string
      */
     private $yzOpenId;
@@ -95,22 +89,6 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
-    }
-
-    /**
-     * @return string
-     */
-    public function getMobile(): ?string
-    {
-        return $this->mobile;
-    }
-
-    /**
-     * @param string $mobile
-     */
-    public function setMobile(?string $mobile): void
-    {
-        $this->mobile = $mobile;
     }
 
     /**
