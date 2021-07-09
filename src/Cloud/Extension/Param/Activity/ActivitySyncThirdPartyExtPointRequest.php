@@ -42,7 +42,7 @@ class ActivitySyncThirdPartyExtPointRequest implements \JsonSerializable {
     private $preferentialMode;
 
     /**
-     * /**      * 面额生成规则类型      * * 1:固定值 &#x3D;&#x3D;&amp;gt;   value字段 （默认值）      * * 2:指定值 &#x3D;&#x3D;&amp;gt;   指定范围为minValue ~ maxValue之间      * * 3:范围随机 &#x3D;&#x3D;&amp;gt; 随机范围为minValue ~ maxValue之间      * * 4:无指定值(例如：兑换券) &#x3D;&#x3D;&amp;gt; value &#x3D;&#x3D; 0      */
+     * 面额生成规则类型      * * 1:固定值 &#x3D;&#x3D;&amp;gt;   value字段 （默认值）      * * 2:指定值 &#x3D;&#x3D;&amp;gt;   指定范围为minValue ~ maxValue之间      * * 3:范围随机 &#x3D;&#x3D;&amp;gt; 随机范围为minValue ~ maxValue之间      * * 4:无指定值(例如：兑换券) &#x3D;&#x3D;&amp;gt; value &#x3D;&#x3D; 0 
      * @var int
      */
     private $voucherValueGenerateType;
