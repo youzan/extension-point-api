@@ -3,6 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param\Param;
 
 use DateTime;
+use StdClass;
 
 /**
  * 
@@ -73,15 +74,9 @@ class ExtActivityParam implements \JsonSerializable {
 
     /**
      * 
-     * @var string
+     * @var stdClass
      */
-    private $feature;
-
-    /**
-     * 
-     * @var string
-     */
-    private $activityParamsJson;
+    private $featureMap;
 
 
 
@@ -246,35 +241,19 @@ class ExtActivityParam implements \JsonSerializable {
     }
 
     /**
-     * @return string
+     * @return stdClass
      */
-    public function getFeature(): ?string
+    public function getFeatureMap(): ?stdClass
     {
-        return $this->feature;
+        return $this->featureMap;
     }
 
     /**
-     * @param string $feature
+     * @param stdClass $featureMap
      */
-    public function setFeature(?string $feature): void
+    public function setFeatureMap(?stdClass $featureMap): void
     {
-        $this->feature = $feature;
-    }
-
-    /**
-     * @return string
-     */
-    public function getActivityParamsJson(): ?string
-    {
-        return $this->activityParamsJson;
-    }
-
-    /**
-     * @param string $activityParamsJson
-     */
-    public function setActivityParamsJson(?string $activityParamsJson): void
-    {
-        $this->activityParamsJson = $activityParamsJson;
+        $this->featureMap = $featureMap;
     }
 
     public function jsonSerialize() {

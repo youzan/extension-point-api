@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 use Com\Youzan\Cloud\Extension\Param\Model\GoodsIdentityDTO;
 
 /**
- * 
+ * 商品信息
  * @author Baymax
  * @create 2020-04-27 17:33:11.0
  */
 class GoodsDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 商品明细
      * @var GoodsIdentityDTO
      */
     private $goodsIdentity;

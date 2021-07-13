@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 use Com\Youzan\Cloud\Extension\Param\Response\ExtRecalculateLevelDTO;
 
 /**
- * 返回类
+ * 等级重算返回值返回类
  * @author Baymax
  * @create 2021-07-09 13:03:53.0
  */

@@ -5,26 +5,26 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 
 
 /**
- * 
+ * 用户信息
  * @author Baymax
  * @create 2021-07-09 13:03:53.0
  */
 class ExtCustomerIdentityDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 账号id
      * @var string
      */
     private $accountId;
 
     /**
-     * 
+     * 账户类型
      * @var string
      */
     private $accountType;
 
     /**
-     * 
+     * 用户id
      * @var int
      */
     private $userId;

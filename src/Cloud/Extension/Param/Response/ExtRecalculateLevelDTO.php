@@ -5,20 +5,20 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 use StdClass;
 
 /**
- * 
+ * 等级重算返回值
  * @author Baymax
  * @create 2021-07-09 13:03:53.0
  */
 class ExtRecalculateLevelDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 操作是否成功
      * @var bool
      */
     private $isSuccess;
 
     /**
-     * 
+     * 扩展信息
      * @var stdClass
      */
     private $extensionMap;

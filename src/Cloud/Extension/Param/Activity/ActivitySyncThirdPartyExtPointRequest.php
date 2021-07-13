@@ -36,19 +36,19 @@ class ActivitySyncThirdPartyExtPointRequest implements \JsonSerializable {
     private $externalPlatformType;
 
     /**
-     * 优惠方式      * 1：代金券（面额：denominations）随机代金券[valueRandomTo&amp;gt;0]（denominations~valueRandomTo） (默认值)      * 2：折扣券（折扣：discount/10）      * 3：兑换券（面额：denominations &#x3D; 0）
+     * 优惠方式 代金券（面额：denominations）随机代金券[valueRandomTo&amp;gt;0]（denominations~valueRandomTo） (默认值) 折扣券（折扣：discount/10） 兑换券（面额：denominations &#x3D; 0）
      * @var int
      */
     private $preferentialMode;
 
     /**
-     * 面额生成规则类型      * * 1:固定值 &#x3D;&#x3D;&amp;gt;   value字段 （默认值）      * * 2:指定值 &#x3D;&#x3D;&amp;gt;   指定范围为minValue ~ maxValue之间      * * 3:范围随机 &#x3D;&#x3D;&amp;gt; 随机范围为minValue ~ maxValue之间      * * 4:无指定值(例如：兑换券) &#x3D;&#x3D;&amp;gt; value &#x3D;&#x3D; 0 
+     * 面额生成规则类型 1:固定值 :value字段 （默认值） 2:指定值 :指定范围为minValue ~ maxValue之间 3:范围随机 :随机范围为minValue ~ maxValue之间 4:无指定值(例如：兑换券) :value &#x3D;&#x3D; 0
      * @var int
      */
     private $voucherValueGenerateType;
 
     /**
-     * 核销渠道范围类型    0:不限制     1:范围内可用   2:范围内不可用
+     * 核销渠道范围类型 0:不限制 1:范围内可用 2:范围内不可用
      * @var int
      */
     private $verifyChannelRangeType;
@@ -60,13 +60,13 @@ class ActivitySyncThirdPartyExtPointRequest implements \JsonSerializable {
     private $applicableVerifyChannels;
 
     /**
-     * 
+     * 版本号
      * @var int
      */
     private $versionNo;
 
     /**
-     * 
+     * 扩展点字段
      * @var stdClass
      */
     private $extMap;

@@ -6,32 +6,32 @@ use Com\Youzan\Cloud\Extension\Param\Request\ExtCustomerIdentityDTO;
 use StdClass;
 
 /**
- * 
+ * 等级重算入参
  * @author Baymax
  * @create 2021-07-09 13:03:53.0
  */
 class ExtRecalculateLevelRequestDTO implements \JsonSerializable {
 
     /**
-     * 
+     * 分店ID 同originKdtId
      * @var int
      */
     private $nodeId;
 
     /**
-     * 
+     * 用户信息
      * @var ExtCustomerIdentityDTO
      */
     private $extCustomerIdentityDTO;
 
     /**
-     * 
+     * 多店铺流量路由标识（kdtId，商户号等）
      * @var string
      */
     private $bizTrafficId;
 
     /**
-     * 
+     * 扩展信息
      * @var stdClass
      */
     private $extensionMap;

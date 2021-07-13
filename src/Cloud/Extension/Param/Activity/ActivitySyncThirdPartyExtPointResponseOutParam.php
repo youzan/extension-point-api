@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Activity;
 use Com\Youzan\Cloud\Extension\Param\Activity\ActivitySyncThirdPartyExtPointResponse;
 
 /**
- * 返回类
+ * 请求响应返回类
  * @author Baymax
  * @create 2021-07-07 11:55:49.0
  */
