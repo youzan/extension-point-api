@@ -5,20 +5,20 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 use Com\Youzan\Cloud\Extension\Param\Model\ComputingItemIdentity;
 
 /**
- * 
+ * 当promotionLevel返回“order”,  需要返回的订单级别优惠减免结果
  * @author Baymax
  * @create 2021-07-08 11:43:47.0
  */
 class OrderPromotionComputeResp implements \JsonSerializable {
 
     /**
-     * 
+     * 订单总优惠金额，需大于0，单位（分）
      * @var int
      */
     private $totalDecrease;
 
     /**
-     * 
+     * 订单优惠影响的计算条目
      * @var array
      */
     private $effectItems;

@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 use StdClass;
 
 /**
- * 
+ * 返回值
  * @author Baymax
  * @create 2020-02-12 16:36:03.0
  */

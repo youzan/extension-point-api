@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 use Com\Youzan\Cloud\Extension\Param\Voucher\VoucherVerifyExtPointResponse;
 
 /**
- * 返回类
+ * 返回值返回类
  * @author Baymax
  * @create 2020-02-12 16:36:03.0
  */

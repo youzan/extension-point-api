@@ -5,32 +5,26 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 
 
 /**
- * 
+ * 商品条目
  * @author Baymax
  * @create 2021-07-08 11:43:47.0
  */
 class ComputingItemIdentity implements \JsonSerializable {
 
     /**
-     * 
+     * 商品ID
      * @var int
      */
-    private $shopId;
+    private $itemId;
 
     /**
-     * 
+     * 规格ID
      * @var int
      */
-    private $rootGoodsId;
+    private $skuId;
 
     /**
-     * 
-     * @var int
-     */
-    private $rootSkuId;
-
-    /**
-     * 
+     * 商品交易条目ID
      * @var int
      */
     private $businessId;
@@ -40,49 +34,33 @@ class ComputingItemIdentity implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getShopId(): ?int
+    public function getItemId(): ?int
     {
-        return $this->shopId;
+        return $this->itemId;
     }
 
     /**
-     * @param int $shopId
+     * @param int $itemId
      */
-    public function setShopId(?int $shopId): void
+    public function setItemId(?int $itemId): void
     {
-        $this->shopId = $shopId;
-    }
-
-    /**
-     * @return int
-     */
-    public function getRootGoodsId(): ?int
-    {
-        return $this->rootGoodsId;
-    }
-
-    /**
-     * @param int $rootGoodsId
-     */
-    public function setRootGoodsId(?int $rootGoodsId): void
-    {
-        $this->rootGoodsId = $rootGoodsId;
+        $this->itemId = $itemId;
     }
 
     /**
      * @return int
      */
-    public function getRootSkuId(): ?int
+    public function getSkuId(): ?int
     {
-        return $this->rootSkuId;
+        return $this->skuId;
     }
 
     /**
-     * @param int $rootSkuId
+     * @param int $skuId
      */
-    public function setRootSkuId(?int $rootSkuId): void
+    public function setSkuId(?int $skuId): void
     {
-        $this->rootSkuId = $rootSkuId;
+        $this->skuId = $skuId;
     }
 
     /**

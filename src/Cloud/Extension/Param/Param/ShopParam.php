@@ -5,47 +5,41 @@ namespace Com\Youzan\Cloud\Extension\Param\Param;
 
 
 /**
- * 
+ * 店铺信息
  * @author Baymax
  * @create 2021-07-08 11:43:47.0
  */
 class ShopParam implements \JsonSerializable {
 
     /**
-     * 
+     * 当前店铺ID
      * @var int
      */
     private $currentShopId;
 
     /**
-     * 
+     * 总店店铺ID
      * @var int
      */
     private $rootShopId;
 
     /**
-     * 
+     * 下单店铺类型，微商城（0），零售（7）
      * @var int
      */
     private $shopType;
 
     /**
-     * 
+     * 下单店铺角色，单店（0），总店（1），分店（2）
      * @var int
      */
     private $shopRole;
 
     /**
-     * 
+     * 上级店铺ID列表
      * @var array
      */
     private $inheritedShopIds;
-
-    /**
-     * 
-     * @var int
-     */
-    private $offlineId;
 
 
 
@@ -127,22 +121,6 @@ class ShopParam implements \JsonSerializable {
     public function setInheritedShopIds(?array $inheritedShopIds): void
     {
         $this->inheritedShopIds = $inheritedShopIds;
-    }
-
-    /**
-     * @return int
-     */
-    public function getOfflineId(): ?int
-    {
-        return $this->offlineId;
-    }
-
-    /**
-     * @param int $offlineId
-     */
-    public function setOfflineId(?int $offlineId): void
-    {
-        $this->offlineId = $offlineId;
     }
 
     public function jsonSerialize() {

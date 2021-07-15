@@ -13,67 +13,61 @@ use StdClass;
 class ExtActivityParam implements \JsonSerializable {
 
     /**
-     * 
+     * 活动ID
      * @var int
      */
     private $activityId;
 
     /**
-     * 
+     * 活动插件类型，如第二件半价（115）、限时折扣（11）、满减送（101）等
      * @var int
      */
     private $appType;
 
     /**
-     * 
-     * @var string
-     */
-    private $appBusinessName;
-
-    /**
-     * 
+     * 活动店铺ID
      * @var int
      */
     private $shopId;
 
     /**
-     * 
+     * 活动别名
      * @var string
      */
     private $alias;
 
     /**
-     * 
+     * 活动状态，正常（0）、删除（1）、失效（2）
      * @var int
      */
     private $activityStatus;
 
     /**
-     * 
+     * 活动名称
      * @var string
      */
     private $name;
 
     /**
-     * 
+     * 活动描述
      * @var string
      */
     private $desc;
 
     /**
-     * 
+     * 活动开始时间，单位（毫秒级）时间戳
      * @var int
      */
     private $startAt;
 
     /**
-     * 
+     * 活动结束时间，单位（毫秒级）时间戳
      * @var int
      */
     private $endAt;
 
     /**
-     * 
+     * 活动特征信息
      * @var stdClass
      */
     private $featureMap;
@@ -110,22 +104,6 @@ class ExtActivityParam implements \JsonSerializable {
     public function setAppType(?int $appType): void
     {
         $this->appType = $appType;
-    }
-
-    /**
-     * @return string
-     */
-    public function getAppBusinessName(): ?string
-    {
-        return $this->appBusinessName;
-    }
-
-    /**
-     * @param string $appBusinessName
-     */
-    public function setAppBusinessName(?string $appBusinessName): void
-    {
-        $this->appBusinessName = $appBusinessName;
     }
 
     /**

@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 use Com\Youzan\Cloud\Extension\Param\Response\CustomizedPromotionComputeResp;
 
 /**
- * 返回类
+ * 返回优惠减免信息返回类
  * @author Baymax
  * @create 2021-07-08 11:43:47.0
  */

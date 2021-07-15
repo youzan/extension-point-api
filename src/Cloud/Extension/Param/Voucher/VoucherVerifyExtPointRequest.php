@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 use StdClass;
 
 /**
- * 
+ * 请求
  * @author Baymax
  * @create 2020-02-12 16:36:03.0
  */
@@ -42,7 +42,7 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     private $versionNo;
 
     /**
-     * 扩展字段
+     * 扩展字段，存放订单信息 订单总金额(原价):total_original_price 订单实付金额(券前置优惠后总价):total_promotional_price 订单项列表:order_items(数组) 具体订单项目order_item： 商品id:goods_id 商品skuId:sku_id 商品原价:goods_original_price 商品数量:num 订单项总金额:total_original_price 订单项实付总金额(前置优惠后订单项总价):total_promotional_price
      * @var stdClass
      */
     private $extMap;
@@ -58,6 +58,18 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
      * @var int
      */
     private $rootKdtId;
+
+    /**
+     * 优惠券核销码
+     * @var string
+     */
+    private $verifyCode;
+
+    /**
+     * 优惠券优惠的实际金额;单位:分
+     * @var int
+     */
+    private $preferentialValue;
 
 
 
@@ -187,6 +199,38 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     public function setRootKdtId(?int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVerifyCode(): ?string
+    {
+        return $this->verifyCode;
+    }
+
+    /**
+     * @param string $verifyCode
+     */
+    public function setVerifyCode(?string $verifyCode): void
+    {
+        $this->verifyCode = $verifyCode;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPreferentialValue(): ?int
+    {
+        return $this->preferentialValue;
+    }
+
+    /**
+     * @param int $preferentialValue
+     */
+    public function setPreferentialValue(?int $preferentialValue): void
+    {
+        $this->preferentialValue = $preferentialValue;
     }
 
     public function jsonSerialize() {

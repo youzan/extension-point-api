@@ -5,29 +5,17 @@ namespace Com\Youzan\Cloud\Extension\Param\Param;
 
 
 /**
- * 
+ * 用户信息
  * @author Baymax
  * @create 2021-07-08 11:43:47.0
  */
 class UserParam implements \JsonSerializable {
 
     /**
-     * 
+     * 用户ID
      * @var int
      */
     private $buyerId;
-
-    /**
-     * 
-     * @var int
-     */
-    private $fansId;
-
-    /**
-     * 
-     * @var int
-     */
-    private $fansType;
 
 
 
@@ -45,38 +33,6 @@ class UserParam implements \JsonSerializable {
     public function setBuyerId(?int $buyerId): void
     {
         $this->buyerId = $buyerId;
-    }
-
-    /**
-     * @return int
-     */
-    public function getFansId(): ?int
-    {
-        return $this->fansId;
-    }
-
-    /**
-     * @param int $fansId
-     */
-    public function setFansId(?int $fansId): void
-    {
-        $this->fansId = $fansId;
-    }
-
-    /**
-     * @return int
-     */
-    public function getFansType(): ?int
-    {
-        return $this->fansType;
-    }
-
-    /**
-     * @param int $fansType
-     */
-    public function setFansType(?int $fansType): void
-    {
-        $this->fansType = $fansType;
     }
 
     public function jsonSerialize() {

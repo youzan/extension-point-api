@@ -5,44 +5,38 @@ namespace Com\Youzan\Cloud\Extension\Param\Param;
 use Com\Youzan\Cloud\Extension\Param\Model\ComputingItemIdentity;
 
 /**
- * 
+ * 商品条目前置优惠计算结果列表
  * @author Baymax
  * @create 2021-07-08 11:43:47.0
  */
 class PreComputingItemPromotionParam implements \JsonSerializable {
 
     /**
-     * 
+     * 商品条目
      * @var ComputingItemIdentity
      */
     private $computingItemIdentity;
 
     /**
-     * 
+     * 商品数量
      * @var int
      */
     private $num;
 
     /**
-     * 
+     * 商品原始单价，单位（分）
      * @var int
      */
     private $originalUnitPrice;
 
     /**
-     * 
-     * @var int
-     */
-    private $initUnitPrice;
-
-    /**
-     * 
+     * 本次计算前，此商品初始优惠总价， 单位（分）
      * @var int
      */
     private $initTotalPrice;
 
     /**
-     * 
+     * 商品前置总优惠金额，单位（分）
      * @var int
      */
     private $totalDecreaseAmount;
@@ -95,22 +89,6 @@ class PreComputingItemPromotionParam implements \JsonSerializable {
     public function setOriginalUnitPrice(?int $originalUnitPrice): void
     {
         $this->originalUnitPrice = $originalUnitPrice;
-    }
-
-    /**
-     * @return int
-     */
-    public function getInitUnitPrice(): ?int
-    {
-        return $this->initUnitPrice;
-    }
-
-    /**
-     * @param int $initUnitPrice
-     */
-    public function setInitUnitPrice(?int $initUnitPrice): void
-    {
-        $this->initUnitPrice = $initUnitPrice;
     }
 
     /**

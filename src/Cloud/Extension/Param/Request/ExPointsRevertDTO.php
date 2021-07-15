@@ -54,6 +54,12 @@ class ExPointsRevertDTO implements \JsonSerializable {
      */
     private $extraInfo;
 
+    /**
+     * 是否需要走扩展点，默认：true (false走内部逻辑)
+     * @var bool
+     */
+    private $isDoExtPoint;
+
 
 
     /**
@@ -166,6 +172,22 @@ class ExPointsRevertDTO implements \JsonSerializable {
     public function setExtraInfo(?stdClass $extraInfo): void
     {
         $this->extraInfo = $extraInfo;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsDoExtPoint(): ?bool
+    {
+        return $this->isDoExtPoint;
+    }
+
+    /**
+     * @param bool $isDoExtPoint
+     */
+    public function setIsDoExtPoint(?bool $isDoExtPoint): void
+    {
+        $this->isDoExtPoint = $isDoExtPoint;
     }
 
     public function jsonSerialize() {

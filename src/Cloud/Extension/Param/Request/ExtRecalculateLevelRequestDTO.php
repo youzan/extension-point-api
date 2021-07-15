@@ -2,7 +2,6 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Request;
 
-use Com\Youzan\Cloud\Extension\Param\Request\ExtCustomerIdentityDTO;
 use StdClass;
 
 /**
@@ -16,16 +15,10 @@ class ExtRecalculateLevelRequestDTO implements \JsonSerializable {
      * 分店ID 同originKdtId
      * @var int
      */
-    private $nodeId;
+    private $nodeKdtId;
 
     /**
-     * 用户信息
-     * @var ExtCustomerIdentityDTO
-     */
-    private $extCustomerIdentityDTO;
-
-    /**
-     * 多店铺流量路由标识（kdtId，商户号等）
+     * 多店铺流量路由标识，这里是kdtId
      * @var string
      */
     private $bizTrafficId;
@@ -36,38 +29,28 @@ class ExtRecalculateLevelRequestDTO implements \JsonSerializable {
      */
     private $extensionMap;
 
+    /**
+     * 用户id
+     * @var int
+     */
+    private $yzOpenId;
+
 
 
     /**
      * @return int
      */
-    public function getNodeId(): ?int
+    public function getNodeKdtId(): ?int
     {
-        return $this->nodeId;
+        return $this->nodeKdtId;
     }
 
     /**
-     * @param int $nodeId
+     * @param int $nodeKdtId
      */
-    public function setNodeId(?int $nodeId): void
+    public function setNodeKdtId(?int $nodeKdtId): void
     {
-        $this->nodeId = $nodeId;
-    }
-
-    /**
-     * @return ExtCustomerIdentityDTO
-     */
-    public function getExtCustomerIdentityDTO(): ?ExtCustomerIdentityDTO
-    {
-        return $this->extCustomerIdentityDTO;
-    }
-
-    /**
-     * @param ExtCustomerIdentityDTO $extCustomerIdentityDTO
-     */
-    public function setExtCustomerIdentityDTO(?ExtCustomerIdentityDTO $extCustomerIdentityDTO): void
-    {
-        $this->extCustomerIdentityDTO = $extCustomerIdentityDTO;
+        $this->nodeKdtId = $nodeKdtId;
     }
 
     /**
@@ -100,6 +83,22 @@ class ExtRecalculateLevelRequestDTO implements \JsonSerializable {
     public function setExtensionMap(?stdClass $extensionMap): void
     {
         $this->extensionMap = $extensionMap;
+    }
+
+    /**
+     * @return int
+     */
+    public function getYzOpenId(): ?int
+    {
+        return $this->yzOpenId;
+    }
+
+    /**
+     * @param int $yzOpenId
+     */
+    public function setYzOpenId(?int $yzOpenId): void
+    {
+        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {

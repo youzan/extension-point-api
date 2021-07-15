@@ -5,20 +5,20 @@ namespace Com\Youzan\Cloud\Extension\Param\Info;
 use Com\Youzan\Cloud\Extension\Param\Model\ComputingItemIdentity;
 
 /**
- * 
+ * 商品优惠减免条目信息
  * @author Baymax
  * @create 2021-07-08 11:43:47.0
  */
 class PromotionItemDecreaseInfo implements \JsonSerializable {
 
     /**
-     * 
+     * 商品条目
      * @var ComputingItemIdentity
      */
     private $computingItemIdentity;
 
     /**
-     * 
+     * 减免金额，单位（分）
      * @var int
      */
     private $decrease;

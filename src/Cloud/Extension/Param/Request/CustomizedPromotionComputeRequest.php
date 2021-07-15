@@ -6,6 +6,7 @@ use Com\Youzan\Cloud\Extension\Param\Param\PreComputingItemPromotionParam;
 use Com\Youzan\Cloud\Extension\Param\Param\ExtActivityParam;
 use Com\Youzan\Cloud\Extension\Param\Param\UserParam;
 use Com\Youzan\Cloud\Extension\Param\Param\ShopParam;
+use Com\Youzan\Cloud\Extension\Param\Param\OrderParam;
 use StdClass;
 
 /**
@@ -16,7 +17,7 @@ use StdClass;
 class CustomizedPromotionComputeRequest implements \JsonSerializable {
 
     /**
-     * 
+     * 商品条目前置优惠计算结果列表
      * @var array
      */
     private $computingItemPromotionParamList;
@@ -28,43 +29,43 @@ class CustomizedPromotionComputeRequest implements \JsonSerializable {
     private $activityParam;
 
     /**
-     * 
+     * 用户信息
      * @var UserParam
      */
     private $userParam;
 
     /**
-     * 
+     * 店铺信息
      * @var ShopParam
      */
     private $shopParam;
 
     /**
-     * 
-     * @var string
+     * 订单信息
+     * @var OrderParam
      */
-    private $orderNo;
+    private $orderParam;
 
     /**
-     * 
+     * 扩展点业务路由key，配置在bos规则中的业务参数
      * @var string
      */
     private $bizRouteKey;
 
     /**
-     * 
+     * 扩展信息
      * @var stdClass
      */
     private $extraInfo;
 
     /**
-     * 
+     * 插件类型，第二件半价（115）、限时折扣（11）、满减送（101）等
      * @var string
      */
     private $appType;
 
     /**
-     * 
+     * 插件扩展信息
      * @var stdClass
      */
     private $extraByAppType;
@@ -136,19 +137,19 @@ class CustomizedPromotionComputeRequest implements \JsonSerializable {
     }
 
     /**
-     * @return string
+     * @return OrderParam
      */
-    public function getOrderNo(): ?string
+    public function getOrderParam(): ?OrderParam
     {
-        return $this->orderNo;
+        return $this->orderParam;
     }
 
     /**
-     * @param string $orderNo
+     * @param OrderParam $orderParam
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setOrderParam(?OrderParam $orderParam): void
     {
-        $this->orderNo = $orderNo;
+        $this->orderParam = $orderParam;
     }
 
     /**

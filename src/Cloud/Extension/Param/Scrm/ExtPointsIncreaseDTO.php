@@ -78,6 +78,12 @@ class ExtPointsIncreaseDTO implements \JsonSerializable {
      */
     private $operationType;
 
+    /**
+     * 是否需要走扩展点，默认：true (false走内部逻辑)
+     * @var bool
+     */
+    private $isDoExtPoint;
+
 
 
     /**
@@ -254,6 +260,22 @@ class ExtPointsIncreaseDTO implements \JsonSerializable {
     public function setOperationType(?int $operationType): void
     {
         $this->operationType = $operationType;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsDoExtPoint(): ?bool
+    {
+        return $this->isDoExtPoint;
+    }
+
+    /**
+     * @param bool $isDoExtPoint
+     */
+    public function setIsDoExtPoint(?bool $isDoExtPoint): void
+    {
+        $this->isDoExtPoint = $isDoExtPoint;
     }
 
     public function jsonSerialize() {
