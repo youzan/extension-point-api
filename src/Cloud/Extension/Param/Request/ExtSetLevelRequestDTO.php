@@ -24,7 +24,7 @@ class ExtSetLevelRequestDTO implements \JsonSerializable {
     private $levelAlias;
 
     /**
-     * 多店铺流量路由标识，这里是kdtId
+     * 单店返回店铺id，连锁返回网店id
      * @var string
      */
     private $bizTrafficId;
@@ -36,7 +36,7 @@ class ExtSetLevelRequestDTO implements \JsonSerializable {
     private $extensionMap;
 
     /**
-     * 用户id
+     * 用户id，有赞客户id，客户在有赞的唯一id。推荐使用  示例值：LnhGm4rh576452722916618240
      * @var int
      */
     private $yzOpenId;

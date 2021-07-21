@@ -15,24 +15,24 @@ class OrderParam implements \JsonSerializable {
      * 订单号
      * @var string
      */
-    private $orderNo;
+    private $tid;
 
 
 
     /**
      * @return string
      */
-    public function getOrderNo(): ?string
+    public function getTid(): ?string
     {
-        return $this->orderNo;
+        return $this->tid;
     }
 
     /**
-     * @param string $orderNo
+     * @param string $tid
      */
-    public function setOrderNo(?string $orderNo): void
+    public function setTid(?string $tid): void
     {
-        $this->orderNo = $orderNo;
+        $this->tid = $tid;
     }
 
     public function jsonSerialize() {

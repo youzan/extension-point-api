@@ -55,7 +55,7 @@ class ExPointsRevertDTO implements \JsonSerializable {
     private $extraInfo;
 
     /**
-     * 是否需要走扩展点，默认：true (false走内部逻辑)
+     * 是否需要走扩展点，默认:true; 如果商家实现对接拓展点, 在true的情况下,会执行商家实现的拓展点.在false的情况下,执行官方默认逻辑;
      * @var bool
      */
     private $isDoExtPoint;

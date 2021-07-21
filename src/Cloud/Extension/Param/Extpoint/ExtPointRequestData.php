@@ -9,7 +9,7 @@ use Com\Youzan\Cloud\Extension\Param\Common\Shop;
 use StdClass;
 
 /**
- * 
+ * 请求参数
  * @author Baymax
  * @create 2021-05-06 20:06:45.0
  */

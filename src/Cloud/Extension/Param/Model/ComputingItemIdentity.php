@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 
 
 /**
- * 商品条目
+ * 减免的商品信息
  * @author Baymax
  * @create 2021-07-08 11:43:47.0
  */

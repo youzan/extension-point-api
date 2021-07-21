@@ -15,13 +15,13 @@ class ShopParam implements \JsonSerializable {
      * 当前店铺ID
      * @var int
      */
-    private $currentShopId;
+    private $currentKdtId;
 
     /**
      * 总店店铺ID
      * @var int
      */
-    private $rootShopId;
+    private $rootKdtId;
 
     /**
      * 下单店铺类型，微商城（0），零售（7）
@@ -35,44 +35,38 @@ class ShopParam implements \JsonSerializable {
      */
     private $shopRole;
 
-    /**
-     * 上级店铺ID列表
-     * @var array
-     */
-    private $inheritedShopIds;
-
 
 
     /**
      * @return int
      */
-    public function getCurrentShopId(): ?int
+    public function getCurrentKdtId(): ?int
     {
-        return $this->currentShopId;
+        return $this->currentKdtId;
     }
 
     /**
-     * @param int $currentShopId
+     * @param int $currentKdtId
      */
-    public function setCurrentShopId(?int $currentShopId): void
+    public function setCurrentKdtId(?int $currentKdtId): void
     {
-        $this->currentShopId = $currentShopId;
+        $this->currentKdtId = $currentKdtId;
     }
 
     /**
      * @return int
      */
-    public function getRootShopId(): ?int
+    public function getRootKdtId(): ?int
     {
-        return $this->rootShopId;
+        return $this->rootKdtId;
     }
 
     /**
-     * @param int $rootShopId
+     * @param int $rootKdtId
      */
-    public function setRootShopId(?int $rootShopId): void
+    public function setRootKdtId(?int $rootKdtId): void
     {
-        $this->rootShopId = $rootShopId;
+        $this->rootKdtId = $rootKdtId;
     }
 
     /**
@@ -105,22 +99,6 @@ class ShopParam implements \JsonSerializable {
     public function setShopRole(?int $shopRole): void
     {
         $this->shopRole = $shopRole;
-    }
-
-    /**
-     * @return array
-     */
-    public function getInheritedShopIds(): ?array
-    {
-        return $this->inheritedShopIds;
-    }
-
-    /**
-     * @param array $inheritedShopIds
-     */
-    public function setInheritedShopIds(?array $inheritedShopIds): void
-    {
-        $this->inheritedShopIds = $inheritedShopIds;
     }
 
     public function jsonSerialize() {

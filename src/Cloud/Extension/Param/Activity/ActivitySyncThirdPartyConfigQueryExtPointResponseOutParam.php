@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Extpoint;
+namespace Com\Youzan\Cloud\Extension\Param\Activity;
 
-use Com\Youzan\Cloud\Extension\Param\Extpoint\BrickExtPointResponse;
+use Com\Youzan\Cloud\Extension\Param\Activity\ActivitySyncThirdPartyConfigQueryExtPointResponse;
 
 /**
- * 返回结果返回类
+ * 返回类
  * @author Baymax
- * @create 2021-05-06 20:06:45.0
+ * @create 2021-07-21 23:32:37.0
  */
-class BrickExtPointResponseOutParam implements \JsonSerializable {
+class ActivitySyncThirdPartyConfigQueryExtPointResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class BrickExtPointResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var BrickExtPointResponse
+     * @var ActivitySyncThirdPartyConfigQueryExtPointResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class BrickExtPointResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return BrickExtPointResponse
+     * @return ActivitySyncThirdPartyConfigQueryExtPointResponse
      */
-    public function getData(): ?BrickExtPointResponse
+    public function getData(): ?ActivitySyncThirdPartyConfigQueryExtPointResponse
     {
         return $this->data;
     }
 
     /**
-     * @param BrickExtPointResponse $data
+     * @param ActivitySyncThirdPartyConfigQueryExtPointResponse $data
      */
-    public function setData(?BrickExtPointResponse $data): void
+    public function setData(?ActivitySyncThirdPartyConfigQueryExtPointResponse $data): void
     {
         $this->data = $data;
     }

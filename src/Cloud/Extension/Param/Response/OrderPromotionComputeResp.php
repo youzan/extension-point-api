@@ -18,7 +18,7 @@ class OrderPromotionComputeResp implements \JsonSerializable {
     private $totalDecrease;
 
     /**
-     * 订单优惠影响的计算条目
+     * 订单优惠影响的商品列表
      * @var array
      */
     private $effectItems;

@@ -18,7 +18,7 @@ class GoodsPromotionComputeResp implements \JsonSerializable {
     private $totalDecrease;
 
     /**
-     * 商品优惠减免条目信息
+     * 商品优惠减免列表信息
      * @var array
      */
     private $promotionItemDecreaseInfoList;

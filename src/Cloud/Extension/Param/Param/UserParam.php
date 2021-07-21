@@ -12,27 +12,27 @@ namespace Com\Youzan\Cloud\Extension\Param\Param;
 class UserParam implements \JsonSerializable {
 
     /**
-     * 用户ID
+     * 微信open_id
      * @var int
      */
-    private $buyerId;
+    private $yzOpenId;
 
 
 
     /**
      * @return int
      */
-    public function getBuyerId(): ?int
+    public function getYzOpenId(): ?int
     {
-        return $this->buyerId;
+        return $this->yzOpenId;
     }
 
     /**
-     * @param int $buyerId
+     * @param int $yzOpenId
      */
-    public function setBuyerId(?int $buyerId): void
+    public function setYzOpenId(?int $yzOpenId): void
     {
-        $this->buyerId = $buyerId;
+        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {

@@ -23,7 +23,7 @@ class CustomizedPromotionComputeResp implements \JsonSerializable {
      * 插件类型，第二件半价（115）、限时折扣（11）、满减送（101）等
      * @var int
      */
-    private $appType;
+    private $activityType;
 
     /**
      * 优惠级别，商品级（“goods”）、订单级（“order”）
@@ -44,7 +44,7 @@ class CustomizedPromotionComputeResp implements \JsonSerializable {
     private $orderPromotionComputeResp;
 
     /**
-     * 扩展展示信息
+     * 扩展展示信息，需要额外透传的活动展示信息
      * @var stdClass
      */
     private $exhibitMap;
@@ -70,17 +70,17 @@ class CustomizedPromotionComputeResp implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getAppType(): ?int
+    public function getActivityType(): ?int
     {
-        return $this->appType;
+        return $this->activityType;
     }
 
     /**
-     * @param int $appType
+     * @param int $activityType
      */
-    public function setAppType(?int $appType): void
+    public function setActivityType(?int $activityType): void
     {
-        $this->appType = $appType;
+        $this->activityType = $activityType;
     }
 
     /**

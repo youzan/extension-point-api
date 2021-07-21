@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Info;
 use Com\Youzan\Cloud\Extension\Param\Model\ComputingItemIdentity;
 
 /**
- * 商品优惠减免条目信息
+ * 商品优惠减免列表信息
  * @author Baymax
  * @create 2021-07-08 11:43:47.0
  */
 class PromotionItemDecreaseInfo implements \JsonSerializable {
 
     /**
-     * 商品条目
+     * 减免的商品信息
      * @var ComputingItemIdentity
      */
     private $computingItemIdentity;

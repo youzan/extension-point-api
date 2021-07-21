@@ -47,7 +47,7 @@ class CustomizedPromotionComputeRequest implements \JsonSerializable {
     private $orderParam;
 
     /**
-     * 扩展点业务路由key，配置在bos规则中的业务参数
+     * 扩展点业务路由key，配置在bos规则中的业务参数，配置方式联系中台营销业务方
      * @var string
      */
     private $bizRouteKey;
@@ -62,13 +62,7 @@ class CustomizedPromotionComputeRequest implements \JsonSerializable {
      * 插件类型，第二件半价（115）、限时折扣（11）、满减送（101）等
      * @var string
      */
-    private $appType;
-
-    /**
-     * 插件扩展信息
-     * @var stdClass
-     */
-    private $extraByAppType;
+    private $activityType;
 
 
 
@@ -187,33 +181,17 @@ class CustomizedPromotionComputeRequest implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getAppType(): ?string
+    public function getActivityType(): ?string
     {
-        return $this->appType;
+        return $this->activityType;
     }
 
     /**
-     * @param string $appType
+     * @param string $activityType
      */
-    public function setAppType(?string $appType): void
+    public function setActivityType(?string $activityType): void
     {
-        $this->appType = $appType;
-    }
-
-    /**
-     * @return stdClass
-     */
-    public function getExtraByAppType(): ?stdClass
-    {
-        return $this->extraByAppType;
-    }
-
-    /**
-     * @param stdClass $extraByAppType
-     */
-    public function setExtraByAppType(?stdClass $extraByAppType): void
-    {
-        $this->extraByAppType = $extraByAppType;
+        $this->activityType = $activityType;
     }
 
     public function jsonSerialize() {

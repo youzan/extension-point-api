@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Extpoint;
+namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 
-use Com\Youzan\Cloud\Extension\Param\Extpoint\BrickExtPointResponse;
+use Com\Youzan\Cloud\Extension\Param\Voucher\VoucherDisuseExtPointResponse;
 
 /**
- * 返回结果返回类
+ * 返回类
  * @author Baymax
- * @create 2021-05-06 20:06:45.0
+ * @create 2021-07-21 23:26:40.0
  */
-class BrickExtPointResponseOutParam implements \JsonSerializable {
+class VoucherDisuseExtPointResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class BrickExtPointResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var BrickExtPointResponse
+     * @var VoucherDisuseExtPointResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class BrickExtPointResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return BrickExtPointResponse
+     * @return VoucherDisuseExtPointResponse
      */
-    public function getData(): ?BrickExtPointResponse
+    public function getData(): ?VoucherDisuseExtPointResponse
     {
         return $this->data;
     }
 
     /**
-     * @param BrickExtPointResponse $data
+     * @param VoucherDisuseExtPointResponse $data
      */
-    public function setData(?BrickExtPointResponse $data): void
+    public function setData(?VoucherDisuseExtPointResponse $data): void
     {
         $this->data = $data;
     }

@@ -22,19 +22,19 @@ class ExtActivityParam implements \JsonSerializable {
      * 活动插件类型，如第二件半价（115）、限时折扣（11）、满减送（101）等
      * @var int
      */
-    private $appType;
+    private $activityType;
 
     /**
      * 活动店铺ID
      * @var int
      */
-    private $shopId;
+    private $kdtId;
 
     /**
      * 活动别名
      * @var string
      */
-    private $alias;
+    private $activityAlias;
 
     /**
      * 活动状态，正常（0）、删除（1）、失效（2）
@@ -93,49 +93,49 @@ class ExtActivityParam implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getAppType(): ?int
+    public function getActivityType(): ?int
     {
-        return $this->appType;
+        return $this->activityType;
     }
 
     /**
-     * @param int $appType
+     * @param int $activityType
      */
-    public function setAppType(?int $appType): void
+    public function setActivityType(?int $activityType): void
     {
-        $this->appType = $appType;
+        $this->activityType = $activityType;
     }
 
     /**
      * @return int
      */
-    public function getShopId(): ?int
+    public function getKdtId(): ?int
     {
-        return $this->shopId;
+        return $this->kdtId;
     }
 
     /**
-     * @param int $shopId
+     * @param int $kdtId
      */
-    public function setShopId(?int $shopId): void
+    public function setKdtId(?int $kdtId): void
     {
-        $this->shopId = $shopId;
+        $this->kdtId = $kdtId;
     }
 
     /**
      * @return string
      */
-    public function getAlias(): ?string
+    public function getActivityAlias(): ?string
     {
-        return $this->alias;
+        return $this->activityAlias;
     }
 
     /**
-     * @param string $alias
+     * @param string $activityAlias
      */
-    public function setAlias(?string $alias): void
+    public function setActivityAlias(?string $activityAlias): void
     {
-        $this->alias = $alias;
+        $this->activityAlias = $activityAlias;
     }
 
     /**
