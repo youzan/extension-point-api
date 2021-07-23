@@ -41,6 +41,12 @@ class VoucherQueryExtPointRequest implements \JsonSerializable {
      */
     private $rootKdtId;
 
+    /**
+     * 核销码
+     * @var string
+     */
+    private $verifyCode;
+
 
 
     /**
@@ -121,6 +127,22 @@ class VoucherQueryExtPointRequest implements \JsonSerializable {
     public function setRootKdtId(?int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVerifyCode(): ?string
+    {
+        return $this->verifyCode;
+    }
+
+    /**
+     * @param string $verifyCode
+     */
+    public function setVerifyCode(?string $verifyCode): void
+    {
+        $this->verifyCode = $verifyCode;
     }
 
     public function jsonSerialize() {

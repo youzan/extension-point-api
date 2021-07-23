@@ -84,6 +84,12 @@ class ThirdpartyVouchersDTO implements \JsonSerializable {
      */
     private $verifyCode;
 
+    /**
+     * 发放来源
+     * @var string
+     */
+    private $sendSource;
+
 
 
     /**
@@ -276,6 +282,22 @@ class ThirdpartyVouchersDTO implements \JsonSerializable {
     public function setVerifyCode(?string $verifyCode): void
     {
         $this->verifyCode = $verifyCode;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSendSource(): ?string
+    {
+        return $this->sendSource;
+    }
+
+    /**
+     * @param string $sendSource
+     */
+    public function setSendSource(?string $sendSource): void
+    {
+        $this->sendSource = $sendSource;
     }
 
     public function jsonSerialize() {

@@ -12,16 +12,10 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 class VoucherIdentityExtPointDTO implements \JsonSerializable {
 
     /**
-     * 外部凭证id
-     * @var int
-     */
-    private $thirdVoucherId;
-
-    /**
      * 内部凭证id
      * @var int
      */
-    private $innerCouponId;
+    private $couponId;
 
     /**
      * 凭证类型
@@ -34,33 +28,17 @@ class VoucherIdentityExtPointDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getThirdVoucherId(): ?int
+    public function getCouponId(): ?int
     {
-        return $this->thirdVoucherId;
+        return $this->couponId;
     }
 
     /**
-     * @param int $thirdVoucherId
+     * @param int $couponId
      */
-    public function setThirdVoucherId(?int $thirdVoucherId): void
+    public function setCouponId(?int $couponId): void
     {
-        $this->thirdVoucherId = $thirdVoucherId;
-    }
-
-    /**
-     * @return int
-     */
-    public function getInnerCouponId(): ?int
-    {
-        return $this->innerCouponId;
-    }
-
-    /**
-     * @param int $innerCouponId
-     */
-    public function setInnerCouponId(?int $innerCouponId): void
-    {
-        $this->innerCouponId = $innerCouponId;
+        $this->couponId = $couponId;
     }
 
     /**
