@@ -13,13 +13,13 @@ use StdClass;
 class VoucherDisuseExtPointRequest implements \JsonSerializable {
 
     /**
-     * 当前店铺id
+     * 店铺id
      * @var int
      */
     private $kdtId;
 
     /**
-     * 总店id
+     * 总店店铺id
      * @var int
      */
     private $rootKdtId;
@@ -37,7 +37,7 @@ class VoucherDisuseExtPointRequest implements \JsonSerializable {
     private $voucherActivityId;
 
     /**
-     * 凭证对象
+     * 
      * @var VoucherIdentityExtPointDTO
      */
     private $voucherIdentity;
