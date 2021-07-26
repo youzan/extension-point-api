@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 use StdClass;
 
 /**
- * 
+ * 响应参数
  * @author Baymax
  * @create 2020-04-27 17:33:11.0
  */

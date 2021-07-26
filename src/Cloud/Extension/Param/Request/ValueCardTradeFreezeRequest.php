@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 
 
 /**
- * 
+ * 请求参数
  * @author Baymax
  * @create 2020-12-14 16:04:02.0
  */

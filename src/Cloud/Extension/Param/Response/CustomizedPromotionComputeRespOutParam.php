@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Extpoint;
+namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Com\Youzan\Cloud\Extension\Param\Extpoint\BrickExtPointResponse;
+use Com\Youzan\Cloud\Extension\Param\Response\CustomizedPromotionComputeResp;
 
 /**
- * 返回结果返回类
+ * 返回优惠减免信息返回类
  * @author Baymax
- * @create 2021-05-06 20:06:45.0
+ * @create 2021-07-08 11:43:47.0
  */
-class BrickExtPointResponseOutParam implements \JsonSerializable {
+class CustomizedPromotionComputeRespOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class BrickExtPointResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var BrickExtPointResponse
+     * @var CustomizedPromotionComputeResp
      */
     private $data;
 
@@ -84,17 +84,17 @@ class BrickExtPointResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return BrickExtPointResponse
+     * @return CustomizedPromotionComputeResp
      */
-    public function getData(): ?BrickExtPointResponse
+    public function getData(): ?CustomizedPromotionComputeResp
     {
         return $this->data;
     }
 
     /**
-     * @param BrickExtPointResponse $data
+     * @param CustomizedPromotionComputeResp $data
      */
-    public function setData(?BrickExtPointResponse $data): void
+    public function setData(?CustomizedPromotionComputeResp $data): void
     {
         $this->data = $data;
     }

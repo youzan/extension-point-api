@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Activity;
 use StdClass;
 
 /**
- * 
+ * 请求响应
  * @author Baymax
  * @create 2021-07-07 11:55:49.0
  */
@@ -18,13 +18,13 @@ class ActivitySyncThirdPartyExtPointResponse implements \JsonSerializable {
     private $isNeedSync;
 
     /**
-     * 
+     * 版本号
      * @var int
      */
     private $versionNo;
 
     /**
-     * 
+     * 扩展字段
      * @var stdClass
      */
     private $extMap;

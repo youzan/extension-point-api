@@ -6,7 +6,7 @@ use Com\Youzan\Cloud\Extension\Param\Model\UserDTO;
 use Com\Youzan\Cloud\Extension\Param\Model\GoodsDTO;
 
 /**
- * 
+ * 请求参数
  * @author Baymax
  * @create 2020-04-27 17:33:11.0
  */
@@ -37,13 +37,13 @@ class PointDeductionPromotionRequestDTO implements \JsonSerializable {
     private $orderTotalPay;
 
     /**
-     * 
+     * 用户信息
      * @var UserDTO
      */
     private $buyer;
 
     /**
-     * 
+     * 商品信息
      * @var array
      */
     private $goodsDTOList;

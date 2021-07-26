@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 use Com\Youzan\Cloud\Extension\Param\Model\PointDeductionPromotionResponseDTO;
 
 /**
- * 返回类
+ * 响应参数返回类
  * @author Baymax
  * @create 2020-04-27 17:33:11.0
  */

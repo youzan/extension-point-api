@@ -41,6 +41,12 @@ class CustomerIdentifyDTO implements \JsonSerializable {
      */
     private $nodeKdtId;
 
+    /**
+     * 手机号
+     * @var string
+     */
+    private $mobile;
+
 
 
     /**
@@ -121,6 +127,22 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     public function setNodeKdtId(?int $nodeKdtId): void
     {
         $this->nodeKdtId = $nodeKdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMobile(): ?string
+    {
+        return $this->mobile;
+    }
+
+    /**
+     * @param string $mobile
+     */
+    public function setMobile(?string $mobile): void
+    {
+        $this->mobile = $mobile;
     }
 
     public function jsonSerialize() {

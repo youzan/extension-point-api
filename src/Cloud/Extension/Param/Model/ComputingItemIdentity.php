@@ -5,46 +5,46 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 
 
 /**
- * 商品明细
+ * 减免的商品信息
  * @author Baymax
- * @create 2020-04-27 17:33:11.0
+ * @create 2021-07-08 11:43:47.0
  */
-class GoodsIdentityDTO implements \JsonSerializable {
+class ComputingItemIdentity implements \JsonSerializable {
 
     /**
-     * 商品id
+     * 商品ID
      * @var int
      */
-    private $goodsId;
+    private $itemId;
 
     /**
-     * 规格id
+     * 规格ID
      * @var int
      */
     private $skuId;
 
     /**
-     * 订单商品id
+     * 商品交易条目ID
      * @var int
      */
-    private $orderItemId;
+    private $businessId;
 
 
 
     /**
      * @return int
      */
-    public function getGoodsId(): ?int
+    public function getItemId(): ?int
     {
-        return $this->goodsId;
+        return $this->itemId;
     }
 
     /**
-     * @param int $goodsId
+     * @param int $itemId
      */
-    public function setGoodsId(?int $goodsId): void
+    public function setItemId(?int $itemId): void
     {
-        $this->goodsId = $goodsId;
+        $this->itemId = $itemId;
     }
 
     /**
@@ -66,17 +66,17 @@ class GoodsIdentityDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getOrderItemId(): ?int
+    public function getBusinessId(): ?int
     {
-        return $this->orderItemId;
+        return $this->businessId;
     }
 
     /**
-     * @param int $orderItemId
+     * @param int $businessId
      */
-    public function setOrderItemId(?int $orderItemId): void
+    public function setBusinessId(?int $businessId): void
     {
-        $this->orderItemId = $orderItemId;
+        $this->businessId = $businessId;
     }
 
     public function jsonSerialize() {

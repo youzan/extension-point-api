@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 
 
 /**
- * 
+ * 用户信息
  * @author Baymax
  * @create 2020-04-27 17:33:11.0
  */

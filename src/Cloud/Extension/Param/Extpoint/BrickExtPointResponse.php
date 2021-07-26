@@ -6,7 +6,7 @@ use StdClass;
 use Com\Youzan\Cloud\Extension\Param\Extpoint\GoodsResponse;
 
 /**
- * 
+ * 返回结果
  * @author Baymax
  * @create 2021-05-06 20:06:45.0
  */

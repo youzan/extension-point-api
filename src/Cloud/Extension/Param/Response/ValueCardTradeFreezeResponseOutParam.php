@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 use Com\Youzan\Cloud\Extension\Param\Response\ValueCardTradeFreezeResponse;
 
 /**
- * 返回类
+ * 返回参数返回类
  * @author Baymax
  * @create 2020-12-14 16:04:02.0
  */

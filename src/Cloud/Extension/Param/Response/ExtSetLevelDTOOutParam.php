@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Extpoint;
+namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Com\Youzan\Cloud\Extension\Param\Extpoint\BrickExtPointResponse;
+use Com\Youzan\Cloud\Extension\Param\Response\ExtSetLevelDTO;
 
 /**
- * 返回结果返回类
+ * 修改等级返回值返回类
  * @author Baymax
- * @create 2021-05-06 20:06:45.0
+ * @create 2021-07-09 13:21:54.0
  */
-class BrickExtPointResponseOutParam implements \JsonSerializable {
+class ExtSetLevelDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class BrickExtPointResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var BrickExtPointResponse
+     * @var ExtSetLevelDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class BrickExtPointResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return BrickExtPointResponse
+     * @return ExtSetLevelDTO
      */
-    public function getData(): ?BrickExtPointResponse
+    public function getData(): ?ExtSetLevelDTO
     {
         return $this->data;
     }
 
     /**
-     * @param BrickExtPointResponse $data
+     * @param ExtSetLevelDTO $data
      */
-    public function setData(?BrickExtPointResponse $data): void
+    public function setData(?ExtSetLevelDTO $data): void
     {
         $this->data = $data;
     }
