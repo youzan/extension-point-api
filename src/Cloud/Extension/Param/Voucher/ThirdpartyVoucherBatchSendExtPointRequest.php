@@ -3,6 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 
 use StdClass;
+use DateTime;
 
 /**
  * 
@@ -58,6 +59,36 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
      * @var stdClass
      */
     private $extMap;
+
+    /**
+     * 优惠类型：1现金；2折扣
+     * @var int
+     */
+    private $preferentialMode;
+
+    /**
+     * 优惠券面额：现金券单位分，折扣券:百分比
+     * @var int
+     */
+    private $value;
+
+    /**
+     * 发放来源;上游发券的来源,无枚举,有意义的英文
+     * @var string
+     */
+    private $sendSource;
+
+    /**
+     * 有效开始时间；单位秒
+     * @var int
+     */
+    private $validStartTime;
+
+    /**
+     * 有效结束时间，单位秒
+     * @var int
+     */
+    private $validEndTime;
 
 
 
@@ -187,6 +218,86 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
     public function setExtMap(?stdClass $extMap): void
     {
         $this->extMap = $extMap;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPreferentialMode(): ?int
+    {
+        return $this->preferentialMode;
+    }
+
+    /**
+     * @param int $preferentialMode
+     */
+    public function setPreferentialMode(?int $preferentialMode): void
+    {
+        $this->preferentialMode = $preferentialMode;
+    }
+
+    /**
+     * @return int
+     */
+    public function getValue(): ?int
+    {
+        return $this->value;
+    }
+
+    /**
+     * @param int $value
+     */
+    public function setValue(?int $value): void
+    {
+        $this->value = $value;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSendSource(): ?string
+    {
+        return $this->sendSource;
+    }
+
+    /**
+     * @param string $sendSource
+     */
+    public function setSendSource(?string $sendSource): void
+    {
+        $this->sendSource = $sendSource;
+    }
+
+    /**
+     * @return int
+     */
+    public function getValidStartTime(): ?int
+    {
+        return $this->validStartTime;
+    }
+
+    /**
+     * @param int $validStartTime
+     */
+    public function setValidStartTime(?int $validStartTime): void
+    {
+        $this->validStartTime = $validStartTime;
+    }
+
+    /**
+     * @return int
+     */
+    public function getValidEndTime(): ?int
+    {
+        return $this->validEndTime;
+    }
+
+    /**
+     * @param int $validEndTime
+     */
+    public function setValidEndTime(?int $validEndTime): void
+    {
+        $this->validEndTime = $validEndTime;
     }
 
     public function jsonSerialize() {

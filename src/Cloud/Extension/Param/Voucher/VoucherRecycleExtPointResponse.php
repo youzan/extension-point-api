@@ -18,13 +18,13 @@ class VoucherRecycleExtPointResponse implements \JsonSerializable {
     private $recycleResult;
 
     /**
-     * 
+     * 扩展信息
      * @var stdClass
      */
     private $extMap;
 
     /**
-     * 
+     * 版本号
      * @var int
      */
     private $versionNo;

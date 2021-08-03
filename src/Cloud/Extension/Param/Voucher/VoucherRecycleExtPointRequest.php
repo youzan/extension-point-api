@@ -37,19 +37,19 @@ class VoucherRecycleExtPointRequest implements \JsonSerializable {
     private $voucherActivityId;
 
     /**
-     * 
+     * 优惠券凭证信息
      * @var VoucherIdentityExtPointDTO
      */
     private $voucherIdentity;
 
     /**
-     * 
+     * 扩展点版本号
      * @var int
      */
     private $versionNo;
 
     /**
-     * 
+     * 扩展信息
      * @var stdClass
      */
     private $extMap;
