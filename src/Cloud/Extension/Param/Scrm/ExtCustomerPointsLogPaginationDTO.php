@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerPointsLogDTO;
 
 /**
- * 请求参数
+ * 响应参数
  * @author Baymax
  * @create 2018-11-04 21:41:34.0
  */
