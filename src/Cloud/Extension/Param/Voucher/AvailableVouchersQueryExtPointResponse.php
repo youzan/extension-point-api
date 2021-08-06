@@ -6,7 +6,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\ThirdpartyVoucheraDTO;
 use StdClass;
 
 /**
- * 
+ * 返回值
  * @author Baymax
  * @create 2020-02-12 16:35:41.0
  */

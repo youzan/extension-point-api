@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Voucher;
+namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
-use Com\Youzan\Cloud\Extension\Param\Voucher\AvailableVouchersQueryExtPointResponse;
+use Com\Youzan\Cloud\Extension\Param\Dto\GoodsNoCheckOpenModel;
 
 /**
- * 返回值返回类
+ * 返回类
  * @author Baymax
- * @create 2020-02-12 16:35:41.0
+ * @create 2021-08-06 11:24:17.0
  */
-class AvailableVouchersQueryExtPointResponseOutParam implements \JsonSerializable {
+class GoodsNoCheckOpenModelOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class AvailableVouchersQueryExtPointResponseOutParam implements \JsonSerializabl
 
     /**
      *
-     * @var AvailableVouchersQueryExtPointResponse
+     * @var GoodsNoCheckOpenModel
      */
     private $data;
 
@@ -84,17 +84,17 @@ class AvailableVouchersQueryExtPointResponseOutParam implements \JsonSerializabl
     }
 
     /**
-     * @return AvailableVouchersQueryExtPointResponse
+     * @return GoodsNoCheckOpenModel
      */
-    public function getData(): ?AvailableVouchersQueryExtPointResponse
+    public function getData(): ?GoodsNoCheckOpenModel
     {
         return $this->data;
     }
 
     /**
-     * @param AvailableVouchersQueryExtPointResponse $data
+     * @param GoodsNoCheckOpenModel $data
      */
-    public function setData(?AvailableVouchersQueryExtPointResponse $data): void
+    public function setData(?GoodsNoCheckOpenModel $data): void
     {
         $this->data = $data;
     }
