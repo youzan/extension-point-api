@@ -49,6 +49,12 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
      */
     private $logisticsType;
 
+    /**
+     * 是否采购单
+     * @var bool
+     */
+    private $purchaseOrder;
+
 
 
     /**
@@ -145,6 +151,22 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
     public function setLogisticsType(?int $logisticsType): void
     {
         $this->logisticsType = $logisticsType;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getPurchaseOrder(): ?bool
+    {
+        return $this->purchaseOrder;
+    }
+
+    /**
+     * @param bool $purchaseOrder
+     */
+    public function setPurchaseOrder(?bool $purchaseOrder): void
+    {
+        $this->purchaseOrder = $purchaseOrder;
     }
 
     public function jsonSerialize() {
