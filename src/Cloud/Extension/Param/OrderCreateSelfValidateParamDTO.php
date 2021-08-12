@@ -59,6 +59,12 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
      */
     private $bookKey;
 
+    /**
+     * 有赞连锁总部店铺id，仅供有赞连锁场景下使用。有赞平台生成，在有赞平台唯一，用于判断信息属于哪一个总部
+     * @var int
+     */
+    private $rootKdtId;
+
 
 
     /**
@@ -187,6 +193,22 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     public function setBookKey(?string $bookKey): void
     {
         $this->bookKey = $bookKey;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): ?int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(?int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {

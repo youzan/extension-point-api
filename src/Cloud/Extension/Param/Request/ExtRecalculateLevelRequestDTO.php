@@ -31,7 +31,7 @@ class ExtRecalculateLevelRequestDTO implements \JsonSerializable {
 
     /**
      * 用户id，有赞客户id，客户在有赞的唯一id。推荐使用  示例值：LnhGm4rh576452722916618240
-     * @var int
+     * @var string
      */
     private $yzOpenId;
 
@@ -86,17 +86,17 @@ class ExtRecalculateLevelRequestDTO implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getYzOpenId(): ?int
+    public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
     }
 
     /**
-     * @param int $yzOpenId
+     * @param string $yzOpenId
      */
-    public function setYzOpenId(?int $yzOpenId): void
+    public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }

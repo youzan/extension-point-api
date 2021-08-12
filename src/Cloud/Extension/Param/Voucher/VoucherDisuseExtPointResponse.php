@@ -7,15 +7,15 @@ use StdClass;
 /**
  * 
  * @author Baymax
- * @create 2021-07-21 23:20:35.0
+ * @create 2021-07-21 23:26:40.0
  */
-class VoucherRecycleExtPointResponse implements \JsonSerializable {
+class VoucherDisuseExtPointResponse implements \JsonSerializable {
 
     /**
-     * 回收结果
+     * 作废结果
      * @var bool
      */
-    private $recycleResult;
+    private $disuseResult;
 
     /**
      * 扩展信息
@@ -34,17 +34,17 @@ class VoucherRecycleExtPointResponse implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getRecycleResult(): ?bool
+    public function getDisuseResult(): ?bool
     {
-        return $this->recycleResult;
+        return $this->disuseResult;
     }
 
     /**
-     * @param bool $recycleResult
+     * @param bool $disuseResult
      */
-    public function setRecycleResult(?bool $recycleResult): void
+    public function setDisuseResult(?bool $disuseResult): void
     {
-        $this->recycleResult = $recycleResult;
+        $this->disuseResult = $disuseResult;
     }
 
     /**

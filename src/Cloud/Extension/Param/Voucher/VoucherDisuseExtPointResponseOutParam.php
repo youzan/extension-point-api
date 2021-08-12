@@ -2,14 +2,14 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 
-use Com\Youzan\Cloud\Extension\Param\Voucher\AvailableVouchersQueryExtPointResponse;
+use Com\Youzan\Cloud\Extension\Param\Voucher\VoucherDisuseExtPointResponse;
 
 /**
- * 返回值返回类
+ * 返回类
  * @author Baymax
- * @create 2020-02-12 16:35:41.0
+ * @create 2021-07-21 23:26:40.0
  */
-class AvailableVouchersQueryExtPointResponseOutParam implements \JsonSerializable {
+class VoucherDisuseExtPointResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class AvailableVouchersQueryExtPointResponseOutParam implements \JsonSerializabl
 
     /**
      *
-     * @var AvailableVouchersQueryExtPointResponse
+     * @var VoucherDisuseExtPointResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class AvailableVouchersQueryExtPointResponseOutParam implements \JsonSerializabl
     }
 
     /**
-     * @return AvailableVouchersQueryExtPointResponse
+     * @return VoucherDisuseExtPointResponse
      */
-    public function getData(): ?AvailableVouchersQueryExtPointResponse
+    public function getData(): ?VoucherDisuseExtPointResponse
     {
         return $this->data;
     }
 
     /**
-     * @param AvailableVouchersQueryExtPointResponse $data
+     * @param VoucherDisuseExtPointResponse $data
      */
-    public function setData(?AvailableVouchersQueryExtPointResponse $data): void
+    public function setData(?VoucherDisuseExtPointResponse $data): void
     {
         $this->data = $data;
     }

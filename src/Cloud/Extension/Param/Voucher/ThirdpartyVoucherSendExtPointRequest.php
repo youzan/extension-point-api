@@ -79,13 +79,13 @@ class ThirdpartyVoucherSendExtPointRequest implements \JsonSerializable {
     private $sendSource;
 
     /**
-     * 有效开始时间
+     * 有效开始时间；单位秒
      * @var int
      */
     private $validStartTime;
 
     /**
-     * 有效结束时间
+     * 有效结束时间，单位秒
      * @var int
      */
     private $validEndTime;

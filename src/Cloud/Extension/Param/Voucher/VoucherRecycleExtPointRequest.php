@@ -8,18 +8,18 @@ use StdClass;
 /**
  * 
  * @author Baymax
- * @create 2021-07-21 23:20:35.0
+ * @create 2021-07-26 14:40:12.0
  */
-class VoucherDisuseExtPointRequest implements \JsonSerializable {
+class VoucherRecycleExtPointRequest implements \JsonSerializable {
 
     /**
-     * 当前店铺id
+     * 店铺id
      * @var int
      */
     private $kdtId;
 
     /**
-     * 总店id
+     * 总店店铺id
      * @var int
      */
     private $rootKdtId;
@@ -37,13 +37,13 @@ class VoucherDisuseExtPointRequest implements \JsonSerializable {
     private $voucherActivityId;
 
     /**
-     * 凭证对象
+     * 优惠券凭证信息
      * @var VoucherIdentityExtPointDTO
      */
     private $voucherIdentity;
 
     /**
-     * 版本号
+     * 扩展点版本号
      * @var int
      */
     private $versionNo;

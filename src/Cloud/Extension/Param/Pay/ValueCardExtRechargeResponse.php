@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 
 
 /**
- * 返回参数
+ * 响应参数
  * @author Baymax
  * @create 2019-11-22 11:54:57.0
  */
@@ -72,13 +72,13 @@ class ValueCardExtRechargeResponse implements \JsonSerializable {
     private $balance;
 
     /**
-     * 卡内总本金余额，单位（分）
+     * 本金余额，单位（分）
      * @var int
      */
     private $principalDnom;
 
     /**
-     * 卡内总赠送金余额，单位（分）
+     * 赠送金余额，单位（分）
      * @var int
      */
     private $sumBonusDnom;

@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 外部券信息
  * @author Baymax
- * @create Wed Feb 12 16:35:56 CST 2020
+ * @create 2020-02-12 16:35:56.0
  */
 class ThirdpartyVouchersDTO implements \JsonSerializable {
 
@@ -83,6 +83,12 @@ class ThirdpartyVouchersDTO implements \JsonSerializable {
      * @var string
      */
     private $verifyCode;
+
+    /**
+     * 发放来源
+     * @var string
+     */
+    private $sendSource;
 
 
 
@@ -276,6 +282,22 @@ class ThirdpartyVouchersDTO implements \JsonSerializable {
     public function setVerifyCode(?string $verifyCode): void
     {
         $this->verifyCode = $verifyCode;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSendSource(): ?string
+    {
+        return $this->sendSource;
+    }
+
+    /**
+     * @param string $sendSource
+     */
+    public function setSendSource(?string $sendSource): void
+    {
+        $this->sendSource = $sendSource;
     }
 
     public function jsonSerialize() {
