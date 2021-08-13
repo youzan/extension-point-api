@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 use Com\Youzan\Cloud\Extension\Param\Pay\GiftPackInfoExtDTO;
 
 /**
- * 
+ * 储值信息
  * @author Baymax
  * @create 2019-11-22 15:09:19.0
  */

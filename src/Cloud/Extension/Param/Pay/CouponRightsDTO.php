@@ -30,7 +30,7 @@ class CouponRightsDTO implements \JsonSerializable {
     private $count;
 
     /**
-     * 活动状态
+     * 活动状态；1.有效 2.无库存 3.已过期 4.已失效 -1.已删除
      * @var int
      */
     private $status;

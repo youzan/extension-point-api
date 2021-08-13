@@ -9,7 +9,7 @@ use Com\Youzan\Cloud\Extension\Param\ExtPointUserMsgDTO;
 /**
  * 
  * @author Baymax
- * @create Mon Oct 08 11:32:37 CST 2018
+ * @create 2018-10-08 11:32:37.0
  */
 class ExtraFeeCalcParamDTO implements \JsonSerializable {
 
@@ -48,6 +48,12 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
      * @var int
      */
     private $logisticsType;
+
+    /**
+     * 是否采购单
+     * @var bool
+     */
+    private $purchaseOrder;
 
 
 
@@ -145,6 +151,22 @@ class ExtraFeeCalcParamDTO implements \JsonSerializable {
     public function setLogisticsType(?int $logisticsType): void
     {
         $this->logisticsType = $logisticsType;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getPurchaseOrder(): ?bool
+    {
+        return $this->purchaseOrder;
+    }
+
+    /**
+     * @param bool $purchaseOrder
+     */
+    public function setPurchaseOrder(?bool $purchaseOrder): void
+    {
+        $this->purchaseOrder = $purchaseOrder;
     }
 
     public function jsonSerialize() {
