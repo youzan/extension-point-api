@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-02-12 16:36:12.0
+ * @create Mon Mar 14 19:19:28 CST 2022
  */
 class VoucherRefundExtPointResponse implements \JsonSerializable {
 
@@ -30,7 +30,7 @@ class VoucherRefundExtPointResponse implements \JsonSerializable {
     private $idempotentSuccess;
 
     /**
-     * 
+     *  
      * @var bool
      */
     private $isSystemError;

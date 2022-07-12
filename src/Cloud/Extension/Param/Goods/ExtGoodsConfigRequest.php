@@ -2,12 +2,12 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Goods;
 
-
+use Java\Lang\Long;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-05-08 14:35:44.0
+ * @create Thu Jun 30 19:00:49 CST 2022
  */
 class ExtGoodsConfigRequest implements \JsonSerializable {
 
@@ -24,7 +24,7 @@ class ExtGoodsConfigRequest implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * 分销员openId
+     * 分销员yzopenId
      * @var string
      */
     private $dsOpenId;

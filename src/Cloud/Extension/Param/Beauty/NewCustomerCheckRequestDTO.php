@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Beauty;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create Fri Mar 20 17:16:03 CST 2020
+ * @create Mon Mar 14 18:58:29 CST 2022
  */
 class NewCustomerCheckRequestDTO implements \JsonSerializable {
 

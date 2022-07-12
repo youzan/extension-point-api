@@ -7,8 +7,8 @@ use Com\Youzan\Cloud\Extension\Param\Ext\RespDTOOutParam;
 
 interface DemoTestService {
 
-    public function hello(RequestDTO $request) : RespDTOOutParam;
-
     public function helloWorld(RequestDTO $request) : RespDTOOutParam;
+
+    public function hello(RequestDTO $request) : RespDTOOutParam;
 
 }

@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Dispatch\DispatchStaffInfoDTOOutParam;
 
 interface ConsultationDispatchService {
 
-    public function getDispatchStaff(DispatchStaffQueryDTO $request) : DispatchStaffInfoDTOOutParam;
+    public function getDispatchStaff(DispatchStaffQueryDTO $queryDTO) : DispatchStaffInfoDTOOutParam;
 
 }

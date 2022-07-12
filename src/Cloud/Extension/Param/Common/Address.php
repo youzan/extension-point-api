@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Common;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-03-19 10:50:21.0
+ * @create Mon Mar 14 16:51:11 CST 2022
  */
 class Address implements \JsonSerializable {
 

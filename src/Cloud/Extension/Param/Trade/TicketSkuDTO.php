@@ -7,15 +7,15 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 /**
  * 商品sku信息
  * @author Baymax
- * @create 2019-09-04 18:01:28.0
+ * @create Wed Apr 27 17:15:31 CST 2022
  */
 class TicketSkuDTO implements \JsonSerializable {
 
     /**
-     * 商品规格Id，微商城店铺商品规格标识（同一商品Id下，规格id唯一）
-     * @var int
+     * 商品编码
+     * @var string
      */
-    private $skuId;
+    private $skuCode;
 
     /**
      * 商品Id，有赞生成的店铺下商品唯一id，平台唯一
@@ -24,27 +24,27 @@ class TicketSkuDTO implements \JsonSerializable {
     private $goodsId;
 
     /**
-     * 商品编码
-     * @var string
+     * 商品规格Id，微商城店铺商品规格标识（同一商品Id下，规格id唯一）
+     * @var int
      */
-    private $skuCode;
+    private $skuId;
 
 
 
     /**
-     * @return int
+     * @return string
      */
-    public function getSkuId(): ?int
+    public function getSkuCode(): ?string
     {
-        return $this->skuId;
+        return $this->skuCode;
     }
 
     /**
-     * @param int $skuId
+     * @param string $skuCode
      */
-    public function setSkuId(?int $skuId): void
+    public function setSkuCode(?string $skuCode): void
     {
-        $this->skuId = $skuId;
+        $this->skuCode = $skuCode;
     }
 
     /**
@@ -64,19 +64,19 @@ class TicketSkuDTO implements \JsonSerializable {
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getSkuCode(): ?string
+    public function getSkuId(): ?int
     {
-        return $this->skuCode;
+        return $this->skuId;
     }
 
     /**
-     * @param string $skuCode
+     * @param int $skuId
      */
-    public function setSkuCode(?string $skuCode): void
+    public function setSkuId(?int $skuId): void
     {
-        $this->skuCode = $skuCode;
+        $this->skuId = $skuId;
     }
 
     public function jsonSerialize() {

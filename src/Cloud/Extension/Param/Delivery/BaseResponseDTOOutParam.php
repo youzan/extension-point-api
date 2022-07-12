@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Delivery;
 use Com\Youzan\Cloud\Extension\Param\Delivery\BaseResponseDTO;
 
 /**
- * 返回类
+ *  data必须返回值，不可以为空，失败时，success返回false返回类
  * @author Baymax
- * @create 2019-09-19 17:27:24.0
+ * @create Mon Feb 28 20:12:39 CST 2022
  */
 class BaseResponseDTOOutParam implements \JsonSerializable {
 

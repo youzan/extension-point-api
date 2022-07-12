@@ -5,53 +5,37 @@ namespace Com\Youzan\Cloud\Extension\Param\Store;
 use Com\Youzan\Cloud\Extension\Param\Store\DayCrossTimeSectionDTO;
 
 /**
- * 新版支持跨天的营业时间
+ * 营业时间信息
  * @author Baymax
  * @create 2021-05-25 19:58:33.0
  */
 class DayCrossBizTimeSettingDTO implements \JsonSerializable {
 
     /**
-     * 营业时间类型 1：一直营业，2：休息，3：特定时间段营业
-     * @var int
-     */
-    private $type;
-
-    /**
-     * 只允许营业时间下单
+     * 只允许营业时间下单，只有为true时，自定义营业时间才生效
      * @var bool
      */
     private $onlyBusinessTimeOpen;
 
     /**
-     * 时间类型：1 全天，2 每天重复， 3 每周重复
-     * @var int
-     */
-    private $timeRangeType;
-
-    /**
-     * 网点营业时间
+     * 自定义营业时间段信息
      * @var array
      */
     private $openingTimeSections;
 
-
+    /**
+     * 营业类型，1: 营业中，2: 休息
+     * @var int
+     */
+    private $businessType;
 
     /**
-     * @return int
+     * 营业的时段类型，1: 全天、2:每天重复、3:每周重复，备注：2、3为自定义营业时间段类型
+     * @var int
      */
-    public function getType(): ?int
-    {
-        return $this->type;
-    }
+    private $timeRangeType;
 
-    /**
-     * @param int $type
-     */
-    public function setType(?int $type): void
-    {
-        $this->type = $type;
-    }
+
 
     /**
      * @return bool
@@ -70,22 +54,6 @@ class DayCrossBizTimeSettingDTO implements \JsonSerializable {
     }
 
     /**
-     * @return int
-     */
-    public function getTimeRangeType(): ?int
-    {
-        return $this->timeRangeType;
-    }
-
-    /**
-     * @param int $timeRangeType
-     */
-    public function setTimeRangeType(?int $timeRangeType): void
-    {
-        $this->timeRangeType = $timeRangeType;
-    }
-
-    /**
      * @return array
      */
     public function getOpeningTimeSections(): ?array
@@ -99,6 +67,38 @@ class DayCrossBizTimeSettingDTO implements \JsonSerializable {
     public function setOpeningTimeSections(?array $openingTimeSections): void
     {
         $this->openingTimeSections = $openingTimeSections;
+    }
+
+    /**
+     * @return int
+     */
+    public function getBusinessType(): ?int
+    {
+        return $this->businessType;
+    }
+
+    /**
+     * @param int $businessType
+     */
+    public function setBusinessType(?int $businessType): void
+    {
+        $this->businessType = $businessType;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTimeRangeType(): ?int
+    {
+        return $this->timeRangeType;
+    }
+
+    /**
+     * @param int $timeRangeType
+     */
+    public function setTimeRangeType(?int $timeRangeType): void
+    {
+        $this->timeRangeType = $timeRangeType;
     }
 
     public function jsonSerialize() {

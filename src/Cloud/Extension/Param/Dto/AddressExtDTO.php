@@ -7,33 +7,21 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 /**
  * 自提点地址信息对象
  * @author Baymax
- * @create 2021-01-22 10:18:32.0
+ * @create Mon Jun 13 14:59:19 CST 2022
  */
 class AddressExtDTO implements \JsonSerializable {
 
     /**
-     * 省
+     * 纬度仅支持百度坐标系
      * @var string
      */
-    private $province;
+    private $lat;
 
     /**
-     * 市
+     * 经度仅支持百度坐标系
      * @var string
      */
-    private $city;
-
-    /**
-     * 区
-     * @var string
-     */
-    private $district;
-
-    /**
-     * 地区id，详情可以使用该接口获取：https://doc.youzanyun.com/detail/API/0/187
-     * @var string
-     */
-    private $regionId;
+    private $lng;
 
     /**
      * 详细地址
@@ -42,97 +30,39 @@ class AddressExtDTO implements \JsonSerializable {
     private $address;
 
     /**
-     * 经度（百度系）
+     * 区名
      * @var string
      */
-    private $lng;
+    private $countyName;
 
     /**
-     * 纬度（百度系）
+     * 省名
      * @var string
      */
-    private $lat;
+    private $provinceName;
+
+    /**
+     * 城市名
+     * @var string
+     */
+    private $cityName;
 
 
 
     /**
      * @return string
      */
-    public function getProvince(): ?string
+    public function getLat(): ?string
     {
-        return $this->province;
+        return $this->lat;
     }
 
     /**
-     * @param string $province
+     * @param string $lat
      */
-    public function setProvince(?string $province): void
+    public function setLat(?string $lat): void
     {
-        $this->province = $province;
-    }
-
-    /**
-     * @return string
-     */
-    public function getCity(): ?string
-    {
-        return $this->city;
-    }
-
-    /**
-     * @param string $city
-     */
-    public function setCity(?string $city): void
-    {
-        $this->city = $city;
-    }
-
-    /**
-     * @return string
-     */
-    public function getDistrict(): ?string
-    {
-        return $this->district;
-    }
-
-    /**
-     * @param string $district
-     */
-    public function setDistrict(?string $district): void
-    {
-        $this->district = $district;
-    }
-
-    /**
-     * @return string
-     */
-    public function getRegionId(): ?string
-    {
-        return $this->regionId;
-    }
-
-    /**
-     * @param string $regionId
-     */
-    public function setRegionId(?string $regionId): void
-    {
-        $this->regionId = $regionId;
-    }
-
-    /**
-     * @return string
-     */
-    public function getAddress(): ?string
-    {
-        return $this->address;
-    }
-
-    /**
-     * @param string $address
-     */
-    public function setAddress(?string $address): void
-    {
-        $this->address = $address;
+        $this->lat = $lat;
     }
 
     /**
@@ -154,17 +84,65 @@ class AddressExtDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getLat(): ?string
+    public function getAddress(): ?string
     {
-        return $this->lat;
+        return $this->address;
     }
 
     /**
-     * @param string $lat
+     * @param string $address
      */
-    public function setLat(?string $lat): void
+    public function setAddress(?string $address): void
     {
-        $this->lat = $lat;
+        $this->address = $address;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCountyName(): ?string
+    {
+        return $this->countyName;
+    }
+
+    /**
+     * @param string $countyName
+     */
+    public function setCountyName(?string $countyName): void
+    {
+        $this->countyName = $countyName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getProvinceName(): ?string
+    {
+        return $this->provinceName;
+    }
+
+    /**
+     * @param string $provinceName
+     */
+    public function setProvinceName(?string $provinceName): void
+    {
+        $this->provinceName = $provinceName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCityName(): ?string
+    {
+        return $this->cityName;
+    }
+
+    /**
+     * @param string $cityName
+     */
+    public function setCityName(?string $cityName): void
+    {
+        $this->cityName = $cityName;
     }
 
     public function jsonSerialize() {

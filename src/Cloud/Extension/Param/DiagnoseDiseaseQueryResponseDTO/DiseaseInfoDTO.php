@@ -5,20 +5,20 @@ namespace Com\Youzan\Cloud\Extension\Param\DiagnoseDiseaseQueryResponseDTO;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2021-04-11 16:24:33.0
+ * @create Tue Jun 07 11:00:15 CST 2022
  */
 class DiseaseInfoDTO implements \JsonSerializable {
 
     /**
-     * 
+     *  疾病ICD编码
      * @var string
      */
     private $diseaseCode;
 
     /**
-     * 
+     *  疾病名称
      * @var string
      */
     private $diseaseName;

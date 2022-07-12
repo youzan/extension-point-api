@@ -6,9 +6,9 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\CustomerIdentifyDTO;
 use Com\Youzan\Cloud\Extension\Param\Scrm\MemberProfileModifyDTO;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2018-09-29 21:39:22.0
+ * @create Fri Feb 18 16:18:39 CST 2022
  */
 class ModifyMemberRequestDTO implements \JsonSerializable {
 

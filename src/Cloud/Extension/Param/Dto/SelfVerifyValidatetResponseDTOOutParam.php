@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 use Com\Youzan\Cloud\Extension\Param\Dto\SelfVerifyValidatetResponseDTO;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2020-12-23 10:44:38.0
+ * @create Thu Jan 13 22:36:02 CST 2022
  */
 class SelfVerifyValidatetResponseDTOOutParam implements \JsonSerializable {
 

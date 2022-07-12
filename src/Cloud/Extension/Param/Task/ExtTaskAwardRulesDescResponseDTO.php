@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Task;
 use Com\Youzan\Cloud\Extension\Param\Task\ExtTaskAwardRulesDesc;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-06-16 20:15:41.0
+ * @create Mon Mar 14 16:50:32 CST 2022
  */
 class ExtTaskAwardRulesDescResponseDTO implements \JsonSerializable {
 

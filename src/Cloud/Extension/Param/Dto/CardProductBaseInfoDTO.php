@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-03-24 11:29:24.0
+ * @create Mon Mar 14 19:11:44 CST 2022
  */
 class CardProductBaseInfoDTO implements \JsonSerializable {
 

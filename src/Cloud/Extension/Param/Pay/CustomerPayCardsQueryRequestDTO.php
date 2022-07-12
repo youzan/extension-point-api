@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 use Com\Youzan\Cloud\Extension\Param\Pay\ItemContext;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-04-30 10:42:54.0
+ * @create Mon Mar 14 17:35:47 CST 2022
  */
 class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
 
@@ -16,30 +16,6 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
      * @var int
      */
     private $buyerId;
-
-    /**
-     * 店铺id
-     * @var int
-     */
-    private $kdtId;
-
-    /**
-     * 店铺类型
-     * @var int
-     */
-    private $shopType;
-
-    /**
-     * 
-     * @var array
-     */
-    private $items;
-
-    /**
-     * 用户标识
-     * @var string
-     */
-    private $yzOpenId;
 
     /**
      * 用户手机号
@@ -53,12 +29,36 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
      */
     private $cardType;
 
+    /**
+     * 店铺类型
+     * @var int
+     */
+    private $shopType;
+
+    /**
+     *  
+     * @var array
+     */
+    private $items;
+
+    /**
+     * 店铺id
+     * @var int
+     */
+    private $kdtId;
+
+    /**
+     * 用户标识
+     * @var string
+     */
+    private $yzOpenId;
+
 
 
     /**
      * @return int
      */
-    public function getBuyerId(): int
+    public function getBuyerId(): ?int
     {
         return $this->buyerId;
     }
@@ -66,79 +66,15 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     /**
      * @param int $buyerId
      */
-    public function setBuyerId(int $buyerId): void
+    public function setBuyerId(?int $buyerId): void
     {
         $this->buyerId = $buyerId;
     }
 
     /**
-     * @return int
-     */
-    public function getKdtId(): int
-    {
-        return $this->kdtId;
-    }
-
-    /**
-     * @param int $kdtId
-     */
-    public function setKdtId(int $kdtId): void
-    {
-        $this->kdtId = $kdtId;
-    }
-
-    /**
-     * @return int
-     */
-    public function getShopType(): int
-    {
-        return $this->shopType;
-    }
-
-    /**
-     * @param int $shopType
-     */
-    public function setShopType(int $shopType): void
-    {
-        $this->shopType = $shopType;
-    }
-
-    /**
-     * @return array
-     */
-    public function getItems(): array
-    {
-        return $this->items;
-    }
-
-    /**
-     * @param array $items
-     */
-    public function setItems(array $items): void
-    {
-        $this->items = $items;
-    }
-
-    /**
      * @return string
      */
-    public function getYzOpenId(): string
-    {
-        return $this->yzOpenId;
-    }
-
-    /**
-     * @param string $yzOpenId
-     */
-    public function setYzOpenId(string $yzOpenId): void
-    {
-        $this->yzOpenId = $yzOpenId;
-    }
-
-    /**
-     * @return string
-     */
-    public function getUserPhone(): string
+    public function getUserPhone(): ?string
     {
         return $this->userPhone;
     }
@@ -146,7 +82,7 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     /**
      * @param string $userPhone
      */
-    public function setUserPhone(string $userPhone): void
+    public function setUserPhone(?string $userPhone): void
     {
         $this->userPhone = $userPhone;
     }
@@ -154,7 +90,7 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardType(): string
+    public function getCardType(): ?string
     {
         return $this->cardType;
     }
@@ -162,9 +98,73 @@ class CustomerPayCardsQueryRequestDTO implements \JsonSerializable {
     /**
      * @param string $cardType
      */
-    public function setCardType(string $cardType): void
+    public function setCardType(?string $cardType): void
     {
         $this->cardType = $cardType;
+    }
+
+    /**
+     * @return int
+     */
+    public function getShopType(): ?int
+    {
+        return $this->shopType;
+    }
+
+    /**
+     * @param int $shopType
+     */
+    public function setShopType(?int $shopType): void
+    {
+        $this->shopType = $shopType;
+    }
+
+    /**
+     * @return array
+     */
+    public function getItems(): ?array
+    {
+        return $this->items;
+    }
+
+    /**
+     * @param array $items
+     */
+    public function setItems(?array $items): void
+    {
+        $this->items = $items;
+    }
+
+    /**
+     * @return int
+     */
+    public function getKdtId(): ?int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(?int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getYzOpenId(): ?string
+    {
+        return $this->yzOpenId;
+    }
+
+    /**
+     * @param string $yzOpenId
+     */
+    public function setYzOpenId(?string $yzOpenId): void
+    {
+        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {

@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 响应参数
  * @author Baymax
- * @create 2020-04-27 17:33:11.0
+ * @create Mon Mar 14 17:00:42 CST 2022
  */
 class PointDeductionPromotionResponseDTO implements \JsonSerializable {
 

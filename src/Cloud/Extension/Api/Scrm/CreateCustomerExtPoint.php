@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\CreateCustomerResponseOutParam;
 
 interface CreateCustomerExtPoint {
 
-    public function execute(CreateCustomerRequestDTO $request) : CreateCustomerResponseOutParam;
+    public function execute(CreateCustomerRequestDTO $createCustomerRequest) : CreateCustomerResponseOutParam;
 
 }

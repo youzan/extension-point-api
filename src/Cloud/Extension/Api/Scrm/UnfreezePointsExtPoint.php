@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ResultOutParam;
 
 interface UnfreezePointsExtPoint {
 
-    public function invoke(ExtPointsUnfreezeDTO $request) : ResultOutParam;
+    public function invoke(ExtPointsUnfreezeDTO $extPointsUnfreezeDTO) : ResultOutParam;
 
 }

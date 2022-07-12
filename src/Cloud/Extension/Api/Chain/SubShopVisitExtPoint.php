@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Shop\ShopRouteResultOutParam;
 
 interface SubShopVisitExtPoint {
 
-    public function route(ShopEnterRequest $request) : ShopRouteResultOutParam;
+    public function route(ShopEnterRequest $gatewayRequest) : ShopRouteResultOutParam;
 
 }

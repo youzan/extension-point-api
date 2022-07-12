@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 /**
  * 店铺信息
  * @author Baymax
- * @create 2020-06-11 11:03:35.0
+ * @create Wed Apr 20 09:57:08 CST 2022
  */
 class ShopInfo implements \JsonSerializable {
 
@@ -22,6 +22,12 @@ class ShopInfo implements \JsonSerializable {
      * @var int
      */
     private $rootKdtId;
+
+    /**
+     * 多网点id
+     * @var int
+     */
+    private $offlineId;
 
 
 
@@ -55,6 +61,22 @@ class ShopInfo implements \JsonSerializable {
     public function setRootKdtId(?int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getOfflineId(): ?int
+    {
+        return $this->offlineId;
+    }
+
+    /**
+     * @param int $offlineId
+     */
+    public function setOfflineId(?int $offlineId): void
+    {
+        $this->offlineId = $offlineId;
     }
 
     public function jsonSerialize() {

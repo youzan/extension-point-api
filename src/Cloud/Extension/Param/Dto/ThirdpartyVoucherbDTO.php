@@ -6,9 +6,9 @@ use DateTime;
 use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-08-24 10:33:40.0
+ * @create Mon Mar 14 19:44:58 CST 2022
  */
 class ThirdpartyVoucherbDTO implements \JsonSerializable {
 
@@ -73,7 +73,7 @@ class ThirdpartyVoucherbDTO implements \JsonSerializable {
     private $verifyCode;
 
     /**
-     * 
+     *  
      * @var stdClass
      */
     private $extMap;

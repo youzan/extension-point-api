@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Cloud;
 /**
  * 响应体
  * @author Baymax
- * @create 2021-07-05 20:45:27.0
+ * @create Thu Jan 13 20:45:03 CST 2022
  */
 class DeliveryToWechatProcessResponse implements \JsonSerializable {
 

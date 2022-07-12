@@ -2,12 +2,12 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Task;
 
-
+use Java\Lang\Integer;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-06-16 20:15:41.0
+ * @create Mon Mar 14 16:50:32 CST 2022
  */
 class ExtTaskAwardRuleDescRequestDTO implements \JsonSerializable {
 

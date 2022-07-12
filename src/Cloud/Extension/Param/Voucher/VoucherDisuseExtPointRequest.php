@@ -6,9 +6,9 @@ use Com\Youzan\Cloud\Extension\Param\Dto\VoucherIdentityExtPointDTO;
 use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2021-07-21 23:20:35.0
+ * @create Thu Jan 13 20:57:14 CST 2022
  */
 class VoucherDisuseExtPointRequest implements \JsonSerializable {
 
@@ -53,6 +53,18 @@ class VoucherDisuseExtPointRequest implements \JsonSerializable {
      * @var stdClass
      */
     private $extMap;
+
+    /**
+     * 核销码
+     * @var string
+     */
+    private $verifyCode;
+
+    /**
+     * 请求id
+     * @var string
+     */
+    private $requestId;
 
 
 
@@ -166,6 +178,38 @@ class VoucherDisuseExtPointRequest implements \JsonSerializable {
     public function setExtMap(?stdClass $extMap): void
     {
         $this->extMap = $extMap;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVerifyCode(): ?string
+    {
+        return $this->verifyCode;
+    }
+
+    /**
+     * @param string $verifyCode
+     */
+    public function setVerifyCode(?string $verifyCode): void
+    {
+        $this->verifyCode = $verifyCode;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRequestId(): ?string
+    {
+        return $this->requestId;
+    }
+
+    /**
+     * @param string $requestId
+     */
+    public function setRequestId(?string $requestId): void
+    {
+        $this->requestId = $requestId;
     }
 
     public function jsonSerialize() {

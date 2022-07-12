@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerPointsLogPaginationDTO;
 /**
  * 响应参数返回类
  * @author Baymax
- * @create 2018-11-04 21:41:34.0
+ * @create Thu Jan 13 15:59:48 CST 2022
  */
 class ExtCustomerPointsLogPaginationDTOOutParam implements \JsonSerializable {
 

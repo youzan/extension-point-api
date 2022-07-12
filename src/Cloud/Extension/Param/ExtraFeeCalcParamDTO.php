@@ -7,9 +7,9 @@ use Com\Youzan\Cloud\Extension\Param\ItemCalcDTO;
 use Com\Youzan\Cloud\Extension\Param\ExtPointUserMsgDTO;
 
 /**
- * 
+ * 附加优惠请求
  * @author Baymax
- * @create 2018-10-08 11:32:37.0
+ * @create Wed Feb 23 17:15:19 CST 2022
  */
 class ExtraFeeCalcParamDTO implements \JsonSerializable {
 

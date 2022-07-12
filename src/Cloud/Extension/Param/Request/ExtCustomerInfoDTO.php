@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 
 
 /**
- * 账号信息
+ * 账户信息
  * @author Baymax
- * @create Tue Dec 15 20:43:56 CST 2020
+ * @create Fri Feb 11 14:15:14 CST 2022
  */
 class ExtCustomerInfoDTO implements \JsonSerializable {
 

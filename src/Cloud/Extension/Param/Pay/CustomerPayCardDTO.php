@@ -2,32 +2,14 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Pay;
 
-use DateTime;
+
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-04-30 11:01:58.0
+ * @create Mon Mar 14 17:35:47 CST 2022
  */
 class CustomerPayCardDTO implements \JsonSerializable {
-
-    /**
-     * 卡名称
-     * @var string
-     */
-    private $cardName;
-
-    /**
-     * 卡号
-     * @var string
-     */
-    private $cardNo;
-
-    /**
-     * 余额（分）
-     * @var int
-     */
-    private $balance;
 
     /**
      * 使用说明
@@ -54,6 +36,18 @@ class CustomerPayCardDTO implements \JsonSerializable {
     private $expireDate;
 
     /**
+     * 卡名称
+     * @var string
+     */
+    private $cardName;
+
+    /**
+     * 卡号
+     * @var string
+     */
+    private $cardNo;
+
+    /**
      * 背景图
      * @var string
      */
@@ -72,6 +66,12 @@ class CustomerPayCardDTO implements \JsonSerializable {
     private $cardType;
 
     /**
+     * 余额（分）
+     * @var int
+     */
+    private $balance;
+
+    /**
      * 本金余额，单位（分）
      * @var int
      */
@@ -83,66 +83,12 @@ class CustomerPayCardDTO implements \JsonSerializable {
      */
     private $sumBonusDnom;
 
-    /**
-     * 是否支持充值，true：支持，false：不支持
-     * @var bool
-     */
-    private $needRecharge;
-
 
 
     /**
      * @return string
      */
-    public function getCardName(): string
-    {
-        return $this->cardName;
-    }
-
-    /**
-     * @param string $cardName
-     */
-    public function setCardName(string $cardName): void
-    {
-        $this->cardName = $cardName;
-    }
-
-    /**
-     * @return string
-     */
-    public function getCardNo(): string
-    {
-        return $this->cardNo;
-    }
-
-    /**
-     * @param string $cardNo
-     */
-    public function setCardNo(string $cardNo): void
-    {
-        $this->cardNo = $cardNo;
-    }
-
-    /**
-     * @return int
-     */
-    public function getBalance(): int
-    {
-        return $this->balance;
-    }
-
-    /**
-     * @param int $balance
-     */
-    public function setBalance(int $balance): void
-    {
-        $this->balance = $balance;
-    }
-
-    /**
-     * @return string
-     */
-    public function getUseSpecification(): string
+    public function getUseSpecification(): ?string
     {
         return $this->useSpecification;
     }
@@ -150,7 +96,7 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @param string $useSpecification
      */
-    public function setUseSpecification(string $useSpecification): void
+    public function setUseSpecification(?string $useSpecification): void
     {
         $this->useSpecification = $useSpecification;
     }
@@ -158,7 +104,7 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @return bool
      */
-    public function getUsable(): bool
+    public function getUsable(): ?bool
     {
         return $this->usable;
     }
@@ -166,7 +112,7 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @param bool $usable
      */
-    public function setUsable(bool $usable): void
+    public function setUsable(?bool $usable): void
     {
         $this->usable = $usable;
     }
@@ -174,7 +120,7 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getUnusableReason(): string
+    public function getUnusableReason(): ?string
     {
         return $this->unusableReason;
     }
@@ -182,7 +128,7 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @param string $unusableReason
      */
-    public function setUnusableReason(string $unusableReason): void
+    public function setUnusableReason(?string $unusableReason): void
     {
         $this->unusableReason = $unusableReason;
     }
@@ -190,7 +136,7 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getExpireDate(): int
+    public function getExpireDate(): ?int
     {
         return $this->expireDate;
     }
@@ -198,7 +144,7 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @param int $expireDate
      */
-    public function setExpireDate(int $expireDate): void
+    public function setExpireDate(?int $expireDate): void
     {
         $this->expireDate = $expireDate;
     }
@@ -206,7 +152,39 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getBackgroundImage(): string
+    public function getCardName(): ?string
+    {
+        return $this->cardName;
+    }
+
+    /**
+     * @param string $cardName
+     */
+    public function setCardName(?string $cardName): void
+    {
+        $this->cardName = $cardName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCardNo(): ?string
+    {
+        return $this->cardNo;
+    }
+
+    /**
+     * @param string $cardNo
+     */
+    public function setCardNo(?string $cardNo): void
+    {
+        $this->cardNo = $cardNo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBackgroundImage(): ?string
     {
         return $this->backgroundImage;
     }
@@ -214,7 +192,7 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @param string $backgroundImage
      */
-    public function setBackgroundImage(string $backgroundImage): void
+    public function setBackgroundImage(?string $backgroundImage): void
     {
         $this->backgroundImage = $backgroundImage;
     }
@@ -222,7 +200,7 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardStatus(): string
+    public function getCardStatus(): ?string
     {
         return $this->cardStatus;
     }
@@ -230,7 +208,7 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @param string $cardStatus
      */
-    public function setCardStatus(string $cardStatus): void
+    public function setCardStatus(?string $cardStatus): void
     {
         $this->cardStatus = $cardStatus;
     }
@@ -238,7 +216,7 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getCardType(): string
+    public function getCardType(): ?string
     {
         return $this->cardType;
     }
@@ -246,7 +224,7 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @param string $cardType
      */
-    public function setCardType(string $cardType): void
+    public function setCardType(?string $cardType): void
     {
         $this->cardType = $cardType;
     }
@@ -254,7 +232,23 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPrincipalDnom(): int
+    public function getBalance(): ?int
+    {
+        return $this->balance;
+    }
+
+    /**
+     * @param int $balance
+     */
+    public function setBalance(?int $balance): void
+    {
+        $this->balance = $balance;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPrincipalDnom(): ?int
     {
         return $this->principalDnom;
     }
@@ -262,7 +256,7 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @param int $principalDnom
      */
-    public function setPrincipalDnom(int $principalDnom): void
+    public function setPrincipalDnom(?int $principalDnom): void
     {
         $this->principalDnom = $principalDnom;
     }
@@ -270,7 +264,7 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getSumBonusDnom(): int
+    public function getSumBonusDnom(): ?int
     {
         return $this->sumBonusDnom;
     }
@@ -278,25 +272,9 @@ class CustomerPayCardDTO implements \JsonSerializable {
     /**
      * @param int $sumBonusDnom
      */
-    public function setSumBonusDnom(int $sumBonusDnom): void
+    public function setSumBonusDnom(?int $sumBonusDnom): void
     {
         $this->sumBonusDnom = $sumBonusDnom;
-    }
-
-    /**
-     * @return bool
-     */
-    public function getNeedRecharge(): bool
-    {
-        return $this->needRecharge;
-    }
-
-    /**
-     * @param bool $needRecharge
-     */
-    public function setNeedRecharge(bool $needRecharge): void
-    {
-        $this->needRecharge = $needRecharge;
     }
 
     public function jsonSerialize() {

@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Activity;
 use StdClass;
 
 /**
- * 
+ * 请求参数
  * @author Baymax
- * @create 2020-02-12 16:36:21.0
+ * @create Mon Mar 14 19:14:33 CST 2022
  */
 class ActivityQueryExtPointRequest implements \JsonSerializable {
 

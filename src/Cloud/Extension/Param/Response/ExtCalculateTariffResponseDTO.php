@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\ExtCalculateTariffItemResponseDTO;
 /**
  * 出参
  * @author Baymax
- * @create 2020-12-24 11:30:20.0
+ * @create Mon Mar 14 15:52:00 CST 2022
  */
 class ExtCalculateTariffResponseDTO implements \JsonSerializable {
 

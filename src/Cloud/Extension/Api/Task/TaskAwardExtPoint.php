@@ -9,8 +9,8 @@ use Com\Youzan\Cloud\Extension\Param\Task\ExtTaskAwardRulesDescResponseDTOOutPar
 
 interface TaskAwardExtPoint {
 
-    public function getTaskAwardSendRules(ExtTaskAwardSendRulesRequestDTO $request) : ExtTaskAwardSendRulesResponseDTOOutParam;
+    public function getTaskAwardSendRules(ExtTaskAwardSendRulesRequestDTO $requestDTO) : ExtTaskAwardSendRulesResponseDTOOutParam;
 
-    public function getTaskAwardRulesDesc(ExtTaskAwardRuleDescRequestDTO $request) : ExtTaskAwardRulesDescResponseDTOOutParam;
+    public function getTaskAwardRulesDesc(ExtTaskAwardRuleDescRequestDTO $requestDTO) : ExtTaskAwardRulesDescResponseDTOOutParam;
 
 }

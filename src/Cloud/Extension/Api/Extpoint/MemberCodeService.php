@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Response\ExtMemberCodeDTOOutParam;
 
 interface MemberCodeService {
 
-    public function invoke(ExtGenMemberCodeDTO $request) : ExtMemberCodeDTOOutParam;
+    public function invoke(ExtGenMemberCodeDTO $genMemberCodeDTO) : ExtMemberCodeDTOOutParam;
 
 }

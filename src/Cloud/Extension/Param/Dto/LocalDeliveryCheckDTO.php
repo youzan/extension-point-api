@@ -2,12 +2,13 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
-
+use Java\Lang\Long;
+use Java\Lang\Integer;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2021-05-25 10:09:40.0
+ * @create Mon Mar 14 18:55:52 CST 2022
  */
 class LocalDeliveryCheckDTO implements \JsonSerializable {
 

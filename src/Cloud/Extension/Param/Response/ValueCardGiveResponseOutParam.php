@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 use Com\Youzan\Cloud\Extension\Param\Response\ValueCardGiveResponse;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2020-03-24 11:29:12.0
+ * @create Mon Mar 14 19:05:13 CST 2022
  */
 class ValueCardGiveResponseOutParam implements \JsonSerializable {
 

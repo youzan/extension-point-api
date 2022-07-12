@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\DeliveryItemMsgDTO;
 /**
  * 当前发货信息
  * @author Baymax
- * @create 2020-08-19 16:02:23.0
+ * @create Thu Jan 13 20:41:46 CST 2022
  */
 class CurrentDeliveryRequestDTO implements \JsonSerializable {
 

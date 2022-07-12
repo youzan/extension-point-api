@@ -3,11 +3,12 @@
 namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
 use Com\Youzan\Cloud\Extension\Param\Dto\ValueCardExtProductBuyDTO;
+use Com\Youzan\Cloud\Extension\Param\Dto\ValueCardExtValidTimeRuleDTO;
 
 /**
- * 
+ * 详细信息
  * @author Baymax
- * @create 2020-03-26 14:05:27.0
+ * @create Mon Mar 14 19:16:10 CST 2022
  */
 class ValueCardBuyDetailDTO implements \JsonSerializable {
 
@@ -40,6 +41,12 @@ class ValueCardBuyDetailDTO implements \JsonSerializable {
      * @var array
      */
     private $productInfos;
+
+    /**
+     * 卡模板有效期设置
+     * @var ValueCardExtValidTimeRuleDTO
+     */
+    private $validTimeRule;
 
 
 
@@ -121,6 +128,22 @@ class ValueCardBuyDetailDTO implements \JsonSerializable {
     public function setProductInfos(?array $productInfos): void
     {
         $this->productInfos = $productInfos;
+    }
+
+    /**
+     * @return ValueCardExtValidTimeRuleDTO
+     */
+    public function getValidTimeRule(): ?ValueCardExtValidTimeRuleDTO
+    {
+        return $this->validTimeRule;
+    }
+
+    /**
+     * @param ValueCardExtValidTimeRuleDTO $validTimeRule
+     */
+    public function setValidTimeRule(?ValueCardExtValidTimeRuleDTO $validTimeRule): void
+    {
+        $this->validTimeRule = $validTimeRule;
     }
 
     public function jsonSerialize() {

@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 use Com\Youzan\Cloud\Extension\Param\Voucher\VoucherUseRuleCheckExtPointResponse;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2020-05-18 16:24:01.0
+ * @create Mon Mar 14 19:39:09 CST 2022
  */
 class VoucherUseRuleCheckExtPointResponseOutParam implements \JsonSerializable {
 

@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2018-09-29 21:15:37.0
+ * @create Thu Feb 17 21:18:21 CST 2022
  */
 class CreateCustomerResponse implements \JsonSerializable {
 

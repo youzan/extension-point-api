@@ -2,12 +2,13 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 
+use Java\Lang\String;
 use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-07-29 19:10:31.0
+ * @create Thu Jan 13 20:50:59 CST 2022
  */
 class VoucherVerifyCodeGenerateExtPointResponse implements \JsonSerializable {
 
@@ -18,13 +19,13 @@ class VoucherVerifyCodeGenerateExtPointResponse implements \JsonSerializable {
     private $verifyCodes;
 
     /**
-     * 
+     *  
      * @var int
      */
     private $versionNo;
 
     /**
-     * 
+     *  
      * @var stdClass
      */
     private $extMap;

@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Shop;
 use Com\Youzan\Cloud\Extension\Param\Shop\ShopRouteResult;
 
 /**
- * 返回类
+ * 响应参数返回类
  * @author Baymax
- * @create 2020-08-10 16:52:53.0
+ * @create Mon Mar 14 16:49:17 CST 2022
  */
 class ShopRouteResultOutParam implements \JsonSerializable {
 

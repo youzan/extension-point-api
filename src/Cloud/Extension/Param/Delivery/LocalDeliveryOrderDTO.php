@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Delivery;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-09-19 18:12:19.0
+ * @create Thu Jan 13 23:12:22 CST 2022
  */
 class LocalDeliveryOrderDTO implements \JsonSerializable {
 

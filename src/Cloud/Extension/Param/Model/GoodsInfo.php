@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 /**
  * 商品基础信息
  * @author Baymax
- * @create 2020-06-11 11:03:35.0
+ * @create Wed Apr 20 09:57:08 CST 2022
  */
 class GoodsInfo implements \JsonSerializable {
 
@@ -40,6 +40,12 @@ class GoodsInfo implements \JsonSerializable {
      * @var int
      */
     private $num;
+
+    /**
+     * 商品编码
+     * @var string
+     */
+    private $itemsNo;
 
 
 
@@ -121,6 +127,22 @@ class GoodsInfo implements \JsonSerializable {
     public function setNum(?int $num): void
     {
         $this->num = $num;
+    }
+
+    /**
+     * @return string
+     */
+    public function getItemsNo(): ?string
+    {
+        return $this->itemsNo;
+    }
+
+    /**
+     * @param string $itemsNo
+     */
+    public function setItemsNo(?string $itemsNo): void
+    {
+        $this->itemsNo = $itemsNo;
     }
 
     public function jsonSerialize() {

@@ -79,7 +79,7 @@ class PayResponseDTO implements \JsonSerializable {
     private $attach;
 
     /**
-     * 扩展字段
+     * 扩展字段，有赞云支付返回的第三方url存放在awake_pay_url该字段中
      * @var stdClass
      */
     private $extra;

@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 活动信息
  * @author Baymax
- * @create 2020-02-12 16:36:21.0
+ * @create Mon Mar 14 19:14:33 CST 2022
  */
 class ThirdpartyActivityDTO implements \JsonSerializable {
 
@@ -24,7 +24,7 @@ class ThirdpartyActivityDTO implements \JsonSerializable {
     private $title;
 
     /**
-     * 1-代金券 2-折扣券
+     * 1-代金券； 2-折扣券；3-兑换券
      * @var int
      */
     private $preferentialMode;

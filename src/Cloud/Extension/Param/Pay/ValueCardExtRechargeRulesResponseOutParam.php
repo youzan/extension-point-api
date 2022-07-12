@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Pay\ValueCardExtRechargeRulesResponse;
 /**
  * 响应参数返回类
  * @author Baymax
- * @create 2019-11-22 12:15:26.0
+ * @create Mon Mar 14 17:57:37 CST 2022
  */
 class ValueCardExtRechargeRulesResponseOutParam implements \JsonSerializable {
 

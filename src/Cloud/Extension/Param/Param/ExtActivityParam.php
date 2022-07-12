@@ -6,9 +6,9 @@ use DateTime;
 use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2021-07-08 11:43:47.0
+ * @create Wed Feb 16 10:43:05 CST 2022
  */
 class ExtActivityParam implements \JsonSerializable {
 

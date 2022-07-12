@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Delivery;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-09-19 19:22:52.0
+ * @create Tue Jan 18 21:01:00 CST 2022
  */
 class LocalDeliveryGetDeductFeeResponseDTO implements \JsonSerializable {
 

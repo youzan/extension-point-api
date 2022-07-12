@@ -7,9 +7,9 @@ use DateTime;
 use Com\Youzan\Cloud\Extension\Param\Info\ShopMetaInfo;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-03-19 10:50:21.0
+ * @create Mon Mar 14 16:51:11 CST 2022
  */
 class SubShopVisitInfo implements \JsonSerializable {
 
@@ -50,7 +50,7 @@ class SubShopVisitInfo implements \JsonSerializable {
     private $joinType;
 
     /**
-     * 
+     *  
      * @var Address
      */
     private $address;

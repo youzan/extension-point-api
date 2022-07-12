@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Salesman;
 use Com\Youzan\Cloud\Extension\Param\Salesman\ExtItemCpsDetail;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-12-12 09:29:19.0
+ * @create Tue Mar 01 14:36:12 CST 2022
  */
 class ExtCpsCalculateResponse implements \JsonSerializable {
 
@@ -54,7 +54,7 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     private $bonusMoney;
 
     /**
-     * 
+     *  
      * @var array
      */
     private $items;

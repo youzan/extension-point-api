@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Res\RedirectUrlExtResDTOOutParam;
 
 interface RedirectUrlExtPoint {
 
-    public function getRedirectUrl(RedirectUrlExtReqDTO $request) : RedirectUrlExtResDTOOutParam;
+    public function getRedirectUrl(RedirectUrlExtReqDTO $redirectUrlExtReqDTO) : RedirectUrlExtResDTOOutParam;
 
 }

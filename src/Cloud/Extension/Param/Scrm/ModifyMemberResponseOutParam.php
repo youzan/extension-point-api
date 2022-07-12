@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 use Com\Youzan\Cloud\Extension\Param\Scrm\ModifyMemberResponse;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2018-09-29 21:39:22.0
+ * @create Fri Feb 18 16:18:39 CST 2022
  */
 class ModifyMemberResponseOutParam implements \JsonSerializable {
 

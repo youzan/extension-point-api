@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Response\ExtCalculateTariffResponseDTOOutPa
 
 interface OrderPriceCalculateExtPoint {
 
-    public function calculateTariff(ExtCalculateTariffRequestDTO $request) : ExtCalculateTariffResponseDTOOutParam;
+    public function calculateTariff(ExtCalculateTariffRequestDTO $extCalculateTariffRequestDTO) : ExtCalculateTariffResponseDTOOutParam;
 
 }

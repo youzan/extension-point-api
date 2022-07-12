@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Im;
 use Com\Youzan\Cloud\Extension\Param\Im\RobotMsgResponse;
 
 /**
- * 返回类
+ *  响应详情返回类
  * @author Baymax
- * @create 2019-10-08 18:23:13.0
+ * @create Mon Mar 14 17:52:14 CST 2022
  */
 class RobotMsgResponseOutParam implements \JsonSerializable {
 

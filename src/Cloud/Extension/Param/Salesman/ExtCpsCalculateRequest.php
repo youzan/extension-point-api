@@ -6,9 +6,9 @@ use Com\Youzan\Cloud\Extension\Param\Salesman\ExtOrderItemDTO;
 use Com\Youzan\Cloud\Extension\Param\Salesman\ExtPromotionDTO;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-12-12 09:29:19.0
+ * @create Tue Mar 01 14:36:12 CST 2022
  */
 class ExtCpsCalculateRequest implements \JsonSerializable {
 
@@ -67,7 +67,7 @@ class ExtCpsCalculateRequest implements \JsonSerializable {
     private $isFreePostage;
 
     /**
-     * 
+     *  
      * @var array
      */
     private $items;

@@ -7,7 +7,7 @@ use DateTime;
 /**
  * 返回参数
  * @author Baymax
- * @create 2019-11-22 15:16:12.0
+ * @create Mon Mar 14 19:29:34 CST 2022
  */
 class ValueCardExtRefundResponse implements \JsonSerializable {
 

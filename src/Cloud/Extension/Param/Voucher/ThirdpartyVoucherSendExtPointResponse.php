@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-02-12 16:36:42.0
+ * @create Mon Mar 14 19:21:37 CST 2022
  */
 class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
 

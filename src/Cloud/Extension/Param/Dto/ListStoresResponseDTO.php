@@ -2,8 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
-use Com\Youzan\Cloud\Extension\Param\Response\Paginator;
-use Com\Youzan\Cloud\Extension\Param\Dto\MultiStoreExtDTO;
+
 
 /**
  * 
@@ -13,49 +12,49 @@ use Com\Youzan\Cloud\Extension\Param\Dto\MultiStoreExtDTO;
 class ListStoresResponseDTO implements \JsonSerializable {
 
     /**
-     * 分页
-     * @var Paginator
-     */
-    private $paginator;
-
-    /**
-     * 网点列表详情
+     * 需要排除的网点id列表
      * @var array
      */
-    private $offline_list;
-
-
+    private $offlineIds;
 
     /**
-     * @return Paginator
+     * 业务处理信息
+     * @var string
      */
-    public function getPaginator(): ?Paginator
-    {
-        return $this->paginator;
-    }
+    private $message;
 
-    /**
-     * @param Paginator $paginator
-     */
-    public function setPaginator(?Paginator $paginator): void
-    {
-        $this->paginator = $paginator;
-    }
+
 
     /**
      * @return array
      */
-    public function getOffline_list(): ?array
+    public function getOfflineIds(): ?array
     {
-        return $this->offline_list;
+        return $this->offlineIds;
     }
 
     /**
-     * @param array $offline_list
+     * @param array $offlineIds
      */
-    public function setOffline_list(?array $offline_list): void
+    public function setOfflineIds(?array $offlineIds): void
     {
-        $this->offline_list = $offline_list;
+        $this->offlineIds = $offlineIds;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMessage(): ?string
+    {
+        return $this->message;
+    }
+
+    /**
+     * @param string $message
+     */
+    public function setMessage(?string $message): void
+    {
+        $this->message = $message;
     }
 
     public function jsonSerialize() {

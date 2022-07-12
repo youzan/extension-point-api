@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 /**
  * 商品优惠
  * @author Baymax
- * @create 2021-01-29 16:16:00.0
+ * @create Mon Mar 14 15:52:00 CST 2022
  */
 class ExtPointPromotionDTO implements \JsonSerializable {
 

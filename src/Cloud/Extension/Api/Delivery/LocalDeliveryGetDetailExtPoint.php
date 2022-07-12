@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Delivery\LocalDeliveryLocusDetailDTOOutPara
 
 interface LocalDeliveryGetDetailExtPoint {
 
-    public function handle(LocalDeliveryOrderIdDTO $request) : LocalDeliveryLocusDetailDTOOutParam;
+    public function handle(LocalDeliveryOrderIdDTO $orderIdDTO) : LocalDeliveryLocusDetailDTOOutParam;
 
 }

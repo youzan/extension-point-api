@@ -90,6 +90,12 @@ class PayRequestDTO implements \JsonSerializable {
      */
     private $extra;
 
+    /**
+     * 有赞交易侧订单号
+     * @var string
+     */
+    private $yzOutBizNo;
+
 
 
     /**
@@ -298,6 +304,22 @@ class PayRequestDTO implements \JsonSerializable {
     public function setExtra(?stdClass $extra): void
     {
         $this->extra = $extra;
+    }
+
+    /**
+     * @return string
+     */
+    public function getYzOutBizNo(): ?string
+    {
+        return $this->yzOutBizNo;
+    }
+
+    /**
+     * @param string $yzOutBizNo
+     */
+    public function setYzOutBizNo(?string $yzOutBizNo): void
+    {
+        $this->yzOutBizNo = $yzOutBizNo;
     }
 
     public function jsonSerialize() {

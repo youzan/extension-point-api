@@ -12,49 +12,71 @@ namespace Com\Youzan\Cloud\Extension\Param;
 class OrderItemDTO implements \JsonSerializable {
 
     /**
-     * 商品数量
+     * 子订单号
      * @var int
      */
-    private $quantity;
+    private $oid;
 
     /**
-     * 商品名称
-     * @var string
+     * 下单的商品数量
+     * @var int
      */
-    private $productName;
+    private $orderGoodsNum;
+
+    /**
+     * 实付金额
+     * @var int
+     */
+    private $realPay;
 
 
 
     /**
      * @return int
      */
-    public function getQuantity(): ?int
+    public function getOid(): ?int
     {
-        return $this->quantity;
+        return $this->oid;
     }
 
     /**
-     * @param int $quantity
+     * @param int $oid
      */
-    public function setQuantity(?int $quantity): void
+    public function setOid(?int $oid): void
     {
-        $this->quantity = $quantity;
+        $this->oid = $oid;
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getProductName(): ?string
+    public function getOrderGoodsNum(): ?int
     {
-        return $this->productName;
+        return $this->orderGoodsNum;
     }
 
     /**
-     * @param string $productName
+     * @param int $orderGoodsNum
      */
-    public function setProductName(?string $productName): void
+    public function setOrderGoodsNum(?int $orderGoodsNum): void
     {
-        $this->productName = $productName;
+        $this->orderGoodsNum = $orderGoodsNum;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRealPay(): ?int
+    {
+        return $this->realPay;
+    }
+
+    /**
+     * @param int $realPay
+     */
+    public function setRealPay(?int $realPay): void
+    {
+        $this->realPay = $realPay;
     }
 
     public function jsonSerialize() {

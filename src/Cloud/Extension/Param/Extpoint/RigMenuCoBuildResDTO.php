@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Extpoint;
 use Com\Youzan\Cloud\Extension\Param\Extpoint\InsertOptMenuEntity;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-09-01 17:22:42.0
+ * @create Tue May 17 11:37:25 CST 2022
  */
 class RigMenuCoBuildResDTO implements \JsonSerializable {
 
@@ -24,7 +24,7 @@ class RigMenuCoBuildResDTO implements \JsonSerializable {
     private $bizCode;
 
     /**
-     * 
+     *  
      * @var InsertOptMenuEntity
      */
     private $insertOpt;

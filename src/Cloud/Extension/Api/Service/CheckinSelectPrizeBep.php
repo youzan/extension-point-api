@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Dto\CheckinSelectPrizeDTOOutParam;
 
 interface CheckinSelectPrizeBep {
 
-    public function invoke(CheckinSelectPrizeParam $request) : CheckinSelectPrizeDTOOutParam;
+    public function invoke(CheckinSelectPrizeParam $param) : CheckinSelectPrizeDTOOutParam;
 
 }

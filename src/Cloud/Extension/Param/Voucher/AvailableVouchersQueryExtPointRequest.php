@@ -2,12 +2,13 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 
+use Java\Lang\Long;
 use StdClass;
 
 /**
  * 请求
  * @author Baymax
- * @create 2020-02-12 16:35:41.0
+ * @create Mon Mar 14 19:24:32 CST 2022
  */
 class AvailableVouchersQueryExtPointRequest implements \JsonSerializable {
 

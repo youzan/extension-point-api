@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 
 
 /**
- * 
+ * 请求参数
  * @author Baymax
- * @create 2020-03-24 10:56:53.0
+ * @create Mon Mar 14 19:16:10 CST 2022
  */
 class ValueCardBuyDetailRequest implements \JsonSerializable {
 
@@ -18,7 +18,7 @@ class ValueCardBuyDetailRequest implements \JsonSerializable {
     private $yzOpenId;
 
     /**
-     * SPU编号（商品级别,调用方生成,长度不得大于24）
+     * SPU编号（商品级别,调用方生成,长度不得大于24），仅支持填写数字
      * @var string
      */
     private $productSpuNo;

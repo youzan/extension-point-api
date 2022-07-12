@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 use Com\Youzan\Cloud\Extension\Param\Pay\CustomerPayCardDTO;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-04-30 11:01:58.0
+ * @create Mon Mar 14 17:35:47 CST 2022
  */
 class QueryCustomerPayCardResponseDTO implements \JsonSerializable {
 
     /**
-     * 
+     *  
      * @var array
      */
     private $cardList;
@@ -22,7 +22,7 @@ class QueryCustomerPayCardResponseDTO implements \JsonSerializable {
     /**
      * @return array
      */
-    public function getCardList(): array
+    public function getCardList(): ?array
     {
         return $this->cardList;
     }
@@ -30,7 +30,7 @@ class QueryCustomerPayCardResponseDTO implements \JsonSerializable {
     /**
      * @param array $cardList
      */
-    public function setCardList(array $cardList): void
+    public function setCardList(?array $cardList): void
     {
         $this->cardList = $cardList;
     }

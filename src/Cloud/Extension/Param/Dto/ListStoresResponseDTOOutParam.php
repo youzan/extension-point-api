@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 use Com\Youzan\Cloud\Extension\Param\Dto\ListStoresResponseDTO;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2021-05-25 19:58:33.0
+ * @create Thu Feb 10 13:18:43 CST 2022
  */
 class ListStoresResponseDTOOutParam implements \JsonSerializable {
 

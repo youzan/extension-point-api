@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerLevelDTO;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2018-10-12 14:13:44.0
+ * @create Fri Jan 07 11:35:06 CST 2022
  */
 class ExtCustomerLevelListDTO implements \JsonSerializable {
 

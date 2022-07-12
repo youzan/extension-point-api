@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 use Com\Youzan\Cloud\Extension\Param\Response\ExtMpAccountInfoDTO;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2021-02-24 17:14:34.0
+ * @create Thu Jan 13 22:16:38 CST 2022
  */
 class ExtMpAccountInfoDTOOutParam implements \JsonSerializable {
 

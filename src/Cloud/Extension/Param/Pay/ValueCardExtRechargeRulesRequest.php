@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 /**
  * 请求参数
  * @author Baymax
- * @create 2019-11-22 12:15:25.0
+ * @create Mon Mar 14 17:57:37 CST 2022
  */
 class ValueCardExtRechargeRulesRequest implements \JsonSerializable {
 
@@ -36,16 +36,16 @@ class ValueCardExtRechargeRulesRequest implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * 有赞开放ID
-     * @var string
-     */
-    private $yzOpenId;
-
-    /**
      * 总部店铺ID
      * @var int
      */
     private $rootKdtId;
+
+    /**
+     *  
+     * @var string
+     */
+    private $yzOpenId;
 
 
 
@@ -114,22 +114,6 @@ class ValueCardExtRechargeRulesRequest implements \JsonSerializable {
     }
 
     /**
-     * @return string
-     */
-    public function getYzOpenId(): ?string
-    {
-        return $this->yzOpenId;
-    }
-
-    /**
-     * @param string $yzOpenId
-     */
-    public function setYzOpenId(?string $yzOpenId): void
-    {
-        $this->yzOpenId = $yzOpenId;
-    }
-
-    /**
      * @return int
      */
     public function getRootKdtId(): ?int
@@ -143,6 +127,22 @@ class ValueCardExtRechargeRulesRequest implements \JsonSerializable {
     public function setRootKdtId(?int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getYzOpenId(): ?string
+    {
+        return $this->yzOpenId;
+    }
+
+    /**
+     * @param string $yzOpenId
+     */
+    public function setYzOpenId(?string $yzOpenId): void
+    {
+        $this->yzOpenId = $yzOpenId;
     }
 
     public function jsonSerialize() {

@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\CheckinSelectPrizeParam\CheckinSelectPrizeR
 /**
  * {}
  * @author Baymax
- * @create 2021-06-28 23:33:49.0
+ * @create Thu Jan 13 20:34:38 CST 2022
  */
 class CheckinSelectPrizeParam implements \JsonSerializable {
 
@@ -38,7 +38,7 @@ class CheckinSelectPrizeParam implements \JsonSerializable {
 
     /**
      * 用户openId
-     * @var int
+     * @var string
      */
     private $yzOpenId;
 
@@ -115,17 +115,17 @@ class CheckinSelectPrizeParam implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getYzOpenId(): ?int
+    public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
     }
 
     /**
-     * @param int $yzOpenId
+     * @param string $yzOpenId
      */
-    public function setYzOpenId(?int $yzOpenId): void
+    public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }

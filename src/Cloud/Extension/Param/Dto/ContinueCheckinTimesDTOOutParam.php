@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\ContinueCheckinTimesDTO;
 /**
  * {}返回类
  * @author Baymax
- * @create 2021-06-29 00:52:59.0
+ * @create Thu Jan 13 20:33:20 CST 2022
  */
 class ContinueCheckinTimesDTOOutParam implements \JsonSerializable {
 

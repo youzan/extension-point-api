@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 use Com\Youzan\Cloud\Extension\Param\Trade\CreateTicketResponseDTO;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2019-09-04 18:01:28.0
+ * @create Wed Apr 27 17:15:31 CST 2022
  */
 class CreateTicketResponseDTOOutParam implements \JsonSerializable {
 

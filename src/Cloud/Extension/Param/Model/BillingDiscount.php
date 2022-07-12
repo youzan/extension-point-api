@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Model\Goods;
 /**
  * 优惠详情
  * @author Baymax
- * @create 2020-06-11 11:03:35.0
+ * @create Wed Apr 20 09:57:08 CST 2022
  */
 class BillingDiscount implements \JsonSerializable {
 

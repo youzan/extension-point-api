@@ -6,26 +6,26 @@ use Com\Youzan\Cloud\Extension\Param\Dto\CloudVerifyVoucherDTO;
 use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-05-18 16:24:01.0
+ * @create Mon Mar 14 19:39:09 CST 2022
  */
 class VoucherUseRuleCheckExtPointResponse implements \JsonSerializable {
 
     /**
-     * 
+     *  
      * @var array
      */
     private $cloudVerifyVoucherList;
 
     /**
-     * 
+     *  
      * @var int
      */
     private $versionNo;
 
     /**
-     * 
+     *  
      * @var stdClass
      */
     private $extMap;

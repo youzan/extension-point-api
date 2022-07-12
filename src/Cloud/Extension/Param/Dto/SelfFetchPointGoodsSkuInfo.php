@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 /**
  * 商品的sku信息
  * @author Baymax
- * @create 2021-03-29 20:13:54.0
+ * @create Mon Jun 13 14:59:19 CST 2022
  */
 class SelfFetchPointGoodsSkuInfo implements \JsonSerializable {
 
@@ -18,7 +18,7 @@ class SelfFetchPointGoodsSkuInfo implements \JsonSerializable {
     private $sku_id;
 
     /**
-     * 商品的sku规格编码
+     * 商品的skuNo(需要在商家后台配置对应的规格编码才能使用)
      * @var string
      */
     private $sku_no;

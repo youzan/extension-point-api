@@ -2,12 +2,12 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
-
+use Java\Lang\Long;
 
 /**
  * {}
  * @author Baymax
- * @create 2021-06-28 23:33:49.0
+ * @create Thu Jan 13 20:34:38 CST 2022
  */
 class CheckinSelectPrizeDTO implements \JsonSerializable {
 

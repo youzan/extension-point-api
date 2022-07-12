@@ -5,29 +5,23 @@ namespace Com\Youzan\Cloud\Extension\Param\Store;
 
 
 /**
- * 
+ * 自定义营业，具体时间段范围（单位小时分钟），支持多段范围
  * @author Baymax
  * @create 2021-05-25 19:58:33.0
  */
 class TimeSectionDTO implements \JsonSerializable {
 
     /**
-     * 开始时间，格式：HH:mm
+     * 开始时间点
      * @var string
      */
     private $openTime;
 
     /**
-     * 结束时间，格式：HH:mm
+     * 结束时间点
      * @var string
      */
     private $closeTime;
-
-    /**
-     * 是否跨天 0 否 1 是
-     * @var int
-     */
-    private $dayCross;
 
 
 
@@ -61,22 +55,6 @@ class TimeSectionDTO implements \JsonSerializable {
     public function setCloseTime(?string $closeTime): void
     {
         $this->closeTime = $closeTime;
-    }
-
-    /**
-     * @return int
-     */
-    public function getDayCross(): ?int
-    {
-        return $this->dayCross;
-    }
-
-    /**
-     * @param int $dayCross
-     */
-    public function setDayCross(?int $dayCross): void
-    {
-        $this->dayCross = $dayCross;
     }
 
     public function jsonSerialize() {

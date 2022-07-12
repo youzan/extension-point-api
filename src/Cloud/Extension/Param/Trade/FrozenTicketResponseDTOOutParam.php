@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 use Com\Youzan\Cloud\Extension\Param\Trade\FrozenTicketResponseDTO;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2019-07-23 19:47:34.0
+ * @create Tue Mar 01 18:44:44 CST 2022
  */
 class FrozenTicketResponseDTOOutParam implements \JsonSerializable {
 

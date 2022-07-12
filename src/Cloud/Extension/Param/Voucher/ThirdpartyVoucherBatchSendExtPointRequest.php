@@ -6,9 +6,9 @@ use StdClass;
 use DateTime;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-08-24 10:33:40.0
+ * @create Mon Mar 14 19:44:58 CST 2022
  */
 class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
 
@@ -55,7 +55,7 @@ class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
     private $versionNo;
 
     /**
-     * 
+     *  
      * @var stdClass
      */
     private $extMap;

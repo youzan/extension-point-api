@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Medicine;
 use Com\Youzan\Cloud\Extension\Param\Medicine\DiagnoseDiseaseQueryResponseDTO;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2021-04-11 16:24:33.0
+ * @create Tue Jun 07 11:00:15 CST 2022
  */
 class DiagnoseDiseaseQueryResponseDTOOutParam implements \JsonSerializable {
 

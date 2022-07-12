@@ -2,12 +2,13 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Pay;
 
+use Java\Lang\String;
 use DateTime;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-11-22 11:42:40.0
+ * @create Mon Mar 14 19:32:15 CST 2022
  */
 class ValueCardExtPayRequest implements \JsonSerializable {
 

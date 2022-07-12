@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Account\ExtAccountApplyCheckResponseDTOOutP
 
 interface ApplyCheckExtPoint {
 
-    public function check(ExtAccountApplyCheckRequestDTO $request) : ExtAccountApplyCheckResponseDTOOutParam;
+    public function check(ExtAccountApplyCheckRequestDTO $requestDTO) : ExtAccountApplyCheckResponseDTOOutParam;
 
 }

@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Vo;
 
 
 /**
- * 店铺地址(当routeType&#x3D;2和3不返回)
+ * 店铺地址
  * @author Baymax
- * @create 2020-08-10 16:52:53.0
+ * @create Mon Mar 14 16:49:17 CST 2022
  */
 class AddressVO implements \JsonSerializable {
 

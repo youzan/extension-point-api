@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create Tue Aug 25 15:40:11 CST 2020
+ * @create Thu Jan 06 16:37:40 CST 2022
  */
 class ExtGenMemberCodeDTO implements \JsonSerializable {
 
     /**
-     * 店铺id
+     * 连锁场景：总部kdtId；单店场景：店铺kdtId；
      * @var int
      */
     private $kdtId;
@@ -22,6 +22,12 @@ class ExtGenMemberCodeDTO implements \JsonSerializable {
      * @var string
      */
     private $yzOpenId;
+
+    /**
+     * 触发当前请求的店铺id
+     * @var int
+     */
+    private $nodeKdtId;
 
 
 
@@ -55,6 +61,22 @@ class ExtGenMemberCodeDTO implements \JsonSerializable {
     public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNodeKdtId(): ?int
+    {
+        return $this->nodeKdtId;
+    }
+
+    /**
+     * @param int $nodeKdtId
+     */
+    public function setNodeKdtId(?int $nodeKdtId): void
+    {
+        $this->nodeKdtId = $nodeKdtId;
     }
 
     public function jsonSerialize() {

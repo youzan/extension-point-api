@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 请求参数
  * @author Baymax
- * @create Sun Sep 30 14:22:43 CST 2018
+ * @create Mon Feb 28 20:15:17 CST 2022
  */
 class ExtPointsConsumeDTO implements \JsonSerializable {
 
@@ -61,7 +61,7 @@ class ExtPointsConsumeDTO implements \JsonSerializable {
     private $bizToken;
 
     /**
-     * 积分数量
+     * 积分数量，交易产生订单发生退款场景会有值返回，如：积分抵现，积分兑换、下单送积分产生退款场景
      * @var int
      */
     private $amount;

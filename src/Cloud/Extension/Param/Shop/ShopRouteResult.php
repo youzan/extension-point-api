@@ -5,26 +5,26 @@ namespace Com\Youzan\Cloud\Extension\Param\Shop;
 use Com\Youzan\Cloud\Extension\Param\Vo\AddressVO;
 
 /**
- * 
+ * 响应参数
  * @author Baymax
- * @create 2020-08-10 16:52:53.0
+ * @create Mon Mar 14 16:49:17 CST 2022
  */
 class ShopRouteResult implements \JsonSerializable {
 
     /**
-     * 路由方式：1、路由到某店铺，2、路由到定位页, 3、路由到网店列表页
+     * 路由方式：1、路由到某店铺
      * @var int
      */
     private $routeType;
 
     /**
-     * 路由到店铺则返回进店店铺kdtId(当routeType&#x3D;2和3不返回)
+     * 路由到店铺则返回进店店铺kdtId
      * @var int
      */
     private $routeKdtId;
 
     /**
-     * 店铺地址(当routeType&#x3D;2和3不返回)
+     * 店铺地址
      * @var AddressVO
      */
     private $addressVO;

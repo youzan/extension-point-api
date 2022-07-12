@@ -10,7 +10,7 @@ use StdClass;
 /**
  * 订单基本信息：商品、用户、店铺、订单号
  * @author Baymax
- * @create 2020-06-11 11:03:35.0
+ * @create Wed Apr 20 09:57:08 CST 2022
  */
 class BillingBaseInfo implements \JsonSerializable {
 
@@ -43,6 +43,12 @@ class BillingBaseInfo implements \JsonSerializable {
      * @var stdClass
      */
     private $extraInfo;
+
+    /**
+     * 下单唯一标识
+     * @var string
+     */
+    private $bookKey;
 
 
 
@@ -124,6 +130,22 @@ class BillingBaseInfo implements \JsonSerializable {
     public function setExtraInfo(?stdClass $extraInfo): void
     {
         $this->extraInfo = $extraInfo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBookKey(): ?string
+    {
+        return $this->bookKey;
+    }
+
+    /**
+     * @param string $bookKey
+     */
+    public function setBookKey(?string $bookKey): void
+    {
+        $this->bookKey = $bookKey;
     }
 
     public function jsonSerialize() {

@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Account\ExtAccountVerifyResponseDTOOutParam
 
 interface AccountExtPoint {
 
-    public function verify(ExtAccountVerifyRequestDTO $request) : ExtAccountVerifyResponseDTOOutParam;
+    public function verify(ExtAccountVerifyRequestDTO $extAccountVerifyRequest) : ExtAccountVerifyResponseDTOOutParam;
 
 }

@@ -72,6 +72,12 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
      */
     private $refundPostage;
 
+    /**
+     * 操作人类型
+     * @var string
+     */
+    private $operatorRole;
+
 
 
     /**
@@ -232,6 +238,22 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     public function setRefundPostage(?int $refundPostage): void
     {
         $this->refundPostage = $refundPostage;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOperatorRole(): ?string
+    {
+        return $this->operatorRole;
+    }
+
+    /**
+     * @param string $operatorRole
+     */
+    public function setOperatorRole(?string $operatorRole): void
+    {
+        $this->operatorRole = $operatorRole;
     }
 
     public function jsonSerialize() {

@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2021-03-25 19:55:06.0
+ * @create Thu Jan 13 20:33:40 CST 2022
  */
 class CustomPointDeductionRuleQueryRequestDTO implements \JsonSerializable {
 
     /**
-     * 
+     *  
      * @var int
      */
     private $kdtId;

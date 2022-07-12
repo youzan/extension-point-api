@@ -2,12 +2,13 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Activity;
 
+use Java\Lang\String;
 use StdClass;
 
 /**
  * 请求
  * @author Baymax
- * @create 2021-07-07 11:55:49.0
+ * @create Thu Jan 13 20:55:51 CST 2022
  */
 class ActivitySyncThirdPartyExtPointRequest implements \JsonSerializable {
 

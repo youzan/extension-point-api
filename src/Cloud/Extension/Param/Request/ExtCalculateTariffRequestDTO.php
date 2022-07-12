@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Request\ExtCalculateTariffOrderItemRequestD
 /**
  * 税费计算扩展点入参
  * @author Baymax
- * @create 2020-12-24 11:30:20.0
+ * @create Mon Mar 14 15:52:00 CST 2022
  */
 class ExtCalculateTariffRequestDTO implements \JsonSerializable {
 

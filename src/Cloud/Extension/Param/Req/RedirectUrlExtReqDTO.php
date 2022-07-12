@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Req;
 /**
  * 请求入参
  * @author Baymax
- * @create 2021-01-05 17:51:36.0
+ * @create Thu Jan 13 20:21:25 CST 2022
  */
 class RedirectUrlExtReqDTO implements \JsonSerializable {
 

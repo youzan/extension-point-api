@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 use Com\Youzan\Cloud\Extension\Param\TradeGroupDTO;
 
 /**
- * 
+ * orderCreateSelfValidateParamDTO的参数说明
  * @author Baymax
  * @create 2018-09-30 17:35:52.0
  */
@@ -64,6 +64,12 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
      * @var int
      */
     private $rootKdtId;
+
+    /**
+     * 测试
+     * @var string
+     */
+    private $name;
 
 
 
@@ -209,6 +215,22 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     public function setRootKdtId(?int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $name
+     */
+    public function setName(?string $name): void
+    {
+        $this->name = $name;
     }
 
     public function jsonSerialize() {

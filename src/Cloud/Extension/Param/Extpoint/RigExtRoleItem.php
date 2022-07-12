@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Extpoint;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-09-15 12:26:32.0
+ * @create Tue May 17 11:37:25 CST 2022
  */
 class RigExtRoleItem implements \JsonSerializable {
 

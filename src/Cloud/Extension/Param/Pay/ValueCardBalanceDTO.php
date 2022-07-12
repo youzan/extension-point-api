@@ -5,26 +5,26 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 
 
 /**
- * 
+ * 储值卡详情
  * @author Baymax
- * @create 2019-04-30 10:55:07.0
+ * @create Thu Feb 10 13:06:13 CST 2022
  */
 class ValueCardBalanceDTO implements \JsonSerializable {
 
     /**
-     * 卡名称
+     * 储值卡名称
      * @var string
      */
     private $cardName;
 
     /**
-     * 卡号
+     * 储值卡卡号
      * @var string
      */
     private $cardNo;
 
     /**
-     * 余额（分）
+     * 余额
      * @var int
      */
     private $balance;

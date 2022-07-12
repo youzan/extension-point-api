@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 外部券信息
  * @author Baymax
- * @create 2020-02-12 16:35:41.0
+ * @create Mon Mar 14 19:24:32 CST 2022
  */
 class ThirdpartyVoucheraDTO implements \JsonSerializable {
 

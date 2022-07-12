@@ -6,26 +6,26 @@ use Com\Youzan\Cloud\Extension\Param\Dto\CloudVoucherGenerateInfoDTO;
 use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-07-29 14:46:53.0
+ * @create Mon Mar 14 19:46:43 CST 2022
  */
 class VoucherGenerateExtPointResponse implements \JsonSerializable {
 
     /**
-     * 
+     *  
      * @var array
      */
     private $cloudVoucherGenerateInfos;
 
     /**
-     * 
+     *  
      * @var int
      */
     private $versionNo;
 
     /**
-     * 
+     *  
      * @var stdClass
      */
     private $extMap;

@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 请求参数
  * @author Baymax
- * @create Sun Sep 30 14:34:50 CST 2018
+ * @create Fri Feb 11 11:42:03 CST 2022
  */
 class ExtPointsIncreaseDTO implements \JsonSerializable {
 
@@ -77,6 +77,12 @@ class ExtPointsIncreaseDTO implements \JsonSerializable {
      * @var int
      */
     private $operationType;
+
+    /**
+     * 是否需要走扩展点，默认:true; 如果商家实现对接拓展点, 在true的情况下,会执行商家实现的拓展点.在false的情况下,执行官方默认逻辑;
+     * @var bool
+     */
+    private $isDoExtPoint;
 
 
 
@@ -254,6 +260,22 @@ class ExtPointsIncreaseDTO implements \JsonSerializable {
     public function setOperationType(?int $operationType): void
     {
         $this->operationType = $operationType;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsDoExtPoint(): ?bool
+    {
+        return $this->isDoExtPoint;
+    }
+
+    /**
+     * @param bool $isDoExtPoint
+     */
+    public function setIsDoExtPoint(?bool $isDoExtPoint): void
+    {
+        $this->isDoExtPoint = $isDoExtPoint;
     }
 
     public function jsonSerialize() {

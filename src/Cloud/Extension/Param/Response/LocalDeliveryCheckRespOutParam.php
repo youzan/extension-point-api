@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 use Com\Youzan\Cloud\Extension\Param\Response\LocalDeliveryCheckResp;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2021-05-25 10:09:40.0
+ * @create Mon Mar 14 18:55:52 CST 2022
  */
 class LocalDeliveryCheckRespOutParam implements \JsonSerializable {
 

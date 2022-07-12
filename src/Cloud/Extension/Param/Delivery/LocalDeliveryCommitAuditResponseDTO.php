@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Delivery;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-09-19 19:08:53.0
+ * @create Thu Jan 13 23:22:35 CST 2022
  */
 class LocalDeliveryCommitAuditResponseDTO implements \JsonSerializable {
 

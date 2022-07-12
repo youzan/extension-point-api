@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Extpoint;
 use Com\Youzan\Cloud\Extension\Param\Extpoint\RigExtRoleItem;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-09-15 12:26:32.0
+ * @create Tue May 17 11:37:25 CST 2022
  */
 class RigExtStaffEntity implements \JsonSerializable {
 
@@ -24,7 +24,7 @@ class RigExtStaffEntity implements \JsonSerializable {
     private $mobile;
 
     /**
-     * 
+     *  
      * @var array
      */
     private $roles;

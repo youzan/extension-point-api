@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\CustomerProfileDTOOutParam;
 
 interface GetCustomerExtPoint {
 
-    public function execute(CustomerIdentifyDTO $request) : CustomerProfileDTOOutParam;
+    public function execute(CustomerIdentifyDTO $customerIdentifyDTO) : CustomerProfileDTOOutParam;
 
 }

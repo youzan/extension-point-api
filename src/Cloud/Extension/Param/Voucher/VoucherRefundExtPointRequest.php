@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-02-12 16:36:12.0
+ * @create Mon Mar 14 19:19:28 CST 2022
  */
 class VoucherRefundExtPointRequest implements \JsonSerializable {
 
@@ -42,13 +42,13 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     private $orderNoSource;
 
     /**
-     * 
+     *  
      * @var stdClass
      */
     private $extMap;
 
     /**
-     * 
+     *  
      * @var int
      */
     private $versionNo;
@@ -58,6 +58,18 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
      * @var int
      */
     private $rootKdtId;
+
+    /**
+     * 核销码
+     * @var string
+     */
+    private $verifyCode;
+
+    /**
+     * 请求id
+     * @var string
+     */
+    private $requestId;
 
 
 
@@ -187,6 +199,38 @@ class VoucherRefundExtPointRequest implements \JsonSerializable {
     public function setRootKdtId(?int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVerifyCode(): ?string
+    {
+        return $this->verifyCode;
+    }
+
+    /**
+     * @param string $verifyCode
+     */
+    public function setVerifyCode(?string $verifyCode): void
+    {
+        $this->verifyCode = $verifyCode;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRequestId(): ?string
+    {
+        return $this->requestId;
+    }
+
+    /**
+     * @param string $requestId
+     */
+    public function setRequestId(?string $requestId): void
+    {
+        $this->requestId = $requestId;
     }
 
     public function jsonSerialize() {

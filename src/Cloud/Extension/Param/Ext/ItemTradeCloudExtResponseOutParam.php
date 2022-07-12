@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Ext;
 use Com\Youzan\Cloud\Extension\Param\Ext\ItemTradeCloudExtResponse;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2020-11-16 20:06:15.0
+ * @create Sun Mar 20 16:00:10 CST 2022
  */
 class ItemTradeCloudExtResponseOutParam implements \JsonSerializable {
 

@@ -7,21 +7,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 /**
  * 减免的商品信息
  * @author Baymax
- * @create 2021-07-08 11:43:47.0
+ * @create Wed Feb 16 10:43:05 CST 2022
  */
 class ComputingItemIdentity implements \JsonSerializable {
-
-    /**
-     * 商品ID
-     * @var int
-     */
-    private $itemId;
-
-    /**
-     * 规格ID
-     * @var int
-     */
-    private $skuId;
 
     /**
      * 商品交易条目ID
@@ -30,38 +18,6 @@ class ComputingItemIdentity implements \JsonSerializable {
     private $businessId;
 
 
-
-    /**
-     * @return int
-     */
-    public function getItemId(): ?int
-    {
-        return $this->itemId;
-    }
-
-    /**
-     * @param int $itemId
-     */
-    public function setItemId(?int $itemId): void
-    {
-        $this->itemId = $itemId;
-    }
-
-    /**
-     * @return int
-     */
-    public function getSkuId(): ?int
-    {
-        return $this->skuId;
-    }
-
-    /**
-     * @param int $skuId
-     */
-    public function setSkuId(?int $skuId): void
-    {
-        $this->skuId = $skuId;
-    }
 
     /**
      * @return int

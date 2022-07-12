@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 use Com\Youzan\Cloud\Extension\Param\Dto\ThirdpartyVouchersDTO;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-02-12 16:35:56.0
+ * @create Mon Mar 14 19:32:49 CST 2022
  */
 class VoucherQueryExtPointResponse implements \JsonSerializable {
 
@@ -18,7 +18,7 @@ class VoucherQueryExtPointResponse implements \JsonSerializable {
     private $thirdpartyVoucher;
 
     /**
-     * 
+     *  
      * @var int
      */
     private $versionNo;

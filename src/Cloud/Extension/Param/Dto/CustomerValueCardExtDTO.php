@@ -3,11 +3,12 @@
 namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
 use DateTime;
+use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-01-06 12:52:32.0
+ * @create Tue Jun 21 16:04:02 CST 2022
  */
 class CustomerValueCardExtDTO implements \JsonSerializable {
 
@@ -94,6 +95,24 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
      * @var bool
      */
     private $needRecharge;
+
+    /**
+     * 内部卡模板号
+     * @var string
+     */
+    private $innerTemplateNo;
+
+    /**
+     * 是否互斥卡(true:互斥卡,false:非互斥卡,默认false)
+     * @var bool
+     */
+    private $isExclusion;
+
+    /**
+     * 扩展字段
+     * @var stdClass
+     */
+    private $extra;
 
 
 
@@ -319,6 +338,54 @@ class CustomerValueCardExtDTO implements \JsonSerializable {
     public function setNeedRecharge(?bool $needRecharge): void
     {
         $this->needRecharge = $needRecharge;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInnerTemplateNo(): ?string
+    {
+        return $this->innerTemplateNo;
+    }
+
+    /**
+     * @param string $innerTemplateNo
+     */
+    public function setInnerTemplateNo(?string $innerTemplateNo): void
+    {
+        $this->innerTemplateNo = $innerTemplateNo;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getIsExclusion(): ?bool
+    {
+        return $this->isExclusion;
+    }
+
+    /**
+     * @param bool $isExclusion
+     */
+    public function setIsExclusion(?bool $isExclusion): void
+    {
+        $this->isExclusion = $isExclusion;
+    }
+
+    /**
+     * @return stdClass
+     */
+    public function getExtra(): ?stdClass
+    {
+        return $this->extra;
+    }
+
+    /**
+     * @param stdClass $extra
+     */
+    public function setExtra(?stdClass $extra): void
+    {
+        $this->extra = $extra;
     }
 
     public function jsonSerialize() {

@@ -7,9 +7,9 @@ use Com\Youzan\Cloud\Extension\Param\ExtCalculatePriceItemResultDTO;
 use Com\Youzan\Cloud\Extension\Param\ExtPromotionCoreResultDTO;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2018-10-08 20:26:05.0
+ * @create Mon Mar 14 11:23:05 CST 2022
  */
 class ExtraPromotionCalcResultDTO implements \JsonSerializable {
 

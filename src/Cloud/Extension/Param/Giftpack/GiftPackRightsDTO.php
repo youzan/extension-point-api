@@ -11,9 +11,9 @@ use Com\Youzan\Cloud\Extension\Param\Giftpack\BonusAmountRightsDTO;
 use Com\Youzan\Cloud\Extension\Param\Giftpack\PresentRightsDTO;
 
 /**
- * 
+ * 权益信息
  * @author Baymax
- * @create 2020-03-24 10:56:53.0
+ * @create Mon Mar 14 19:16:10 CST 2022
  */
 class GiftPackRightsDTO implements \JsonSerializable {
 

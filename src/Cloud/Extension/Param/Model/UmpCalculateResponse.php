@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Model\ActivityResponse;
 /**
  * 外部接口出参
  * @author Baymax
- * @create 2020-06-11 11:03:35.0
+ * @create Wed Apr 20 09:57:08 CST 2022
  */
 class UmpCalculateResponse implements \JsonSerializable {
 

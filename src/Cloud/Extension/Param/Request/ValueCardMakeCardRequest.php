@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 use DateTime;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-03-24 11:28:58.0
+ * @create Mon Mar 14 19:40:08 CST 2022
  */
 class ValueCardMakeCardRequest implements \JsonSerializable {
 
