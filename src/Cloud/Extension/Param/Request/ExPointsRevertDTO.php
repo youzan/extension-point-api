@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 请求参数
  * @author Baymax
- * @create 2020-12-15 20:43:56.0
+ * @create Tue Mar 15 11:37:37 CST 2022
  */
 class ExPointsRevertDTO implements \JsonSerializable {
 
@@ -53,12 +53,6 @@ class ExPointsRevertDTO implements \JsonSerializable {
      * @var stdClass
      */
     private $extraInfo;
-
-    /**
-     * 是否需要走扩展点，默认:true; 如果商家实现对接拓展点, 在true的情况下,会执行商家实现的拓展点.在false的情况下,执行官方默认逻辑;
-     * @var bool
-     */
-    private $isDoExtPoint;
 
 
 
@@ -172,22 +166,6 @@ class ExPointsRevertDTO implements \JsonSerializable {
     public function setExtraInfo(?stdClass $extraInfo): void
     {
         $this->extraInfo = $extraInfo;
-    }
-
-    /**
-     * @return bool
-     */
-    public function getIsDoExtPoint(): ?bool
-    {
-        return $this->isDoExtPoint;
-    }
-
-    /**
-     * @param bool $isDoExtPoint
-     */
-    public function setIsDoExtPoint(?bool $isDoExtPoint): void
-    {
-        $this->isDoExtPoint = $isDoExtPoint;
     }
 
     public function jsonSerialize() {

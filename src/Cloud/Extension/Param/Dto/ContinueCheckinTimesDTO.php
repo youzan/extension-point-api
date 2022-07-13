@@ -7,7 +7,7 @@ use DateTime;
 /**
  * {}
  * @author Baymax
- * @create 2021-06-29 00:52:59.0
+ * @create Thu Jan 13 20:33:20 CST 2022
  */
 class ContinueCheckinTimesDTO implements \JsonSerializable {
 

@@ -6,9 +6,9 @@ use StdClass;
 use DateTime;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-02-12 16:36:42.0
+ * @create Mon Mar 14 19:21:37 CST 2022
  */
 class ThirdpartyVoucherSendExtPointRequest implements \JsonSerializable {
 
@@ -89,6 +89,18 @@ class ThirdpartyVoucherSendExtPointRequest implements \JsonSerializable {
      * @var int
      */
     private $validEndTime;
+
+    /**
+     * 内部活动id
+     * @var int
+     */
+    private $voucherActivityId;
+
+    /**
+     * 核销码
+     * @var string
+     */
+    private $verifyCode;
 
 
 
@@ -298,6 +310,38 @@ class ThirdpartyVoucherSendExtPointRequest implements \JsonSerializable {
     public function setValidEndTime(?int $validEndTime): void
     {
         $this->validEndTime = $validEndTime;
+    }
+
+    /**
+     * @return int
+     */
+    public function getVoucherActivityId(): ?int
+    {
+        return $this->voucherActivityId;
+    }
+
+    /**
+     * @param int $voucherActivityId
+     */
+    public function setVoucherActivityId(?int $voucherActivityId): void
+    {
+        $this->voucherActivityId = $voucherActivityId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVerifyCode(): ?string
+    {
+        return $this->verifyCode;
+    }
+
+    /**
+     * @param string $verifyCode
+     */
+    public function setVerifyCode(?string $verifyCode): void
+    {
+        $this->verifyCode = $verifyCode;
     }
 
     public function jsonSerialize() {

@@ -5,56 +5,56 @@ namespace Com\Youzan\Cloud\Extension\Param\Store;
 use Com\Youzan\Cloud\Extension\Param\Store\TimeSectionDTO;
 
 /**
- * 网点营业时间
+ * 自定义营业时间段信息
  * @author Baymax
  * @create 2021-05-25 19:58:33.0
  */
 class DayCrossTimeSectionDTO implements \JsonSerializable {
 
     /**
-     * 星期
+     * 自定义营业，具体时间段范围（单位星期），支持多段范围
      * @var array
      */
-    private $weekdays;
+    private $weekRange;
 
     /**
-     * 
+     * 自定义营业，具体时间段范围（单位小时分钟），支持多段范围
      * @var array
      */
-    private $timeSections;
+    private $timeRange;
 
 
 
     /**
      * @return array
      */
-    public function getWeekdays(): ?array
+    public function getWeekRange(): ?array
     {
-        return $this->weekdays;
+        return $this->weekRange;
     }
 
     /**
-     * @param array $weekdays
+     * @param array $weekRange
      */
-    public function setWeekdays(?array $weekdays): void
+    public function setWeekRange(?array $weekRange): void
     {
-        $this->weekdays = $weekdays;
+        $this->weekRange = $weekRange;
     }
 
     /**
      * @return array
      */
-    public function getTimeSections(): ?array
+    public function getTimeRange(): ?array
     {
-        return $this->timeSections;
+        return $this->timeRange;
     }
 
     /**
-     * @param array $timeSections
+     * @param array $timeRange
      */
-    public function setTimeSections(?array $timeSections): void
+    public function setTimeRange(?array $timeRange): void
     {
-        $this->timeSections = $timeSections;
+        $this->timeRange = $timeRange;
     }
 
     public function jsonSerialize() {

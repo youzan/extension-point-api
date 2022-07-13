@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Dto\SelfFetchWithSoldStatusResultExtDTOOutP
 
 interface SelfFetchPointExt {
 
-    public function listWithSoldStatus(SelfFetchWithSoldStatusQueryExtDTO $request) : SelfFetchWithSoldStatusResultExtDTOOutParam;
+    public function listWithSoldStatus(SelfFetchWithSoldStatusQueryExtDTO $param) : SelfFetchWithSoldStatusResultExtDTOOutParam;
 
 }

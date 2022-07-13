@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 use Com\Youzan\Cloud\Extension\Param\Response\CustomerExtValueCardDetailQueryResponse;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2020-03-24 11:28:49.0
+ * @create Mon Mar 14 19:10:05 CST 2022
  */
 class CustomerExtValueCardDetailQueryResponseOutParam implements \JsonSerializable {
 

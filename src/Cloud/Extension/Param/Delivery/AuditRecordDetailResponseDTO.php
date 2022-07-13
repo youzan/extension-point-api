@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Delivery;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-09-19 19:45:04.0
+ * @create Wed Feb 09 15:43:25 CST 2022
  */
 class AuditRecordDetailResponseDTO implements \JsonSerializable {
 
@@ -16,6 +16,12 @@ class AuditRecordDetailResponseDTO implements \JsonSerializable {
      * @var string
      */
     private $shopName;
+
+    /**
+     *  
+     * @var int
+     */
+    private $kdtId;
 
     /**
      * 业务类型 1 -&amp;gt; 食品小吃; 2 -&amp;gt; 食品饮料; 3 -&amp;gt; 鲜花; 8 -&amp;gt; 文印票务; 9 -&amp;gt; 商超便利店; 13 -&amp;gt; 水果生鲜; 20 -&amp;gt; 医药; 21 -&amp;gt; 蛋糕; 24 -&amp;gt; 酒品; 26 -&amp;gt; 服装; 27 -&amp;gt; 汽修零配; 28 -&amp;gt; 数码; 5 -&amp;gt; 其他
@@ -72,12 +78,6 @@ class AuditRecordDetailResponseDTO implements \JsonSerializable {
     private $contactPhone;
 
     /**
-     * 店铺id
-     * @var int
-     */
-    private $kdtId;
-
-    /**
      * 店铺经度
      * @var string
      */
@@ -111,6 +111,22 @@ class AuditRecordDetailResponseDTO implements \JsonSerializable {
     public function setShopName(?string $shopName): void
     {
         $this->shopName = $shopName;
+    }
+
+    /**
+     * @return int
+     */
+    public function getKdtId(): ?int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(?int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
     }
 
     /**
@@ -255,22 +271,6 @@ class AuditRecordDetailResponseDTO implements \JsonSerializable {
     public function setContactPhone(?string $contactPhone): void
     {
         $this->contactPhone = $contactPhone;
-    }
-
-    /**
-     * @return int
-     */
-    public function getKdtId(): ?int
-    {
-        return $this->kdtId;
-    }
-
-    /**
-     * @param int $kdtId
-     */
-    public function setKdtId(?int $kdtId): void
-    {
-        $this->kdtId = $kdtId;
     }
 
     /**

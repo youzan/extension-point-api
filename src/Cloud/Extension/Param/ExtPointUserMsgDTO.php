@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 买家信息
  * @author Baymax
- * @create 2019-03-27 11:42:10.0
+ * @create Thu Jan 13 20:40:58 CST 2022
  */
 class ExtPointUserMsgDTO implements \JsonSerializable {
 

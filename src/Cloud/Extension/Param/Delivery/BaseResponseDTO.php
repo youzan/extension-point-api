@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Delivery;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-09-19 17:27:24.0
+ * @create Fri Feb 11 14:20:01 CST 2022
  */
 class BaseResponseDTO implements \JsonSerializable {
 

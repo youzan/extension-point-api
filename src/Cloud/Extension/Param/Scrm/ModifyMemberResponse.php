@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2018-09-29 21:39:22.0
+ * @create Wed Mar 02 10:23:20 CST 2022
  */
 class ModifyMemberResponse implements \JsonSerializable {
 

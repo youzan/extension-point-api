@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 返回值
  * @author Baymax
- * @create 2020-02-12 16:36:03.0
+ * @create Mon Mar 14 19:16:40 CST 2022
  */
 class VoucherVerifyExtPointResponse implements \JsonSerializable {
 

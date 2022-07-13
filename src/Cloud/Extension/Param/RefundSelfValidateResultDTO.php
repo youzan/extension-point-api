@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2018-10-08 16:18:50.0
+ * @create Thu May 19 15:03:57 CST 2022
  */
 class RefundSelfValidateResultDTO implements \JsonSerializable {
 

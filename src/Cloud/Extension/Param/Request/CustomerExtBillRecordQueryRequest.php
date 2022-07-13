@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 use DateTime;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-01-06 11:40:29.0
+ * @create Mon Mar 14 19:37:42 CST 2022
  */
 class CustomerExtBillRecordQueryRequest implements \JsonSerializable {
 

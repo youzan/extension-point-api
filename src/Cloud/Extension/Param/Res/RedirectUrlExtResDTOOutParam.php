@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Res\RedirectUrlExtResDTO;
 /**
  * 请求出参返回类
  * @author Baymax
- * @create 2021-01-05 17:51:36.0
+ * @create Thu Jan 13 20:21:25 CST 2022
  */
 class RedirectUrlExtResDTOOutParam implements \JsonSerializable {
 

@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Response\CalculateDeliveryFeeRespOutParam;
 
 interface LocalDeliveryCalculateDeliveryFeeService {
 
-    public function invoke(LocalCalculateDeliveryFeeDTO $request) : CalculateDeliveryFeeRespOutParam;
+    public function invoke(LocalCalculateDeliveryFeeDTO $localCalculateDeliveryFeeDTO) : CalculateDeliveryFeeRespOutParam;
 
 }

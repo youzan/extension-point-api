@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 请求参数
  * @author Baymax
- * @create 2018-10-08 17:30:15.0
+ * @create Tue Jun 21 18:53:28 CST 2022
  */
 class ExtPointsDecreaseDTO implements \JsonSerializable {
 
@@ -31,7 +31,7 @@ class ExtPointsDecreaseDTO implements \JsonSerializable {
     private $description;
 
     /**
-     * 积分扣减事件，200：活动扣减积分；201：交易退款扣减积分
+     * 积分扣减事件，200：活动扣减积分
      * @var int
      */
     private $eventType;

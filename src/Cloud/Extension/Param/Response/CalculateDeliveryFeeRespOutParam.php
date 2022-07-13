@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 use Com\Youzan\Cloud\Extension\Param\Response\CalculateDeliveryFeeResp;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2021-04-13 14:59:42.0
+ * @create Thu Jan 27 16:49:25 CST 2022
  */
 class CalculateDeliveryFeeRespOutParam implements \JsonSerializable {
 

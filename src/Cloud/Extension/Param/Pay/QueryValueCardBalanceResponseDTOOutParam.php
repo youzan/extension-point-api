@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 use Com\Youzan\Cloud\Extension\Param\Pay\QueryValueCardBalanceResponseDTO;
 
 /**
- * 返回类
+ * 响应参数返回类
  * @author Baymax
- * @create 2019-04-30 10:55:07.0
+ * @create Thu Feb 10 13:06:13 CST 2022
  */
 class QueryValueCardBalanceResponseDTOOutParam implements \JsonSerializable {
 

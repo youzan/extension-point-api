@@ -7,7 +7,7 @@ use DateTime;
 /**
  * 用户等级列表
  * @author Baymax
- * @create 2018-10-12 14:13:44.0
+ * @create Fri Jan 07 18:59:17 CST 2022
  */
 class ExtCustomerLevelDTO implements \JsonSerializable {
 

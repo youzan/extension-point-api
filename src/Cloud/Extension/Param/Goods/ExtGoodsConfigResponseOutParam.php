@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Goods;
 use Com\Youzan\Cloud\Extension\Param\Goods\ExtGoodsConfigResponse;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2020-05-08 14:35:44.0
+ * @create Thu Jun 30 19:00:48 CST 2022
  */
 class ExtGoodsConfigResponseOutParam implements \JsonSerializable {
 

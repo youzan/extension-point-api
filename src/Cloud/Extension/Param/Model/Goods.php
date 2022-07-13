@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Model\Activity;
 /**
  * 商品及均摊优惠详情
  * @author Baymax
- * @create 2020-06-11 11:03:35.0
+ * @create Wed Apr 20 09:57:06 CST 2022
  */
 class Goods implements \JsonSerializable {
 

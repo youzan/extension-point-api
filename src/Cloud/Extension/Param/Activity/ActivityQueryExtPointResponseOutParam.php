@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Activity;
 use Com\Youzan\Cloud\Extension\Param\Activity\ActivityQueryExtPointResponse;
 
 /**
- * 返回类
+ * 响应参数返回类
  * @author Baymax
- * @create 2020-02-12 16:36:21.0
+ * @create Mon Mar 14 19:14:33 CST 2022
  */
 class ActivityQueryExtPointResponseOutParam implements \JsonSerializable {
 

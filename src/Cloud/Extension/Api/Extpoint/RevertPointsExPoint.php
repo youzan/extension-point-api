@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ResultOutParam;
 
 interface RevertPointsExPoint {
 
-    public function invoke(ExPointsRevertDTO $request) : ResultOutParam;
+    public function invoke(ExPointsRevertDTO $exPointsRevertDTO) : ResultOutParam;
 
 }

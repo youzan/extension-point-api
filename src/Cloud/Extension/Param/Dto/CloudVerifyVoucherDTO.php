@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 use DateTime;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-05-18 16:24:01.0
+ * @create Mon Mar 14 19:39:09 CST 2022
  */
 class CloudVerifyVoucherDTO implements \JsonSerializable {
 

@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Dto\GoodsNoCheckOpenModelOutParam;
 
 interface ItemCommonExtService {
 
-    public function checkGoodsNoExt(CheckGoodsNoParam $request) : GoodsNoCheckOpenModelOutParam;
+    public function checkGoodsNoExt(CheckGoodsNoParam $param) : GoodsNoCheckOpenModelOutParam;
 
 }

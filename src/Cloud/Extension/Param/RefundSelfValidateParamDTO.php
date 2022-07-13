@@ -6,9 +6,9 @@ use Com\Youzan\Cloud\Extension\Param\RefundItemDTO;
 use Com\Youzan\Cloud\Extension\Param\OrderItemDTO;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2018-10-08 16:18:50.0
+ * @create Thu May 19 15:03:57 CST 2022
  */
 class RefundSelfValidateParamDTO implements \JsonSerializable {
 
@@ -71,6 +71,12 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
      * @var int
      */
     private $refundPostage;
+
+    /**
+     * 退款发起人
+     * @var string
+     */
+    private $operatorRole;
 
 
 
@@ -232,6 +238,22 @@ class RefundSelfValidateParamDTO implements \JsonSerializable {
     public function setRefundPostage(?int $refundPostage): void
     {
         $this->refundPostage = $refundPostage;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOperatorRole(): ?string
+    {
+        return $this->operatorRole;
+    }
+
+    /**
+     * @param string $operatorRole
+     */
+    public function setOperatorRole(?string $operatorRole): void
+    {
+        $this->operatorRole = $operatorRole;
     }
 
     public function jsonSerialize() {

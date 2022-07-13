@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Customer;
 /**
  * 扩展点调用返回实体
  * @author Baymax
- * @create 2020-09-29 15:49:12.0
+ * @create Mon Mar 14 16:52:05 CST 2022
  */
 class ExtCustomerRelationBindResponseDTO implements \JsonSerializable {
 

@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Account;
 /**
  * 待审核的分销员信息列表
  * @author Baymax
- * @create 2020-04-16 10:50:54.0
+ * @create Mon Mar 14 16:42:47 CST 2022
  */
 class ExtAccountVerifyDTO implements \JsonSerializable {
 

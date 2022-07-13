@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 use Com\Youzan\Cloud\Extension\Param\Scrm\FreezePointsResponse;
 
 /**
- * 返回类
+ * 响应参数返回类
  * @author Baymax
- * @create 2018-12-06 16:09:38.0
+ * @create Tue Jul 05 15:11:19 CST 2022
  */
 class FreezePointsResponseOutParam implements \JsonSerializable {
 

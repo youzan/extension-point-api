@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-07-23 19:47:34.0
+ * @create Tue Mar 01 18:44:44 CST 2022
  */
 class FrozenTicketResponseDTO implements \JsonSerializable {
 
     /**
-     * 
+     *  
      * @var bool
      */
     private $success;

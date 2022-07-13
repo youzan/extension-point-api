@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Medicine;
 use Com\Youzan\Cloud\Extension\Param\DiagnoseDiseaseQueryResponseDTO\DiseaseInfoDTO;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2021-04-11 16:24:33.0
+ * @create Tue Jun 07 11:00:15 CST 2022
  */
 class DiagnoseDiseaseQueryResponseDTO implements \JsonSerializable {
 
     /**
-     * 
+     *  
      * @var array
      */
     private $diseaseInfoDTOS;

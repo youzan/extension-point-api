@@ -10,6 +10,6 @@ interface SubShopVisitExtPoint {
 
     public function routeWithPosition(ShopEnterPositionRequest $request) : ShopRouteResultOutParam;
 
-    public function route(ShopEnterRequest $request) : ShopRouteResultOutParam;
+    public function route(ShopEnterRequest $gatewayRequest) : ShopRouteResultOutParam;
 
 }

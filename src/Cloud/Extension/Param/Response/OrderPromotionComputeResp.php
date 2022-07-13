@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Model\ComputingItemIdentity;
 /**
  * 当promotionLevel返回“order”,  需要返回的订单级别优惠减免结果
  * @author Baymax
- * @create 2021-07-08 11:43:47.0
+ * @create Thu Mar 10 20:03:22 CST 2022
  */
 class OrderPromotionComputeResp implements \JsonSerializable {
 

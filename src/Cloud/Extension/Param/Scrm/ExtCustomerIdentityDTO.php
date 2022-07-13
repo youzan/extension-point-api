@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 /**
  * 用户识别信息
  * @author Baymax
- * @create 2018-10-12 14:13:44.0
+ * @create Fri Jan 07 18:59:17 CST 2022
  */
 class ExtCustomerIdentityDTO implements \JsonSerializable {
 

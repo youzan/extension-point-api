@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Im\RobotMsgResponseOutParam;
 
 interface SendMessageServiceExtPoint {
 
-    public function sendMsg(RobotMsgRequest $request) : RobotMsgResponseOutParam;
+    public function sendMsg(RobotMsgRequest $entity) : RobotMsgResponseOutParam;
 
 }

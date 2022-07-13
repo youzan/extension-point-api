@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 use Com\Youzan\Cloud\Extension\Param\Scrm\ContactAddressDTO;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2018-10-09 16:05:49.0
+ * @create Thu Jan 20 10:54:18 CST 2022
  */
 class CustomerProfileDTO implements \JsonSerializable {
 
@@ -36,7 +36,7 @@ class CustomerProfileDTO implements \JsonSerializable {
     private $isMember;
 
     /**
-     * 地址信息
+     *  
      * @var ContactAddressDTO
      */
     private $contactAddressDTO;

@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-08-25 15:40:11.0
+ * @create Mon Mar 14 17:51:19 CST 2022
  */
 class ExtGenMemberCodeDTO implements \JsonSerializable {
 

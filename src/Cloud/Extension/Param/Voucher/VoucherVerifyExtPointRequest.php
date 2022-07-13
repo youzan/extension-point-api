@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 请求
  * @author Baymax
- * @create 2020-02-12 16:36:03.0
+ * @create Mon Mar 14 19:16:40 CST 2022
  */
 class VoucherVerifyExtPointRequest implements \JsonSerializable {
 
@@ -70,6 +70,12 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
      * @var int
      */
     private $preferentialValue;
+
+    /**
+     * 请求id
+     * @var string
+     */
+    private $requestId;
 
 
 
@@ -231,6 +237,22 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     public function setPreferentialValue(?int $preferentialValue): void
     {
         $this->preferentialValue = $preferentialValue;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRequestId(): ?string
+    {
+        return $this->requestId;
+    }
+
+    /**
+     * @param string $requestId
+     */
+    public function setRequestId(?string $requestId): void
+    {
+        $this->requestId = $requestId;
     }
 
     public function jsonSerialize() {

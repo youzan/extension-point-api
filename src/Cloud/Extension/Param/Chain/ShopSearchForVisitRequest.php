@@ -2,12 +2,14 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Chain;
 
-
+use Java\Lang\Integer;
+use Java\Lang\String;
+use Java\Lang\Long;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-03-19 10:50:21.0
+ * @create Mon Mar 14 16:51:11 CST 2022
  */
 class ShopSearchForVisitRequest implements \JsonSerializable {
 

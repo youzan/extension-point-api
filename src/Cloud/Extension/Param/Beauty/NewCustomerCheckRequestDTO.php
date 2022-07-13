@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Beauty;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-03-20 17:16:03.0
+ * @create Mon Mar 14 18:58:29 CST 2022
  */
 class NewCustomerCheckRequestDTO implements \JsonSerializable {
 
@@ -28,12 +28,6 @@ class NewCustomerCheckRequestDTO implements \JsonSerializable {
      * @var string
      */
     private $yzOpenId;
-
-    /**
-     * 用赞用户唯一标示
-     * @var int
-     */
-    private $userId;
 
 
 
@@ -83,22 +77,6 @@ class NewCustomerCheckRequestDTO implements \JsonSerializable {
     public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
-    }
-
-    /**
-     * @return int
-     */
-    public function getUserId(): ?int
-    {
-        return $this->userId;
-    }
-
-    /**
-     * @param int $userId
-     */
-    public function setUserId(?int $userId): void
-    {
-        $this->userId = $userId;
     }
 
     public function jsonSerialize() {

@@ -6,9 +6,9 @@ use DateTime;
 use StdClass;
 
 /**
- * 
+ *  响应对象
  * @author Baymax
- * @create 2019-08-15 11:23:21.0
+ * @create Thu Jun 30 14:26:03 CST 2022
  */
 class PayResponseDTO implements \JsonSerializable {
 

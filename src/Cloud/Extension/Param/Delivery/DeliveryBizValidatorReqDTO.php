@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\Delivery\CurrentDeliveryRequestDTO;
 /**
  * 业务校验请求
  * @author Baymax
- * @create 2019-06-05 11:56:20.0
+ * @create Thu Jan 13 20:41:46 CST 2022
  */
 class DeliveryBizValidatorReqDTO implements \JsonSerializable {
 

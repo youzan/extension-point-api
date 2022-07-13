@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Response\ExtRecalculateLevelDTOOutParam;
 
 interface RecalculateLevelExtPoint {
 
-    public function invoke(ExtRecalculateLevelRequestDTO $request) : ExtRecalculateLevelDTOOutParam;
+    public function invoke(ExtRecalculateLevelRequestDTO $extRecalculateLevelRequestDTO) : ExtRecalculateLevelDTOOutParam;
 
 }

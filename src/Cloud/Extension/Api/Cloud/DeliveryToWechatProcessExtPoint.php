@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Cloud\DeliveryToWechatProcessResponseOutPar
 
 interface DeliveryToWechatProcessExtPoint {
 
-    public function delivery(DeliveryToWechatProcessRequestDTO $request) : DeliveryToWechatProcessResponseOutParam;
+    public function delivery(DeliveryToWechatProcessRequestDTO $requestDTO) : DeliveryToWechatProcessResponseOutParam;
 
 }

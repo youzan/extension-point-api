@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 use Com\Youzan\Cloud\Extension\Param\Trade\TicketOrderItem;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-09-04 18:01:28.0
+ * @create Wed Apr 27 17:15:30 CST 2022
  */
 class CreateTicketRequestDTO implements \JsonSerializable {
 
@@ -42,7 +42,7 @@ class CreateTicketRequestDTO implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * 
+     *  
      * @var array
      */
     private $orderItemList;

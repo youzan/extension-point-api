@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Param;
 /**
  * {}
  * @author Baymax
- * @create 2021-06-29 00:52:59.0
+ * @create Thu Jan 13 20:33:20 CST 2022
  */
 class ContinueCheckinTimesCalcParam implements \JsonSerializable {
 
@@ -25,7 +25,7 @@ class ContinueCheckinTimesCalcParam implements \JsonSerializable {
 
     /**
      * 用户openId
-     * @var int
+     * @var string
      */
     private $yzOpenId;
 
@@ -64,17 +64,17 @@ class ContinueCheckinTimesCalcParam implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getYzOpenId(): ?int
+    public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
     }
 
     /**
-     * @param int $yzOpenId
+     * @param string $yzOpenId
      */
-    public function setYzOpenId(?int $yzOpenId): void
+    public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }

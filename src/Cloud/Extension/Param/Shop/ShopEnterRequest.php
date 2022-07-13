@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Shop;
 
 
 /**
- * 
+ * 请求参数
  * @author Baymax
- * @create 2020-08-11 14:49:48.0
+ * @create Mon Mar 14 16:49:17 CST 2022
  */
 class ShopEnterRequest implements \JsonSerializable {
 
@@ -24,7 +24,7 @@ class ShopEnterRequest implements \JsonSerializable {
     private $sessionId;
 
     /**
-     * 买家用户id
+     * 客户id
      * @var string
      */
     private $yzOpenId;
@@ -78,7 +78,7 @@ class ShopEnterRequest implements \JsonSerializable {
     private $countyName;
 
     /**
-     * 获取定位动作标识 0:首次进店 1:同意定位授权 2:拒绝定位授权
+     * 获取定位动作标识 0:首次进店
      * @var int
      */
     private $positionBehaviorSign;

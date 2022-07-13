@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerInfoDTO;
 /**
  * 请求参数
  * @author Baymax
- * @create 2018-11-04 21:41:34.0
+ * @create Thu Jan 13 15:59:48 CST 2022
  */
 class ExtCustomerPointsLogQueryDTO implements \JsonSerializable {
 

@@ -9,7 +9,7 @@ use DateTime;
 /**
  * 查询到的自提点列表数据
  * @author Baymax
- * @create 2021-01-22 10:18:32.0
+ * @create Mon Jun 13 14:59:18 CST 2022
  */
 class SelfFetchPointInfoExtDTO implements \JsonSerializable {
 

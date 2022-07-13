@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Dto\ContinueCheckinTimesDTOOutParam;
 
 interface ContinueCheckinTimesCalcBep {
 
-    public function invoke(ContinueCheckinTimesCalcParam $request) : ContinueCheckinTimesDTOOutParam;
+    public function invoke(ContinueCheckinTimesCalcParam $param) : ContinueCheckinTimesDTOOutParam;
 
 }

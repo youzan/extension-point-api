@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Param;
 /**
  * 订单信息
  * @author Baymax
- * @create 2021-07-15 10:38:30.0
+ * @create Thu Mar 10 20:03:22 CST 2022
  */
 class OrderParam implements \JsonSerializable {
 

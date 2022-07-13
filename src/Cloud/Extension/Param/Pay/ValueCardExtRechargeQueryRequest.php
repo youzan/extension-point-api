@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 /**
  * 请求参数
  * @author Baymax
- * @create 2019-11-22 12:00:30.0
+ * @create Mon Mar 14 19:27:00 CST 2022
  */
 class ValueCardExtRechargeQueryRequest implements \JsonSerializable {
 

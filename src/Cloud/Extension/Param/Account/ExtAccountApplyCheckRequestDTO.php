@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Account;
 /**
  * 请求参数
  * @author Baymax
- * @create 2020-10-13 17:48:00.0
+ * @create Mon Mar 14 16:53:16 CST 2022
  */
 class ExtAccountApplyCheckRequestDTO implements \JsonSerializable {
 

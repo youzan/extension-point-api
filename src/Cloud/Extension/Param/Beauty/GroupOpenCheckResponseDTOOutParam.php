@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Beauty;
 use Com\Youzan\Cloud\Extension\Param\Beauty\GroupOpenCheckResponseDTO;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2020-03-20 14:36:00.0
+ * @create Mon Mar 14 17:18:46 CST 2022
  */
 class GroupOpenCheckResponseDTOOutParam implements \JsonSerializable {
 

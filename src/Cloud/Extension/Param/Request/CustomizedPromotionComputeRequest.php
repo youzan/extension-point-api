@@ -10,9 +10,9 @@ use Com\Youzan\Cloud\Extension\Param\Param\OrderParam;
 use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2021-07-08 11:43:47.0
+ * @create Thu Mar 10 20:03:22 CST 2022
  */
 class CustomizedPromotionComputeRequest implements \JsonSerializable {
 
@@ -23,7 +23,7 @@ class CustomizedPromotionComputeRequest implements \JsonSerializable {
     private $computingItemPromotionParamList;
 
     /**
-     * 
+     *  
      * @var ExtActivityParam
      */
     private $activityParam;

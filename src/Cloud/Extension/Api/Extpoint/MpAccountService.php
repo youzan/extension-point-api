@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Response\ExtMpAccountInfoDTOOutParam;
 
 interface MpAccountService {
 
-    public function getMpAccountInfo(ExtGetMpAccountInfoDTO $request) : ExtMpAccountInfoDTOOutParam;
+    public function getMpAccountInfo(ExtGetMpAccountInfoDTO $dto) : ExtMpAccountInfoDTOOutParam;
 
 }

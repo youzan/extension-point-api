@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Giftpack;
 /**
  * 赠品权益
  * @author Baymax
- * @create 2020-03-24 10:56:53.0
+ * @create Mon Mar 14 19:16:10 CST 2022
  */
 class PresentRightsDTO implements \JsonSerializable {
 

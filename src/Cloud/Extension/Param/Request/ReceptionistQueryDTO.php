@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-10-28 09:38:49.0
+ * @create Thu Jan 13 22:40:52 CST 2022
  */
 class ReceptionistQueryDTO implements \JsonSerializable {
 

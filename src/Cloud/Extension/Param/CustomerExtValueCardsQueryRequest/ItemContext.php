@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\CustomerExtValueCardsQueryRequest;
 /**
  * 商品信息列表
  * @author Baymax
- * @create 2021-03-22 14:17:33.0
+ * @create Tue Jun 21 16:04:01 CST 2022
  */
 class ItemContext implements \JsonSerializable {
 

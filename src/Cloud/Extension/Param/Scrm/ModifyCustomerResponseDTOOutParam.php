@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ModifyCustomerResponseDTO;
 /**
  * 响应出参返回类
  * @author Baymax
- * @create 2018-10-10 13:15:37.0
+ * @create Thu Feb 17 21:20:23 CST 2022
  */
 class ModifyCustomerResponseDTOOutParam implements \JsonSerializable {
 

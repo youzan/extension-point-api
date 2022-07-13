@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Ext\ItemTradeCloudExtResponseOutParam;
 
 interface ItemTradeInfoExtService {
 
-    public function getItemExtData(ItemTradeCloudExtRequest $request) : ItemTradeCloudExtResponseOutParam;
+    public function getItemExtData(ItemTradeCloudExtRequest $param) : ItemTradeCloudExtResponseOutParam;
 
 }

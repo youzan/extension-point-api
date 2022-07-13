@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 use Com\Youzan\Cloud\Extension\Param\Dto\GoodsNoCheckOpenModel;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2021-08-06 11:24:17.0
+ * @create Mon Mar 14 16:59:06 CST 2022
  */
 class GoodsNoCheckOpenModelOutParam implements \JsonSerializable {
 

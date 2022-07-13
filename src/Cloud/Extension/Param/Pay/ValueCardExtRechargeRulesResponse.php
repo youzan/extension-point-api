@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 use Com\Youzan\Cloud\Extension\Param\Pay\ValueCardExtRechargeRuleDTO;
 
 /**
- * 
+ * 响应参数
  * @author Baymax
- * @create 2019-11-22 12:15:26.0
+ * @create Mon Mar 14 17:57:37 CST 2022
  */
 class ValueCardExtRechargeRulesResponse implements \JsonSerializable {
 
     /**
-     * 
+     * 储值信息
      * @var array
      */
     private $productInfos;

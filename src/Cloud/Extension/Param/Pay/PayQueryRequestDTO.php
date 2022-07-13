@@ -5,20 +5,20 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-08-15 11:37:58.0
+ * @create Mon Mar 14 17:42:06 CST 2022
  */
 class PayQueryRequestDTO implements \JsonSerializable {
 
     /**
-     * 外部支付单号
+     * 外部支付单号，和有赞支付单号二选一，不能同时为空
      * @var string
      */
     private $tradeNo;
 
     /**
-     * 有赞支付单号
+     * 有赞支付单号，和外部支付单号二选一，不能同时为空
      * @var string
      */
     private $yzTradeNo;

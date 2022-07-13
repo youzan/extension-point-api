@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Delivery\AuditRecordDetailResponseDTOOutPar
 
 interface LocalDeliveryGetLatestAuditRecordExtPoint {
 
-    public function handle(AuditRecordRequestDTO $request) : AuditRecordDetailResponseDTOOutParam;
+    public function handle(AuditRecordRequestDTO $shopIdDTO) : AuditRecordDetailResponseDTOOutParam;
 
 }

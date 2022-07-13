@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Account;
 use Com\Youzan\Cloud\Extension\Param\Account\ExtAccountApplyCheckResponseDTO;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2020-10-13 17:48:00.0
+ * @create Mon Mar 14 16:53:16 CST 2022
  */
 class ExtAccountApplyCheckResponseDTOOutParam implements \JsonSerializable {
 

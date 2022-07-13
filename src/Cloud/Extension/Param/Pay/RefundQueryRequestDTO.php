@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-08-15 16:39:05.0
+ * @create Mon Mar 14 17:40:03 CST 2022
  */
 class RefundQueryRequestDTO implements \JsonSerializable {
 
@@ -18,25 +18,25 @@ class RefundQueryRequestDTO implements \JsonSerializable {
     private $mchId;
 
     /**
-     * 有赞支付单号
+     * 有赞支付单号（和外部支付单号二选一，不能同时为空）
      * @var string
      */
     private $yzTradeNo;
 
     /**
-     * 外部支付单号
+     * 外部支付单号（和有赞支付单号二选一，不能同时为空）
      * @var string
      */
     private $tradeNo;
 
     /**
-     * 有赞退款单号
+     * 有赞退款单号（和外部退款单号二选一，不能同时为空）
      * @var string
      */
     private $yzRefundNo;
 
     /**
-     * 外部退款单号
+     * 外部退款单号（和有赞退款单号二选一，不能同时为空）
      * @var string
      */
     private $refundNo;

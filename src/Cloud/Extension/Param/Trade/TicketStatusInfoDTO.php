@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-07-24 13:19:41.0
+ * @create Thu Jan 13 22:31:02 CST 2022
  */
 class TicketStatusInfoDTO implements \JsonSerializable {
 

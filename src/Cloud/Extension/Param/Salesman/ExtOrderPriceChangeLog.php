@@ -5,20 +5,20 @@ namespace Com\Youzan\Cloud\Extension\Param\Salesman;
 
 
 /**
- * 
+ *   
  * @author Baymax
- * @create 2019-12-12 09:29:19.0
+ * @create Tue Mar 01 14:36:12 CST 2022
  */
 class ExtOrderPriceChangeLog implements \JsonSerializable {
 
     /**
-     * 
+     *  
      * @var string
      */
     private $changeType;
 
     /**
-     * 
+     *  
      * @var string
      */
     private $fieldName;
@@ -36,19 +36,19 @@ class ExtOrderPriceChangeLog implements \JsonSerializable {
     private $newValue;
 
     /**
-     * 
+     *  
      * @var int
      */
     private $tag;
 
     /**
-     * 
+     *  
      * @var string
      */
     private $detail;
 
     /**
-     * 
+     *  
      * @var string
      */
     private $extra;

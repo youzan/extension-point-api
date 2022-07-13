@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param;
 use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2018-09-25 17:57:08.0
+ * @create Thu Jan 13 20:49:26 CST 2022
  */
 class RefundPayResultDTO implements \JsonSerializable {
 

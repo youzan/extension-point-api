@@ -6,9 +6,9 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ContactAddressCreateDTO;
 use Com\Youzan\Cloud\Extension\Param\CustomizeAttributeDTO;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2018-09-29 21:13:57.0
+ * @create Thu Feb 17 21:18:21 CST 2022
  */
 class CustomerProfileCreateDTO implements \JsonSerializable {
 
@@ -49,7 +49,7 @@ class CustomerProfileCreateDTO implements \JsonSerializable {
     private $email;
 
     /**
-     * 
+     *  
      * @var array
      */
     private $attributeList;

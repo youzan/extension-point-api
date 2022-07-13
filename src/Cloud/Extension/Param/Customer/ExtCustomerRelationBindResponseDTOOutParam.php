@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Customer\ExtCustomerRelationBindResponseDTO
 /**
  * 扩展点调用返回实体返回类
  * @author Baymax
- * @create 2020-09-29 15:49:12.0
+ * @create Mon Mar 14 16:52:05 CST 2022
  */
 class ExtCustomerRelationBindResponseDTOOutParam implements \JsonSerializable {
 

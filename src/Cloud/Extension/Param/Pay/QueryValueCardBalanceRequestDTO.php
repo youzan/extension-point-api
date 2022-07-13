@@ -2,12 +2,12 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Pay;
 
-
+use Java\Lang\String;
 
 /**
- * 
+ * 请求参数
  * @author Baymax
- * @create 2019-04-30 10:55:07.0
+ * @create Thu Feb 10 13:06:13 CST 2022
  */
 class QueryValueCardBalanceRequestDTO implements \JsonSerializable {
 

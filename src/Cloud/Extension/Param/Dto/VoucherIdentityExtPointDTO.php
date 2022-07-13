@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
 
 /**
- * 优惠券凭证信息
+ * 凭证对象
  * @author Baymax
- * @create 2021-07-21 23:20:35.0
+ * @create Thu Jan 13 20:57:14 CST 2022
  */
 class VoucherIdentityExtPointDTO implements \JsonSerializable {
 

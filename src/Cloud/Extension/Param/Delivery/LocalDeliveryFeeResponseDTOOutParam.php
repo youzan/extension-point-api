@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Delivery;
 use Com\Youzan\Cloud\Extension\Param\Delivery\LocalDeliveryFeeResponseDTO;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2019-09-19 18:12:19.0
+ * @create Thu Jan 13 23:25:55 CST 2022
  */
 class LocalDeliveryFeeResponseDTOOutParam implements \JsonSerializable {
 

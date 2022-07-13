@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 use Com\Youzan\Cloud\Extension\Param\Model\UmpCalculateResponse;
 
 /**
- * 外部接口出参返回类
+ * 响应参数返回类
  * @author Baymax
- * @create 2020-06-11 11:03:35.0
+ * @create Fri Jul 08 15:18:32 CST 2022
  */
 class UmpCalculateResponseOutParam implements \JsonSerializable {
 

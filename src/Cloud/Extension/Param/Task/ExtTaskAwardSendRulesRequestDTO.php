@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Task;
 /**
  * 请求参数
  * @author Baymax
- * @create 2020-06-08 13:28:28.0
+ * @create Mon Mar 14 16:49:27 CST 2022
  */
 class ExtTaskAwardSendRulesRequestDTO implements \JsonSerializable {
 
@@ -46,12 +46,6 @@ class ExtTaskAwardSendRulesRequestDTO implements \JsonSerializable {
      * @var int
      */
     private $score;
-
-    /**
-     * 销售员手机号
-     * @var string
-     */
-    private $mobile;
 
     /**
      * 店铺ID
@@ -167,22 +161,6 @@ class ExtTaskAwardSendRulesRequestDTO implements \JsonSerializable {
     public function setScore(?int $score): void
     {
         $this->score = $score;
-    }
-
-    /**
-     * @return string
-     */
-    public function getMobile(): ?string
-    {
-        return $this->mobile;
-    }
-
-    /**
-     * @param string $mobile
-     */
-    public function setMobile(?string $mobile): void
-    {
-        $this->mobile = $mobile;
     }
 
     /**

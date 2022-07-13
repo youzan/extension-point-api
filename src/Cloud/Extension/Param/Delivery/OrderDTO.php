@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\OrderItemMsgDTO;
 /**
  * 订单信息
  * @author Baymax
- * @create 2019-06-05 11:56:20.0
+ * @create Thu Jan 13 20:41:46 CST 2022
  */
 class OrderDTO implements \JsonSerializable {
 

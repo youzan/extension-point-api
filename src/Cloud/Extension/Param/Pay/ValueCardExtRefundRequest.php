@@ -7,7 +7,7 @@ use DateTime;
 /**
  * 请求参数
  * @author Baymax
- * @create 2019-11-22 15:16:11.0
+ * @create Mon Mar 14 19:29:34 CST 2022
  */
 class ValueCardExtRefundRequest implements \JsonSerializable {
 
@@ -18,7 +18,7 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     private $acquireNo;
 
     /**
-     * 收单系统上层业务系统单据号,通常为E单号
+     * 收单系统上层业务系统单据号,通常为E单号,组合订单情况下为V单号
      * @var string
      */
     private $orderNo;
@@ -64,6 +64,12 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
      * @var int
      */
     private $rootKdtId;
+
+    /**
+     * 退款业务订单号(组合订单情况下为E单号),通常为E单号
+     * @var string
+     */
+    private $refundOrderNo;
 
 
 
@@ -209,6 +215,22 @@ class ValueCardExtRefundRequest implements \JsonSerializable {
     public function setRootKdtId(?int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRefundOrderNo(): ?string
+    {
+        return $this->refundOrderNo;
+    }
+
+    /**
+     * @param string $refundOrderNo
+     */
+    public function setRefundOrderNo(?string $refundOrderNo): void
+    {
+        $this->refundOrderNo = $refundOrderNo;
     }
 
     public function jsonSerialize() {

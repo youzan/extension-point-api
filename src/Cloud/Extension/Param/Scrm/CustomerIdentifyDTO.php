@@ -5,20 +5,20 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2018-09-29 21:13:57.0
+ * @create Thu Jan 20 10:54:18 CST 2022
  */
 class CustomerIdentifyDTO implements \JsonSerializable {
 
     /**
-     * 帐号类型，仅支持YouZanAccount：有赞帐号yzOpenId
+     * 帐号类型，目前有以下几种类型，WxOpenId：微信openId，WxUnionId：微信unionId，Mobile：手机号，YouZanAccount：有赞帐号
      * @var string
      */
     private $accountType;
 
     /**
-     * 有赞帐号id
+     * 帐号ID
      * @var string
      */
     private $accountId;
@@ -30,7 +30,13 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * yzOpenId是有赞对外开放的有赞用户唯一标识，建议开发者使用
+     * 手机号
+     * @var string
+     */
+    private $mobile;
+
+    /**
+     * yzOpenId
      * @var string
      */
     private $yzOpenId;
@@ -40,12 +46,6 @@ class CustomerIdentifyDTO implements \JsonSerializable {
      * @var int
      */
     private $nodeKdtId;
-
-    /**
-     * 手机号
-     * @var string
-     */
-    private $mobile;
 
 
 
@@ -100,6 +100,22 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     /**
      * @return string
      */
+    public function getMobile(): ?string
+    {
+        return $this->mobile;
+    }
+
+    /**
+     * @param string $mobile
+     */
+    public function setMobile(?string $mobile): void
+    {
+        $this->mobile = $mobile;
+    }
+
+    /**
+     * @return string
+     */
     public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
@@ -127,22 +143,6 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     public function setNodeKdtId(?int $nodeKdtId): void
     {
         $this->nodeKdtId = $nodeKdtId;
-    }
-
-    /**
-     * @return string
-     */
-    public function getMobile(): ?string
-    {
-        return $this->mobile;
-    }
-
-    /**
-     * @param string $mobile
-     */
-    public function setMobile(?string $mobile): void
-    {
-        $this->mobile = $mobile;
     }
 
     public function jsonSerialize() {

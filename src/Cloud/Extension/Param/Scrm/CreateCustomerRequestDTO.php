@@ -6,20 +6,20 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\CustomerIdentifyDTO;
 use Com\Youzan\Cloud\Extension\Param\Scrm\CustomerProfileCreateDTO;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2018-09-29 21:13:57.0
+ * @create Thu Feb 17 21:18:21 CST 2022
  */
 class CreateCustomerRequestDTO implements \JsonSerializable {
 
     /**
-     * 
+     *  
      * @var CustomerIdentifyDTO
      */
     private $customerIdentifyDTO;
 
     /**
-     * 
+     *  
      * @var CustomerProfileCreateDTO
      */
     private $customerProfileCreateDTO;

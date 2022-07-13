@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Extpoint;
 use Com\Youzan\Cloud\Extension\Param\Extpoint\RigMenuCoBuildResDTO;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2020-09-01 17:22:42.0
+ * @create Tue May 17 11:37:25 CST 2022
  */
 class RigMenuCoBuildResDTOOutParam implements \JsonSerializable {
 

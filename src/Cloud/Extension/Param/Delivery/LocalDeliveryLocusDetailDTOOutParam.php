@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Delivery;
 use Com\Youzan\Cloud\Extension\Param\Delivery\LocalDeliveryLocusDetailDTO;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2019-09-19 19:38:10.0
+ * @create Thu Jan 13 22:52:50 CST 2022
  */
 class LocalDeliveryLocusDetailDTOOutParam implements \JsonSerializable {
 

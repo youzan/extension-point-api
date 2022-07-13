@@ -9,7 +9,7 @@ use Com\Youzan\Cloud\Extension\Param\Trade\RefundableFeeDTO;
 /**
  * 订单详情自定义数据请求参数
  * @author Baymax
- * @create 2019-07-23 17:37:38.0
+ * @create Thu Jan 13 20:54:23 CST 2022
  */
 class RefundableAmountCalcRequestDTO implements \JsonSerializable {
 
@@ -42,6 +42,12 @@ class RefundableAmountCalcRequestDTO implements \JsonSerializable {
      * @var array
      */
     private $itemRefundableFeeList;
+
+    /**
+     * 店铺在有赞的id标识，有赞平台生成，在有赞平台唯一，用于判断信息属于哪一个店铺
+     * @var int
+     */
+    private $kdtId;
 
 
 
@@ -123,6 +129,22 @@ class RefundableAmountCalcRequestDTO implements \JsonSerializable {
     public function setItemRefundableFeeList(?array $itemRefundableFeeList): void
     {
         $this->itemRefundableFeeList = $itemRefundableFeeList;
+    }
+
+    /**
+     * @return int
+     */
+    public function getKdtId(): ?int
+    {
+        return $this->kdtId;
+    }
+
+    /**
+     * @param int $kdtId
+     */
+    public function setKdtId(?int $kdtId): void
+    {
+        $this->kdtId = $kdtId;
     }
 
     public function jsonSerialize() {

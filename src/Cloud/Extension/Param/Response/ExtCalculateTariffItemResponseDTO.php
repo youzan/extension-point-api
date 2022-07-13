@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 /**
  * 商品列表
  * @author Baymax
- * @create 2020-12-24 11:30:20.0
+ * @create Mon Mar 14 15:52:00 CST 2022
  */
 class ExtCalculateTariffItemResponseDTO implements \JsonSerializable {
 

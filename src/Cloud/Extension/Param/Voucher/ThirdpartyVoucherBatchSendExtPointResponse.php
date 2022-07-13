@@ -6,14 +6,14 @@ use Com\Youzan\Cloud\Extension\Param\Dto\ThirdpartyVoucherbDTO;
 use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-08-24 10:33:40.0
+ * @create Mon Mar 14 19:44:58 CST 2022
  */
 class ThirdpartyVoucherBatchSendExtPointResponse implements \JsonSerializable {
 
     /**
-     * 
+     *  
      * @var array
      */
     private $thirdpartyVouchers;
@@ -25,7 +25,7 @@ class ThirdpartyVoucherBatchSendExtPointResponse implements \JsonSerializable {
     private $success;
 
     /**
-     * 
+     *  
      * @var string
      */
     private $errorMsg;
@@ -37,13 +37,13 @@ class ThirdpartyVoucherBatchSendExtPointResponse implements \JsonSerializable {
     private $idempotentSuccess;
 
     /**
-     * 
+     *  
      * @var int
      */
     private $versionNo;
 
     /**
-     * 
+     *  
      * @var stdClass
      */
     private $extMap;

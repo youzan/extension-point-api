@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-04-30 10:42:54.0
+ * @create Mon Mar 14 17:35:47 CST 2022
  */
 class ItemContext implements \JsonSerializable {
 

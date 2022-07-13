@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Dispatch;
 use Com\Youzan\Cloud\Extension\Param\Dispatch\DispatchStaffInfoDTO;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2020-07-27 15:59:04.0
+ * @create Thu Feb 24 16:08:09 CST 2022
  */
 class DispatchStaffInfoDTOOutParam implements \JsonSerializable {
 

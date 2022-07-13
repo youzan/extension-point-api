@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Goods;
 use Com\Youzan\Cloud\Extension\Param\Goods\ExtGoodsConfigDetail;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-05-08 14:35:44.0
+ * @create Thu Jun 30 19:00:48 CST 2022
  */
 class ExtGoodsConfigResponse implements \JsonSerializable {
 
     /**
-     * 
+     *  
      * @var array
      */
     private $goodsConfigList;

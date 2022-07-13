@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Req;
 use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2021-08-06 11:24:17.0
+ * @create Mon Mar 14 16:59:06 CST 2022
  */
 class CheckGoodsNoParam implements \JsonSerializable {
 
@@ -16,24 +16,6 @@ class CheckGoodsNoParam implements \JsonSerializable {
      * @var int
      */
     private $kdtId;
-
-    /**
-     * 是否虚拟商品 1:是， 0:否
-     * @var int
-     */
-    private $isVirtual;
-
-    /**
-     * 商品类型: 0 默认类型，1 拍卖 10 分销
-     * @var int
-     */
-    private $goodsType;
-
-    /**
-     * 业务code
-     * @var string
-     */
-    private $markCode;
 
     /**
      * 商品id，创建商品时itemId为空; 更新时需要携带, 否则可能校验失败
@@ -45,7 +27,7 @@ class CheckGoodsNoParam implements \JsonSerializable {
      * 商品编码
      * @var string
      */
-    private $goodsNo;
+    private $itemNo;
 
     /**
      * 商品条码
@@ -86,54 +68,6 @@ class CheckGoodsNoParam implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getIsVirtual(): ?int
-    {
-        return $this->isVirtual;
-    }
-
-    /**
-     * @param int $isVirtual
-     */
-    public function setIsVirtual(?int $isVirtual): void
-    {
-        $this->isVirtual = $isVirtual;
-    }
-
-    /**
-     * @return int
-     */
-    public function getGoodsType(): ?int
-    {
-        return $this->goodsType;
-    }
-
-    /**
-     * @param int $goodsType
-     */
-    public function setGoodsType(?int $goodsType): void
-    {
-        $this->goodsType = $goodsType;
-    }
-
-    /**
-     * @return string
-     */
-    public function getMarkCode(): ?string
-    {
-        return $this->markCode;
-    }
-
-    /**
-     * @param string $markCode
-     */
-    public function setMarkCode(?string $markCode): void
-    {
-        $this->markCode = $markCode;
-    }
-
-    /**
-     * @return int
-     */
     public function getItemId(): ?int
     {
         return $this->itemId;
@@ -150,17 +84,17 @@ class CheckGoodsNoParam implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getGoodsNo(): ?string
+    public function getItemNo(): ?string
     {
-        return $this->goodsNo;
+        return $this->itemNo;
     }
 
     /**
-     * @param string $goodsNo
+     * @param string $itemNo
      */
-    public function setGoodsNo(?string $goodsNo): void
+    public function setItemNo(?string $itemNo): void
     {
-        $this->goodsNo = $goodsNo;
+        $this->itemNo = $itemNo;
     }
 
     /**

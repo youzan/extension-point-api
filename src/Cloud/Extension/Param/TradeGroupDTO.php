@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\UsedPro;
 /**
  * 交易分组信息
  * @author Baymax
- * @create 2019-03-26 13:18:47.0
+ * @create Wed Jun 22 14:40:21 CST 2022
  */
 class TradeGroupDTO implements \JsonSerializable {
 
@@ -25,10 +25,16 @@ class TradeGroupDTO implements \JsonSerializable {
     private $selfFetchId;
 
     /**
-     * 使用的优惠券
+     * （字段在2022年3月31日下线，请使用usedGroupPros对接，已对接开发者请尽快调整）使用的优惠券
      * @var UsedPro
      */
     private $usedPro;
+
+    /**
+     * 使用的优惠券，支持优惠券叠加
+     * @var array
+     */
+    private $usedGroupPros;
 
 
 
@@ -78,6 +84,22 @@ class TradeGroupDTO implements \JsonSerializable {
     public function setUsedPro(?UsedPro $usedPro): void
     {
         $this->usedPro = $usedPro;
+    }
+
+    /**
+     * @return array
+     */
+    public function getUsedGroupPros(): ?array
+    {
+        return $this->usedGroupPros;
+    }
+
+    /**
+     * @param array $usedGroupPros
+     */
+    public function setUsedGroupPros(?array $usedGroupPros): void
+    {
+        $this->usedGroupPros = $usedGroupPros;
     }
 
     public function jsonSerialize() {

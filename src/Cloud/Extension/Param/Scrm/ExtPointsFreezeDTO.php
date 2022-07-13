@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 请求参数
  * @author Baymax
- * @create 2018-09-30 14:59:23.0
+ * @create Tue Jul 05 15:11:19 CST 2022
  */
 class ExtPointsFreezeDTO implements \JsonSerializable {
 
@@ -25,13 +25,13 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * 积分冻结值
+     * 积分冻结值。该值为负数时表示扣减积分，正数表示增加积分。
      * @var int
      */
     private $amount;
 
     /**
-     * 
+     * 业务唯一标识
      * @var string
      */
     private $bizValue;
@@ -61,7 +61,7 @@ class ExtPointsFreezeDTO implements \JsonSerializable {
     private $nodeId;
 
     /**
-     * 
+     *  退款单号，订单退款时产生
      * @var string
      */
     private $bizToken;

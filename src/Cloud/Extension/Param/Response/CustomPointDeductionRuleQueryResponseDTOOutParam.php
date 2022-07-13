@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 use Com\Youzan\Cloud\Extension\Param\Response\CustomPointDeductionRuleQueryResponseDTO;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2021-03-25 19:55:06.0
+ * @create Thu Jan 13 20:33:40 CST 2022
  */
 class CustomPointDeductionRuleQueryResponseDTOOutParam implements \JsonSerializable {
 

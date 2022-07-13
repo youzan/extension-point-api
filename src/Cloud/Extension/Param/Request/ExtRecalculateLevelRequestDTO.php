@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 等级重算入参
  * @author Baymax
- * @create 2021-07-09 13:03:53.0
+ * @create Fri Jan 07 18:55:48 CST 2022
  */
 class ExtRecalculateLevelRequestDTO implements \JsonSerializable {
 

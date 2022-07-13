@@ -2,12 +2,13 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 
+use Java\Lang\Long;
 use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-02-12 16:36:31.0
+ * @create Mon Mar 14 17:42:26 CST 2022
  */
 class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
 

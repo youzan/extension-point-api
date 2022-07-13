@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 商品信息
  * @author Baymax
- * @create 2018-10-08 11:32:37.0
+ * @create Thu Jan 13 20:40:58 CST 2022
  */
 class ItemCalcDTO implements \JsonSerializable {
 
@@ -64,6 +64,12 @@ class ItemCalcDTO implements \JsonSerializable {
      * @var stdClass
      */
     private $extModelMap;
+
+    /**
+     * 是否分销商品
+     * @var bool
+     */
+    private $fenXiaoGood;
 
 
 
@@ -209,6 +215,22 @@ class ItemCalcDTO implements \JsonSerializable {
     public function setExtModelMap(?stdClass $extModelMap): void
     {
         $this->extModelMap = $extModelMap;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getFenXiaoGood(): ?bool
+    {
+        return $this->fenXiaoGood;
+    }
+
+    /**
+     * @param bool $fenXiaoGood
+     */
+    public function setFenXiaoGood(?bool $fenXiaoGood): void
+    {
+        $this->fenXiaoGood = $fenXiaoGood;
     }
 
     public function jsonSerialize() {

@@ -6,9 +6,9 @@ use StdClass;
 use Com\Youzan\Cloud\Extension\Param\ExtPointExtraPriceResultDTO;
 
 /**
- * 
+ * 响应信息
  * @author Baymax
- * @create 2018-10-08 11:32:37.0
+ * @create Thu Jan 13 20:40:58 CST 2022
  */
 class ExtraFeeCalcResultDTO implements \JsonSerializable {
 
@@ -37,7 +37,7 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     private $extraFeeDesc;
 
     /**
-     *  订单级额外费用 (包含在订单是否金额里面)
+     * 订单级额外费用 (包含在订单是否金额里面)，订单级额外费用JSON字符串限制500个字符
      * @var array
      */
     private $orderExtraPrice;

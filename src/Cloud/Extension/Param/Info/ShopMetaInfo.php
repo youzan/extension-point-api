@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Info;
 /**
  * 仅appendShopMetaInfo&#x3D;true时有值
  * @author Baymax
- * @create 2020-03-19 10:50:21.0
+ * @create Mon Mar 14 16:51:11 CST 2022
  */
 class ShopMetaInfo implements \JsonSerializable {
 
@@ -30,67 +30,67 @@ class ShopMetaInfo implements \JsonSerializable {
     private $lockStatus;
 
     /**
-     * 
+     *  
      * @var int
      */
     private $shopType;
 
     /**
-     * 
+     *  
      * @var int
      */
     private $shopRole;
 
     /**
-     * 
+     *  
      * @var int
      */
     private $parentKdtId;
 
     /**
-     * 
+     *  
      * @var int
      */
     private $rootKdtId;
 
     /**
-     * 
+     *  
      * @var int
      */
     private $chainOnlineShopMode;
 
     /**
-     * 
+     *  
      * @var bool
      */
     private $onlineShopOpen;
 
     /**
-     * 
+     *  
      * @var int
      */
     private $shopTopic;
 
     /**
-     * 
+     *  
      * @var bool
      */
     private $offlineShopOpen;
 
     /**
-     * 
+     *  
      * @var int
      */
     private $saasSolution;
 
     /**
-     * 
+     *  
      * @var int
      */
     private $joinType;
 
     /**
-     * 
+     *  
      * @var int
      */
     private $subSolution;

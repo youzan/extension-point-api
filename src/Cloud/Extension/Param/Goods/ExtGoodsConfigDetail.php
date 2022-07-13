@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Goods;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-05-08 14:35:44.0
+ * @create Thu Jun 30 19:00:48 CST 2022
  */
 class ExtGoodsConfigDetail implements \JsonSerializable {
 
@@ -40,6 +40,18 @@ class ExtGoodsConfigDetail implements \JsonSerializable {
      * @var int
      */
     private $iiRate;
+
+    /**
+     * 一级佣金（固定金额，单位：分）。返回大于0的整数。示例 ：100.55元 -&gt; 10055
+     * @var int
+     */
+    private $iCommission;
+
+    /**
+     * 二级佣金（固定金额，单位：分）。返回大于0的整数。示例 ：100.55元 -&gt; 10055
+     * @var int
+     */
+    private $iiCommission;
 
 
 
@@ -121,6 +133,38 @@ class ExtGoodsConfigDetail implements \JsonSerializable {
     public function setIiRate(?int $iiRate): void
     {
         $this->iiRate = $iiRate;
+    }
+
+    /**
+     * @return int
+     */
+    public function getICommission(): ?int
+    {
+        return $this->iCommission;
+    }
+
+    /**
+     * @param int $iCommission
+     */
+    public function setICommission(?int $iCommission): void
+    {
+        $this->iCommission = $iCommission;
+    }
+
+    /**
+     * @return int
+     */
+    public function getIiCommission(): ?int
+    {
+        return $this->iiCommission;
+    }
+
+    /**
+     * @param int $iiCommission
+     */
+    public function setIiCommission(?int $iiCommission): void
+    {
+        $this->iiCommission = $iiCommission;
     }
 
     public function jsonSerialize() {

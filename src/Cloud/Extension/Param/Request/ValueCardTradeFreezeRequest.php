@@ -2,12 +2,12 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Request;
 
-
+use Java\Lang\String;
 
 /**
  * 请求参数
  * @author Baymax
- * @create 2020-12-14 16:04:02.0
+ * @create Mon Mar 14 18:00:31 CST 2022
  */
 class ValueCardTradeFreezeRequest implements \JsonSerializable {
 

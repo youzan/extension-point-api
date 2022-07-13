@@ -2,83 +2,83 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Medicine;
 
-
+use Java\Lang\String;
 
 /**
- * 
+ *  请求体
  * @author Baymax
- * @create 2021-04-11 16:24:33.0
+ * @create Tue Jun 07 11:00:15 CST 2022
  */
 class DiagnoseDiseaseQueryRequestDTO implements \JsonSerializable {
 
     /**
-     * 
+     *  有赞店铺kdtId
      * @var int
      */
     private $kdtId;
 
     /**
-     * 
+     *  有赞店铺总部kdtId
      * @var int
      */
     private $rootKdtId;
 
     /**
-     * 
+     *  互联网医院渠道，目前枚举：1-莲藕，...
      * @var int
      */
     private $hospitalChannel;
 
     /**
-     * 
+     *  互联网医院名称
      * @var string
      */
     private $hospitalName;
 
     /**
-     * 
+     *  药品通用名（必填）
      * @var array
      */
     private $commonNames;
 
     /**
-     * 
+     * 用药人id 
      * @var int
      */
     private $patientId;
 
     /**
-     * 
+     *  性别 1&#x3D;男;2&#x3D;女;
      * @var int
      */
     private $sex;
 
     /**
-     * 
+     *  出生日期(yyyy-MM-dd)
      * @var string
      */
     private $birthday;
 
     /**
-     * 
+     *  肝功能异常 0&#x3D;无;1&#x3D;有;
      * @var int
      */
     private $liverType;
 
     /**
-     * 
+     *  肾功能异常 0&#x3D;无;1&#x3D;有;
      * @var int
      */
     private $renalType;
 
     /**
-     * 
+     *  是否妊娠哺乳 0&#x3D;无;1&#x3D;有;
      * @var int
      */
     private $nurseType;
 
     /**
-     * 
+     * 系统请求来源，可忽略
      * @var string
      */
     private $retailSource;

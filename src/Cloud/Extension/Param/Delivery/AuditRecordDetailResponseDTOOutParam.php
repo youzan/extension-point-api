@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Delivery;
 use Com\Youzan\Cloud\Extension\Param\Delivery\AuditRecordDetailResponseDTO;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2019-09-19 19:45:04.0
+ * @create Wed Feb 09 15:43:25 CST 2022
  */
 class AuditRecordDetailResponseDTOOutParam implements \JsonSerializable {
 

@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Customer\ExtCustomerRelationBindResponseDTO
 
 interface CustomerRelationExtPoint {
 
-    public function bindCustomerRelation(ExtCustomerRelationBindRequestDTO $request) : ExtCustomerRelationBindResponseDTOOutParam;
+    public function bindCustomerRelation(ExtCustomerRelationBindRequestDTO $extCustomerRelationBindRequestDTO) : ExtCustomerRelationBindResponseDTOOutParam;
 
 }

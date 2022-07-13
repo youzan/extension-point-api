@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Extpoint\RigMenuCoBuildResDTOOutParam;
 
 interface RigMenuExtPoint {
 
-    public function buildCoBuildMenu(RigMenuCoBuildReqDTO $request) : RigMenuCoBuildResDTOOutParam;
+    public function buildCoBuildMenu(RigMenuCoBuildReqDTO $rigMenuCoBuildReqDTO) : RigMenuCoBuildResDTOOutParam;
 
 }

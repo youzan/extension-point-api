@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param;
 use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-08-01 11:46:51.0
+ * @create Tue Mar 01 19:30:56 CST 2022
  */
 class ExtPromotionCoreResultDTO implements \JsonSerializable {
 

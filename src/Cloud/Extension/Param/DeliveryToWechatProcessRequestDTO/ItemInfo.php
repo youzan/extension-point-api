@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\DeliveryToWechatProcessRequestDTO;
 /**
  * 商品信息列表
  * @author Baymax
- * @create 2021-07-05 20:45:27.0
+ * @create Thu Jan 13 20:45:03 CST 2022
  */
 class ItemInfo implements \JsonSerializable {
 
@@ -28,6 +28,18 @@ class ItemInfo implements \JsonSerializable {
      * @var int
      */
     private $count;
+
+    /**
+     * 外部SkuId
+     * @var string
+     */
+    private $outSkuId;
+
+    /**
+     * 外部商品ID
+     * @var string
+     */
+    private $outItemId;
 
 
 
@@ -77,6 +89,38 @@ class ItemInfo implements \JsonSerializable {
     public function setCount(?int $count): void
     {
         $this->count = $count;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOutSkuId(): ?string
+    {
+        return $this->outSkuId;
+    }
+
+    /**
+     * @param string $outSkuId
+     */
+    public function setOutSkuId(?string $outSkuId): void
+    {
+        $this->outSkuId = $outSkuId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOutItemId(): ?string
+    {
+        return $this->outItemId;
+    }
+
+    /**
+     * @param string $outItemId
+     */
+    public function setOutItemId(?string $outItemId): void
+    {
+        $this->outItemId = $outItemId;
     }
 
     public function jsonSerialize() {

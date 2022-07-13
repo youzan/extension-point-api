@@ -6,9 +6,9 @@ use DateTime;
 use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-08-15 11:23:21.0
+ * @create Thu Jun 30 14:26:03 CST 2022
  */
 class PayRequestDTO implements \JsonSerializable {
 
@@ -29,6 +29,12 @@ class PayRequestDTO implements \JsonSerializable {
      * @var string
      */
     private $tradeType;
+
+    /**
+     * 二级支付方式
+     * @var string
+     */
+    private $secondTradeType;
 
     /**
      * 支付总金额（单位为分）
@@ -90,6 +96,12 @@ class PayRequestDTO implements \JsonSerializable {
      */
     private $extra;
 
+    /**
+     * 有赞交易侧订单号
+     * @var string
+     */
+    private $yzOutBizNo;
+
 
 
     /**
@@ -138,6 +150,22 @@ class PayRequestDTO implements \JsonSerializable {
     public function setTradeType(?string $tradeType): void
     {
         $this->tradeType = $tradeType;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSecondTradeType(): ?string
+    {
+        return $this->secondTradeType;
+    }
+
+    /**
+     * @param string $secondTradeType
+     */
+    public function setSecondTradeType(?string $secondTradeType): void
+    {
+        $this->secondTradeType = $secondTradeType;
     }
 
     /**
@@ -298,6 +326,22 @@ class PayRequestDTO implements \JsonSerializable {
     public function setExtra(?stdClass $extra): void
     {
         $this->extra = $extra;
+    }
+
+    /**
+     * @return string
+     */
+    public function getYzOutBizNo(): ?string
+    {
+        return $this->yzOutBizNo;
+    }
+
+    /**
+     * @param string $yzOutBizNo
+     */
+    public function setYzOutBizNo(?string $yzOutBizNo): void
+    {
+        $this->yzOutBizNo = $yzOutBizNo;
     }
 
     public function jsonSerialize() {

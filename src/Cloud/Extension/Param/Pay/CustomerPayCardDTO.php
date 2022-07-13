@@ -2,12 +2,12 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Pay;
 
-use DateTime;
+
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-04-30 11:01:58.0
+ * @create Mon Mar 14 17:35:47 CST 2022
  */
 class CustomerPayCardDTO implements \JsonSerializable {
 

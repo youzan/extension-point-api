@@ -5,14 +5,14 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 use Com\Youzan\Cloud\Extension\Param\Dto\CustomerValueCardExtDTO;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2020-01-06 12:52:32.0
+ * @create Tue Jun 21 16:04:01 CST 2022
  */
 class CustomerExtValueCardsQueryResponse implements \JsonSerializable {
 
     /**
-     * 
+     *  
      * @var array
      */
     private $valueCardCustomerCards;

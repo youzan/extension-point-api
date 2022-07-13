@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-08-15 16:24:20.0
+ * @create Mon Mar 14 17:37:51 CST 2022
  */
 class RefundRequestDTO implements \JsonSerializable {
 
@@ -70,6 +70,18 @@ class RefundRequestDTO implements \JsonSerializable {
      * @var stdClass
      */
     private $extra;
+
+    /**
+     * 支付业务订单号
+     * @var string
+     */
+    private $yzOutBizNo;
+
+    /**
+     * 有赞交易退款业务单号
+     * @var string
+     */
+    private $yzOutBizRefundNo;
 
 
 
@@ -231,6 +243,38 @@ class RefundRequestDTO implements \JsonSerializable {
     public function setExtra(?stdClass $extra): void
     {
         $this->extra = $extra;
+    }
+
+    /**
+     * @return string
+     */
+    public function getYzOutBizNo(): ?string
+    {
+        return $this->yzOutBizNo;
+    }
+
+    /**
+     * @param string $yzOutBizNo
+     */
+    public function setYzOutBizNo(?string $yzOutBizNo): void
+    {
+        $this->yzOutBizNo = $yzOutBizNo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getYzOutBizRefundNo(): ?string
+    {
+        return $this->yzOutBizRefundNo;
+    }
+
+    /**
+     * @param string $yzOutBizRefundNo
+     */
+    public function setYzOutBizRefundNo(?string $yzOutBizRefundNo): void
+    {
+        $this->yzOutBizRefundNo = $yzOutBizRefundNo;
     }
 
     public function jsonSerialize() {

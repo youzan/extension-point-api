@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Ext\ItemExtParam;
 /**
  * 参数request
  * @author Baymax
- * @create 2020-11-16 20:06:15.0
+ * @create Sun Mar 20 16:00:10 CST 2022
  */
 class ItemTradeCloudExtRequest implements \JsonSerializable {
 

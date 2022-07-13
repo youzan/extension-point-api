@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Response\ReceptionistInfoDTOOutParam;
 
 interface ReceptionistService {
 
-    public function getReceptionistInfo(ReceptionistQueryDTO $request) : ReceptionistInfoDTOOutParam;
+    public function getReceptionistInfo(ReceptionistQueryDTO $queryDTO) : ReceptionistInfoDTOOutParam;
 
 }

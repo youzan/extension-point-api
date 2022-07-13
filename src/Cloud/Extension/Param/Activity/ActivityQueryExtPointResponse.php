@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Activity;
 use Com\Youzan\Cloud\Extension\Param\Dto\ThirdpartyActivityDTO;
 
 /**
- * 
+ * 响应参数
  * @author Baymax
- * @create 2020-02-12 16:36:21.0
+ * @create Mon Mar 14 19:14:33 CST 2022
  */
 class ActivityQueryExtPointResponse implements \JsonSerializable {
 
