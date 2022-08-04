@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 /**
  * 联系地址
  * @author Baymax
- * @create Thu Feb 17 21:20:23 CST 2022
+ * @create Sat Jul 30 23:34:06 CST 2022
  */
 class ContactAddressModifyDTO implements \JsonSerializable {
 

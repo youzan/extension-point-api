@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\SelfVerifyValidatetResponseDTO;
 /**
  *  返回类
  * @author Baymax
- * @create Thu Jan 13 22:36:02 CST 2022
+ * @create Sat Jul 30 23:30:58 CST 2022
  */
 class SelfVerifyValidatetResponseDTOOutParam implements \JsonSerializable {
 

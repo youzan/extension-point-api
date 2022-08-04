@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Dc\DeliveryParamValidatorResponse;
 /**
  * 发货校验结果对象返回类
  * @author Baymax
- * @create Thu Jan 13 20:41:46 CST 2022
+ * @create Sat Jul 30 23:31:30 CST 2022
  */
 class DeliveryParamValidatorResponseOutParam implements \JsonSerializable {
 

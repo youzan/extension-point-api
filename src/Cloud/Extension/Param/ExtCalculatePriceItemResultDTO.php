@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\ExtPromotionCoreResultDTO;
 /**
  * 商品级优惠信息
  * @author Baymax
- * @create Tue Mar 01 19:30:56 CST 2022
+ * @create Sat Jul 30 23:32:01 CST 2022
  */
 class ExtCalculatePriceItemResultDTO implements \JsonSerializable {
 

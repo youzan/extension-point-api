@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  *  
  * @author Baymax
- * @create Thu Feb 17 20:42:44 CST 2022
+ * @create Sat Jul 30 23:33:41 CST 2022
  */
 class CustomizeAttributeDTO implements \JsonSerializable {
 

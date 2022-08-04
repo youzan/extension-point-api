@@ -7,12 +7,12 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 买家信息
  * @author Baymax
- * @create Thu Jan 13 20:40:58 CST 2022
+ * @create Sat Jul 30 23:32:01 CST 2022
  */
 class ExtPointUserMsgDTO implements \JsonSerializable {
 
     /**
-     * 客户Id（有赞用户ID，在有赞平台账号平台下唯一）
+     * 客户Id（有赞用户ID，在有赞平台账号平台下唯一。）
      * @var int
      */
     private $buyerId;

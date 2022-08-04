@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 订单级额外费用 (包含在订单是否金额里面)，订单级额外费用JSON字符串限制500个字符
  * @author Baymax
- * @create Thu Jan 13 20:40:58 CST 2022
+ * @create Sat Jul 30 23:32:39 CST 2022
  */
 class ExtPointExtraPriceResultDTO implements \JsonSerializable {
 
