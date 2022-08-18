@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 use Com\Youzan\Cloud\Extension\Param\Pay\RefundQueryResponseDTO;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2019-08-15 16:39:05.0
+ * @create Mon Mar 14 17:40:03 CST 2022
  */
 class RefundQueryResponseDTOOutParam implements \JsonSerializable {
 

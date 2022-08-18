@@ -7,7 +7,7 @@ use Java\Lang\Long;
 /**
  *  
  * @author Baymax
- * @create Thu Jun 30 19:00:49 CST 2022
+ * @create Thu Jun 30 19:00:48 CST 2022
  */
 class ExtGoodsConfigRequest implements \JsonSerializable {
 

@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Info\PromotionItemDecreaseInfo;
 /**
  * 当promotionLevel返回“goods”,  需要返回的商品级别优惠减免结果
  * @author Baymax
- * @create Wed Feb 16 10:43:05 CST 2022
+ * @create Thu Mar 10 20:03:22 CST 2022
  */
 class GoodsPromotionComputeResp implements \JsonSerializable {
 

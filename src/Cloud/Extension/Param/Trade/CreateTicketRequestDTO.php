@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Trade\TicketOrderItem;
 /**
  *  
  * @author Baymax
- * @create Wed Apr 27 17:15:31 CST 2022
+ * @create Wed Apr 27 17:15:30 CST 2022
  */
 class CreateTicketRequestDTO implements \JsonSerializable {
 

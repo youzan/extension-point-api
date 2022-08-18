@@ -7,13 +7,13 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 /**
  *  
  * @author Baymax
- * @create Fri Apr 22 14:09:02 CST 2022
+ * @create Mon Mar 14 16:54:54 CST 2022
  */
 class CustomerRelationGetByCustomerRequest implements \JsonSerializable {
 
     /**
      * 客户有赞用户id
-     * @var int
+     * @var string
      */
     private $ctYzOpenId;
 
@@ -32,17 +32,17 @@ class CustomerRelationGetByCustomerRequest implements \JsonSerializable {
 
 
     /**
-     * @return int
+     * @return string
      */
-    public function getCtYzOpenId(): ?int
+    public function getCtYzOpenId(): ?string
     {
         return $this->ctYzOpenId;
     }
 
     /**
-     * @param int $ctYzOpenId
+     * @param string $ctYzOpenId
      */
-    public function setCtYzOpenId(?int $ctYzOpenId): void
+    public function setCtYzOpenId(?string $ctYzOpenId): void
     {
         $this->ctYzOpenId = $ctYzOpenId;
     }

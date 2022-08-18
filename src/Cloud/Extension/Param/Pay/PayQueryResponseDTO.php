@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 use DateTime;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-08-15 11:37:58.0
+ * @create Mon Mar 14 17:42:06 CST 2022
  */
 class PayQueryResponseDTO implements \JsonSerializable {
 
@@ -60,13 +60,13 @@ class PayQueryResponseDTO implements \JsonSerializable {
     private $payTime;
 
     /**
-     * 币种信息
+     * 币种信息，默认为CNY
      * @var string
      */
     private $payCurrency;
 
     /**
-     * 支付总金额
+     * 支付总金额，单位为分
      * @var int
      */
     private $payAmount;

@@ -9,7 +9,7 @@ use StdClass;
 /**
  * 返回优惠减免信息
  * @author Baymax
- * @create Wed Feb 16 10:43:05 CST 2022
+ * @create Thu Mar 10 20:03:22 CST 2022
  */
 class CustomizedPromotionComputeResp implements \JsonSerializable {
 

@@ -6,20 +6,20 @@ use StdClass;
 use Com\Youzan\Cloud\Extension\Param\ExtPointExtraPriceResultDTO;
 
 /**
- * 附加优惠返回
+ * 响应信息
  * @author Baymax
- * @create Wed Feb 23 17:15:19 CST 2022
+ * @create Sat Jul 30 23:32:39 CST 2022
  */
 class ExtraFeeCalcResultDTO implements \JsonSerializable {
 
     /**
-     * 附加费用列表（已弃用，请传空值）
+     *  附加费用列表（已弃用，请传空值）
      * @var stdClass
      */
     private $extraFeeDetail;
 
     /**
-     * 附加费用总额（已弃用，请使用orderExtraPrice字段）
+     *  附加费用总额（已弃用，请使用orderExtraPrice字段）
      * @var int
      */
     private $totalExtraFeeAmount;
@@ -31,7 +31,7 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     private $orderNo;
 
     /**
-     * 附加费用说明（已弃用，请使用orderExtraPrice字段）
+     *  附加费用说明（已弃用，请使用orderExtraPrice字段）
      * @var string
      */
     private $extraFeeDesc;

@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 /**
  * 自提点地址信息对象
  * @author Baymax
- * @create Mon Jun 13 14:59:19 CST 2022
+ * @create Mon Jun 13 14:59:18 CST 2022
  */
 class AddressExtDTO implements \JsonSerializable {
 

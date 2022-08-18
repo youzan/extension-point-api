@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 /**
  *  
  * @author Baymax
- * @create Fri Apr 22 14:24:14 CST 2022
+ * @create Fri Apr 22 14:22:19 CST 2022
  */
 class CustomerRelationUpdateRequest implements \JsonSerializable {
 

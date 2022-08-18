@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 发货商品信息
  * @author Baymax
- * @create Thu Jan 13 20:41:46 CST 2022
+ * @create Sat Jul 30 23:31:30 CST 2022
  */
 class DeliveryItemMsgDTO implements \JsonSerializable {
 

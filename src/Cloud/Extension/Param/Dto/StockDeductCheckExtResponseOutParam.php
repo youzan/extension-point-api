@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\StockDeductCheckExtResponse;
 /**
  * 库存扣减检查响应参数返回类
  * @author Baymax
- * @create Wed Mar 02 15:26:08 CST 2022
+ * @create Wed Mar 02 15:24:17 CST 2022
  */
 class StockDeductCheckExtResponseOutParam implements \JsonSerializable {
 

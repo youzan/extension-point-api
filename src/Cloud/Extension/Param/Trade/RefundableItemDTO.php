@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-07-24 13:48:58.0
+ * @create Thu Jan 13 20:54:23 CST 2022
  */
 class RefundableItemDTO implements \JsonSerializable {
 

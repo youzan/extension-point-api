@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 use Com\Youzan\Cloud\Extension\Param\Trade\RefundableAmountCalcResponseDTO;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2019-07-23 17:37:38.0
+ * @create Thu Jan 13 20:54:23 CST 2022
  */
 class RefundableAmountCalcResponseDTOOutParam implements \JsonSerializable {
 

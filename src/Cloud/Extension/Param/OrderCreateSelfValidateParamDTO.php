@@ -3,11 +3,12 @@
 namespace Com\Youzan\Cloud\Extension\Param;
 
 use Com\Youzan\Cloud\Extension\Param\TradeGroupDTO;
+use Com\Youzan\Cloud\Extension\Param\InvoiceDTO;
 
 /**
  * orderCreateSelfValidateParamDTO的参数说明
  * @author Baymax
- * @create 2018-09-30 17:35:52.0
+ * @create Wed Jun 22 14:40:21 CST 2022
  */
 class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
 
@@ -70,6 +71,12 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
      * @var string
      */
     private $name;
+
+    /**
+     * 发票信息
+     * @var InvoiceDTO
+     */
+    private $invoice;
 
 
 
@@ -231,6 +238,22 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     public function setName(?string $name): void
     {
         $this->name = $name;
+    }
+
+    /**
+     * @return InvoiceDTO
+     */
+    public function getInvoice(): ?InvoiceDTO
+    {
+        return $this->invoice;
+    }
+
+    /**
+     * @param InvoiceDTO $invoice
+     */
+    public function setInvoice(?InvoiceDTO $invoice): void
+    {
+        $this->invoice = $invoice;
     }
 
     public function jsonSerialize() {

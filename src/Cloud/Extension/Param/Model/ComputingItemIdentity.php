@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 /**
  * 减免的商品信息
  * @author Baymax
- * @create Wed Feb 16 10:43:05 CST 2022
+ * @create Thu Mar 10 20:03:22 CST 2022
  */
 class ComputingItemIdentity implements \JsonSerializable {
 

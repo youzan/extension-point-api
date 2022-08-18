@@ -7,7 +7,7 @@ use Java\Lang\Boolean;
 /**
  * 成长值增加是否成功返回类
  * @author Baymax
- * @create Fri Apr 22 15:09:35 CST 2022
+ * @create Fri Apr 22 15:09:34 CST 2022
  */
 class BooleanOutParam implements \JsonSerializable {
 

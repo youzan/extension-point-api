@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\ExtGoodsCommissionResponse;
 /**
  * 批量获取商品佣金的结果返回类
  * @author Baymax
- * @create Mon Jun 06 14:04:50 CST 2022
+ * @create Mon Jun 06 14:04:49 CST 2022
  */
 class ExtGoodsCommissionResponseOutParam implements \JsonSerializable {
 

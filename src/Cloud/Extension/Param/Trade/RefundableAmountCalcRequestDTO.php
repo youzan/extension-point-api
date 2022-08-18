@@ -9,7 +9,7 @@ use Com\Youzan\Cloud\Extension\Param\Trade\RefundableFeeDTO;
 /**
  * 订单详情自定义数据请求参数
  * @author Baymax
- * @create 2019-07-23 17:37:38.0
+ * @create Thu Jan 13 20:54:23 CST 2022
  */
 class RefundableAmountCalcRequestDTO implements \JsonSerializable {
 

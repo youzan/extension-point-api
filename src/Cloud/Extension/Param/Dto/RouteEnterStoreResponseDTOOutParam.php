@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 use Com\Youzan\Cloud\Extension\Param\Dto\RouteEnterStoreResponseDTO;
 
 /**
- * 响应体返回类
+ * 响应业务数据返回类
  * @author Baymax
- * @create Thu Jan 13 20:35:59 CST 2022
+ * @create Mon Jun 06 17:45:05 CST 2022
  */
 class RouteEnterStoreResponseDTOOutParam implements \JsonSerializable {
 

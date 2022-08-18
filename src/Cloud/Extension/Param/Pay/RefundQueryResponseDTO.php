@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 use DateTime;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create 2019-08-15 16:39:05.0
+ * @create Mon Mar 14 17:40:03 CST 2022
  */
 class RefundQueryResponseDTO implements \JsonSerializable {
 

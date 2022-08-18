@@ -7,76 +7,54 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 订单条目
  * @author Baymax
- * @create 2018-09-25 17:50:17.0
+ * @create Thu Jan 13 20:59:39 CST 2022
  */
 class OrderItemDTO implements \JsonSerializable {
 
     /**
-     * 子订单号
+     * 商品数量
      * @var int
      */
-    private $oid;
+    private $quantity;
 
     /**
-     * 下单的商品数量
-     * @var int
+     * 商品名称
+     * @var string
      */
-    private $orderGoodsNum;
-
-    /**
-     * 实付金额
-     * @var int
-     */
-    private $realPay;
+    private $productName;
 
 
 
     /**
      * @return int
      */
-    public function getOid(): ?int
+    public function getQuantity(): ?int
     {
-        return $this->oid;
+        return $this->quantity;
     }
 
     /**
-     * @param int $oid
+     * @param int $quantity
      */
-    public function setOid(?int $oid): void
+    public function setQuantity(?int $quantity): void
     {
-        $this->oid = $oid;
+        $this->quantity = $quantity;
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getOrderGoodsNum(): ?int
+    public function getProductName(): ?string
     {
-        return $this->orderGoodsNum;
+        return $this->productName;
     }
 
     /**
-     * @param int $orderGoodsNum
+     * @param string $productName
      */
-    public function setOrderGoodsNum(?int $orderGoodsNum): void
+    public function setProductName(?string $productName): void
     {
-        $this->orderGoodsNum = $orderGoodsNum;
-    }
-
-    /**
-     * @return int
-     */
-    public function getRealPay(): ?int
-    {
-        return $this->realPay;
-    }
-
-    /**
-     * @param int $realPay
-     */
-    public function setRealPay(?int $realPay): void
-    {
-        $this->realPay = $realPay;
+        $this->productName = $productName;
     }
 
     public function jsonSerialize() {

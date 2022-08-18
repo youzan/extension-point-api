@@ -13,8 +13,8 @@ interface MultiStoreBizExtService {
 
     public function listGoodsSalableStoreExt(ListStoresRequestDTO $request) : ListStoresResponseDTOOutParam;
 
-    public function routeEnterStoreExt(RouteEnterStoreRequestDTO $request) : RouteEnterStoreResponseDTOOutParam;
-
     public function listGoodsSalableStoreExtPoint(ListStoresRequestDTO $queryDTO) : ListStoresResponseDTOOutParam;
+
+    public function routeEnterStoreExt(RouteEnterStoreRequestDTO $requestDTO) : RouteEnterStoreResponseDTOOutParam;
 
 }

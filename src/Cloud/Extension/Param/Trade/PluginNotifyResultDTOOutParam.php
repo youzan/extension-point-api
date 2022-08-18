@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Trade;
 use Com\Youzan\Cloud\Extension\Param\Trade\PluginNotifyResultDTO;
 
 /**
- * 返回类
+ *  返回类
  * @author Baymax
- * @create 2018-11-06 20:20:56.0
+ * @create Thu Jan 13 21:16:39 CST 2022
  */
 class PluginNotifyResultDTOOutParam implements \JsonSerializable {
 

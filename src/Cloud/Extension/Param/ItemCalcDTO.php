@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 商品信息
  * @author Baymax
- * @create Wed Feb 23 17:15:19 CST 2022
+ * @create Sat Jul 30 23:32:01 CST 2022
  */
 class ItemCalcDTO implements \JsonSerializable {
 
@@ -42,13 +42,13 @@ class ItemCalcDTO implements \JsonSerializable {
     private $originUnitPrice;
 
     /**
-     * skuId信息
+     * 商品规格Id，微商城店铺商品规格标识（同一商品Id下，规格id唯一）
      * @var int
      */
     private $skuId;
 
     /**
-     * 商品id
+     * 商品Id，有赞生成的店铺下商品唯一id，平台唯一
      * @var int
      */
     private $goodsId;
@@ -64,12 +64,6 @@ class ItemCalcDTO implements \JsonSerializable {
      * @var stdClass
      */
     private $extModelMap;
-
-    /**
-     * 是否分销商品
-     * @var bool
-     */
-    private $fenXiaoGood;
 
 
 
@@ -215,22 +209,6 @@ class ItemCalcDTO implements \JsonSerializable {
     public function setExtModelMap(?stdClass $extModelMap): void
     {
         $this->extModelMap = $extModelMap;
-    }
-
-    /**
-     * @return bool
-     */
-    public function getFenXiaoGood(): ?bool
-    {
-        return $this->fenXiaoGood;
-    }
-
-    /**
-     * @param bool $fenXiaoGood
-     */
-    public function setFenXiaoGood(?bool $fenXiaoGood): void
-    {
-        $this->fenXiaoGood = $fenXiaoGood;
     }
 
     public function jsonSerialize() {

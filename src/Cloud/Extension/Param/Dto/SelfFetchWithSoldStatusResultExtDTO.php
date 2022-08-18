@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\SelfFetchPointInfoExtDTO;
 /**
  * 第一层返回结果封装data对象
  * @author Baymax
- * @create Mon Jun 13 14:59:19 CST 2022
+ * @create Mon Jun 13 14:59:18 CST 2022
  */
 class SelfFetchWithSoldStatusResultExtDTO implements \JsonSerializable {
 

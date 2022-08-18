@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\ExtSetLevelDTO;
 /**
  * 修改等级返回值返回类
  * @author Baymax
- * @create Tue May 17 10:18:17 CST 2022
+ * @create Tue May 17 10:18:16 CST 2022
  */
 class ExtSetLevelDTOOutParam implements \JsonSerializable {
 

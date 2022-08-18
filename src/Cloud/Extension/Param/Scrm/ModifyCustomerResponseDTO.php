@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 /**
  * 响应出参
  * @author Baymax
- * @create Wed Feb 23 15:38:31 CST 2022
+ * @create Sat Jul 30 23:34:29 CST 2022
  */
 class ModifyCustomerResponseDTO implements \JsonSerializable {
 

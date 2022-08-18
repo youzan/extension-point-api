@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\MemberProfileModifyDTO;
 /**
  *  
  * @author Baymax
- * @create Fri Feb 18 16:18:39 CST 2022
+ * @create Sat Jul 30 23:34:06 CST 2022
  */
 class ModifyMemberRequestDTO implements \JsonSerializable {
 

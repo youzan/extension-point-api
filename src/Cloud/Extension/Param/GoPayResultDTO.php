@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 去支付出参
  * @author Baymax
- * @create 2018-09-25 17:50:17.0
+ * @create Thu Jan 13 20:59:39 CST 2022
  */
 class GoPayResultDTO implements \JsonSerializable {
 
