@@ -3,11 +3,12 @@
 namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 
 use StdClass;
+use Com\Youzan\Cloud\Extension\Param\VoucherVerifyExtPointRequest\ThirdVoucherIdentity;
 
 /**
  * 请求
  * @author Baymax
- * @create Mon Mar 14 19:16:40 CST 2022
+ * @create Tue Aug 23 19:33:38 CST 2022
  */
 class VoucherVerifyExtPointRequest implements \JsonSerializable {
 
@@ -76,6 +77,12 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
      * @var string
      */
     private $requestId;
+
+    /**
+     * 三方券列表
+     * @var array
+     */
+    private $thirdVoucherIdentities;
 
 
 
@@ -253,6 +260,22 @@ class VoucherVerifyExtPointRequest implements \JsonSerializable {
     public function setRequestId(?string $requestId): void
     {
         $this->requestId = $requestId;
+    }
+
+    /**
+     * @return array
+     */
+    public function getThirdVoucherIdentities(): ?array
+    {
+        return $this->thirdVoucherIdentities;
+    }
+
+    /**
+     * @param array $thirdVoucherIdentities
+     */
+    public function setThirdVoucherIdentities(?array $thirdVoucherIdentities): void
+    {
+        $this->thirdVoucherIdentities = $thirdVoucherIdentities;
     }
 
     public function jsonSerialize() {

@@ -3,11 +3,12 @@
 namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
 use Com\Youzan\Cloud\Extension\Param\Scrm\ContactAddressDTO;
+use Com\Youzan\Cloud\Extension\Param\Dto\CustomizeAttributeDO;
 
 /**
  *  
  * @author Baymax
- * @create Thu Jan 20 10:54:18 CST 2022
+ * @create Fri Aug 26 17:13:54 CST 2022
  */
 class CustomerProfileDTO implements \JsonSerializable {
 
@@ -40,6 +41,12 @@ class CustomerProfileDTO implements \JsonSerializable {
      * @var ContactAddressDTO
      */
     private $contactAddressDTO;
+
+    /**
+     * 客户自定义资料项信息
+     * @var array
+     */
+    private $attributeList;
 
     /**
      * 邮箱
@@ -139,6 +146,22 @@ class CustomerProfileDTO implements \JsonSerializable {
     public function setContactAddressDTO(?ContactAddressDTO $contactAddressDTO): void
     {
         $this->contactAddressDTO = $contactAddressDTO;
+    }
+
+    /**
+     * @return array
+     */
+    public function getAttributeList(): ?array
+    {
+        return $this->attributeList;
+    }
+
+    /**
+     * @param array $attributeList
+     */
+    public function setAttributeList(?array $attributeList): void
+    {
+        $this->attributeList = $attributeList;
     }
 
     /**
