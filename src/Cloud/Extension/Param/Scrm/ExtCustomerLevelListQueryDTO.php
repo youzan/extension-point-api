@@ -8,7 +8,7 @@ use StdClass;
 /**
  *  
  * @author Baymax
- * @create Fri Jan 07 18:59:17 CST 2022
+ * @create Tue Jan 10 11:41:19 CST 2023
  */
 class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
 

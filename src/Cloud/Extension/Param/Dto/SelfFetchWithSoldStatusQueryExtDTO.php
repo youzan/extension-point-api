@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\SelfFetchPointGoodsInfo;
 /**
  * 接口入参对象
  * @author Baymax
- * @create Mon Jun 13 14:59:18 CST 2022
+ * @create Thu Oct 13 15:35:19 CST 2022
  */
 class SelfFetchWithSoldStatusQueryExtDTO implements \JsonSerializable {
 
@@ -40,6 +40,18 @@ class SelfFetchWithSoldStatusQueryExtDTO implements \JsonSerializable {
      * @var array
      */
     private $items;
+
+    /**
+     * 纬度
+     * @var float
+     */
+    private $lat;
+
+    /**
+     * 经度
+     * @var float
+     */
+    private $lng;
 
 
 
@@ -121,6 +133,38 @@ class SelfFetchWithSoldStatusQueryExtDTO implements \JsonSerializable {
     public function setItems(?array $items): void
     {
         $this->items = $items;
+    }
+
+    /**
+     * @return float
+     */
+    public function getLat(): ?float
+    {
+        return $this->lat;
+    }
+
+    /**
+     * @param float $lat
+     */
+    public function setLat(?float $lat): void
+    {
+        $this->lat = $lat;
+    }
+
+    /**
+     * @return float
+     */
+    public function getLng(): ?float
+    {
+        return $this->lng;
+    }
+
+    /**
+     * @param float $lng
+     */
+    public function setLng(?float $lng): void
+    {
+        $this->lng = $lng;
     }
 
     public function jsonSerialize() {

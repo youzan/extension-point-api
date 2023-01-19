@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 /**
  * 响应参数
  * @author Baymax
- * @create Tue Jul 05 15:11:19 CST 2022
+ * @create Tue Jan 10 11:43:19 CST 2023
  */
 class FreezePointsResponse implements \JsonSerializable {
 

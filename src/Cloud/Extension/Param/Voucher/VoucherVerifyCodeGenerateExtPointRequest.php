@@ -7,7 +7,7 @@ use StdClass;
 /**
  *  
  * @author Baymax
- * @create Thu Jan 13 20:50:59 CST 2022
+ * @create Tue Aug 30 15:52:17 CST 2022
  */
 class VoucherVerifyCodeGenerateExtPointRequest implements \JsonSerializable {
 
@@ -46,6 +46,12 @@ class VoucherVerifyCodeGenerateExtPointRequest implements \JsonSerializable {
      * @var stdClass
      */
     private $extMap;
+
+    /**
+     * 码值
+     * @var string
+     */
+    private $codeValue;
 
     /**
      * 请求Id，用来保证幂等
@@ -155,6 +161,22 @@ class VoucherVerifyCodeGenerateExtPointRequest implements \JsonSerializable {
     public function setExtMap(?stdClass $extMap): void
     {
         $this->extMap = $extMap;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCodeValue(): ?string
+    {
+        return $this->codeValue;
+    }
+
+    /**
+     * @param string $codeValue
+     */
+    public function setCodeValue(?string $codeValue): void
+    {
+        $this->codeValue = $codeValue;
     }
 
     /**

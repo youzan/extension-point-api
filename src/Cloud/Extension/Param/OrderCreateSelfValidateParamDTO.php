@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\InvoiceDTO;
 /**
  * orderCreateSelfValidateParamDTO的参数说明
  * @author Baymax
- * @create Wed Jun 22 14:40:21 CST 2022
+ * @create Thu Dec 08 11:03:38 CST 2022
  */
 class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
 
@@ -77,6 +77,12 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
      * @var InvoiceDTO
      */
     private $invoice;
+
+    /**
+     * 业务平台
+     * @var string
+     */
+    private $bizPlatform;
 
 
 
@@ -254,6 +260,22 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     public function setInvoice(?InvoiceDTO $invoice): void
     {
         $this->invoice = $invoice;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBizPlatform(): ?string
+    {
+        return $this->bizPlatform;
+    }
+
+    /**
+     * @param string $bizPlatform
+     */
+    public function setBizPlatform(?string $bizPlatform): void
+    {
+        $this->bizPlatform = $bizPlatform;
     }
 
     public function jsonSerialize() {

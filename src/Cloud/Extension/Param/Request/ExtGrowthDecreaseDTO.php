@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 /**
  * 扣减用户成长值入参
  * @author Baymax
- * @create Mon Feb 28 20:21:30 CST 2022
+ * @create Thu Dec 08 11:39:34 CST 2022
  */
 class ExtGrowthDecreaseDTO implements \JsonSerializable {
 

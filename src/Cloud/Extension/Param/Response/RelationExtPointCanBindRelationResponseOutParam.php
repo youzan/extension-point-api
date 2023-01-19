@@ -2,14 +2,14 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Com\Youzan\Cloud\Extension\Param\Response\CustomerExtValueCardsQueryResponse;
+use Com\Youzan\Cloud\Extension\Param\Response\RelationExtPointCanBindRelationResponse;
 
 /**
- *  返回类
+ * 响应结果body返回类
  * @author Baymax
- * @create Thu Aug 11 20:19:10 CST 2022
+ * @create Mon Aug 22 16:50:59 CST 2022
  */
-class CustomerExtValueCardsQueryResponseOutParam implements \JsonSerializable {
+class RelationExtPointCanBindRelationResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class CustomerExtValueCardsQueryResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var CustomerExtValueCardsQueryResponse
+     * @var RelationExtPointCanBindRelationResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class CustomerExtValueCardsQueryResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return CustomerExtValueCardsQueryResponse
+     * @return RelationExtPointCanBindRelationResponse
      */
-    public function getData(): ?CustomerExtValueCardsQueryResponse
+    public function getData(): ?RelationExtPointCanBindRelationResponse
     {
         return $this->data;
     }
 
     /**
-     * @param CustomerExtValueCardsQueryResponse $data
+     * @param RelationExtPointCanBindRelationResponse $data
      */
-    public function setData(?CustomerExtValueCardsQueryResponse $data): void
+    public function setData(?RelationExtPointCanBindRelationResponse $data): void
     {
         $this->data = $data;
     }

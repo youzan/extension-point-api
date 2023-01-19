@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Extpoint\RigExtRoleItem;
 /**
  *  
  * @author Baymax
- * @create Tue May 17 11:37:25 CST 2022
+ * @create Tue Jan 10 20:10:12 CST 2023
  */
 class RigExtStaffEntity implements \JsonSerializable {
 

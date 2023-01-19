@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Im;
 /**
  *  请求参数
  * @author Baymax
- * @create Mon Mar 14 17:52:14 CST 2022
+ * @create Thu Jan 05 15:37:18 CST 2023
  */
 class RobotMsgRequest implements \JsonSerializable {
 

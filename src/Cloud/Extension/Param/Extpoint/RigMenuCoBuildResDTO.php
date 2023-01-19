@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Extpoint\InsertOptMenuEntity;
 /**
  *  
  * @author Baymax
- * @create Tue May 17 11:37:25 CST 2022
+ * @create Tue Jan 10 20:10:12 CST 2023
  */
 class RigMenuCoBuildResDTO implements \JsonSerializable {
 
@@ -18,7 +18,7 @@ class RigMenuCoBuildResDTO implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * 店铺类型，同上
+     * 店铺类型，描述参照请求参数中的bizCode字段
      * @var string
      */
     private $bizCode;

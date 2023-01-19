@@ -5,26 +5,26 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
 
 /**
- * 
+ * 客户自定义资料项信息
  * @author Baymax
- * @create 2020-03-03 14:42:12.0
+ * @create Fri Aug 26 18:35:08 CST 2022
  */
 class CustomizeAttributeDO implements \JsonSerializable {
 
     /**
-     * 
+     * 自定义属性名
      * @var string
      */
     private $name;
 
     /**
-     * 
+     * 自定义属性类型
      * @var int
      */
     private $dataType;
 
     /**
-     * 
+     * 自定义属性值
      * @var string
      */
     private $value;
@@ -34,7 +34,7 @@ class CustomizeAttributeDO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -42,7 +42,7 @@ class CustomizeAttributeDO implements \JsonSerializable {
     /**
      * @param string $name
      */
-    public function setName(string $name): void
+    public function setName(?string $name): void
     {
         $this->name = $name;
     }
@@ -50,7 +50,7 @@ class CustomizeAttributeDO implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getDataType(): int
+    public function getDataType(): ?int
     {
         return $this->dataType;
     }
@@ -58,7 +58,7 @@ class CustomizeAttributeDO implements \JsonSerializable {
     /**
      * @param int $dataType
      */
-    public function setDataType(int $dataType): void
+    public function setDataType(?int $dataType): void
     {
         $this->dataType = $dataType;
     }
@@ -66,7 +66,7 @@ class CustomizeAttributeDO implements \JsonSerializable {
     /**
      * @return string
      */
-    public function getValue(): string
+    public function getValue(): ?string
     {
         return $this->value;
     }
@@ -74,7 +74,7 @@ class CustomizeAttributeDO implements \JsonSerializable {
     /**
      * @param string $value
      */
-    public function setValue(string $value): void
+    public function setValue(?string $value): void
     {
         $this->value = $value;
     }

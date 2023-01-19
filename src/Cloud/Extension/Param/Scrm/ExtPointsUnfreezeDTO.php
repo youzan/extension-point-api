@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 请求参数
  * @author Baymax
- * @create Mon Feb 28 20:16:49 CST 2022
+ * @create Tue Jan 10 11:43:37 CST 2023
  */
 class ExtPointsUnfreezeDTO implements \JsonSerializable {
 
