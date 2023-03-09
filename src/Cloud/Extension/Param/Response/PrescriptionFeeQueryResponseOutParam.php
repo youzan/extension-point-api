@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Voucher;
+namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Com\Youzan\Cloud\Extension\Param\Voucher\VoucherVerifyExtPointResponse;
+use Com\Youzan\Cloud\Extension\Param\Response\PrescriptionFeeQueryResponse;
 
 /**
- * 返回值返回类
+ * 处方笺费用返回类
  * @author Baymax
- * @create Wed Feb 22 16:13:23 CST 2023
+ * @create Wed Feb 15 13:30:08 CST 2023
  */
-class VoucherVerifyExtPointResponseOutParam implements \JsonSerializable {
+class PrescriptionFeeQueryResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class VoucherVerifyExtPointResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var VoucherVerifyExtPointResponse
+     * @var PrescriptionFeeQueryResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class VoucherVerifyExtPointResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return VoucherVerifyExtPointResponse
+     * @return PrescriptionFeeQueryResponse
      */
-    public function getData(): ?VoucherVerifyExtPointResponse
+    public function getData(): ?PrescriptionFeeQueryResponse
     {
         return $this->data;
     }
 
     /**
-     * @param VoucherVerifyExtPointResponse $data
+     * @param PrescriptionFeeQueryResponse $data
      */
-    public function setData(?VoucherVerifyExtPointResponse $data): void
+    public function setData(?PrescriptionFeeQueryResponse $data): void
     {
         $this->data = $data;
     }

@@ -5,9 +5,9 @@ namespace Java\Lang;
 use Java\Lang\Boolean;
 
 /**
- * 成长值增加是否成功返回类
+ * 成长值扣减是否成功返回类
  * @author Baymax
- * @create Fri Apr 22 15:09:34 CST 2022
+ * @create Tue Mar 07 19:12:28 CST 2023
  */
 class BooleanOutParam implements \JsonSerializable {
 

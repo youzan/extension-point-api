@@ -1,30 +1,30 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param;
+namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
 
 
 /**
- *  
+ * 客户自定义资料项信息
  * @author Baymax
- * @create Mon Aug 01 14:18:24 CST 2022
+ * @create Fri Aug 26 18:35:08 CST 2022
  */
-class CustomizeAttributeDTO implements \JsonSerializable {
+class CustomizeAttributeDO implements \JsonSerializable {
 
     /**
-     *  
+     * 自定义属性名
      * @var string
      */
     private $name;
 
     /**
-     *  
+     * 自定义属性类型
      * @var int
      */
     private $dataType;
 
     /**
-     *  
+     * 自定义属性值
      * @var string
      */
     private $value;

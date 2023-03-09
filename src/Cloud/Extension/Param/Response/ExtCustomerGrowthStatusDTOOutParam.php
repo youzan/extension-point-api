@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\ExtCustomerGrowthStatusDTO;
 /**
  * 查询用户成长值返回值返回类
  * @author Baymax
- * @create Thu Jan 13 09:47:10 CST 2022
+ * @create Thu Dec 08 11:40:31 CST 2022
  */
 class ExtCustomerGrowthStatusDTOOutParam implements \JsonSerializable {
 

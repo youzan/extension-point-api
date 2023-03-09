@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\CustomerProfileDTO;
 /**
  *  返回类
  * @author Baymax
- * @create Fri Aug 26 17:13:54 CST 2022
+ * @create Fri Aug 26 18:35:08 CST 2022
  */
 class CustomerProfileDTOOutParam implements \JsonSerializable {
 

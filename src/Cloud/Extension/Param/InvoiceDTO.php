@@ -7,7 +7,7 @@ use Java\Lang\String;
 /**
  * 发票信息
  * @author Baymax
- * @create Wed Jun 22 14:40:21 CST 2022
+ * @create Thu Dec 08 11:03:38 CST 2022
  */
 class InvoiceDTO implements \JsonSerializable {
 

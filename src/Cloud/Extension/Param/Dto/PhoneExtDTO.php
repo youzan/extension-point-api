@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 /**
  * 号码信息
  * @author Baymax
- * @create Mon Jun 13 14:59:18 CST 2022
+ * @create Thu Oct 13 15:35:19 CST 2022
  */
 class PhoneExtDTO implements \JsonSerializable {
 

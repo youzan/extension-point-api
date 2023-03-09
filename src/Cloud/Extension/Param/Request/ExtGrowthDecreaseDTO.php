@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 /**
  * 扣减用户成长值入参
  * @author Baymax
- * @create Mon Feb 28 20:21:30 CST 2022
+ * @create Tue Mar 07 19:12:28 CST 2023
  */
 class ExtGrowthDecreaseDTO implements \JsonSerializable {
 
@@ -46,6 +46,12 @@ class ExtGrowthDecreaseDTO implements \JsonSerializable {
      * @var int
      */
     private $nodeKdtId;
+
+    /**
+     * 成长值扣减类型 805-退卡扣减成长值,814-交易退款扣减成长值,826-营销云操作减成长值,460-等级降级扣减成长值
+     * @var int
+     */
+    private $eventType;
 
 
 
@@ -143,6 +149,22 @@ class ExtGrowthDecreaseDTO implements \JsonSerializable {
     public function setNodeKdtId(?int $nodeKdtId): void
     {
         $this->nodeKdtId = $nodeKdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getEventType(): ?int
+    {
+        return $this->eventType;
+    }
+
+    /**
+     * @param int $eventType
+     */
+    public function setEventType(?int $eventType): void
+    {
+        $this->eventType = $eventType;
     }
 
     public function jsonSerialize() {

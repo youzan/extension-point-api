@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 /**
  * 增加用户成长值入参
  * @author Baymax
- * @create Fri Apr 22 15:09:34 CST 2022
+ * @create Tue Mar 07 15:13:55 CST 2023
  */
 class ExtGrowthIncreaseDTO implements \JsonSerializable {
 
@@ -46,6 +46,12 @@ class ExtGrowthIncreaseDTO implements \JsonSerializable {
      * @var int
      */
     private $nodeKdtId;
+
+    /**
+     * 成长值增加业务类型  812-交易金额成长值规则发放成长值，813-交易购次成长值规则发放成长值，815-节日发放成长值，816-纪念日发放成长值
+     * @var int
+     */
+    private $eventType;
 
 
 
@@ -143,6 +149,22 @@ class ExtGrowthIncreaseDTO implements \JsonSerializable {
     public function setNodeKdtId(?int $nodeKdtId): void
     {
         $this->nodeKdtId = $nodeKdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getEventType(): ?int
+    {
+        return $this->eventType;
+    }
+
+    /**
+     * @param int $eventType
+     */
+    public function setEventType(?int $eventType): void
+    {
+        $this->eventType = $eventType;
     }
 
     public function jsonSerialize() {

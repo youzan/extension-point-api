@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * （字段在2022年3月31日下线，请使用usedGroupPros对接，已对接开发者请尽快调整）使用的优惠券
  * @author Baymax
- * @create Wed Jun 22 14:40:21 CST 2022
+ * @create Thu Dec 08 11:03:38 CST 2022
  */
 class UsedPro implements \JsonSerializable {
 

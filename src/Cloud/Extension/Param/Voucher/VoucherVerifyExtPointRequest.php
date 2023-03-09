@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\VoucherVerifyExtPointRequest\ThirdVoucherId
 /**
  * 请求
  * @author Baymax
- * @create Tue Aug 23 19:33:38 CST 2022
+ * @create Wed Feb 22 16:13:23 CST 2023
  */
 class VoucherVerifyExtPointRequest implements \JsonSerializable {
 
