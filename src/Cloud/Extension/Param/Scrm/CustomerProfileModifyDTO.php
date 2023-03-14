@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\CustomizeAttributeDTO;
 /**
  * 客户详情信息
  * @author Baymax
- * @create Thu Mar 09 17:52:10 CST 2023
+ * @create Tue Mar 14 10:16:10 CST 2023
  */
 class CustomerProfileModifyDTO implements \JsonSerializable {
 

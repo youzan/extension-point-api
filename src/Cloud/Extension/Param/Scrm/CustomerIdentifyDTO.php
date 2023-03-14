@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 /**
  *  
  * @author Baymax
- * @create Mon Aug 01 14:18:24 CST 2022
+ * @create Tue Mar 14 10:16:21 CST 2023
  */
 class CustomerIdentifyDTO implements \JsonSerializable {
 
@@ -24,16 +24,28 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     private $accountId;
 
     /**
-     * 店铺ID
+     * 连锁场景：总部kdtId；单店场景：店铺kdtId；
      * @var int
      */
     private $kdtId;
 
     /**
-     * yzOpenId
+     * yzOpenId是有赞对外开放的有赞用户唯一标识，建议开发者使用
      * @var string
      */
     private $yzOpenId;
+
+    /**
+     * 触发当前请求的店铺id
+     * @var int
+     */
+    private $nodeKdtId;
+
+    /**
+     * 电话号码
+     * @var string
+     */
+    private $mobile;
 
 
 
@@ -99,6 +111,38 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNodeKdtId(): ?int
+    {
+        return $this->nodeKdtId;
+    }
+
+    /**
+     * @param int $nodeKdtId
+     */
+    public function setNodeKdtId(?int $nodeKdtId): void
+    {
+        $this->nodeKdtId = $nodeKdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMobile(): ?string
+    {
+        return $this->mobile;
+    }
+
+    /**
+     * @param string $mobile
+     */
+    public function setMobile(?string $mobile): void
+    {
+        $this->mobile = $mobile;
     }
 
     public function jsonSerialize() {
