@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Scrm;
+namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
-use Com\Youzan\Cloud\Extension\Param\Scrm\Result;
+use Com\Youzan\Cloud\Extension\Param\Dto\SpuIntroductionItemCheckResponse;
 
 /**
- *  返回类
+ * 返回结果返回类
  * @author Baymax
- * @create Wed Mar 29 16:31:43 CST 2023
+ * @create Tue Apr 04 17:41:46 CST 2023
  */
-class ResultOutParam implements \JsonSerializable {
+class SpuIntroductionItemCheckResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ResultOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var Result
+     * @var SpuIntroductionItemCheckResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ResultOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return Result
+     * @return SpuIntroductionItemCheckResponse
      */
-    public function getData(): ?Result
+    public function getData(): ?SpuIntroductionItemCheckResponse
     {
         return $this->data;
     }
 
     /**
-     * @param Result $data
+     * @param SpuIntroductionItemCheckResponse $data
      */
-    public function setData(?Result $data): void
+    public function setData(?SpuIntroductionItemCheckResponse $data): void
     {
         $this->data = $data;
     }

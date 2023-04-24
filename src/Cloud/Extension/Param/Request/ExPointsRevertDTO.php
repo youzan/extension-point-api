@@ -4,11 +4,12 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 
 use Com\Youzan\Cloud\Extension\Param\Request\ExtCustomerInfoDTO;
 use StdClass;
+use Java\Lang\Integer;
 
 /**
  * 请求参数
  * @author Baymax
- * @create Tue Jan 10 11:44:41 CST 2023
+ * @create Wed Mar 29 16:31:43 CST 2023
  */
 class ExPointsRevertDTO implements \JsonSerializable {
 
@@ -53,6 +54,12 @@ class ExPointsRevertDTO implements \JsonSerializable {
      * @var stdClass
      */
     private $extraInfo;
+
+    /**
+     * 需要回滚的积分类型。401,&quot;积分兑换退款获得积分&quot;, 400,&quot;积分抵现退款获得积分&quot;;
+     * @var array
+     */
+    private $needRevertEventTypeList;
 
 
 
@@ -166,6 +173,22 @@ class ExPointsRevertDTO implements \JsonSerializable {
     public function setExtraInfo(?stdClass $extraInfo): void
     {
         $this->extraInfo = $extraInfo;
+    }
+
+    /**
+     * @return array
+     */
+    public function getNeedRevertEventTypeList(): ?array
+    {
+        return $this->needRevertEventTypeList;
+    }
+
+    /**
+     * @param array $needRevertEventTypeList
+     */
+    public function setNeedRevertEventTypeList(?array $needRevertEventTypeList): void
+    {
+        $this->needRevertEventTypeList = $needRevertEventTypeList;
     }
 
     public function jsonSerialize() {

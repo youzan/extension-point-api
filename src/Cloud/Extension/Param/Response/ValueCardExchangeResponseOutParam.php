@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Scrm;
+namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Com\Youzan\Cloud\Extension\Param\Scrm\Result;
+use Com\Youzan\Cloud\Extension\Param\Response\ValueCardExchangeResponse;
 
 /**
  *  返回类
  * @author Baymax
- * @create Wed Mar 29 16:31:43 CST 2023
+ * @create Thu Apr 06 21:08:07 CST 2023
  */
-class ResultOutParam implements \JsonSerializable {
+class ValueCardExchangeResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ResultOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var Result
+     * @var ValueCardExchangeResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ResultOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return Result
+     * @return ValueCardExchangeResponse
      */
-    public function getData(): ?Result
+    public function getData(): ?ValueCardExchangeResponse
     {
         return $this->data;
     }
 
     /**
-     * @param Result $data
+     * @param ValueCardExchangeResponse $data
      */
-    public function setData(?Result $data): void
+    public function setData(?ValueCardExchangeResponse $data): void
     {
         $this->data = $data;
     }
