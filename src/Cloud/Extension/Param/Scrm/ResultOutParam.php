@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\Result;
 /**
  * 结构体返回类
  * @author Baymax
- * @create Thu May 11 12:01:02 CST 2023
+ * @create Thu May 11 14:26:26 CST 2023
  */
 class ResultOutParam implements \JsonSerializable {
 

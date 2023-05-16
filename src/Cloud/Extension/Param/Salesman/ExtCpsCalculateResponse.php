@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Salesman\ExtItemCpsDetail;
 /**
  *  
  * @author Baymax
- * @create Tue Mar 01 14:36:12 CST 2022
+ * @create Tue May 16 21:12:58 CST 2023
  */
 class ExtCpsCalculateResponse implements \JsonSerializable {
 
@@ -64,6 +64,12 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
      * @var bool
      */
     private $customCpsMoney;
+
+    /**
+     * 是否允许佣金大于实付金额，默认不允许
+     * @var bool
+     */
+    private $cpsMoneyMoreThanRealPay;
 
 
 
@@ -209,6 +215,22 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     public function setCustomCpsMoney(?bool $customCpsMoney): void
     {
         $this->customCpsMoney = $customCpsMoney;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getCpsMoneyMoreThanRealPay(): ?bool
+    {
+        return $this->cpsMoneyMoreThanRealPay;
+    }
+
+    /**
+     * @param bool $cpsMoneyMoreThanRealPay
+     */
+    public function setCpsMoneyMoreThanRealPay(?bool $cpsMoneyMoreThanRealPay): void
+    {
+        $this->cpsMoneyMoreThanRealPay = $cpsMoneyMoreThanRealPay;
     }
 
     public function jsonSerialize() {
