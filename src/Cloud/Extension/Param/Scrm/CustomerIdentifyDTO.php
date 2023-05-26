@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
 
 /**
- *  
+ * 客户标识
  * @author Baymax
- * @create Tue Mar 14 10:16:21 CST 2023
+ * @create Tue Mar 14 10:16:16 CST 2023
  */
 class CustomerIdentifyDTO implements \JsonSerializable {
 
@@ -30,7 +30,7 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     private $kdtId;
 
     /**
-     * yzOpenId是有赞对外开放的有赞用户唯一标识，建议开发者使用
+     * yzOpenId
      * @var string
      */
     private $yzOpenId;
@@ -42,7 +42,7 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     private $nodeKdtId;
 
     /**
-     * 电话号码
+     * 手机号
      * @var string
      */
     private $mobile;

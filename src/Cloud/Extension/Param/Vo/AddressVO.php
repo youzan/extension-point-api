@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Vo;
 /**
  * 店铺地址
  * @author Baymax
- * @create Mon Mar 14 16:49:17 CST 2022
+ * @create Thu May 18 19:52:51 CST 2023
  */
 class AddressVO implements \JsonSerializable {
 

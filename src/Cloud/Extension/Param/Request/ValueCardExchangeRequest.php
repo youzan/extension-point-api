@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 /**
  *  
  * @author Baymax
- * @create Thu Apr 06 21:08:07 CST 2023
+ * @create Mon May 22 15:27:33 CST 2023
  */
 class ValueCardExchangeRequest implements \JsonSerializable {
 

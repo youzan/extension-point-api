@@ -5,26 +5,26 @@ namespace Com\Youzan\Cloud\Extension\Param;
 
 
 /**
- *  
+ * 会员自定义资料项
  * @author Baymax
- * @create Tue Mar 14 10:16:21 CST 2023
+ * @create Tue Mar 14 10:16:16 CST 2023
  */
 class CustomizeAttributeDTO implements \JsonSerializable {
 
     /**
-     *  
+     * 资料项字段名称
      * @var string
      */
     private $name;
 
     /**
-     *  资料项字段类型，0：文本，1：数字，2：日期，3：省市区，4：性别，5：图片，6：地址，7：单选项，8：多选，9：手机号
+     * 资料项字段类型，0：文本，1：数字，2：日期，3：省市区，4：性别，5：图片，6：地址，7：单选项，8：多选，9：手机号
      * @var int
      */
     private $dataType;
 
     /**
-     *  
+     * 资料项字段值
      * @var string
      */
     private $value;

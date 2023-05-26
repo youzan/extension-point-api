@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Shop;
+namespace Com\Youzan\Cloud\Extension\Param\Cps;
 
-use Com\Youzan\Cloud\Extension\Param\Shop\ShopRouteResult;
+use Com\Youzan\Cloud\Extension\Param\Cps\ExtAttributionResponse;
 
 /**
- * 响应参数返回类
+ * 返参返回类
  * @author Baymax
- * @create Thu May 18 19:52:51 CST 2023
+ * @create Thu May 18 19:21:52 CST 2023
  */
-class ShopRouteResultOutParam implements \JsonSerializable {
+class ExtAttributionResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ShopRouteResultOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var ShopRouteResult
+     * @var ExtAttributionResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ShopRouteResultOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return ShopRouteResult
+     * @return ExtAttributionResponse
      */
-    public function getData(): ?ShopRouteResult
+    public function getData(): ?ExtAttributionResponse
     {
         return $this->data;
     }
 
     /**
-     * @param ShopRouteResult $data
+     * @param ExtAttributionResponse $data
      */
-    public function setData(?ShopRouteResult $data): void
+    public function setData(?ExtAttributionResponse $data): void
     {
         $this->data = $data;
     }

@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\CreateCustomerResponse;
 /**
  *  返回类
  * @author Baymax
- * @create Tue Mar 14 10:16:21 CST 2023
+ * @create Fri May 26 11:00:08 CST 2023
  */
 class CreateCustomerResponseOutParam implements \JsonSerializable {
 
