@@ -2,12 +2,12 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Request;
 
-
+use Com\Youzan\Cloud\Extension\Param\Request\RelationExtPointCanBindRelationExt;
 
 /**
  * 请求参数
  * @author Baymax
- * @create Mon Aug 22 16:50:59 CST 2022
+ * @create Mon Jun 19 09:44:41 CST 2023
  */
 class RelationExtPointCanBindRelationRequest implements \JsonSerializable {
 
@@ -34,6 +34,12 @@ class RelationExtPointCanBindRelationRequest implements \JsonSerializable {
      * @var string
      */
     private $customerYzOpenId;
+
+    /**
+     * 绑定专属关系扩展信息
+     * @var RelationExtPointCanBindRelationExt
+     */
+    private $ext;
 
 
 
@@ -99,6 +105,22 @@ class RelationExtPointCanBindRelationRequest implements \JsonSerializable {
     public function setCustomerYzOpenId(?string $customerYzOpenId): void
     {
         $this->customerYzOpenId = $customerYzOpenId;
+    }
+
+    /**
+     * @return RelationExtPointCanBindRelationExt
+     */
+    public function getExt(): ?RelationExtPointCanBindRelationExt
+    {
+        return $this->ext;
+    }
+
+    /**
+     * @param RelationExtPointCanBindRelationExt $ext
+     */
+    public function setExt(?RelationExtPointCanBindRelationExt $ext): void
+    {
+        $this->ext = $ext;
     }
 
     public function jsonSerialize() {

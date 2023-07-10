@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Voucher;
+namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Com\Youzan\Cloud\Extension\Param\Voucher\ThirdpartyVoucherSendExtPointResponse;
+use Com\Youzan\Cloud\Extension\Param\Response\PreHandlePerformanceAttributionResponse;
 
 /**
- *  返回类
+ * 导购业绩归因预处理信息结果返回类
  * @author Baymax
- * @create Wed Jun 28 16:14:52 CST 2023
+ * @create Mon Jul 10 16:38:33 CST 2023
  */
-class ThirdpartyVoucherSendExtPointResponseOutParam implements \JsonSerializable {
+class PreHandlePerformanceAttributionResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ThirdpartyVoucherSendExtPointResponseOutParam implements \JsonSerializable
 
     /**
      *
-     * @var ThirdpartyVoucherSendExtPointResponse
+     * @var PreHandlePerformanceAttributionResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ThirdpartyVoucherSendExtPointResponseOutParam implements \JsonSerializable
     }
 
     /**
-     * @return ThirdpartyVoucherSendExtPointResponse
+     * @return PreHandlePerformanceAttributionResponse
      */
-    public function getData(): ?ThirdpartyVoucherSendExtPointResponse
+    public function getData(): ?PreHandlePerformanceAttributionResponse
     {
         return $this->data;
     }
 
     /**
-     * @param ThirdpartyVoucherSendExtPointResponse $data
+     * @param PreHandlePerformanceAttributionResponse $data
      */
-    public function setData(?ThirdpartyVoucherSendExtPointResponse $data): void
+    public function setData(?PreHandlePerformanceAttributionResponse $data): void
     {
         $this->data = $data;
     }
