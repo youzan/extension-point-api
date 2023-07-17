@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Scrm;
+namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerPointsLogPaginationDTO;
+use Com\Youzan\Cloud\Extension\Param\Response\PerformanceStartInfoResponse;
 
 /**
- * 响应参数返回类
+ * 获取业绩开始统计时间相关信息结果返回类
  * @author Baymax
- * @create Mon Jul 17 15:01:02 CST 2023
+ * @create Mon Jul 10 16:38:42 CST 2023
  */
-class ExtCustomerPointsLogPaginationDTOOutParam implements \JsonSerializable {
+class PerformanceStartInfoResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ExtCustomerPointsLogPaginationDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var ExtCustomerPointsLogPaginationDTO
+     * @var PerformanceStartInfoResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ExtCustomerPointsLogPaginationDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return ExtCustomerPointsLogPaginationDTO
+     * @return PerformanceStartInfoResponse
      */
-    public function getData(): ?ExtCustomerPointsLogPaginationDTO
+    public function getData(): ?PerformanceStartInfoResponse
     {
         return $this->data;
     }
 
     /**
-     * @param ExtCustomerPointsLogPaginationDTO $data
+     * @param PerformanceStartInfoResponse $data
      */
-    public function setData(?ExtCustomerPointsLogPaginationDTO $data): void
+    public function setData(?PerformanceStartInfoResponse $data): void
     {
         $this->data = $data;
     }
