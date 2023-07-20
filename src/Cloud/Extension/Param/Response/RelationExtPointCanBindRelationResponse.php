@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 /**
  * 响应结果body
  * @author Baymax
- * @create Mon Aug 22 16:50:59 CST 2022
+ * @create Mon Jun 19 09:44:41 CST 2023
  */
 class RelationExtPointCanBindRelationResponse implements \JsonSerializable {
 

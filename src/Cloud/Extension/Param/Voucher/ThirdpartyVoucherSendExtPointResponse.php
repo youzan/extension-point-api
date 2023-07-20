@@ -7,7 +7,7 @@ use StdClass;
 /**
  *  
  * @author Baymax
- * @create Mon Mar 14 19:21:37 CST 2022
+ * @create Wed Jun 28 16:14:52 CST 2023
  */
 class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
 

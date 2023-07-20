@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 会员自定义资料项
  * @author Baymax
- * @create Sat Jul 30 23:34:06 CST 2022
+ * @create Tue Mar 14 10:16:16 CST 2023
  */
 class CustomizeAttributeDTO implements \JsonSerializable {
 
@@ -28,6 +28,12 @@ class CustomizeAttributeDTO implements \JsonSerializable {
      * @var string
      */
     private $value;
+
+    /**
+     * 当dataType为7、8时，当前字段表示客户资料项中的选项值信息；其它场景可忽略该字段（仅限有赞内部项目使用）
+     * @var string
+     */
+    private $extValue;
 
 
 
@@ -77,6 +83,22 @@ class CustomizeAttributeDTO implements \JsonSerializable {
     public function setValue(?string $value): void
     {
         $this->value = $value;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExtValue(): ?string
+    {
+        return $this->extValue;
+    }
+
+    /**
+     * @param string $extValue
+     */
+    public function setExtValue(?string $extValue): void
+    {
+        $this->extValue = $extValue;
     }
 
     public function jsonSerialize() {

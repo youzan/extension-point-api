@@ -8,7 +8,7 @@ use DateTime;
 /**
  *  
  * @author Baymax
- * @create Mon Mar 14 19:21:37 CST 2022
+ * @create Wed Jun 28 16:14:52 CST 2023
  */
 class ThirdpartyVoucherSendExtPointRequest implements \JsonSerializable {
 
@@ -23,6 +23,12 @@ class ThirdpartyVoucherSendExtPointRequest implements \JsonSerializable {
      * @var int
      */
     private $hqKdtId;
+
+    /**
+     * 仅连锁店铺场景有效，发放优惠券的门店或网点的kdtId
+     * @var int
+     */
+    private $nodeKdtId;
 
     /**
      * 三方活动id
@@ -134,6 +140,22 @@ class ThirdpartyVoucherSendExtPointRequest implements \JsonSerializable {
     public function setHqKdtId(?int $hqKdtId): void
     {
         $this->hqKdtId = $hqKdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNodeKdtId(): ?int
+    {
+        return $this->nodeKdtId;
+    }
+
+    /**
+     * @param int $nodeKdtId
+     */
+    public function setNodeKdtId(?int $nodeKdtId): void
+    {
+        $this->nodeKdtId = $nodeKdtId;
     }
 
     /**

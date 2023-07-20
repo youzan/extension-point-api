@@ -7,7 +7,7 @@ use DateTime;
 /**
  *  
  * @author Baymax
- * @create Mon Mar 14 19:10:05 CST 2022
+ * @create Thu Apr 06 20:59:05 CST 2023
  */
 class CustomerExtValueCardDetailQueryResponse implements \JsonSerializable {
 
@@ -34,6 +34,12 @@ class CustomerExtValueCardDetailQueryResponse implements \JsonSerializable {
      * @var int
      */
     private $strategyType;
+
+    /**
+     * 开始时间，有效期类型为固定期限时的开始时间，不填时默认当前时间,Unix毫秒时间类型
+     * @var int
+     */
+    private $createDate;
 
     /**
      * 到期时间，有效期类型为固定期限时必填,Unix毫秒时间类型
@@ -94,6 +100,12 @@ class CustomerExtValueCardDetailQueryResponse implements \JsonSerializable {
      * @var bool
      */
     private $needRecharge;
+
+    /**
+     * 是否支持赠送，true：支持，false：不支持 不返回时默认是true，激活状态下无法赠送
+     * @var bool
+     */
+    private $supportGive;
 
 
 
@@ -159,6 +171,22 @@ class CustomerExtValueCardDetailQueryResponse implements \JsonSerializable {
     public function setStrategyType(?int $strategyType): void
     {
         $this->strategyType = $strategyType;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCreateDate(): ?int
+    {
+        return $this->createDate;
+    }
+
+    /**
+     * @param int $createDate
+     */
+    public function setCreateDate(?int $createDate): void
+    {
+        $this->createDate = $createDate;
     }
 
     /**
@@ -319,6 +347,22 @@ class CustomerExtValueCardDetailQueryResponse implements \JsonSerializable {
     public function setNeedRecharge(?bool $needRecharge): void
     {
         $this->needRecharge = $needRecharge;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getSupportGive(): ?bool
+    {
+        return $this->supportGive;
+    }
+
+    /**
+     * @param bool $supportGive
+     */
+    public function setSupportGive(?bool $supportGive): void
+    {
+        $this->supportGive = $supportGive;
     }
 
     public function jsonSerialize() {

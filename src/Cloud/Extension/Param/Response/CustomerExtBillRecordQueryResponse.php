@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\VlaueCardExtBillRecordDTO;
 /**
  * 卡列表
  * @author Baymax
- * @create Mon Mar 14 19:37:42 CST 2022
+ * @create Wed Feb 22 11:08:30 CST 2023
  */
 class CustomerExtBillRecordQueryResponse implements \JsonSerializable {
 

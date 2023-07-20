@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\ExtCommissionCalculateResponse;
 /**
  * 导购佣金计算明细
  * @author Baymax
- * @create Mon Feb 06 14:37:35 CST 2023
+ * @create Fri Mar 03 17:34:00 CST 2023
  */
 class ExtItemCpsDetail implements \JsonSerializable {
 
