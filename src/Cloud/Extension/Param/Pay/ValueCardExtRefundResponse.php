@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 use DateTime;
 
 /**
- * 返回参数
+ *  
  * @author Baymax
- * @create Mon Mar 14 19:29:34 CST 2022
+ * @create Mon Mar 14 19:38:50 CST 2022
  */
 class ValueCardExtRefundResponse implements \JsonSerializable {
 

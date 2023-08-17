@@ -5,29 +5,29 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 use Com\Youzan\Cloud\Extension\Param\Model\Goods;
 
 /**
- * 优惠详情
+ * 优惠信息
  * @author Baymax
- * @create Wed Apr 20 09:57:06 CST 2022
+ * @create Wed Feb 08 10:55:56 CST 2023
  */
 class BillingDiscount implements \JsonSerializable {
 
     /**
-     * 商品及均摊优惠详情
+     * 商品及均摊优惠信息
      * @var array
      */
     private $goodsList;
-
-    /**
-     * 订单总支付金额（单位/分）
-     * @var int
-     */
-    private $pay;
 
     /**
      * 订单总优惠（单位/分）
      * @var int
      */
     private $decrease;
+
+    /**
+     * 订单总支付金额（单位/分）
+     * @var int
+     */
+    private $pay;
 
 
 
@@ -50,22 +50,6 @@ class BillingDiscount implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPay(): ?int
-    {
-        return $this->pay;
-    }
-
-    /**
-     * @param int $pay
-     */
-    public function setPay(?int $pay): void
-    {
-        $this->pay = $pay;
-    }
-
-    /**
-     * @return int
-     */
     public function getDecrease(): ?int
     {
         return $this->decrease;
@@ -77,6 +61,22 @@ class BillingDiscount implements \JsonSerializable {
     public function setDecrease(?int $decrease): void
     {
         $this->decrease = $decrease;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPay(): ?int
+    {
+        return $this->pay;
+    }
+
+    /**
+     * @param int $pay
+     */
+    public function setPay(?int $pay): void
+    {
+        $this->pay = $pay;
     }
 
     public function jsonSerialize() {

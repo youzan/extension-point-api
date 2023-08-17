@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 use Com\Youzan\Cloud\Extension\Param\Pay\ValueCardExtRefundResponse;
 
 /**
- *  返回类
+ * 返回参数返回类
  * @author Baymax
- * @create Mon Mar 14 19:38:50 CST 2022
+ * @create Wed Aug 09 16:58:47 CST 2023
  */
 class ValueCardExtRefundResponseOutParam implements \JsonSerializable {
 

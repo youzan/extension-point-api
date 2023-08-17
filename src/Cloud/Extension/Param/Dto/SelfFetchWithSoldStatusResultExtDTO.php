@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\SelfFetchPointInfoExtDTO;
 /**
  * 第一层返回结果封装data对象
  * @author Baymax
- * @create Thu Oct 13 15:35:19 CST 2022
+ * @create Thu Jul 20 19:27:26 CST 2023
  */
 class SelfFetchWithSoldStatusResultExtDTO implements \JsonSerializable {
 
@@ -16,6 +16,12 @@ class SelfFetchWithSoldStatusResultExtDTO implements \JsonSerializable {
      * @var array
      */
     private $allSelfFetchPointInfo;
+
+    /**
+     * 自提点总数
+     * @var int
+     */
+    private $total;
 
 
 
@@ -33,6 +39,22 @@ class SelfFetchWithSoldStatusResultExtDTO implements \JsonSerializable {
     public function setAllSelfFetchPointInfo(?array $allSelfFetchPointInfo): void
     {
         $this->allSelfFetchPointInfo = $allSelfFetchPointInfo;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTotal(): ?int
+    {
+        return $this->total;
+    }
+
+    /**
+     * @param int $total
+     */
+    public function setTotal(?int $total): void
+    {
+        $this->total = $total;
     }
 
     public function jsonSerialize() {

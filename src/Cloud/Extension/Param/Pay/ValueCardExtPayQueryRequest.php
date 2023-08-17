@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 /**
  *  
  * @author Baymax
- * @create Mon Mar 21 14:11:59 CST 2022
+ * @create Wed Aug 09 17:00:37 CST 2023
  */
 class ValueCardExtPayQueryRequest implements \JsonSerializable {
 
