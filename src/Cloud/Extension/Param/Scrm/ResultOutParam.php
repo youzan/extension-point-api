@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 use Com\Youzan\Cloud\Extension\Param\Scrm\Result;
 
 /**
- * 响应参数结构体返回类
+ * 积分消耗出参返回类
  * @author Baymax
- * @create Wed Jul 19 11:38:21 CST 2023
+ * @create Thu Aug 24 10:05:23 CST 2023
  */
 class ResultOutParam implements \JsonSerializable {
 

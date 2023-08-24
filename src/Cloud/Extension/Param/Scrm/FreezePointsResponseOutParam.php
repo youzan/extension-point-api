@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\FreezePointsResponse;
 /**
  * 响应参数返回类
  * @author Baymax
- * @create Thu May 25 16:22:40 CST 2023
+ * @create Thu Aug 24 10:05:29 CST 2023
  */
 class FreezePointsResponseOutParam implements \JsonSerializable {
 

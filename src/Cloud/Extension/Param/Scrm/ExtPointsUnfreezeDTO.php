@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 请求参数
  * @author Baymax
- * @create Tue Jan 10 11:43:37 CST 2023
+ * @create Thu Aug 24 10:05:56 CST 2023
  */
 class ExtPointsUnfreezeDTO implements \JsonSerializable {
 
@@ -41,6 +41,12 @@ class ExtPointsUnfreezeDTO implements \JsonSerializable {
      * @var int
      */
     private $consumeSource;
+
+    /**
+     * 积分消耗类型，100：积分商城；102：积分抵现
+     * @var int
+     */
+    private $consumeType;
 
     /**
      * 扩展信息
@@ -140,6 +146,22 @@ class ExtPointsUnfreezeDTO implements \JsonSerializable {
     public function setConsumeSource(?int $consumeSource): void
     {
         $this->consumeSource = $consumeSource;
+    }
+
+    /**
+     * @return int
+     */
+    public function getConsumeType(): ?int
+    {
+        return $this->consumeType;
+    }
+
+    /**
+     * @param int $consumeType
+     */
+    public function setConsumeType(?int $consumeType): void
+    {
+        $this->consumeType = $consumeType;
     }
 
     /**

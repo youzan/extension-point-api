@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 /**
  * 活动参数
  * @author Baymax
- * @create 2020-12-14 14:49:48.0
+ * @create Wed Feb 08 10:55:56 CST 2023
  */
 class ActivityInfo implements \JsonSerializable {
 

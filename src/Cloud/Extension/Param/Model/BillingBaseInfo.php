@@ -2,20 +2,27 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Model;
 
+use Com\Youzan\Cloud\Extension\Param\Model\ActivityInfo;
 use Com\Youzan\Cloud\Extension\Param\Model\GoodsInfo;
 use Com\Youzan\Cloud\Extension\Param\Model\UserInfo;
 use Com\Youzan\Cloud\Extension\Param\Model\ShopInfo;
 use StdClass;
 
 /**
- * 订单基本信息：商品、用户、店铺、订单号
+ * 基本参数
  * @author Baymax
- * @create Wed Apr 20 09:57:06 CST 2022
+ * @create Wed Feb 08 10:55:56 CST 2023
  */
 class BillingBaseInfo implements \JsonSerializable {
 
     /**
-     * 商品基础信息
+     * 活动参数
+     * @var ActivityInfo
+     */
+    private $activityInfo;
+
+    /**
+     * 商品列表
      * @var array
      */
     private $goodsInfoList;
@@ -39,18 +46,34 @@ class BillingBaseInfo implements \JsonSerializable {
     private $orderNo;
 
     /**
-     * 扩展字段
+     * 拓展信息
      * @var stdClass
      */
     private $extraInfo;
 
     /**
-     * 下单唯一标识
+     * 订单唯一标识
      * @var string
      */
     private $bookKey;
 
 
+
+    /**
+     * @return ActivityInfo
+     */
+    public function getActivityInfo(): ?ActivityInfo
+    {
+        return $this->activityInfo;
+    }
+
+    /**
+     * @param ActivityInfo $activityInfo
+     */
+    public function setActivityInfo(?ActivityInfo $activityInfo): void
+    {
+        $this->activityInfo = $activityInfo;
+    }
 
     /**
      * @return array

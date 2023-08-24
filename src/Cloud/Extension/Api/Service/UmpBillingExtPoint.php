@@ -7,8 +7,8 @@ use Com\Youzan\Cloud\Extension\Param\Model\UmpCalculateResponseOutParam;
 
 interface UmpBillingExtPoint {
 
-    public function calculate(UmpCalculateRequest $umpCalculateRequest) : UmpCalculateResponseOutParam;
-
     public function billingCalculate(UmpCalculateRequest $umpCalculateRequest) : UmpCalculateResponseOutParam;
+
+    public function calculate(UmpCalculateRequest $umpCalculateRequest) : UmpCalculateResponseOutParam;
 
 }

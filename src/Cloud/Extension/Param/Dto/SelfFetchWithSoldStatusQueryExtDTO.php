@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\SelfFetchPointGoodsInfo;
 /**
  * 接口入参对象
  * @author Baymax
- * @create Thu Oct 13 15:35:19 CST 2022
+ * @create Thu Jul 20 19:27:26 CST 2023
  */
 class SelfFetchWithSoldStatusQueryExtDTO implements \JsonSerializable {
 
@@ -52,6 +52,18 @@ class SelfFetchWithSoldStatusQueryExtDTO implements \JsonSerializable {
      * @var float
      */
     private $lng;
+
+    /**
+     * 页码，从1开始
+     * @var int
+     */
+    private $page;
+
+    /**
+     * 页大小
+     * @var int
+     */
+    private $pageSize;
 
 
 
@@ -165,6 +177,38 @@ class SelfFetchWithSoldStatusQueryExtDTO implements \JsonSerializable {
     public function setLng(?float $lng): void
     {
         $this->lng = $lng;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPage(): ?int
+    {
+        return $this->page;
+    }
+
+    /**
+     * @param int $page
+     */
+    public function setPage(?int $page): void
+    {
+        $this->page = $page;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPageSize(): ?int
+    {
+        return $this->pageSize;
+    }
+
+    /**
+     * @param int $pageSize
+     */
+    public function setPageSize(?int $pageSize): void
+    {
+        $this->pageSize = $pageSize;
     }
 
     public function jsonSerialize() {

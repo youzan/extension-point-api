@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 /**
  * 客户自定义资料项信息
  * @author Baymax
- * @create Tue Mar 14 10:16:05 CST 2023
+ * @create Thu Aug 03 14:11:09 CST 2023
  */
 class CustomizeAttributeDO implements \JsonSerializable {
 

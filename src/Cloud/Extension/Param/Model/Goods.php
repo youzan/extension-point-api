@@ -5,32 +5,32 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 use Com\Youzan\Cloud\Extension\Param\Model\Activity;
 
 /**
- * 商品及均摊优惠详情
+ * 商品及均摊优惠信息
  * @author Baymax
- * @create Wed Apr 20 09:57:06 CST 2022
+ * @create Wed Feb 08 10:55:56 CST 2023
  */
 class Goods implements \JsonSerializable {
 
     /**
-     * 商品统一itemId
+     * 商品ID
      * @var int
      */
     private $itemId;
 
     /**
-     * 规格统一skuId
+     * SKU ID
      * @var int
      */
     private $skuId;
 
     /**
-     * 明细id
+     * 订单条目ID
      * @var int
      */
     private $orderItemId;
 
     /**
-     * 商品级活动优惠 / 订单级优惠活动均摊优惠
+     * 应用的活动
      * @var array
      */
     private $appliedActivities;

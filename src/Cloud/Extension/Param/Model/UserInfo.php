@@ -7,12 +7,12 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 /**
  * 用户信息
  * @author Baymax
- * @create Wed Apr 20 09:57:06 CST 2022
+ * @create Wed Feb 08 10:55:56 CST 2023
  */
 class UserInfo implements \JsonSerializable {
 
     /**
-     * 用户id
+     * 用户ID
      * @var string
      */
     private $yzOpenId;

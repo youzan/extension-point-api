@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Scrm;
+namespace Com\Youzan\Cloud\Extension\Param\Cps;
 
-use Com\Youzan\Cloud\Extension\Param\Scrm\CustomerProfileDTO;
+use Com\Youzan\Cloud\Extension\Param\Cps\ExtOrderAttributionDirectlyResponse;
 
 /**
- *  返回类
+ * 响应参数返回类
  * @author Baymax
- * @create Thu Aug 03 14:11:09 CST 2023
+ * @create Thu Aug 17 21:27:15 CST 2023
  */
-class CustomerProfileDTOOutParam implements \JsonSerializable {
+class ExtOrderAttributionDirectlyResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class CustomerProfileDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var CustomerProfileDTO
+     * @var ExtOrderAttributionDirectlyResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class CustomerProfileDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return CustomerProfileDTO
+     * @return ExtOrderAttributionDirectlyResponse
      */
-    public function getData(): ?CustomerProfileDTO
+    public function getData(): ?ExtOrderAttributionDirectlyResponse
     {
         return $this->data;
     }
 
     /**
-     * @param CustomerProfileDTO $data
+     * @param ExtOrderAttributionDirectlyResponse $data
      */
-    public function setData(?CustomerProfileDTO $data): void
+    public function setData(?ExtOrderAttributionDirectlyResponse $data): void
     {
         $this->data = $data;
     }
