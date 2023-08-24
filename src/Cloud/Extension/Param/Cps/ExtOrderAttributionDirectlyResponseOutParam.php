@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Scrm;
+namespace Com\Youzan\Cloud\Extension\Param\Cps;
 
-use Com\Youzan\Cloud\Extension\Param\Scrm\FreezePointsResponse;
+use Com\Youzan\Cloud\Extension\Param\Cps\ExtOrderAttributionDirectlyResponse;
 
 /**
  * 响应参数返回类
  * @author Baymax
- * @create Thu Aug 24 10:05:29 CST 2023
+ * @create Thu Aug 17 21:27:15 CST 2023
  */
-class FreezePointsResponseOutParam implements \JsonSerializable {
+class ExtOrderAttributionDirectlyResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class FreezePointsResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var FreezePointsResponse
+     * @var ExtOrderAttributionDirectlyResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class FreezePointsResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return FreezePointsResponse
+     * @return ExtOrderAttributionDirectlyResponse
      */
-    public function getData(): ?FreezePointsResponse
+    public function getData(): ?ExtOrderAttributionDirectlyResponse
     {
         return $this->data;
     }
 
     /**
-     * @param FreezePointsResponse $data
+     * @param ExtOrderAttributionDirectlyResponse $data
      */
-    public function setData(?FreezePointsResponse $data): void
+    public function setData(?ExtOrderAttributionDirectlyResponse $data): void
     {
         $this->data = $data;
     }
