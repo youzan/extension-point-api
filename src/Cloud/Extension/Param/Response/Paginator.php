@@ -5,26 +5,26 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 
 
 /**
- * 分页
+ * 分页数据
  * @author Baymax
- * @create 2021-05-25 19:58:33.0
+ * @create Thu Aug 24 18:49:08 CST 2023
  */
 class Paginator implements \JsonSerializable {
 
     /**
-     * 当前页
+     * 页码，从1开始
      * @var int
      */
-    private $pageNo;
+    private $page;
 
     /**
-     * 每页展示条数
+     * 单页查询数据量，范围1-50
      * @var int
      */
     private $pageSize;
 
     /**
-     * 总条数
+     * 总数据量
      * @var int
      */
     private $totalCount;
@@ -34,17 +34,17 @@ class Paginator implements \JsonSerializable {
     /**
      * @return int
      */
-    public function getPageNo(): ?int
+    public function getPage(): ?int
     {
-        return $this->pageNo;
+        return $this->page;
     }
 
     /**
-     * @param int $pageNo
+     * @param int $page
      */
-    public function setPageNo(?int $pageNo): void
+    public function setPage(?int $page): void
     {
-        $this->pageNo = $pageNo;
+        $this->page = $page;
     }
 
     /**
