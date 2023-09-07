@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Voucher;
+namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Com\Youzan\Cloud\Extension\Param\Voucher\VoucherVerifyExtPointResponse;
+use Com\Youzan\Cloud\Extension\Param\Response\ExtRefundOrderResponse;
 
 /**
- * 返回值返回类
+ * 返回体返回类
  * @author Baymax
- * @create Thu Sep 07 16:54:04 CST 2023
+ * @create Tue Aug 29 15:23:30 CST 2023
  */
-class VoucherVerifyExtPointResponseOutParam implements \JsonSerializable {
+class ExtRefundOrderResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class VoucherVerifyExtPointResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var VoucherVerifyExtPointResponse
+     * @var ExtRefundOrderResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class VoucherVerifyExtPointResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return VoucherVerifyExtPointResponse
+     * @return ExtRefundOrderResponse
      */
-    public function getData(): ?VoucherVerifyExtPointResponse
+    public function getData(): ?ExtRefundOrderResponse
     {
         return $this->data;
     }
 
     /**
-     * @param VoucherVerifyExtPointResponse $data
+     * @param ExtRefundOrderResponse $data
      */
-    public function setData(?VoucherVerifyExtPointResponse $data): void
+    public function setData(?ExtRefundOrderResponse $data): void
     {
         $this->data = $data;
     }

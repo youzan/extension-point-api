@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Voucher;
+namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
-use Com\Youzan\Cloud\Extension\Param\Voucher\VoucherVerifyExtPointResponse;
+use Com\Youzan\Cloud\Extension\Param\Dto\CobuildTagGroupRespDTO;
 
 /**
- * 返回值返回类
+ * 结果数据返回类
  * @author Baymax
- * @create Thu Sep 07 16:54:04 CST 2023
+ * @create Wed Aug 30 16:50:08 CST 2023
  */
-class VoucherVerifyExtPointResponseOutParam implements \JsonSerializable {
+class CobuildTagGroupRespDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class VoucherVerifyExtPointResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var VoucherVerifyExtPointResponse
+     * @var CobuildTagGroupRespDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class VoucherVerifyExtPointResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return VoucherVerifyExtPointResponse
+     * @return CobuildTagGroupRespDTO
      */
-    public function getData(): ?VoucherVerifyExtPointResponse
+    public function getData(): ?CobuildTagGroupRespDTO
     {
         return $this->data;
     }
 
     /**
-     * @param VoucherVerifyExtPointResponse $data
+     * @param CobuildTagGroupRespDTO $data
      */
-    public function setData(?VoucherVerifyExtPointResponse $data): void
+    public function setData(?CobuildTagGroupRespDTO $data): void
     {
         $this->data = $data;
     }

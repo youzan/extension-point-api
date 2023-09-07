@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\ImktValidateResult;
 /**
  * 校验结果返回类
  * @author Baymax
- * @create 2021-03-15 14:39:48.0
+ * @create Tue Sep 05 16:18:18 CST 2023
  */
 class ImktValidateResultOutParam implements \JsonSerializable {
 
