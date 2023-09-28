@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Salesman;
 /**
  *   
  * @author Baymax
- * @create Tue May 16 21:12:58 CST 2023
+ * @create Thu Sep 14 17:32:55 CST 2023
  */
 class ExtOrderPriceChangeLog implements \JsonSerializable {
 

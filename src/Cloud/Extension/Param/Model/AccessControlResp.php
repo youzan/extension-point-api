@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 /**
  * 返回数据
  * @author Baymax
- * @create Tue Jul 12 17:59:21 CST 2022
+ * @create Tue Sep 12 16:11:14 CST 2023
  */
 class AccessControlResp implements \JsonSerializable {
 
@@ -22,6 +22,12 @@ class AccessControlResp implements \JsonSerializable {
      * @var string
      */
     private $redirectUrl;
+
+    /**
+     * 是否允许不登录，默认false。如果用户未登录，返回allowNotLogin&#x3D;true and needAuthorize&#x3D;false，则允许用户不登录。
+     * @var bool
+     */
+    private $allowNotLogin;
 
 
 
@@ -55,6 +61,22 @@ class AccessControlResp implements \JsonSerializable {
     public function setRedirectUrl(?string $redirectUrl): void
     {
         $this->redirectUrl = $redirectUrl;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getAllowNotLogin(): ?bool
+    {
+        return $this->allowNotLogin;
+    }
+
+    /**
+     * @param bool $allowNotLogin
+     */
+    public function setAllowNotLogin(?bool $allowNotLogin): void
+    {
+        $this->allowNotLogin = $allowNotLogin;
     }
 
     public function jsonSerialize() {

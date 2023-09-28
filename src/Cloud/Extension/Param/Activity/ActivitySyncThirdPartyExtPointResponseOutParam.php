@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Activity\ActivitySyncThirdPartyExtPointResp
 /**
  * 请求响应返回类
  * @author Baymax
- * @create Thu Jan 13 20:55:51 CST 2022
+ * @create Tue Sep 05 17:05:40 CST 2023
  */
 class ActivitySyncThirdPartyExtPointResponseOutParam implements \JsonSerializable {
 
