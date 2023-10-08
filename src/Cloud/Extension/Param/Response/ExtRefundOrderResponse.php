@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\ExtRefundOrderResponse\ExtRefundOrder;
 /**
  * 返回体
  * @author Baymax
- * @create Tue Aug 29 15:23:30 CST 2023
+ * @create Mon Sep 25 10:25:26 CST 2023
  */
 class ExtRefundOrderResponse implements \JsonSerializable {
 

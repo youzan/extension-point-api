@@ -3,10 +3,10 @@
 namespace Com\Youzan\Cloud\Extension\Api\Ump;
 
 use Com\Youzan\Cloud\Extension\Param\Param\CheckInValidateJoinParam;
-use Com\Youzan\Cloud\Extension\Param\Dto\ImktValidateResultOutParam;
+use Com\Youzan\Cloud\Extension\Param\Dto\CheckInValidateJoinDTOOutParam;
 
 interface CheckInValidateJoinBep {
 
-    public function invoke(CheckInValidateJoinParam $param) : ImktValidateResultOutParam;
+    public function invoke(CheckInValidateJoinParam $param) : CheckInValidateJoinDTOOutParam;
 
 }

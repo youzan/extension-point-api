@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\ExtRefundOrderResponse\ExtRefundOrderItem;
 /**
  * 退款单信息列表
  * @author Baymax
- * @create Tue Aug 29 15:23:30 CST 2023
+ * @create Mon Sep 25 10:25:26 CST 2023
  */
 class ExtRefundOrder implements \JsonSerializable {
 
@@ -26,7 +26,7 @@ class ExtRefundOrder implements \JsonSerializable {
 
     /**
      * 有赞客户id，客户在有赞的唯一id
-     * @var int
+     * @var string
      */
     private $yzOpenId;
 
@@ -119,17 +119,17 @@ class ExtRefundOrder implements \JsonSerializable {
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getYzOpenId(): ?int
+    public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
     }
 
     /**
-     * @param int $yzOpenId
+     * @param string $yzOpenId
      */
-    public function setYzOpenId(?int $yzOpenId): void
+    public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }

@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Model;
+namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Com\Youzan\Cloud\Extension\Param\Model\AccessControlResp;
+use Com\Youzan\Cloud\Extension\Param\Response\ExtOrderResponse;
 
 /**
  * 返回数据返回类
  * @author Baymax
- * @create Tue Sep 12 16:11:14 CST 2023
+ * @create Tue Sep 26 14:39:27 CST 2023
  */
-class AccessControlRespOutParam implements \JsonSerializable {
+class ExtOrderResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class AccessControlRespOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var AccessControlResp
+     * @var ExtOrderResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class AccessControlRespOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return AccessControlResp
+     * @return ExtOrderResponse
      */
-    public function getData(): ?AccessControlResp
+    public function getData(): ?ExtOrderResponse
     {
         return $this->data;
     }
 
     /**
-     * @param AccessControlResp $data
+     * @param ExtOrderResponse $data
      */
-    public function setData(?AccessControlResp $data): void
+    public function setData(?ExtOrderResponse $data): void
     {
         $this->data = $data;
     }

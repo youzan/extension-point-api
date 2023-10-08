@@ -7,13 +7,13 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 /**
  * 请求体对象
  * @author Baymax
- * @create Wed Aug 30 16:50:08 CST 2023
+ * @create Mon Sep 11 14:50:29 CST 2023
  */
 class ListTagGroupByGuideDTO implements \JsonSerializable {
 
     /**
      *  员工yz_open_id
-     * @var int
+     * @var string
      */
     private $yzOpenId;
 
@@ -26,17 +26,17 @@ class ListTagGroupByGuideDTO implements \JsonSerializable {
 
 
     /**
-     * @return int
+     * @return string
      */
-    public function getYzOpenId(): ?int
+    public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
     }
 
     /**
-     * @param int $yzOpenId
+     * @param string $yzOpenId
      */
-    public function setYzOpenId(?int $yzOpenId): void
+    public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }

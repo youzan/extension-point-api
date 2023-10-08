@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Salesman\ExtItemCpsDetail;
 /**
  *  
  * @author Baymax
- * @create Tue May 16 21:12:58 CST 2023
+ * @create Thu Sep 14 17:32:55 CST 2023
  */
 class ExtCpsCalculateResponse implements \JsonSerializable {
 
@@ -70,6 +70,18 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
      * @var bool
      */
     private $cpsMoneyMoreThanRealPay;
+
+    /**
+     * 邀请单对应的 订单实付金额（分），一般和 realPay 一致，当佣金单已结算，邀请单待结算的场景下，发生退款，bonusRealPay 需要定制方回传，如果不传以 realPay 为准。
+     * @var int
+     */
+    private $bonusRealPay;
+
+    /**
+     * 退款佣金计算是否由扩展点自己计算，默认false。true 表示退款时计算佣金会以扩展点返回为准；false 表示按计费时的佣金比例折算退款的佣金
+     * @var bool
+     */
+    private $refundSupportExtend;
 
 
 
@@ -231,6 +243,38 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     public function setCpsMoneyMoreThanRealPay(?bool $cpsMoneyMoreThanRealPay): void
     {
         $this->cpsMoneyMoreThanRealPay = $cpsMoneyMoreThanRealPay;
+    }
+
+    /**
+     * @return int
+     */
+    public function getBonusRealPay(): ?int
+    {
+        return $this->bonusRealPay;
+    }
+
+    /**
+     * @param int $bonusRealPay
+     */
+    public function setBonusRealPay(?int $bonusRealPay): void
+    {
+        $this->bonusRealPay = $bonusRealPay;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getRefundSupportExtend(): ?bool
+    {
+        return $this->refundSupportExtend;
+    }
+
+    /**
+     * @param bool $refundSupportExtend
+     */
+    public function setRefundSupportExtend(?bool $refundSupportExtend): void
+    {
+        $this->refundSupportExtend = $refundSupportExtend;
     }
 
     public function jsonSerialize() {

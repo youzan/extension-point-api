@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Param;
 /**
  * 拓展点参数
  * @author Baymax
- * @create Tue Sep 05 16:18:18 CST 2023
+ * @create Fri Sep 08 17:14:48 CST 2023
  */
 class CheckInValidateJoinParam implements \JsonSerializable {
 

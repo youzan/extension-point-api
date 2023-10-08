@@ -7,19 +7,19 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 /**
  * 请求参数
  * @author Baymax
- * @create Thu Aug 31 14:09:30 CST 2023
+ * @create Sun Oct 08 11:06:27 CST 2023
  */
 class ListTagGroupBizDTO implements \JsonSerializable {
 
     /**
      * 企微助手客户id，企微助手客户在有赞的唯一id
-     * @var int
+     * @var string
      */
     private $yzOpenId;
 
     /**
      * 企微助手员工id，企微助手员工在有赞的唯一id
-     * @var int
+     * @var string
      */
     private $guideYzOpenId;
 
@@ -32,33 +32,33 @@ class ListTagGroupBizDTO implements \JsonSerializable {
 
 
     /**
-     * @return int
+     * @return string
      */
-    public function getYzOpenId(): ?int
+    public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
     }
 
     /**
-     * @param int $yzOpenId
+     * @param string $yzOpenId
      */
-    public function setYzOpenId(?int $yzOpenId): void
+    public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getGuideYzOpenId(): ?int
+    public function getGuideYzOpenId(): ?string
     {
         return $this->guideYzOpenId;
     }
 
     /**
-     * @param int $guideYzOpenId
+     * @param string $guideYzOpenId
      */
-    public function setGuideYzOpenId(?int $guideYzOpenId): void
+    public function setGuideYzOpenId(?string $guideYzOpenId): void
     {
         $this->guideYzOpenId = $guideYzOpenId;
     }

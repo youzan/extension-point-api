@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Model;
+namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
-use Com\Youzan\Cloud\Extension\Param\Model\AccessControlResp;
+use Com\Youzan\Cloud\Extension\Param\Dto\CheckInValidateJoinDTO;
 
 /**
- * 返回数据返回类
+ * 校验结果返回类
  * @author Baymax
- * @create Tue Sep 12 16:11:14 CST 2023
+ * @create Fri Sep 08 17:14:48 CST 2023
  */
-class AccessControlRespOutParam implements \JsonSerializable {
+class CheckInValidateJoinDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class AccessControlRespOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var AccessControlResp
+     * @var CheckInValidateJoinDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class AccessControlRespOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return AccessControlResp
+     * @return CheckInValidateJoinDTO
      */
-    public function getData(): ?AccessControlResp
+    public function getData(): ?CheckInValidateJoinDTO
     {
         return $this->data;
     }
 
     /**
-     * @param AccessControlResp $data
+     * @param CheckInValidateJoinDTO $data
      */
-    public function setData(?AccessControlResp $data): void
+    public function setData(?CheckInValidateJoinDTO $data): void
     {
         $this->data = $data;
     }

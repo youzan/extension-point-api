@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 外部券信息
  * @author Baymax
- * @create Mon Mar 14 19:24:32 CST 2022
+ * @create Tue Sep 26 14:15:25 CST 2023
  */
 class ThirdpartyVoucheraDTO implements \JsonSerializable {
 
@@ -59,6 +59,12 @@ class ThirdpartyVoucheraDTO implements \JsonSerializable {
      * @var int
      */
     private $validStartTime;
+
+    /**
+     * 核销码
+     * @var string
+     */
+    private $verifyCode;
 
     /**
      * 凭证有效期结束时间
@@ -200,6 +206,22 @@ class ThirdpartyVoucheraDTO implements \JsonSerializable {
     public function setValidStartTime(?int $validStartTime): void
     {
         $this->validStartTime = $validStartTime;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVerifyCode(): ?string
+    {
+        return $this->verifyCode;
+    }
+
+    /**
+     * @param string $verifyCode
+     */
+    public function setVerifyCode(?string $verifyCode): void
+    {
+        $this->verifyCode = $verifyCode;
     }
 
     /**
