@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\CobuildRelTagGroupRespDTO;
 /**
  * 标签列表
  * @author Baymax
- * @create Mon Sep 11 10:29:17 CST 2023
+ * @create Sun Oct 08 11:06:27 CST 2023
  */
 class TagDetailDTO implements \JsonSerializable {
 

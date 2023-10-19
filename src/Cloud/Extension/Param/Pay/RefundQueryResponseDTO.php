@@ -7,7 +7,7 @@ use DateTime;
 /**
  *  
  * @author Baymax
- * @create Mon Mar 14 17:40:03 CST 2022
+ * @create Mon Oct 16 10:46:11 CST 2023
  */
 class RefundQueryResponseDTO implements \JsonSerializable {
 
