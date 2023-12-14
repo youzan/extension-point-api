@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\PerformanceStartInfoResponse;
 /**
  * 获取业绩开始统计时间相关信息结果返回类
  * @author Baymax
- * @create Mon Jul 10 16:38:42 CST 2023
+ * @create Mon Dec 11 15:24:22 CST 2023
  */
 class PerformanceStartInfoResponseOutParam implements \JsonSerializable {
 

@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\ExtCommissionCalculateRequest;
 /**
  * 订单商品信息
  * @author Baymax
- * @create Fri Mar 03 17:34:00 CST 2023
+ * @create Thu Nov 30 17:41:07 CST 2023
  */
 class ExtOrderItem implements \JsonSerializable {
 

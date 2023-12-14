@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 修改等级入参
  * @author Baymax
- * @create Tue Apr 11 20:13:21 CST 2023
+ * @create Thu Nov 23 14:48:45 CST 2023
  */
 class ExtSetLevelRequestDTO implements \JsonSerializable {
 
@@ -40,6 +40,12 @@ class ExtSetLevelRequestDTO implements \JsonSerializable {
      * @var string
      */
     private $yzOpenId;
+
+    /**
+     * 版本时间戳，毫秒级时间戳
+     * @var int
+     */
+    private $version;
 
 
 
@@ -121,6 +127,22 @@ class ExtSetLevelRequestDTO implements \JsonSerializable {
     public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getVersion(): ?int
+    {
+        return $this->version;
+    }
+
+    /**
+     * @param int $version
+     */
+    public function setVersion(?int $version): void
+    {
+        $this->version = $version;
     }
 
     public function jsonSerialize() {

@@ -1,15 +1,15 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Response;
+namespace Com\Youzan\Cloud\Extension\Param\Cps;
 
-use Com\Youzan\Cloud\Extension\Param\Response\ExtCommissionCalculateResponse;
+use Com\Youzan\Cloud\Extension\Param\Cps\ExtOrderSettleResponse;
 
 /**
- * 导购佣金计算结果返回类
+ * data返回类
  * @author Baymax
- * @create Thu Nov 30 17:41:07 CST 2023
+ * @create Thu Oct 19 20:18:50 CST 2023
  */
-class ExtCommissionCalculateResponseOutParam implements \JsonSerializable {
+class ExtOrderSettleResponseOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class ExtCommissionCalculateResponseOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var ExtCommissionCalculateResponse
+     * @var ExtOrderSettleResponse
      */
     private $data;
 
@@ -84,17 +84,17 @@ class ExtCommissionCalculateResponseOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return ExtCommissionCalculateResponse
+     * @return ExtOrderSettleResponse
      */
-    public function getData(): ?ExtCommissionCalculateResponse
+    public function getData(): ?ExtOrderSettleResponse
     {
         return $this->data;
     }
 
     /**
-     * @param ExtCommissionCalculateResponse $data
+     * @param ExtOrderSettleResponse $data
      */
-    public function setData(?ExtCommissionCalculateResponse $data): void
+    public function setData(?ExtOrderSettleResponse $data): void
     {
         $this->data = $data;
     }

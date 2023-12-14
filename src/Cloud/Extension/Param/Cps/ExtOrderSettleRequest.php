@@ -1,33 +1,27 @@
 <?php
 
-namespace Com\Youzan\Cloud\Extension\Param\Request;
+namespace Com\Youzan\Cloud\Extension\Param\Cps;
 
 
 
 /**
- * 获取业绩开始统计时间相关信息请求
+ * request
  * @author Baymax
- * @create Mon Dec 11 15:24:22 CST 2023
+ * @create Thu Oct 19 20:18:50 CST 2023
  */
-class ExtGetPerformanceStartInfoRequest implements \JsonSerializable {
+class ExtOrderSettleRequest implements \JsonSerializable {
 
     /**
-     * 订单编号
+     * 触发结算的分销员订单号
      * @var string
      */
     private $orderNo;
 
     /**
-     * 店铺ID
+     * 分销员订单所属的店铺id
      * @var int
      */
     private $kdtId;
-
-    /**
-     * 总店ID
-     * @var int
-     */
-    private $rootKdtId;
 
 
 
@@ -61,22 +55,6 @@ class ExtGetPerformanceStartInfoRequest implements \JsonSerializable {
     public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
-    }
-
-    /**
-     * @return int
-     */
-    public function getRootKdtId(): ?int
-    {
-        return $this->rootKdtId;
-    }
-
-    /**
-     * @param int $rootKdtId
-     */
-    public function setRootKdtId(?int $rootKdtId): void
-    {
-        $this->rootKdtId = $rootKdtId;
     }
 
     public function jsonSerialize() {

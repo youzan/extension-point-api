@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Salesman\ExtCpsCalculateResponse;
 /**
  *  返回类
  * @author Baymax
- * @create Thu Sep 14 17:32:55 CST 2023
+ * @create Thu Oct 19 16:34:31 CST 2023
  */
 class ExtCpsCalculateResponseOutParam implements \JsonSerializable {
 

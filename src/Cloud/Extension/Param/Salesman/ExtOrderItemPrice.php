@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Salesman;
 /**
  * 商品明细
  * @author Baymax
- * @create Thu Sep 14 17:32:55 CST 2023
+ * @create Thu Oct 19 16:34:31 CST 2023
  */
 class ExtOrderItemPrice implements \JsonSerializable {
 
