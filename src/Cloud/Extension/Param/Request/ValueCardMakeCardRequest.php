@@ -7,7 +7,7 @@ use DateTime;
 /**
  *  
  * @author Baymax
- * @create Mon Mar 14 19:40:08 CST 2022
+ * @create Fri Feb 02 09:55:03 CST 2024
  */
 class ValueCardMakeCardRequest implements \JsonSerializable {
 

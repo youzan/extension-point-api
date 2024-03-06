@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\CheckinSelectPrizeParam;
 
-use Java\Lang\Long;
+
 
 /**
  * {}

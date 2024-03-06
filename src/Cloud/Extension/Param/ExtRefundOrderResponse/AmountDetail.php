@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\ExtRefundOrderResponse;
 /**
  * 金额明细-基于支付方式
  * @author Baymax
- * @create Mon Sep 25 10:25:26 CST 2023
+ * @create Wed Jan 31 11:10:21 CST 2024
  */
 class AmountDetail implements \JsonSerializable {
 

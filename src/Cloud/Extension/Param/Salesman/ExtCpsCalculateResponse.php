@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Salesman\ExtItemCpsDetail;
 /**
  *  
  * @author Baymax
- * @create Thu Sep 14 17:32:55 CST 2023
+ * @create Thu Oct 19 16:34:31 CST 2023
  */
 class ExtCpsCalculateResponse implements \JsonSerializable {
 
@@ -82,6 +82,12 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
      * @var bool
      */
     private $refundSupportExtend;
+
+    /**
+     * 是否支持货到付款订单和正常订单一样正常计算和结算佣金，true：支持，false：不支持，默认false
+     * @var bool
+     */
+    private $supportCodPay;
 
 
 
@@ -275,6 +281,22 @@ class ExtCpsCalculateResponse implements \JsonSerializable {
     public function setRefundSupportExtend(?bool $refundSupportExtend): void
     {
         $this->refundSupportExtend = $refundSupportExtend;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getSupportCodPay(): ?bool
+    {
+        return $this->supportCodPay;
+    }
+
+    /**
+     * @param bool $supportCodPay
+     */
+    public function setSupportCodPay(?bool $supportCodPay): void
+    {
+        $this->supportCodPay = $supportCodPay;
     }
 
     public function jsonSerialize() {

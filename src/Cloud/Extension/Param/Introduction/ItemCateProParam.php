@@ -2,13 +2,13 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Introduction;
 
-use Java\Lang\String;
+
 use Com\Youzan\Cloud\Extension\Param\Introduction\ItemProValueParam;
 
 /**
  * 商品类目、商品参数
  * @author Baymax
- * @create Tue Apr 04 17:41:46 CST 2023
+ * @create Tue Apr 04 17:41:47 CST 2023
  */
 class ItemCateProParam implements \JsonSerializable {
 

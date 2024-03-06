@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\ExtraPromotionCalcResultDTO;
 /**
  *  返回类
  * @author Baymax
- * @create Sat Jul 30 23:32:01 CST 2022
+ * @create Sat Jul 30 23:32:02 CST 2022
  */
 class ExtraPromotionCalcResultDTOOutParam implements \JsonSerializable {
 

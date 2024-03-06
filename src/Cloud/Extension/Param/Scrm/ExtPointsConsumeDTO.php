@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 请求参数
  * @author Baymax
- * @create Thu Aug 24 10:05:23 CST 2023
+ * @create Wed Nov 29 14:19:27 CST 2023
  */
 class ExtPointsConsumeDTO implements \JsonSerializable {
 
@@ -71,6 +71,12 @@ class ExtPointsConsumeDTO implements \JsonSerializable {
      * @var int
      */
     private $amount;
+
+    /**
+     * 积分变更来源店铺id
+     * @var int
+     */
+    private $sourceKdtId;
 
 
 
@@ -232,6 +238,22 @@ class ExtPointsConsumeDTO implements \JsonSerializable {
     public function setAmount(?int $amount): void
     {
         $this->amount = $amount;
+    }
+
+    /**
+     * @return int
+     */
+    public function getSourceKdtId(): ?int
+    {
+        return $this->sourceKdtId;
+    }
+
+    /**
+     * @param int $sourceKdtId
+     */
+    public function setSourceKdtId(?int $sourceKdtId): void
+    {
+        $this->sourceKdtId = $sourceKdtId;
     }
 
     public function jsonSerialize() {

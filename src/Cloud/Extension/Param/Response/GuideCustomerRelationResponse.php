@@ -7,13 +7,13 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 /**
  * 客户关系
  * @author Baymax
- * @create Mon Mar 14 16:54:54 CST 2022
+ * @create Fri Apr 22 14:09:02 CST 2022
  */
 class GuideCustomerRelationResponse implements \JsonSerializable {
 
     /**
      * 导购员有赞用户id
-     * @var string
+     * @var int
      */
     private $dsYzOpenId;
 
@@ -31,7 +31,7 @@ class GuideCustomerRelationResponse implements \JsonSerializable {
 
     /**
      * 客户有赞用户id
-     * @var string
+     * @var int
      */
     private $ctYzOpenId;
 
@@ -44,17 +44,17 @@ class GuideCustomerRelationResponse implements \JsonSerializable {
 
 
     /**
-     * @return string
+     * @return int
      */
-    public function getDsYzOpenId(): ?string
+    public function getDsYzOpenId(): ?int
     {
         return $this->dsYzOpenId;
     }
 
     /**
-     * @param string $dsYzOpenId
+     * @param int $dsYzOpenId
      */
-    public function setDsYzOpenId(?string $dsYzOpenId): void
+    public function setDsYzOpenId(?int $dsYzOpenId): void
     {
         $this->dsYzOpenId = $dsYzOpenId;
     }
@@ -92,17 +92,17 @@ class GuideCustomerRelationResponse implements \JsonSerializable {
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getCtYzOpenId(): ?string
+    public function getCtYzOpenId(): ?int
     {
         return $this->ctYzOpenId;
     }
 
     /**
-     * @param string $ctYzOpenId
+     * @param int $ctYzOpenId
      */
-    public function setCtYzOpenId(?string $ctYzOpenId): void
+    public function setCtYzOpenId(?int $ctYzOpenId): void
     {
         $this->ctYzOpenId = $ctYzOpenId;
     }

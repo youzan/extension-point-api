@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\AccessControlReq;
 /**
  * 平台帐号信息
  * @author Baymax
- * @create Tue Sep 12 16:11:14 CST 2023
+ * @create Tue Sep 12 16:11:15 CST 2023
  */
 class PlatformUserInfo implements \JsonSerializable {
 

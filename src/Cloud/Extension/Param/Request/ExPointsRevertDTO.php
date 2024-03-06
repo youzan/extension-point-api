@@ -4,12 +4,12 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 
 use Com\Youzan\Cloud\Extension\Param\Request\ExtCustomerInfoDTO;
 use StdClass;
-use Java\Lang\Integer;
+
 
 /**
  * 请求参数
  * @author Baymax
- * @create Wed Mar 29 16:31:43 CST 2023
+ * @create Wed Mar 29 16:31:44 CST 2023
  */
 class ExPointsRevertDTO implements \JsonSerializable {
 

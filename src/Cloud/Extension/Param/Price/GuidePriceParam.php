@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Price\GuidePriceSkuParam;
 /**
  * 建议售价参数
  * @author Baymax
- * @create Tue Apr 04 17:41:46 CST 2023
+ * @create Tue Apr 04 17:41:47 CST 2023
  */
 class GuidePriceParam implements \JsonSerializable {
 

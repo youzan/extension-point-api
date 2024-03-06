@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\GuideCustomerRelationQueryResponse
 /**
  *  返回类
  * @author Baymax
- * @create Mon Mar 14 16:54:54 CST 2022
+ * @create Fri Apr 22 14:09:02 CST 2022
  */
 class GuideCustomerRelationQueryResponseOutParam implements \JsonSerializable {
 

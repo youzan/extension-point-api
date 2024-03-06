@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\ExtCustomerTagDetailResponse;
 /**
  * 客户标签列表
  * @author Baymax
- * @create Thu Aug 24 18:49:00 CST 2023
+ * @create Thu Aug 24 18:49:01 CST 2023
  */
 class ExtCustomerTagDetail implements \JsonSerializable {
 

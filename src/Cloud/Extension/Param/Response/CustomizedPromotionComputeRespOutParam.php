@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\CustomizedPromotionComputeResp;
 /**
  * 返回优惠减免信息返回类
  * @author Baymax
- * @create Thu Mar 10 20:03:22 CST 2022
+ * @create Wed Feb 16 10:43:05 CST 2022
  */
 class CustomizedPromotionComputeRespOutParam implements \JsonSerializable {
 

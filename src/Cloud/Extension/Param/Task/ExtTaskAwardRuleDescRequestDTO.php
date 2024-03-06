@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Task;
 
-use Java\Lang\Integer;
+
 
 /**
  *  

@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Param;
 /**
  * 用户信息
  * @author Baymax
- * @create Thu Mar 10 20:03:22 CST 2022
+ * @create Wed Feb 16 10:43:05 CST 2022
  */
 class UserParam implements \JsonSerializable {
 

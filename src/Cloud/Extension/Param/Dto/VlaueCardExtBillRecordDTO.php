@@ -7,7 +7,7 @@ use DateTime;
 /**
  *  
  * @author Baymax
- * @create Wed Feb 22 11:08:30 CST 2023
+ * @create Wed Feb 22 11:08:32 CST 2023
  */
 class VlaueCardExtBillRecordDTO implements \JsonSerializable {
 

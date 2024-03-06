@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Cps;
 /**
  * 返参
  * @author Baymax
- * @create Thu May 18 19:21:52 CST 2023
+ * @create Thu May 18 19:21:53 CST 2023
  */
 class ExtAttributionResponse implements \JsonSerializable {
 

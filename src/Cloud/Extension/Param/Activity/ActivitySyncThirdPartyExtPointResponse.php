@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 请求响应
  * @author Baymax
- * @create Tue Sep 05 17:05:40 CST 2023
+ * @create Tue Sep 05 17:05:41 CST 2023
  */
 class ActivitySyncThirdPartyExtPointResponse implements \JsonSerializable {
 

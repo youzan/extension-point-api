@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\StockDeductCheckDetailExtParam;
 /**
  * 库存扣减参数Param
  * @author Baymax
- * @create Wed Mar 02 15:24:17 CST 2022
+ * @create Wed Mar 02 15:26:08 CST 2022
  */
 class StockDeductCheckExtParam implements \JsonSerializable {
 

@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\PreHandlePerformanceAttributionRes
 /**
  * 导购业绩归因预处理信息结果返回类
  * @author Baymax
- * @create Mon Jul 10 16:38:33 CST 2023
+ * @create Mon Dec 11 16:12:10 CST 2023
  */
 class PreHandlePerformanceAttributionResponseOutParam implements \JsonSerializable {
 

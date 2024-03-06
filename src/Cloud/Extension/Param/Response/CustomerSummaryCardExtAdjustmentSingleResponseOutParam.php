@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\CustomerSummaryCardExtAdjustmentSi
 /**
  * 调账响应结果返回类
  * @author Baymax
- * @create Wed Mar 02 20:53:36 CST 2022
+ * @create Thu Mar 03 12:09:55 CST 2022
  */
 class CustomerSummaryCardExtAdjustmentSingleResponseOutParam implements \JsonSerializable {
 

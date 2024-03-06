@@ -5,32 +5,32 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
 
 /**
- * a
+ *  
  * @author Baymax
- * @create Tue Dec 28 20:39:24 CST 2021
+ * @create Mon Feb 28 15:21:25 CST 2022
  */
 class TransformChildRequset implements \JsonSerializable {
 
     /**
-     * a
+     *  
      * @var string
      */
     private $CS;
 
     /**
-     * a
+     *  
      * @var bool
      */
     private $bl;
 
     /**
-     * a
+     *  
      * @var int
      */
     private $it;
 
     /**
-     * a
+     *  
      * @var int
      */
     private $cL;

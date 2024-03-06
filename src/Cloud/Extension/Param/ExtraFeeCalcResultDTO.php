@@ -4,11 +4,12 @@ namespace Com\Youzan\Cloud\Extension\Param;
 
 use StdClass;
 use Com\Youzan\Cloud\Extension\Param\ExtPointExtraPriceResultDTO;
+use Com\Youzan\Cloud\Extension\Param\ExtPointItemExtraPriceResultDTO;
 
 /**
  * 响应信息
  * @author Baymax
- * @create Sat Jul 30 23:32:39 CST 2022
+ * @create Thu Jan 25 17:40:18 CST 2024
  */
 class ExtraFeeCalcResultDTO implements \JsonSerializable {
 
@@ -37,10 +38,16 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     private $extraFeeDesc;
 
     /**
-     * 订单级额外费用 (包含在订单是否金额里面)，订单级额外费用JSON字符串限制500个字符
+     * 订单级额外费用 (包含在订单实付金额里面)，订单级额外费用JSON字符串限制500个字符
      * @var array
      */
     private $orderExtraPrice;
+
+    /**
+     * 商品级额外费用 (包含在商品实付金额里面，默认可退)  。如商品a原价10元、额外费用5元，则实付15元，售后申请可退15元。注意，该字段的费用明细暂不支持在下单页展示，ui交互上会有困扰，谨慎使用。
+     * @var array
+     */
+    private $goodsExtraPrice;
 
 
 
@@ -122,6 +129,22 @@ class ExtraFeeCalcResultDTO implements \JsonSerializable {
     public function setOrderExtraPrice(?array $orderExtraPrice): void
     {
         $this->orderExtraPrice = $orderExtraPrice;
+    }
+
+    /**
+     * @return array
+     */
+    public function getGoodsExtraPrice(): ?array
+    {
+        return $this->goodsExtraPrice;
+    }
+
+    /**
+     * @param array $goodsExtraPrice
+     */
+    public function setGoodsExtraPrice(?array $goodsExtraPrice): void
+    {
+        $this->goodsExtraPrice = $goodsExtraPrice;
     }
 
     public function jsonSerialize() {

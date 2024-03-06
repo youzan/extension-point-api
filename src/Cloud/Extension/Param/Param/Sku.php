@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Param;
 /**
  *  
  * @author Baymax
- * @create Sat Apr 09 18:52:00 CST 2022
+ * @create Sat Apr 09 14:25:04 CST 2022
  */
 class Sku implements \JsonSerializable {
 

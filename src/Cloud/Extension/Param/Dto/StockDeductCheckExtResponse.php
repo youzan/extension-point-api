@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 /**
  * 库存扣减检查响应参数
  * @author Baymax
- * @create Wed Mar 02 15:24:17 CST 2022
+ * @create Wed Mar 02 15:26:08 CST 2022
  */
 class StockDeductCheckExtResponse implements \JsonSerializable {
 

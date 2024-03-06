@@ -5,32 +5,32 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 use StdClass;
 
 /**
- * a
+ *  
  * @author Baymax
- * @create Tue Dec 28 20:39:24 CST 2021
+ * @create Mon Feb 07 15:40:04 CST 2022
  */
 class ListParam implements \JsonSerializable {
 
     /**
-     * a
+     *  
      * @var string
      */
     private $listStringParam;
 
     /**
-     * a
+     *  
      * @var bool
      */
     private $listBooleanParam;
 
     /**
-     * a
+     *  
      * @var stdClass
      */
     private $listMap;
 
     /**
-     * a
+     *  
      * @var int
      */
     private $listIntParam;

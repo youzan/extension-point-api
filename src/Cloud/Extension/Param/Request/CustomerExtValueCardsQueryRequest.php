@@ -2,13 +2,13 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Request;
 
-use Java\Lang\String;
+
 use Com\Youzan\Cloud\Extension\Param\CustomerExtValueCardsQueryRequest\ItemContext;
 
 /**
  *  
  * @author Baymax
- * @create Thu Aug 11 20:19:10 CST 2022
+ * @create Thu Aug 11 20:19:12 CST 2022
  */
 class CustomerExtValueCardsQueryRequest implements \JsonSerializable {
 

@@ -4,11 +4,12 @@ namespace Com\Youzan\Cloud\Extension\Param;
 
 use Com\Youzan\Cloud\Extension\Param\TradeGroupDTO;
 use Com\Youzan\Cloud\Extension\Param\InvoiceDTO;
+use StdClass;
 
 /**
  * orderCreateSelfValidateParamDTO的参数说明
  * @author Baymax
- * @create Thu Dec 08 11:03:38 CST 2022
+ * @create Mon Feb 26 17:14:37 CST 2024
  */
 class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
 
@@ -83,6 +84,12 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
      * @var string
      */
     private $bizPlatform;
+
+    /**
+     * 拓展信息。MULTI_PLAT_OUT_CHANNEL&#x3D;WX_VIDEO_XIAO_DIAN代表视频号。
+     * @var stdClass
+     */
+    private $extension;
 
 
 
@@ -276,6 +283,22 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     public function setBizPlatform(?string $bizPlatform): void
     {
         $this->bizPlatform = $bizPlatform;
+    }
+
+    /**
+     * @return stdClass
+     */
+    public function getExtension(): ?stdClass
+    {
+        return $this->extension;
+    }
+
+    /**
+     * @param stdClass $extension
+     */
+    public function setExtension(?stdClass $extension): void
+    {
+        $this->extension = $extension;
     }
 
     public function jsonSerialize() {

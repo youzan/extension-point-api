@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 请求参数
  * @author Baymax
- * @create Thu May 18 19:21:52 CST 2023
+ * @create Thu May 18 19:21:53 CST 2023
  */
 class ExtAttributionRequest implements \JsonSerializable {
 

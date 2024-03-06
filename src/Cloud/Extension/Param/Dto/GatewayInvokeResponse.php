@@ -7,44 +7,44 @@ use StdClass;
 use Com\Youzan\Cloud\Extension\Param\Dto\ChildNodeResponse;
 
 /**
- * a
+ *  
  * @author Baymax
- * @create Tue Dec 28 20:39:24 CST 2021
+ * @create Mon Feb 07 15:40:04 CST 2022
  */
 class GatewayInvokeResponse implements \JsonSerializable {
 
     /**
-     * a
+     *  
      * @var int
      */
     private $parentLong;
 
     /**
-     * a
+     *  
      * @var string
      */
     private $parentString;
 
     /**
-     * a
+     *  
      * @var int
      */
     private $parentInt;
 
     /**
-     * a
+     *  
      * @var array
      */
     private $parentList;
 
     /**
-     * a
+     *  
      * @var stdClass
      */
     private $parentMap;
 
     /**
-     * a
+     *  
      * @var ChildNodeResponse
      */
     private $childNodeResponse;

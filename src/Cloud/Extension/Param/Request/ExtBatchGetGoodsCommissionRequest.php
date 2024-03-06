@@ -3,12 +3,12 @@
 namespace Com\Youzan\Cloud\Extension\Param\Request;
 
 use Com\Youzan\Cloud\Extension\Param\ExtBatchGetGoodsCommissionRequest\GuideInfo;
-use Java\Lang\Long;
+
 
 /**
  * 导购批量获取商品佣金请求
  * @author Baymax
- * @create Mon Jun 06 14:04:49 CST 2022
+ * @create Mon Jun 06 14:04:50 CST 2022
  */
 class ExtBatchGetGoodsCommissionRequest implements \JsonSerializable {
 

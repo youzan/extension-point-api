@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\ExtRefundOrderResponse\AmountDetail;
 /**
  * 退款商品列表
  * @author Baymax
- * @create Mon Sep 25 10:25:26 CST 2023
+ * @create Wed Jan 31 11:10:21 CST 2024
  */
 class ExtRefundOrderItem implements \JsonSerializable {
 
@@ -40,6 +40,12 @@ class ExtRefundOrderItem implements \JsonSerializable {
      * @var int
      */
     private $itemId;
+
+    /**
+     * 商品规格id
+     * @var int
+     */
+    private $skuId;
 
     /**
      * 商品名称
@@ -145,6 +151,22 @@ class ExtRefundOrderItem implements \JsonSerializable {
     public function setItemId(?int $itemId): void
     {
         $this->itemId = $itemId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getSkuId(): ?int
+    {
+        return $this->skuId;
+    }
+
+    /**
+     * @param int $skuId
+     */
+    public function setSkuId(?int $skuId): void
+    {
+        $this->skuId = $skuId;
     }
 
     /**

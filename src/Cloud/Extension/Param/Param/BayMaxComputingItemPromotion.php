@@ -3,14 +3,14 @@
 namespace Com\Youzan\Cloud\Extension\Param\Param;
 
 use Com\Youzan\Cloud\Extension\Param\Model\BayMaxComputingItemIdentity;
-use Java\Lang\String;
+
 use Com\Youzan\Cloud\Extension\Param\Model\PromotionSourceIdentity;
 use Com\Youzan\Cloud\Extension\Param\Param\BaseSelectedPromotion;
 
 /**
  *  
  * @author Baymax
- * @create Sat Apr 09 18:52:00 CST 2022
+ * @create Sat Apr 09 14:25:04 CST 2022
  */
 class BayMaxComputingItemPromotion implements \JsonSerializable {
 

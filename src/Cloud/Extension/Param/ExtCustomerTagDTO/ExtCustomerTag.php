@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\ExtCustomerTagDTO;
 /**
  * 包含的标签列表，无标签时为空
  * @author Baymax
- * @create Thu Aug 24 18:49:08 CST 2023
+ * @create Thu Aug 24 18:49:09 CST 2023
  */
 class ExtCustomerTag implements \JsonSerializable {
 

@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Trade;
 
-use Java\Lang\String;
+
 
 /**
  *  

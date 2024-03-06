@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Request\RelationExtPointCanBindRelationExt;
 /**
  * 请求参数
  * @author Baymax
- * @create Mon Jun 19 09:44:41 CST 2023
+ * @create Mon Jun 19 09:44:43 CST 2023
  */
 class RelationExtPointCanBindRelationRequest implements \JsonSerializable {
 

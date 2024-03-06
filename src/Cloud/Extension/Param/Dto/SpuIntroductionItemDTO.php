@@ -3,7 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
 use Com\Youzan\Cloud\Extension\Param\Introduction\ItemMarkParam;
-use Java\Lang\String;
+
 use Com\Youzan\Cloud\Extension\Param\Introduction\ItemCateProParam;
 use Com\Youzan\Cloud\Extension\Param\Introduction\Picture;
 use Com\Youzan\Cloud\Extension\Param\Price\ItemPriceParam;
@@ -11,7 +11,7 @@ use Com\Youzan\Cloud\Extension\Param\Price\ItemPriceParam;
 /**
  *  单据明细
  * @author Baymax
- * @create Tue Apr 04 17:41:46 CST 2023
+ * @create Tue Apr 04 17:41:47 CST 2023
  */
 class SpuIntroductionItemDTO implements \JsonSerializable {
 

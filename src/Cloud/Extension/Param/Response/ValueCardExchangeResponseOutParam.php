@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\ValueCardExchangeResponse;
 /**
  *  返回类
  * @author Baymax
- * @create Mon May 22 15:27:33 CST 2023
+ * @create Mon May 22 15:27:34 CST 2023
  */
 class ValueCardExchangeResponseOutParam implements \JsonSerializable {
 

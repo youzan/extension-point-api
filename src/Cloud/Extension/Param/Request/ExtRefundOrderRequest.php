@@ -2,12 +2,12 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Request;
 
-use Java\Lang\String;
+
 
 /**
  * 请求体
  * @author Baymax
- * @create Mon Sep 25 10:25:26 CST 2023
+ * @create Wed Jan 31 11:10:21 CST 2024
  */
 class ExtRefundOrderRequest implements \JsonSerializable {
 

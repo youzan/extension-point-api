@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 /**
  *  
  * @author Baymax
- * @create Thu Jan 13 23:16:20 CST 2022
+ * @create Fri Apr 22 13:12:46 CST 2022
  */
 class GuideExtPointNeedInvokeResponse implements \JsonSerializable {
 

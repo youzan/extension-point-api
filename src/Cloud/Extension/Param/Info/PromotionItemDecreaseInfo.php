@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Model\ComputingItemIdentity;
 /**
  * 商品优惠减免列表信息
  * @author Baymax
- * @create Thu Mar 10 20:03:22 CST 2022
+ * @create Wed Feb 16 10:43:05 CST 2022
  */
 class PromotionItemDecreaseInfo implements \JsonSerializable {
 

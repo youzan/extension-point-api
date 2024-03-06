@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\ExtOrderResponse;
 /**
  * 支付信息
  * @author Baymax
- * @create Tue Sep 26 14:39:27 CST 2023
+ * @create Wed Jan 31 11:10:43 CST 2024
  */
 class ExtPayInfo implements \JsonSerializable {
 

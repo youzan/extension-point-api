@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\ExtCommissionCalculateResponse;
 /**
  * 导购佣金计算明细
  * @author Baymax
- * @create Fri Mar 03 17:34:00 CST 2023
+ * @create Thu Nov 30 17:41:09 CST 2023
  */
 class ExtItemCpsDetail implements \JsonSerializable {
 
@@ -46,6 +46,12 @@ class ExtItemCpsDetail implements \JsonSerializable {
      * @var int
      */
     private $cpsType;
+
+    /**
+     * 指定商品提成 是否使用标品逻辑计算：默认false ,false  : 使用商家扩展点逻辑计算提成，true :使用标品规则计算提成
+     * @var bool
+     */
+    private $useStandRuleCal;
 
 
 
@@ -143,6 +149,22 @@ class ExtItemCpsDetail implements \JsonSerializable {
     public function setCpsType(?int $cpsType): void
     {
         $this->cpsType = $cpsType;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getUseStandRuleCal(): ?bool
+    {
+        return $this->useStandRuleCal;
+    }
+
+    /**
+     * @param bool $useStandRuleCal
+     */
+    public function setUseStandRuleCal(?bool $useStandRuleCal): void
+    {
+        $this->useStandRuleCal = $useStandRuleCal;
     }
 
     public function jsonSerialize() {

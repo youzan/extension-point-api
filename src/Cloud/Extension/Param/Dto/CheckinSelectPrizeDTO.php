@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
-use Java\Lang\Long;
+
 
 /**
  * {}

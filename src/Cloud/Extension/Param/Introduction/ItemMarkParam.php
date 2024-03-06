@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Introduction;
 /**
  * 商品类型能力标属性集
  * @author Baymax
- * @create Tue Apr 04 17:41:46 CST 2023
+ * @create Tue Apr 04 17:41:47 CST 2023
  */
 class ItemMarkParam implements \JsonSerializable {
 

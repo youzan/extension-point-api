@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 /**
  * 调账请求参数
  * @author Baymax
- * @create Wed Mar 02 20:53:36 CST 2022
+ * @create Thu Mar 03 12:09:55 CST 2022
  */
 class CustomerExtSingleAdjustmentRequest implements \JsonSerializable {
 

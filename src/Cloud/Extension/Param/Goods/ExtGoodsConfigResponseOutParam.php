@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Goods\ExtGoodsConfigResponse;
 /**
  *  返回类
  * @author Baymax
- * @create Thu Jun 30 19:00:48 CST 2022
+ * @create Thu Jun 30 19:00:49 CST 2022
  */
 class ExtGoodsConfigResponseOutParam implements \JsonSerializable {
 

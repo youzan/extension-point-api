@@ -5,32 +5,32 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 use Com\Youzan\Cloud\Extension\Param\Dto\ListParam;
 
 /**
- * a
+ *  
  * @author Baymax
- * @create Tue Dec 28 20:39:24 CST 2021
+ * @create Mon Feb 07 15:40:04 CST 2022
  */
 class ChildNodeResponse implements \JsonSerializable {
 
     /**
-     * a
+     *  
      * @var string
      */
     private $childString;
 
     /**
-     * a
+     *  
      * @var bool
      */
     private $childBoolean;
 
     /**
-     * a
+     *  
      * @var int
      */
     private $childLong;
 
     /**
-     * a
+     *  
      * @var array
      */
     private $childList;
