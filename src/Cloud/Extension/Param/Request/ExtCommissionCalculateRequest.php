@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\ExtCommissionCalculateRequest\ExtOrderItem;
 /**
  * 导购佣金计算请求
  * @author Baymax
- * @create Thu Nov 30 17:41:09 CST 2023
+ * @create Thu Nov 30 17:41:07 CST 2023
  */
 class ExtCommissionCalculateRequest implements \JsonSerializable {
 

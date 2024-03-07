@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\Model\BillingDiscount;
 /**
  * 外部优惠入参
  * @author Baymax
- * @create Wed Aug 09 16:47:40 CST 2023
+ * @create Wed Aug 09 16:47:39 CST 2023
  */
 class UmpCalculateRequest implements \JsonSerializable {
 

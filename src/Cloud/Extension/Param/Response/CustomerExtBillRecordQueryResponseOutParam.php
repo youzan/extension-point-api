@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\CustomerExtBillRecordQueryResponse
 /**
  * 卡列表返回类
  * @author Baymax
- * @create Wed Feb 22 11:08:32 CST 2023
+ * @create Wed Feb 22 11:08:30 CST 2023
  */
 class CustomerExtBillRecordQueryResponseOutParam implements \JsonSerializable {
 

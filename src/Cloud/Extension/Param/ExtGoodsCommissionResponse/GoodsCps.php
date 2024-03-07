@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\ExtGoodsCommissionResponse;
 /**
  * 商品佣金列表
  * @author Baymax
- * @create Mon Jun 06 14:04:50 CST 2022
+ * @create Mon Jun 06 14:04:49 CST 2022
  */
 class GoodsCps implements \JsonSerializable {
 

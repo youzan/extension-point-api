@@ -7,6 +7,6 @@ use Com\Youzan\Cloud\Extension\Param\Dto\GatewayInvokeResponseOutParam;
 
 interface Aaaaa {
 
-    public function doInvoke(GatewayInvokeRequest $requests) : GatewayInvokeResponseOutParam;
+    public function doInvoke(GatewayInvokeRequest $request) : GatewayInvokeResponseOutParam;
 
 }

@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 /**
  * 调账响应结果
  * @author Baymax
- * @create Thu Mar 03 12:09:55 CST 2022
+ * @create Wed Mar 02 20:53:36 CST 2022
  */
 class CustomerSummaryCardExtAdjustmentSingleResponse implements \JsonSerializable {
 

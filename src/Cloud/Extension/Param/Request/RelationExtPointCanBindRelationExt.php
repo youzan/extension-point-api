@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 /**
  * 绑定专属关系扩展信息
  * @author Baymax
- * @create Mon Jun 19 09:44:43 CST 2023
+ * @create Mon Jun 19 09:44:41 CST 2023
  */
 class RelationExtPointCanBindRelationExt implements \JsonSerializable {
 

@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\PrescriptionFeeQueryResponse;
 /**
  * 处方笺费用返回类
  * @author Baymax
- * @create Wed Feb 15 13:30:09 CST 2023
+ * @create Wed Feb 15 13:30:08 CST 2023
  */
 class PrescriptionFeeQueryResponseOutParam implements \JsonSerializable {
 

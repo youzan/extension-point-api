@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 /**
  * 处方笺费用
  * @author Baymax
- * @create Wed Feb 15 13:30:09 CST 2023
+ * @create Wed Feb 15 13:30:08 CST 2023
  */
 class PrescriptionFeeQueryResponse implements \JsonSerializable {
 

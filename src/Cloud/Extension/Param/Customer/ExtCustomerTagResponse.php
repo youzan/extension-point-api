@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\Tag\ExtCustomerTagDTO;
 /**
  * 结果数据
  * @author Baymax
- * @create Thu Aug 24 18:49:09 CST 2023
+ * @create Thu Aug 24 18:49:08 CST 2023
  */
 class ExtCustomerTagResponse implements \JsonSerializable {
 

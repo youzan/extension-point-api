@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\CustomerProfileModifyDTO;
 /**
  * 请求入参
  * @author Baymax
- * @create Tue Mar 14 10:16:11 CST 2023
+ * @create Tue Mar 14 10:16:10 CST 2023
  */
 class ModifyCustomerRequestDTO implements \JsonSerializable {
 

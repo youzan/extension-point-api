@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Cps\ExtAttributionResponse;
 /**
  * 返参返回类
  * @author Baymax
- * @create Thu May 18 19:21:53 CST 2023
+ * @create Thu May 18 19:21:52 CST 2023
  */
 class ExtAttributionResponseOutParam implements \JsonSerializable {
 

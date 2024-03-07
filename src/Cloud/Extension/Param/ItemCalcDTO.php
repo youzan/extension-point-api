@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 商品信息
  * @author Baymax
- * @create Sat Jul 30 23:32:02 CST 2022
+ * @create Sat Jul 30 23:32:01 CST 2022
  */
 class ItemCalcDTO implements \JsonSerializable {
 

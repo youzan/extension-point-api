@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 /**
  * 商品的sku信息
  * @author Baymax
- * @create Thu Jul 20 19:27:27 CST 2023
+ * @create Thu Jul 20 19:27:26 CST 2023
  */
 class SelfFetchPointGoodsSkuInfo implements \JsonSerializable {
 

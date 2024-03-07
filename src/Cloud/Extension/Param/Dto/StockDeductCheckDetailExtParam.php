@@ -7,7 +7,7 @@ use StdClass;
 /**
  * 库存扣减详情参数Pram
  * @author Baymax
- * @create Wed Mar 02 15:26:08 CST 2022
+ * @create Wed Mar 02 15:24:17 CST 2022
  */
 class StockDeductCheckDetailExtParam implements \JsonSerializable {
 

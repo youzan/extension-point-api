@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 /**
  * 返回数据
  * @author Baymax
- * @create Tue Sep 12 16:11:15 CST 2023
+ * @create Tue Sep 12 16:11:14 CST 2023
  */
 class AccessControlResp implements \JsonSerializable {
 

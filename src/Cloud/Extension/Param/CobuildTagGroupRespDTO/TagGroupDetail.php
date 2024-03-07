@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\CobuildTagGroupRespDTO\TagDetailDTO;
 /**
  * 标签组详情
  * @author Baymax
- * @create Mon Sep 11 14:50:31 CST 2023
+ * @create Mon Sep 11 14:50:29 CST 2023
  */
 class TagGroupDetail implements \JsonSerializable {
 

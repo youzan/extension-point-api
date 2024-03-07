@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 /**
  *  
  * @author Baymax
- * @create Fri Apr 22 13:12:46 CST 2022
+ * @create Thu Jan 13 23:16:20 CST 2022
  */
 class GuideExtPointNeedInvokeRequest implements \JsonSerializable {
 

@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\OrderItemDTO;
 /**
  *  
  * @author Baymax
- * @create Thu May 19 15:03:58 CST 2022
+ * @create Thu May 19 15:03:57 CST 2022
  */
 class RefundSelfValidateParamDTO implements \JsonSerializable {
 

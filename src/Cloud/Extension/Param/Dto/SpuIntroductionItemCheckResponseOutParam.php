@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\SpuIntroductionItemCheckResponse;
 /**
  * 返回结果返回类
  * @author Baymax
- * @create Tue Apr 04 17:41:47 CST 2023
+ * @create Tue Apr 04 17:41:46 CST 2023
  */
 class SpuIntroductionItemCheckResponseOutParam implements \JsonSerializable {
 

@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 use Com\Youzan\Cloud\Extension\Param\Dto\TransformChildResponse;
 
 /**
- * a返回类
+ *  返回类
  * @author Baymax
- * @create Fri Dec 24 13:20:04 CST 2021
+ * @create Mon Feb 28 15:21:25 CST 2022
  */
 class TransformChildResponseOutParam implements \JsonSerializable {
 

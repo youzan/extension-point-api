@@ -8,7 +8,7 @@ use DateTime;
 /**
  *  
  * @author Baymax
- * @create Wed Aug 09 17:01:50 CST 2023
+ * @create Wed Aug 09 17:01:49 CST 2023
  */
 class ValueCardExtPayRequest implements \JsonSerializable {
 

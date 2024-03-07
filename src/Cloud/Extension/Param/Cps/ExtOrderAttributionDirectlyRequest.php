@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Cps;
 /**
  * 请求参数
  * @author Baymax
- * @create Thu Aug 17 21:27:16 CST 2023
+ * @create Thu Aug 17 21:27:15 CST 2023
  */
 class ExtOrderAttributionDirectlyRequest implements \JsonSerializable {
 

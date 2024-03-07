@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 /**
  *  
  * @author Baymax
- * @create Thu Apr 06 20:59:06 CST 2023
+ * @create Thu Apr 06 20:59:05 CST 2023
  */
 class CustomerExtValueCardDetailQueryRequest implements \JsonSerializable {
 

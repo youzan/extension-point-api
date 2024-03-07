@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\AccessControlReq\PlatformUserInfo;
 /**
  * 登录的用户信息
  * @author Baymax
- * @create Tue Sep 12 16:11:15 CST 2023
+ * @create Tue Sep 12 16:11:14 CST 2023
  */
 class UserInfo implements \JsonSerializable {
 

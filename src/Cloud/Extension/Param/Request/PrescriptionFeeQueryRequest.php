@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 /**
  * 处方笺费用查询请求
  * @author Baymax
- * @create Wed Feb 15 13:30:09 CST 2023
+ * @create Wed Feb 15 13:30:08 CST 2023
  */
 class PrescriptionFeeQueryRequest implements \JsonSerializable {
 
