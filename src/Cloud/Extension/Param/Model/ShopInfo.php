@@ -7,18 +7,18 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 /**
  * 店铺信息
  * @author Baymax
- * @create Wed Feb 08 10:55:56 CST 2023
+ * @create Wed Aug 09 16:47:39 CST 2023
  */
 class ShopInfo implements \JsonSerializable {
 
     /**
-     * 店铺ID
+     * 当前店铺id
      * @var int
      */
     private $kdtId;
 
     /**
-     * 总店ID，单点时同kdtId
+     * 总店id
      * @var int
      */
     private $rootKdtId;

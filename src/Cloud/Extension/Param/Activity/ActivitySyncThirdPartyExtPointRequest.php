@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Activity;
 
-use Java\Lang\String;
+
 use StdClass;
 
 /**

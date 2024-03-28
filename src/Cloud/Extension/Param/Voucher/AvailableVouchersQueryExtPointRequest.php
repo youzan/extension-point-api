@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 
-use Java\Lang\Long;
+
 use StdClass;
 
 /**

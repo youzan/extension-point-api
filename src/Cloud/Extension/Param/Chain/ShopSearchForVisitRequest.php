@@ -2,9 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Chain;
 
-use Java\Lang\Integer;
-use Java\Lang\String;
-use Java\Lang\Long;
+
 
 /**
  *  

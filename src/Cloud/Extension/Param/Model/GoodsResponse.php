@@ -7,24 +7,24 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 /**
  * 商品详细优惠
  * @author Baymax
- * @create Wed Feb 08 10:55:56 CST 2023
+ * @create Wed Aug 09 16:47:39 CST 2023
  */
 class GoodsResponse implements \JsonSerializable {
 
     /**
-     * 商品ID
+     * 商品统一itemId。商品不再区分总店、分店商品id，只需要统一的itemId，itemId+总店/任意分店Id即可查询商品
      * @var int
      */
     private $itemId;
 
     /**
-     * 规格ID
+     * 规格统一skuId。商品不再区分总店、分店skuid，只需要统一的skuId，skuId+总店/任意分店Id即可查询商品
      * @var int
      */
     private $skuId;
 
     /**
-     * 条目 ID，可以确定一笔订单中的一项
+     * 明细id
      * @var int
      */
     private $orderItemId;

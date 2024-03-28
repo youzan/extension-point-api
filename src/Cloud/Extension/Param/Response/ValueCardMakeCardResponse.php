@@ -2,17 +2,17 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Response;
 
-use Java\Lang\String;
+
 
 /**
  *  
  * @author Baymax
- * @create Mon Mar 14 19:40:08 CST 2022
+ * @create Fri Feb 02 09:55:03 CST 2024
  */
 class ValueCardMakeCardResponse implements \JsonSerializable {
 
     /**
-     * 生成卡号集合
+     * 生成卡号集合(注意返回的格式)
      * @var array
      */
     private $cardNos;

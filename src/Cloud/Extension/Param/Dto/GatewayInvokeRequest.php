@@ -3,7 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
 use StdClass;
-use Java\Lang\String;
+
 use Com\Youzan\Cloud\Extension\Param\Dto\ChildNodeRequest;
 use Com\Youzan\Cloud\Extension\Param\Dto\ListParam;
 

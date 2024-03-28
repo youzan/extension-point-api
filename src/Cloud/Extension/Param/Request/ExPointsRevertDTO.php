@@ -4,7 +4,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Request;
 
 use Com\Youzan\Cloud\Extension\Param\Request\ExtCustomerInfoDTO;
 use StdClass;
-use Java\Lang\Integer;
+
 
 /**
  * 请求参数

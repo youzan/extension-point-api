@@ -3,7 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param\Request;
 
 use Com\Youzan\Cloud\Extension\Param\ExtBatchGetGoodsCommissionRequest\GuideInfo;
-use Java\Lang\Long;
+
 
 /**
  * 导购批量获取商品佣金请求

@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Medicine;
 
-use Java\Lang\String;
+
 
 /**
  *  请求体

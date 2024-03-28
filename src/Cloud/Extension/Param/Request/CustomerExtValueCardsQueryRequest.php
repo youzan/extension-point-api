@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Request;
 
-use Java\Lang\String;
+
 use Com\Youzan\Cloud\Extension\Param\CustomerExtValueCardsQueryRequest\ItemContext;
 
 /**

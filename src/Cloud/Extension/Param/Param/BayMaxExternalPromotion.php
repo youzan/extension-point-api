@@ -5,7 +5,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Param;
 use Com\Youzan\Cloud\Extension\Param\Model\PromotionSourceIdentity;
 use Com\Youzan\Cloud\Extension\Param\Model\BayMaxComputingItemIdentity;
 use Com\Youzan\Cloud\Extension\Param\Param\BayMaxGoodsPriceDiscountEffect;
-use Java\Lang\Integer;
+
 
 /**
  *  

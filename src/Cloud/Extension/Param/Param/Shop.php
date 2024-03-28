@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Param;
 
-use Java\Lang\Long;
+
 
 /**
  *  

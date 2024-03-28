@@ -3,7 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param\Param;
 
 use Com\Youzan\Cloud\Extension\Param\Model\BayMaxComputingItemIdentity;
-use Java\Lang\String;
+
 use Com\Youzan\Cloud\Extension\Param\Model\PromotionSourceIdentity;
 use Com\Youzan\Cloud\Extension\Param\Param\BaseSelectedPromotion;
 

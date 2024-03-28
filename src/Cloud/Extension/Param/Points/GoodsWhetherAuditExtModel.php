@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Points;
 
-use Java\Lang\Long;
+
 
 /**
  * 返回数据

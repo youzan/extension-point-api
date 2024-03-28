@@ -2,8 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Introduction;
 
-use Java\Lang\String;
-use Java\Lang\Long;
+
 
 /**
  * 公域属性

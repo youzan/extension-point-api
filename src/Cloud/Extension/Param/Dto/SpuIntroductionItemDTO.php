@@ -3,7 +3,7 @@
 namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
 use Com\Youzan\Cloud\Extension\Param\Introduction\ItemMarkParam;
-use Java\Lang\String;
+
 use Com\Youzan\Cloud\Extension\Param\Introduction\ItemCateProParam;
 use Com\Youzan\Cloud\Extension\Param\Introduction\Picture;
 use Com\Youzan\Cloud\Extension\Param\Price\ItemPriceParam;

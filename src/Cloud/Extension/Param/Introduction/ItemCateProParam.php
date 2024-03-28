@@ -2,7 +2,7 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Introduction;
 
-use Java\Lang\String;
+
 use Com\Youzan\Cloud\Extension\Param\Introduction\ItemProValueParam;
 
 /**
