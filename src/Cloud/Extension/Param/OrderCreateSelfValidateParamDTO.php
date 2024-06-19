@@ -9,7 +9,7 @@ use StdClass;
 /**
  * orderCreateSelfValidateParamDTO的参数说明
  * @author Baymax
- * @create Mon Feb 26 17:14:35 CST 2024
+ * @create Thu Apr 11 14:11:18 CST 2024
  */
 class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
 
@@ -90,6 +90,18 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
      * @var stdClass
      */
     private $extension;
+
+    /**
+     * 垂直行业 COMMON:普通担保交易  HOTEL:酒店  BEAUTY:美业  OFFLINE_CATERING:餐饮  TAKEOUT:外卖  RETAIL:门店零售  EXTERNAL:第三方  YZ_CLOUD:有赞电商云  LIVE_SAMPLE:直播寄样  MEDICINE:医药  TEST:测试场景
+     * @var string
+     */
+    private $bizCategory;
+
+    /**
+     * 订单渠道来源 YOUZAN: 有赞内部系统 ELEME_FOOD: 饿了么餐饮系统 MEITUAN_FOOD: 美团餐饮系统 CANDAO: 餐道 GUANYI: 管易 CWJ: 宠物家 WX_SMALL_SHOP: 微信小商店 WX_XIAO_DIAN: 微信视频号小店 BJ: 伯俊 HAOFUDOU: 好福兜 MEICHUANG: 美创 WANGFUJING: 王府井 TENCENT_HUIJU: 腾讯慧聚 CRM: CRM GENERAL_EXTERNAL: 通用三方 ELEME_FOOD_V2: 饿了么餐饮系统 MEITUAN_SHANGOU: 美团闪购业务
+     * @var string
+     */
+    private $channelType;
 
 
 
@@ -299,6 +311,38 @@ class OrderCreateSelfValidateParamDTO implements \JsonSerializable {
     public function setExtension(?stdClass $extension): void
     {
         $this->extension = $extension;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBizCategory(): ?string
+    {
+        return $this->bizCategory;
+    }
+
+    /**
+     * @param string $bizCategory
+     */
+    public function setBizCategory(?string $bizCategory): void
+    {
+        $this->bizCategory = $bizCategory;
+    }
+
+    /**
+     * @return string
+     */
+    public function getChannelType(): ?string
+    {
+        return $this->channelType;
+    }
+
+    /**
+     * @param string $channelType
+     */
+    public function setChannelType(?string $channelType): void
+    {
+        $this->channelType = $channelType;
     }
 
     public function jsonSerialize() {

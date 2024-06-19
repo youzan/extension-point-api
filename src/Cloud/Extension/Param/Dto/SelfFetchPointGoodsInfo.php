@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\SelfFetchPointGoodsSkuInfo;
 /**
  * 自提点下单页商品详情信息
  * @author Baymax
- * @create Thu Jul 20 19:27:26 CST 2023
+ * @create Thu Jun 13 16:02:19 CST 2024
  */
 class SelfFetchPointGoodsInfo implements \JsonSerializable {
 

@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Dto\SelfFetchPointGoodsInfo;
 /**
  * 接口入参对象
  * @author Baymax
- * @create Thu Jul 20 19:27:26 CST 2023
+ * @create Thu Jun 13 16:02:19 CST 2024
  */
 class SelfFetchWithSoldStatusQueryExtDTO implements \JsonSerializable {
 
@@ -34,6 +34,12 @@ class SelfFetchWithSoldStatusQueryExtDTO implements \JsonSerializable {
      * @var string
      */
     private $yzOpenId;
+
+    /**
+     * 用户搜索关键字
+     * @var string
+     */
+    private $keyword;
 
     /**
      * 自提点下单页商品详情信息
@@ -129,6 +135,22 @@ class SelfFetchWithSoldStatusQueryExtDTO implements \JsonSerializable {
     public function setYzOpenId(?string $yzOpenId): void
     {
         $this->yzOpenId = $yzOpenId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getKeyword(): ?string
+    {
+        return $this->keyword;
+    }
+
+    /**
+     * @param string $keyword
+     */
+    public function setKeyword(?string $keyword): void
+    {
+        $this->keyword = $keyword;
     }
 
     /**

@@ -7,12 +7,12 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 /**
  *  
  * @author Baymax
- * @create Fri Feb 11 14:15:14 CST 2022
+ * @create Wed Mar 29 16:31:43 CST 2023
  */
 class Result implements \JsonSerializable {
 
     /**
-     * 是否成功 true表示成功 false表示失败
+     * 是否成功 ture表示成功 false表示失败
      * @var bool
      */
     private $data;
