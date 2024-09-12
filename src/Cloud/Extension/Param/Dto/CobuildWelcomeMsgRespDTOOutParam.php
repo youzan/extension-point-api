@@ -2,14 +2,14 @@
 
 namespace Com\Youzan\Cloud\Extension\Param\Dto;
 
-use Com\Youzan\Cloud\Extension\Param\Dto\SelfFetchWithSoldStatusResultExtDTO;
+use Com\Youzan\Cloud\Extension\Param\Dto\CobuildWelcomeMsgRespDTO;
 
 /**
- * 第一层返回结果封装data对象返回类
+ * 返回数据返回类
  * @author Baymax
- * @create Thu Jun 13 16:02:19 CST 2024
+ * @create Mon Jun 17 16:31:50 CST 2024
  */
-class SelfFetchWithSoldStatusResultExtDTOOutParam implements \JsonSerializable {
+class CobuildWelcomeMsgRespDTOOutParam implements \JsonSerializable {
 
     /**
      *
@@ -31,7 +31,7 @@ class SelfFetchWithSoldStatusResultExtDTOOutParam implements \JsonSerializable {
 
     /**
      *
-     * @var SelfFetchWithSoldStatusResultExtDTO
+     * @var CobuildWelcomeMsgRespDTO
      */
     private $data;
 
@@ -84,17 +84,17 @@ class SelfFetchWithSoldStatusResultExtDTOOutParam implements \JsonSerializable {
     }
 
     /**
-     * @return SelfFetchWithSoldStatusResultExtDTO
+     * @return CobuildWelcomeMsgRespDTO
      */
-    public function getData(): ?SelfFetchWithSoldStatusResultExtDTO
+    public function getData(): ?CobuildWelcomeMsgRespDTO
     {
         return $this->data;
     }
 
     /**
-     * @param SelfFetchWithSoldStatusResultExtDTO $data
+     * @param CobuildWelcomeMsgRespDTO $data
      */
-    public function setData(?SelfFetchWithSoldStatusResultExtDTO $data): void
+    public function setData(?CobuildWelcomeMsgRespDTO $data): void
     {
         $this->data = $data;
     }

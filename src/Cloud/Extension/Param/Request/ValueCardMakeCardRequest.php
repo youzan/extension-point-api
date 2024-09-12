@@ -7,7 +7,7 @@ use DateTime;
 /**
  *  
  * @author Baymax
- * @create Fri Feb 02 09:55:03 CST 2024
+ * @create Thu Aug 22 14:49:09 CST 2024
  */
 class ValueCardMakeCardRequest implements \JsonSerializable {
 
@@ -28,6 +28,18 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
      * @var string
      */
     private $productSkuNo;
+
+    /**
+     * 卡模板商品SPU编号
+     * @var string
+     */
+    private $productSpuNo;
+
+    /**
+     * 卡模板面额，单位：分
+     * @var int
+     */
+    private $originalAmount;
 
     /**
      * 支付总金额（分）
@@ -83,6 +95,12 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
      */
     private $rootKdtId;
 
+    /**
+     * 卡模板号
+     * @var string
+     */
+    private $templateNo;
+
 
 
     /**
@@ -131,6 +149,38 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     public function setProductSkuNo(?string $productSkuNo): void
     {
         $this->productSkuNo = $productSkuNo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getProductSpuNo(): ?string
+    {
+        return $this->productSpuNo;
+    }
+
+    /**
+     * @param string $productSpuNo
+     */
+    public function setProductSpuNo(?string $productSpuNo): void
+    {
+        $this->productSpuNo = $productSpuNo;
+    }
+
+    /**
+     * @return int
+     */
+    public function getOriginalAmount(): ?int
+    {
+        return $this->originalAmount;
+    }
+
+    /**
+     * @param int $originalAmount
+     */
+    public function setOriginalAmount(?int $originalAmount): void
+    {
+        $this->originalAmount = $originalAmount;
     }
 
     /**
@@ -275,6 +325,22 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     public function setRootKdtId(?int $rootKdtId): void
     {
         $this->rootKdtId = $rootKdtId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTemplateNo(): ?string
+    {
+        return $this->templateNo;
+    }
+
+    /**
+     * @param string $templateNo
+     */
+    public function setTemplateNo(?string $templateNo): void
+    {
+        $this->templateNo = $templateNo;
     }
 
     public function jsonSerialize() {

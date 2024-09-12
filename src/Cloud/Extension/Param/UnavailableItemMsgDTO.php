@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 不可购买商品列表
  * @author Baymax
- * @create Mon Feb 26 17:14:35 CST 2024
+ * @create Thu Apr 11 14:11:18 CST 2024
  */
 class UnavailableItemMsgDTO implements \JsonSerializable {
 

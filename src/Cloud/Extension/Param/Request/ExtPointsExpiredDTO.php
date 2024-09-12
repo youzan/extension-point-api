@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Request\ExtCustomerInfoDTO;
 /**
  * 请求参数
  * @author Baymax
- * @create Fri Feb 11 14:15:14 CST 2022
+ * @create Thu May 23 16:02:53 CST 2024
  */
 class ExtPointsExpiredDTO implements \JsonSerializable {
 
@@ -40,6 +40,12 @@ class ExtPointsExpiredDTO implements \JsonSerializable {
      * @var int
      */
     private $amount;
+
+    /**
+     * 业务唯一标识，如：#{kdtId}_#{accountId}_0_#{expiredAt}
+     * @var string
+     */
+    private $bizValue;
 
 
 
@@ -121,6 +127,22 @@ class ExtPointsExpiredDTO implements \JsonSerializable {
     public function setAmount(?int $amount): void
     {
         $this->amount = $amount;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBizValue(): ?string
+    {
+        return $this->bizValue;
+    }
+
+    /**
+     * @param string $bizValue
+     */
+    public function setBizValue(?string $bizValue): void
+    {
+        $this->bizValue = $bizValue;
     }
 
     public function jsonSerialize() {
