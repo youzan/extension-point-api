@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\ExtOrderResponse;
 /**
  * 单据明细
  * @author Baymax
- * @create Wed Jan 31 11:10:43 CST 2024
+ * @create Wed Nov 27 10:17:39 CST 2024
  */
 class ExtOrderItem implements \JsonSerializable {
 
@@ -34,6 +34,12 @@ class ExtOrderItem implements \JsonSerializable {
      * @var string
      */
     private $itemNo;
+
+    /**
+     * 商家自定义商品规格编码，商家可以自定义参数，支持 英文和数字组合，一般用于和外部商品规格对应字段。
+     * @var string
+     */
+    private $skuNo;
 
     /**
      * 商品规格信息，多规格通过空格间隔，例如 ”XXL 白“
@@ -135,6 +141,22 @@ class ExtOrderItem implements \JsonSerializable {
     public function setItemNo(?string $itemNo): void
     {
         $this->itemNo = $itemNo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSkuNo(): ?string
+    {
+        return $this->skuNo;
+    }
+
+    /**
+     * @param string $skuNo
+     */
+    public function setSkuNo(?string $skuNo): void
+    {
+        $this->skuNo = $skuNo;
     }
 
     /**

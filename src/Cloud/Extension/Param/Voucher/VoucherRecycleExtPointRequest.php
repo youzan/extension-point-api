@@ -8,7 +8,7 @@ use StdClass;
 /**
  *  
  * @author Baymax
- * @create Thu Jan 13 20:58:24 CST 2022
+ * @create Wed Jun 18 16:45:05 CST 2025
  */
 class VoucherRecycleExtPointRequest implements \JsonSerializable {
 
@@ -65,6 +65,12 @@ class VoucherRecycleExtPointRequest implements \JsonSerializable {
      * @var string
      */
     private $requestId;
+
+    /**
+     * 识别上游是批量回收操作还是单个回收操作 批量：BATCH 单个：SINGLE
+     * @var string
+     */
+    private $operationMode;
 
 
 
@@ -210,6 +216,22 @@ class VoucherRecycleExtPointRequest implements \JsonSerializable {
     public function setRequestId(?string $requestId): void
     {
         $this->requestId = $requestId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOperationMode(): ?string
+    {
+        return $this->operationMode;
+    }
+
+    /**
+     * @param string $operationMode
+     */
+    public function setOperationMode(?string $operationMode): void
+    {
+        $this->operationMode = $operationMode;
     }
 
     public function jsonSerialize() {

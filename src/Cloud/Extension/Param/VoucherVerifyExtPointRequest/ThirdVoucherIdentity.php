@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\VoucherVerifyExtPointRequest;
 /**
  * 三方券列表
  * @author Baymax
- * @create Thu Sep 07 16:54:04 CST 2023
+ * @create Wed Jun 18 16:56:28 CST 2025
  */
 class ThirdVoucherIdentity implements \JsonSerializable {
 

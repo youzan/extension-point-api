@@ -8,7 +8,7 @@ use StdClass;
 /**
  *  响应对象
  * @author Baymax
- * @create Thu Jun 30 14:26:03 CST 2022
+ * @create Fri Mar 28 10:07:57 CST 2025
  */
 class PayResponseDTO implements \JsonSerializable {
 
@@ -83,6 +83,18 @@ class PayResponseDTO implements \JsonSerializable {
      * @var stdClass
      */
     private $extra;
+
+    /**
+     * 错误码，支付失败具体编码
+     * @var int
+     */
+    private $errorCode;
+
+    /**
+     * 错误描述，支付失败具体描述
+     * @var string
+     */
+    private $errorMsg;
 
 
 
@@ -276,6 +288,38 @@ class PayResponseDTO implements \JsonSerializable {
     public function setExtra(?stdClass $extra): void
     {
         $this->extra = $extra;
+    }
+
+    /**
+     * @return int
+     */
+    public function getErrorCode(): ?int
+    {
+        return $this->errorCode;
+    }
+
+    /**
+     * @param int $errorCode
+     */
+    public function setErrorCode(?int $errorCode): void
+    {
+        $this->errorCode = $errorCode;
+    }
+
+    /**
+     * @return string
+     */
+    public function getErrorMsg(): ?string
+    {
+        return $this->errorMsg;
+    }
+
+    /**
+     * @param string $errorMsg
+     */
+    public function setErrorMsg(?string $errorMsg): void
+    {
+        $this->errorMsg = $errorMsg;
     }
 
     public function jsonSerialize() {

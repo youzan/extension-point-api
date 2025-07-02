@@ -3,11 +3,12 @@
 namespace Com\Youzan\Cloud\Extension\Param\Model;
 
 use StdClass;
+use Java\Util\Map;
 
 /**
  * 响应参数
  * @author Baymax
- * @create Mon Mar 14 17:00:42 CST 2022
+ * @create Tue Jun 17 20:15:33 CST 2025
  */
 class PointDeductionPromotionResponseDTO implements \JsonSerializable {
 
@@ -58,6 +59,12 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
      * @var stdClass
      */
     private $extraInfo;
+
+    /**
+     * 实际积分抵现的具体商品，为空则表明整单抵扣
+     * @var array
+     */
+    private $effectiveItems;
 
 
 
@@ -187,6 +194,22 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     public function setExtraInfo(?stdClass $extraInfo): void
     {
         $this->extraInfo = $extraInfo;
+    }
+
+    /**
+     * @return array
+     */
+    public function getEffectiveItems(): ?array
+    {
+        return $this->effectiveItems;
+    }
+
+    /**
+     * @param array $effectiveItems
+     */
+    public function setEffectiveItems(?array $effectiveItems): void
+    {
+        $this->effectiveItems = $effectiveItems;
     }
 
     public function jsonSerialize() {

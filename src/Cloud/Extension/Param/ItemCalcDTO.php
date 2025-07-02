@@ -3,11 +3,12 @@
 namespace Com\Youzan\Cloud\Extension\Param;
 
 use StdClass;
+use Com\Youzan\Cloud\Extension\Param\ExtPointChainedGoodsInfoDTO;
 
 /**
  * 商品信息
  * @author Baymax
- * @create Sat Jul 30 23:32:01 CST 2022
+ * @create Thu Jan 25 17:40:15 CST 2024
  */
 class ItemCalcDTO implements \JsonSerializable {
 
@@ -18,7 +19,7 @@ class ItemCalcDTO implements \JsonSerializable {
     private $selfDefineData;
 
     /**
-     * 订单id
+     * 订单条目id
      * @var int
      */
     private $orderItemId;
@@ -42,13 +43,13 @@ class ItemCalcDTO implements \JsonSerializable {
     private $originUnitPrice;
 
     /**
-     * 商品规格Id，微商城店铺商品规格标识（同一商品Id下，规格id唯一）
+     * skuId信息
      * @var int
      */
     private $skuId;
 
     /**
-     * 商品Id，有赞生成的店铺下商品唯一id，平台唯一
+     * 商品id
      * @var int
      */
     private $goodsId;
@@ -60,10 +61,34 @@ class ItemCalcDTO implements \JsonSerializable {
     private $totalPrice;
 
     /**
+     * 商品编码
+     * @var string
+     */
+    private $goodsNo;
+
+    /**
+     * 商品条码
+     * @var string
+     */
+    private $goodsBarcode;
+
+    /**
      * 扩展模型
      * @var stdClass
      */
     private $extModelMap;
+
+    /**
+     * 是否分销商品
+     * @var bool
+     */
+    private $fenXiaoGood;
+
+    /**
+     * 连锁商品模型
+     * @var ExtPointChainedGoodsInfoDTO
+     */
+    private $chainedGoodsInfoDTO;
 
 
 
@@ -196,6 +221,38 @@ class ItemCalcDTO implements \JsonSerializable {
     }
 
     /**
+     * @return string
+     */
+    public function getGoodsNo(): ?string
+    {
+        return $this->goodsNo;
+    }
+
+    /**
+     * @param string $goodsNo
+     */
+    public function setGoodsNo(?string $goodsNo): void
+    {
+        $this->goodsNo = $goodsNo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getGoodsBarcode(): ?string
+    {
+        return $this->goodsBarcode;
+    }
+
+    /**
+     * @param string $goodsBarcode
+     */
+    public function setGoodsBarcode(?string $goodsBarcode): void
+    {
+        $this->goodsBarcode = $goodsBarcode;
+    }
+
+    /**
      * @return stdClass
      */
     public function getExtModelMap(): ?stdClass
@@ -209,6 +266,38 @@ class ItemCalcDTO implements \JsonSerializable {
     public function setExtModelMap(?stdClass $extModelMap): void
     {
         $this->extModelMap = $extModelMap;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getFenXiaoGood(): ?bool
+    {
+        return $this->fenXiaoGood;
+    }
+
+    /**
+     * @param bool $fenXiaoGood
+     */
+    public function setFenXiaoGood(?bool $fenXiaoGood): void
+    {
+        $this->fenXiaoGood = $fenXiaoGood;
+    }
+
+    /**
+     * @return ExtPointChainedGoodsInfoDTO
+     */
+    public function getChainedGoodsInfoDTO(): ?ExtPointChainedGoodsInfoDTO
+    {
+        return $this->chainedGoodsInfoDTO;
+    }
+
+    /**
+     * @param ExtPointChainedGoodsInfoDTO $chainedGoodsInfoDTO
+     */
+    public function setChainedGoodsInfoDTO(?ExtPointChainedGoodsInfoDTO $chainedGoodsInfoDTO): void
+    {
+        $this->chainedGoodsInfoDTO = $chainedGoodsInfoDTO;
     }
 
     public function jsonSerialize() {

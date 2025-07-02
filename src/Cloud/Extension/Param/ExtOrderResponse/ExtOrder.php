@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\ExtOrderResponse\ExtOrderItem;
 /**
  * 订单数据集合
  * @author Baymax
- * @create Wed Jan 31 11:10:43 CST 2024
+ * @create Wed Nov 27 10:17:39 CST 2024
  */
 class ExtOrder implements \JsonSerializable {
 

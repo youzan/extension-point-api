@@ -8,7 +8,7 @@ use StdClass;
 /**
  *  
  * @author Baymax
- * @create Tue Jan 10 11:41:19 CST 2023
+ * @create Thu May 22 14:19:59 CST 2025
  */
 class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
 
@@ -35,6 +35,12 @@ class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
      * @var int
      */
     private $nodeId;
+
+    /**
+     * 是否需要查询用户等级进度信息（仅针对免费等级）。目前仅访问个人中心时，为true，其他场景为false
+     * @var bool
+     */
+    private $withCustomerLevelProgress;
 
 
 
@@ -100,6 +106,22 @@ class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
     public function setNodeId(?int $nodeId): void
     {
         $this->nodeId = $nodeId;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getWithCustomerLevelProgress(): ?bool
+    {
+        return $this->withCustomerLevelProgress;
+    }
+
+    /**
+     * @param bool $withCustomerLevelProgress
+     */
+    public function setWithCustomerLevelProgress(?bool $withCustomerLevelProgress): void
+    {
+        $this->withCustomerLevelProgress = $withCustomerLevelProgress;
     }
 
     public function jsonSerialize() {

@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 /**
  * dto
  * @author Baymax
- * @create Mon Apr 24 17:56:46 CST 2023
+ * @create Thu May 22 11:03:47 CST 2025
  */
 class ExtCustomerPointsStatusDTO implements \JsonSerializable {
 

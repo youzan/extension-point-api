@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 /**
  * 商品明细
  * @author Baymax
- * @create Mon Mar 14 17:00:42 CST 2022
+ * @create Tue Jun 17 20:15:33 CST 2025
  */
 class GoodsIdentityDTO implements \JsonSerializable {
 

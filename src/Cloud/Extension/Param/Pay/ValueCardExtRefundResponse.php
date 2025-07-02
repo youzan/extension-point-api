@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Pay;
 use DateTime;
 
 /**
- *  
+ * 返回参数
  * @author Baymax
- * @create Mon Mar 14 19:38:50 CST 2022
+ * @create Tue Oct 22 15:22:03 CST 2024
  */
 class ValueCardExtRefundResponse implements \JsonSerializable {
 
@@ -34,6 +34,30 @@ class ValueCardExtRefundResponse implements \JsonSerializable {
      * @var int
      */
     private $refundDt;
+
+    /**
+     * 订单的储值余额本金金额,只能为整数，单位（分）
+     * @var int
+     */
+    private $balancePrincipal;
+
+    /**
+     * 订单的储值余额赠送金金额,只能为整数，单位（分）
+     * @var int
+     */
+    private $balanceBonus;
+
+    /**
+     * 订单的礼品卡本金金额,只能为整数，单位（分）
+     * @var int
+     */
+    private $giftCardPrincipal;
+
+    /**
+     * 订单的礼品卡赠送金金额,只能为整数，单位（分）
+     * @var int
+     */
+    private $giftCardBonus;
 
 
 
@@ -99,6 +123,70 @@ class ValueCardExtRefundResponse implements \JsonSerializable {
     public function setRefundDt(?int $refundDt): void
     {
         $this->refundDt = $refundDt;
+    }
+
+    /**
+     * @return int
+     */
+    public function getBalancePrincipal(): ?int
+    {
+        return $this->balancePrincipal;
+    }
+
+    /**
+     * @param int $balancePrincipal
+     */
+    public function setBalancePrincipal(?int $balancePrincipal): void
+    {
+        $this->balancePrincipal = $balancePrincipal;
+    }
+
+    /**
+     * @return int
+     */
+    public function getBalanceBonus(): ?int
+    {
+        return $this->balanceBonus;
+    }
+
+    /**
+     * @param int $balanceBonus
+     */
+    public function setBalanceBonus(?int $balanceBonus): void
+    {
+        $this->balanceBonus = $balanceBonus;
+    }
+
+    /**
+     * @return int
+     */
+    public function getGiftCardPrincipal(): ?int
+    {
+        return $this->giftCardPrincipal;
+    }
+
+    /**
+     * @param int $giftCardPrincipal
+     */
+    public function setGiftCardPrincipal(?int $giftCardPrincipal): void
+    {
+        $this->giftCardPrincipal = $giftCardPrincipal;
+    }
+
+    /**
+     * @return int
+     */
+    public function getGiftCardBonus(): ?int
+    {
+        return $this->giftCardBonus;
+    }
+
+    /**
+     * @param int $giftCardBonus
+     */
+    public function setGiftCardBonus(?int $giftCardBonus): void
+    {
+        $this->giftCardBonus = $giftCardBonus;
     }
 
     public function jsonSerialize() {

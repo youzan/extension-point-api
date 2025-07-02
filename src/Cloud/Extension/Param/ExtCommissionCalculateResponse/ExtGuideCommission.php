@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\ExtCommissionCalculateResponse\ExtItemCpsDe
 /**
  * 销售导购佣金计算结果
  * @author Baymax
- * @create Thu Nov 30 17:41:07 CST 2023
+ * @create Wed Jan 22 16:28:58 CST 2025
  */
 class ExtGuideCommission implements \JsonSerializable {
 

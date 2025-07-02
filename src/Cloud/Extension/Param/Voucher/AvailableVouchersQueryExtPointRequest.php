@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 请求
  * @author Baymax
- * @create Tue Sep 26 14:15:25 CST 2023
+ * @create Wed Jun 18 16:53:00 CST 2025
  */
 class AvailableVouchersQueryExtPointRequest implements \JsonSerializable {
 

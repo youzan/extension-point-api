@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\Model\GoodsDTO;
 /**
  * 请求参数
  * @author Baymax
- * @create Mon Mar 14 17:00:42 CST 2022
+ * @create Tue Jun 17 20:15:33 CST 2025
  */
 class PointDeductionPromotionRequestDTO implements \JsonSerializable {
 
@@ -17,6 +17,12 @@ class PointDeductionPromotionRequestDTO implements \JsonSerializable {
      * @var int
      */
     private $kdtId;
+
+    /**
+     * 总部店铺id
+     * @var int
+     */
+    private $rootKdtId;
 
     /**
      * 订单号
@@ -76,6 +82,22 @@ class PointDeductionPromotionRequestDTO implements \JsonSerializable {
     public function setKdtId(?int $kdtId): void
     {
         $this->kdtId = $kdtId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootKdtId(): ?int
+    {
+        return $this->rootKdtId;
+    }
+
+    /**
+     * @param int $rootKdtId
+     */
+    public function setRootKdtId(?int $rootKdtId): void
+    {
+        $this->rootKdtId = $rootKdtId;
     }
 
     /**

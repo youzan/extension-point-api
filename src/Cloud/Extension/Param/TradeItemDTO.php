@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\SkuCompositeId;
 /**
  * 交易条目
  * @author Baymax
- * @create Thu Apr 11 14:11:18 CST 2024
+ * @create Thu May 22 18:37:40 CST 2025
  */
 class TradeItemDTO implements \JsonSerializable {
 
