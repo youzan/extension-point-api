@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\SkuCompositeId;
 /**
  * 交易条目
  * @author Baymax
- * @create Thu May 22 18:37:40 CST 2025
+ * @create Tue Jul 08 15:39:15 CST 2025
  */
 class TradeItemDTO implements \JsonSerializable {
 
@@ -52,6 +52,12 @@ class TradeItemDTO implements \JsonSerializable {
      * @var string
      */
     private $skuNo;
+
+    /**
+     * 总部商品id
+     * @var int
+     */
+    private $rootGoodsId;
 
 
 
@@ -165,6 +171,22 @@ class TradeItemDTO implements \JsonSerializable {
     public function setSkuNo(?string $skuNo): void
     {
         $this->skuNo = $skuNo;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRootGoodsId(): ?int
+    {
+        return $this->rootGoodsId;
+    }
+
+    /**
+     * @param int $rootGoodsId
+     */
+    public function setRootGoodsId(?int $rootGoodsId): void
+    {
+        $this->rootGoodsId = $rootGoodsId;
     }
 
     public function jsonSerialize() {

@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param;
 /**
  * 发票信息
  * @author Baymax
- * @create Thu May 22 18:37:40 CST 2025
+ * @create Tue Jul 08 15:39:15 CST 2025
  */
 class InvoiceDTO implements \JsonSerializable {
 
