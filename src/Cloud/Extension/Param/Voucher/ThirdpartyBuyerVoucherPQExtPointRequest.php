@@ -8,7 +8,7 @@ use StdClass;
 /**
  *  
  * @author Baymax
- * @create Mon Mar 14 17:42:26 CST 2022
+ * @create Wed Jul 09 15:50:31 CST 2025
  */
 class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
 
@@ -35,6 +35,12 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
      * @var int
      */
     private $searchStatus;
+
+    /**
+     * 优惠券查询状态： 0. 全部 1. 未使用 and 未过期 2. 已使用  3. 已过期  4.已失效(已使用 or 已过期) 。  该字段为新查询状态，枚举更准确，后续调用方推荐使用这个
+     * @var int
+     */
+    private $searchStatusV2;
 
     /**
      * 页码
@@ -130,6 +136,22 @@ class ThirdpartyBuyerVoucherPQExtPointRequest implements \JsonSerializable {
     public function setSearchStatus(?int $searchStatus): void
     {
         $this->searchStatus = $searchStatus;
+    }
+
+    /**
+     * @return int
+     */
+    public function getSearchStatusV2(): ?int
+    {
+        return $this->searchStatusV2;
+    }
+
+    /**
+     * @param int $searchStatusV2
+     */
+    public function setSearchStatusV2(?int $searchStatusV2): void
+    {
+        $this->searchStatusV2 = $searchStatusV2;
     }
 
     /**
