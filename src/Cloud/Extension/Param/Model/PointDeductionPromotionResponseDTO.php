@@ -8,7 +8,7 @@ use Java\Util\Map;
 /**
  * 响应参数
  * @author Baymax
- * @create Tue Jun 17 20:15:33 CST 2025
+ * @create Wed Jul 23 15:30:18 CST 2025
  */
 class PointDeductionPromotionResponseDTO implements \JsonSerializable {
 
