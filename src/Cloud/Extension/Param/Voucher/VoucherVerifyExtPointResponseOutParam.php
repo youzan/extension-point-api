@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Voucher\VoucherVerifyExtPointResponse;
 /**
  * 返回值返回类
  * @author Baymax
- * @create Wed Jun 18 16:56:28 CST 2025
+ * @create Fri Aug 22 11:33:18 CST 2025
  */
 class VoucherVerifyExtPointResponseOutParam implements \JsonSerializable {
 

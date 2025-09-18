@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 外部券列表
  * @author Baymax
- * @create Wed Jul 09 15:52:12 CST 2025
+ * @create Fri Sep 05 15:20:16 CST 2025
  */
 class ThirdpartyVoucherDTO implements \JsonSerializable {
 

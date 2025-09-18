@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Voucher\AvailableVouchersQueryExtPointRespo
 /**
  * 返回值返回类
  * @author Baymax
- * @create Wed Jun 18 16:53:00 CST 2025
+ * @create Fri Aug 22 11:28:44 CST 2025
  */
 class AvailableVouchersQueryExtPointResponseOutParam implements \JsonSerializable {
 

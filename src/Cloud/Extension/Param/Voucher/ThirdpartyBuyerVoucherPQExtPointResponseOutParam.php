@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Voucher\ThirdpartyBuyerVoucherPQExtPointRes
 /**
  *  返回类
  * @author Baymax
- * @create Wed Jul 09 15:52:12 CST 2025
+ * @create Fri Sep 05 15:20:16 CST 2025
  */
 class ThirdpartyBuyerVoucherPQExtPointResponseOutParam implements \JsonSerializable {
 

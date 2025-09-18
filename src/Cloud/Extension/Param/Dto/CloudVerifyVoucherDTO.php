@@ -7,7 +7,7 @@ use DateTime;
 /**
  *  
  * @author Baymax
- * @create Mon Mar 14 19:39:09 CST 2022
+ * @create Fri Aug 22 11:41:57 CST 2025
  */
 class CloudVerifyVoucherDTO implements \JsonSerializable {
 

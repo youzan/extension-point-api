@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Model;
 /**
  * 用户信息
  * @author Baymax
- * @create Wed Jul 23 15:30:18 CST 2025
+ * @create Wed Jul 30 14:51:01 CST 2025
  */
 class UserDTO implements \JsonSerializable {
 

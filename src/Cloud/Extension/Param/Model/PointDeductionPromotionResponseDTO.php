@@ -8,7 +8,7 @@ use Java\Util\Map;
 /**
  * 响应参数
  * @author Baymax
- * @create Wed Jul 23 15:30:18 CST 2025
+ * @create Wed Jul 30 14:51:01 CST 2025
  */
 class PointDeductionPromotionResponseDTO implements \JsonSerializable {
 
@@ -31,7 +31,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     private $pointDeductionStatus;
 
     /**
-     * 消耗积分数
+     * 消耗积分数。消耗的积分数 &#x3D; 积分抵现比例 *  抵现金额/100
      * @var int
      */
     private $costPoints;
@@ -49,7 +49,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     private $remainPoints;
 
     /**
-     * 积分抵现比例。100&#x3D;100积分：1元
+     * 积分抵现比例。返回有赞后台的积分抵现比例，暂不支持定制。
      * @var int
      */
     private $rate;

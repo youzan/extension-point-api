@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Voucher;
 use Com\Youzan\Cloud\Extension\Param\Voucher\ActivityCopyWriteExtPointResponse;
 
 /**
- * null返回类
+ *  返回类
  * @author Baymax
- * @create Thu Mar 31 15:29:31 CST 2022
+ * @create Fri Aug 08 15:08:15 CST 2025
  */
 class ActivityCopyWriteExtPointResponseOutParam implements \JsonSerializable {
 

@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Dto;
 /**
  * 优惠券活动信息
  * @author Baymax
- * @create Thu Mar 31 15:29:31 CST 2022
+ * @create Fri Aug 08 15:08:15 CST 2025
  */
 class ActivityCopyWritingDTO implements \JsonSerializable {
 

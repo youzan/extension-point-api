@@ -7,7 +7,7 @@ use StdClass;
 /**
  *  
  * @author Baymax
- * @create Wed Jun 18 16:54:06 CST 2025
+ * @create Fri Aug 22 11:34:29 CST 2025
  */
 class VoucherRefundExtPointRequest implements \JsonSerializable {
 
