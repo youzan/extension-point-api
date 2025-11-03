@@ -3,11 +3,12 @@
 namespace Com\Youzan\Cloud\Extension\Param\Model;
 
 use StdClass;
+use Java\Util\Map;
 
 /**
  * 响应参数
  * @author Baymax
- * @create Mon Mar 14 17:00:42 CST 2022
+ * @create Wed Jul 30 14:51:01 CST 2025
  */
 class PointDeductionPromotionResponseDTO implements \JsonSerializable {
 
@@ -30,7 +31,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     private $pointDeductionStatus;
 
     /**
-     * 消耗积分数
+     * 消耗积分数。消耗的积分数 &#x3D; 积分抵现比例 *  抵现金额/100
      * @var int
      */
     private $costPoints;
@@ -48,7 +49,7 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     private $remainPoints;
 
     /**
-     * 积分抵现比例。100&#x3D;100积分：1元
+     * 积分抵现比例。返回有赞后台的积分抵现比例，暂不支持定制。
      * @var int
      */
     private $rate;
@@ -58,6 +59,12 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
      * @var stdClass
      */
     private $extraInfo;
+
+    /**
+     * 实际积分抵现的具体商品，为空则表明整单抵扣
+     * @var array
+     */
+    private $effectiveItems;
 
 
 
@@ -187,6 +194,22 @@ class PointDeductionPromotionResponseDTO implements \JsonSerializable {
     public function setExtraInfo(?stdClass $extraInfo): void
     {
         $this->extraInfo = $extraInfo;
+    }
+
+    /**
+     * @return array
+     */
+    public function getEffectiveItems(): ?array
+    {
+        return $this->effectiveItems;
+    }
+
+    /**
+     * @param array $effectiveItems
+     */
+    public function setEffectiveItems(?array $effectiveItems): void
+    {
+        $this->effectiveItems = $effectiveItems;
     }
 
     public function jsonSerialize() {

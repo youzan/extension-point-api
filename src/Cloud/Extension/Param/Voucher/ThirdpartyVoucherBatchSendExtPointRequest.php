@@ -8,7 +8,7 @@ use DateTime;
 /**
  *  
  * @author Baymax
- * @create Mon Mar 14 19:44:58 CST 2022
+ * @create Fri Aug 22 11:21:12 CST 2025
  */
 class ThirdpartyVoucherBatchSendExtPointRequest implements \JsonSerializable {
 

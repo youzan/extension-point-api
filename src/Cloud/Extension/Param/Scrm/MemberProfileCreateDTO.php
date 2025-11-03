@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\CustomizeAttributeDTO;
 /**
  *  
  * @author Baymax
- * @create Tue Mar 14 10:15:59 CST 2023
+ * @create Thu Jun 12 14:43:51 CST 2025
  */
 class MemberProfileCreateDTO implements \JsonSerializable {
 
@@ -17,6 +17,12 @@ class MemberProfileCreateDTO implements \JsonSerializable {
      * @var string
      */
     private $registerMobile;
+
+    /**
+     * 国际区号
+     * @var string
+     */
+    private $countryCode;
 
     /**
      * 姓名
@@ -82,6 +88,22 @@ class MemberProfileCreateDTO implements \JsonSerializable {
     public function setRegisterMobile(?string $registerMobile): void
     {
         $this->registerMobile = $registerMobile;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCountryCode(): ?string
+    {
+        return $this->countryCode;
+    }
+
+    /**
+     * @param string $countryCode
+     */
+    public function setCountryCode(?string $countryCode): void
+    {
+        $this->countryCode = $countryCode;
     }
 
     /**

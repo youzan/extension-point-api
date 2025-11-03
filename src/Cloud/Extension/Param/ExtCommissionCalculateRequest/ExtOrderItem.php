@@ -7,27 +7,45 @@ namespace Com\Youzan\Cloud\Extension\Param\ExtCommissionCalculateRequest;
 /**
  * 订单商品信息
  * @author Baymax
- * @create Thu Nov 30 17:41:07 CST 2023
+ * @create Wed Jan 22 16:28:58 CST 2025
  */
 class ExtOrderItem implements \JsonSerializable {
 
     /**
-     * 订单商品Id
+     * 订单明细Id
      * @var int
      */
     private $itemId;
 
     /**
-     * 店铺商品Id
+     * 外部订单明细Id，仅无原单退款单会传入，其他场景为null
+     * @var string
+     */
+    private $outerOid;
+
+    /**
+     * 商品Id，在有赞平台产生的订单，该字段为店铺商品id，外部同步的订单则该字段可能为店铺商品id也可能为总部商品id，取决于同步时传入的商品id值
      * @var int
      */
     private $goodsId;
 
     /**
-     * 商品skuId
+     * 商品编码
+     * @var string
+     */
+    private $itemNo;
+
+    /**
+     * 商品规格Id，在有赞平台产生的订单，该字段为店铺商品规格id，外部同步的订单则该字段可能为店铺商品规格id也可能为总部商品规格id，取决于同步时传入的商品规格id值
      * @var int
      */
     private $skuId;
+
+    /**
+     * 商品规格编码
+     * @var string
+     */
+    private $skuNo;
 
     /**
      * 商品数量(个)
@@ -72,6 +90,22 @@ class ExtOrderItem implements \JsonSerializable {
     }
 
     /**
+     * @return string
+     */
+    public function getOuterOid(): ?string
+    {
+        return $this->outerOid;
+    }
+
+    /**
+     * @param string $outerOid
+     */
+    public function setOuterOid(?string $outerOid): void
+    {
+        $this->outerOid = $outerOid;
+    }
+
+    /**
      * @return int
      */
     public function getGoodsId(): ?int
@@ -88,6 +122,22 @@ class ExtOrderItem implements \JsonSerializable {
     }
 
     /**
+     * @return string
+     */
+    public function getItemNo(): ?string
+    {
+        return $this->itemNo;
+    }
+
+    /**
+     * @param string $itemNo
+     */
+    public function setItemNo(?string $itemNo): void
+    {
+        $this->itemNo = $itemNo;
+    }
+
+    /**
      * @return int
      */
     public function getSkuId(): ?int
@@ -101,6 +151,22 @@ class ExtOrderItem implements \JsonSerializable {
     public function setSkuId(?int $skuId): void
     {
         $this->skuId = $skuId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSkuNo(): ?string
+    {
+        return $this->skuNo;
+    }
+
+    /**
+     * @param string $skuNo
+     */
+    public function setSkuNo(?string $skuNo): void
+    {
+        $this->skuNo = $skuNo;
     }
 
     /**

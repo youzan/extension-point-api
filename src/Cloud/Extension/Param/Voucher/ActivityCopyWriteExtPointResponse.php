@@ -6,9 +6,9 @@ use Com\Youzan\Cloud\Extension\Param\Dto\ActivityCopyWritingCustomDTO;
 use StdClass;
 
 /**
- * 
+ *  
  * @author Baymax
- * @create Thu Mar 31 15:29:31 CST 2022
+ * @create Fri Aug 08 15:08:15 CST 2025
  */
 class ActivityCopyWriteExtPointResponse implements \JsonSerializable {
 

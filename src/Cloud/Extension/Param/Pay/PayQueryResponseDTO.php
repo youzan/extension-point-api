@@ -7,7 +7,7 @@ use DateTime;
 /**
  *  
  * @author Baymax
- * @create Mon Mar 14 17:42:06 CST 2022
+ * @create Fri Mar 28 10:08:06 CST 2025
  */
 class PayQueryResponseDTO implements \JsonSerializable {
 
@@ -76,6 +76,18 @@ class PayQueryResponseDTO implements \JsonSerializable {
      * @var string
      */
     private $attach;
+
+    /**
+     * 错误码，明确支付业务失败时返回
+     * @var int
+     */
+    private $errorCode;
+
+    /**
+     * 错误描述，明确支付业务失败时返回
+     * @var string
+     */
+    private $errorMsg;
 
 
 
@@ -253,6 +265,38 @@ class PayQueryResponseDTO implements \JsonSerializable {
     public function setAttach(?string $attach): void
     {
         $this->attach = $attach;
+    }
+
+    /**
+     * @return int
+     */
+    public function getErrorCode(): ?int
+    {
+        return $this->errorCode;
+    }
+
+    /**
+     * @param int $errorCode
+     */
+    public function setErrorCode(?int $errorCode): void
+    {
+        $this->errorCode = $errorCode;
+    }
+
+    /**
+     * @return string
+     */
+    public function getErrorMsg(): ?string
+    {
+        return $this->errorMsg;
+    }
+
+    /**
+     * @param string $errorMsg
+     */
+    public function setErrorMsg(?string $errorMsg): void
+    {
+        $this->errorMsg = $errorMsg;
     }
 
     public function jsonSerialize() {

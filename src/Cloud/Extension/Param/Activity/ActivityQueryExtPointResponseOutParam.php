@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Activity\ActivityQueryExtPointResponse;
 /**
  * 响应参数返回类
  * @author Baymax
- * @create Mon Mar 14 19:14:33 CST 2022
+ * @create Fri Aug 22 12:00:22 CST 2025
  */
 class ActivityQueryExtPointResponseOutParam implements \JsonSerializable {
 

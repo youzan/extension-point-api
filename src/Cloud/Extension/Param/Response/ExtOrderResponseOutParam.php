@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\ExtOrderResponse;
 /**
  * 返回数据返回类
  * @author Baymax
- * @create Wed Jan 31 11:10:43 CST 2024
+ * @create Wed Nov 27 10:17:39 CST 2024
  */
 class ExtOrderResponseOutParam implements \JsonSerializable {
 

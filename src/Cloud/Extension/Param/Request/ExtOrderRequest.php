@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\ExtOrderRequest\BizOrderReq;
 /**
  * 请求参数
  * @author Baymax
- * @create Wed Jan 31 11:10:43 CST 2024
+ * @create Wed Nov 27 10:17:39 CST 2024
  */
 class ExtOrderRequest implements \JsonSerializable {
 

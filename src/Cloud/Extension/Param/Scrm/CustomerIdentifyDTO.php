@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
 
 /**
- * 客户标识
+ *  
  * @author Baymax
- * @create Tue Mar 14 10:16:16 CST 2023
+ * @create Thu Jul 03 17:31:55 CST 2025
  */
 class CustomerIdentifyDTO implements \JsonSerializable {
 
@@ -30,6 +30,12 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     private $kdtId;
 
     /**
+     * 手机号
+     * @var string
+     */
+    private $mobile;
+
+    /**
      * yzOpenId
      * @var string
      */
@@ -40,12 +46,6 @@ class CustomerIdentifyDTO implements \JsonSerializable {
      * @var int
      */
     private $nodeKdtId;
-
-    /**
-     * 手机号
-     * @var string
-     */
-    private $mobile;
 
 
 
@@ -100,6 +100,22 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     /**
      * @return string
      */
+    public function getMobile(): ?string
+    {
+        return $this->mobile;
+    }
+
+    /**
+     * @param string $mobile
+     */
+    public function setMobile(?string $mobile): void
+    {
+        $this->mobile = $mobile;
+    }
+
+    /**
+     * @return string
+     */
     public function getYzOpenId(): ?string
     {
         return $this->yzOpenId;
@@ -127,22 +143,6 @@ class CustomerIdentifyDTO implements \JsonSerializable {
     public function setNodeKdtId(?int $nodeKdtId): void
     {
         $this->nodeKdtId = $nodeKdtId;
-    }
-
-    /**
-     * @return string
-     */
-    public function getMobile(): ?string
-    {
-        return $this->mobile;
-    }
-
-    /**
-     * @param string $mobile
-     */
-    public function setMobile(?string $mobile): void
-    {
-        $this->mobile = $mobile;
     }
 
     public function jsonSerialize() {

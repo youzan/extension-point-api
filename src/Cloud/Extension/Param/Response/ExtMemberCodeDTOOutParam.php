@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\ExtMemberCodeDTO;
 /**
  *  返回类
  * @author Baymax
- * @create Mon Mar 14 17:51:19 CST 2022
+ * @create Thu May 08 21:14:03 CST 2025
  */
 class ExtMemberCodeDTOOutParam implements \JsonSerializable {
 

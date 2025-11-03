@@ -7,7 +7,7 @@ use DateTime;
 /**
  *  
  * @author Baymax
- * @create Thu Aug 22 14:49:09 CST 2024
+ * @create Sun Apr 20 18:53:01 CST 2025
  */
 class ValueCardMakeCardRequest implements \JsonSerializable {
 
@@ -100,6 +100,12 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
      * @var string
      */
     private $templateNo;
+
+    /**
+     * 导购id对应的有赞用户开放ID
+     * @var string
+     */
+    private $guideOpenId;
 
 
 
@@ -341,6 +347,22 @@ class ValueCardMakeCardRequest implements \JsonSerializable {
     public function setTemplateNo(?string $templateNo): void
     {
         $this->templateNo = $templateNo;
+    }
+
+    /**
+     * @return string
+     */
+    public function getGuideOpenId(): ?string
+    {
+        return $this->guideOpenId;
+    }
+
+    /**
+     * @param string $guideOpenId
+     */
+    public function setGuideOpenId(?string $guideOpenId): void
+    {
+        $this->guideOpenId = $guideOpenId;
     }
 
     public function jsonSerialize() {

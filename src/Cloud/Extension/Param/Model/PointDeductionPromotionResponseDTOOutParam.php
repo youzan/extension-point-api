@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Model\PointDeductionPromotionResponseDTO;
 /**
  * 响应参数返回类
  * @author Baymax
- * @create Mon Mar 14 17:00:42 CST 2022
+ * @create Wed Jul 30 14:51:01 CST 2025
  */
 class PointDeductionPromotionResponseDTOOutParam implements \JsonSerializable {
 

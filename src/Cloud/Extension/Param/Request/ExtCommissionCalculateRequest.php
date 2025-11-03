@@ -7,18 +7,18 @@ use Com\Youzan\Cloud\Extension\Param\ExtCommissionCalculateRequest\ExtOrderItem;
 /**
  * 导购佣金计算请求
  * @author Baymax
- * @create Thu Nov 30 17:41:07 CST 2023
+ * @create Wed Jan 22 16:28:58 CST 2025
  */
 class ExtCommissionCalculateRequest implements \JsonSerializable {
 
     /**
-     * 订单编号
+     * 单据编号，提成计算类型为0和1时传入订单号，提成计算类型为2时传入无原单退款单的外部单据号
      * @var string
      */
     private $orderNo;
 
     /**
-     * 提成计算类型；支付场景：0 ，退款场景：1
+     * 提成计算类型；0.支付场景 ，1.退款场景， 2.无原单退款单场景
      * @var int
      */
     private $type;

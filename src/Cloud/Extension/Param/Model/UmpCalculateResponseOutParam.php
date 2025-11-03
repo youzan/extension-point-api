@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Model\UmpCalculateResponse;
 /**
  * 响应参数返回类
  * @author Baymax
- * @create Mon Feb 05 14:29:56 CST 2024
+ * @create Tue May 06 16:01:34 CST 2025
  */
 class UmpCalculateResponseOutParam implements \JsonSerializable {
 

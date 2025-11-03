@@ -7,12 +7,12 @@ use StdClass;
 /**
  *  
  * @author Baymax
- * @create Wed Jun 28 16:14:52 CST 2023
+ * @create Fri Aug 22 11:26:17 CST 2025
  */
 class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
 
     /**
-     * 三方券Id
+     * 三方券Id（发放成功一定有id）
      * @var int
      */
     private $id;
@@ -24,19 +24,19 @@ class ThirdpartyVoucherSendExtPointResponse implements \JsonSerializable {
     private $verifyCode;
 
     /**
-     * 是否可发放
+     * 发放结果（废弃）
      * @var bool
      */
     private $success;
 
     /**
-     * 发放失败信息，success为false时，不为空
+     * 发放失败信息
      * @var string
      */
     private $errorMsg;
 
     /**
-     * 是否为幂等成功
+     * 是否为幂等成功（废弃）
      * @var bool
      */
     private $idempotentSuccess;
