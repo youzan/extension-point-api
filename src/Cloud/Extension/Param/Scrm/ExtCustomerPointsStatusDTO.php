@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 /**
  * dto
  * @author Baymax
- * @create Thu May 22 11:03:47 CST 2025
+ * @create Tue Dec 02 17:31:16 CST 2025
  */
 class ExtCustomerPointsStatusDTO implements \JsonSerializable {
 
@@ -22,6 +22,12 @@ class ExtCustomerPointsStatusDTO implements \JsonSerializable {
      * @var int
      */
     private $totalPoints;
+
+    /**
+     * 即将过期积分，即将过期积分应小于或等于当前可用积分
+     * @var int
+     */
+    private $nearlyExpiredPoints;
 
 
 
@@ -55,6 +61,22 @@ class ExtCustomerPointsStatusDTO implements \JsonSerializable {
     public function setTotalPoints(?int $totalPoints): void
     {
         $this->totalPoints = $totalPoints;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNearlyExpiredPoints(): ?int
+    {
+        return $this->nearlyExpiredPoints;
+    }
+
+    /**
+     * @param int $nearlyExpiredPoints
+     */
+    public function setNearlyExpiredPoints(?int $nearlyExpiredPoints): void
+    {
+        $this->nearlyExpiredPoints = $nearlyExpiredPoints;
     }
 
     public function jsonSerialize() {

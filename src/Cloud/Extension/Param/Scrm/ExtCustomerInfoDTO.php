@@ -5,9 +5,9 @@ namespace Com\Youzan\Cloud\Extension\Param\Scrm;
 
 
 /**
- * dto
+ * 帐号信息
  * @author Baymax
- * @create Thu May 22 11:03:47 CST 2025
+ * @create Thu May 22 14:08:13 CST 2025
  */
 class ExtCustomerInfoDTO implements \JsonSerializable {
 
@@ -24,7 +24,7 @@ class ExtCustomerInfoDTO implements \JsonSerializable {
     private $accountType;
 
     /**
-     * 有赞open id
+     * 有赞OpenId
      * @var string
      */
     private $yzOpenId;
