@@ -6,14 +6,14 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerIdentityDTO;
 use StdClass;
 
 /**
- *  
+ * 请求参数
  * @author Baymax
- * @create Thu May 22 14:19:59 CST 2025
+ * @create Thu May 22 14:20:26 CST 2025
  */
 class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
 
     /**
-     * 用户识别信息
+     * 17658987654
      * @var ExtCustomerIdentityDTO
      */
     private $extCustomerIdentityDTO;
@@ -37,7 +37,7 @@ class ExtCustomerLevelListQueryDTO implements \JsonSerializable {
     private $nodeId;
 
     /**
-     * 是否需要查询用户等级进度信息（仅针对免费等级）。目前仅访问个人中心时，为true，其他场景为false
+     * 是否需要查询用户等级进度信息（仅针对免费等级）。当前扩展点，此字段为false
      * @var bool
      */
     private $withCustomerLevelProgress;

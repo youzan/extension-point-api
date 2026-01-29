@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\RefundAgreeBizValidatorCobuildResp
 /**
  * 响应参数返回类
  * @author Baymax
- * @create Thu Aug 04 16:37:44 CST 2022
+ * @create Wed Jan 14 15:26:18 CST 2026
  */
 class RefundAgreeBizValidatorCobuildResponseDTOOutParam implements \JsonSerializable {
 

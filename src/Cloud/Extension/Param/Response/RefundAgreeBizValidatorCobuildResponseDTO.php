@@ -7,7 +7,7 @@ namespace Com\Youzan\Cloud\Extension\Param\Response;
 /**
  * 响应参数
  * @author Baymax
- * @create Thu Aug 04 16:37:44 CST 2022
+ * @create Wed Jan 14 15:26:18 CST 2026
  */
 class RefundAgreeBizValidatorCobuildResponseDTO implements \JsonSerializable {
 
