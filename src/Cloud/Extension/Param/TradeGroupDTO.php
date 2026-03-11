@@ -4,11 +4,12 @@ namespace Com\Youzan\Cloud\Extension\Param;
 
 use Com\Youzan\Cloud\Extension\Param\TradeItemDTO;
 use Com\Youzan\Cloud\Extension\Param\UsedPro;
+use Com\Youzan\Cloud\Extension\Param\LogisticsDTO;
 
 /**
  * 交易分组信息
  * @author Baymax
- * @create Tue Jul 08 15:39:15 CST 2025
+ * @create Tue Mar 10 16:48:54 CST 2026
  */
 class TradeGroupDTO implements \JsonSerializable {
 
@@ -41,6 +42,12 @@ class TradeGroupDTO implements \JsonSerializable {
      * @var array
      */
     private $usedGroupPros;
+
+    /**
+     * 物流收货信息，物流信息不存在时，此对象可能为空
+     * @var LogisticsDTO
+     */
+    private $logisticsDTO;
 
 
 
@@ -122,6 +129,22 @@ class TradeGroupDTO implements \JsonSerializable {
     public function setUsedGroupPros(?array $usedGroupPros): void
     {
         $this->usedGroupPros = $usedGroupPros;
+    }
+
+    /**
+     * @return LogisticsDTO
+     */
+    public function getLogisticsDTO(): ?LogisticsDTO
+    {
+        return $this->logisticsDTO;
+    }
+
+    /**
+     * @param LogisticsDTO $logisticsDTO
+     */
+    public function setLogisticsDTO(?LogisticsDTO $logisticsDTO): void
+    {
+        $this->logisticsDTO = $logisticsDTO;
     }
 
     public function jsonSerialize() {

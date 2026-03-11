@@ -8,7 +8,7 @@ use StdClass;
 /**
  * 返回值
  * @author Baymax
- * @create Fri Aug 22 11:28:44 CST 2025
+ * @create Thu Feb 26 20:21:03 CST 2026
  */
 class AvailableVouchersQueryExtPointResponse implements \JsonSerializable {
 
