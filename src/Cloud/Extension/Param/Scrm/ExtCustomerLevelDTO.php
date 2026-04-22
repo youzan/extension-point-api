@@ -7,7 +7,7 @@ use DateTime;
 /**
  * 用户等级列表
  * @author Baymax
- * @create Thu May 22 14:20:26 CST 2025
+ * @create Tue Mar 24 16:07:34 CST 2026
  */
 class ExtCustomerLevelDTO implements \JsonSerializable {
 
@@ -34,6 +34,18 @@ class ExtCustomerLevelDTO implements \JsonSerializable {
      * @var int
      */
     private $termEndAt;
+
+    /**
+     * 个人中心是否展示进度条，true:展示，false:不展示，默认为展示
+     * @var bool
+     */
+    private $showProgressBar;
+
+    /**
+     * 消费等级模式下当前等级的保级进度。空字符串：表示已保级，个人中心不展示任何保级文案；非空字符串：返回类似“再消费XX元可保留当前等级”文案；null：使用有赞计算的保级进度
+     * @var string
+     */
+    private $keepLevelProgress;
 
 
 
@@ -99,6 +111,38 @@ class ExtCustomerLevelDTO implements \JsonSerializable {
     public function setTermEndAt(?int $termEndAt): void
     {
         $this->termEndAt = $termEndAt;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getShowProgressBar(): ?bool
+    {
+        return $this->showProgressBar;
+    }
+
+    /**
+     * @param bool $showProgressBar
+     */
+    public function setShowProgressBar(?bool $showProgressBar): void
+    {
+        $this->showProgressBar = $showProgressBar;
+    }
+
+    /**
+     * @return string
+     */
+    public function getKeepLevelProgress(): ?string
+    {
+        return $this->keepLevelProgress;
+    }
+
+    /**
+     * @param string $keepLevelProgress
+     */
+    public function setKeepLevelProgress(?string $keepLevelProgress): void
+    {
+        $this->keepLevelProgress = $keepLevelProgress;
     }
 
     public function jsonSerialize() {

@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\Scrm\ExtCustomerLevelListDTO;
 /**
  *  返回类
  * @author Baymax
- * @create Thu Jan 29 15:45:50 CST 2026
+ * @create Tue Mar 24 16:08:08 CST 2026
  */
 class ExtCustomerLevelListDTOOutParam implements \JsonSerializable {
 

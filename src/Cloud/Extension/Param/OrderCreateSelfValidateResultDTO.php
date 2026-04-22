@@ -7,7 +7,7 @@ use Com\Youzan\Cloud\Extension\Param\UnavailableItemMsgDTO;
 /**
  *  
  * @author Baymax
- * @create Tue Mar 10 16:48:54 CST 2026
+ * @create Wed Apr 22 21:34:28 CST 2026
  */
 class OrderCreateSelfValidateResultDTO implements \JsonSerializable {
 

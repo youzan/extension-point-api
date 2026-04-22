@@ -8,7 +8,7 @@ use Com\Youzan\Cloud\Extension\Param\Response\ExtLevelProgressDTO;
 /**
  *  
  * @author Baymax
- * @create Thu May 22 14:20:26 CST 2025
+ * @create Tue Mar 24 16:07:34 CST 2026
  */
 class ExtCustomerLevelListDTO implements \JsonSerializable {
 
@@ -19,7 +19,7 @@ class ExtCustomerLevelListDTO implements \JsonSerializable {
     private $extCustomerLevelDTOList;
 
     /**
-     * 免费等级升级进度信息，为空时，会用有赞的等级去计算进度信息。目前该扩展点进度信息未使用
+     * 免费等级升级进度信息，为空时，会用有赞的等级去计算进度信息
      * @var array
      */
     private $freeLevelProgressDTOList;
